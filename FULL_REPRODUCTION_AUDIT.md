@@ -38,7 +38,7 @@ Additional integrity checks:
 
 The audit found no contradiction in a manuscript-level numerical result. It
 did find publication-packaging defects, corrected in the final release:
-the omitted `compat/__init__.py`, fail-open treatment of source-history-only
+the omitted `compat/__init__.py`, ambiguous handling of source-history-only
 checks, an imprecise TL-E08 authority pointer and an undocumented GF-P02
 portable-tree difference caused solely by non-redistribution of two third-party
-papers.
+papers. The GF-P02 experiment and test tree itself remains unchanged.
