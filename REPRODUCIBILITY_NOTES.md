@@ -11,8 +11,12 @@ checks in GF-P01 read frozen objects from the history of
 access to that repository's Git objects in addition to this companion checkout.
 They are preservation checks, not scientific computation paths.
 
-In the companion checkout, 47 GF-P02 tests pass and the three history-only
-checks are deselected with:
+In a normal companion-only clone these six checks are reported as explicit
+`SKIPPED` history-authority checks rather than test failures. They pass when run
+in a checkout whose Git object database contains the source commits identified
+in `SOURCE_MANIFEST.md`.
+
+The 47 history-independent GF-P02 tests can also be selected directly with:
 
 ```console
 python -m pytest experiments/provenance_semiring_projection_v1/tests -q \
@@ -85,4 +89,3 @@ requires the original historical parameter checkpoints.
 The four omitted base-GFG JSON objects are listed in
 `EXTERNAL_ARTIFACTS.md`. Any restored copy must match the recorded SHA-256
 before use.
-
