@@ -83,7 +83,8 @@ replay or coalition intervention.
 
 Compact protocols, implementations, summaries and independent checkers are
 tracked in this repository. Large base-GFG payloads and the RL-E02 formal
-runtime bundle are not duplicated in Git. Their logical identities, byte
-sizes where applicable and SHA-256 hashes are fixed in
-[EXTERNAL_ARTIFACTS.md](EXTERNAL_ARTIFACTS.md). No public archive locator is
-claimed until an external archive has actually been assigned.
+runtime bundle, the TL-P01 target ledger and the INF-E01 derived GFGs are not
+duplicated in Git. Their public archive locations and verification boundaries
+are fixed in [PUBLIC_ARCHIVE.md](PUBLIC_ARCHIVE.md) and
+[PUBLIC_EVIDENCE_MATRIX.md](PUBLIC_EVIDENCE_MATRIX.md); top-level byte sizes
+and SHA-256 hashes are fixed by the archive's `ARCHIVE_MANIFEST.json`.

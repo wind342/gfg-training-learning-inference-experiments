@@ -18,6 +18,9 @@ The primary entries are indexed in [EXPERIMENT_INDEX.md](EXPERIMENT_INDEX.md).
 The final manuscript claims, figures and tables are connected to their frozen
 experimental authorities in
 [MANUSCRIPT_EVIDENCE_MAP.md](MANUSCRIPT_EVIDENCE_MAP.md).
+The exact public verification boundary for every manuscript experiment is
+recorded in [PUBLIC_EVIDENCE_MATRIX.md](PUBLIC_EVIDENCE_MATRIX.md), and the
+Git/Zenodo division is documented in [PUBLIC_ARCHIVE.md](PUBLIC_ARCHIVE.md).
 The four reinforcement-learning experiments form one cumulative evidence chain,
 summarized in [RL_EVIDENCE_CHAIN.md](RL_EVIDENCE_CHAIN.md).
 Additional experiment directories are included only when they are imported by
@@ -63,9 +66,11 @@ outputs and source-commit identities remain present.
 
 Each primary experiment retains its frozen protocol, implementation, machine
 results, negative controls and independent checker where those objects existed
-in the source experiment. Reproduction commands are documented inside the
-corresponding experiment directory. The common Python package and Core v3
-schemas are retained under `src/` and `protocol/core_v3/`.
+in the source experiment. Generated evidence omitted from Git is provided in
+the accompanying content-addressed archive where stated. Reproduction commands
+and the distinction between result recomputation and full native re-execution
+are documented in `PUBLIC_EVIDENCE_MATRIX.md`. The common Python package and
+Core v3 schemas are retained under `src/` and `protocol/core_v3/`.
 
 Environment-dependent and source-history-dependent checks are identified in
 [REPRODUCIBILITY_NOTES.md](REPRODUCIBILITY_NOTES.md).

@@ -52,8 +52,11 @@ the executable projection or scientific result computation.
 
 The direct-prediction and reinforcement-learning independent checkers consume
 machine bundles created by their formal runners. The repository retains the
-checkers, protocol freezes, implementations and tracked result summaries. A
-fresh checker execution must first run the corresponding reproduction command
+checkers, protocol freezes, implementations and tracked result summaries. The
+complete frozen TL-P01 result bundle is also distributed in the publication
+archive, so its all-run and confirmation metrics can be recomputed without a
+fresh model execution. For an experiment without an archived generated bundle,
+a fresh checker execution must first run the corresponding reproduction command
 to create the required `MANIFEST.json`/aggregate and evidence-manifest inputs;
 the checker must fail if those inputs are absent.
 
@@ -71,6 +74,11 @@ and held-out policy evaluations. Each experiment provides a separate
 independent checker and runtime test entry point; the commands and frozen
 scientific boundaries are documented in its `README.md` and
 `PROTOCOL_FREEZE.md`.
+
+INF-E01's publication bundle similarly permits independent integrity checking
+and recomputation of the strict logit-level derived-GFG result. Fresh
+regeneration of the underlying gated forwards and rollback interventions still
+requires the original historical parameter checkpoints.
 
 ## Large base-GFG payloads
 
