@@ -1,0 +1,42 @@
+{
+  "relation_lifting_contract_id": "executable-generation-fact-graph-lifting-v1",
+  "rules": {
+    "commits_version": {
+      "endpoint_level": "fact",
+      "strategy": "EXACT_FACT_ENDPOINTS",
+      "rule_id": "lift-exact-fact-commits-version-v1"
+    },
+    "conflicts_with": {
+      "endpoint_level": "fact",
+      "strategy": "EXACT_FACT_ENDPOINTS",
+      "rule_id": "lift-exact-fact-conflicts-v1"
+    },
+    "generated_origin_dependency": {
+      "endpoint_level": "fact",
+      "strategy": "EXACT_FACT_ENDPOINTS",
+      "rule_id": "lift-exact-fact-generated-origin-v1"
+    },
+    "message_send_receive": {
+      "endpoint_level": "occurrence",
+      "strategy": "MIN_BINDING_ID_ANCHOR",
+      "rule_id": "lift-occurrence-message-anchor-v1"
+    },
+    "program_order": {
+      "endpoint_level": "occurrence",
+      "strategy": "MIN_BINDING_ID_ANCHOR",
+      "rule_id": "lift-occurrence-program-order-anchor-v1",
+      "meaning": "selected facts have producing occurrences in the recorded adjacent program order"
+    },
+    "reads_from": {
+      "endpoint_level": "fact",
+      "strategy": "EXACT_FACT_ENDPOINTS",
+      "rule_id": "lift-exact-fact-reads-from-v1"
+    },
+    "synchronizes_with": {
+      "endpoint_level": "occurrence",
+      "strategy": "MIN_BINDING_ID_ANCHOR",
+      "rule_id": "lift-occurrence-synchronization-anchor-v1"
+    }
+  },
+  "untyped_cartesian_lifting_allowed": false
+}

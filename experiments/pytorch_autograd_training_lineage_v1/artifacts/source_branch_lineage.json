@@ -1,0 +1,12 @@
+{
+  "base_commit": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+  "base_ref": "origin/main",
+  "branch": "experiment/pytorch-autograd-training-lineage-v1",
+  "branch_created_from_fetched_remote": true,
+  "fetch_transport": "HTTPS through command-scoped local proxy",
+  "merge_base": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+  "remote_fetch_succeeded": true,
+  "remote_head_commit_time": "2026-07-19T05:10:41+08:00",
+  "remote_head_subject": "Finalize migration inventory and documentation",
+  "selection_reason": "smallest public base containing frozen Core v3 without importing another experiment's scientific result"
+}

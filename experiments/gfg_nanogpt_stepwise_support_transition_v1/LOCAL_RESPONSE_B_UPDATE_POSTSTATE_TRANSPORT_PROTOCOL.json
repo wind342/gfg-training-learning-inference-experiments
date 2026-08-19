@@ -1,0 +1,53 @@
+{
+  "schema": "nanogpt-local-response-jk-protocol-v1",
+  "protocol_id": "LOCAL-RESPONSE-B-UPDATE-POSTSTATE-TRANSPORT-v1",
+  "purpose": "Test whether the receiver-local response to B's exact realized parameter update changes across each receiver's actual native training transition.",
+  "inherited_reciprocal_protocol_id": "RECIPROCAL-MATCHED-PAIR-v2",
+  "predecessor_protocol_id": "LOCAL-RESPONSE-JK-v1",
+  "receiver_state_kind": "native_full",
+  "receiver_source_object_ids": {
+    "A": "obj_60f51b0d6d1a0ac24502c88fcddfc0b2381b7e77673935b9b4d6bc0632330082",
+    "B": "obj_282c67320146931395ac2d558f8fab40579f80632ed2320e0d850a9881bf901f"
+  },
+  "receivers": [
+    {
+      "label": "A",
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "source_bundle_id": "711f5480406e989c824ff75ca11cfce27bbcdedf140297d1ffe60980c72da238",
+      "window_id": "phase-v3-window-0f390d3aecbe05321e0c91a1",
+      "optimizer_step": 2900
+    },
+    {
+      "label": "B",
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "source_bundle_id": "44021089c1e143060cc7da31a0df03cb4e83725755c268b7f604f80903980874",
+      "window_id": "phase-v3-window-c3a3331404540eda5b23b93e",
+      "optimizer_step": 2600
+    }
+  ],
+  "donor_update": {
+    "label": "B",
+    "source_object_id": "obj_9a009c78cfab23e4fb04119345f39b05f5bc01669aeb28d920d33a064c939fd4",
+    "semantics": "The exact named parameter delta from B's actual native training step; receiver-local Adam state is preserved."
+  },
+  "epsilon": 0.125,
+  "branches": [
+    "baseline",
+    "plus_epsilon",
+    "minus_epsilon",
+    "plus_full"
+  ],
+  "horizon": 1,
+  "response_contract": {
+    "numeric": "Compute central J and K at each native-full receiver state and the exact plus-one response for every floating CSRG-4C output.",
+    "categorical": "Preserve raw baseline, signed and plus-one categorical outcomes and exact transition masks; never subtract or average labels.",
+    "probe": "CSRG-4C-v1: two baselines, four single-component gates and six pair-component gates for every branch state."
+  },
+  "adjudication": {
+    "transport_support": "For both receivers, native-full J must differ from skip J beyond exact replay and must predict the same native-full plus-one target better than the skip J for all 42 nonzero numeric roles; the reciprocal skip target comparison is evaluated by the external transport validator.",
+    "transport_falsification": "If J remains byte-identical across the native transition or receiver-state registration provides no residual improvement, the response-transport hypothesis fails for this update.",
+    "observation_omission": "Only identical complete numeric and categorical response objects with different exact plus-one raw or capability outcomes support observation omission.",
+    "scope": "This is an h1 response-state transport test across one actual native training transition, not a long-horizon stability closure."
+  },
+  "future_information_used": false
+}

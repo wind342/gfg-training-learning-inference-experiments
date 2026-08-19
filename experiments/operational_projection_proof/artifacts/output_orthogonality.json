@@ -1,0 +1,8 @@
+{
+  "csv_byte_identical": true,
+  "csv_sha256": "acd1070a778de25b0d8884336f5cca92b34eb5e5966a5332363bddec9c96ad69",
+  "forbidden_fields": [],
+  "json_byte_identical": true,
+  "json_sha256": "7e58890bbfeecdc3200a497be0e3ce19e961f2af130e7be9d672337a9d82cf7d",
+  "status": "SUPPORTED"
+}

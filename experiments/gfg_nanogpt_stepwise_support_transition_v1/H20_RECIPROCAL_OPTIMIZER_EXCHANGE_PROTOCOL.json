@@ -1,0 +1,121 @@
+{
+  "schema": "nanogpt-h20-reciprocal-optimizer-exchange-protocol-v1",
+  "protocol_id": "H20-RECIPROCAL-OPTIMIZER-STATE-EXCHANGE-v1",
+  "purpose": "Resolve the frozen A/B survivor's remaining causal ambiguity by exchanging complete h20 Adam state between the already executed scale-zero and scale-one endpoints while holding the receiver, parameter state, subsequent batches and RNG opportunity fixed.",
+  "source_amplitude_path": {
+    "protocol_id": "B-UPDATE-AMPLITUDE-PATH-CONTINUATION-v1",
+    "protocol_sha256": "9b8c11e0efe18ff7f502a12ced817a9dab11e10b3762dcdaa05b5d9ade2b86d9",
+    "graph_schema": "nanogpt-b-update-amplitude-path-gfg-manifest-v1",
+    "graph_manifest_sha256": "bcab239003a022925c660c68ad00719ff948211a8593efc4a2653156f891fb73",
+    "graph_database_sha256": "ccdff265946ebaef2d75f7c3a1101a42340756df6be30f05ee1984254f95709f",
+    "evidence_validation_sha256": "6f9177e05b2bebc974cbf539ef66ded4d57839b9fc23cd8510ece993fe4285f6"
+  },
+  "exchange_horizon": 20,
+  "observation_horizons": [20, 21, 100],
+  "continuation_final_horizon": 100,
+  "probe_contract_id": "CSRG-4C-v1",
+  "optimizer_keys": ["exp_avg", "exp_avg_sq", "step"],
+  "branches": [
+    {
+      "branch_id": "theta0_O0",
+      "parameter_donor_scale": 0.0,
+      "optimizer_donor_scale": 0.0,
+      "kind": "native_control"
+    },
+    {
+      "branch_id": "theta1_O1",
+      "parameter_donor_scale": 1.0,
+      "optimizer_donor_scale": 1.0,
+      "kind": "native_control"
+    },
+    {
+      "branch_id": "theta0_O1",
+      "parameter_donor_scale": 0.0,
+      "optimizer_donor_scale": 1.0,
+      "kind": "reciprocal_optimizer_exchange"
+    },
+    {
+      "branch_id": "theta1_O0",
+      "parameter_donor_scale": 1.0,
+      "optimizer_donor_scale": 0.0,
+      "kind": "reciprocal_optimizer_exchange"
+    }
+  ],
+  "receivers": [
+    {
+      "label": "A",
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "source_bundle_id": "711f5480406e989c824ff75ca11cfce27bbcdedf140297d1ffe60980c72da238",
+      "base_optimizer_step": 2900,
+      "h20_optimizer_step": 2920,
+      "endpoints": {
+        "0": {
+          "scale": 0.0,
+          "h20_source_object_id": "obj_fb579cc86741c53b129e5fd985f36527669d5ccdd6e4a03058a909b3144089b3",
+          "h20_source_content_sha256": "0753cc46ae756f76d90d5020b9f34e1d9afe948bcd82bf28e74bc493d3efc399",
+          "h20_state_sha256": "52f434d847ecdaf343638e2986cd995a510fc3e2f07aae10beb26b211a45fdf1",
+          "h100_source_object_id": "obj_2384fe40f6caac7879c7c6f1e73274e0cc65fbf8ff2be5d86561f4f6390c1486",
+          "h100_source_content_sha256": "adf402e4bd59b5f29a0f2c2f2ae5f97c517105ac492a4b62d4127cec90458113",
+          "h100_state_sha256": "a1c6a13048f48fe1d6ee2638f0c227568eb79790af532d3be82c3454202af9d6"
+        },
+        "1": {
+          "scale": 1.0,
+          "h20_source_object_id": "obj_1d9f3fabf8ed704ed96e252e12ea95dfb7f36a4f1af0f400284edf2fb70f583d",
+          "h20_source_content_sha256": "4c98805e124b64f11dee11b8ff6034b420ecc1634f466fa38ea79b1d03ca1ade",
+          "h20_state_sha256": "68450d87910a157e7921471a0912bab130d8ebf97a54f748623a8860383fa718",
+          "h100_source_object_id": "obj_b3b92fef37eb190cc538202cb894f2e6661e354fc909901332324a006ee16930",
+          "h100_source_content_sha256": "6f7cb30b5dba130dc0e73c2e766c4069c24ba8abffa66ee4b74e1b1c7eb675da",
+          "h100_state_sha256": "1f635cda9bbb4ded79c6c330f2883e44c4e9b73de8ceb6c63210880e0e5242e5"
+        }
+      }
+    },
+    {
+      "label": "B",
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "source_bundle_id": "44021089c1e143060cc7da31a0df03cb4e83725755c268b7f604f80903980874",
+      "base_optimizer_step": 2600,
+      "h20_optimizer_step": 2620,
+      "endpoints": {
+        "0": {
+          "scale": 0.0,
+          "h20_source_object_id": "obj_0da686e60c2a4b2c89e0734bf1d9b6d0dfe2d60ea6ce50b51c551ab361767685",
+          "h20_source_content_sha256": "8cf118b9d6cd4d79393b838757a6fdabf164a578701f82fb1ad63eeb62268fec",
+          "h20_state_sha256": "fab57fbaf69d2d3c40a57eef9927b58f6da29663bb37cf5ba10c2329204f5cef",
+          "h100_source_object_id": "obj_6ae9448e03113738aaf76714c81a4f8741462c586722343cc8596f1a1252659c",
+          "h100_source_content_sha256": "67abea419b7d649c1277bc997c788cfa3fb7a9a5d6d2a563d9c8d550df32861e",
+          "h100_state_sha256": "4591b7493d73b5ad38ad179f245c014788b5cd6a8ffa65f91dbe994defd0e3c6"
+        },
+        "1": {
+          "scale": 1.0,
+          "h20_source_object_id": "obj_449935a4c683dca76ff7f6dfcf7e3b31a1e61ac63d76c992eaa8674fd5cdeb9a",
+          "h20_source_content_sha256": "cd3f2b1862ecd2906c6116535526f1050560ae466b53063802b2d99bf2eef822",
+          "h20_state_sha256": "fee6b45365be5f9f8822472755d5940bad804ad5152a51189e959d058116ec0b",
+          "h100_source_object_id": "obj_d72871cb3c3832ebd786559ed1c8bb156a91736992bf70d228fa11b5bbcb7aaf",
+          "h100_source_content_sha256": "7a7fccbb74f21cfd6b57f7f0468f49f19c70947100e065619de2bc35ab9019ad",
+          "h100_state_sha256": "62324506ed2e86da763db0356df2bda0c9c5e7a5e8177924c6f565536d92e337"
+        }
+      }
+    }
+  ],
+  "execution_contract": {
+    "exchange": "Within each receiver, construct each branch from the complete parameter map of its named parameter donor and the complete exp_avg, exp_avg_sq and step maps of its named optimizer donor. Never mix receivers, add deltas or interpolate optimizer tensors.",
+    "native_controls": "Reexecute theta0_O0 and theta1_O1 from the exact h20 states and require byte-exact h100 state and probe agreement with the source amplitude-path execution.",
+    "continuation": "For every branch at one receiver, use the exact native batches and the exact content-derived RNG opportunities frozen by the source amplitude-path protocol from h20 through h100.",
+    "capture": "At h20, h21 and h100 execute CSRG-4C-v1. At every h20-to-h100 training step preserve the actual batch identity, training logits, registered activations, raw and clipped gradients, parameter update, weight-decay update, adaptive residual, Adam first- and second-moment deltas, Adam step delta and post-preconditioned direction.",
+    "future_information_used": false
+  },
+  "comparison_contract": {
+    "numeric": "At h100 concatenate every finite coordinate from every floating CSRG probe output in canonical role and coordinate order and compute the unweighted RMS difference from each native endpoint control.",
+    "categorical": "At h100 compare every non-floating CSRG probe output to each native endpoint control by exact mismatch count without subtraction, averaging or interpolation.",
+    "capability": "At h100 compare absolute capability-accuracy difference to each native endpoint control.",
+    "selection": "Report all three distances independently. Do not fit weights, thresholds or a combined score. Scientific adjudication is not performed by the executor."
+  },
+  "adjudication": {
+    "optimizer_memory_dominant": "At both receivers, both reciprocal hybrids are closer on the frozen h100 comparisons to the native control that donated optimizer state than to the control that donated parameters, and capability ordering transfers accordingly.",
+    "parameter_support_history_dominant": "At both receivers, both reciprocal hybrids are closer on the frozen h100 comparisons to the native control that donated parameters than to the control that donated optimizer state, and capability ordering remains parameter-donor aligned.",
+    "nonseparable_interaction": "The reciprocal hybrids are not consistently assigned by one donor across receivers and registered comparisons, or form new support/capability orderings. The observed result then requires an executable parameter/support-by-optimizer interaction state; neither channel is sufficient alone.",
+    "counterexample_resolution": "The inherited count may be reduced only if a candidate selected without h100 future information is prospectively rolled against registered surviving pairs. Endpoint-state causal discrimination alone is not counted as resolving all inherited pairs."
+  },
+  "future_information_used": false,
+  "scientific_interpretation_performed_by_executor": false
+}

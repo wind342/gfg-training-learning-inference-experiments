@@ -1,0 +1,30 @@
+[
+  {
+    "backward_lineage_equal": false,
+    "binding_sets_equal": false,
+    "binding_symmetric_difference_count": 4,
+    "direct_relation_sets_equal": false,
+    "direct_relation_symmetric_difference_count": 4,
+    "name": "distinct_selection_sources",
+    "native_otel_equal": true,
+    "normalized_otel_equal": true,
+    "ordinary_outputs_equal": true,
+    "snapshot_ids_equal": false,
+    "source_sets_equal": false,
+    "span_count": 3
+  },
+  {
+    "backward_lineage_equal": false,
+    "binding_sets_equal": false,
+    "binding_symmetric_difference_count": 16,
+    "direct_relation_sets_equal": false,
+    "direct_relation_symmetric_difference_count": 16,
+    "name": "distinct_many_to_many_pairing_identities",
+    "native_otel_equal": true,
+    "normalized_otel_equal": true,
+    "ordinary_outputs_equal": true,
+    "snapshot_ids_equal": false,
+    "source_sets_equal": false,
+    "span_count": 5
+  }
+]

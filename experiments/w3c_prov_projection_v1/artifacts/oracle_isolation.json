@@ -1,0 +1,27 @@
+{
+  "candidate_expected_answer_read_count": 0,
+  "candidate_imports_native": false,
+  "candidate_native_reference_read_count": 0,
+  "candidate_process_exit_code": 0,
+  "candidate_runtime_input_roles": [
+    "validated_core_snapshot",
+    "current_candidate_provn_bytes"
+  ],
+  "candidate_uses_provo_normalizer": false,
+  "native_candidate_output_read_count": 0,
+  "native_core_snapshot_read_count": 0,
+  "native_imports_candidate": false,
+  "native_imports_core": false,
+  "native_process_exit_code": 0,
+  "native_runtime_input_roles": [
+    "actual_generator_callbacks",
+    "current_native_provo_bytes"
+  ],
+  "native_uses_provn_parser": false,
+  "normalized_record_count": 51,
+  "normalized_results_equal": true,
+  "process_memory_shared": false,
+  "shared_mapping_helper_count": 0,
+  "shared_neutral_module_count": 1,
+  "status": "SUPPORTED"
+}

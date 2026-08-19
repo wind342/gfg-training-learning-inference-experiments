@@ -1,0 +1,164 @@
+{
+  "called_symbols": [
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/native_nx_path.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/native_nx_path.py",
+      "symbol": "main"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/__init__.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "<genexpr>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "<lambda>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "KRow"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "NativeNXEvaluator"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "__init__"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "_base"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "_canonical_values"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "_insert"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "_logical_output_key"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "evaluate"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_nx.py",
+      "symbol": "evaluate_native_nx"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_polynomial_oracle.py",
+      "symbol": "<lambda>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_polynomial_oracle.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_polynomial_oracle.py",
+      "symbol": "NativePolynomialOracle"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_polynomial_oracle.py",
+      "symbol": "_monomial_key"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_polynomial_oracle.py",
+      "symbol": "_normalize_monomial"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_polynomial_oracle.py",
+      "symbol": "from_mapping"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_polynomial_oracle.py",
+      "symbol": "multiply"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_polynomial_oracle.py",
+      "symbol": "native_variable_for_source"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_polynomial_oracle.py",
+      "symbol": "to_document"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_polynomial_oracle.py",
+      "symbol": "variable"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/workloads.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/workloads.py",
+      "symbol": "_stress_relations"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/workloads.py",
+      "symbol": "_walk_ast"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/workloads.py",
+      "symbol": "load_workloads"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/workloads.py",
+      "symbol": "select_query"
+    }
+  ],
+  "events": [
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/scripts/__pycache__/native_nx_path.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/__init__.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/native_nx.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/native_polynomial_oracle.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/workloads.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/fixtures/workloads.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "w",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/native.json"
+    }
+  ],
+  "module": "experiments.provenance_semiring_projection_v1.scripts.native_nx_path",
+  "return_code": 0,
+  "schema_version": "isolated-entrypoint-trace-v1"
+}

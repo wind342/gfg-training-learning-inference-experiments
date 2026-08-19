@@ -1,0 +1,1 @@
+{"formation_answer_equal":false,"ordinary_business_view_equal":true,"scenario_b":{"read_status":"OPEN","read_version":7,"refund_outcome":"REFUND_VERSION_CONFLICT_AFTER_FREEZE"},"scenario_c":{"read_status":"FROZEN","read_version":8,"refund_outcome":"REFUND_REJECTED_ORDER_ALREADY_FROZEN"},"status":"PASS","strict_gamma_equality_claimed":false}

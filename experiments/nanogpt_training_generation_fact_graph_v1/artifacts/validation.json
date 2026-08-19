@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "atomic_generation_facts": 13010,
+    "events": 3630,
+    "parameter_tensors": 27,
+    "registered_sources": 197,
+    "steps": 3,
+    "tensor_outcomes": 4359
+  },
+  "gates": {
+    "all_input_references_resolve": true,
+    "complete_five_coordinate_facts": true,
+    "core_snapshot_validated": true,
+    "every_binding_has_primary_evidence": true,
+    "expected_training_phases_per_step": true,
+    "parameter_gradient_receipts_complete": true,
+    "parameter_optimizer_receipts_complete": true,
+    "unique_output_producer": true,
+    "zero_heuristic_or_similarity_links": true
+  },
+  "status": "PASS",
+  "unresolved_input_refs": []
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "gfg-temporal-credit-formal-result-summary-v1",
+  "status": "PASS",
+  "scientific_status": "PASS",
+  "formal_seed_count": 12,
+  "episode_horizon": 64,
+  "gfg_candidate_count": 9,
+  "hidden_functional_action_count": 6,
+  "formation_ancestor_passenger_count": 3,
+  "gfg_candidate_history_fraction": 0.140625,
+  "gfg_candidate_recall": 1.0,
+  "gfg_candidate_precision": 0.6666666666666666,
+  "gfg_candidate_f1": 0.8,
+  "gfg_causal_credit_f1_min_across_seeds": 1.0,
+  "gfg_credit_sign_accuracy_min_across_seeds": 1.0,
+  "gfg_pair_interaction_f1_min_across_seeds": 1.0,
+  "policy_results": {
+    "gfg_forks": {
+      "terminal_success_rate": 0.96484375,
+      "terminal_success_ci95": [0.940833114223485, 0.988854385776515],
+      "functional_action_accuracy": 0.990849247685185,
+      "mean_terminal_consequence": 1.95339626736111,
+      "counterfactual_transitions_per_seed": 8388608
+    },
+    "trace_decomposition_forks": {
+      "candidate_recall": 0.914207175925926,
+      "terminal_success_rate": 0.817491319444444,
+      "terminal_success_ci95": [0.787699618402319, 0.84728302048657],
+      "functional_action_accuracy": 0.956814236111111,
+      "mean_terminal_consequence": 1.76898871527778,
+      "counterfactual_transitions_per_seed": 8388608
+    },
+    "gfg_ancestry_only": {
+      "terminal_success_rate": 0.274088541666667,
+      "functional_action_accuracy": 0.700484664351852
+    },
+    "terminal_all_actions": {
+      "terminal_success_rate": 0.0546875,
+      "functional_action_accuracy": 0.52734375
+    },
+    "rewired_gfg_forks": {
+      "candidate_recall": 0.0,
+      "terminal_success_rate": 0.0310329861111111,
+      "functional_action_accuracy": 0.501374421296296
+    },
+    "oracle_forks": {
+      "terminal_success_rate": 0.96484375,
+      "functional_action_accuracy": 0.990849247685185,
+      "counterfactual_transitions_per_seed": 1048576
+    }
+  },
+  "paired_gfg_minus_trace_success_rate": {
+    "mean": 0.14735243055555555,
+    "ci95": [0.1160425566785599, 0.1786623044325512]
+  },
+  "scientific_gates": {
+    "candidate_recall": true,
+    "history_reduction": true,
+    "causal_credit_f1": true,
+    "pair_interaction_f1": true,
+    "absolute_learning_result": true,
+    "oracle_equivalence": true,
+    "learning_over_trace": true,
+    "learning_over_terminal": true,
+    "rewiring_reduces_result": true
+  },
+  "independent_check": "PASS",
+  "formal_aggregate_sha256": "c1bf98a259e842594585bf373c50dd45a187607d5f33f01e2fcc026d1f168a3b",
+  "independent_check_sha256": "4fec707d93f009daaf5bbdba09fb12df1438295b5e90e46366abefcaf7f59043"
+}

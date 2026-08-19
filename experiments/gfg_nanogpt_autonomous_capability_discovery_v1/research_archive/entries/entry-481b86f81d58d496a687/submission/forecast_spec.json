@@ -1,0 +1,42 @@
+{
+  "schema": "capability-forecast-spec-v1",
+  "version": "1.0.0",
+  "entrypoint": "CapabilityFormationMechanism.forecast(state)",
+  "curve_domain": {
+    "first_step": "first 100-step evaluation point strictly after state.cut_step",
+    "last_step": 10000,
+    "interval_optimizer_steps": 100,
+    "value_field": "validation_accuracy",
+    "value_range": [0.0, 1.0]
+  },
+  "required_fields": {
+    "will_transition": "boolean",
+    "transition_step_low_200": "integer or NO_TRANSITION",
+    "transition_step_high_200": "integer or NO_TRANSITION; high-low<=200",
+    "transition_step_low_500": "integer or NO_TRANSITION",
+    "transition_step_high_500": "integer or NO_TRANSITION; high-low<=500",
+    "predicted_validation_curve": "ordered future grid records",
+    "mechanism_state": "initial finite state plus ordered generated state evolution",
+    "post_formation_stability": "one frozen stability enum",
+    "predicted_instability_intervals": "inclusive integer step_low/step_high records"
+  },
+  "transition_rule": "first generated three-point window with validation_accuracy>=0.9 after a prefix evaluation<=0.3; the prediction-cut contract supplies train_accuracy>=0.99 and the mechanism predicts it remains satisfied",
+  "mechanism_state_evolution_fields": [
+    "effective_update_count",
+    "gain_l2",
+    "gain_rms",
+    "gain_rate_l2_per_step",
+    "rule_strength",
+    "oscillator_recovery_load",
+    "phase"
+  ],
+  "phase_values": ["MEMORIZATION", "FORMATION", "GENERALIZED", "RECOVERY"],
+  "stability_values": [
+    "STABLE",
+    "TRANSIENT_DEGRADATION_RECOVERY",
+    "PERSISTENT_DEGRADATION",
+    "UNDETERMINED"
+  ],
+  "no_future_reads": true,
+  "deterministic": true
+}

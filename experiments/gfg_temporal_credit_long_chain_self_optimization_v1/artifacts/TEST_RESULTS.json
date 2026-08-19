@@ -1,0 +1,8 @@
+{
+  "schema_version": "gfg-temporal-credit-long-chain-test-results-v1",
+  "status": "PASS",
+  "command": "python -m pytest experiments/gfg_temporal_credit_long_chain_self_optimization_v1/test_runtime.py -q",
+  "passed": 4,
+  "failed": 0,
+  "elapsed_seconds": 4.41
+}

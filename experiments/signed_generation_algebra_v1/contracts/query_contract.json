@@ -1,0 +1,13 @@
+{
+  "candidate_authority": "validated_snapshot_and_registered_query_engine_only",
+  "disposition_query": "QueryEngine.disposition_relations",
+  "domain_scope_id": "signed-generation-algebra-v1",
+  "forbidden_candidate_inputs": [
+    "generator_internal_temporary_values",
+    "independent_reference_output",
+    "candidate_report",
+    "final_native_output_inference"
+  ],
+  "schema_version": "signed-generation-query-contract-v1",
+  "support_predicate": "membership"
+}

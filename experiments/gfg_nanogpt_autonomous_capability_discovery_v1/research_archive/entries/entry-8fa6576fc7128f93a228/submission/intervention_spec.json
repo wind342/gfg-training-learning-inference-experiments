@@ -1,0 +1,22 @@
+{
+  "schema": "training-intervention-spec-v1",
+  "version": "1.0.0",
+  "module": "intervention",
+  "class": "TrainingIntervention",
+  "initialize": "TrainingIntervention.initialize(mechanism_state, forecast)",
+  "apply": "TrainingIntervention.apply(stage, context, state)",
+  "state_schema": "training-intervention-state-v1 (defined by initialize output and finite JSON updates)",
+  "hook": "before_optimizer_step",
+  "mutation": "Set every current parameter gradient exposed by the native optimizer/model context to None for 800 optimizer-hook invocations, making Adam skip parameter, exp_avg, exp_avg_sq and parameter-local step updates.",
+  "allowed_mutation": "current gradients",
+  "direction": "DELAY",
+  "transition_step_shift_interval": {
+    "step_low": 700,
+    "step_high": 1100
+  },
+  "minimum_effective_shift_optimizer_steps": 600,
+  "predicted_mechanism_state_change": "Rule-margin formation progress, final-layer-normalization gain, circuit norm and Adam moment/variance/local-step state remain fixed through the hold. RNG, data order and measured gradient-relaxation phase continue, so release is not asserted to be an exact translated baseline state.",
+  "predicted_stability_effect": "NO_CHANGE",
+  "stability_effect_rationale": "The hook holds formation reserve and Adam state together; RNG, data order and gradient phase continue and widen phase uncertainty. With no supported directional change to reserve or the post-release fragility/pressure law, the expected effect is NO_CHANGE rather than an asserted improvement or worsening.",
+  "forbidden_information_used": false
+}

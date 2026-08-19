@@ -1,0 +1,73 @@
+{
+  "schema": "gfg-rl-feedback-closure-contract-v1",
+  "status": "FROZEN_FOR_FORMAL_EXECUTION_AFTER_RECORDED_DEVELOPMENT",
+  "claim_scope": "one executed delayed two-decision parameter-optimizer reinforcement-learning system",
+  "environment": {
+    "cue_bits": 4,
+    "action_count": 2,
+    "decision_stages": 2,
+    "reward_emission": "terminal_only",
+    "phase_a_targets": ["cue_bit_0_xor_cue_bit_2", "cue_bit_1_xor_cue_bit_3"],
+    "phase_b_targets": ["complement_phase_a_stage_1", "complement_phase_a_stage_2"]
+  },
+  "conditions": {
+    "A": "true consequence binding and true temporal credit",
+    "B": "within-stage consequence records permuted across episodes before ordinary credit",
+    "C": "true episode consequence binding retained but stage-1 and stage-2 credit targets swapped"
+  },
+  "model": {
+    "architecture": "two-step GRU policy without self-attention",
+    "hidden_size": 32,
+    "optimizer": "AdamW",
+    "learning_rate": 0.003,
+    "weight_decay": 0.001,
+    "beta1": 0.9,
+    "beta2": 0.99,
+    "entropy_coefficient": 1.0,
+    "behavior_exploration_epsilon": 0.20,
+    "off_policy_importance_correction": true
+  },
+  "development": {
+    "seeds": [1729, 2718, 31415],
+    "base_updates": 160,
+    "reversal_updates": 300,
+    "batch_size": 128,
+    "evaluation_interval": 5,
+    "fork_updates": [0, 149, 299]
+  },
+  "formal": {
+    "seeds": [57721, 65537, 104729, 130363, 161803, 271828, 314159, 424243, 524287, 999983, 1000003, 2000003],
+    "base_updates": 160,
+    "reversal_updates": 300,
+    "batch_size": 128,
+    "evaluation_interval": 5,
+    "fork_updates": [0, 49, 149, 299]
+  },
+  "success_gates": {
+    "phase_a_seal_min_chain_accuracy": 0.95,
+    "condition_a_final_min_chain_accuracy": 0.90,
+    "condition_a_min_auc_advantage_over_each_control": 0.15,
+    "condition_a_min_seed_wins_over_each_control": 10,
+    "one_step_fork_min_nonidentical_update_fraction": 0.90,
+    "all_core_snapshots_valid": true,
+    "all_gfgs_valid": true,
+    "all_independent_checks_pass": true
+  },
+  "evidence": {
+    "capture_scope": "one minibatch training update",
+    "ordinary_event_ledger": "all reversal updates and all episodes",
+    "core_v3": true,
+    "gfg": true,
+    "raw_artifact_drive": "E:",
+    "tracked_results_are_compact": true
+  },
+  "forbidden": [
+    "attention_layers",
+    "future reward or outcome in inference input",
+    "reading another condition's answer",
+    "post-formal threshold tuning",
+    "discarding failed seeds",
+    "calling support rollback a necessary gate",
+    "claiming universality across all reinforcement-learning systems"
+  ]
+}

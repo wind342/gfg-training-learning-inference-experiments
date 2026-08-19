@@ -1,0 +1,2551 @@
+{
+  "base_commit": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+  "branch": "experiment/database-lineage-core-v3-native-v1",
+  "core_changed": true,
+  "core_schema_changed": false,
+  "core_validation": {
+    "completed_queries_passed": true,
+    "evidence_passed": true,
+    "operation_closure_passed": true,
+    "silent_loss_count": 0,
+    "snapshot_passed": true
+  },
+  "database_specific_core_fields_added": false,
+  "determinism": {
+    "bindings_equal": true,
+    "dispositions_equal": true,
+    "evidence_equal": true,
+    "lineage_equal": true,
+    "occurrences_equal": true,
+    "origins_equal": true,
+    "outputs_equal": true,
+    "semantic_snapshots_equal": true,
+    "supports_equal": true
+  },
+  "environment": {
+    "base_commit": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+    "branch": "experiment/database-lineage-core-v3-native-v1",
+    "core_version": "3.0.0",
+    "docker_client": {
+      "available": false,
+      "error": "TimeoutExpired: Command '['C:\\\\Program Files\\\\Docker\\\\Docker\\\\resources\\\\bin\\\\docker.exe', 'version', '--format', '{{.Client.Version}}']' timed out after 30 seconds"
+    },
+    "docker_desktop_installed_version": "4.83.0",
+    "docker_server": {
+      "available": false,
+      "error": "TimeoutExpired: Command '['C:\\\\Program Files\\\\Docker\\\\Docker\\\\resources\\\\bin\\\\docker.exe', 'version', '--format', '{{.Server.Version}}']' timed out after 30 seconds"
+    },
+    "duckdb_version": "1.5.4",
+    "host_setup_note": "WSL 2.7.10 installed; VirtualMachinePlatform and WSL features enabled by DISM with restart-required exit code 3010. No reboot was performed inside the active task.",
+    "jsonschema_version": "4.26.0",
+    "operating_system": "Windows-11-10.0.26200-SP0",
+    "physical_memory_bytes": 17011310592,
+    "pinned_image_postgresql_major": 17,
+    "postgresql_version": null,
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "provsql_extension_version": null,
+    "provsql_image_digest": "inriavalda/provsql@sha256:57c7877fe86638f201bc26fc0cb8ef759aeb09e9bfc03789c2d3a2b315305268",
+    "provsql_required_image": "inriavalda/provsql:1.4.0@sha256:57c7877fe86638f201bc26fc0cb8ef759aeb09e9bfc03789c2d3a2b315305268",
+    "psutil_version": "7.2.2",
+    "psycopg_version": "3.3.3",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+  },
+  "final_classification": "PARTIALLY_SUPPORTED",
+  "original_protocol_classification": "PARTIALLY_SUPPORTED",
+  "output_orthogonality": {
+    "byte_identical_cases": 5,
+    "completed_cases": 5,
+    "failures": [],
+    "not_run": [
+      "sf_0_1_q1",
+      "sf_0_1_q6"
+    ],
+    "total_cases": 5
+  },
+  "performance": {
+    "reader_before_after": {
+      "after_indexed_reader": {
+        "backward_mean_seconds": 0.00032476500200573355,
+        "backward_minimum_seconds": 0.0002637000288814306,
+        "construction_mean_seconds": 0.00020571000350173564,
+        "forward_mean_seconds": 0.0010809450031956658,
+        "forward_minimum_seconds": 0.0009106000070460141,
+        "last_backward": {
+          "customer_top_1:00000000": {
+            "binding_paths": [
+              [
+                "gb3_046935ddd16462d674112c50f57529eef1a0231b79d22333df5b723df3991fcd",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_1537b4aca4c00b832a0ab83404f9e479b489598215f8fd5e3568391be5bb262e",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_2f375583e410b3ea77f02dc4fcc232b7935e0e57645e4db083fbc7d4ba529822",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_51c313d641bf5ee74df68ce4a2350a9fd4275773a61d3cca58fb72068ba610a3",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_51efa625f966c1dfa1a7794df5a0d84026f1f2c9b03ba73c369ebf31db07af22",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_6a7fd2077efd07ff17dad46095bc24e7d53ddbd40673443f971b425fb0b76c33",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+                "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+                "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 20,
+            "tuple_ids": [
+              "customers:c1",
+              "items:i1",
+              "items:i2",
+              "items:i3",
+              "orders:o1",
+              "orders:o2",
+              "products:p1a",
+              "products:p1b",
+              "products:p2"
+            ]
+          }
+        },
+        "last_forward": {
+          "customers:c1": {
+            "binding_paths": [
+              [
+                "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 5,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "customers:c2": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "customers:c3": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "items:i1": {
+            "binding_paths": [
+              [
+                "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 2,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "items:i2": {
+            "binding_paths": [
+              [
+                "gb3_2f375583e410b3ea77f02dc4fcc232b7935e0e57645e4db083fbc7d4ba529822",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 1,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "items:i3": {
+            "binding_paths": [
+              [
+                "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 2,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "items:i4": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "items:i5": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "items:i6": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "orders:o1": {
+            "binding_paths": [
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 3,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "orders:o2": {
+            "binding_paths": [
+              [
+                "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+                "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+                "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 2,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "orders:o3": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "orders:o4": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "orders:o5": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "products:p1a": {
+            "binding_paths": [
+              [
+                "gb3_046935ddd16462d674112c50f57529eef1a0231b79d22333df5b723df3991fcd",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_1537b4aca4c00b832a0ab83404f9e479b489598215f8fd5e3568391be5bb262e",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 2,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "products:p1b": {
+            "binding_paths": [
+              [
+                "gb3_51c313d641bf5ee74df68ce4a2350a9fd4275773a61d3cca58fb72068ba610a3",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_6a7fd2077efd07ff17dad46095bc24e7d53ddbd40673443f971b425fb0b76c33",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 2,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "products:p2": {
+            "binding_paths": [
+              [
+                "gb3_51efa625f966c1dfa1a7794df5a0d84026f1f2c9b03ba73c369ebf31db07af22",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 1,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "products:p3": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "products:p9": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          }
+        },
+        "maximum_peak_tracemalloc_bytes": 32480,
+        "mean_peak_tracemalloc_bytes": 28905.05,
+        "repeats": 20
+      },
+      "authoritative_storage_changed": false,
+      "backward_false_negatives": 0,
+      "backward_false_positives": 0,
+      "backward_results_identical": true,
+      "before_scan_reader": {
+        "backward_mean_seconds": 0.0005811500072013587,
+        "backward_minimum_seconds": 0.0004930999712087214,
+        "construction_mean_seconds": 3.550006658770144e-06,
+        "forward_mean_seconds": 0.001992984995013103,
+        "forward_minimum_seconds": 0.0018282000091858208,
+        "last_backward": {
+          "customer_top_1:00000000": {
+            "binding_paths": [
+              [
+                "gb3_046935ddd16462d674112c50f57529eef1a0231b79d22333df5b723df3991fcd",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_1537b4aca4c00b832a0ab83404f9e479b489598215f8fd5e3568391be5bb262e",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_2f375583e410b3ea77f02dc4fcc232b7935e0e57645e4db083fbc7d4ba529822",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_51c313d641bf5ee74df68ce4a2350a9fd4275773a61d3cca58fb72068ba610a3",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_51efa625f966c1dfa1a7794df5a0d84026f1f2c9b03ba73c369ebf31db07af22",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_6a7fd2077efd07ff17dad46095bc24e7d53ddbd40673443f971b425fb0b76c33",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+                "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+                "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 20,
+            "tuple_ids": [
+              "customers:c1",
+              "items:i1",
+              "items:i2",
+              "items:i3",
+              "orders:o1",
+              "orders:o2",
+              "products:p1a",
+              "products:p1b",
+              "products:p2"
+            ]
+          }
+        },
+        "last_forward": {
+          "customers:c1": {
+            "binding_paths": [
+              [
+                "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 5,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "customers:c2": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "customers:c3": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "items:i1": {
+            "binding_paths": [
+              [
+                "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 2,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "items:i2": {
+            "binding_paths": [
+              [
+                "gb3_2f375583e410b3ea77f02dc4fcc232b7935e0e57645e4db083fbc7d4ba529822",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 1,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "items:i3": {
+            "binding_paths": [
+              [
+                "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 2,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "items:i4": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "items:i5": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "items:i6": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "orders:o1": {
+            "binding_paths": [
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+                "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+                "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+                "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+                "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 3,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "orders:o2": {
+            "binding_paths": [
+              [
+                "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+                "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+                "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+                "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+                "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 2,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "orders:o3": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "orders:o4": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "orders:o5": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "products:p1a": {
+            "binding_paths": [
+              [
+                "gb3_046935ddd16462d674112c50f57529eef1a0231b79d22333df5b723df3991fcd",
+                "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+                "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_1537b4aca4c00b832a0ab83404f9e479b489598215f8fd5e3568391be5bb262e",
+                "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+                "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 2,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "products:p1b": {
+            "binding_paths": [
+              [
+                "gb3_51c313d641bf5ee74df68ce4a2350a9fd4275773a61d3cca58fb72068ba610a3",
+                "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+                "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ],
+              [
+                "gb3_6a7fd2077efd07ff17dad46095bc24e7d53ddbd40673443f971b425fb0b76c33",
+                "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+                "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 2,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "products:p2": {
+            "binding_paths": [
+              [
+                "gb3_51efa625f966c1dfa1a7794df5a0d84026f1f2c9b03ba73c369ebf31db07af22",
+                "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+                "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+                "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+                "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+              ]
+            ],
+            "derivation_path_count": 1,
+            "tuple_ids": [
+              "customer_top_1:00000000"
+            ]
+          },
+          "products:p3": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          },
+          "products:p9": {
+            "binding_paths": [],
+            "derivation_path_count": 0,
+            "tuple_ids": []
+          }
+        },
+        "maximum_peak_tracemalloc_bytes": 18880,
+        "mean_peak_tracemalloc_bytes": 13924.2,
+        "repeats": 20
+      },
+      "binding_count": 54,
+      "database_specific_fields_added": false,
+      "fixture": "fixed adversarial multistage business query",
+      "forward_false_negatives": 0,
+      "forward_false_positives": 0,
+      "forward_results_identical": true,
+      "indexes_are_temporary_and_rebuildable": true
+    },
+    "resolver_before_after": {
+      "after": {
+        "maximum_peak_tracemalloc_bytes": 430694,
+        "maximum_seconds": 0.06594520004000515,
+        "mean_peak_tracemalloc_bytes": 421311.6,
+        "mean_seconds": 0.056272495011216964,
+        "median_seconds": 0.05550484999548644,
+        "minimum_seconds": 0.05424870003480464,
+        "repeats": 20
+      },
+      "authoritative_storage_changed": false,
+      "before": {
+        "maximum_peak_tracemalloc_bytes": 105466,
+        "maximum_seconds": 0.06172100000549108,
+        "mean_peak_tracemalloc_bytes": 105214.4,
+        "mean_seconds": 0.056145305000245574,
+        "median_seconds": 0.05544940000982024,
+        "minimum_seconds": 0.0544264999916777,
+        "repeats": 20
+      },
+      "binding_count": 300,
+      "core_schema_changed": false,
+      "database_specific_semantics_added": false,
+      "evidence_count": 300,
+      "fixture": "fixed 300-stage modality-independent generation chain",
+      "indexed_structures": [
+        "produced entity -> all candidate operations",
+        "operation -> produced entity set",
+        "operation -> evidence set",
+        "binding -> all primary-evidence candidates",
+        "entity id -> entity"
+      ],
+      "operation_count": 300,
+      "success_and_failure_reason_codes": {
+        "bad_authority": {
+          "indexed": {
+            "reason_code": "EVIDENCE_AUTHORITY_UNAUTHORIZED",
+            "status": "failure"
+          },
+          "legacy": {
+            "reason_code": "EVIDENCE_AUTHORITY_UNAUTHORIZED",
+            "status": "failure"
+          }
+        },
+        "duplicate_operation": {
+          "indexed": {
+            "reason_code": "OPERATION_BINDING_CLOSURE_FAILED",
+            "status": "failure"
+          },
+          "legacy": {
+            "reason_code": "OPERATION_BINDING_CLOSURE_FAILED",
+            "status": "failure"
+          }
+        },
+        "duplicate_primary": {
+          "indexed": {
+            "reason_code": "BINDING_HAS_MULTIPLE_PRIMARY_EVIDENCE",
+            "status": "failure"
+          },
+          "legacy": {
+            "reason_code": "BINDING_HAS_MULTIPLE_PRIMARY_EVIDENCE",
+            "status": "failure"
+          }
+        },
+        "material_mismatch": {
+          "indexed": {
+            "reason_code": "BINDING_EVIDENCE_MATERIAL_MISMATCH",
+            "status": "failure"
+          },
+          "legacy": {
+            "reason_code": "BINDING_EVIDENCE_MATERIAL_MISMATCH",
+            "status": "failure"
+          }
+        },
+        "missing_operation": {
+          "indexed": {
+            "reason_code": "OPERATION_BINDING_CLOSURE_FAILED",
+            "status": "failure"
+          },
+          "legacy": {
+            "reason_code": "OPERATION_BINDING_CLOSURE_FAILED",
+            "status": "failure"
+          }
+        },
+        "missing_primary": {
+          "indexed": {
+            "reason_code": "BINDING_HAS_NO_PRIMARY_EVIDENCE",
+            "status": "failure"
+          },
+          "legacy": {
+            "reason_code": "BINDING_HAS_NO_PRIMARY_EVIDENCE",
+            "status": "failure"
+          }
+        },
+        "missing_related": {
+          "indexed": {
+            "reason_code": "EVIDENCE_ENTITY_MISMATCH",
+            "status": "failure"
+          },
+          "legacy": {
+            "reason_code": "EVIDENCE_ENTITY_MISMATCH",
+            "status": "failure"
+          }
+        },
+        "success": {
+          "indexed": {
+            "resolved_bindings": 300,
+            "status": "success"
+          },
+          "legacy": {
+            "resolved_bindings": 300,
+            "status": "success"
+          }
+        }
+      },
+      "validation_results_identical": true
+    },
+    "synthetic": {
+      "average_bindings_per_source": 2.8421052631578947,
+      "average_contributors_per_output": 9,
+      "contract_disabled_seconds": 0.0006973999552428722,
+      "contract_enabled_seconds": 0.10792110004695132,
+      "core_capture_overhead_seconds": 0.10722370009170845,
+      "entity_counts": {
+        "environment_records": 1,
+        "evidence_links": 54,
+        "evidence_records": 54,
+        "explicit_dispositions": 7,
+        "generated_origins": 28,
+        "generation_bindings": 54,
+        "generation_occurrences": 36,
+        "generator_manifests": 1,
+        "generator_operation_results": 8,
+        "hierarchy_records": 0,
+        "migration_records": 0,
+        "perceptual_support_records": 29,
+        "predicate_profiles": 1,
+        "source_information_records": 19,
+        "support_space_records": 1
+      },
+      "entity_storage_bytes": {
+        "environment_records": 490,
+        "evidence_links": 24624,
+        "evidence_records": 61700,
+        "explicit_dispositions": 4343,
+        "generated_origins": 21676,
+        "generation_bindings": 47486,
+        "generation_occurrences": 40808,
+        "generator_manifests": 1057,
+        "generator_operation_results": 18860,
+        "hierarchy_records": 0,
+        "legacy_occurrence_binding_projections": 19400,
+        "legacy_source_binding_projections": 11437,
+        "migration_records": 0,
+        "perceptual_support_records": 22350,
+        "predicate_profiles": 934,
+        "source_information_records": 13563,
+        "support_space_records": 1090
+      },
+      "max_contributors": 9,
+      "max_path_depth": 8,
+      "output_bytes": 144,
+      "peak_rss_bytes": 35287040,
+      "relation_evidence_storage_bytes": 133810,
+      "snapshot_build_seconds": 2.5487907000351697,
+      "snapshot_record_bytes": 5081,
+      "snapshot_validation_seconds": 2.0102081999648362
+    },
+    "tpch": {
+      "sf_0_01_q1": {
+        "average_bindings_per_source": 2.971283755712505,
+        "backward_lineage_seconds": 0.5180077999830246,
+        "contract_disabled_seconds": 0.49050090002128854,
+        "contract_enabled_seconds": 188.52908800001023,
+        "core_capture_overhead_seconds": 188.03858709998894,
+        "duckdb_reference_seconds": 0.0034777999971993268,
+        "forward_lineage_seconds": 0.6066003000014462,
+        "output_bytes": 1710,
+        "peak_rss_bytes": 2160279552,
+        "snapshot_build_seconds": 516.3524311000365,
+        "snapshot_validation_seconds": 252.3991736000171
+      },
+      "sf_0_01_q10": {
+        "average_bindings_per_source": 1.3029074315514992,
+        "backward_lineage_seconds": 0.002773399988655001,
+        "contract_disabled_seconds": 0.09314450004603714,
+        "contract_enabled_seconds": 121.10821659996873,
+        "core_capture_overhead_seconds": 121.01507209992269,
+        "duckdb_reference_seconds": 0.014391700038686395,
+        "forward_lineage_seconds": 0.8248954000300728,
+        "output_bytes": 8886,
+        "peak_rss_bytes": 1358639104,
+        "snapshot_build_seconds": 310.5334681000095,
+        "snapshot_validation_seconds": 160.05817859998206
+      },
+      "sf_0_01_q3": {
+        "average_bindings_per_source": 1.5795500489077274,
+        "backward_lineage_seconds": 0.001857499999459833,
+        "contract_disabled_seconds": 0.4549626000225544,
+        "contract_enabled_seconds": 152.82690990000265,
+        "core_capture_overhead_seconds": 152.3719472999801,
+        "duckdb_reference_seconds": 0.011946900049224496,
+        "forward_lineage_seconds": 0.40002579998690635,
+        "output_bytes": 1300,
+        "peak_rss_bytes": 1570525184,
+        "snapshot_build_seconds": 381.39737190003507,
+        "snapshot_validation_seconds": 150.49611849995563
+      },
+      "sf_0_01_q6": {
+        "average_bindings_per_source": 1.0395845450768593,
+        "backward_lineage_seconds": 0.0046847999910824,
+        "contract_disabled_seconds": 0.07969619997311383,
+        "contract_enabled_seconds": 90.5737758000032,
+        "core_capture_overhead_seconds": 90.49407960003009,
+        "duckdb_reference_seconds": 0.0028486999799497426,
+        "forward_lineage_seconds": 0.18894949997775257,
+        "output_bytes": 50,
+        "peak_rss_bytes": 1009897472,
+        "snapshot_build_seconds": 150.2893921000068,
+        "snapshot_validation_seconds": 80.4309166999883
+      },
+      "sf_0_1_q1": null,
+      "sf_0_1_q6": null
+    }
+  },
+  "principle_replacement_classification": "SUPPORTED_IN_TESTED_SCOPE",
+  "provsql": {
+    "capabilities": null,
+    "error": "ConnectionTimeout: connection timeout expired",
+    "false_negatives": null,
+    "false_positives": null,
+    "image_digest": "inriavalda/provsql@sha256:57c7877fe86638f201bc26fc0cb8ef759aeb09e9bfc03789c2d3a2b315305268",
+    "pinned_source_audit": {
+      "audit_note": "The originally specified ProvSQL 1.3.0 did not provide sr_which. ProvSQL 1.4.0 is the first formal release whose release notes and tagged source include the compiled sr_which evaluator.",
+      "build_environment": "debian:bookworm",
+      "compile_commands": [
+        "make -j$(nproc)",
+        "make install"
+      ],
+      "docker_hub_url": "https://hub.docker.com/layers/inriavalda/provsql/1.4.0/images/sha256-a5e3326de148f1a021df8eec2ae9f71b1f5bf672dd82bbaa9652791e6dcfe09e",
+      "git_commit": "37fc44474b75d3d0594e44b794b744675457eb7d",
+      "image_index_digest": "sha256:57c7877fe86638f201bc26fc0cb8ef759aeb09e9bfc03789c2d3a2b315305268",
+      "linux_amd64_manifest_digest": "sha256:a5e3326de148f1a021df8eec2ae9f71b1f5bf672dd82bbaa9652791e6dcfe09e",
+      "originally_requested_release": "v1.3.0",
+      "postgresql_major": 17,
+      "release_notes_url": "https://provsql.org/releases/#version-1-4-0",
+      "selected_release": "v1.4.0",
+      "source_url": "https://github.com/PierreSenellart/provsql/tree/v1.4.0",
+      "sr_counting_available": true,
+      "sr_how_available": true,
+      "sr_which_available": true,
+      "sr_which_introduced_in": "1.4.0",
+      "sr_why_available": true
+    },
+    "queries": {},
+    "reason": "PostgreSQL/ProvSQL container is unreachable; no external lineage comparison was executed.",
+    "required_evaluator": "sr_which(provenance(), 'provsql_tuple_mapping')",
+    "required_image": "inriavalda/provsql:1.4.0@sha256:57c7877fe86638f201bc26fc0cb8ef759aeb09e9bfc03789c2d3a2b315305268",
+    "status": "external_comparator_unavailable",
+    "supplementary_counting_results": {
+      "status": "not_run"
+    },
+    "supplementary_how_results": {
+      "status": "not_run"
+    },
+    "supplementary_why_results": {
+      "status": "not_run"
+    },
+    "total_output_rows": 0,
+    "which_lineage_exact_matches": 0
+  },
+  "resource_limits": {
+    "reason": "projected_memory_exceeds_available_hardware",
+    "relation_model_failure": false,
+    "sf_0_1_q1_not_run": true,
+    "sf_0_1_q6_status": "RESOURCE_LIMITED",
+    "validation_standard_reduced": false
+  },
+  "scalability_classification": "SCALABILITY_DEMONSTRATED_TO_462399_VALIDATED_BINDINGS",
+  "synthetic": {
+    "aggregate_contributor_checks": {
+      "customer_aggregates:00000000": {
+        "actual": [
+          "line_totals:00000000",
+          "line_totals:00000001",
+          "line_totals:00000002",
+          "line_totals:00000003",
+          "line_totals:00000004"
+        ],
+        "exact": true,
+        "expected": [
+          "line_totals:00000000",
+          "line_totals:00000001",
+          "line_totals:00000002",
+          "line_totals:00000003",
+          "line_totals:00000004"
+        ],
+        "false_negatives": [],
+        "false_positives": []
+      },
+      "customer_aggregates:00000001": {
+        "actual": [
+          "line_totals:00000005"
+        ],
+        "exact": true,
+        "expected": [
+          "line_totals:00000005"
+        ],
+        "false_negatives": [],
+        "false_positives": []
+      }
+    },
+    "backward_exact_matches": 1,
+    "backward_false_negatives": 0,
+    "backward_false_positives": 0,
+    "backward_total": 1,
+    "cases": 13,
+    "determinism": {
+      "bindings_equal": true,
+      "dispositions_equal": true,
+      "evidence_equal": true,
+      "lineage_equal": true,
+      "occurrences_equal": true,
+      "origins_equal": true,
+      "outputs_equal": true,
+      "semantic_snapshots_equal": true,
+      "supports_equal": true
+    },
+    "direct_relation_exact_matches": 1,
+    "direct_relation_total": 1,
+    "fabricated_pairings": 0,
+    "false_negative_relations": 0,
+    "false_positive_relations": 0,
+    "forward_exact_matches": 19,
+    "forward_false_negatives": 0,
+    "forward_false_positives": 0,
+    "forward_total": 19,
+    "missing_dispositions": 0,
+    "named_cases": [
+      "selection",
+      "projection",
+      "derived_column",
+      "one_to_many_join",
+      "many_to_many_join",
+      "duplicate_value_identity",
+      "group_by_sum",
+      "group_by_count",
+      "group_by_avg",
+      "sort",
+      "limit",
+      "explicit_exclusion",
+      "multistage_business_query"
+    ],
+    "output_exact_matches": 1,
+    "output_orthogonality": {
+      "csv_byte_identical": true,
+      "csv_sha256": "acd1070a778de25b0d8884336f5cca92b34eb5e5966a5332363bddec9c96ad69",
+      "forbidden_fields": [],
+      "json_byte_identical": true,
+      "json_sha256": "7e58890bbfeecdc3200a497be0e3ce19e961f2af130e7be9d672337a9d82cf7d",
+      "schema_equal": true
+    },
+    "output_total": 1,
+    "performance": {
+      "average_bindings_per_source": 2.8421052631578947,
+      "average_contributors_per_output": 9,
+      "contract_disabled_seconds": 0.0006973999552428722,
+      "contract_enabled_seconds": 0.10792110004695132,
+      "core_capture_overhead_seconds": 0.10722370009170845,
+      "entity_counts": {
+        "environment_records": 1,
+        "evidence_links": 54,
+        "evidence_records": 54,
+        "explicit_dispositions": 7,
+        "generated_origins": 28,
+        "generation_bindings": 54,
+        "generation_occurrences": 36,
+        "generator_manifests": 1,
+        "generator_operation_results": 8,
+        "hierarchy_records": 0,
+        "migration_records": 0,
+        "perceptual_support_records": 29,
+        "predicate_profiles": 1,
+        "source_information_records": 19,
+        "support_space_records": 1
+      },
+      "entity_storage_bytes": {
+        "environment_records": 490,
+        "evidence_links": 24624,
+        "evidence_records": 61700,
+        "explicit_dispositions": 4343,
+        "generated_origins": 21676,
+        "generation_bindings": 47486,
+        "generation_occurrences": 40808,
+        "generator_manifests": 1057,
+        "generator_operation_results": 18860,
+        "hierarchy_records": 0,
+        "legacy_occurrence_binding_projections": 19400,
+        "legacy_source_binding_projections": 11437,
+        "migration_records": 0,
+        "perceptual_support_records": 22350,
+        "predicate_profiles": 934,
+        "source_information_records": 13563,
+        "support_space_records": 1090
+      },
+      "max_contributors": 9,
+      "max_path_depth": 8,
+      "output_bytes": 144,
+      "peak_rss_bytes": 35287040,
+      "relation_evidence_storage_bytes": 133810,
+      "snapshot_build_seconds": 2.5487907000351697,
+      "snapshot_record_bytes": 5081,
+      "snapshot_validation_seconds": 2.0102081999648362
+    },
+    "status": "passed",
+    "unexpected_dispositions": 0,
+    "validation": {
+      "bindings_covered": true,
+      "dispositions_covered": true,
+      "evidence_authority_valid": true,
+      "evidence_covered": true,
+      "fabricated_pairing_count": 0,
+      "foreign_keys_valid": true,
+      "input_output_plan_environment_hashes_complete": true,
+      "occurrences_covered": true,
+      "one_primary_evidence_per_binding": true,
+      "one_successful_operation_per_binding": true,
+      "operation_closure_complete": true,
+      "origins_covered": true,
+      "orphan_entities": 0,
+      "related_entities_valid": true,
+      "relation_material_exact": true,
+      "silent_loss_count": 0,
+      "snapshot_validator_passed": true,
+      "supports_covered": true
+    }
+  },
+  "tpch": {
+    "sf_0_01": {
+      "q1": {
+        "direct_structure_audit": {
+          "aggregation_contributor_count_failures": [],
+          "broken_generated_origin_bridges": [],
+          "direct_binding_count": 178797,
+          "disposition_reason_counts": {
+            "selection_excluded": 868
+          },
+          "fabricated_base_to_final_bindings": [],
+          "fabricated_pairing_count": 0,
+          "join_role_failures": [],
+          "mismatched_occurrence_inputs": [],
+          "passed": true
+        },
+        "duckdb_comparison": {
+          "actual_row_count": 4,
+          "exact": true,
+          "expected_row_count": 4,
+          "mismatch_count": 0,
+          "mismatches": []
+        },
+        "lineage": {
+          "average_contributors": 14826.75,
+          "forward_nonempty_source_rows": 59307,
+          "max_contributors": 29181,
+          "max_path_depth": 5,
+          "output_rows": 4,
+          "outputs_with_backward_lineage": 4,
+          "path_counts": {
+            "A|F": 14876,
+            "N|F": 348,
+            "N|O": 29181,
+            "R|F": 14902
+          }
+        },
+        "official_answer_comparison": {
+          "actual_row_count": 4,
+          "display_difference_count": 4,
+          "display_differences": [
+            {
+              "actual_display": "380456.00",
+              "column": "sum_qty",
+              "official_display": "380456",
+              "row": 0
+            },
+            {
+              "actual_display": "8971.00",
+              "column": "sum_qty",
+              "official_display": "8971",
+              "row": 1
+            },
+            {
+              "actual_display": "742802.00",
+              "column": "sum_qty",
+              "official_display": "742802",
+              "row": 2
+            },
+            {
+              "actual_display": "381449.00",
+              "column": "sum_qty",
+              "official_display": "381449",
+              "row": 3
+            }
+          ],
+          "exact_after_typed_parse": true,
+          "expected_row_count": 4,
+          "mismatch_count": 0,
+          "mismatches": [],
+          "normalization_rule": "parse official display text to the exact actual SQL result type; no rounding or epsilon"
+        },
+        "official_answer_exact_match": true,
+        "operator_plan": [
+          "selection",
+          "projection/derived expressions",
+          "group-by SUM/AVG/COUNT",
+          "projection of SQL AVG type",
+          "sort"
+        ],
+        "output": {
+          "csv_bytes": 599,
+          "csv_sha256": "6d7cda2a814e75d1313a32764e0f7d365a86f3dc868331d54396dab91e709b18",
+          "json_bytes": 1111,
+          "json_sha256": "8656675e7811a00dcd29d4cd29b7e8c892e5609e7d74ce94cb81bebd02cc13a9",
+          "row_count": 4
+        },
+        "output_exact_match_duckdb": true,
+        "output_orthogonality": {
+          "csv_byte_identical": true,
+          "csv_sha256": "6d7cda2a814e75d1313a32764e0f7d365a86f3dc868331d54396dab91e709b18",
+          "forbidden_fields": [],
+          "json_byte_identical": true,
+          "json_sha256": "8656675e7811a00dcd29d4cd29b7e8c892e5609e7d74ce94cb81bebd02cc13a9",
+          "schema_equal": true
+        },
+        "performance": {
+          "average_bindings_per_source": 2.971283755712505,
+          "backward_lineage_seconds": 0.5180077999830246,
+          "contract_disabled_seconds": 0.49050090002128854,
+          "contract_enabled_seconds": 188.52908800001023,
+          "core_capture_overhead_seconds": 188.03858709998894,
+          "duckdb_reference_seconds": 0.0034777999971993268,
+          "forward_lineage_seconds": 0.6066003000014462,
+          "output_bytes": 1710,
+          "peak_rss_bytes": 2160279552,
+          "snapshot_build_seconds": 516.3524311000365,
+          "snapshot_validation_seconds": 252.3991736000171
+        },
+        "query_number": 1,
+        "scale_factor": 0.01,
+        "snapshot": {
+          "binding_count": 178797,
+          "entity_counts": {
+            "environment_records": 1,
+            "evidence_links": 178797,
+            "evidence_records": 178797,
+            "explicit_dispositions": 868,
+            "generated_origins": 118622,
+            "generation_bindings": 178797,
+            "generation_occurrences": 119494,
+            "generator_manifests": 1,
+            "generator_operation_results": 5,
+            "hierarchy_records": 0,
+            "migration_records": 0,
+            "perceptual_support_records": 118626,
+            "predicate_profiles": 1,
+            "source_information_records": 60175,
+            "support_space_records": 1
+          },
+          "entity_storage_bytes": {
+            "environment_records": 566,
+            "evidence_links": 81531432,
+            "evidence_records": 204304796,
+            "explicit_dispositions": 537991,
+            "generated_origins": 90983090,
+            "generation_bindings": 157289817,
+            "generation_occurrences": 158285742,
+            "generator_manifests": 1124,
+            "generator_operation_results": 50780535,
+            "hierarchy_records": 0,
+            "legacy_occurrence_binding_projections": 77885796,
+            "legacy_source_binding_projections": 38004857,
+            "migration_records": 0,
+            "perceptual_support_records": 90214995,
+            "predicate_profiles": 934,
+            "source_information_records": 71426568,
+            "support_space_records": 1090
+          },
+          "evidence_exactly_one_per_binding": true,
+          "evidence_resolved": 178797,
+          "fabricated_pairing_count": 0,
+          "relation_evidence_storage_bytes": 443126045,
+          "silent_loss_count": 0,
+          "snapshot_id": "snap3_7cdd99ddd251425ea48b62e2f74d02c132f32a8409d0513ee00182478c5a95af",
+          "snapshot_record": {
+            "authoritative_table_counts": {
+              "environment_records": 1,
+              "evidence_links": 178797,
+              "evidence_records": 178797,
+              "explicit_dispositions": 868,
+              "generated_origins": 118622,
+              "generation_bindings": 178797,
+              "generation_occurrences": 119494,
+              "generator_manifests": 1,
+              "generator_operation_results": 5,
+              "hierarchy_records": 0,
+              "migration_records": 0,
+              "perceptual_support_records": 118626,
+              "predicate_profiles": 1,
+              "source_information_records": 60175,
+              "support_space_records": 1
+            },
+            "authoritative_table_hashes": {
+              "environment_records": "619e6211d055466f4ef19e251c5d10cb4b1611a42fc8e486826897d6f3dcaf8a",
+              "evidence_links": "24d7ce665a86c66d3a4abffe4cdfd2fd176b88d21f248d6cd394a50ff8ec672e",
+              "evidence_records": "b089ee70ee8cd8f5d34686630102cba01fef2e6749f9a98d9f71c5f5e6781173",
+              "explicit_dispositions": "d5919238afd7770cb46f487d0f8cc87fa11fb57761d7c737b2efaff333c9f083",
+              "generated_origins": "727f47d80057c7b42afd7925bf90498a9a43ec5f857e88bddf5125f4e3e0faa3",
+              "generation_bindings": "9d8ccef03bb386b914099f3202faf04418d18999994e083c330d34837b8ea5ac",
+              "generation_occurrences": "9ae4d691c1e0e5233266aa0520394284afab60393c6a14878ea21ecdd9f47cd3",
+              "generator_manifests": "36f513898606a8a98c139c932be8b978189ad9b0c2c301074e90f7bb66062c70",
+              "generator_operation_results": "a0f699c44763cd6f65f12fb45502df135d434581dd40baac665dac58daedf4b7",
+              "hierarchy_records": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "migration_records": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "perceptual_support_records": "7fefa23a6f7c1ae0c189fb08f5eb7a0e71c3e5d5838e0ff518d97e466ec90728",
+              "predicate_profiles": "efb285e6396933961a9c1ea13106a5599c69816e4637beac429877c9c6e3e857",
+              "source_information_records": "79414089d3154e7cc1c7953d8f2b9fc0aff6becd655734c4a3c8246b18d02d8a",
+              "support_space_records": "037f63413c24c78b01b753b304364979a8831289995d129b335e6ad9beaed310"
+            },
+            "derived_projection_table_counts": {
+              "legacy_occurrence_binding_projections": 118626,
+              "legacy_source_binding_projections": 59307
+            },
+            "derived_projection_table_hashes": {
+              "legacy_occurrence_binding_projections": "1b81ed15df286d088d94cf6263d278016e88fbe39e49a18df11a6d0355a07a47",
+              "legacy_source_binding_projections": "edc2ff3d3bc24c67102639f6abf804b6a09b93af4ebb4028aa3f0d9e7a06811d"
+            },
+            "environment_record_ids": [
+              "env3_6984e43e51fb87b02cc8c236a367b9b1cecf39378bee58a4371af1bda4aefecb"
+            ],
+            "generator_manifest_ids": [
+              "gm3_7ada2e72eb7ddca701fd58b8634f2ba0bb8e58ce0ae221083aa7c35d09f34496"
+            ],
+            "generator_operation_result_ids": [
+              "gorv3_76a51700e762ed223e320676fd3462956512e1286cdc786d345dfe210647cb4f",
+              "gorv3_78e58dc030dbe58cf501dcc0710c72098fc0ae29952a6b3a33c97c08b99a1014",
+              "gorv3_cd5bf494ea9d87070572b62908ad33766cb2a6d87dba3387831c4b0bc3855f91",
+              "gorv3_e4ee355289e606c8ad5ff5f70b7f36a70b5aa8a1207a1aa77dc43d3adee65cf4",
+              "gorv3_e85f9431121d7245f15b60a00213b809bc0bf7416ea9c6822b11d2af4d46a74b"
+            ],
+            "implementation_hashes": {
+              "protocol/core_v3/canonical_serialization_v3.json": "9fbb75149af666a1c0d298de8108da79c0124e75d44cd886c80877fd07030c2f",
+              "protocol/core_v3/core_v3_entities.schema.json": "27c429695cffac8cea6cf52f2fd57e35fac3fe81bf251a5fd446f95d93bb4720",
+              "protocol/core_v3/core_v3_protocol.json": "e0936397954e7567a79aa0a0870bc0b22b55ed9c133992de868c2ff62543b51a",
+              "protocol/core_v3/test_vectors/canonical_negative.json": "359d29405aa9a95a297f93225a03a525082b94f5241586368a9e043bb7935de3",
+              "protocol/core_v3/test_vectors/canonical_positive.json": "49f27941a16a4607682950753b6c031f630b595747cb69432ebc1bde19edfa17",
+              "src/generation_relation_core/__init__.py": "0463e4f772828deb3dacb7d4efa86be0e9298cdcd6aceb749405a03f9476c404",
+              "src/generation_relation_core/canonical.py": "bfadf2db3bfc1233207ec8745f97c5700a8e171d4c0b8a871bc65a0441db1966",
+              "src/generation_relation_core/entities.py": "7f8de4d3d1d20f53c3b5413b4ab03a901fb202341d16133d67db9c7d8e970696",
+              "src/generation_relation_core/errors.py": "2da2fabb8634e5121bc42c49e7952c698509aed5be5f22f48cbe9bffe5be5915",
+              "src/generation_relation_core/implementation_identity.py": "5baa5d3203eea28b1c95afc545fe56f06a965bb3c1222a44ecfcb6b364b4a1a8",
+              "src/generation_relation_core/predicate_registry.py": "0900e1866467e9669666238c65e6265ef5027651753ace190798c37f8e768f16",
+              "src/generation_relation_core/query_engine.py": "86be637a622b200e1b5dffbfe7caa1eb8a2eae4623df10cbc85c8033b8a49fef",
+              "src/generation_relation_core/relation_evidence.py": "adacf92b4da59b81634fa8301584d9c36059f9ace3b920afe1cc3a36172821d2",
+              "src/generation_relation_core/schema_registry.py": "b468241cfbfdff4d8e1bccaf65f9610d6de29864d13172bf65e74074656befba",
+              "src/generation_relation_core/snapshots.py": "a022244bb0c3c6426c2a4e70b817a58258d8fcaecd82ebdc0626473e2e3d7a29"
+            },
+            "protocol_sha256": "200faf3057ce5d4bc9eefa32de7881fd2922aa44f751ef03b2e9543cd3221daa",
+            "protocol_version": "sidecar-core-v3-generation-relation-v1",
+            "schema_version": "3.0.0",
+            "snapshot_id": "snap3_7cdd99ddd251425ea48b62e2f74d02c132f32a8409d0513ee00182478c5a95af",
+            "snapshot_payload_sha256": "7cdd99ddd251425ea48b62e2f74d02c132f32a8409d0513ee00182478c5a95af"
+          },
+          "snapshot_record_bytes": 4898,
+          "validated": true
+        },
+        "sql": "SELECT\n    l_returnflag,\n    l_linestatus,\n    sum(l_quantity) AS sum_qty,\n    sum(l_extendedprice) AS sum_base_price,\n    sum(l_extendedprice * (1 - l_discount)) AS sum_disc_price,\n    sum(l_extendedprice * (1 - l_discount) * (1 + l_tax)) AS sum_charge,\n    avg(l_quantity) AS avg_qty,\n    avg(l_extendedprice) AS avg_price,\n    avg(l_discount) AS avg_disc,\n    count(*) AS count_order\nFROM\n    lineitem\nWHERE\n    l_shipdate <= CAST('1998-09-02' AS date)\nGROUP BY\n    l_returnflag,\n    l_linestatus\nORDER BY\n    l_returnflag,\n    l_linestatus;\n",
+        "status": "passed"
+      },
+      "q10": {
+        "direct_structure_audit": {
+          "aggregation_contributor_count_failures": [],
+          "broken_generated_origin_bridges": [],
+          "direct_binding_count": 99933,
+          "disposition_reason_counts": {
+            "join_unmatched_left": 1142,
+            "join_unmatched_right": 13643,
+            "limit_excluded": 379,
+            "selection_excluded": 59662
+          },
+          "fabricated_base_to_final_bindings": [],
+          "fabricated_pairing_count": 0,
+          "join_role_failures": [],
+          "mismatched_occurrence_inputs": [],
+          "passed": true
+        },
+        "duckdb_comparison": {
+          "actual_row_count": 20,
+          "exact": true,
+          "expected_row_count": 20,
+          "mismatch_count": 0,
+          "mismatches": []
+        },
+        "lineage": {
+          "average_contributors": 12.4,
+          "forward_nonempty_source_rows": 242,
+          "max_contributors": 16,
+          "max_path_depth": 9,
+          "output_rows": 20,
+          "outputs_with_backward_lineage": 20,
+          "path_counts": {
+            "1030|Customer#000001030|17": 24,
+            "1049|Customer#000001049|18": 24,
+            "1094|Customer#000001094|19": 20,
+            "1118|Customer#000001118|9": 44,
+            "1201|Customer#000001201|1": 36,
+            "1441|Customer#000001441|13": 40,
+            "1478|Customer#000001478|14": 24,
+            "197|Customer#000000197|16": 32,
+            "211|Customer#000000211|15": 28,
+            "223|Customer#000000223|10": 36,
+            "334|Customer#000000334|3": 28,
+            "422|Customer#000000422|2": 28,
+            "478|Customer#000000478|12": 32,
+            "679|Customer#000000679|0": 40,
+            "737|Customer#000000737|8": 28,
+            "805|Customer#000000805|4": 32,
+            "808|Customer#000000808|11": 32,
+            "853|Customer#000000853|6": 36,
+            "872|Customer#000000872|7": 40,
+            "932|Customer#000000932|5": 32
+          }
+        },
+        "official_answer_comparison": {
+          "actual_row_count": 20,
+          "display_difference_count": 0,
+          "display_differences": [],
+          "exact_after_typed_parse": true,
+          "expected_row_count": 20,
+          "mismatch_count": 0,
+          "mismatches": [],
+          "normalization_rule": "parse official display text to the exact actual SQL result type; no rounding or epsilon"
+        },
+        "official_answer_exact_match": true,
+        "operator_plan": [
+          "orders selection",
+          "lineitem selection",
+          "customer-orders join",
+          "orders-lineitem join",
+          "nation join",
+          "derived revenue",
+          "group-by SUM",
+          "sort",
+          "limit"
+        ],
+        "output": {
+          "csv_bytes": 3447,
+          "csv_sha256": "f2018cc8e7d53fb54e43cbc104955564f943493b91b5bb8b3bde7ea05a65bbb4",
+          "json_bytes": 5439,
+          "json_sha256": "cd7df63313cad3a9f94de6b643d3b8e8e95b1b6e16361a1733345a528f07fe01",
+          "row_count": 20
+        },
+        "output_exact_match_duckdb": true,
+        "output_orthogonality": {
+          "csv_byte_identical": true,
+          "csv_sha256": "f2018cc8e7d53fb54e43cbc104955564f943493b91b5bb8b3bde7ea05a65bbb4",
+          "forbidden_fields": [],
+          "json_byte_identical": true,
+          "json_sha256": "cd7df63313cad3a9f94de6b643d3b8e8e95b1b6e16361a1733345a528f07fe01",
+          "schema_equal": true
+        },
+        "performance": {
+          "average_bindings_per_source": 1.3029074315514992,
+          "backward_lineage_seconds": 0.002773399988655001,
+          "contract_disabled_seconds": 0.09314450004603714,
+          "contract_enabled_seconds": 121.10821659996873,
+          "core_capture_overhead_seconds": 121.01507209992269,
+          "duckdb_reference_seconds": 0.014391700038686395,
+          "forward_lineage_seconds": 0.8248954000300728,
+          "output_bytes": 8886,
+          "peak_rss_bytes": 1358639104,
+          "snapshot_build_seconds": 310.5334681000095,
+          "snapshot_validation_seconds": 160.05817859998206
+        },
+        "query_number": 10,
+        "scale_factor": 0.01,
+        "snapshot": {
+          "binding_count": 99933,
+          "entity_counts": {
+            "environment_records": 1,
+            "evidence_links": 99933,
+            "evidence_records": 99933,
+            "explicit_dispositions": 74826,
+            "generated_origins": 21098,
+            "generation_bindings": 99933,
+            "generation_occurrences": 95944,
+            "generator_manifests": 1,
+            "generator_operation_results": 10,
+            "hierarchy_records": 0,
+            "migration_records": 0,
+            "perceptual_support_records": 21118,
+            "predicate_profiles": 1,
+            "source_information_records": 76700,
+            "support_space_records": 1
+          },
+          "entity_storage_bytes": {
+            "environment_records": 566,
+            "evidence_links": 45569448,
+            "evidence_records": 114145312,
+            "explicit_dispositions": 46547631,
+            "generated_origins": 16364912,
+            "generation_bindings": 88560364,
+            "generation_occurrences": 97853656,
+            "generator_manifests": 1124,
+            "generator_operation_results": 28385355,
+            "hierarchy_records": 0,
+            "legacy_occurrence_binding_projections": 13505597,
+            "legacy_source_binding_projections": 11121930,
+            "migration_records": 0,
+            "perceptual_support_records": 16333968,
+            "predicate_profiles": 934,
+            "source_information_records": 86679087,
+            "support_space_records": 1090
+          },
+          "evidence_exactly_one_per_binding": true,
+          "evidence_resolved": 99933,
+          "fabricated_pairing_count": 0,
+          "relation_evidence_storage_bytes": 248275124,
+          "silent_loss_count": 0,
+          "snapshot_id": "snap3_4aeeeba8aaef37982b48db1d25ef27ed4c9ee79157dfdcaa5643d6591aa97a45",
+          "snapshot_record": {
+            "authoritative_table_counts": {
+              "environment_records": 1,
+              "evidence_links": 99933,
+              "evidence_records": 99933,
+              "explicit_dispositions": 74826,
+              "generated_origins": 21098,
+              "generation_bindings": 99933,
+              "generation_occurrences": 95944,
+              "generator_manifests": 1,
+              "generator_operation_results": 10,
+              "hierarchy_records": 0,
+              "migration_records": 0,
+              "perceptual_support_records": 21118,
+              "predicate_profiles": 1,
+              "source_information_records": 76700,
+              "support_space_records": 1
+            },
+            "authoritative_table_hashes": {
+              "environment_records": "619e6211d055466f4ef19e251c5d10cb4b1611a42fc8e486826897d6f3dcaf8a",
+              "evidence_links": "31cb4a0d479794632306f071b1d1ca49ec36a7cd633deb5dfde81468f9ea8be9",
+              "evidence_records": "308bac08c6936ce32f8ee7a35c4222c91082bbac39cfe3b082bf714808b41476",
+              "explicit_dispositions": "32d7b287be582344cce813ed8ca135536ea703b232d259c53cc0c82d1a3037f0",
+              "generated_origins": "c91dfb15b0ab677c05b0c1b166e1abea56ee7bd29ccc6041f63f1b0a63b348f6",
+              "generation_bindings": "e474221dca0155e1dc2e8aca57c820153e8bc35394dc138ab51f441e66d289b9",
+              "generation_occurrences": "5617a94f98012e38a05ad84d0a9dbfb03a6498dcd75cf80ecc1fa7d0e63310b5",
+              "generator_manifests": "36f513898606a8a98c139c932be8b978189ad9b0c2c301074e90f7bb66062c70",
+              "generator_operation_results": "1e3627211d1b4e6f3c8b7f6ac6d976576d64ff69991ed72d036a20f1d1f0c9e7",
+              "hierarchy_records": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "migration_records": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "perceptual_support_records": "2face3d866c1ed5097970758b6f165fe627788be91123eda45c554ae1390adf5",
+              "predicate_profiles": "efb285e6396933961a9c1ea13106a5599c69816e4637beac429877c9c6e3e857",
+              "source_information_records": "d3061235c60f4262242f57d91bc30a5520fcec0717b2b2a7f92d2fc587acf045",
+              "support_space_records": "037f63413c24c78b01b753b304364979a8831289995d129b335e6ad9beaed310"
+            },
+            "derived_projection_table_counts": {
+              "legacy_occurrence_binding_projections": 21118,
+              "legacy_source_binding_projections": 17383
+            },
+            "derived_projection_table_hashes": {
+              "legacy_occurrence_binding_projections": "650dc40b1c736c05ba85ccf200dad96ec711ee332949321bc818090c56be16be",
+              "legacy_source_binding_projections": "f3a4c5ecd5e88e7b3571edecca56cb29674d867d6fc098f061b36df07810fd9b"
+            },
+            "environment_record_ids": [
+              "env3_6984e43e51fb87b02cc8c236a367b9b1cecf39378bee58a4371af1bda4aefecb"
+            ],
+            "generator_manifest_ids": [
+              "gm3_7ada2e72eb7ddca701fd58b8634f2ba0bb8e58ce0ae221083aa7c35d09f34496"
+            ],
+            "generator_operation_result_ids": [
+              "gorv3_10df0a0895f2f755966a4ccf977fb94858153b300f8925a64c7822105cb6f1e2",
+              "gorv3_22ef6ced68e49c74e24c93bba8b181b3306089488799c20eedbdba70bb39dbdf",
+              "gorv3_2f0fe486f66fe77c55234d0984cadf324bb0f0ded35679187e8d8f5782d3c4c1",
+              "gorv3_46373cb1c3268be2ead09a6b3722adcc91a6310ca012c19ce6be6a589a1119ed",
+              "gorv3_5c9b307331e6816202b9039120be9de59f83a5448ef2c6a6b41f4eb1458935b8",
+              "gorv3_5ec63be5bed25452a73e47d076f439fe27e8429225c807b04386c237c45fe03a",
+              "gorv3_702441ba2c073edd417fabd557c0f48b07410e2cdadc855c59949d86a42d139c",
+              "gorv3_71bb91a26f167a459b22af144b8dd330653c921b762ae61a61793e93cc12f6c0",
+              "gorv3_73809681aaa449872c8a2b898a8720cf198cf1813a08167aa4c210b0692f77c1",
+              "gorv3_8300b626c44c205643e1482a35ba9c3be79b4cc78c48f97131429c4bcf93d2eb"
+            ],
+            "implementation_hashes": {
+              "protocol/core_v3/canonical_serialization_v3.json": "9fbb75149af666a1c0d298de8108da79c0124e75d44cd886c80877fd07030c2f",
+              "protocol/core_v3/core_v3_entities.schema.json": "27c429695cffac8cea6cf52f2fd57e35fac3fe81bf251a5fd446f95d93bb4720",
+              "protocol/core_v3/core_v3_protocol.json": "e0936397954e7567a79aa0a0870bc0b22b55ed9c133992de868c2ff62543b51a",
+              "protocol/core_v3/test_vectors/canonical_negative.json": "359d29405aa9a95a297f93225a03a525082b94f5241586368a9e043bb7935de3",
+              "protocol/core_v3/test_vectors/canonical_positive.json": "49f27941a16a4607682950753b6c031f630b595747cb69432ebc1bde19edfa17",
+              "src/generation_relation_core/__init__.py": "0463e4f772828deb3dacb7d4efa86be0e9298cdcd6aceb749405a03f9476c404",
+              "src/generation_relation_core/canonical.py": "bfadf2db3bfc1233207ec8745f97c5700a8e171d4c0b8a871bc65a0441db1966",
+              "src/generation_relation_core/entities.py": "7f8de4d3d1d20f53c3b5413b4ab03a901fb202341d16133d67db9c7d8e970696",
+              "src/generation_relation_core/errors.py": "2da2fabb8634e5121bc42c49e7952c698509aed5be5f22f48cbe9bffe5be5915",
+              "src/generation_relation_core/implementation_identity.py": "5baa5d3203eea28b1c95afc545fe56f06a965bb3c1222a44ecfcb6b364b4a1a8",
+              "src/generation_relation_core/predicate_registry.py": "0900e1866467e9669666238c65e6265ef5027651753ace190798c37f8e768f16",
+              "src/generation_relation_core/query_engine.py": "86be637a622b200e1b5dffbfe7caa1eb8a2eae4623df10cbc85c8033b8a49fef",
+              "src/generation_relation_core/relation_evidence.py": "adacf92b4da59b81634fa8301584d9c36059f9ace3b920afe1cc3a36172821d2",
+              "src/generation_relation_core/schema_registry.py": "b468241cfbfdff4d8e1bccaf65f9610d6de29864d13172bf65e74074656befba",
+              "src/generation_relation_core/snapshots.py": "a022244bb0c3c6426c2a4e70b817a58258d8fcaecd82ebdc0626473e2e3d7a29"
+            },
+            "protocol_sha256": "200faf3057ce5d4bc9eefa32de7881fd2922aa44f751ef03b2e9543cd3221daa",
+            "protocol_version": "sidecar-core-v3-generation-relation-v1",
+            "schema_version": "3.0.0",
+            "snapshot_id": "snap3_4aeeeba8aaef37982b48db1d25ef27ed4c9ee79157dfdcaa5643d6591aa97a45",
+            "snapshot_payload_sha256": "4aeeeba8aaef37982b48db1d25ef27ed4c9ee79157dfdcaa5643d6591aa97a45"
+          },
+          "snapshot_record_bytes": 5259,
+          "validated": true
+        },
+        "sql": "SELECT\n    c_custkey,\n    c_name,\n    sum(l_extendedprice * (1 - l_discount)) AS revenue,\n    c_acctbal,\n    n_name,\n    c_address,\n    c_phone,\n    c_comment\nFROM\n    customer,\n    orders,\n    lineitem,\n    nation\nWHERE\n    c_custkey = o_custkey\n    AND l_orderkey = o_orderkey\n    AND o_orderdate >= CAST('1993-10-01' AS date)\n    AND o_orderdate < CAST('1994-01-01' AS date)\n    AND l_returnflag = 'R'\n    AND c_nationkey = n_nationkey\nGROUP BY\n    c_custkey,\n    c_name,\n    c_acctbal,\n    c_phone,\n    n_name,\n    c_address,\n    c_comment\nORDER BY\n    revenue DESC\nLIMIT 20;\n",
+        "status": "passed"
+      },
+      "q3": {
+        "direct_structure_audit": {
+          "aggregation_contributor_count_failures": [],
+          "broken_generated_origin_bridges": [],
+          "direct_binding_count": 121112,
+          "disposition_reason_counts": {
+            "join_unmatched_left": 1750,
+            "join_unmatched_right": 37393,
+            "limit_excluded": 128,
+            "selection_excluded": 36792
+          },
+          "fabricated_base_to_final_bindings": [],
+          "fabricated_pairing_count": 0,
+          "join_role_failures": [],
+          "mismatched_occurrence_inputs": [],
+          "passed": true
+        },
+        "duckdb_comparison": {
+          "actual_row_count": 10,
+          "exact": true,
+          "expected_row_count": 10,
+          "mismatch_count": 0,
+          "mismatches": []
+        },
+        "lineage": {
+          "average_contributors": 7.5,
+          "forward_nonempty_source_rows": 75,
+          "max_contributors": 9,
+          "max_path_depth": 7,
+          "output_rows": 10,
+          "outputs_with_backward_lineage": 10,
+          "path_counts": {
+            "10916|1995-03-11|0": 21,
+            "1637|1995-02-08|0": 15,
+            "21956|1995-02-02|0": 12,
+            "22276|1995-01-29|0": 21,
+            "30497|1995-02-07|0": 12,
+            "32965|1995-02-25|0": 21,
+            "450|1995-03-05|0": 15,
+            "47204|1995-03-13|0": 15,
+            "47714|1995-03-11|0": 21,
+            "9696|1995-02-20|0": 12
+          }
+        },
+        "official_answer_comparison": {
+          "actual_row_count": 10,
+          "display_difference_count": 0,
+          "display_differences": [],
+          "exact_after_typed_parse": true,
+          "expected_row_count": 10,
+          "mismatch_count": 0,
+          "mismatches": [],
+          "normalization_rule": "parse official display text to the exact actual SQL result type; no rounding or epsilon"
+        },
+        "official_answer_exact_match": true,
+        "operator_plan": [
+          "customer selection",
+          "orders selection",
+          "customer-orders join",
+          "lineitem selection",
+          "orders-lineitem join",
+          "derived revenue",
+          "group-by SUM",
+          "sort",
+          "limit"
+        ],
+        "output": {
+          "csv_bytes": 352,
+          "csv_sha256": "89edb0980979a8688ccc0e7f881044c9e43ac6eae468883aa66ea20e8f9387aa",
+          "json_bytes": 948,
+          "json_sha256": "76ca631e0578e9510160425b1bb3885c25c517925f744387026f373dd694aeaa",
+          "row_count": 10
+        },
+        "output_exact_match_duckdb": true,
+        "output_orthogonality": {
+          "csv_byte_identical": true,
+          "csv_sha256": "89edb0980979a8688ccc0e7f881044c9e43ac6eae468883aa66ea20e8f9387aa",
+          "forbidden_fields": [],
+          "json_byte_identical": true,
+          "json_sha256": "76ca631e0578e9510160425b1bb3885c25c517925f744387026f373dd694aeaa",
+          "schema_equal": true
+        },
+        "performance": {
+          "average_bindings_per_source": 1.5795500489077274,
+          "backward_lineage_seconds": 0.001857499999459833,
+          "contract_disabled_seconds": 0.4549626000225544,
+          "contract_enabled_seconds": 152.82690990000265,
+          "core_capture_overhead_seconds": 152.3719472999801,
+          "duckdb_reference_seconds": 0.011946900049224496,
+          "forward_lineage_seconds": 0.40002579998690635,
+          "output_bytes": 1300,
+          "peak_rss_bytes": 1570525184,
+          "snapshot_build_seconds": 381.39737190003507,
+          "snapshot_validation_seconds": 150.49611849995563
+        },
+        "query_number": 3,
+        "scale_factor": 0.01,
+        "snapshot": {
+          "binding_count": 121112,
+          "entity_counts": {
+            "environment_records": 1,
+            "evidence_links": 121112,
+            "evidence_records": 121112,
+            "explicit_dispositions": 76063,
+            "generated_origins": 42668,
+            "generation_bindings": 121112,
+            "generation_occurrences": 118741,
+            "generator_manifests": 1,
+            "generator_operation_results": 9,
+            "hierarchy_records": 0,
+            "migration_records": 0,
+            "perceptual_support_records": 42678,
+            "predicate_profiles": 1,
+            "source_information_records": 76675,
+            "support_space_records": 1
+          },
+          "entity_storage_bytes": {
+            "environment_records": 566,
+            "evidence_links": 55227072,
+            "evidence_records": 138354341,
+            "explicit_dispositions": 47590378,
+            "generated_origins": 33140014,
+            "generation_bindings": 107164836,
+            "generation_occurrences": 120624392,
+            "generator_manifests": 1124,
+            "generator_operation_results": 34399751,
+            "hierarchy_records": 0,
+            "legacy_occurrence_binding_projections": 26870726,
+            "legacy_source_binding_projections": 25512653,
+            "migration_records": 0,
+            "perceptual_support_records": 33076881,
+            "predicate_profiles": 934,
+            "source_information_records": 86660278,
+            "support_space_records": 1090
+          },
+          "evidence_exactly_one_per_binding": true,
+          "evidence_resolved": 121112,
+          "fabricated_pairing_count": 0,
+          "relation_evidence_storage_bytes": 300746249,
+          "silent_loss_count": 0,
+          "snapshot_id": "snap3_400d97b8182a096df6119be3d7538005878b26313fa222a52b3e60d7097359fd",
+          "snapshot_record": {
+            "authoritative_table_counts": {
+              "environment_records": 1,
+              "evidence_links": 121112,
+              "evidence_records": 121112,
+              "explicit_dispositions": 76063,
+              "generated_origins": 42668,
+              "generation_bindings": 121112,
+              "generation_occurrences": 118741,
+              "generator_manifests": 1,
+              "generator_operation_results": 9,
+              "hierarchy_records": 0,
+              "migration_records": 0,
+              "perceptual_support_records": 42678,
+              "predicate_profiles": 1,
+              "source_information_records": 76675,
+              "support_space_records": 1
+            },
+            "authoritative_table_hashes": {
+              "environment_records": "619e6211d055466f4ef19e251c5d10cb4b1611a42fc8e486826897d6f3dcaf8a",
+              "evidence_links": "255e81b434d41663541e31784e52857487f802b40d99eada6e55f1dd6ebf839c",
+              "evidence_records": "945893115ea76f322e3e7b54666e38f219894b5e7922ba04914f3430096320ba",
+              "explicit_dispositions": "3a611d9dc851732e71d6da2468a425d45aaa1b3819ac702f7f21157a3236e253",
+              "generated_origins": "8e7364cf3fb9dcf5e0d891f4106c3a25ddaa30daed384431fe7bc7441c58600a",
+              "generation_bindings": "b237e290417d5fc9e44a634585ced024866a544a18400ae85204a48fa84db608",
+              "generation_occurrences": "3586b59f92ddebe453464906678d05bb37cfa48192f39b69e2691213faa864d4",
+              "generator_manifests": "36f513898606a8a98c139c932be8b978189ad9b0c2c301074e90f7bb66062c70",
+              "generator_operation_results": "f26901e205b9603e2ea5d8381bc6426d0dd6b791ef630e65009b629af54d5312",
+              "hierarchy_records": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "migration_records": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "perceptual_support_records": "d70525be68ec538b8127e048780525b97589dabaaf27e838161962b87d63d329",
+              "predicate_profiles": "efb285e6396933961a9c1ea13106a5599c69816e4637beac429877c9c6e3e857",
+              "source_information_records": "20dd541b18b63d418e037c02003a4dd21cabda69128c64d15dede002e9524afa",
+              "support_space_records": "037f63413c24c78b01b753b304364979a8831289995d129b335e6ad9beaed310"
+            },
+            "derived_projection_table_counts": {
+              "legacy_occurrence_binding_projections": 42678,
+              "legacy_source_binding_projections": 39883
+            },
+            "derived_projection_table_hashes": {
+              "legacy_occurrence_binding_projections": "352a84d8ebdbf55384088fdaf9366c7034cef0640cec59b408cf14e119ec415e",
+              "legacy_source_binding_projections": "abdb845446d47bdb6b036aa4bb2bef114d0c78dc314980b13e62332362498821"
+            },
+            "environment_record_ids": [
+              "env3_6984e43e51fb87b02cc8c236a367b9b1cecf39378bee58a4371af1bda4aefecb"
+            ],
+            "generator_manifest_ids": [
+              "gm3_7ada2e72eb7ddca701fd58b8634f2ba0bb8e58ce0ae221083aa7c35d09f34496"
+            ],
+            "generator_operation_result_ids": [
+              "gorv3_4fa3875961ea4a5f2d4924f79b828e910ce0c62dc2ba55bd55b1168dc88ea658",
+              "gorv3_636b5b66283578be4a21cb4a26b20ec8daf9718b59c7469ba7e575564a574464",
+              "gorv3_68ccc4f38b445d0a24d5256f0631cc34182908ff9830a8ab2f31bb12689339d6",
+              "gorv3_8c9a1b51acf30864129331e5ed258636862398451c0141764d701ce16828926f",
+              "gorv3_a9c4d8c28584ef2d4d34adfde7ee40daadf3aa50ed9b8ba40e8ce46278294aa0",
+              "gorv3_ba04921ee9d36150f53ae1a23c72decaed909f20d962d20e18ac8e9a0d3e65b4",
+              "gorv3_c39055365627f374e3939e8108ae582188d822dd9dc1328c41a20363ca3cc906",
+              "gorv3_e272f9ce94c0bf49df7efa88907638ee6f416c6cebca7b7983b2affa84b1a509",
+              "gorv3_e2942a1dbe67e8671a3c609c7619318b47ea9f94ea47bd0c991990d9681d36d3"
+            ],
+            "implementation_hashes": {
+              "protocol/core_v3/canonical_serialization_v3.json": "9fbb75149af666a1c0d298de8108da79c0124e75d44cd886c80877fd07030c2f",
+              "protocol/core_v3/core_v3_entities.schema.json": "27c429695cffac8cea6cf52f2fd57e35fac3fe81bf251a5fd446f95d93bb4720",
+              "protocol/core_v3/core_v3_protocol.json": "e0936397954e7567a79aa0a0870bc0b22b55ed9c133992de868c2ff62543b51a",
+              "protocol/core_v3/test_vectors/canonical_negative.json": "359d29405aa9a95a297f93225a03a525082b94f5241586368a9e043bb7935de3",
+              "protocol/core_v3/test_vectors/canonical_positive.json": "49f27941a16a4607682950753b6c031f630b595747cb69432ebc1bde19edfa17",
+              "src/generation_relation_core/__init__.py": "0463e4f772828deb3dacb7d4efa86be0e9298cdcd6aceb749405a03f9476c404",
+              "src/generation_relation_core/canonical.py": "bfadf2db3bfc1233207ec8745f97c5700a8e171d4c0b8a871bc65a0441db1966",
+              "src/generation_relation_core/entities.py": "7f8de4d3d1d20f53c3b5413b4ab03a901fb202341d16133d67db9c7d8e970696",
+              "src/generation_relation_core/errors.py": "2da2fabb8634e5121bc42c49e7952c698509aed5be5f22f48cbe9bffe5be5915",
+              "src/generation_relation_core/implementation_identity.py": "5baa5d3203eea28b1c95afc545fe56f06a965bb3c1222a44ecfcb6b364b4a1a8",
+              "src/generation_relation_core/predicate_registry.py": "0900e1866467e9669666238c65e6265ef5027651753ace190798c37f8e768f16",
+              "src/generation_relation_core/query_engine.py": "86be637a622b200e1b5dffbfe7caa1eb8a2eae4623df10cbc85c8033b8a49fef",
+              "src/generation_relation_core/relation_evidence.py": "adacf92b4da59b81634fa8301584d9c36059f9ace3b920afe1cc3a36172821d2",
+              "src/generation_relation_core/schema_registry.py": "b468241cfbfdff4d8e1bccaf65f9610d6de29864d13172bf65e74074656befba",
+              "src/generation_relation_core/snapshots.py": "a022244bb0c3c6426c2a4e70b817a58258d8fcaecd82ebdc0626473e2e3d7a29"
+            },
+            "protocol_sha256": "200faf3057ce5d4bc9eefa32de7881fd2922aa44f751ef03b2e9543cd3221daa",
+            "protocol_version": "sidecar-core-v3-generation-relation-v1",
+            "schema_version": "3.0.0",
+            "snapshot_id": "snap3_400d97b8182a096df6119be3d7538005878b26313fa222a52b3e60d7097359fd",
+            "snapshot_payload_sha256": "400d97b8182a096df6119be3d7538005878b26313fa222a52b3e60d7097359fd"
+          },
+          "snapshot_record_bytes": 5189,
+          "validated": true
+        },
+        "sql": "SELECT\n    l_orderkey,\n    sum(l_extendedprice * (1 - l_discount)) AS revenue,\n    o_orderdate,\n    o_shippriority\nFROM\n    customer,\n    orders,\n    lineitem\nWHERE\n    c_mktsegment = 'BUILDING'\n    AND c_custkey = o_custkey\n    AND l_orderkey = o_orderkey\n    AND o_orderdate < CAST('1995-03-15' AS date)\n    AND l_shipdate > CAST('1995-03-15' AS date)\nGROUP BY\n    l_orderkey,\n    o_orderdate,\n    o_shippriority\nORDER BY\n    revenue DESC,\n    o_orderdate\nLIMIT 10;\n",
+        "status": "passed"
+      },
+      "q6": {
+        "direct_structure_audit": {
+          "aggregation_contributor_count_failures": [],
+          "broken_generated_origin_bridges": [],
+          "direct_binding_count": 62557,
+          "disposition_reason_counts": {
+            "selection_excluded": 58984
+          },
+          "fabricated_base_to_final_bindings": [],
+          "fabricated_pairing_count": 0,
+          "join_role_failures": [],
+          "mismatched_occurrence_inputs": [],
+          "passed": true
+        },
+        "duckdb_comparison": {
+          "actual_row_count": 1,
+          "exact": true,
+          "expected_row_count": 1,
+          "mismatch_count": 0,
+          "mismatches": []
+        },
+        "lineage": {
+          "average_contributors": 1191.0,
+          "forward_nonempty_source_rows": 1191,
+          "max_contributors": 1191,
+          "max_path_depth": 3,
+          "output_rows": 1,
+          "outputs_with_backward_lineage": 1,
+          "path_counts": {
+            "scalar:0": 1191
+          }
+        },
+        "official_answer_comparison": {
+          "actual_row_count": 1,
+          "display_difference_count": 0,
+          "display_differences": [],
+          "exact_after_typed_parse": true,
+          "expected_row_count": 1,
+          "mismatch_count": 0,
+          "mismatches": [],
+          "normalization_rule": "parse official display text to the exact actual SQL result type; no rounding or epsilon"
+        },
+        "official_answer_exact_match": true,
+        "operator_plan": [
+          "selection",
+          "derived revenue",
+          "scalar SUM"
+        ],
+        "output": {
+          "csv_bytes": 21,
+          "csv_sha256": "f0fc5c69031d81a87e2376e06bd8242fe260a452dc2d3b4c1d34704c9445c87c",
+          "json_bytes": 29,
+          "json_sha256": "92d5c251c4a231893c6022c42352a2799ae40d54acd6fa616fdece83c76e8a71",
+          "row_count": 1
+        },
+        "output_exact_match_duckdb": true,
+        "output_orthogonality": {
+          "csv_byte_identical": true,
+          "csv_sha256": "f0fc5c69031d81a87e2376e06bd8242fe260a452dc2d3b4c1d34704c9445c87c",
+          "forbidden_fields": [],
+          "json_byte_identical": true,
+          "json_sha256": "92d5c251c4a231893c6022c42352a2799ae40d54acd6fa616fdece83c76e8a71",
+          "schema_equal": true
+        },
+        "performance": {
+          "average_bindings_per_source": 1.0395845450768593,
+          "backward_lineage_seconds": 0.0046847999910824,
+          "contract_disabled_seconds": 0.07969619997311383,
+          "contract_enabled_seconds": 90.5737758000032,
+          "core_capture_overhead_seconds": 90.49407960003009,
+          "duckdb_reference_seconds": 0.0028486999799497426,
+          "forward_lineage_seconds": 0.18894949997775257,
+          "output_bytes": 50,
+          "peak_rss_bytes": 1009897472,
+          "snapshot_build_seconds": 150.2893921000068,
+          "snapshot_validation_seconds": 80.4309166999883
+        },
+        "query_number": 6,
+        "scale_factor": 0.01,
+        "snapshot": {
+          "binding_count": 62557,
+          "entity_counts": {
+            "environment_records": 1,
+            "evidence_links": 62557,
+            "evidence_records": 62557,
+            "explicit_dispositions": 58984,
+            "generated_origins": 2382,
+            "generation_bindings": 62557,
+            "generation_occurrences": 61367,
+            "generator_manifests": 1,
+            "generator_operation_results": 3,
+            "hierarchy_records": 0,
+            "migration_records": 0,
+            "perceptual_support_records": 2383,
+            "predicate_profiles": 1,
+            "source_information_records": 60175,
+            "support_space_records": 1
+          },
+          "entity_storage_bytes": {
+            "environment_records": 566,
+            "evidence_links": 28525992,
+            "evidence_records": 71442476,
+            "explicit_dispositions": 36028346,
+            "generated_origins": 1805556,
+            "generation_bindings": 55579825,
+            "generation_occurrences": 62291615,
+            "generator_manifests": 1124,
+            "generator_operation_results": 17767496,
+            "hierarchy_records": 0,
+            "legacy_occurrence_binding_projections": 1553399,
+            "legacy_source_binding_projections": 763210,
+            "migration_records": 0,
+            "perceptual_support_records": 1780110,
+            "predicate_profiles": 934,
+            "source_information_records": 71426568,
+            "support_space_records": 1090
+          },
+          "evidence_exactly_one_per_binding": true,
+          "evidence_resolved": 62557,
+          "fabricated_pairing_count": 0,
+          "relation_evidence_storage_bytes": 155548293,
+          "silent_loss_count": 0,
+          "snapshot_id": "snap3_120cdc8279dafd942a21178cca6f3082a66446fd92819ed636e06b9220fb599c",
+          "snapshot_record": {
+            "authoritative_table_counts": {
+              "environment_records": 1,
+              "evidence_links": 62557,
+              "evidence_records": 62557,
+              "explicit_dispositions": 58984,
+              "generated_origins": 2382,
+              "generation_bindings": 62557,
+              "generation_occurrences": 61367,
+              "generator_manifests": 1,
+              "generator_operation_results": 3,
+              "hierarchy_records": 0,
+              "migration_records": 0,
+              "perceptual_support_records": 2383,
+              "predicate_profiles": 1,
+              "source_information_records": 60175,
+              "support_space_records": 1
+            },
+            "authoritative_table_hashes": {
+              "environment_records": "619e6211d055466f4ef19e251c5d10cb4b1611a42fc8e486826897d6f3dcaf8a",
+              "evidence_links": "ae2b4c609f4555c954f179cd19d6900a037a71ae5211e5fbe7483319deb7acb5",
+              "evidence_records": "fb22a5010f337b38cfcb4068cc27843db6704fa0b5c5b0b1551131f2dee15bde",
+              "explicit_dispositions": "12392f6ed29068499c8207ada2c33f037049f0c6ba852c0a3b2fe96956a6543a",
+              "generated_origins": "81411fdcc53b931cd5bc7be5154e855a37aff1f2c80ee6255f2f329ec41784dd",
+              "generation_bindings": "4209b977f0de36d1ce980f071a2851e48125b51322c7b3a39e3e4287dccff0f0",
+              "generation_occurrences": "b732533495888599adf0c952f40aab7c957f99d15e372b10c9106503cd356502",
+              "generator_manifests": "36f513898606a8a98c139c932be8b978189ad9b0c2c301074e90f7bb66062c70",
+              "generator_operation_results": "5fda65c85f4e1923bb35058783948d70371d1b116bb81b8fd46d46c396b88cc7",
+              "hierarchy_records": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "migration_records": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+              "perceptual_support_records": "2377eefce30ee14c54a6f86730014abfa66aa2e3e6c2865a25ae1328f773a00e",
+              "predicate_profiles": "efb285e6396933961a9c1ea13106a5599c69816e4637beac429877c9c6e3e857",
+              "source_information_records": "79414089d3154e7cc1c7953d8f2b9fc0aff6becd655734c4a3c8246b18d02d8a",
+              "support_space_records": "037f63413c24c78b01b753b304364979a8831289995d129b335e6ad9beaed310"
+            },
+            "derived_projection_table_counts": {
+              "legacy_occurrence_binding_projections": 2383,
+              "legacy_source_binding_projections": 1191
+            },
+            "derived_projection_table_hashes": {
+              "legacy_occurrence_binding_projections": "e88f2f2251e4e25acc7b054d386d513406121281ee80265e34e13f70fd3cd6c1",
+              "legacy_source_binding_projections": "45ec3c3686d02a4c40c4f694698ca2e638334eb5799aad5e8f21f69bfcb22460"
+            },
+            "environment_record_ids": [
+              "env3_6984e43e51fb87b02cc8c236a367b9b1cecf39378bee58a4371af1bda4aefecb"
+            ],
+            "generator_manifest_ids": [
+              "gm3_7ada2e72eb7ddca701fd58b8634f2ba0bb8e58ce0ae221083aa7c35d09f34496"
+            ],
+            "generator_operation_result_ids": [
+              "gorv3_3f11b6b67d7e82ffc83fa75610c04247e0ebce88809f6ad498e7c0d250d794e0",
+              "gorv3_af1bf41df5a003f4b0cf3e4983ef80990a83c513e9a192d5659aaa91443db00f",
+              "gorv3_fccea6cf3a95b4c51f9399302f7aeb50115c788235bf350eea5146befa4cd736"
+            ],
+            "implementation_hashes": {
+              "protocol/core_v3/canonical_serialization_v3.json": "9fbb75149af666a1c0d298de8108da79c0124e75d44cd886c80877fd07030c2f",
+              "protocol/core_v3/core_v3_entities.schema.json": "27c429695cffac8cea6cf52f2fd57e35fac3fe81bf251a5fd446f95d93bb4720",
+              "protocol/core_v3/core_v3_protocol.json": "e0936397954e7567a79aa0a0870bc0b22b55ed9c133992de868c2ff62543b51a",
+              "protocol/core_v3/test_vectors/canonical_negative.json": "359d29405aa9a95a297f93225a03a525082b94f5241586368a9e043bb7935de3",
+              "protocol/core_v3/test_vectors/canonical_positive.json": "49f27941a16a4607682950753b6c031f630b595747cb69432ebc1bde19edfa17",
+              "src/generation_relation_core/__init__.py": "0463e4f772828deb3dacb7d4efa86be0e9298cdcd6aceb749405a03f9476c404",
+              "src/generation_relation_core/canonical.py": "bfadf2db3bfc1233207ec8745f97c5700a8e171d4c0b8a871bc65a0441db1966",
+              "src/generation_relation_core/entities.py": "7f8de4d3d1d20f53c3b5413b4ab03a901fb202341d16133d67db9c7d8e970696",
+              "src/generation_relation_core/errors.py": "2da2fabb8634e5121bc42c49e7952c698509aed5be5f22f48cbe9bffe5be5915",
+              "src/generation_relation_core/implementation_identity.py": "5baa5d3203eea28b1c95afc545fe56f06a965bb3c1222a44ecfcb6b364b4a1a8",
+              "src/generation_relation_core/predicate_registry.py": "0900e1866467e9669666238c65e6265ef5027651753ace190798c37f8e768f16",
+              "src/generation_relation_core/query_engine.py": "86be637a622b200e1b5dffbfe7caa1eb8a2eae4623df10cbc85c8033b8a49fef",
+              "src/generation_relation_core/relation_evidence.py": "adacf92b4da59b81634fa8301584d9c36059f9ace3b920afe1cc3a36172821d2",
+              "src/generation_relation_core/schema_registry.py": "b468241cfbfdff4d8e1bccaf65f9610d6de29864d13172bf65e74074656befba",
+              "src/generation_relation_core/snapshots.py": "a022244bb0c3c6426c2a4e70b817a58258d8fcaecd82ebdc0626473e2e3d7a29"
+            },
+            "protocol_sha256": "200faf3057ce5d4bc9eefa32de7881fd2922aa44f751ef03b2e9543cd3221daa",
+            "protocol_version": "sidecar-core-v3-generation-relation-v1",
+            "schema_version": "3.0.0",
+            "snapshot_id": "snap3_120cdc8279dafd942a21178cca6f3082a66446fd92819ed636e06b9220fb599c",
+            "snapshot_payload_sha256": "120cdc8279dafd942a21178cca6f3082a66446fd92819ed636e06b9220fb599c"
+          },
+          "snapshot_record_bytes": 4743,
+          "validated": true
+        },
+        "sql": "SELECT\n    sum(l_extendedprice * l_discount) AS revenue\nFROM\n    lineitem\nWHERE\n    l_shipdate >= CAST('1994-01-01' AS date)\n    AND l_shipdate < CAST('1995-01-01' AS date)\n    AND l_discount BETWEEN 0.05\n    AND 0.07\n    AND l_quantity < 24;\n",
+        "status": "passed"
+      }
+    },
+    "sf_0_1": {
+      "q1": {
+        "query_number": 1,
+        "reason": "NOT RUN — projected in-memory representation exceeded available physical memory.",
+        "resource_preflight": {
+          "host_physical_memory_bytes": 17011310592,
+          "linear_peak_rss_projection_bytes": 21546833685,
+          "sf_0_01_binding_count": 178797,
+          "sf_0_01_peak_rss_bytes": 2158182400,
+          "sf_0_1_exact_projected_binding_count": 1784292
+        },
+        "scale_factor": 0.1,
+        "status": "NOT_RUN_RESOURCE_BOUND"
+      },
+      "q6": {
+        "query_number": 6,
+        "reason": "system_available_memory_fell_below_safety_threshold",
+        "resource_monitor": {
+          "command": [
+            "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+            "-m",
+            "experiments.database_lineage.scripts.run_tpch",
+            "--scale",
+            "0.1",
+            "--query",
+            "6"
+          ],
+          "elapsed_seconds": 464.48383899999317,
+          "max_process_rss_bytes": 4205154304,
+          "minimum_available_memory_limit_bytes": 2147483648,
+          "minimum_system_available_bytes": 2101391360,
+          "partial_validation_used": false,
+          "physical_memory_bytes": 17011310592,
+          "preflight": {
+            "basis": "SF0.01/Q6 actual 62,557 bindings, 1,011,310,592 peak RSS, 148.104626 s build, 72.266917 s validation",
+            "estimated_bindings": 623808,
+            "estimated_in_memory_snapshot_peak_bytes": 10084621030,
+            "estimated_peak_rss_bytes": 10084621030,
+            "estimated_snapshot_build_seconds": 1476.874697,
+            "estimated_validation_seconds": 720.63368,
+            "qualifying_rows": 11618,
+            "total_input_rows": 600572
+          },
+          "returncode": 1,
+          "rss_limit_bytes": 13609048473,
+          "rss_limit_fraction": 0.8,
+          "sampling_validation_used": false,
+          "standards_reduced": false,
+          "status": "RESOURCE_LIMITED",
+          "stop_reason": "system_available_memory_fell_below_safety_threshold"
+        },
+        "scale_factor": 0.1,
+        "status": "RESOURCE_LIMITED"
+      }
+    }
+  },
+  "tpch_determinism": {
+    "all_equal": true,
+    "first_run_core_commit": "50a21fd4dfc7ca7cd1e939e844c2ca07877e8a16",
+    "legacy_snapshot_id_reconstruction_used": true,
+    "normalization": "Snapshot IDs bind implementation hashes. Full Snapshot envelopes are compared after removing only implementation-derived fields. For the retained legacy baseline without an envelope, the second envelope is re-finalized with the first run's tracked Core hashes. Both paths cover all authoritative and derived table counts and hashes while allowing an audited implementation identity change.",
+    "queries": {
+      "q1": {
+        "after_forward_lineage_sha256": "148c130a67501e553b30fe1b473cf789a4366912062d67b2f09c0bca61b6ce7b",
+        "after_lineage_sha256": "5c1074956fa60ec428fde8922f76a3cc8e2fa45ac5d7018d8eaf347479018cd8",
+        "before_lineage_sha256": "5c1074956fa60ec428fde8922f76a3cc8e2fa45ac5d7018d8eaf347479018cd8",
+        "checks": {
+          "backward_lineage_bytes_equal": true,
+          "backward_path_counts_equal": true,
+          "binding_count_equal": true,
+          "csv_hash_equal": true,
+          "entity_counts_equal": true,
+          "forward_lineage_equal_to_inverted_first_run_backward": true,
+          "json_hash_equal": true,
+          "normalized_snapshot_content_equal": true,
+          "raw_snapshot_id_equal": false
+        },
+        "exact": true
+      },
+      "q10": {
+        "after_forward_lineage_sha256": "727fa2b1a9b94a446b609c8a4de782adf387152c9b3703663e188cc7895138b7",
+        "after_lineage_sha256": "8de74e45345c58f91370532f4fa1e71cd63472d1773b36a05b3b4f2ef2b32af2",
+        "before_lineage_sha256": "8de74e45345c58f91370532f4fa1e71cd63472d1773b36a05b3b4f2ef2b32af2",
+        "checks": {
+          "backward_lineage_bytes_equal": true,
+          "backward_path_counts_equal": true,
+          "binding_count_equal": true,
+          "csv_hash_equal": true,
+          "entity_counts_equal": true,
+          "forward_lineage_equal_to_inverted_first_run_backward": true,
+          "json_hash_equal": true,
+          "normalized_snapshot_content_equal": true,
+          "raw_snapshot_id_equal": false
+        },
+        "exact": true
+      },
+      "q3": {
+        "after_forward_lineage_sha256": "5bd1d3e86220a1cfd8451cbf9e264d18edc28b89e4c392dbbb85bacf2b2aca6c",
+        "after_lineage_sha256": "c80d26d435b0ff8c86214efb4ca9f1c857810b8016c91cda5bf71a55c73c7486",
+        "before_lineage_sha256": "c80d26d435b0ff8c86214efb4ca9f1c857810b8016c91cda5bf71a55c73c7486",
+        "checks": {
+          "backward_lineage_bytes_equal": true,
+          "backward_path_counts_equal": true,
+          "binding_count_equal": true,
+          "csv_hash_equal": true,
+          "entity_counts_equal": true,
+          "forward_lineage_equal_to_inverted_first_run_backward": true,
+          "json_hash_equal": true,
+          "normalized_snapshot_content_equal": true,
+          "raw_snapshot_id_equal": false
+        },
+        "exact": true
+      },
+      "q6": {
+        "after_forward_lineage_sha256": "3aa0dfd4f88ddf041af0e3f5db67d29e113d26a862d40f2eaec32f6d4764300a",
+        "after_lineage_sha256": "63416c47a97d06c2a45066c5979ed6bdb6915656695e0e5437bdc888d0c78de2",
+        "before_lineage_sha256": "63416c47a97d06c2a45066c5979ed6bdb6915656695e0e5437bdc888d0c78de2",
+        "checks": {
+          "backward_lineage_bytes_equal": true,
+          "backward_path_counts_equal": true,
+          "binding_count_equal": true,
+          "csv_hash_equal": true,
+          "entity_counts_equal": true,
+          "forward_lineage_equal_to_inverted_first_run_backward": true,
+          "json_hash_equal": true,
+          "normalized_snapshot_content_equal": true,
+          "raw_snapshot_id_equal": false
+        },
+        "exact": true
+      }
+    },
+    "scale_factor": 0.01
+  }
+}

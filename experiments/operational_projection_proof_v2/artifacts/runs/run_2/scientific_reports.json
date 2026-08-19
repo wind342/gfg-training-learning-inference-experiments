@@ -1,0 +1,2317 @@
+{
+  "composition_consistency_source_map.json": {
+    "ambiguity_count": 0,
+    "broken_bridge_count": 0,
+    "composed_mapping_count": 5,
+    "cycle_count": 0,
+    "derived_paths_are_generation_bindings": false,
+    "direct_shortcut_count": 0,
+    "fabricated_binding_id_count": 0,
+    "false_negative_count": 0,
+    "false_positive_count": 0,
+    "four_mode_output_byte_identity": true,
+    "generated_origin_count": 5,
+    "invented_transitive_mapping_count": 0,
+    "mandatory_checks": {
+      "ambiguity": true,
+      "broken_bridge": true,
+      "cycle": true,
+      "direct_original_to_final_binding": true,
+      "exact": true,
+      "false_negative": true,
+      "false_positive": true,
+      "generated_origin_bridge_count": true,
+      "invented_transitive_mapping": true,
+      "mapping_count": true,
+      "output_bytes_unchanged": true
+    },
+    "native_core_composition_exact": true,
+    "p3_subtype": "multistage_generation_composition_consistency",
+    "path_a": "stage 1 + stage 2 Core direct bindings -> GeneratedOrigin bridges -> compose_core_relations",
+    "path_b": "native stage-1 map + native stage-2 map -> independent SourceMapConsumer composition",
+    "profile_id": "ecma426-multistage-composition-v1",
+    "stage1_mapping_count": 5,
+    "stage2_mapping_count": 5,
+    "status": "SUPPORTED"
+  },
+  "core_change_lineage.json": {
+    "database_head": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+    "inherited_core_changes_main_to_database": [
+      "src/generation_relation_core/relation_evidence.py"
+    ],
+    "inherited_core_schema_change_count": 0,
+    "measurement_base_head": "cb58a33a6542e2778e6c7dbd1aa916ce521c3f8e",
+    "new_core_change_count": 0,
+    "new_core_changes_database_to_unified": [],
+    "new_core_schema_change_count": 0,
+    "new_domain_specific_core_field_count": 0,
+    "original_main_base": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+    "otel_specific_core_field_count": 0,
+    "source_map_specific_core_field_count": 0,
+    "status": "PASS",
+    "unified_head": "integration/unified-operational-projection-proof-v2 working tree at audit time",
+    "unified_proof_specific_core_field_count": 0
+  },
+  "environment.json": {
+    "database_fixture_sha256": "626bac9ec5f7b6e81c8ffbc94f2b08e436302192f8c72b56a636140442b4ef48",
+    "git_branch": "integration/unified-operational-projection-proof-v2",
+    "git_head_at_run": "cb58a33a6542e2778e6c7dbd1aa916ce521c3f8e",
+    "operating_system": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "duckdb": "1.5.4",
+      "jsonschema": "4.25.1",
+      "opentelemetry-api": "1.44.0",
+      "opentelemetry-sdk": "1.44.0",
+      "opentelemetry-semantic-conventions": "0.65b0",
+      "psutil": "7.2.2",
+      "pytest": "9.1.1"
+    },
+    "profiles_sha256": {
+      "core_database_to_opentelemetry_v1.json": "4f823ae2bdee364939c03b32f9adb419000c840ad0dd9adbf6fb3abec0e040bf",
+      "database_which_lineage_v1.json": "d32b809931644617d763bad597b62904bba3273e7fa62f9afa963fc74387ac40",
+      "ecma426_multistage_composition_v1.json": "a7a2c047aed36b849ed7f66172e923313fbefcb48a3ae6f10a3c5c1fce50236d",
+      "ecma426_ordinary_source_map_v1.json": "2280903bd52052306d1335e0126f2dfb98afbe59fb0e37e54df6f51ffe9439b4",
+      "opentelemetry_occurrence_execution_v1.json": "0d2bec9c9b270fc6b7ae9dc2ae976ead15d209afc1426257a76998fe075a53a4"
+    },
+    "python_implementation": "CPython",
+    "python_version": "3.12.10",
+    "source_branch_identity_sha256": "776f78fd694984311ff1a935354993bdbd1bada16fbc7f043cd2981bcb65e72c",
+    "source_map_environment": {
+      "dependency_hashes": {
+        "cpython_executable": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a",
+        "node_executable": "63c259c81e5d472b5f11c8d506070130cb04a1ecf84b80377a34ed6ec9048088",
+        "pnpm_lock": "fdd8bea90af0d33aee8c1ccce78023d0e28ff5fea5670f532b90eb346536f418",
+        "python_distribution_attrs": "c0af630856650af9396fc0106dff9a85e2237a164e701f5029a6797c5349d720",
+        "python_distribution_colorama": "a537ce28b943949a70e07a62bec61d4ec8217f8e60a9b588a64eb6ca79be47ba",
+        "python_distribution_iniconfig": "5d18391d459ae4731f2dd29a13ddff57f0e9c981c7ffede5f282ab9db7f529f9",
+        "python_distribution_jsonschema": "b908cd7b950ed8edbc647f350b8890e15218e89e0bf412d8ca28ff0004654b95",
+        "python_distribution_jsonschema-specifications": "559eb58664acd6afad4184ff5196e8774a8d3f3420200b47d32506b88e5cf6c6",
+        "python_distribution_packaging": "71ce4d529026807816d791e53da5b3eb737fd17221acd4ccc87961ca997279d2",
+        "python_distribution_pluggy": "9e1609d259372964db11cf055fdd6dc24da2623a346aa7d461d9470aefb0c87b",
+        "python_distribution_pygments": "137181aa997692a360157502c1459c3ec17d70439c8cf4bcb25b3621f060c352",
+        "python_distribution_pytest": "7db97ad57966e76ad83edf879499de428a76b2159aeca6c315f8c9cebe01ec3b",
+        "python_distribution_referencing": "01282de894bf93ca76b67063597f49c07c9690c45f7e4369a135278df4ce21b9",
+        "python_distribution_rpds-py": "46d46773b8b18e2596796106234a101c777affb8bb4afe2fb31b0a638552b11d",
+        "python_distribution_typing-extensions": "2b5076edb6874f88109b0f36fd49d58978a59663934e8a3ce7226266dca9fd65",
+        "requirements_lock": "d270675a7b7ad822ce25c3e1e1335f54cd610df15ff70f51ed45b8cae194e96f",
+        "source_map_0_8_0_installation": "da6595d17c26a9cd90c23bea8827b05f7a888a37d936e360ba66653a9a1da144"
+      },
+      "node_version": "v24.14.0",
+      "operating_system": "Windows-11-10.0.26200-SP0",
+      "python_distributions": {
+        "Pygments": "2.20.0",
+        "attrs": "26.1.0",
+        "colorama": "0.4.6",
+        "iniconfig": "2.3.0",
+        "jsonschema": "4.25.1",
+        "jsonschema-specifications": "2025.9.1",
+        "packaging": "26.1",
+        "pluggy": "1.6.0",
+        "pytest": "9.1.1",
+        "referencing": "0.37.0",
+        "rpds-py": "2026.6.3",
+        "typing-extensions": "4.16.0"
+      },
+      "python_version": "3.12.10",
+      "source_map_package_version": "0.8.0"
+    },
+    "v2_python_code_sha256": {
+      "experiments/operational_projection_proof_v2/__init__.py": "f25d6f1120ee10b731c2517b9d3bc1b1c44702623e8b5ab425facfda22a7cebd",
+      "experiments/operational_projection_proof_v2/scripts/__init__.py": "bd3b91c79d761c86c63970c5a3c7a9fc794f08d6103646e6e7f32f9dfae96ddb",
+      "experiments/operational_projection_proof_v2/scripts/run_all.py": "210f28f67071d4d0b6e5aef8dfea4792fbf58bb116dff8424251b8d5241e603e",
+      "experiments/operational_projection_proof_v2/src/__init__.py": "103f214c34c2e68d9fe367bbf303bae98983f672fddc1f28f2b93eb3fb680ea4",
+      "experiments/operational_projection_proof_v2/src/audits.py": "3c550d34b7524167251983305082cb4e71c70b21921fcfe12181a2223904f9b0",
+      "experiments/operational_projection_proof_v2/src/common.py": "086a3ff36ed22ebdc4bc006dd544e815fc245f8b500a1d48dbb8918999db74db",
+      "experiments/operational_projection_proof_v2/src/database_proof.py": "9c05d97ac202228d5d891053c603585d545df9501365958130fae6296f3bbae8",
+      "experiments/operational_projection_proof_v2/src/matrix.py": "7698ae9ebd872330e2b0d3482cf2c8198f5c14e0fa5a3f7e862e7739a6fb0947",
+      "experiments/operational_projection_proof_v2/src/negative_controls.py": "6f6cd80136f5d5471f73c3e609c766a1e34767413b220ad86eec71d216034522",
+      "experiments/operational_projection_proof_v2/src/otel_proof.py": "e7b645941c8b487e1e8f7df3921b3cc6e3c157c19a85fe1db5571ec6869375f6",
+      "experiments/operational_projection_proof_v2/src/source_map_proof.py": "0adb198f1e7bd38a72f1e175fe5d269fb351da02e1b28a6f686a8de56cc89997",
+      "experiments/operational_projection_proof_v2/tests/__init__.py": "01a593cf72be9976710f20f025285cf89f444c39a566bc98d4e1bf75bd890add",
+      "experiments/operational_projection_proof_v2/tests/conftest.py": "becab559ebae4b08f7f1c899292441ae93d6cebdccf6cd25dca7ecaafb779673",
+      "experiments/operational_projection_proof_v2/tests/test_core_change_lineage.py": "e3f505acda5102ec6ad044a3286e3667d2c981e918d00c7c4e6bfda63af34485",
+      "experiments/operational_projection_proof_v2/tests/test_database_p1_v2.py": "c3d3ec597bcb6297e721b29a05eb29d23a2ec6e0f0385d4f8ec0797268cf28dd",
+      "experiments/operational_projection_proof_v2/tests/test_database_p2_v2.py": "a3c451d6842e6e462763359303926791eef99175a5b5c6b1ffdbfb54f6747014",
+      "experiments/operational_projection_proof_v2/tests/test_negative_control_classification.py": "3f2a3076ac6a1e99a94b1b322388a9c49e758b5d9a10426b4dde8397c113a76b",
+      "experiments/operational_projection_proof_v2/tests/test_no_second_authority_v2.py": "61ba62b62c4ea8f9a7bd53a9fb52fe14b9b0b6a14007e12cfca75f3730f621a8",
+      "experiments/operational_projection_proof_v2/tests/test_oracle_isolation_v2.py": "9efbfef30fcfdb57ba67c3eee880eeb8e863d1fe64d66537c9c3645b4dfdf85b",
+      "experiments/operational_projection_proof_v2/tests/test_otel_p1_v2.py": "0b96d754596c6bfca065f7ef66c2ad18eaeb11263af5f221518fee22315ec710",
+      "experiments/operational_projection_proof_v2/tests/test_otel_p2_v2.py": "4cd7aa481926baa97587d9e2b64b996ffc2c36f60c7780132ff2c0b399d28909",
+      "experiments/operational_projection_proof_v2/tests/test_otel_p3_v2.py": "a76676b4ff74f0c5465415b5088793618bf5996a6c9abf7ff211bcf1e0467542",
+      "experiments/operational_projection_proof_v2/tests/test_output_orthogonality_v2.py": "665f5f7ca58beaca60a768f2d8647a48cac3f2e9d7680e9cd9751c9eec7bf051",
+      "experiments/operational_projection_proof_v2/tests/test_reproducibility_v2.py": "e9fa79cb65b33059513b222a0d6f48b8689fcda66a152e1c2bcc7899add9bebd",
+      "experiments/operational_projection_proof_v2/tests/test_source_map_p1_v2.py": "26df0f9399356ddf3424e1faf84edc1fc0e4f7b1d30d4c6066e4f38472f8d68f",
+      "experiments/operational_projection_proof_v2/tests/test_source_map_p2_v2.py": "cde085f924225176d28b0c92271c790cd080ab3a6a9c48d0a86928cd70a7739e",
+      "experiments/operational_projection_proof_v2/tests/test_source_map_p3_v2.py": "1a078b59cbe57c3b6f205e7552e7d6f7f876ed1ab616a8257bc91097c31ce453",
+      "experiments/operational_projection_proof_v2/tests/test_status_boundaries_v2.py": "5996ef815b397b4ca756dc9cbfcf358d3aa287ee5dd906e9bffeae373456dc3d",
+      "experiments/operational_projection_proof_v2/tests/test_unified_matrix.py": "c3ad221cdf2121f679a9c027b6f55367062f9e3a51c4a95af2dd957c01cd4f36",
+      "experiments/operational_projection_proof_v2/tests/test_v1_preservation.py": "5a0bb5a930b15560518e58eec035af1d9d3d773de8127ada9f31712941f7b84e"
+    }
+  },
+  "hierarchical_consistency_core_database_to_opentelemetry.json": {
+    "formal_tpch_q6": {
+      "direct_span_count": 61368,
+      "direct_vs_hierarchical": {
+        "attribute_mismatches": 0,
+        "event_mismatches": 0,
+        "exact": true,
+        "link_edge_false_negatives": 0,
+        "link_edge_false_positives": 0,
+        "parent_edge_false_negatives": 0,
+        "parent_edge_false_positives": 0,
+        "span_false_negatives": 0,
+        "span_false_positives": 0,
+        "status_mismatches": 0
+      },
+      "hierarchical_span_count": 61368,
+      "trace_sha256": {
+        "direct": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8",
+        "hierarchical": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8",
+        "native": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8"
+      }
+    },
+    "mandatory_checks": {
+      "formal_canonical_sha_equal": true,
+      "formal_exact": true,
+      "runtime_access_traps": true,
+      "small_canonical_bytes_equal": true,
+      "small_canonical_sha_equal": true,
+      "small_exact": true,
+      "static_import_audit": true
+    },
+    "module_isolation": {
+      "allowed_shared_helpers": [
+        "canonical trace schema",
+        "canonicalizer",
+        "semantic-key formatting",
+        "ProjectionError"
+      ],
+      "direct_hierarchical_shared_extraction_helper_count": 0,
+      "static_import_violations": [],
+      "status": "PASS"
+    },
+    "p3_subtype": "cross-domain hierarchical projection",
+    "path_a": "ValidatedSnapshot -> core_to_otel_projection -> canonical trace A",
+    "path_b": "ValidatedSnapshot -> core_to_database_projection -> immutable DatabaseDomainProjection -> database_to_otel_projection -> canonical trace B",
+    "profile_id": "core-database-to-opentelemetry-v1",
+    "small": {
+      "canonical_bytes_equal": true,
+      "canonical_sha256": "0a93193eae9a9c7aa91c48d7abb82df4acd4e349235e21f49872020d4619a734",
+      "direct_span_count": 37,
+      "direct_vs_hierarchical": {
+        "attribute_mismatches": 0,
+        "event_mismatches": 0,
+        "exact": true,
+        "link_edge_false_negatives": 0,
+        "link_edge_false_positives": 0,
+        "parent_edge_false_negatives": 0,
+        "parent_edge_false_positives": 0,
+        "span_false_negatives": 0,
+        "span_false_positives": 0,
+        "status_mismatches": 0
+      },
+      "hierarchical_span_count": 37
+    },
+    "status": "SUPPORTED"
+  },
+  "negative_control_classification.json": {
+    "category_counts": {
+      "END_TO_END": 0,
+      "ISOLATION": 10,
+      "VALIDATOR_UNIT": 46
+    },
+    "classification_rule": {
+      "END_TO_END": "Mutation is replayed through the complete candidate/reference path.",
+      "ISOLATION": "Dependency, file access, secondary authority, or ordinary-output boundary is exercised.",
+      "VALIDATOR_UNIT": "A validator or reason-code-sensitive helper is invoked on a synthetic mutation."
+    },
+    "control_count": 56,
+    "controls": [
+      {
+        "actual_reason_code": "FALSE_POSITIVE_RECORD",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "database:candidate_extra_relation",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "FALSE_POSITIVE_RECORD",
+        "mutation": "candidate extra relation",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "FALSE_NEGATIVE_RECORD",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "database:candidate_missing_relation",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "FALSE_NEGATIVE_RECORD",
+        "mutation": "candidate missing relation",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "FIELD_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "database:field_value_mismatch",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "FIELD_MISMATCH",
+        "mutation": "field value mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "MULTIPLICITY_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "database:multiplicity_mismatch",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "MULTIPLICITY_MISMATCH",
+        "mutation": "multiplicity mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "DUPLICATE_SEMANTIC_KEY",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "database:duplicate_dictionary_overwrite",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "DUPLICATE_SEMANTIC_KEY",
+        "mutation": "duplicate dictionary overwrite",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "ORACLE_LEAKAGE",
+        "automatic_repair_count": 0,
+        "category": "ISOLATION",
+        "control_id": "database:candidate_reads_oracle",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "ORACLE_LEAKAGE",
+        "mutation": "candidate reads oracle",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "NATIVE_DOMAIN_RESULT_LEAKAGE",
+        "automatic_repair_count": 0,
+        "category": "ISOLATION",
+        "control_id": "database:candidate_reads_native_domain_file",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "NATIVE_DOMAIN_RESULT_LEAKAGE",
+        "mutation": "candidate reads native domain file",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "SECOND_AUTHORITY_STORE",
+        "automatic_repair_count": 0,
+        "category": "ISOLATION",
+        "control_id": "database:second_authority_table",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "SECOND_AUTHORITY_STORE",
+        "mutation": "second authority table",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "CONTROL_PLANE_OUTPUT_CONTAMINATION",
+        "automatic_repair_count": 0,
+        "category": "ISOLATION",
+        "control_id": "database:control_plane_output_field",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "CONTROL_PLANE_OUTPUT_CONTAMINATION",
+        "mutation": "control plane output field",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "HIERARCHICAL_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "database:direct_hierarchical_mismatch",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "HIERARCHICAL_MISMATCH",
+        "mutation": "direct hierarchical mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "PROJECTION_EQUALITY_NOT_COMPLETE_EQUALITY",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "database:projection_equality_implies_complete_equality",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "PROJECTION_EQUALITY_NOT_COMPLETE_EQUALITY",
+        "mutation": "projection equality implies complete equality",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "UNSUPPORTED_STATUS_ESCALATION",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "database:partial_promoted_to_supported",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "UNSUPPORTED_STATUS_ESCALATION",
+        "mutation": "partial promoted to supported",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "HIERARCHY_CYCLE",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "database:hierarchy_cycle",
+        "domain": "database_which_lineage",
+        "expected_reason_code": "HIERARCHY_CYCLE",
+        "mutation": "hierarchy cycle",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "MISSING_SPAN",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:delete_expected_span",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "MISSING_SPAN",
+        "mutation": "delete expected span",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "FABRICATED_SPAN",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:add_fabricated_span",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "FABRICATED_SPAN",
+        "mutation": "add fabricated span",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "PARENT_EDGE_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:modify_parent",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "PARENT_EDGE_MISMATCH",
+        "mutation": "modify parent",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "LINK_EDGE_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:modify_causal_link",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "LINK_EDGE_MISMATCH",
+        "mutation": "modify causal link",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "STATUS_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:modify_status",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "STATUS_MISMATCH",
+        "mutation": "modify status",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "OPERATION_TYPE_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:modify_operation_type",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "OPERATION_TYPE_MISMATCH",
+        "mutation": "modify operation type",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "ATTRIBUTE_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:modify_selected_attribute",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "ATTRIBUTE_MISMATCH",
+        "mutation": "modify selected attribute",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "DUPLICATE_SPAN",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:duplicate_span",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "DUPLICATE_SPAN",
+        "mutation": "duplicate span",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "OCCURRENCE_MERGED",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:merge_occurrences",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "OCCURRENCE_MERGED",
+        "mutation": "merge occurrences",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "UNKNOWN_OCCURRENCE",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:unknown_occurrence",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "UNKNOWN_OCCURRENCE",
+        "mutation": "unknown occurrence",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "BINDING_DERIVED_SPAN",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:binding_derived_span",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "BINDING_DERIVED_SPAN",
+        "mutation": "binding derived span",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "HIERARCHICAL_PROJECTION_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "opentelemetry:break_hierarchical_path",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "HIERARCHICAL_PROJECTION_MISMATCH",
+        "mutation": "break hierarchical path",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "ORACLE_OR_NATIVE_DEPENDENCY_PROHIBITED",
+        "automatic_repair_count": 0,
+        "category": "ISOLATION",
+        "control_id": "opentelemetry:projection_reads_oracle_or_native",
+        "domain": "opentelemetry_trace",
+        "expected_reason_code": "ORACLE_OR_NATIVE_DEPENDENCY_PROHIBITED",
+        "mutation": "projection reads oracle or native",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "MAPPING_REQUIRED_MISSING",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:01",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "MAPPING_REQUIRED_MISSING",
+        "mutation": "mapping required missing",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "MAPPING_FABRICATED",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:02",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "MAPPING_FABRICATED",
+        "mutation": "mapping fabricated",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "GENERATED_LINE_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:03",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "GENERATED_LINE_MISMATCH",
+        "mutation": "generated line mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "GENERATED_COLUMN_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:04",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "GENERATED_COLUMN_MISMATCH",
+        "mutation": "generated column mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "ORIGINAL_SOURCE_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:05",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "ORIGINAL_SOURCE_MISMATCH",
+        "mutation": "original source mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "ORIGINAL_LINE_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:06",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "ORIGINAL_LINE_MISMATCH",
+        "mutation": "original line mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "ORIGINAL_COLUMN_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:07",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "ORIGINAL_COLUMN_MISMATCH",
+        "mutation": "original column mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "NAME_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:08",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "NAME_MISMATCH",
+        "mutation": "name mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "MAPPED_TO_UNMAPPED",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:09",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "MAPPED_TO_UNMAPPED",
+        "mutation": "mapped to unmapped",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "UNMAPPED_TO_MAPPED",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:10",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "UNMAPPED_TO_MAPPED",
+        "mutation": "unmapped to mapped",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "DUPLICATE_GENERATED_ANCHOR",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:11",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "DUPLICATE_GENERATED_ANCHOR",
+        "mutation": "duplicate generated anchor",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "CONFLICTING_ORIGINAL_MAPPING",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:12",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "CONFLICTING_ORIGINAL_MAPPING",
+        "mutation": "conflicting original mapping",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "MAPPINGS_ORDER_INVALID",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:13",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "MAPPINGS_ORDER_INVALID",
+        "mutation": "mappings order invalid",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "SOURCE_INDEX_OUT_OF_RANGE",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:14",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "SOURCE_INDEX_OUT_OF_RANGE",
+        "mutation": "source index out of range",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "NAME_INDEX_OUT_OF_RANGE",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:15",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "NAME_INDEX_OUT_OF_RANGE",
+        "mutation": "name index out of range",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "VLQ_INVALID",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:16",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "VLQ_INVALID",
+        "mutation": "vlq invalid",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "UNICODE_COLUMN_OFF_BY_ONE",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:17",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "UNICODE_COLUMN_OFF_BY_ONE",
+        "mutation": "unicode column off by one",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "LINE_ENDING_INTERPRETATION_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:18",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "LINE_ENDING_INTERPRETATION_MISMATCH",
+        "mutation": "line ending interpretation mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "SOURCE_ROOT_RESOLUTION_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:19",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "SOURCE_ROOT_RESOLUTION_MISMATCH",
+        "mutation": "source root resolution mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "SOURCE_INFORMATION_MISSING",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:20",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "SOURCE_INFORMATION_MISSING",
+        "mutation": "source information missing",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "SUPPORT_MISSING",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:21",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "SUPPORT_MISSING",
+        "mutation": "support missing",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "OCCURRENCE_MISMATCH",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:22",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "OCCURRENCE_MISMATCH",
+        "mutation": "occurrence mismatch",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "DISPOSITION_MISSING",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:23",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "DISPOSITION_MISSING",
+        "mutation": "disposition missing",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "GENERATED_ORIGIN_BRIDGE_BYPASSED",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:24",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "GENERATED_ORIGIN_BRIDGE_BYPASSED",
+        "mutation": "generated origin bridge bypassed",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "COMPOSITION_CYCLE",
+        "automatic_repair_count": 0,
+        "category": "VALIDATOR_UNIT",
+        "control_id": "source_map:25",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "COMPOSITION_CYCLE",
+        "mutation": "composition cycle",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "NATIVE_MAP_ACCESS_PROHIBITED",
+        "automatic_repair_count": 0,
+        "category": "ISOLATION",
+        "control_id": "source_map:26",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "NATIVE_MAP_ACCESS_PROHIBITED",
+        "mutation": "native map access prohibited",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "CORE_COLLECTOR_MAP_PARSE_PROHIBITED",
+        "automatic_repair_count": 0,
+        "category": "ISOLATION",
+        "control_id": "source_map:27",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "CORE_COLLECTOR_MAP_PARSE_PROHIBITED",
+        "mutation": "core collector map parse prohibited",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "ORACLE_ACCESS_PROHIBITED",
+        "automatic_repair_count": 0,
+        "category": "ISOLATION",
+        "control_id": "source_map:28",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "ORACLE_ACCESS_PROHIBITED",
+        "mutation": "oracle access prohibited",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "SOURCE_MAP_CORE_FIELD_PROHIBITED",
+        "automatic_repair_count": 0,
+        "category": "ISOLATION",
+        "control_id": "source_map:29",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "SOURCE_MAP_CORE_FIELD_PROHIBITED",
+        "mutation": "source map core field prohibited",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      },
+      {
+        "actual_reason_code": "OUTPUT_ORTHOGONALITY_VIOLATION",
+        "automatic_repair_count": 0,
+        "category": "ISOLATION",
+        "control_id": "source_map:30",
+        "domain": "ecma426_source_map",
+        "expected_reason_code": "OUTPUT_ORTHOGONALITY_VIOLATION",
+        "mutation": "output orthogonality violation",
+        "partial_output_count": 0,
+        "status": "FAIL_CLOSED"
+      }
+    ],
+    "end_to_end_label_reserved_for_complete_path_replays": true,
+    "source_map_control_count": 30,
+    "status": "PASS"
+  },
+  "oracle_isolation.json": {
+    "domains": {
+      "database": {
+        "candidate_after_reference_deleted_equal": true,
+        "candidate_files": [
+          "database_projection.py"
+        ],
+        "native_domain_result_read_count": 0,
+        "native_domain_result_read_findings": [],
+        "oracle_leakage_count": 0,
+        "oracle_leakage_findings": [],
+        "oracle_runtime_trap_passed": true,
+        "status": "SUPPORTED"
+      },
+      "opentelemetry": {
+        "candidate_after_native_record_deletion_equal": true,
+        "candidate_runtime_import_trap_passed": true,
+        "database_to_otel_runtime_core_native_trap_passed": true,
+        "native_runtime_projection_import_trap_passed": true,
+        "native_trace_existed_before_deletion": true,
+        "oracle_leakage_count": 0,
+        "otel_specific_core_field_count": 0,
+        "second_authority_store_count": 0,
+        "static_import_audit": {
+          "allowed_shared_helpers": [
+            "canonical trace schema",
+            "canonicalizer",
+            "semantic-key formatting",
+            "ProjectionError"
+          ],
+          "direct_hierarchical_shared_extraction_helper_count": 0,
+          "static_import_violations": [],
+          "status": "PASS"
+        },
+        "status": "PASS"
+      },
+      "source_map": {
+        "core_collector_map_decoder_import_count": 0,
+        "core_projection_native_or_receipt_import_count": 0,
+        "frozen_oracle_output_exact": true,
+        "frozen_oracle_record_exact": true,
+        "second_authority_mapping_store_count": 0,
+        "status": "PASS",
+        "tested_transformer_oracle_import_count": 0
+      }
+    },
+    "status": "PASS"
+  },
+  "output_orthogonality.json": {
+    "domains": {
+      "database": {
+        "csv_byte_identical": true,
+        "csv_sha256": "acd1070a778de25b0d8884336f5cca92b34eb5e5966a5332363bddec9c96ad69",
+        "forbidden_fields": [],
+        "json_byte_identical": true,
+        "json_sha256": "7e58890bbfeecdc3200a497be0e3ce19e961f2af130e7be9d672337a9d82cf7d",
+        "status": "SUPPORTED"
+      },
+      "opentelemetry": {
+        "business_types_equal": true,
+        "business_values_equal": true,
+        "csv_byte_identical": true,
+        "csv_sha256_by_mode": {
+          "A_core_off_otel_off": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a",
+          "B_core_on_otel_off": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a",
+          "C_core_off_otel_on": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a",
+          "D_core_on_otel_on": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a"
+        },
+        "forbidden_output_fields": [],
+        "json_byte_identical": true,
+        "json_sha256_by_mode": {
+          "A_core_off_otel_off": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498",
+          "B_core_on_otel_off": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498",
+          "C_core_off_otel_on": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498",
+          "D_core_on_otel_on": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498"
+        },
+        "mode_count": 4,
+        "passed": true,
+        "schema_and_order_equal": true,
+        "status": "PASS"
+      },
+      "source_map": {
+        "cases": {
+          "adversarial": {
+            "generated_artifact": "adversarial-output.js",
+            "output_bytes": 343,
+            "output_sha256": "b7eba5fe8e85f62dd7e6a4d1d8a6b17f7272205387dcd2dc53ccbcf8ea7258dd",
+            "prohibited_token_hit_count": 0,
+            "syntax_status": "PASS"
+          },
+          "medium": {
+            "generated_artifact": "medium-output.js",
+            "output_bytes": 13200,
+            "output_sha256": "83cae374a3b7e377207f92eeea8cea8f21c598b95386db8f7bd77d6b38b7aeac",
+            "prohibited_token_hit_count": 0,
+            "syntax_status": "PASS"
+          },
+          "minified": {
+            "generated_artifact": "minified-output.js",
+            "output_bytes": 127,
+            "output_sha256": "0f05a87e575a526108e610b572d899d03715302caaf9be19f1586759ac818ee1",
+            "prohibited_token_hit_count": 0,
+            "syntax_status": "PASS"
+          },
+          "unicode_crlf": {
+            "generated_artifact": "unicode-crlf-output.js",
+            "output_bytes": 120,
+            "output_sha256": "57eeee1aa77175ec7720e355f7c509fb1a70cbc8c23c9266cb5692938d35a5ca",
+            "prohibited_token_hit_count": 0,
+            "syntax_status": "PASS"
+          }
+        },
+        "four_mode_byte_identity": true,
+        "multistage_four_mode_byte_identity": true,
+        "status": "PASS"
+      }
+    },
+    "status": "PASS"
+  },
+  "profile_validation.json": {
+    "blocking_reasons": [],
+    "profile_count": 5,
+    "profiles": [
+      {
+        "extra_fields": [],
+        "missing_fields": [],
+        "path": "experiments/operational_projection_proof_v2/profiles/database_which_lineage_v1.json",
+        "prohibited_vague_tokens": [],
+        "sha256": "d32b809931644617d763bad597b62904bba3273e7fa62f9afa963fc74387ac40",
+        "source_commit_exact": true,
+        "valid": true
+      },
+      {
+        "extra_fields": [],
+        "missing_fields": [],
+        "path": "experiments/operational_projection_proof_v2/profiles/opentelemetry_occurrence_execution_v1.json",
+        "prohibited_vague_tokens": [],
+        "sha256": "0d2bec9c9b270fc6b7ae9dc2ae976ead15d209afc1426257a76998fe075a53a4",
+        "source_commit_exact": true,
+        "valid": true
+      },
+      {
+        "extra_fields": [],
+        "missing_fields": [],
+        "path": "experiments/operational_projection_proof_v2/profiles/ecma426_ordinary_source_map_v1.json",
+        "prohibited_vague_tokens": [],
+        "sha256": "2280903bd52052306d1335e0126f2dfb98afbe59fb0e37e54df6f51ffe9439b4",
+        "source_commit_exact": true,
+        "valid": true
+      },
+      {
+        "extra_fields": [],
+        "missing_fields": [],
+        "path": "experiments/operational_projection_proof_v2/profiles/core_database_to_opentelemetry_v1.json",
+        "prohibited_vague_tokens": [],
+        "sha256": "4f823ae2bdee364939c03b32f9adb419000c840ad0dd9adbf6fb3abec0e040bf",
+        "source_commit_exact": true,
+        "valid": true
+      },
+      {
+        "extra_fields": [],
+        "missing_fields": [],
+        "path": "experiments/operational_projection_proof_v2/profiles/ecma426_multistage_composition_v1.json",
+        "prohibited_vague_tokens": [],
+        "sha256": "a7a2c047aed36b849ed7f66172e923313fbefcb48a3ae6f10a3c5c1fce50236d",
+        "source_commit_exact": true,
+        "valid": true
+      }
+    ],
+    "status": "PASS"
+  },
+  "projection_equivalence_database.json": {
+    "blocking_reasons": [],
+    "candidate_after_reference_deleted_equal": true,
+    "candidate_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+    "candidate_record_count": 112,
+    "canonical_records_hash_equal": true,
+    "claim_scope": "Fixed deterministic bag-preserving relational operators over the synthetic business and many-to-many workloads; tuple-level direct relations, backward/forward which-lineage, exact derivation paths, explicit dispositions, multiplicity, and duplicate-valued distinct identities.",
+    "exact_equal": true,
+    "false_negative": 0,
+    "false_positive": 0,
+    "field_mismatch": 0,
+    "frozen_checks": {
+      "candidate_record_count": true,
+      "false_negative": true,
+      "false_positive": true,
+      "field_mismatch": true,
+      "multiplicity_mismatch": true,
+      "native_result_read_count": true,
+      "oracle_runtime_trap": true,
+      "output_orthogonality": true,
+      "reference_deletion": true,
+      "reference_record_count": true,
+      "second_authority_store_count": true
+    },
+    "frozen_expected_record_count": 112,
+    "multiplicity_mismatch": 0,
+    "native_domain_result_read_count": 0,
+    "oracle_leakage_count": 0,
+    "oracle_runtime_trap_passed": true,
+    "profile_id": "database-which-lineage-v1",
+    "proof_qualification": {
+      "checks": {
+        "core_only_derivation": true,
+        "exact_semantic_equivalence": true,
+        "fail_closed_negative_controls": true,
+        "generation_coupling": true,
+        "independent_reference": true,
+        "no_fabricated_relation": true,
+        "no_second_authority": true,
+        "output_orthogonality": true
+      },
+      "relation_evidence_closure_count": 65,
+      "status": "SUPPORTED",
+      "successful_operation_closure_count": 65,
+      "validated_binding_count": 65,
+      "validated_snapshot_count": 2
+    },
+    "reason_codes": [],
+    "reference_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+    "reference_record_count": 112,
+    "rerun_on_integrated_branch": true,
+    "second_authority_store_count": 0,
+    "section_canonical_sha256": {
+      "backward_lineage": "7f01f0877592e1a53457e065ded69483717feefe4ee442e41943b74883cbf590",
+      "derivation_paths": "a896fa769bfa2aaea45a3632b05e98982938c6a7c5920dcafd5d1bf13c934b09",
+      "direct_relations": "fe9e08de2d04e2b9646e94c11d2d0187367ce394d84ef8753cdfa3ba64b8d279",
+      "duplicate_identities": "a329afc935031bb487cbb5a043383babe3118ced37277f26cd4a6bd88c7f36f7",
+      "explicit_dispositions": "02e6f00704c671f0dcc0d4fb41146461e252585d913727d4b11d25095056325b",
+      "forward_lineage": "951777e31dce91ba3f35bf225f973090dd80b74a2de3e2beb9f0173bfbae8764",
+      "multiplicity": "fbc8d81f1fce4b7cdf9fe1ab87948f16cf8a69d636d789eaace8cbdf05d6a52a"
+    },
+    "section_results": {
+      "backward_lineage": {
+        "candidate_count": 1,
+        "false_negative": 0,
+        "false_positive": 0,
+        "field_mismatch": 0,
+        "multiplicity_mismatch": 0,
+        "reference_count": 1
+      },
+      "derivation_paths": {
+        "candidate_count": 20,
+        "false_negative": 0,
+        "false_positive": 0,
+        "field_mismatch": 0,
+        "multiplicity_mismatch": 0,
+        "reference_count": 20
+      },
+      "direct_relations": {
+        "candidate_count": 62,
+        "false_negative": 0,
+        "false_positive": 0,
+        "field_mismatch": 0,
+        "multiplicity_mismatch": 0,
+        "reference_count": 62
+      },
+      "duplicate_identities": {
+        "candidate_count": 1,
+        "false_negative": 0,
+        "false_positive": 0,
+        "field_mismatch": 0,
+        "multiplicity_mismatch": 0,
+        "reference_count": 1
+      },
+      "explicit_dispositions": {
+        "candidate_count": 7,
+        "false_negative": 0,
+        "false_positive": 0,
+        "field_mismatch": 0,
+        "multiplicity_mismatch": 0,
+        "reference_count": 7
+      },
+      "forward_lineage": {
+        "candidate_count": 19,
+        "false_negative": 0,
+        "false_positive": 0,
+        "field_mismatch": 0,
+        "multiplicity_mismatch": 0,
+        "reference_count": 19
+      },
+      "multiplicity": {
+        "candidate_count": 2,
+        "false_negative": 0,
+        "false_positive": 0,
+        "field_mismatch": 0,
+        "multiplicity_mismatch": 0,
+        "reference_count": 2
+      }
+    },
+    "status": "SUPPORTED"
+  },
+  "projection_equivalence_opentelemetry.json": {
+    "candidate_input": "ValidatedSnapshot plus exact SnapshotValidation only",
+    "exact_comparison_fields": [
+      "trace semantic identity",
+      "complete span set",
+      "span name",
+      "parent edge",
+      "Span Links with multiplicity",
+      "status",
+      "selected attributes",
+      "selected events",
+      "occurrence cardinality",
+      "logical order"
+    ],
+    "formal_tpch_q6": {
+      "causal_link_count": 2382,
+      "core_binding_count": 62557,
+      "core_occurrence_count": 61367,
+      "core_snapshot_id": "snap3_aa80894e4ab38379d13df72ed2fa717c91f5081c0835ad6a451a97464ea9c952",
+      "core_snapshot_validated": true,
+      "direct_projected_span_count": 61368,
+      "direct_vs_hierarchical": {
+        "attribute_mismatches": 0,
+        "event_mismatches": 0,
+        "exact": true,
+        "link_edge_false_negatives": 0,
+        "link_edge_false_positives": 0,
+        "parent_edge_false_negatives": 0,
+        "parent_edge_false_positives": 0,
+        "span_false_negatives": 0,
+        "span_false_positives": 0,
+        "status_mismatches": 0
+      },
+      "duckdb_exact": true,
+      "hierarchical_projected_span_count": 61368,
+      "native_span_count": 61368,
+      "native_vs_direct": {
+        "attribute_mismatches": 0,
+        "event_mismatches": 0,
+        "exact": true,
+        "link_edge_false_negatives": 0,
+        "link_edge_false_positives": 0,
+        "parent_edge_false_negatives": 0,
+        "parent_edge_false_positives": 0,
+        "span_false_negatives": 0,
+        "span_false_positives": 0,
+        "status_mismatches": 0
+      },
+      "official_answer_exact": true,
+      "ordinary_output_row_count": 1,
+      "output_orthogonality": {
+        "csv_sha256": "f0fc5c69031d81a87e2376e06bd8242fe260a452dc2d3b4c1d34704c9445c87c",
+        "forbidden_output_fields": [],
+        "json_sha256": "92d5c251c4a231893c6022c42352a2799ae40d54acd6fa616fdece83c76e8a71",
+        "ordinary_vs_core_and_otel_csv_byte_identical": true,
+        "ordinary_vs_core_and_otel_json_byte_identical": true,
+        "types_equal": true,
+        "values_and_order_equal": true
+      },
+      "query_number": 6,
+      "scale_factor": 0.01,
+      "sql": "SELECT\n    sum(l_extendedprice * l_discount) AS revenue\nFROM\n    lineitem\nWHERE\n    l_shipdate >= CAST('1994-01-01' AS date)\n    AND l_shipdate < CAST('1995-01-01' AS date)\n    AND l_discount BETWEEN 0.05\n    AND 0.07\n    AND l_quantity < 24;\n",
+      "trace_sha256": {
+        "direct": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8",
+        "hierarchical": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8",
+        "native": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8"
+      },
+      "validated_relation_evidence_count": 62557,
+      "workload": "TPC-H-derived SF0.01 Q6"
+    },
+    "frozen_q6_checks": {
+      "causal_link_count": true,
+      "core_binding_count": true,
+      "core_occurrence_count": true,
+      "direct_hierarchical_exact": true,
+      "direct_sha": true,
+      "direct_span_count": true,
+      "executed": true,
+      "hierarchical_sha": true,
+      "hierarchical_span_count": true,
+      "native_direct_exact": true,
+      "native_sha": true,
+      "native_span_count": true,
+      "output_orthogonality": true
+    },
+    "frozen_q6_expected": {
+      "causal_link_count": 2382,
+      "core_binding_count": 62557,
+      "core_occurrence_count": 61367,
+      "span_count": 61368,
+      "trace_sha256": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8"
+    },
+    "mandatory_checks": {
+      "candidate_native_isolation": true,
+      "formal_frozen_workload": true,
+      "output_orthogonality": true,
+      "second_authority_store_count": true,
+      "selection_independent_oracle_exact": true,
+      "small_complete_trace_exact": true,
+      "small_generated_origin_link_rule": true
+    },
+    "profile_id": "opentelemetry-occurrence-execution-v1",
+    "reference_implementation": "official OpenTelemetry Python SDK synchronous in-memory span exporter",
+    "small": {
+      "canonical_trace_document_sha256": "0a93193eae9a9c7aa91c48d7abb82df4acd4e349235e21f49872020d4619a734",
+      "canonical_trace_sha256": "0a93193eae9a9c7aa91c48d7abb82df4acd4e349235e21f49872020d4619a734",
+      "causal_link_count": 32,
+      "core_occurrence_count": 36,
+      "direct_span_count": 37,
+      "generated_origin_binding_count": 32,
+      "native_span_count": 37,
+      "native_vs_direct": {
+        "attribute_mismatches": 0,
+        "event_mismatches": 0,
+        "exact": true,
+        "link_edge_false_negatives": 0,
+        "link_edge_false_positives": 0,
+        "parent_edge_false_negatives": 0,
+        "parent_edge_false_positives": 0,
+        "span_false_negatives": 0,
+        "span_false_positives": 0,
+        "status_mismatches": 0
+      }
+    },
+    "status": "SUPPORTED"
+  },
+  "projection_equivalence_source_map.json": {
+    "bidirectional_query_count": 1385,
+    "candidate_input": "ValidatedSnapshot only",
+    "cases": {
+      "adversarial": {
+        "case": "adversarial",
+        "core_snapshot_sha256": "e43fd2096949c3f29b0b78edfae16fe426cb1d7d745388ef3a0f28f6c01614c1",
+        "four_mode_output_byte_identity": true,
+        "mapped_count": 9,
+        "mapping_count": 15,
+        "native_core_document_exact": true,
+        "output_only_receipt_count": 0,
+        "output_report": {
+          "generated_artifact": "adversarial-output.js",
+          "output_bytes": 343,
+          "output_sha256": "b7eba5fe8e85f62dd7e6a4d1d8a6b17f7272205387dcd2dc53ccbcf8ea7258dd",
+          "prohibited_token_hit_count": 0,
+          "syntax_status": "PASS"
+        },
+        "projection_survives_native_map_deletion": true,
+        "query_report": {
+          "ambiguity_mismatch": 0,
+          "exact_query_count": 31,
+          "false_negative": 0,
+          "false_positive": 0,
+          "mismatches": [],
+          "name_mismatch": 0,
+          "position_mismatch": 0,
+          "source_mismatch": 0,
+          "status": "PASS",
+          "total_query_count": 31
+        },
+        "receipt_count": 16,
+        "source_root_resolution_exact": true,
+        "table_counts": {
+          "environment_records": 1,
+          "evidence_links": 17,
+          "evidence_records": 17,
+          "explicit_dispositions": 1,
+          "generated_origins": 0,
+          "generation_bindings": 17,
+          "generation_occurrences": 16,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "legacy_occurrence_binding_projections": 15,
+          "legacy_source_binding_projections": 16,
+          "migration_records": 0,
+          "perceptual_support_records": 15,
+          "predicate_profiles": 1,
+          "source_information_records": 16,
+          "support_space_records": 1
+        },
+        "unmapped_count": 6
+      },
+      "medium": {
+        "case": "medium",
+        "core_snapshot_sha256": "1a48a7811b18737494904a6f6123a3f8155e74d8a5c71797e6bb74ea7942cf0e",
+        "four_mode_output_byte_identity": true,
+        "mapped_count": 660,
+        "mapping_count": 660,
+        "native_core_document_exact": true,
+        "output_only_receipt_count": 0,
+        "output_report": {
+          "generated_artifact": "medium-output.js",
+          "output_bytes": 13200,
+          "output_sha256": "83cae374a3b7e377207f92eeea8cea8f21c598b95386db8f7bd77d6b38b7aeac",
+          "prohibited_token_hit_count": 0,
+          "syntax_status": "PASS"
+        },
+        "projection_survives_native_map_deletion": true,
+        "query_report": {
+          "ambiguity_mismatch": 0,
+          "exact_query_count": 1324,
+          "false_negative": 0,
+          "false_positive": 0,
+          "mismatches": [],
+          "name_mismatch": 0,
+          "position_mismatch": 0,
+          "source_mismatch": 0,
+          "status": "PASS",
+          "total_query_count": 1324
+        },
+        "receipt_count": 660,
+        "source_root_resolution_exact": true,
+        "table_counts": {
+          "environment_records": 1,
+          "evidence_links": 660,
+          "evidence_records": 660,
+          "explicit_dispositions": 0,
+          "generated_origins": 0,
+          "generation_bindings": 660,
+          "generation_occurrences": 660,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "legacy_occurrence_binding_projections": 660,
+          "legacy_source_binding_projections": 660,
+          "migration_records": 0,
+          "perceptual_support_records": 660,
+          "predicate_profiles": 1,
+          "source_information_records": 660,
+          "support_space_records": 1
+        },
+        "unmapped_count": 0
+      },
+      "minified": {
+        "case": "minified",
+        "core_snapshot_sha256": "ab275b702c0e5c81ea6a49b27fcd04872fed1e7880f66c4451dc0899b0b9594c",
+        "four_mode_output_byte_identity": true,
+        "mapped_count": 4,
+        "mapping_count": 5,
+        "native_core_document_exact": true,
+        "output_only_receipt_count": 0,
+        "output_report": {
+          "generated_artifact": "minified-output.js",
+          "output_bytes": 127,
+          "output_sha256": "0f05a87e575a526108e610b572d899d03715302caaf9be19f1586759ac818ee1",
+          "prohibited_token_hit_count": 0,
+          "syntax_status": "PASS"
+        },
+        "projection_survives_native_map_deletion": true,
+        "query_report": {
+          "ambiguity_mismatch": 0,
+          "exact_query_count": 17,
+          "false_negative": 0,
+          "false_positive": 0,
+          "mismatches": [],
+          "name_mismatch": 0,
+          "position_mismatch": 0,
+          "source_mismatch": 0,
+          "status": "PASS",
+          "total_query_count": 17
+        },
+        "receipt_count": 5,
+        "source_root_resolution_exact": true,
+        "table_counts": {
+          "environment_records": 1,
+          "evidence_links": 5,
+          "evidence_records": 5,
+          "explicit_dispositions": 0,
+          "generated_origins": 0,
+          "generation_bindings": 5,
+          "generation_occurrences": 5,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "legacy_occurrence_binding_projections": 5,
+          "legacy_source_binding_projections": 5,
+          "migration_records": 0,
+          "perceptual_support_records": 5,
+          "predicate_profiles": 1,
+          "source_information_records": 5,
+          "support_space_records": 1
+        },
+        "unmapped_count": 1
+      },
+      "unicode_crlf": {
+        "case": "unicode_crlf",
+        "core_snapshot_sha256": "75bb0eb7dff6e3a75f27174103d423b3ac5d3ceec9a8fad17acd266590630581",
+        "four_mode_output_byte_identity": true,
+        "mapped_count": 4,
+        "mapping_count": 5,
+        "native_core_document_exact": true,
+        "output_only_receipt_count": 0,
+        "output_report": {
+          "generated_artifact": "unicode-crlf-output.js",
+          "output_bytes": 120,
+          "output_sha256": "57eeee1aa77175ec7720e355f7c509fb1a70cbc8c23c9266cb5692938d35a5ca",
+          "prohibited_token_hit_count": 0,
+          "syntax_status": "PASS"
+        },
+        "projection_survives_native_map_deletion": true,
+        "query_report": {
+          "ambiguity_mismatch": 0,
+          "exact_query_count": 13,
+          "false_negative": 0,
+          "false_positive": 0,
+          "mismatches": [],
+          "name_mismatch": 0,
+          "position_mismatch": 0,
+          "source_mismatch": 0,
+          "status": "PASS",
+          "total_query_count": 13
+        },
+        "receipt_count": 5,
+        "source_root_resolution_exact": true,
+        "table_counts": {
+          "environment_records": 1,
+          "evidence_links": 5,
+          "evidence_records": 5,
+          "explicit_dispositions": 0,
+          "generated_origins": 0,
+          "generation_bindings": 5,
+          "generation_occurrences": 5,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "legacy_occurrence_binding_projections": 5,
+          "legacy_source_binding_projections": 5,
+          "migration_records": 0,
+          "perceptual_support_records": 5,
+          "predicate_profiles": 1,
+          "source_information_records": 5,
+          "support_space_records": 1
+        },
+        "unmapped_count": 1
+      }
+    },
+    "declared_profile_status": "SUPPORTED",
+    "frozen_checks": {
+      "bidirectional_queries": true,
+      "bidirectional_queries_exact": true,
+      "complete_documents_exact": true,
+      "indexed_exclusions": true,
+      "medium_mappings": true,
+      "native_map_deletion_isolation": true,
+      "official_applicable_passed": true,
+      "official_applicable_total": true,
+      "oracle_isolation": true,
+      "output_orthogonality": true,
+      "query_mismatches": true,
+      "secondary_authority_mapping_stores": true,
+      "source_map_specific_core_changes": true,
+      "total_mapping_segments": true
+    },
+    "frozen_expected": {
+      "bidirectional_queries": 1385,
+      "indexed_exclusions": 19,
+      "medium_mappings": 660,
+      "official_applicable_passed": 80,
+      "official_applicable_total": 80,
+      "query_mismatches": 0,
+      "secondary_authority_mapping_stores": 0,
+      "source_map_specific_core_changes": 0,
+      "total_mapping_segments": 685
+    },
+    "map_document_hashes": {
+      "adversarial": {
+        "bytes_equal": true,
+        "native_sha256": "0344d51065ca472d7b24f3777106b92ccb2ede0f50a8790554a599bcd87de5ec",
+        "normalized_records_sha256": "d7c0b9cf96a7704d7624e4789387c509b4cfc08c2865e98c19a011d3d64a8a47",
+        "projected_sha256": "0344d51065ca472d7b24f3777106b92ccb2ede0f50a8790554a599bcd87de5ec"
+      },
+      "medium": {
+        "bytes_equal": true,
+        "native_sha256": "5ae2ea7d8a7a9ad19ab4cc91a082ab4bc9f0b38266587d5580aa222c2977151b",
+        "normalized_records_sha256": "fd9910faf697be6fa472b546c5957d1b8be2a2b3fb483641bd14f800a121b0fb",
+        "projected_sha256": "5ae2ea7d8a7a9ad19ab4cc91a082ab4bc9f0b38266587d5580aa222c2977151b"
+      },
+      "minified": {
+        "bytes_equal": true,
+        "native_sha256": "ae48b55cbd35d43c391fb04b6988f2861b0988aa048a7f678a2b396505996393",
+        "normalized_records_sha256": "bfe5ee03e148c11a000509a9ff5869e115551f1b851a8ba8b81604fc5cafd0d9",
+        "projected_sha256": "ae48b55cbd35d43c391fb04b6988f2861b0988aa048a7f678a2b396505996393"
+      },
+      "unicode_crlf": {
+        "bytes_equal": true,
+        "native_sha256": "f69a34d603ac69fe3a0781c7c3971c8f27de24648220a36cc0a79f595d6fd295",
+        "normalized_records_sha256": "1944ef00e15a6b1e7d4cb334ab7378da1dd7ed3e0a44d8264739703a9282943f",
+        "projected_sha256": "f69a34d603ac69fe3a0781c7c3971c8f27de24648220a36cc0a79f595d6fd295"
+      }
+    },
+    "medium_mapping_count": 660,
+    "profile_id": "ecma426-ordinary-source-map-v1",
+    "query_mismatch_count": 0,
+    "reference_implementation": "official source-map 0.8.0 SourceMapGenerator and SourceMapConsumer",
+    "standard_surface_status": "PARTIAL",
+    "status": "SUPPORTED",
+    "total_mapping_segments": 685
+  },
+  "result_only_ambiguity_source_map.json": {
+    "ambiguity_case_count": 2,
+    "cases": [
+      {
+        "generated_output_equal": true,
+        "left_original_source": "ambiguity-a.js",
+        "right_original_source": "ambiguity-b.js",
+        "source_maps_equal": false,
+        "sources": [
+          "ambiguity-a.js",
+          "ambiguity-b.js"
+        ]
+      },
+      {
+        "generated_output_equal": true,
+        "left_original_source": "ambiguity-c.js",
+        "right_original_source": "ambiguity-d.js",
+        "source_maps_equal": false,
+        "sources": [
+          "ambiguity-c.js",
+          "ambiguity-d.js"
+        ]
+      }
+    ],
+    "interpretation": "Generated result bytes alone do not identify a unique source or Source Map.",
+    "profile_id": "ecma426-ordinary-source-map-v1",
+    "status": "PASS"
+  },
+  "run_summary.json": {
+    "blocking_reasons": [],
+    "domain_statuses": {
+      "database_p1": "SUPPORTED",
+      "database_p2": "SUPPORTED",
+      "otel_p1": "SUPPORTED",
+      "otel_p2": "SUPPORTED",
+      "otel_p3": "SUPPORTED",
+      "source_map_p1": "SUPPORTED",
+      "source_map_p2": "SUPPORTED",
+      "source_map_p3": "SUPPORTED"
+    },
+    "framework": "unified-operational-projection-proof-v2",
+    "mandatory_checks": {
+      "all_domain_properties_supported": true,
+      "all_negative_controls_fail_closed": true,
+      "exact_source_heads_and_ancestry": true,
+      "matrix_supported": true,
+      "new_core_changes_zero": true,
+      "new_core_schema_changes_zero": true,
+      "new_domain_specific_core_fields_zero": true,
+      "oracle_isolation": true,
+      "output_orthogonality": true,
+      "profiles_valid": true,
+      "second_authority_count_zero": true,
+      "v1_preserved": true
+    },
+    "status": "UNIFIED_OPERATIONAL_PROJECTION_PROOF_V2_SUPPORTED"
+  },
+  "second_authority_audit.json": {
+    "authoritative_core_fact_store": [
+      "environment_records",
+      "evidence_links",
+      "evidence_records",
+      "explicit_dispositions",
+      "generated_origins",
+      "generation_bindings",
+      "generation_occurrences",
+      "generator_manifests",
+      "generator_operation_results",
+      "hierarchy_records",
+      "migration_records",
+      "perceptual_support_records",
+      "predicate_profiles",
+      "source_information_records",
+      "support_space_records"
+    ],
+    "candidate_answer_input_from_reference_count": 0,
+    "candidate_fallback_relation_store_count": 0,
+    "ephemeral_projection_or_view_objects": [
+      "immutable DatabaseDomainProjection",
+      "canonical projected trace",
+      "projected Source Map document",
+      "report comparison records"
+    ],
+    "forbidden_persisted_secondary_relation_stores": [],
+    "independent_native_or_reference_comparison_artifacts": [
+      "hand-authored database Oracle",
+      "official OpenTelemetry SDK finished spans",
+      "official source-map generated maps and consumer query answers"
+    ],
+    "secondary_authority_store_count": 0,
+    "status": "PASS"
+  },
+  "source_branch_lineage.json": {
+    "blocking_reasons": [],
+    "historical_main_base": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+    "historical_main_base_exists": true,
+    "merge_commits": [
+      "652113055be4fb401106b53b9f8a8fa43470ef1c",
+      "672999026ca88ba5e5968f9ca48affd6cfbe5c72",
+      "448170807967c70ee512877b26b01074d1433b61"
+    ],
+    "source_commit_ancestry": {
+      "03caa31b8a6abfe6e112a0544071618c689bb11f": true,
+      "25a9d2a614d2d34d36c38f7c560b818cdbc4b179": true,
+      "7dba987713da345453781e4b95130f1deb5f04d4": true,
+      "bc0bca1eae513f72c4ba578a285dbb56c742eae6": true
+    },
+    "source_heads": [
+      {
+        "exact": true,
+        "expected_head": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+        "observed_head": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+        "remote_branch": "origin/experiment/database-lineage-core-v3-native-v1"
+      },
+      {
+        "exact": true,
+        "expected_head": "25a9d2a614d2d34d36c38f7c560b818cdbc4b179",
+        "observed_head": "25a9d2a614d2d34d36c38f7c560b818cdbc4b179",
+        "remote_branch": "origin/experiment/opentelemetry-projection-v1"
+      },
+      {
+        "exact": true,
+        "expected_head": "7dba987713da345453781e4b95130f1deb5f04d4",
+        "observed_head": "7dba987713da345453781e4b95130f1deb5f04d4",
+        "remote_branch": "origin/experiment/source-map-projection-v1"
+      },
+      {
+        "exact": true,
+        "expected_head": "bc0bca1eae513f72c4ba578a285dbb56c742eae6",
+        "observed_head": "bc0bca1eae513f72c4ba578a285dbb56c742eae6",
+        "remote_branch": "origin/theory/operational-projection-proof-v1"
+      }
+    ],
+    "status": "PASS"
+  },
+  "source_map_standard_surface_coverage.json": {
+    "additional_declared_exclusions": [
+      "indexed maps and sections",
+      "WebAssembly-specific behavior",
+      "CSS-specific behavior",
+      "stack-trace deobfuscation",
+      "browser DevTools UI",
+      "remote HTTP source retrieval",
+      "sourceMappingURL comment parsing",
+      "proposal and future extension fields",
+      "arbitrary compilers, optimizers, and languages"
+    ],
+    "excluded": [
+      {
+        "name": "indexMapWrongTypeSections",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapWrongTypeOffset",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapWrongTypeMap",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapInvalidBaseMappings",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapInvalidOverlap",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapInvalidOrder",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapMissingMap",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapInvalidSubMap",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapMissingOffset",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapMissingOffsetLine",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapMissingOffsetColumn",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapOffsetLineWrongType",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapOffsetColumnWrongType",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapEmptySections",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapFileWrongType1",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapFileWrongType2",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "basicMappingWithIndexMap",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapWithMissingFile",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      },
+      {
+        "name": "indexMapWithTwoConcatenatedSources",
+        "reason": "indexed maps/sections are explicitly out of profile"
+      }
+    ],
+    "indexed_exclusion_count": 19,
+    "official_applicable_passed": 80,
+    "official_applicable_total": 80,
+    "ordinary_non_indexed_profile_status": "SUPPORTED",
+    "profile_id": "ecma426-ordinary-source-map-v1",
+    "standard_surface_status": "PARTIAL",
+    "status": "PARTIAL",
+    "unavailable_evidence": [
+      {
+        "evidence": "published ECMA-426 1.0 HTML bytes",
+        "reason": "TLS handshake/HTTP 502 through the configured proxy after repeated curl and Python retrieval attempts",
+        "status": "UNAVAILABLE",
+        "substituted": false,
+        "url": "https://426.ecma-international.org/1.0/index.html"
+      }
+    ]
+  },
+  "static_isolation_audit.json": {
+    "allowed_shared_helpers": [
+      "canonical trace schema",
+      "canonicalizer",
+      "semantic-key formatting",
+      "ProjectionError"
+    ],
+    "direct_hierarchical_shared_extraction_helper_count": 0,
+    "static_import_violations": [],
+    "status": "PASS"
+  },
+  "strict_partiality_database.json": {
+    "cases": [
+      {
+        "binding_difference": {
+          "equal": false,
+          "left_count": 54,
+          "left_only_sha256": "8a58d6d087bc3f53bf2f1a6075b57e10d8fe83baaeedbbcc24dca8544094f41a",
+          "right_count": 54,
+          "right_only_sha256": "9f90cd8576e1f309837004d886c7a6b9cc40b51e6de35c638ec6a24938662d73",
+          "symmetric_difference_count": 108
+        },
+        "binding_set_equal": false,
+        "binding_symmetric_difference_count": 108,
+        "complete_snapshot_equal": false,
+        "counterexample_id": "same-lineage-distinct-execution-run",
+        "environment_context_equal": true,
+        "environment_difference": {
+          "equal": true,
+          "left_count": 1,
+          "left_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "right_count": 1,
+          "right_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "symmetric_difference_count": 0
+        },
+        "left_snapshot_id": "snap3_38c40041239202f0607569a2ef74c7060943584d7c8228f997c4650563f42a0b",
+        "left_snapshot_semantic_sha256": "e34085e6f4e54495fc65ccf8bba5f57661c6d78a653552bef65cf9c89a736f38",
+        "occurrence_difference": {
+          "equal": false,
+          "left_count": 36,
+          "left_only_sha256": "37a7735cb4d021cfd03146a6b693f2e81ae381a9c77f5945a5a4bb2e7e0d7fe0",
+          "right_count": 36,
+          "right_only_sha256": "3d8368233d8f5e2d3bf4bfb30e1537e23211ea52d28321b1dc12c034d339ee74",
+          "symmetric_difference_count": 72
+        },
+        "occurrence_set_equal": false,
+        "occurrence_symmetric_difference_count": 72,
+        "output_equal": true,
+        "projection_hash_equal": true,
+        "projection_sha256": "d6a8dc3183acccba34aea70bd2c8a6065de5dbc672e83a679f9735ff69cdd89d",
+        "right_snapshot_id": "snap3_140e6111ac26a94f8c2f966c6a0fd9c6d8320bd330d416f471e859ab5c825ab9",
+        "right_snapshot_semantic_sha256": "dc6493fde799b6ba0bcd9093cf8f866d6f5af3bb8a83359e73b5f0c0005c6ff3",
+        "transform_context_equal": true,
+        "valid_counterexample": true
+      },
+      {
+        "binding_difference": {
+          "equal": false,
+          "left_count": 54,
+          "left_only_sha256": "069f861f664789754e293aeccad5756ca251a632c02528a18bf3a869115d10f0",
+          "right_count": 54,
+          "right_only_sha256": "bd91d79a093fe8f1e2cdcd25de50815423af96b629b871ebbb388a45d33e890f",
+          "symmetric_difference_count": 108
+        },
+        "binding_set_equal": false,
+        "binding_symmetric_difference_count": 108,
+        "complete_snapshot_equal": false,
+        "counterexample_id": "same-lineage-distinct-environment-context",
+        "environment_context_equal": false,
+        "environment_difference": {
+          "equal": false,
+          "left_count": 1,
+          "left_only_sha256": "9147f7882d1c051830baad0bafff6346b88b23a2ba533d2ec41832cceb8e550a",
+          "right_count": 1,
+          "right_only_sha256": "fad14eee05d4c516cd61c81ff45cbe9b4e74668f2e2a76fe39b9a6e52d49591e",
+          "symmetric_difference_count": 2
+        },
+        "left_snapshot_id": "snap3_1a1933f1098ac192d03f0d20ed659814f7af3792595b94b1ee0b0824d16acff9",
+        "left_snapshot_semantic_sha256": "cab9e5937a9263220b966b7ff04d42e61d74f69fae76fdc91d8ee924737c9d3a",
+        "occurrence_difference": {
+          "equal": false,
+          "left_count": 36,
+          "left_only_sha256": "7ad10be67c5ed4d0abcdd2e6b662ab40bc50ae3cba5b1fe419a65dfbbc2b37d2",
+          "right_count": 36,
+          "right_only_sha256": "151d0014067da09bd105df94b969076d25349f51e927a687131578007fffd518",
+          "symmetric_difference_count": 72
+        },
+        "occurrence_set_equal": false,
+        "occurrence_symmetric_difference_count": 72,
+        "output_equal": true,
+        "projection_hash_equal": true,
+        "projection_sha256": "d6a8dc3183acccba34aea70bd2c8a6065de5dbc672e83a679f9735ff69cdd89d",
+        "right_snapshot_id": "snap3_8118f714152cdbbb1d4294d20f4a82ba9eb93cd5996ac7bc8767bd5130ff03cf",
+        "right_snapshot_semantic_sha256": "f34b6640bfb133b9d498394fbc8335766104bfe6c4c0583ea4a63241072639ad",
+        "transform_context_equal": true,
+        "valid_counterexample": true
+      }
+    ],
+    "counterexample_count": 2,
+    "profile_id": "database-which-lineage-v1",
+    "projection_equality_does_not_imply_complete_fact_equality": true,
+    "status": "SUPPORTED"
+  },
+  "strict_partiality_opentelemetry.json": {
+    "cases": [
+      {
+        "backward_lineage_equal": false,
+        "binding_set_equal": false,
+        "binding_symmetric_difference_count": 4,
+        "complete_snapshot_equal": false,
+        "counterexample_id": "distinct_selection_source_identities",
+        "direct_core_projection_equal": true,
+        "direct_relation_set_equal": false,
+        "direct_relation_symmetric_difference_count": 4,
+        "left_snapshot_id": "snap3_ea73a79f5be01d1cc6e334645c4641092f40215e39f73aedb5f05291b5c9c88f",
+        "left_snapshot_semantic_sha256": "0e4fc31e958da0bd7897e0ea8284fdb52ab4d8a1b7b0d92effca4abe1641431d",
+        "native_normalized_otel_equal": true,
+        "normalized_trace_hash_equal": true,
+        "normalized_trace_sha256": "ee13dcd852c8ba2537192644319b0d11672d961cd170eac5f9310a2291b2e87c",
+        "occurrence_projection_equal": true,
+        "ordinary_output_equal": true,
+        "right_snapshot_id": "snap3_89fabcd821ef18d2b4e0284e11a8b910171193fd7a2191f80aac612355d5703c",
+        "right_snapshot_semantic_sha256": "2e1acce0643862196458da103a7062f961f23f04a1be89e1a9f5d077c0108c99",
+        "source_difference": {
+          "equal": false,
+          "left_count": 2,
+          "left_only": [
+            "alpha:source:1",
+            "alpha:source:2"
+          ],
+          "right_count": 2,
+          "right_only": [
+            "beta:source:1",
+            "beta:source:2"
+          ],
+          "symmetric_difference_count": 4
+        },
+        "source_set_equal": false,
+        "source_symmetric_difference_count": 4,
+        "valid_counterexample": true
+      },
+      {
+        "backward_lineage_equal": false,
+        "binding_set_equal": false,
+        "binding_symmetric_difference_count": 16,
+        "complete_snapshot_equal": false,
+        "counterexample_id": "distinct_many_to_many_tuple_identities_with_equal_values",
+        "direct_core_projection_equal": true,
+        "direct_relation_set_equal": false,
+        "direct_relation_symmetric_difference_count": 16,
+        "left_snapshot_id": "snap3_5e61417a6bbaa754ef3f837b55f5c1dc55d2849359d9e2c87f4e9232ba7d01ce",
+        "left_snapshot_semantic_sha256": "d877d3e01a8b145428da9c2adedb502d4e5a22a026e39e660e255be41a27078e",
+        "native_normalized_otel_equal": true,
+        "normalized_trace_hash_equal": true,
+        "normalized_trace_sha256": "5339245514179ee67cf0f7de1f798cf1f03bf76eb5d201f8b8ec621f7367dd0e",
+        "occurrence_projection_equal": true,
+        "ordinary_output_equal": true,
+        "right_snapshot_id": "snap3_4df90d1bf530f1e288a9a7c99d4931447e41e71cb1722a492a93e91f20a5122b",
+        "right_snapshot_semantic_sha256": "895e26ac143c9d0d26040b67e18929a771860b0d165e88bd1714c733587f5716",
+        "source_difference": {
+          "equal": false,
+          "left_count": 4,
+          "left_only": [
+            "gamma:left:1",
+            "gamma:left:2",
+            "gamma:right:1",
+            "gamma:right:2"
+          ],
+          "right_count": 4,
+          "right_only": [
+            "delta:left:1",
+            "delta:left:2",
+            "delta:right:1",
+            "delta:right:2"
+          ],
+          "symmetric_difference_count": 8
+        },
+        "source_set_equal": false,
+        "source_symmetric_difference_count": 8,
+        "valid_counterexample": true
+      }
+    ],
+    "counterexample_count": 2,
+    "frozen_expected_total_binding_symmetric_difference_count": 20,
+    "profile_id": "opentelemetry-occurrence-execution-v1",
+    "status": "SUPPORTED",
+    "total_binding_symmetric_difference_count": 20
+  },
+  "strict_partiality_source_map.json": {
+    "cases": [
+      {
+        "binding_set_equal": false,
+        "binding_symmetric_difference_count": 34,
+        "complete_snapshot_equal": false,
+        "counterexample_id": "same_map_different_occurrence_identity",
+        "differences": {
+          "binding": {
+            "equal": false,
+            "left_count": 17,
+            "left_only_sha256": "549f89db080332737b63f224650ab9f1eba4ede434ddb4a484fa3ec0196d0514",
+            "right_count": 17,
+            "right_only_sha256": "140ec37cd16ef88e243e501af719857cfb975ee1838d3c3658d7d5c6f47cb2f3",
+            "symmetric_difference_count": 34
+          },
+          "disposition": {
+            "equal": true,
+            "left_count": 1,
+            "left_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "right_count": 1,
+            "right_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "symmetric_difference_count": 0
+          },
+          "evidence": {
+            "equal": false,
+            "left_count": 17,
+            "left_only_sha256": "37e062c54c82e39b54da704a9ccf16cb8f1f57073dcb7b462d53faf94e546b4f",
+            "right_count": 17,
+            "right_only_sha256": "c5c9b269a6af58f690c88d488ac0b8c9961d4a701fc18d6424f261bcf7a36268",
+            "symmetric_difference_count": 34
+          },
+          "occurrence": {
+            "equal": false,
+            "left_count": 16,
+            "left_only_sha256": "749aafca8a6ba22700651fe16d7f3ae63008697d7e8b49c460b143d88b9301d5",
+            "right_count": 16,
+            "right_only_sha256": "553726f510bb1e1ca99e446b7d9efc6455fe2f808a75bf5bd24b60dffcabc52d",
+            "symmetric_difference_count": 32
+          },
+          "operation_result": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "aa503fbc61da6c1a26fec72a5113ebb5bd3190a89509625879d5481e99319e1c",
+            "right_count": 1,
+            "right_only_sha256": "cd8914dbf2a81da2a605fd21bc4c67c48fce54393520144522c1a88af9e1d6bc",
+            "symmetric_difference_count": 2
+          },
+          "source": {
+            "equal": true,
+            "left_count": 16,
+            "left_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "right_count": 16,
+            "right_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "symmetric_difference_count": 0
+          },
+          "transform_context": {
+            "equal": true,
+            "left_count": 9,
+            "left_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "right_count": 9,
+            "right_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "symmetric_difference_count": 0
+          }
+        },
+        "disposition_set_equal": true,
+        "disposition_symmetric_difference_count": 0,
+        "evidence_set_equal": false,
+        "evidence_symmetric_difference_count": 34,
+        "left_snapshot_id": "snap3_0b6bedbed2ee0e72cccb5bb7c4bd99c82bd34843a0ff58b8cae676d333e30c4d",
+        "left_snapshot_semantic_sha256": "58daf4b1dddf117b3245306ce1315ac1a88f5d084a851819719a91e92e493f30",
+        "map_document_equal": true,
+        "map_document_sha256": "08d64c86ae308d976d3a6d07be4e385357464edf8195c974f659c7a5b6494b68",
+        "occurrence_set_equal": false,
+        "occurrence_symmetric_difference_count": 32,
+        "operation_result_set_equal": false,
+        "operation_result_symmetric_difference_count": 2,
+        "output_equal": true,
+        "right_snapshot_id": "snap3_73d9a18fdb3a9ef6bce37e1126f35f1dfc3be22268682fba0e14e792b0964843",
+        "right_snapshot_semantic_sha256": "196a6dc9ae56a74f0881e9ff9732d1eaef53e6f77b96faa4d58a73990e4b898a",
+        "source_set_equal": true,
+        "source_symmetric_difference_count": 0,
+        "transform_context_equal": true,
+        "valid_counterexample": true
+      },
+      {
+        "binding_set_equal": false,
+        "binding_symmetric_difference_count": 2,
+        "complete_snapshot_equal": false,
+        "counterexample_id": "same_map_different_transformation_history",
+        "differences": {
+          "binding": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "1fc74a0a9badd93b920a2ef5fe619f68823b7e568dfe11c3e44ad1d9f81f099e",
+            "right_count": 1,
+            "right_only_sha256": "ae32dae544a699f1dac8fbd87933bfee2be540e9640fe37c82f25639a5ba6d10",
+            "symmetric_difference_count": 2
+          },
+          "disposition": {
+            "equal": true,
+            "left_count": 0,
+            "left_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "right_count": 0,
+            "right_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "symmetric_difference_count": 0
+          },
+          "evidence": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "24e3b28f129b69dcde2e482156e8c9a6775aa38ef25bd6f024e47c8bb0f0280d",
+            "right_count": 1,
+            "right_only_sha256": "69178d99292e03526dc4a3c62ab4ba74022e2b4668d2cc235406fdc2f37659dc",
+            "symmetric_difference_count": 2
+          },
+          "occurrence": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "63554d778860bfa44aa13e1a491d6a2585dbcd5e60c2506cec1555a7b0b288dc",
+            "right_count": 1,
+            "right_only_sha256": "493c4ec32fdfd359f625d280e8c14ff6b81c0a782771d804d7f53c67d74d89f7",
+            "symmetric_difference_count": 2
+          },
+          "operation_result": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "4bfe2207b9150a7b8c290d9699f3dd83bf468ad1186d4690eb53428e03ce60e5",
+            "right_count": 1,
+            "right_only_sha256": "ad4adbedf55390567a391bb3c0be0e0c9e11ca2f37088933b26fe6a97bc6fe4c",
+            "symmetric_difference_count": 2
+          },
+          "source": {
+            "equal": true,
+            "left_count": 1,
+            "left_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "right_count": 1,
+            "right_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "symmetric_difference_count": 0
+          },
+          "transform_context": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "c36761a9d93c0ba2ec4ef8c14ba8b56048e8983f000e31db42edadd060d225db",
+            "right_count": 1,
+            "right_only_sha256": "9e10756d909b317148d2ee71829807bc02fc5f66b8a3825a300c17e0d552e73f",
+            "symmetric_difference_count": 2
+          }
+        },
+        "disposition_set_equal": true,
+        "disposition_symmetric_difference_count": 0,
+        "evidence_set_equal": false,
+        "evidence_symmetric_difference_count": 2,
+        "left_snapshot_id": "snap3_fe339b12ffc28f08c28d1d72054e1483d4cb867cf437334d9351f8822ee6d7c1",
+        "left_snapshot_semantic_sha256": "46b6fcb230015d6eb0b9a494e523d4885dbe2edd753155c558caec085871935c",
+        "map_document_equal": true,
+        "map_document_sha256": "009f8bebe0ad47722bd9666a2a4bf0806ede0bcff1a37b802232f648cbd76317",
+        "occurrence_set_equal": false,
+        "occurrence_symmetric_difference_count": 2,
+        "operation_result_set_equal": false,
+        "operation_result_symmetric_difference_count": 2,
+        "output_equal": true,
+        "right_snapshot_id": "snap3_a60bbf0b235955dc149a648b9bab3906484b1fe2189b08e322070cc0ce133879",
+        "right_snapshot_semantic_sha256": "16fd7d24dc09cb8e6764630110331e74c20d13cdc0403a51f202c7da62e48ad4",
+        "source_set_equal": true,
+        "source_symmetric_difference_count": 0,
+        "transform_context_equal": false,
+        "valid_counterexample": true
+      },
+      {
+        "binding_set_equal": false,
+        "binding_symmetric_difference_count": 4,
+        "complete_snapshot_equal": false,
+        "counterexample_id": "same_map_narrow_vs_wide_generation_relation",
+        "differences": {
+          "binding": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "59639c823ea6476f8a29640978ef745434adcb9b5e69189840c697757260a6e8",
+            "right_count": 3,
+            "right_only_sha256": "1c05523397cb10d6a0ae86eaab745f996223bed8f40466971b88050ee61a3eb4",
+            "symmetric_difference_count": 4
+          },
+          "disposition": {
+            "equal": false,
+            "left_count": 0,
+            "left_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "right_count": 1,
+            "right_only_sha256": "505abd49b7d273b5ce63653c288e1a59a5962c5a0532f435533c9227e4a3563b",
+            "symmetric_difference_count": 1
+          },
+          "evidence": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "f6e90b1c63a35ddaa97a7540dd91101ced7ebc4863dbd02e08c77abb6efdd041",
+            "right_count": 3,
+            "right_only_sha256": "1bafbc1055e50fd2bfd26371040d7f4b5655e7b615e9e0e35ce8b039cf972b57",
+            "symmetric_difference_count": 4
+          },
+          "occurrence": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "8831feec511e4661a52004a5ab905b1dfa82a2c6ce51eee1053b30e8d1008bf7",
+            "right_count": 2,
+            "right_only_sha256": "e3416e77e5b140fd60049e01ef7199b6519dbcd56af102a9761b384a4cb5bd43",
+            "symmetric_difference_count": 3
+          },
+          "operation_result": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "c964184b2b452a38972ca81f90ff0b42db7b69132dcd7f8aa2823fbdb4168c46",
+            "right_count": 1,
+            "right_only_sha256": "c334935846803e4548dbb6cdcd90d3427c574691a520fbc336f5b578ed6410ea",
+            "symmetric_difference_count": 2
+          },
+          "source": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "right_count": 3,
+            "right_only_sha256": "f4e7a3af74a3ec1a4b9169055642f8b5b8340e8424ba67a340ed24f0608ba8a5",
+            "symmetric_difference_count": 2
+          },
+          "transform_context": {
+            "equal": false,
+            "left_count": 1,
+            "left_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "right_count": 2,
+            "right_only_sha256": "a1a7950f1b90fb5343428d5acad5d557f25030874e3e857deb6f173608b0ea71",
+            "symmetric_difference_count": 1
+          }
+        },
+        "disposition_set_equal": false,
+        "disposition_symmetric_difference_count": 1,
+        "evidence_set_equal": false,
+        "evidence_symmetric_difference_count": 4,
+        "left_snapshot_id": "snap3_68b7cdda47f868aa543d151022a1562f9212757f342d49f4f5fc6ccf200d9c68",
+        "left_snapshot_semantic_sha256": "8cc46f09077fc31f060deedc967461e098f4b4d5ac43bc59f9eae484a286c363",
+        "map_document_equal": true,
+        "map_document_sha256": "ba07691402af45ee043c17a0810a9fb422032ff3433bb31468b45d36c44f0223",
+        "occurrence_set_equal": false,
+        "occurrence_symmetric_difference_count": 3,
+        "operation_result_set_equal": false,
+        "operation_result_symmetric_difference_count": 2,
+        "output_equal": true,
+        "right_snapshot_id": "snap3_39c62c37d38a85716b88122e0ea4ae6e237fe4ac0be38eac73bc392c3e9e6a86",
+        "right_snapshot_semantic_sha256": "92eba6901d256dac37e8f07c5a0274c96c57b7cf0a214ecdf7bff684242e155d",
+        "source_set_equal": false,
+        "source_symmetric_difference_count": 2,
+        "transform_context_equal": false,
+        "valid_counterexample": true
+      }
+    ],
+    "counterexample_count": 3,
+    "profile_id": "ecma426-ordinary-source-map-v1",
+    "projection_equality_does_not_imply_complete_fact_equality": true,
+    "status": "SUPPORTED"
+  },
+  "unified_projection_matrix.json": {
+    "matrix_id": "unified-operational-projection-proof-v2",
+    "rows": [
+      {
+        "candidate_input": "ValidatedSnapshot plus exact validation proof",
+        "composition_case_count": 0,
+        "core_specialization_count": 0,
+        "declared_scope": "fixed deterministic tuple-level profile",
+        "domain_mechanism": "Database which-lineage",
+        "exact_record_count": 112,
+        "false_negative": 0,
+        "false_positive": 0,
+        "limitations": [
+          "fixed deterministic fixtures",
+          "declared relational operators",
+          "tuple-level which-lineage"
+        ],
+        "native_or_reference_implementation": "hand-authored frozen independent Oracle",
+        "output_orthogonality": "SUPPORTED",
+        "p1": "SUPPORTED",
+        "p2": "SUPPORTED",
+        "p3": "NOT_APPLICABLE",
+        "p3_subtype": "domain root/wider projection",
+        "second_authority_store_count": 0,
+        "strict_counterexample_count": 2
+      },
+      {
+        "candidate_input": "ValidatedSnapshot plus exact validation proof",
+        "composition_case_count": 2,
+        "core_specialization_count": 0,
+        "declared_scope": "deterministic in-process occurrence/execution/causal shadow",
+        "domain_mechanism": "OpenTelemetry trace",
+        "exact_record_count": {
+          "formal_q6_spans": 61368,
+          "small_spans": 37
+        },
+        "false_negative": 0,
+        "false_positive": 0,
+        "limitations": [
+          "deterministic in-process execution",
+          "selected occurrence attributes/events",
+          "no distributed causality or sampling"
+        ],
+        "native_or_reference_implementation": "official OpenTelemetry Python SDK",
+        "output_orthogonality": "PASS",
+        "p1": "SUPPORTED",
+        "p2": "SUPPORTED",
+        "p3": "SUPPORTED",
+        "p3_subtype": "cross-domain hierarchical projection",
+        "second_authority_store_count": 0,
+        "strict_counterexample_count": 2
+      },
+      {
+        "candidate_input": "ValidatedSnapshot only",
+        "composition_case_count": 5,
+        "core_specialization_count": 0,
+        "declared_scope": "ordinary non-indexed JavaScript profile",
+        "domain_mechanism": "ECMA-426 Source Map",
+        "exact_record_count": 685,
+        "false_negative": 0,
+        "false_positive": 0,
+        "limitations": [
+          "ordinary non-indexed version-3 maps",
+          "JavaScript UTF-16 coordinates",
+          "indexed maps and non-JavaScript surfaces excluded"
+        ],
+        "native_or_reference_implementation": "official source-map 0.8.0 generator and consumer",
+        "output_orthogonality": "PASS",
+        "p1": "SUPPORTED",
+        "p2": "SUPPORTED",
+        "p3": "SUPPORTED",
+        "p3_subtype": "multistage generation composition",
+        "second_authority_store_count": 0,
+        "standard_surface_status": "PARTIAL",
+        "strict_counterexample_count": 3
+      }
+    ],
+    "source_map_standard_surface_status": "PARTIAL",
+    "status": "SUPPORTED"
+  },
+  "v1_preservation.json": {
+    "expected_artifact_tree_id": "7e60b4fc4a3ad58bd91279f07eff15208c1729a2",
+    "expected_tree_id": "88f98c574821bfb7c61d94b11301118d7cbe866a",
+    "not_evaluated_statuses_preserved": true,
+    "observed_artifact_tree_id": "7e60b4fc4a3ad58bd91279f07eff15208c1729a2",
+    "observed_tree_id": "88f98c574821bfb7c61d94b11301118d7cbe866a",
+    "path": "experiments/operational_projection_proof",
+    "status": "PASS",
+    "working_or_committed_differences": []
+  }
+}

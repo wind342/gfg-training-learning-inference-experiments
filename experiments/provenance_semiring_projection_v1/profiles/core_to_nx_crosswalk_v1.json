@@ -1,0 +1,54 @@
+{
+  "profile_id": "core-v3-to-nx-crosswalk-v1",
+  "input_authority": "unmodified Core v3 ValidatedSnapshot plus successful validate_snapshot result",
+  "rules": [
+    {
+      "core_surface": "SourceInformationRecord.source_identity",
+      "nx_meaning": "one stable indeterminate",
+      "operation": "SHA-256 variable derivation"
+    },
+    {
+      "core_surface": "GenerationBinding.origin_reference.kind=registered_source",
+      "nx_meaning": "x_u",
+      "operation": "registered-source leaf"
+    },
+    {
+      "core_surface": "GeneratedOrigin.origin_payload.prior_support_id",
+      "nx_meaning": "prior support polynomial",
+      "operation": "mandatory recursive bridge"
+    },
+    {
+      "core_surface": "all GenerationBindings sharing a support outcome and occurrence",
+      "nx_meaning": "joint use of every input",
+      "operation": "multiplication"
+    },
+    {
+      "core_surface": "terminal PerceptualSupportRecords sharing support_payload.logical_output_key",
+      "nx_meaning": "alternative producer derivations",
+      "operation": "addition"
+    },
+    {
+      "core_surface": "terminal PerceptualSupportRecord.support_payload.values",
+      "nx_meaning": "ordinary tuple value attached to the logical output key",
+      "operation": "exact copied value; never used as a polynomial factor"
+    }
+  ],
+  "ignored_surfaces": {
+    "GenerationOccurrence": "grouping only; its identity and payload are not polynomial factors",
+    "EvidenceRecord": "validation evidence only",
+    "EnvironmentRecord": "snapshot validation only",
+    "GeneratorOperationResult": "snapshot validation only",
+    "ExplicitDisposition": "closure evidence only; contributes no positive output term"
+  },
+  "fail_closed_conditions": [
+    "snapshot validation failure",
+    "unknown origin kind",
+    "missing registered source",
+    "missing GeneratedOrigin bridge",
+    "missing prior support",
+    "support with zero inbound bindings",
+    "support with bindings from more than one occurrence",
+    "cycle in GeneratedOrigin recursion",
+    "noncanonical terminal logical output key"
+  ]
+}

@@ -1,0 +1,60 @@
+diff --git a/model.py b/model.py
+index c698f8b..430a4f9 100644
+--- a/model.py
++++ b/model.py
+@@ -130,6 +130,14 @@ class GPT(nn.Module):
+             h = nn.ModuleList([Block(config) for _ in range(config.n_layer)]),
+             ln_f = LayerNorm(config.n_embd, bias=config.bias),
+         ))
++        # Position indices depend only on the configured context length. Keep one
++        # device-moving, non-checkpointed buffer instead of rebuilding the same
++        # CUDA tensor on every forward pass.
++        self.register_buffer(
++            "_position_ids",
++            torch.arange(config.block_size, dtype=torch.long),
++            persistent=False,
++        )
+         self.lm_head = nn.Linear(config.n_embd, config.vocab_size, bias=False)
+         # with weight tying when using torch.compile() some warnings get generated:
+         # "UserWarning: functional_call was passed multiple values for tied weights.
+@@ -171,7 +179,7 @@ class GPT(nn.Module):
+         device = idx.device
+         b, t = idx.size()
+         assert t <= self.config.block_size, f"Cannot forward sequence of length {t}, block size is only {self.config.block_size}"
+-        pos = torch.arange(0, t, dtype=torch.long, device=device) # shape (t)
++        pos = self._position_ids[:t] # shape (t)
+ 
+         # forward the GPT model itself
+         tok_emb = self.transformer.wte(idx) # token embeddings of shape (b, t, n_embd)
+@@ -199,6 +207,7 @@ class GPT(nn.Module):
+         assert block_size <= self.config.block_size
+         self.config.block_size = block_size
+         self.transformer.wpe.weight = nn.Parameter(self.transformer.wpe.weight[:block_size])
++        self._position_ids = self._position_ids[:block_size]
+         for block in self.transformer.h:
+             if hasattr(block.attn, 'bias'):
+                 block.attn.bias = block.attn.bias[:,:,:block_size,:block_size]
+diff --git a/train.py b/train.py
+index de57850..d55ce38 100644
+--- a/train.py
++++ b/train.py
+@@ -113,6 +113,7 @@ ctx = nullcontext() if device_type == 'cpu' else torch.amp.autocast(device_type=
+ 
+ # poor man's data loader
+ data_dir = os.path.join('data', dataset)
++batch_offsets = np.arange(block_size, dtype=np.int64)
+ def get_batch(split):
+     # We recreate np.memmap every batch to avoid a memory leak, as per
+     # https://stackoverflow.com/questions/45132940/numpy-memmap-memory-usage-want-to-iterate-once/61472122#61472122
+@@ -121,8 +122,9 @@ def get_batch(split):
+     else:
+         data = np.memmap(os.path.join(data_dir, 'val.bin'), dtype=np.uint16, mode='r')
+     ix = torch.randint(len(data) - block_size, (batch_size,))
+-    x = torch.stack([torch.from_numpy((data[i:i+block_size]).astype(np.int64)) for i in ix])
+-    y = torch.stack([torch.from_numpy((data[i+1:i+1+block_size]).astype(np.int64)) for i in ix])
++    positions = ix.numpy()[:, None] + batch_offsets[None, :]
++    x = torch.from_numpy(np.asarray(data[positions], dtype=np.int64))
++    y = torch.from_numpy(np.asarray(data[positions + 1], dtype=np.int64))
+     if device_type == 'cuda':
+         # pin arrays x,y, which allows us to move them to GPU asynchronously (non_blocking=True)
+         x, y = x.pin_memory().to(device, non_blocking=True), y.pin_memory().to(device, non_blocking=True)

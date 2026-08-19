@@ -1,0 +1,16 @@
+{
+  "compared_output_count": 1,
+  "existing_core_candidate_path": "actual Database executor -> unmodified Core v3 -> project_database_snapshot",
+  "existing_native_path": "frozen Database synthetic oracle and database_reference",
+  "hierarchy": [
+    "Core v3 complete generation snapshot",
+    "N[X] polynomial with coefficients and exponents",
+    "Vars(N[X])",
+    "existing Database tuple-level which-lineage source_tuple_ids"
+  ],
+  "nx_path": "same validated Database Core snapshot -> GeneratedOrigin recursion -> N[X] -> Vars",
+  "schema_version": "database-lineage-hierarchy-v1",
+  "scope_note": "The existing frozen many-to-many case has no backward_lineage final-output row; it remains covered by the existing 112-record exact comparison, while the three-way Vars comparison applies to every declared backward_lineage row.",
+  "status": "DATABASE_WHICH_AS_NX_VARIABLE_PROJECTION_SUPPORTED",
+  "three_way_exact": true
+}

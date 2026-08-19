@@ -1,0 +1,74 @@
+{
+  "profile_id": "ecma426-source-map-projection-v1",
+  "status": "frozen_before_formal_execution",
+  "snapshot_date": "2026-07-21",
+  "standard_identity": {
+    "published_edition": "ECMA-426 1st edition, December 2024",
+    "publication_url": "https://ecma-international.org/publications-and-standards/standards/ecma-426/",
+    "normative_html_url": "https://426.ecma-international.org/1.0/index.html",
+    "published_pdf_url": "https://ecma-international.org/wp-content/uploads/ECMA-426_1st_edition_december_2024.pdf",
+    "published_pdf_sha256": "3a9092125d8ae2a5a9809ff8de38d366aa4f41aaa71ae2a2d076fa90058c67c3",
+    "living_spec_url": "https://tc39.es/ecma426/",
+    "living_spec_commit": "62f8e694b62f5e6708523dc97563580bbf17591c",
+    "living_spec_html_sha256": "df2b80f71896cbdc0e20cb24984212b3ea228203f0e77f483b5b5e9338935e95",
+    "official_tests_url": "https://github.com/tc39/source-map-tests",
+    "official_tests_commit": "2965987bf4c96afa400c9356c8e620cb340aaee2"
+  },
+  "map_form": {
+    "indexed_maps": false,
+    "version": 3,
+    "required_fields": ["version", "file", "sources", "names", "mappings"],
+    "optional_fields": ["sourceRoot", "sourcesContent"],
+    "external_sidecar_only": true,
+    "source_mapping_url_comment": false
+  },
+  "coordinates": {
+    "line_base": 0,
+    "column_base": 0,
+    "javascript_column_unit": "UTF-16 code units",
+    "line_breaks": ["LF", "CRLF"],
+    "crlf_is_one_line_break": true,
+    "generated_segment_order": "strict ascending generated line then column",
+    "range_end": "exclusive"
+  },
+  "projection": {
+    "input": "ValidatedSnapshot",
+    "eligible_relation_role_prefix": "source_map_anchor:",
+    "secondary_relation_role_prefix": "participation:",
+    "mapped_support_requires_exactly_one_anchor": true,
+    "unmapped_support_requires_zero_anchor": true,
+    "duplicate_generated_anchor": "fail_closed",
+    "conflicting_original_mapping": "fail_closed",
+    "source_order": "first mapped generated anchor occurrence",
+    "name_order": "first named generated anchor occurrence",
+    "sources_content": "exact registered source bytes decoded as UTF-8",
+    "generated_range_storage": "support payload start/end",
+    "source_range_storage": "source payload start/end",
+    "dispositions_projected": false,
+    "wide_participation_bindings_projected": false
+  },
+  "required_transformations": [
+    "COPY_RANGE",
+    "RENAME_IDENTIFIER",
+    "INSERT_LITERAL",
+    "DELETE_RANGE",
+    "REORDER_RANGE",
+    "DUPLICATE_RANGE",
+    "CONCATENATE_SOURCES",
+    "COLLAPSE_WHITESPACE",
+    "EMIT_SYNTHETIC_WRAPPER",
+    "MINIFY_TO_SINGLE_LINE"
+  ],
+  "required_modes": ["output_only", "native_source_map", "core_contract", "core_and_native"],
+  "excluded": [
+    "indexed maps and sections",
+    "WebAssembly-specific behavior",
+    "CSS-specific behavior",
+    "stack-trace deobfuscation",
+    "browser DevTools UI",
+    "remote HTTP source retrieval",
+    "sourceMappingURL comment parsing",
+    "proposal and future extension fields",
+    "arbitrary compilers, optimizers, and languages"
+  ]
+}

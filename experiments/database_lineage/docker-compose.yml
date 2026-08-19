@@ -1,0 +1,13 @@
+services:
+  provsql:
+    image: inriavalda/provsql:1.4.0@sha256:57c7877fe86638f201bc26fc0cb8ef759aeb09e9bfc03789c2d3a2b315305268
+    container_name: core-v3-provsql-1-4-0
+    ports:
+      - "5433:5432"
+      - "8001:8000"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U test -d test"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+    restart: "no"

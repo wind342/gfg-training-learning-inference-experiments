@@ -1,0 +1,121 @@
+{
+  "blocking_reasons": [],
+  "candidate_after_reference_deleted_equal": true,
+  "candidate_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+  "candidate_record_count": 112,
+  "canonical_records_hash_equal": true,
+  "claim_scope": "Fixed deterministic bag-preserving relational operators over the synthetic business and many-to-many workloads; tuple-level direct relations, backward/forward which-lineage, exact derivation paths, explicit dispositions, multiplicity, and duplicate-valued distinct identities.",
+  "exact_equal": true,
+  "false_negative": 0,
+  "false_positive": 0,
+  "field_mismatch": 0,
+  "frozen_checks": {
+    "candidate_record_count": true,
+    "false_negative": true,
+    "false_positive": true,
+    "field_mismatch": true,
+    "multiplicity_mismatch": true,
+    "native_result_read_count": true,
+    "oracle_runtime_trap": true,
+    "output_orthogonality": true,
+    "reference_deletion": true,
+    "reference_record_count": true,
+    "second_authority_store_count": true
+  },
+  "frozen_expected_record_count": 112,
+  "multiplicity_mismatch": 0,
+  "native_domain_result_read_count": 0,
+  "oracle_leakage_count": 0,
+  "oracle_runtime_trap_passed": true,
+  "profile_id": "database-which-lineage-v1",
+  "proof_qualification": {
+    "checks": {
+      "core_only_derivation": true,
+      "exact_semantic_equivalence": true,
+      "fail_closed_negative_controls": true,
+      "generation_coupling": true,
+      "independent_reference": true,
+      "no_fabricated_relation": true,
+      "no_second_authority": true,
+      "output_orthogonality": true
+    },
+    "relation_evidence_closure_count": 65,
+    "status": "SUPPORTED",
+    "successful_operation_closure_count": 65,
+    "validated_binding_count": 65,
+    "validated_snapshot_count": 2
+  },
+  "reason_codes": [],
+  "reference_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+  "reference_record_count": 112,
+  "rerun_on_integrated_branch": true,
+  "second_authority_store_count": 0,
+  "section_canonical_sha256": {
+    "backward_lineage": "7f01f0877592e1a53457e065ded69483717feefe4ee442e41943b74883cbf590",
+    "derivation_paths": "a896fa769bfa2aaea45a3632b05e98982938c6a7c5920dcafd5d1bf13c934b09",
+    "direct_relations": "fe9e08de2d04e2b9646e94c11d2d0187367ce394d84ef8753cdfa3ba64b8d279",
+    "duplicate_identities": "a329afc935031bb487cbb5a043383babe3118ced37277f26cd4a6bd88c7f36f7",
+    "explicit_dispositions": "02e6f00704c671f0dcc0d4fb41146461e252585d913727d4b11d25095056325b",
+    "forward_lineage": "951777e31dce91ba3f35bf225f973090dd80b74a2de3e2beb9f0173bfbae8764",
+    "multiplicity": "fbc8d81f1fce4b7cdf9fe1ab87948f16cf8a69d636d789eaace8cbdf05d6a52a"
+  },
+  "section_results": {
+    "backward_lineage": {
+      "candidate_count": 1,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 1
+    },
+    "derivation_paths": {
+      "candidate_count": 20,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 20
+    },
+    "direct_relations": {
+      "candidate_count": 62,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 62
+    },
+    "duplicate_identities": {
+      "candidate_count": 1,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 1
+    },
+    "explicit_dispositions": {
+      "candidate_count": 7,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 7
+    },
+    "forward_lineage": {
+      "candidate_count": 19,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 19
+    },
+    "multiplicity": {
+      "candidate_count": 2,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 2
+    }
+  },
+  "status": "SUPPORTED"
+}

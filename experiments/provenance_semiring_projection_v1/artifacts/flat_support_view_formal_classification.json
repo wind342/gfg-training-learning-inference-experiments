@@ -1,0 +1,18 @@
+{
+  "addition": "set union",
+  "carrier": "finite source-variable sets",
+  "classification": "PARTIAL_NONZERO_SUPPORT_VIEW",
+  "complete_commutative_semiring_target": false,
+  "complete_semiring_homomorphism": false,
+  "domain_id": "flat_source_support_view",
+  "former_domain_id": "why_powerset",
+  "multiplication": "set union",
+  "multiplicative_zero_annihilates_nonempty_values": false,
+  "observation_scope": "frozen nonzero output support",
+  "one": "empty set",
+  "schema_version": "flat-support-view-formal-classification-v1",
+  "status": "FLAT_SOURCE_SUPPORT_VIEW_CLASSIFICATION_SUPPORTED",
+  "task_projection": "union of all variables appearing in N[X]",
+  "zero": "empty set",
+  "zero_equals_one": true
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "gfg-orientation-receipt-v1",
+  "read_complete": true,
+  "target_gfg_accessed": false,
+  "generation_fact": "One atomic relation established by one concrete execution: the exact source information, realized transformation, concrete occurrence, formed outcome, and relation role.",
+  "generation_occurrence": "One concrete execution; it can establish several generation facts, but those facts retain separate identities.",
+  "atomic_generation_fact": "A fact preserves its exact source, transformation, occurrence, outcome, and role together, including its incidence relations, rather than being decomposed into independently matchable sets.",
+  "realizes_fact": "This primitive relation connects a generation occurrence to the particular fact that the occurrence established.",
+  "reads_from": "This primitive relation records an actual data dependency and is required, with fact incidence and origin relations, for dependency traversal.",
+  "GeneratedOrigin": "This relation permits an outcome formed by an earlier fact to participate as the source of a later fact.",
+  "program_order": "This relation records declared execution order only; it does not by itself establish a data dependency or formation relation.",
+  "equal_values": "Equal numeric values do not make facts, occurrences, or results identical and do not establish equal formation histories.",
+  "cartesian_recombination": "Facts realized by one occurrence must remain atomic; separating their sources and outcomes and recombining them by Cartesian product invents relations that were never established.",
+  "missing_relations": "An absent relation means only that it was not established in the graph; it does not prove the relation false, and absence of a concurrency edge does not prove concurrency.",
+  "forward_query": "Follow exact identities along the established training chain: training sample to batch occurrence to forward occurrence to loss to backward occurrence to gradient to optimizer occurrence to new parameter version, using primitive generation and dependency relations rather than proximity or value similarity.",
+  "reverse_query": "Start from the exact evaluation or parameter result and traverse backward only through its actual reads_from, GeneratedOrigin, realizes_fact, and incidence relations; timestamps and numeric similarity are not substitutes.",
+  "executable_claim": "The sealed executable mechanism is the scientific authority and must generate unseen continuous execution from allowed prefix state; the report explains and cites it but cannot replace it, and every causally predictive report variable must be represented in state or update law or have a falsification-backed elimination.",
+  "state_sufficiency": "For proposed state q and input a, search the discovery graph for similar (q, a) cases with materially incompatible (q_next, y_next), omitted variables that separate them, continuing hidden evolution, or transitions the update law cannot generate; revise or enlarge state until it is operationally closed at the required tolerance.",
+  "prefix_only_falsification": "Replay multiple historical cuts while exposing only each prefix, initialize from that prefix, predict a later hidden interval, and compare against its recorded suffix; include cuts before, near, and after candidate transitions and retain failures so a full-run retrospective fit cannot pass as a mechanism.",
+  "report_code_correspondence": "Map every mechanism claim to exact primitive GFG facts and relations, an executable state field or justified elimination, and a concrete update-law location; every executable field must update by defined code or be a frozen constant derived only from the allowed prefix.",
+  "intervention_state_audit": "Enumerate all mechanism state read or written by the affected operation, identify what the hook changes, freezes, or leaves evolving, propagate each difference through the executable update law, test on discovery prefixes when possible, and reject pure time-translation claims unless all needed state translates consistently.",
+  "cross_run_invariance": "Treat a repeated one-run pattern as a hypothesis, separating fixed structural laws, prefix-inferred state, discovery-estimated parameters, and observational uncertainty; attempt to falsify fixed-period, fixed-amplitude, and constant-rate assumptions before extrapolating them across runs."
+}

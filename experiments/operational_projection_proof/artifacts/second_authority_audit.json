@@ -1,0 +1,26 @@
+{
+  "authoritative_core_tables": [
+    "environment_records",
+    "evidence_links",
+    "evidence_records",
+    "explicit_dispositions",
+    "generated_origins",
+    "generation_bindings",
+    "generation_occurrences",
+    "generator_manifests",
+    "generator_operation_results",
+    "hierarchy_records",
+    "migration_records",
+    "perceptual_support_records",
+    "predicate_profiles",
+    "source_information_records",
+    "support_space_records"
+  ],
+  "core_schema_sha256": "27c429695cffac8cea6cf52f2fd57e35fac3fe81bf251a5fd446f95d93bb4720",
+  "core_schema_unchanged": true,
+  "expected_frozen_schema_sha256": "27c429695cffac8cea6cf52f2fd57e35fac3fe81bf251a5fd446f95d93bb4720",
+  "findings": [],
+  "second_authority_store_count": 0,
+  "status": "SUPPORTED",
+  "transient_indexes_are_non_authoritative": true
+}

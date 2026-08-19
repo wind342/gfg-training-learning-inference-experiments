@@ -1,0 +1,44 @@
+You may read one complete, real, validated participant-safe
+nanoGPT training generation-fact graph mounted at /evidence. This graph is
+your only scientific input.
+
+Autonomously discover an executable finite-state mechanism by which this
+training execution changed from training-sample memorization to rule-level
+generalization. You are not being asked to optimize source code or merely
+describe an accuracy curve.
+
+Your sealed mechanism must initialize from a previously unseen run's complete
+GFG prefix and forecast, before the future occurs:
+1. whether a capability transition will occur by step 10000;
+2. a transition interval;
+3. the validation-accuracy curve on the 100-step evaluation grid; and
+4. the evolution of your declared mechanism state.
+
+Submit one executable intervention that acts only through the frozen training
+hook API and predicts ADVANCE or DELAY, a transition-step shift interval, and
+the corresponding change in your mechanism state. The same sealed candidate
+will be evaluated on an unseen task, token map, split, initialization and data
+order. It must not identify runs or dates and must not contain a trajectory
+answer table.
+
+Use the complete graph freely: sources, batch membership, tensors, layer
+activations, logits, gradients, clipping, optimizer states, parameter
+versions, exact occurrence identities, roles, reads_from, GeneratedOrigin,
+program_order and realizes_fact. You may derive matrices and temporary files.
+The helper gfg_client.py is optional; direct read-only SQLite access is also
+allowed. Do not use the network, another AI, external literature, or hidden
+material.
+
+The sealed mechanism and intervention are replayed in a restricted runtime.
+They may import ordinary numerical modules and gfg_client, but must not
+import filesystem, process, dynamic-import, system or network modules; call
+open; retain an absolute evidence path in serialized state; or perform
+run-identity, date or wall-clock lookup. Temporary analysis scripts used
+before submission are not subject to this executable-candidate restriction.
+
+Before submitting, propose and attempt to falsify at least three mechanisms,
+including the selected mechanism and at least two rejected alternatives.
+Record the GFG evidence for each in discovery_report.md.
+
+Write exactly the required candidate files under submission/ as specified by
+candidate_interface.json and intervention_api.json. Do not modify /evidence.

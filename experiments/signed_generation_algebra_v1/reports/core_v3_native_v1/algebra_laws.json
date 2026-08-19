@@ -1,0 +1,1 @@
+{"checks":{"addition_associative":true,"addition_commutative":true,"distributive":true,"multiplication_associative":true,"multiplication_commutative":true,"net_projection_additive":true,"net_projection_multiplicative":true,"no_internal_cancellation":true,"one_identity":true,"zero_identity":true},"failed_checks":[],"sample_pair_count":5,"schema_version":"signed-algebra-laws-v1"}

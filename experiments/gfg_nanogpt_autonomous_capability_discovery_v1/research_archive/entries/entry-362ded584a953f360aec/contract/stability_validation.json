@@ -1,0 +1,36 @@
+{
+  "actual_classification": {
+    "PERSISTENT_DEGRADATION": "after the capability transition, validation accuracy falls below 0.90 and never returns to at least 0.90 before the run ends",
+    "STABLE": "after the capability transition, validation accuracy never falls below 0.90",
+    "TRANSIENT_DEGRADATION_RECOVERY": "after the capability transition, validation accuracy falls below 0.90 and later returns to at least 0.90",
+    "UNDETERMINED": "candidate-only value; hidden execution always yields one of the other three classifications when a transition occurs"
+  },
+  "candidate_must_not_receive": [
+    "hidden future stability classification",
+    "hidden future degradation steps",
+    "hidden future recovery steps"
+  ],
+  "validation_is_primary_pass_gate": true,
+  "intervention_stability_effect_values": [
+    "IMPROVE",
+    "WORSEN",
+    "NO_CHANGE"
+  ],
+  "post_formation_threshold": 0.90,
+  "prospective_question": "whether the blinded AI can submit an executable stability-state model that prospectively predicts post-formation degradation, recovery and intervention effect",
+  "forecast_gates": {
+    "classification_correct": true,
+    "stability_component_accounts_for_post_formation_deficits": true,
+    "degradation_event_f1_min": 0.5,
+    "degradation_event_precision_min": 0.5,
+    "degradation_event_recall_min": 0.5,
+    "post_formation_deficit_rmse_max": 0.15,
+    "transient_first_recovery_absolute_error_max_steps": 200
+  },
+  "causal_gate": {
+    "effect_direction_correct": true,
+    "mean_deficit_effect_epsilon": 0.0001
+  },
+  "event_definition": "an evaluation-grid point after the actual capability transition at which validation accuracy is below 0.90",
+  "version": "2.0.0"
+}

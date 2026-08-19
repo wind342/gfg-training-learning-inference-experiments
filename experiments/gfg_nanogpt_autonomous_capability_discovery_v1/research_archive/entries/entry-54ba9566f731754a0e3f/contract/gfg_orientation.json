@@ -1,0 +1,19 @@
+{
+  "evidence_gate": {
+    "participant_can_release_gate": false,
+    "target_evidence_released_by_external_runner": true,
+    "target_evidence_unreadable_during_orientation": true
+  },
+  "maximum_seconds_until_valid_receipt": 2700,
+  "minimum_manual_only_seconds": 300,
+  "orientation_receipt": {
+    "ai_semantics_validation_required": true,
+    "path": "orientation_receipt.json",
+    "required_before_evidence_release": true
+  },
+  "orientation_seconds_charged_to_target_budget": false,
+  "same_ai_process_continues_after_release": true,
+  "schema": "gfg-first-contact-orientation-contract-v1",
+  "status": "FROZEN",
+  "version": "1.1.0"
+}

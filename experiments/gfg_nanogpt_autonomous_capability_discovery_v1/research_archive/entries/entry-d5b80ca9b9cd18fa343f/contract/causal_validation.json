@@ -1,0 +1,18 @@
+{
+  "branch_identity_required": [
+    "checkpoint",
+    "optimizer state",
+    "RNG state",
+    "data order",
+    "model code",
+    "task",
+    "training endpoint",
+    "evaluation grid",
+    "capture environment"
+  ],
+  "direction_must_match": true,
+  "minimum_effective_shift_optimizer_steps": 600,
+  "only_allowed_difference": "sealed AI intervention",
+  "predicted_shift_interval_must_contain_actual": true,
+  "version": "1.0.0"
+}

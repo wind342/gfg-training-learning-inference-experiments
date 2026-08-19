@@ -1,0 +1,15 @@
+{
+  "profile_id": "ecma426-source-map-v1",
+  "domain": "ecma426_source_map",
+  "evaluation_status": "NOT_EVALUATED",
+  "claim_scope": "Generated position, original source and position, optional name, mapped/unmapped state, both query directions, and standard multi-stage composition.",
+  "prerequisite": "The Source Map experiment branch contains no domain implementation, frozen workload, official implementation result, tests, or machine artifacts on the selected base commit.",
+  "sections": {
+    "mappings": ["generated_line", "generated_column", "segment_ordinal"],
+    "generated_to_original": ["generated_line", "generated_column"],
+    "original_to_generated": ["source", "original_line", "original_column", "result_ordinal"],
+    "unmapped": ["generated_line", "generated_column"],
+    "multiplicity": ["map_semantic_key"]
+  },
+  "multiplicity_fields": ["segment_ordinal", "result_ordinal", "mapping_count", "unmapped_count"]
+}

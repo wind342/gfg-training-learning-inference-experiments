@@ -1,0 +1,73 @@
+{
+  "schema": "gfg-executable-mechanism-spec-v1",
+  "version": "1.0.0",
+  "entrypoint": {
+    "module": "mechanism",
+    "class": "CapabilityFormationMechanism",
+    "initialize": "initialize(gfg_prefix)",
+    "forecast": "forecast(state)"
+  },
+  "scientific_claim": "Rule-level generalization forms when the next state-conditioned AdamW/weight-decay relaxation burst updates a partially formed rule circuit; later relaxation bursts can transiently exhaust a decaying stability reserve and are followed by optimizer-driven recovery.",
+  "states": [
+    "MEMORIZATION",
+    "RULE_CIRCUIT_ACCUMULATION",
+    "FORMATION_BURST",
+    "GENERALIZED",
+    "TRANSIENT_DEGRADATION",
+    "RECOVERY"
+  ],
+  "primitive_inputs": [
+    "capability_evaluation facts bound to exact parameter versions",
+    "validation logits and validation targets from their exact evaluation occurrences",
+    "gradient_total_norm facts from exact gradient-global-norm occurrences",
+    "parameter-version formations for transformer.wte.weight",
+    "optimizer configuration literal"
+  ],
+  "operative_state": {
+    "rule_progress": "Latest validation accuracy and recent positive grid increment; executed in the pre-burst curve update.",
+    "rule_margin": "Median exact validation correct-vs-strongest-other logit margin; executed in the formation-burst response.",
+    "oscillator_phase": "Last three significant gradient-burst centers and their two intervals; executed in prediction of the next burst.",
+    "optimizer_decay_law": "Learning rate times decoupled weight decay sets the asymptotic burst period and reserve decay.",
+    "stability_reserve": "Current tied token/output-weight norm divided by its prefix maximum; executed in the recurrent-degradation test."
+  },
+  "update_law": {
+    "early_period": "When the observed period remains below 0.85 of the optimizer-conditioned asymptote and is growing, p_next = p + 0.84*(p-p_previous).",
+    "settled_period": "Otherwise p_next = p + 0.25*(p_asymptote-p).",
+    "asymptotic_period": "clamp(440*0.003/(learning_rate*max(weight_decay,0.05)),250,800).",
+    "formation_response": "At the first evaluation grid point after the predicted burst, update rule progress with 0.75 + 0.35*pre_burst_progress plus the bounded operative margin correction; subsequently relax toward 0.995.",
+    "reserve": "At each predicted post-formation burst multiply reserve by exp(-0.064*(learning_rate*weight_decay/0.003)).",
+    "recovery": "A severe low-reserve burst produces a one-grid degradation state followed by RECOVERY and return to the generalized attractor."
+  },
+  "closure_domain": {
+    "earliest_prefix_step": 500,
+    "requires_no_prior_transition": true,
+    "requires_three_saturated_training_evaluations": true,
+    "required_future_endpoint": 10000
+  },
+  "calibration_classification": {
+    "fixed_structural_laws": [
+      "atomic GFG identity traversal",
+      "finite-state phases",
+      "optimizer-conditioned relaxation update",
+      "contract transition predicate"
+    ],
+    "prefix_inferred_state": [
+      "cut step",
+      "evaluation interval",
+      "accuracy progress",
+      "validation margins",
+      "burst phase and period",
+      "optimizer hyperparameters",
+      "normalized weight reserve"
+    ],
+    "discovery_estimated_parameters": [
+      "0.84 early period acceleration retention",
+      "0.25 asymptotic period relaxation",
+      "440-step reference asymptotic period",
+      "0.064 reserve exponent"
+    ],
+    "uncertainty": "One discovery execution cannot establish cross-execution invariance; the 200-step and 500-step intervals expose timing uncertainty and the sealed candidate requires prospective evaluation."
+  },
+  "future_gfg_reads": 0,
+  "deterministic": true
+}

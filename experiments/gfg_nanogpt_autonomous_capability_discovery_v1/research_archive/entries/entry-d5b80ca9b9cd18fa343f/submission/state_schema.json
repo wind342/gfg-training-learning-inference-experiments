@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gfg-capability-state-v1",
+  "title": "Capability formation finite state",
+  "type": "object",
+  "required": [
+    "schema",
+    "cut_step",
+    "observed_curve",
+    "memorization_score",
+    "rule_score",
+    "current_loss",
+    "rule_onset_anchor_step",
+    "predicted_transition_step",
+    "optimizer_learning_rate",
+    "optimizer_weight_decay",
+    "decay_exposure",
+    "stress_period_steps",
+    "stress_phase_steps"
+  ],
+  "properties": {
+    "schema": {"const": "gfg-capability-state-v1"},
+    "cut_step": {"type": "integer", "minimum": 0, "maximum": 10000},
+    "observed_curve": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["optimizer_step", "train_accuracy", "validation_accuracy", "loss"],
+        "properties": {
+          "optimizer_step": {"type": "integer"},
+          "train_accuracy": {"type": "number"},
+          "validation_accuracy": {"type": "number"},
+          "loss": {"type": "number"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "memorization_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "rule_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "current_loss": {"type": "number", "minimum": 0},
+    "rule_onset_anchor_step": {"type": "integer"},
+    "observed_transition_step": {"type": ["integer", "null"]},
+    "predicted_transition_step": {"type": "integer"},
+    "optimizer_learning_rate": {"type": "number", "minimum": 0},
+    "optimizer_weight_decay": {"type": "number", "minimum": 0},
+    "decay_exposure": {"type": "number", "minimum": 0},
+    "task_structure_rank": {"type": ["integer", "null"]},
+    "task_structure_size": {"type": ["integer", "null"]},
+    "algebraic_spectral_concentration": {"type": ["number", "null"]},
+    "rule_margin_q10": {"type": ["number", "null"]},
+    "gradient_norm": {"type": ["number", "null"]},
+    "clipped_gradient_norm": {"type": ["number", "null"]},
+    "layernorm_scale": {"type": ["number", "null"]},
+    "adam_first_moment_norm": {"type": ["number", "null"]},
+    "adam_sqrt_second_moment_norm": {"type": ["number", "null"]},
+    "stress_period_steps": {"const": 400},
+    "stress_phase_steps": {"type": "integer", "minimum": 0, "maximum": 399}
+  },
+  "additionalProperties": false
+}

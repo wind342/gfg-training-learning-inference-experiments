@@ -1,0 +1,27 @@
+{
+  "schema": "nanogpt-support-breakpoint-adjudication-protocol-v1",
+  "protocol_id": "SUPPORT-BREAKPOINT-ADJUDICATION-v1",
+  "status": "FROZEN_BEFORE_FORMAL_V2_RESULT_GENERATION",
+  "stable_envelope_quantile": 0.99,
+  "persistent_crossing_steps": 3,
+  "leave_one_run_out": true,
+  "signals": [
+    "optimizer_or_parameter_update_change",
+    "left_evolution_rate_change",
+    "support_state_change",
+    "candidate_transition_law_switch",
+    "margin_change",
+    "capability_decline_or_recovery"
+  ],
+  "classes": [
+    "support_state_jump",
+    "transition_law_switch",
+    "capability_readout_crossing",
+    "combined_mechanism",
+    "no_persistent_breakpoint_detected"
+  ],
+  "candidate_mode_policy": "A law-break signal is an adjudication-level candidate mode switch, not an observed q_k and not a predeclared mechanism label.",
+  "future_use": "Right rates, J, successor capability and successor predictions are adjudication targets only and never candidate inputs or selection features.",
+  "classification_rule": "A class is assigned from persistent leave-one-run-out stable-envelope crossings. If multiple structural/readout signals cross in the event interval, report combined_mechanism and preserve their earliest order.",
+  "fail_closed": "Absence of a persistent crossing is reported as no_persistent_breakpoint_detected; thresholds are never retuned per event."
+}

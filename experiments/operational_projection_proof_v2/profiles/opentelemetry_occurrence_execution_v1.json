@@ -1,0 +1,17 @@
+{
+  "profile_id": "opentelemetry-occurrence-execution-v1",
+  "source_branch": "experiment/opentelemetry-projection-v1",
+  "source_commit": "25a9d2a614d2d34d36c38f7c560b818cdbc4b179",
+  "declared_input_scope": "Deterministic in-process relational occurrence/execution/causal trace shadow for the adversarial small workload and TPC-H-derived SF0.01 Q6.",
+  "selected_facts": ["trace semantic identity", "complete span set", "span name", "root parent edge", "Span Links", "status", "selected attributes", "selected events", "occurrence cardinality", "logical order"],
+  "excluded_facts": ["wall-clock timestamps", "random SDK trace/span identifiers", "resource and instrumentation-library expansion", "distributed context propagation", "sampling", "arbitrary OpenTelemetry systems"],
+  "candidate_path": "actual workload -> Core facts -> ValidatedSnapshot plus exact SnapshotValidation -> project_core_to_otel -> canonical trace",
+  "reference_path": "same actual executor callbacks -> official OpenTelemetry Python SDK -> finished spans -> canonical native trace",
+  "exact_comparison_fields": ["schema_version", "trace_semantic_key", "span_semantic_key", "name", "parent_semantic_key", "linked_semantic_keys", "status", "attributes", "events"],
+  "multiplicity_semantics": "One span per GenerationOccurrence plus one root span; Span Link arrays retain one entry per causal input occurrence without set collapse.",
+  "canonicalization_rules": "Only random SDK IDs and wall-clock timestamps are replaced by deterministic semantic keys; complete canonical trace bytes are compared.",
+  "output_orthogonality_rules": "Core-off/OTel-off, Core-on/OTel-off, Core-off/OTel-on, and Core-on/OTel-on ordinary CSV/JSON outputs must be byte-identical.",
+  "authority_rules": "Candidate reads only ValidatedSnapshot and its matching exact validation proof; official SDK spans are reference-only; no OTel-specific Core field or secondary authority store is allowed.",
+  "accepted_limitations": ["deterministic in-process execution", "declared occurrence attributes/events only", "no distributed causality", "no sampling behavior"],
+  "mandatory_status_conditions": ["small native/direct exact", "Q6 occurrences=61367", "Q6 spans=61368", "Q6 bindings=62557", "Q6 links=2382", "Q6 canonical SHA=a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8", "two strict counterexamples", "total binding symmetric difference=20", "candidate/native runtime isolation", "second_authority_store_count=0"]
+}

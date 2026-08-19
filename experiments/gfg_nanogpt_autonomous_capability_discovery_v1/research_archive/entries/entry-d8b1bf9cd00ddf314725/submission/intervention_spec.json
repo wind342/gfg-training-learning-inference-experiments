@@ -1,0 +1,29 @@
+{
+  "schema": "training-intervention-spec-v1",
+  "version": "1.0.0",
+  "entrypoint": "intervention.TrainingIntervention",
+  "name": "optimizer-clock hold",
+  "hook": "before_optimizer_step",
+  "predicted_direction": "DELAY",
+  "transition_step_shift_low": 600,
+  "transition_step_shift_high": 1800,
+  "allowed_mutation": "optimizer group hyperparameters",
+  "mutation": {
+    "field": "lr",
+    "held_value": 0.0,
+    "duration_optimizer_steps": 1300,
+    "restoration": "restore each captured group learning rate exactly"
+  },
+  "prediction": {
+    "direction": "DELAY",
+    "transition_step_shift_low": 600,
+    "transition_step_shift_high": 1800,
+    "minimum_effective_shift_optimizer_steps": 600,
+    "mechanism_state_change": "The parameter trajectory and cyclic-equivariance order parameter are held in SYMMETRY_NUCLEATION; the next two gradient-burst rewrite episodes and RULE_GENERALIZATION are postponed."
+  },
+  "validation_data_access": false,
+  "future_data_access": false,
+  "task_answer_table": false,
+  "parameter_values_injected": false,
+  "deterministic": true
+}

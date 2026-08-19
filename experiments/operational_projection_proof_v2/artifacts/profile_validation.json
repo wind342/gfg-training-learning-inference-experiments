@@ -1,0 +1,52 @@
+{
+  "blocking_reasons": [],
+  "profile_count": 5,
+  "profiles": [
+    {
+      "extra_fields": [],
+      "missing_fields": [],
+      "path": "experiments/operational_projection_proof_v2/profiles/database_which_lineage_v1.json",
+      "prohibited_vague_tokens": [],
+      "sha256": "d32b809931644617d763bad597b62904bba3273e7fa62f9afa963fc74387ac40",
+      "source_commit_exact": true,
+      "valid": true
+    },
+    {
+      "extra_fields": [],
+      "missing_fields": [],
+      "path": "experiments/operational_projection_proof_v2/profiles/opentelemetry_occurrence_execution_v1.json",
+      "prohibited_vague_tokens": [],
+      "sha256": "0d2bec9c9b270fc6b7ae9dc2ae976ead15d209afc1426257a76998fe075a53a4",
+      "source_commit_exact": true,
+      "valid": true
+    },
+    {
+      "extra_fields": [],
+      "missing_fields": [],
+      "path": "experiments/operational_projection_proof_v2/profiles/ecma426_ordinary_source_map_v1.json",
+      "prohibited_vague_tokens": [],
+      "sha256": "2280903bd52052306d1335e0126f2dfb98afbe59fb0e37e54df6f51ffe9439b4",
+      "source_commit_exact": true,
+      "valid": true
+    },
+    {
+      "extra_fields": [],
+      "missing_fields": [],
+      "path": "experiments/operational_projection_proof_v2/profiles/core_database_to_opentelemetry_v1.json",
+      "prohibited_vague_tokens": [],
+      "sha256": "4f823ae2bdee364939c03b32f9adb419000c840ad0dd9adbf6fb3abec0e040bf",
+      "source_commit_exact": true,
+      "valid": true
+    },
+    {
+      "extra_fields": [],
+      "missing_fields": [],
+      "path": "experiments/operational_projection_proof_v2/profiles/ecma426_multistage_composition_v1.json",
+      "prohibited_vague_tokens": [],
+      "sha256": "a7a2c047aed36b849ed7f66172e923313fbefcb48a3ae6f10a3c5c1fce50236d",
+      "source_commit_exact": true,
+      "valid": true
+    }
+  ],
+  "status": "PASS"
+}

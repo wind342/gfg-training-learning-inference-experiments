@@ -1,0 +1,93 @@
+{
+  "candidate_after_reference_deleted_equal": true,
+  "candidate_record_count": 112,
+  "claim_scope": "Fixed deterministic bag-preserving relational operators over the synthetic business and many-to-many workloads; tuple-level direct relations, backward/forward which-lineage, exact derivation paths, explicit dispositions, multiplicity, and duplicate-valued distinct identities.",
+  "exact_equal": true,
+  "false_negative": 0,
+  "false_positive": 0,
+  "field_mismatch": 0,
+  "multiplicity_mismatch": 0,
+  "native_domain_result_read_count": 0,
+  "oracle_leakage_count": 0,
+  "oracle_runtime_trap_passed": true,
+  "profile_id": "database-which-lineage-v1",
+  "proof_qualification": {
+    "checks": {
+      "core_only_derivation": true,
+      "exact_semantic_equivalence": true,
+      "fail_closed_negative_controls": true,
+      "generation_coupling": true,
+      "independent_reference": true,
+      "no_fabricated_relation": true,
+      "no_second_authority": true,
+      "output_orthogonality": true
+    },
+    "relation_evidence_closure_count": 65,
+    "status": "SUPPORTED",
+    "successful_operation_closure_count": 65,
+    "validated_binding_count": 65,
+    "validated_snapshot_count": 2
+  },
+  "reason_codes": [],
+  "reference_record_count": 112,
+  "second_authority_store_count": 0,
+  "section_results": {
+    "backward_lineage": {
+      "candidate_count": 1,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 1
+    },
+    "derivation_paths": {
+      "candidate_count": 20,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 20
+    },
+    "direct_relations": {
+      "candidate_count": 62,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 62
+    },
+    "duplicate_identities": {
+      "candidate_count": 1,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 1
+    },
+    "explicit_dispositions": {
+      "candidate_count": 7,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 7
+    },
+    "forward_lineage": {
+      "candidate_count": 19,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 19
+    },
+    "multiplicity": {
+      "candidate_count": 2,
+      "false_negative": 0,
+      "false_positive": 0,
+      "field_mismatch": 0,
+      "multiplicity_mismatch": 0,
+      "reference_count": 2
+    }
+  },
+  "status": "SUPPORTED"
+}

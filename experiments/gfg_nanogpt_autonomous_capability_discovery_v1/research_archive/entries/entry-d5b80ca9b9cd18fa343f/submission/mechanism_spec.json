@@ -1,0 +1,27 @@
+{
+  "schema": "gfg-capability-mechanism-spec-v1",
+  "version": "1.0.0",
+  "authority": "submission/mechanism.py",
+  "model_name": "cyclic-rule-margin-with-optimizer-stress",
+  "deterministic": true,
+  "future_gfg_reads": 0,
+  "state_law": {
+    "task_structure": "Infer the unique rank-(p-1) token permutation satisfying coordinate(outcome)=coordinate(left)+coordinate(right) mod p from training batch generation facts.",
+    "formation": "The first validation-grid rule score >=0.3 anchors a 600-step decay-exposure lag; the held-out algebraic margin and cyclic embedding spectrum are prefix diagnostics of the same state.",
+    "curve": "A cut-calibrated sigmoid evolves to the transition; after formation a stable 0.965 rule plateau is modulated by a bounded optimizer-stress pulse.",
+    "stability": "Stress phase advances modulo 400 steps, with inclusive +/-100-step vulnerability intervals; amplitude is explicitly not asserted invariant.",
+    "optimizer_scaling": "The 600-step lag scales inversely with prefix AdamW learning-rate times decayed-group weight decay, clamped to the supported range."
+  },
+  "constants_estimated_from_discovery": {
+    "anchor_to_transition_steps": 600,
+    "stress_period_steps": 400,
+    "first_stress_offset_steps": 300,
+    "post_formation_plateau": 0.965
+  },
+  "uncertainty": {
+    "transition": "The 200-step interval is a precision diagnostic; the 400-wide primary interval carries the one-run cross-initialization uncertainty.",
+    "instability": "Pulse timing is interval-valued and pulse depth is a mean law because observed peak spacings vary from 300 to 500 steps and catastrophic amplitude is not invariant."
+  },
+  "forbidden_identifiers_used": false,
+  "stored_discovery_trajectory": false
+}

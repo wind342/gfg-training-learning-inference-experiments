@@ -1,0 +1,23 @@
+{
+  "base_commit": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+  "exit_status": 0,
+  "framework": "operational-domain-projection-proof-v1",
+  "mandatory_failure_count": 0,
+  "mandatory_failures": [],
+  "mandatory_reports": [
+    "negative_controls.json",
+    "oracle_isolation.json",
+    "output_orthogonality.json",
+    "projection_equivalence_database.json",
+    "second_authority_audit.json",
+    "strict_partiality_database.json"
+  ],
+  "not_evaluated_domains": [
+    "opentelemetry_trace",
+    "ecma426_source_map"
+  ],
+  "status": "SUPPORTED",
+  "supported_domains": [
+    "database_which_lineage"
+  ]
+}

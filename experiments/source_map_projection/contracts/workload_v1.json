@@ -1,0 +1,32 @@
+{
+  "contract_id": "source-map-projection-workload-v1",
+  "small_cases": [
+    "single_file_copy",
+    "identifier_rename",
+    "delete_comment_and_whitespace",
+    "synthetic_wrapper",
+    "one_to_many_duplication",
+    "source_range_reorder",
+    "multi_file_bundle",
+    "single_line_minification",
+    "unmapped_generated_code",
+    "identical_output_different_source",
+    "identical_map_different_occurrence",
+    "identical_map_different_disposition",
+    "multiple_core_origins_one_map_anchor",
+    "unicode_and_crlf"
+  ],
+  "unicode_cases": ["ASCII", "Chinese", "emoji", "combining_sequence", "tab", "CRLF", "LF", "empty_line", "trailing_newline", "UTF-8_multibyte", "canonically_distinct_visual_character"],
+  "multistage": {
+    "stage_1": "source-a.js + source-b.js -> bundled-intermediate.js",
+    "stage_2": "bundled-intermediate.js -> minified-final.js",
+    "bridge": "GeneratedOrigin only",
+    "direct_original_to_final_binding": false
+  },
+  "medium": {
+    "source_file_count": 3,
+    "mapped_segments_per_source": 220,
+    "minimum_total_mapping_segments": 600
+  },
+  "determinism_runs": 2
+}

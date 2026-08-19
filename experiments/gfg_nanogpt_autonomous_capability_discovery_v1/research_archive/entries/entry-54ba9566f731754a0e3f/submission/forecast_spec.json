@@ -1,0 +1,27 @@
+{
+  "schema": "gfg-capability-forecast-spec-v1",
+  "entrypoint": "mechanism.CapabilityFormationMechanism.forecast",
+  "forecast_horizon_optimizer_step": 10000,
+  "evaluation_grid_optimizer_steps": 100,
+  "curve_scope": "Strictly future evaluation-grid points after state.cut_step through optimizer step 10000.",
+  "required_fields": {
+    "will_transition": "boolean",
+    "transition_step_low_200": "integer interval endpoint, or NO_TRANSITION",
+    "transition_step_high_200": "integer interval endpoint, or NO_TRANSITION",
+    "transition_step_low_500": "integer interval endpoint, or NO_TRANSITION",
+    "transition_step_high_500": "integer interval endpoint, or NO_TRANSITION",
+    "predicted_validation_curve": "ordered list of {optimizer_step, validation_accuracy}",
+    "mechanism_state": "ordered future state evolution on the same grid",
+    "post_formation_stability": "one frozen stability enum",
+    "predicted_instability_intervals": "ordered inclusive integer intervals"
+  },
+  "interval_construction": {
+    "high_precision_200": "transition estimate minus/plus 100 steps; maximum width 200",
+    "primary_500": "transition estimate minus/plus 200 steps; width 400"
+  },
+  "curve_model": "A prefix-calibrated logistic rule-margin curve with a 0.10 decrement at evaluation points inside forecast clipped-gradient shock intervals.",
+  "stability_model": "TRANSIENT_DEGRADATION_RECOVERY when at least two prefix pulse episodes identify a recurrent oscillator; otherwise UNDETERMINED.",
+  "instability_interval_model": "Centers begin 0.8 mature periods after the predicted transition and recur once per inferred mature pulse period; each inclusive risk interval is center plus/minus 75 optimizer steps.",
+  "deterministic": true,
+  "future_gfg_reads": 0
+}

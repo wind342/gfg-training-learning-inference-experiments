@@ -1,0 +1,39 @@
+{
+  "schema": "training-intervention-spec-v1",
+  "version": "1.0.0",
+  "entrypoint": "intervention.TrainingIntervention",
+  "name": "reversible_parameter_and_adam_state_pause",
+  "declared_hook": "before_optimizer_step",
+  "allowed_mutations_used": [
+    "current gradients",
+    "optimizer group hyperparameters"
+  ],
+  "duration_optimizer_updates": 800,
+  "direction": "DELAY",
+  "predicted_direction": "DELAY",
+  "transition_step_shift_low": 700,
+  "transition_step_shift_high": 900,
+  "predicted_shift_interval": {
+    "step_low": 700,
+    "step_high": 900
+  },
+  "predicted_mechanism_state_change": {
+    "effective_update_count": -800,
+    "gain_l2": "held at its intervention-start value during the pause",
+    "gain_rate_l2_per_step": "zero during the pause, restored afterward",
+    "oscillator_phase": "held because parameter, exp_avg, exp_avg_sq and Adam step state are all skipped"
+  },
+  "predicted_stability_effect": "NO_CHANGE",
+  "stability_effect_rationale": "The hook pauses every operative model and Adam state together and then restores the native learning rates, so it delays rather than changes the coupled gain/oscillator law. RNG and data-order state may advance, but the captured training occurrence is full-batch over every training sample; no model or optimizer update reads the ordering state while gradients are None.",
+  "state_audit": {
+    "parameters": "frozen because every current parameter gradient is set to None and group lr is zero",
+    "optimizer_exp_avg": "frozen because AdamW skips parameters whose gradient is None",
+    "optimizer_exp_avg_sq": "frozen because AdamW skips parameters whose gradient is None",
+    "optimizer_step": "frozen because AdamW skips parameters whose gradient is None",
+    "weight_decay": "inactive because the skipped parameter receives no AdamW update and lr is zero as a second guard",
+    "rng_state": "left evolving",
+    "data_order": "left evolving",
+    "task_and_evaluator": "unchanged"
+  },
+  "forbidden_information_used": false
+}

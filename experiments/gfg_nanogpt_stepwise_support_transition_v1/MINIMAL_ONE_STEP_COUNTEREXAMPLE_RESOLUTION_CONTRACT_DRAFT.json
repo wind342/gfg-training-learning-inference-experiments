@@ -1,0 +1,135 @@
+{
+  "schema": "nanogpt-one-step-transition-and-405-long-horizon-challenge-contract-draft-v2",
+  "contract_id": "NANOGPT-ONE-STEP-TRANSITION-AND-405-LONG-HORIZON-CHALLENGE-v2-draft",
+  "name_zh": "一步转移理论与405对长程挑战实验合同",
+  "status": "AWAITING_USER_CONFIRMATION",
+  "execution_authorization": false,
+  "scientific_objective": "Predict the adjacent functional state from the established prestate and the current realized training action on unseen runs, then use the frozen theory in an online recursive long-horizon stress test.",
+  "one_step_equation": "X_hat[t+1] = F(X[t], U[t])",
+  "challenge_set": {
+    "name_zh": "跨运行长程近邻初态—异未来挑战集",
+    "name_en": "Cross-run Long-horizon Near-state Divergent-future Challenge Set",
+    "source": "submission/stepwise_phase_science/new_near_state_counterexamples.json",
+    "source_sha256": "1b20c6a0fab1f9e7c6416fa3fd0b41d42f7fc85b61ea0a673f8c8364dde9fbd6",
+    "record_count": 405,
+    "is_one_step_counterexample_set": false,
+    "allowed_use": "online recursive long-horizon stress test after the one-step theory is frozen and passes unseen-run evaluation",
+    "forbidden_claim": "The 405 pairs directly prove one-step state insufficiency or constitute one-step counterexamples."
+  },
+  "event_order": [
+    "establish X_t",
+    "execute current-batch forward and backward",
+    "form current gradient, Adam deltas and actual parameter update",
+    "seal prediction",
+    "execute target CSRG probe and establish X_t_plus_1",
+    "adjudicate"
+  ],
+  "one_step_dataset": {
+    "sample_unit": "one legal adjacent transition (X_t, U_t, X_t_plus_1)",
+    "run_count": 13,
+    "required_identity_fields": [
+      "run_id",
+      "optimizer_step",
+      "X_t object, version, fact-node and probe-occurrence identities",
+      "U_t batch, gradient, clipped-gradient, Adam-delta and actual-update identities",
+      "prediction seal identity and time",
+      "X_t_plus_1 object, version, fact-node and target-probe occurrence identities",
+      "GFG path and payload hashes"
+    ],
+    "missing_policy": "NOT_EVALUABLE or LEAKAGE_INVALID; never impute or silently drop"
+  },
+  "one_step_counterexamples": {
+    "count_predefined": false,
+    "primary_kind": "baseline one-step prediction error instances on an outer held-out run",
+    "primary_error_conditions": [
+      "continuous functional state fails the development-frozen ONE_STEP_STATE_ACCEPTABLE rule",
+      "capability-change direction is wrong",
+      "decline-onset label is wrong"
+    ],
+    "auxiliary_kind": "cross-run transition-conflict pairs near in both X_t and U_t but separated in true X_t_plus_1 under development-frozen scales",
+    "X_only_matching_forbidden": true,
+    "threshold_source": "development runs only before held-out targets are read"
+  },
+  "baselines": [
+    "B_persistence",
+    "B_prior_M0 refit inside each outer development set"
+  ],
+  "candidate_state_layers": [
+    "M_S",
+    "M_theta",
+    "M_theta_O",
+    "M_theta_x_O",
+    "M_local only when legally formed before the target boundary and reproducible online"
+  ],
+  "outer_evaluation": {
+    "kind": "leave-one-run-out",
+    "fold_count": 13,
+    "held_out_runs_per_fold": 1,
+    "development_runs_per_fold": 12,
+    "inner_selection": "leave-one-run-out within the twelve development runs",
+    "held_out_derived_material_forbidden": true,
+    "cluster_unit": "run_id"
+  },
+  "continuous_metrics": ["MAE", "RMSE", "NRMSE"],
+  "decline_metrics": ["accuracy", "precision", "recall", "F1", "confusion_matrix"],
+  "one_step_bookkeeping": [
+    "STRICTLY_RESOLVED",
+    "STILL_UNRESOLVED",
+    "NEWLY_BROKEN",
+    "WRONG_DIRECTION",
+    "NOT_EVALUABLE",
+    "LEAKAGE_INVALID"
+  ],
+  "required_one_step_reports": [
+    "original one-step counterexample count",
+    "new strict resolutions",
+    "new errors",
+    "net resolutions",
+    "remaining one-step counterexamples",
+    "CSRG MAE RMSE NRMSE",
+    "capability MAE RMSE",
+    "decline-onset metrics",
+    "improvement relative to each baseline"
+  ],
+  "long_horizon_stress_test": {
+    "population": "the frozen 405-pair challenge set",
+    "starts_from_true_phase_start_once": true,
+    "future_U_preloaded": false,
+    "truth_functional_state_reset": false,
+    "reported_horizons": [1, 2, 5, 10, 20, 50, 100],
+    "success": "correct true h100 ordering and at least 0.10 predicted separation",
+    "reports": [
+      "correctly reproduced long-horizon challenges",
+      "wrong direction",
+      "insufficient separation",
+      "not evaluable",
+      "leakage invalid",
+      "remaining long-horizon conflicts",
+      "error growth by horizon"
+    ],
+    "must_not_be_reported_as_one_step_resolution": true
+  },
+  "mechanism_evidence_not_resolution": [
+    "fixed h20-to-h100 parameter-Adam exchange",
+    "fixed-future endpoint attribution",
+    "single A/B case explanation",
+    "J/K local-response improvement",
+    "amplitude scan",
+    "local-response term repair count",
+    "endpoint fitting after reading a complete future path"
+  ],
+  "evidence_hard_gates": [
+    "fact, identity, version and hash validation",
+    "prediction seal precedes target probe",
+    "run isolation and no-future-leakage audit",
+    "independent replay",
+    "GFG relation validation"
+  ],
+  "training_started": false,
+  "model_fitting_started": false,
+  "gpu_execution_started": false,
+  "persistent_ai_session_started_under_v2": false,
+  "new_gfg_build_started": false,
+  "experiment_execution_started_under_v2": false,
+  "next_action": "WAIT_FOR_USER_CONFIRMATION"
+}

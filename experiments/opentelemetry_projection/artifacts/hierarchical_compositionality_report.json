@@ -1,0 +1,17 @@
+{
+  "classification": "SUPPORTED",
+  "direct_span_count": 37,
+  "direct_vs_hierarchical": {
+    "attribute_mismatches": 0,
+    "event_mismatches": 0,
+    "exact": true,
+    "link_edge_false_negatives": 0,
+    "link_edge_false_positives": 0,
+    "parent_edge_false_negatives": 0,
+    "parent_edge_false_positives": 0,
+    "span_false_negatives": 0,
+    "span_false_positives": 0,
+    "status_mismatches": 0
+  },
+  "hierarchical_span_count": 37
+}

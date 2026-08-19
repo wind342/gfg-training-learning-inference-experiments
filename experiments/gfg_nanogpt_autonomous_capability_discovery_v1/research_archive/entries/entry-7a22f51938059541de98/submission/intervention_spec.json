@@ -1,0 +1,48 @@
+{
+  "schema": "gfg-training-intervention-spec-v1",
+  "name": "finite-gradient-and-adam-state-hold",
+  "version": "1.0.0",
+  "implementation": "intervention.py:TrainingIntervention",
+  "direction": "DELAY",
+  "predicted_direction": "DELAY",
+  "predicted_shift_interval": {
+    "step_low": 800,
+    "step_high": 1000
+  },
+  "minimum_expected_effective_shift_optimizer_steps": 800,
+  "hold_updates": 900,
+  "allowed_hooks_used": [
+    "after_backward",
+    "before_optimizer_step",
+    "after_optimizer_step"
+  ],
+  "allowed_mutations_used": [
+    "current gradients",
+    "optimizer group hyperparameters"
+  ],
+  "operation": "For 900 future optimizer occurrences, set each current parameter gradient to None before AdamW. This skips parameter writes, Adam per-parameter step, exp_avg, exp_avg_sq and decoupled weight decay. A learning-rate-zero fallback is restored after each occurrence if native parameters are unavailable.",
+  "predicted_mechanism_state_change": {
+    "rule_fraction": "held constant during the intervention",
+    "rule_margins": "held constant during the intervention",
+    "adam_second_moment_reserve": "held constant when native parameters are exposed",
+    "renewal_phase": "held constant and resumed after release",
+    "transition": "delayed by 800 to 1000 optimizer steps"
+  },
+  "predicted_stability_effect": "NO_CHANGE",
+  "stability_effect_rationale": "The graph uses a repeated full batch and exposes no operative stochastic layer source. With parameter versions and all per-parameter Adam states skipped together, the post-release mechanism resumes from the same state; renewal shocks and recoveries translate with formation rather than changing their state-relative severity.",
+  "intervention_state_audit": {
+    "frozen": [
+      "all parameter versions",
+      "current parameter gradients before optimizer use",
+      "Adam per-parameter step",
+      "Adam exp_avg",
+      "Adam exp_avg_sq",
+      "decoupled weight decay"
+    ],
+    "continues": [
+      "external optimizer-occurrence count",
+      "full-batch materialization occurrences"
+    ],
+    "why_continuing_state_is_nonoperative": "Every observed training batch has the same content hashes and membership, and layer-forward facts expose no stochastic input; the external occurrence number is not an optimizer source—the per-parameter step object is, and it is skipped when grad is None."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "expected_exact_transition_count": 6291456,
+  "gates": {
+    "artifact_manifest_exact": true,
+    "dependency_dag_non_exclusivity_disclosed": true,
+    "exact_transition_accounting_exact": true,
+    "independent_factorized_credit_exact": true,
+    "independent_formation_ancestry_exact": true,
+    "pure_three_way_control_present": true,
+    "reported_status_pass": true,
+    "terminal_scalar_has_no_direct_early_action_source": true
+  },
+  "independent_max_abs_credit_error": 5.551115123125783e-16,
+  "sample_count": 4,
+  "schema_version": "gfg-temporal-credit-long-chain-independent-check-v1",
+  "status": "PASS"
+}

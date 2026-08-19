@@ -1,0 +1,1 @@
+{"official_opentelemetry_sdk_used":true,"packages":{"opentelemetry-api":"1.44.0","opentelemetry-sdk":"1.44.0","pytest":"9.1.1"},"requirements_lock_sha256":"ba201ec7d3eb9ed9a6b6841c9b88330f95ceed08ae49f56c2f01241795b1203e","status":"PASS"}

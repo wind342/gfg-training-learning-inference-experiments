@@ -1,0 +1,68 @@
+{
+  "causal_link_count": 2382,
+  "core_binding_count": 62557,
+  "core_occurrence_count": 61367,
+  "core_snapshot_id": "snap3_aa80894e4ab38379d13df72ed2fa717c91f5081c0835ad6a451a97464ea9c952",
+  "core_snapshot_validated": true,
+  "direct_projected_span_count": 61368,
+  "direct_vs_hierarchical": {
+    "attribute_mismatches": 0,
+    "event_mismatches": 0,
+    "exact": true,
+    "link_edge_false_negatives": 0,
+    "link_edge_false_positives": 0,
+    "parent_edge_false_negatives": 0,
+    "parent_edge_false_positives": 0,
+    "span_false_negatives": 0,
+    "span_false_positives": 0,
+    "status_mismatches": 0
+  },
+  "duckdb_exact": true,
+  "hierarchical_projected_span_count": 61368,
+  "native_span_count": 61368,
+  "native_vs_direct": {
+    "attribute_mismatches": 0,
+    "event_mismatches": 0,
+    "exact": true,
+    "link_edge_false_negatives": 0,
+    "link_edge_false_positives": 0,
+    "parent_edge_false_negatives": 0,
+    "parent_edge_false_positives": 0,
+    "span_false_negatives": 0,
+    "span_false_positives": 0,
+    "status_mismatches": 0
+  },
+  "official_answer_exact": true,
+  "ordinary_output_row_count": 1,
+  "output_orthogonality": {
+    "csv_sha256": "f0fc5c69031d81a87e2376e06bd8242fe260a452dc2d3b4c1d34704c9445c87c",
+    "forbidden_output_fields": [],
+    "json_sha256": "92d5c251c4a231893c6022c42352a2799ae40d54acd6fa616fdece83c76e8a71",
+    "ordinary_vs_core_and_otel_csv_byte_identical": true,
+    "ordinary_vs_core_and_otel_json_byte_identical": true,
+    "types_equal": true,
+    "values_and_order_equal": true
+  },
+  "peak_process_rss_bytes": 1570996224,
+  "performance_seconds": {
+    "core_and_otel_execution": 80.44435720000183,
+    "database_projection": 0.3470992000075057,
+    "direct_projection": 11.38901280000573,
+    "duckdb_reference": 0.00116460002027452,
+    "hierarchical_projection": 9.779183500038926,
+    "native_normalization": 10.473462199966889,
+    "ordinary_execution": 0.03038319997722283,
+    "snapshot_build": 151.54228759999387,
+    "snapshot_validation": 74.93576590000885
+  },
+  "query_number": 6,
+  "scale_factor": 0.01,
+  "sql": "SELECT\n    sum(l_extendedprice * l_discount) AS revenue\nFROM\n    lineitem\nWHERE\n    l_shipdate >= CAST('1994-01-01' AS date)\n    AND l_shipdate < CAST('1995-01-01' AS date)\n    AND l_discount BETWEEN 0.05\n    AND 0.07\n    AND l_quantity < 24;\n",
+  "trace_sha256": {
+    "direct": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8",
+    "hierarchical": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8",
+    "native": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8"
+  },
+  "validated_relation_evidence_count": 62557,
+  "workload": "TPC-H-derived SF0.01 Q6"
+}

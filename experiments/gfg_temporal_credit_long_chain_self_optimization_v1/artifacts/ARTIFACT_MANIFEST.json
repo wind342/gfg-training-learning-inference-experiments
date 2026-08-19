@@ -1,0 +1,31 @@
+{
+  "artifact_count": 5,
+  "artifacts": [
+    {
+      "byte_count": 1731,
+      "path": "DEVELOPMENT_CALIBRATION.json",
+      "sha256": "ea0548122945477a0e8ca358d2a28fb9cffb66415c440a174f3a4bfeab2ebdfa"
+    },
+    {
+      "byte_count": 11261,
+      "path": "FORMAL_RESULT_SUMMARY.json",
+      "sha256": "17e7d16feb332283d9c73f8d66e03349711e80aef69d343c10b8fab76c17781f"
+    },
+    {
+      "byte_count": 621,
+      "path": "INDEPENDENT_CHECK.json",
+      "sha256": "60b8d06ec34b8768794ac71cd527a2d49fdebbfb5177eb99fe2b77349bf6bbec"
+    },
+    {
+      "byte_count": 148126,
+      "path": "PER_EPISODE_RESULTS.json",
+      "sha256": "5634a59eb2ef644c057efc74f17a1a50504fc3883ecbb497e47cbebcc27087dd"
+    },
+    {
+      "byte_count": 266,
+      "path": "TEST_RESULTS.json",
+      "sha256": "184905d141a563d119a3cdb96e6afd28be54fe473197578da69c7f28960dc16a"
+    }
+  ],
+  "schema_version": "gfg-temporal-credit-long-chain-artifact-manifest-v1"
+}

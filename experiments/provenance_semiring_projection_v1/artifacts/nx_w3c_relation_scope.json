@@ -1,0 +1,7 @@
+{
+  "claim_escalation_permitted": false,
+  "evaluation_status": "NOT_EVALUATED",
+  "reason": "This experiment evaluates semiring provenance under finite positive relational algebra; it does not evaluate or claim equivalence with W3C PROV-DM generation qualified-relation semantics.",
+  "schema_version": "nx-w3c-relation-scope-v1",
+  "status": "NOT_EVALUATED"
+}

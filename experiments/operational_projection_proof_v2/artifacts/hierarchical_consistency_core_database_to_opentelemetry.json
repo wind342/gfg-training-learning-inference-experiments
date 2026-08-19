@@ -1,0 +1,66 @@
+{
+  "formal_tpch_q6": {
+    "direct_span_count": 61368,
+    "direct_vs_hierarchical": {
+      "attribute_mismatches": 0,
+      "event_mismatches": 0,
+      "exact": true,
+      "link_edge_false_negatives": 0,
+      "link_edge_false_positives": 0,
+      "parent_edge_false_negatives": 0,
+      "parent_edge_false_positives": 0,
+      "span_false_negatives": 0,
+      "span_false_positives": 0,
+      "status_mismatches": 0
+    },
+    "hierarchical_span_count": 61368,
+    "trace_sha256": {
+      "direct": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8",
+      "hierarchical": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8",
+      "native": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8"
+    }
+  },
+  "mandatory_checks": {
+    "formal_canonical_sha_equal": true,
+    "formal_exact": true,
+    "runtime_access_traps": true,
+    "small_canonical_bytes_equal": true,
+    "small_canonical_sha_equal": true,
+    "small_exact": true,
+    "static_import_audit": true
+  },
+  "module_isolation": {
+    "allowed_shared_helpers": [
+      "canonical trace schema",
+      "canonicalizer",
+      "semantic-key formatting",
+      "ProjectionError"
+    ],
+    "direct_hierarchical_shared_extraction_helper_count": 0,
+    "static_import_violations": [],
+    "status": "PASS"
+  },
+  "p3_subtype": "cross-domain hierarchical projection",
+  "path_a": "ValidatedSnapshot -> core_to_otel_projection -> canonical trace A",
+  "path_b": "ValidatedSnapshot -> core_to_database_projection -> immutable DatabaseDomainProjection -> database_to_otel_projection -> canonical trace B",
+  "profile_id": "core-database-to-opentelemetry-v1",
+  "small": {
+    "canonical_bytes_equal": true,
+    "canonical_sha256": "0a93193eae9a9c7aa91c48d7abb82df4acd4e349235e21f49872020d4619a734",
+    "direct_span_count": 37,
+    "direct_vs_hierarchical": {
+      "attribute_mismatches": 0,
+      "event_mismatches": 0,
+      "exact": true,
+      "link_edge_false_negatives": 0,
+      "link_edge_false_positives": 0,
+      "parent_edge_false_negatives": 0,
+      "parent_edge_false_positives": 0,
+      "span_false_negatives": 0,
+      "span_false_positives": 0,
+      "status_mismatches": 0
+    },
+    "hierarchical_span_count": 37
+  },
+  "status": "SUPPORTED"
+}

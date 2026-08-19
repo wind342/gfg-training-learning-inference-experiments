@@ -1,0 +1,82 @@
+{
+  "audit_status": "PROCEED",
+  "audit_version": "pytorch-autograd-training-lineage-preimplementation-v1",
+  "blocking_conditions": {
+    "checkpoint_divergence_cannot_form_real_recomputation": false,
+    "core_must_change_to_represent_training_occurrences": false,
+    "core_only_candidate_requires_native_graph": false,
+    "native_graph_unavailable_from_public_frozen_surface": false,
+    "queries_require_fabricated_direct_relations": false
+  },
+  "candidate_boundary": {
+    "allowed": [
+      "ValidatedSnapshot",
+      "matching SnapshotValidation",
+      "frozen profile",
+      "frozen crosswalk",
+      "structural canonicalizer"
+    ],
+    "forbidden": [
+      "loss.grad_fn",
+      "next_functions",
+      "native graph",
+      "profiler",
+      "execution receipts",
+      "expected graph",
+      "artifacts",
+      "reference results",
+      "Python object addresses",
+      "native graph node IDs"
+    ]
+  },
+  "checkpoint_probe": {
+    "backward_completed": true,
+    "default_determinism_check_raised": false,
+    "finite_gradient": true,
+    "original_forward_scale": 1.0,
+    "original_phase_entered": true,
+    "recomputation_phase_entered": true,
+    "recomputation_scale": 2.0,
+    "torch_checkpoint_arguments": {
+      "determinism_check": "default",
+      "early_stop": false,
+      "use_reentrant": false
+    }
+  },
+  "core_feasibility": {
+    "generated_origin_bridge_available": true,
+    "generation_binding_preserves_precise_pairing": true,
+    "occurrence_stage_available": true,
+    "parameter_versions_can_be_distinct_support_records": true,
+    "protected_core_change_required": false,
+    "unused_source_can_use_explicit_disposition": true
+  },
+  "frozen_at_utc": "2026-07-22T02:25:40.9525909Z",
+  "native_api_probe": {
+    "Node.name": true,
+    "Node.next_functions": true,
+    "Tensor.register_hook": true,
+    "Tensor.register_post_accumulate_grad_hook": true,
+    "checkpoint.context_fn": true,
+    "checkpoint.early_stop": true,
+    "checkpoint.use_reentrant": true,
+    "saved_tensors_hooks": true
+  },
+  "native_crosswalk_probe": {
+    "AddBackward0": true,
+    "MeanBackward0": true,
+    "MmBackward0": true,
+    "MulBackward0": true,
+    "PowBackward0": true,
+    "ReluBackward0": true,
+    "SumBackward0": true,
+    "none_edge_observed": true,
+    "ordered_slots_observed": true,
+    "shared_node_observed": true,
+    "struct torch::autograd::AccumulateGrad": true
+  },
+  "scientific_non_dependencies": [
+    "PR #16 four-projection results",
+    "any existing experiment's scientific conclusion"
+  ]
+}

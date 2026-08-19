@@ -1,0 +1,22 @@
+{
+  "network_reads_during_science_and_audit_runs": 0,
+  "pyparsing": {
+    "license": "MIT",
+    "role": "transitive RDFLib parser dependency",
+    "semantic_authority": false,
+    "version": "3.3.2",
+    "wheel": "pyparsing-3.3.2-py3-none-any.whl",
+    "wheel_sha256": "850ba148bd908d7e2411587e247a1e4f0327839c40e2e5e6d05a007ecc69911d"
+  },
+  "python": "3.12.10",
+  "rdflib": {
+    "license": "BSD-3-Clause",
+    "role": "native PROV-O parsing only",
+    "semantic_authority": false,
+    "version": "7.6.0",
+    "wheel": "rdflib-7.6.0-py3-none-any.whl",
+    "wheel_sha256": "30c0a3ebf4c0e09215f066be7246794b6492e054e782d7ac2a34c9f70a15e0dd"
+  },
+  "runtime_absolute_paths_persisted": 0,
+  "status": "SUPPORTED"
+}

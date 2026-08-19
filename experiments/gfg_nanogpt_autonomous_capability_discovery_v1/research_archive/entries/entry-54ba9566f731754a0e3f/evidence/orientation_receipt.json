@@ -1,0 +1,17 @@
+{
+  "schema": "gfg-orientation-receipt-v1",
+  "read_complete": true,
+  "target_gfg_accessed": false,
+  "generation_fact": "A generation_fact is one atomic relation binding source information, the realized transformation, one concrete occurrence, the formed outcome, and its relation role.",
+  "generation_occurrence": "A generation_occurrence identifies one concrete execution; it can establish several distinct generation facts.",
+  "atomic_generation_fact": "Each generation fact preserves its exact source, transformation, occurrence, outcome, and role as one indivisible relation.",
+  "realizes_fact": "realizes_fact connects an occurrence node to each particular fact that the occurrence established.",
+  "reads_from": "reads_from records an actual data dependency and must not be inferred merely from execution order, time, or value equality.",
+  "GeneratedOrigin": "GeneratedOrigin records that an outcome formed earlier participates as a source in a later generation fact.",
+  "program_order": "program_order records declared execution order but does not by itself establish a data dependency or concurrency fact.",
+  "equal_values": "Equal numeric values or equal outputs do not identify the same fact, occurrence, result, or formation.",
+  "cartesian_recombination": "Facts from one occurrence must not be split into source and result sets and falsely recombined by Cartesian product.",
+  "missing_relations": "A missing relation means it was not established; it does not automatically prove the relation false, and absence of a concurrency edge does not prove concurrency.",
+  "forward_query": "A forward training query follows exact identities along training sample to batch occurrence to forward occurrence to loss to backward occurrence to gradient to optimizer occurrence to new parameter version.",
+  "reverse_query": "A reverse query starts from an evaluation or parameter result and follows actual reads_from, GeneratedOrigin, realizes_fact, and incidence relations; timestamp proximity and numeric similarity are not substitutes."
+}

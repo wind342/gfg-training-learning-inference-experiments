@@ -1,0 +1,156 @@
+{
+  "access_boundaries": {
+    "candidate_core_process": {
+      "allowed": [
+        "ValidatedSnapshot",
+        "matching SnapshotValidation",
+        "frozen profiles and crosswalk",
+        "Core query result"
+      ],
+      "forbidden": [
+        "native oracle",
+        "saved-tensor observations",
+        "intervention results",
+        "receipt reference",
+        "native PyTorch graph objects"
+      ]
+    },
+    "comparison_process": {
+      "allowed": [
+        "normalized Core relation set",
+        "normalized native-oracle relation set"
+      ],
+      "forbidden": [
+        "mutation of either input",
+        "reconstruction from operation-specific derivative rules"
+      ]
+    },
+    "native_oracle_process": {
+      "allowed": [
+        "real frozen PyTorch execution",
+        "public Native graph and hook surfaces",
+        "stable source and support registrations"
+      ],
+      "forbidden": [
+        "Core",
+        "ValidatedSnapshot",
+        "Candidate graph",
+        "Core binding artifacts",
+        "existing gradient dependency bindings",
+        "receipt reference answers"
+      ]
+    }
+  },
+  "audit_status": "PROCEED_WITH_FALSIFICATION_GATES",
+  "audit_version": "pytorch-gradient-dependency-oracle-preimplementation-v1",
+  "blocking_conditions_at_audit": {
+    "core_change_known_to_be_required": false,
+    "native_core_relation_mismatch_known": false,
+    "public_hooks_known_to_be_insufficient": false,
+    "saved_tensor_stable_mapping_known_to_be_impossible": false,
+    "single_token_topology_preservation_known_to_be_impossible": false
+  },
+  "frozen_authority": {
+    "python_version": "3.12.10",
+    "torch_build_commit": "cf30153c4c131c8164ee7798e5022d810682e2cb",
+    "torch_version": "2.13.0+cpu",
+    "wheel_sha256": "a8b450c1e58e5800e5b4691dac412f8d2d65a1dc3298166f91596603a3531e6f"
+  },
+  "frozen_pr17": {
+    "branch": "experiment/pytorch-autograd-training-lineage-v1",
+    "experiment_tree": "4c1bb11d178ae09825ff91713094696f5865eba5",
+    "head": "19eac2a1c5435b378a19c6b37d17a2d275cf794c",
+    "repository_tree": "2a2c8ddb595dcb725c5ee6d6c7e72596097b07d3"
+  },
+  "frozen_protected_trees": {
+    "compat/v2": "7bbb49d18daf7ea99d7633b40c6df5bc002824ca",
+    "protocol/core_v3": "0b4a2608864e771ebca7cdbfad95aabaed2d0723",
+    "src/generation_relation_core": "bf9d63597d72a8632dee69a1fbc61a2b2a42e4ce",
+    "tests/core": "5d02044752e8346ed942e90d272d488eadae9071"
+  },
+  "gradient_value_dependency_generation": {
+    "core_capture": "Traverses actual operation receipts backward from the loss, rewrites the checkpoint original terminal to the recomputation terminal, and accumulates value dependencies using operation_type-specific local reverse rules before emitting gradient_value_dependency bindings.",
+    "receipt_reference": "Independently traverses the same receipt topology and checkpoint rewrite, but applies a semantically equivalent operation_type-specific local reverse-rule table before constructing reference query edges.",
+    "scientific_limitation": "Code separation does not eliminate a shared semantic error because both paths encode the same local derivative assumptions. The v1 receipt reference is therefore not a fully independent semantic oracle for gradient-value dependency."
+  },
+  "prohibited_surfaces": [
+    "private _saved_* fields",
+    "private _raw_saved_* fields",
+    "core_capture._gradient_dependency_refs",
+    "independent_reference._gradient_dependency_refs",
+    "operation_type branching inside the native oracle",
+    "tracked operator derivative-rule tables inside the native oracle",
+    "persisted Python object addresses or IDs",
+    "random intervention search",
+    "Core or Candidate reads by the native oracle"
+  ],
+  "public_pytorch_api_plan": [
+    "Tensor.grad_fn",
+    "torch.autograd.graph.Node.name",
+    "torch.autograd.graph.Node.next_functions",
+    "torch.autograd.graph.Node.register_prehook",
+    "torch.autograd.graph.Node.register_hook",
+    "torch.autograd.graph.saved_tensors_hooks",
+    "Tensor.register_hook",
+    "torch.autograd.graph.register_multi_grad_hook only if needed"
+  ],
+  "public_pytorch_documentation": [
+    "https://docs.pytorch.org/docs/2.13/autograd.html",
+    "https://docs.pytorch.org/docs/2.13/generated/torch.autograd.graph.Node.name.html",
+    "https://docs.pytorch.org/docs/2.13/generated/torch.Tensor.register_hook.html"
+  ],
+  "repeated_local_rule_functions": [
+    {
+      "file": "experiments/pytorch_autograd_training_lineage_v1/core_capture.py",
+      "file_sha256": "0fee02b3346de642157fe8eb1d35b70b5e24823b2f39cc146045e6123e94161f",
+      "function": "_gradient_dependency_refs",
+      "line_range": "154-202",
+      "normalized_lf_region_sha256": "acf64cabb8896b1ca22dee188edbf51bd099d76267ed1fb35181761fb2a6c461"
+    },
+    {
+      "file": "experiments/pytorch_autograd_training_lineage_v1/independent_reference.py",
+      "file_sha256": "02440d378b9a8fd645cedde6f75c4d46dbdda5c43be4a54278381127e872d769",
+      "function": "ReceiptLineageReference._gradient_dependency_refs",
+      "line_range": "107-151",
+      "normalized_lf_region_sha256": "a1bbfe3ce8b4d16d617c25614c06cabc72dd38abeee4d18a43ad76e26e151b7d"
+    }
+  ],
+  "v1_baseline": {
+    "artifact_count": 41,
+    "artifact_manifest_sha256": "96fa0189ed0f091c42c5399d8a29dedf788d9c8816f682df47dd3c4c7862d292",
+    "artifact_manifest_verified": true,
+    "core_tests": {
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "tests/core",
+        "-q"
+      ],
+      "passed": 24,
+      "rerun_at_audit": true,
+      "total": 24
+    },
+    "determinism_sha256": "8e74da9987c096401417f268f8f9528a4f990c6bedb9df64147e1d8124fc3e3e",
+    "experiment_report_sha256": "2ea726740cd0ccc463d63fff8777f7aa0f35886052a4871e6b4e8823ba058f5b",
+    "experiment_tests": {
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "experiments/pytorch_autograd_training_lineage_v1/tests",
+        "-q"
+      ],
+      "passed": 34,
+      "rerun_at_audit": true,
+      "total": 34
+    },
+    "manifest_rows_sha256": "4fba66c80e2be6f9b95e3fba9a700b50c392fb10d92a1467b17ab15aba0fa1cf",
+    "negative_control_count": 32,
+    "normalized_scientific_sha256": "270d8901041778ee2a60cb493cbf5b99591db032213c32a7e12462099d5b0e17",
+    "run_summary_sha256": "df735c4316e42249fdd5ca6cc9975f7a3294230b2c68b65259457ad15b77c4d2",
+    "status": "PYTORCH_AUTOGRAD_GENERATION_FACTS_V1_SUPPORTED",
+    "total_gate_count": 22,
+    "passed_gate_count": 22
+  }
+}

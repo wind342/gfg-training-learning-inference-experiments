@@ -1,0 +1,87 @@
+{
+  "profile_id": "w3c-prov-generation-profile-v1",
+  "authority_manifest": "w3c_prov_authority_manifest.json",
+  "clauses": [
+    {
+      "authority": "PROV-DM",
+      "location": "5.1.1 Entity",
+      "use": "SourceInformationRecord, PerceptualSupportRecord, and ExplicitDisposition project to declared Entity subtypes."
+    },
+    {
+      "authority": "PROV-DM",
+      "location": "5.1.2 Activity",
+      "use": "GenerationOccurrence projects to Activity."
+    },
+    {
+      "authority": "PROV-DM",
+      "location": "5.1.3 Generation",
+      "use": "Each outcome/activity pair has one identified generation event."
+    },
+    {
+      "authority": "PROV-DM",
+      "location": "5.1.4 Usage",
+      "use": "Each Core GenerationBinding has one identified usage; repeated use remains distinct."
+    },
+    {
+      "authority": "PROV-DM",
+      "location": "5.2.1 Derivation",
+      "use": "Each binding projects to an identified expanded derivation citing generated entity, used entity, activity, generation, and usage."
+    },
+    {
+      "authority": "PROV-DM",
+      "location": "5.3.1 Agent and 5.3.3 Association",
+      "use": "GeneratorManifest projects to SoftwareAgent and each projected Activity has an identified association."
+    },
+    {
+      "authority": "PROV-DM",
+      "location": "5.7.1 Identifier, 5.7.2 Attribute, 5.7.2.3 prov:role, 5.7.2.4 prov:type, 5.7.4 Namespace Declaration, 5.7.5 Qualified Name",
+      "use": "Deterministic qualified identifiers and the closed attribute allowlist."
+    },
+    {
+      "authority": "PROV-N",
+      "location": "3 Namespaces and 4 Document grammar",
+      "use": "Deterministic PROV-N document, namespace, QName, typed literal, and expression syntax."
+    },
+    {
+      "authority": "PROV-O",
+      "location": "3.1 Starting Point Terms and 3.3 Qualified Terms",
+      "use": "Qualified Usage, Generation, Derivation, and Association RDF structures, including prov:entity, prov:activity, prov:agent, prov:hadUsage, prov:hadGeneration, and prov:hadActivity."
+    },
+    {
+      "authority": "PROV-CONSTRAINTS",
+      "location": "Inference 11 derivation-generation-use-inference",
+      "use": "An expanded derivation's referenced usage and generation must exist and match its activity and entities."
+    },
+    {
+      "authority": "PROV-CONSTRAINTS",
+      "location": "Constraint 23 key-properties",
+      "use": "Statements sharing an identified relation identifier must unify consistently."
+    },
+    {
+      "authority": "PROV-CONSTRAINTS",
+      "location": "Constraint 24 unique-generation",
+      "use": "A projected Entity cannot have two distinct generation events."
+    },
+    {
+      "authority": "PROV-CONSTRAINTS",
+      "location": "Constraint 50 typing and Constraint 53 impossible-property-overlap",
+      "use": "Entity, Activity, Agent, and influence relation typing must not conflict."
+    },
+    {
+      "authority": "PROV-CONSTRAINTS",
+      "location": "Constraint 51 impossible-unspecified-derivation-generation-use",
+      "use": "Generation or usage identifiers cannot be supplied on a derivation whose activity is unspecified."
+    }
+  ],
+  "explicitly_not_evaluated": [
+    "Start, End, and temporal ordering constraints",
+    "Invalidation",
+    "Communication and Delegation",
+    "Bundles and provenance of provenance",
+    "Collections and Dictionary",
+    "Alternate and Specialization",
+    "Arbitrary RDF entailment and arbitrary custom extensions"
+  ],
+  "semantic_authority": "Official W3C publications only",
+  "version": 1
+}

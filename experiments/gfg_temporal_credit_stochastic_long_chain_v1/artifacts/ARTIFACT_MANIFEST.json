@@ -1,0 +1,26 @@
+{
+  "artifact_count": 4,
+  "artifacts": [
+    {
+      "byte_count": 9211,
+      "path": "DEVELOPMENT_RESULTS.json",
+      "sha256": "27fd43293a06bc83017b08090283471145232b23c1cbf9303501cc88d9f4691e"
+    },
+    {
+      "byte_count": 13814,
+      "path": "FORMAL_RESULT_SUMMARY.json",
+      "sha256": "35f7d78ede7b2eef7e56ec5ae6944557aa528ffcdafd797338a3507d46c97e7a"
+    },
+    {
+      "byte_count": 738,
+      "path": "INDEPENDENT_CHECK.json",
+      "sha256": "9e6179a8472791be9a083125c01acead99237e3234641f478706c0e97caab93a"
+    },
+    {
+      "byte_count": 247723,
+      "path": "PER_EPISODE_RESULTS.json",
+      "sha256": "e8de842437eae8c596b122a41b269fd62813c3cd720a1a8bb21fe3a752368c1d"
+    }
+  ],
+  "schema_version": "gfg-temporal-credit-stochastic-artifact-manifest-v1"
+}

@@ -1,0 +1,66 @@
+{
+  "allowed_neutral_modules": [
+    "events",
+    "generator",
+    "record_model"
+  ],
+  "allowed_neutral_symbols": {
+    "events": [
+      "ActivityEvent",
+      "AgentEvent",
+      "BindingEvent",
+      "BridgeEvent",
+      "GeneratedOutput",
+      "GeneratorVariant",
+      "OutcomeEvent",
+      "SourceEvent"
+    ],
+    "generator": [
+      "run_generator"
+    ],
+    "record_model": [
+      "canonical_json_bytes",
+      "sorted_records",
+      "validate_normalized_records"
+    ]
+  },
+  "candidate_modules": [
+    "candidate_projection",
+    "provn"
+  ],
+  "candidate_projection_runtime_inputs": [
+    "validated_core_snapshot"
+  ],
+  "candidate_provn_parser_runtime_inputs": [
+    "current_candidate_provn_bytes"
+  ],
+  "forbidden_shared_mapping_symbol_fragments": [
+    "binding_to",
+    "crosswalk",
+    "derivation",
+    "expected_record",
+    "generation_relation",
+    "semantic_id",
+    "usage"
+  ],
+  "native_modules": [
+    "native_reference",
+    "provo_normalizer"
+  ],
+  "native_normalizer_runtime_inputs": [
+    "current_native_provo_bytes"
+  ],
+  "native_reference_runtime_inputs": [
+    "actual_generator_callbacks"
+  ],
+  "policy_id": "oracle-isolation-policy-v2",
+  "process_contract": {
+    "candidate_and_native_share_memory": false,
+    "comparison_participates_in_projection": false,
+    "expected_answer_reads_allowed": false,
+    "old_artifact_reads_allowed": false,
+    "result_comparison": "canonical normalized-record SHA-256",
+    "separate_processes_required": true
+  },
+  "version": 2
+}

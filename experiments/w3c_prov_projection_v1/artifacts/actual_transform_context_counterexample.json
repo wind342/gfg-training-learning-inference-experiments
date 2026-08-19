@@ -1,0 +1,61 @@
+{
+  "conditions": {
+    "actual_executed_branch_different": true,
+    "binding_semantics_equal": true,
+    "both_snapshots_valid": true,
+    "candidate_prov_records_equal": true,
+    "candidate_provn_bytes_equal": true,
+    "intermediate_state_digest_different": true,
+    "metadata_only_mutation": false,
+    "native_provo_normalized_equal": true,
+    "occurrence_payload_transform_context_different": true,
+    "ordinary_output_equal": true,
+    "profile_selected_activity_semantics_equal": true,
+    "report_only_mutation": false,
+    "snapshot_ids_different": true,
+    "source_entities_equal": true,
+    "transform_reference_different": true
+  },
+  "contract_id": "actual_transform_counterexample_contract_v1",
+  "first_branch_execution_receipt": {
+    "branch_execution_receipt_sha256": "877ef8d53d576cbb5909bd766927ba51f619e027e976e3c32d7f52ec1828c65e",
+    "executed_branch_id": "integer-sum-left-associative",
+    "executed_function_or_code_path": "generator._execute_left_associative",
+    "input_values": {
+      "x": 5,
+      "y": 6,
+      "z": 0
+    },
+    "intermediate_state_sha256": "143dd1217781de7ba7cc817a318157cd431cf5459188579b54e0f94f2036172e",
+    "intermediate_values": [
+      11,
+      11
+    ],
+    "occurrence_payload_sha256": "26c3564851579d982c60e7daa3bad0446663f92dda251065b214d4bfaab88109",
+    "operation_result_sha256": "6a2e0fa57127c426173d145ea4e6dd1cbb2f21c88b9710f2ea551f78c2adb744",
+    "output_value": 11,
+    "transform_reference_sha256": "3ea23599835bd4ca6d344845edebd406dfe6a3e68f52a3c9b15ab829807c818b",
+    "transform_variant": "left_associative"
+  },
+  "second_branch_execution_receipt": {
+    "branch_execution_receipt_sha256": "826708fb6d57b75693fad8bea12394dc2271ae56e05e73098438aa4f9387df84",
+    "executed_branch_id": "integer-sum-right-associative",
+    "executed_function_or_code_path": "generator._execute_right_associative",
+    "input_values": {
+      "x": 5,
+      "y": 6,
+      "z": 0
+    },
+    "intermediate_state_sha256": "ebcba1c674fe3d4bbe6c5187de05defba2af5eba21451d0208ed1118c472dbad",
+    "intermediate_values": [
+      6,
+      11
+    ],
+    "occurrence_payload_sha256": "3072fdd4f07a05404310bcf12bdc0cee06aa64dfa2bf5291a0de73b7d0847f29",
+    "operation_result_sha256": "f48ea6cceffac026aec834846876ee638eb88b131ffc80f4884d5902a84cdbc2",
+    "output_value": 11,
+    "transform_reference_sha256": "2995de50014545b30d71a864e6fb48e9a0f9a37ba10a2ec73b11a1006afdd81e",
+    "transform_variant": "right_associative"
+  },
+  "status": "SUPPORTED"
+}

@@ -1,0 +1,13 @@
+# Unified direct runtime versions. Existing experiment-specific lock files and
+# their SHA-256 values are recorded in artifacts/unified_manifest.json.
+duckdb==1.5.4
+jsonschema==4.25.1
+opentelemetry-api==1.44.0
+opentelemetry-sdk==1.44.0
+opentelemetry-semantic-conventions==0.65b0
+psutil==7.2.2
+pytest==9.1.1
+rdflib==7.6.0
+pyparsing==3.3.2
+torch==2.13.0+cpu
+

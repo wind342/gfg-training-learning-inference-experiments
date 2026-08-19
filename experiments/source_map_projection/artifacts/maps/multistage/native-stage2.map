@@ -1,0 +1,1 @@
+{"file":"minified-final.js","mappings":"AAAA,2BACA,oBACA,CACA,qBACA","names":[],"sourceRoot":"../src","sources":["bundled-intermediate.js"],"sourcesContent":["function add(left, right) {\n  return left + right;\n}\nconst label = \"总计🔥\";\nconsole.log(label, add(2, 3));\n"],"version":3}

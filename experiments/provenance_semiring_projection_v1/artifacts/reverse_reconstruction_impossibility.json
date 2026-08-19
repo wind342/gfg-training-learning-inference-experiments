@@ -1,0 +1,30 @@
+{
+  "claim": "No total inverse from the observed N[X] values can reconstruct a unique complete Gamma snapshot",
+  "fibers": {
+    "W11:P2-physical-occurrence-structure": [
+      "snap3_ded34b4ddb3b04959be2f6c85a6592b7b8eb2c9202de34fdef180d5c80e7c280",
+      "snap3_0f9055b289d81b550c014ab092d48f3e1e693206dd0bf5ca69d5d3536291fccd"
+    ],
+    "W1:P2-disposition": [
+      "snap3_f62e064361cdafab894bf0de07ecca1b96aa5efcd0a659b3f4dff92536fcc150",
+      "snap3_3927ba175ec28788a57bfdaf3491a4baa63802b5c9ac7ca4ea6560d4a0095f3a"
+    ],
+    "W2:P2-environment": [
+      "snap3_f0eae17433135205a72c54322e214953b96f7f5f59cde2a83943e8e013bf0d01",
+      "snap3_3937312af7d2115af7761aab3e77fd7f5602b0a4f8da4d3afa1434aee6ed5e53"
+    ],
+    "W2:P2-evidence": [
+      "snap3_f31eb409f576dd3f5d11ab76ae3be41fc1a7a4f5346d41bb54845fb963939271",
+      "snap3_da56acc8c85bc5e71ec4e731b9d05f6e60de953ee01fba06d5b20d30e1590dd3"
+    ],
+    "W2:P2-operation-result": [
+      "snap3_c68fec0c809d5572ac8c81abe442dfc2c796420b6553077e056eb822b2c41be2",
+      "snap3_0857d32e9d978e033b302f18204d9074bad022c33d9c688ba992d7706b3f66a1"
+    ]
+  },
+  "fibers_with_multiple_gamma": 5,
+  "projection_fiber_count": 5,
+  "reasoning_kind": "finite machine witness of non-injectivity, not a claim beyond the frozen execution domain",
+  "schema_version": "reverse-reconstruction-impossibility-v1",
+  "status": "NON_INJECTIVITY_WITNESSED"
+}

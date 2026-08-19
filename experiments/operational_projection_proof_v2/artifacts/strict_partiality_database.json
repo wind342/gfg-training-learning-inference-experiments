@@ -1,0 +1,92 @@
+{
+  "cases": [
+    {
+      "binding_difference": {
+        "equal": false,
+        "left_count": 54,
+        "left_only_sha256": "8a58d6d087bc3f53bf2f1a6075b57e10d8fe83baaeedbbcc24dca8544094f41a",
+        "right_count": 54,
+        "right_only_sha256": "9f90cd8576e1f309837004d886c7a6b9cc40b51e6de35c638ec6a24938662d73",
+        "symmetric_difference_count": 108
+      },
+      "binding_set_equal": false,
+      "binding_symmetric_difference_count": 108,
+      "complete_snapshot_equal": false,
+      "counterexample_id": "same-lineage-distinct-execution-run",
+      "environment_context_equal": true,
+      "environment_difference": {
+        "equal": true,
+        "left_count": 1,
+        "left_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "right_count": 1,
+        "right_only_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "symmetric_difference_count": 0
+      },
+      "left_snapshot_id": "snap3_38c40041239202f0607569a2ef74c7060943584d7c8228f997c4650563f42a0b",
+      "left_snapshot_semantic_sha256": "e34085e6f4e54495fc65ccf8bba5f57661c6d78a653552bef65cf9c89a736f38",
+      "occurrence_difference": {
+        "equal": false,
+        "left_count": 36,
+        "left_only_sha256": "37a7735cb4d021cfd03146a6b693f2e81ae381a9c77f5945a5a4bb2e7e0d7fe0",
+        "right_count": 36,
+        "right_only_sha256": "3d8368233d8f5e2d3bf4bfb30e1537e23211ea52d28321b1dc12c034d339ee74",
+        "symmetric_difference_count": 72
+      },
+      "occurrence_set_equal": false,
+      "occurrence_symmetric_difference_count": 72,
+      "output_equal": true,
+      "projection_hash_equal": true,
+      "projection_sha256": "d6a8dc3183acccba34aea70bd2c8a6065de5dbc672e83a679f9735ff69cdd89d",
+      "right_snapshot_id": "snap3_140e6111ac26a94f8c2f966c6a0fd9c6d8320bd330d416f471e859ab5c825ab9",
+      "right_snapshot_semantic_sha256": "dc6493fde799b6ba0bcd9093cf8f866d6f5af3bb8a83359e73b5f0c0005c6ff3",
+      "transform_context_equal": true,
+      "valid_counterexample": true
+    },
+    {
+      "binding_difference": {
+        "equal": false,
+        "left_count": 54,
+        "left_only_sha256": "069f861f664789754e293aeccad5756ca251a632c02528a18bf3a869115d10f0",
+        "right_count": 54,
+        "right_only_sha256": "bd91d79a093fe8f1e2cdcd25de50815423af96b629b871ebbb388a45d33e890f",
+        "symmetric_difference_count": 108
+      },
+      "binding_set_equal": false,
+      "binding_symmetric_difference_count": 108,
+      "complete_snapshot_equal": false,
+      "counterexample_id": "same-lineage-distinct-environment-context",
+      "environment_context_equal": false,
+      "environment_difference": {
+        "equal": false,
+        "left_count": 1,
+        "left_only_sha256": "9147f7882d1c051830baad0bafff6346b88b23a2ba533d2ec41832cceb8e550a",
+        "right_count": 1,
+        "right_only_sha256": "fad14eee05d4c516cd61c81ff45cbe9b4e74668f2e2a76fe39b9a6e52d49591e",
+        "symmetric_difference_count": 2
+      },
+      "left_snapshot_id": "snap3_1a1933f1098ac192d03f0d20ed659814f7af3792595b94b1ee0b0824d16acff9",
+      "left_snapshot_semantic_sha256": "cab9e5937a9263220b966b7ff04d42e61d74f69fae76fdc91d8ee924737c9d3a",
+      "occurrence_difference": {
+        "equal": false,
+        "left_count": 36,
+        "left_only_sha256": "7ad10be67c5ed4d0abcdd2e6b662ab40bc50ae3cba5b1fe419a65dfbbc2b37d2",
+        "right_count": 36,
+        "right_only_sha256": "151d0014067da09bd105df94b969076d25349f51e927a687131578007fffd518",
+        "symmetric_difference_count": 72
+      },
+      "occurrence_set_equal": false,
+      "occurrence_symmetric_difference_count": 72,
+      "output_equal": true,
+      "projection_hash_equal": true,
+      "projection_sha256": "d6a8dc3183acccba34aea70bd2c8a6065de5dbc672e83a679f9735ff69cdd89d",
+      "right_snapshot_id": "snap3_8118f714152cdbbb1d4294d20f4a82ba9eb93cd5996ac7bc8767bd5130ff03cf",
+      "right_snapshot_semantic_sha256": "f34b6640bfb133b9d498394fbc8335766104bfe6c4c0583ea4a63241072639ad",
+      "transform_context_equal": true,
+      "valid_counterexample": true
+    }
+  ],
+  "counterexample_count": 2,
+  "profile_id": "database-which-lineage-v1",
+  "projection_equality_does_not_imply_complete_fact_equality": true,
+  "status": "SUPPORTED"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "nanogpt-support-transition-implementation-amendments-v1",
+  "amendments": [
+    {
+      "amendment_id": "CST-IMPL-001",
+      "trigger": "The first formal entry completed scan checkpoints 100 through 9900, then checkpoint 10000 attempted to compare its post-update state with a source state at optimizer step 10001, which is outside the frozen source capture ending at 10000.",
+      "preserved_evidence": "The 99 completed result files and the failing console record are preserved; no completed result is deleted or recomputed.",
+      "change": "For a requested historical comparison above source step 10000, emit the explicit disposition HISTORICAL_NEXT_STATE_OUTSIDE_CAPTURED_10000_STEP_SCOPE instead of requiring nonexistent source objects.",
+      "scientific_contract_changed": false,
+      "anchor_selection_changed": false,
+      "branch_execution_changed": false,
+      "support_measurement_changed": false,
+      "status": "FROZEN_BEFORE_RESUME"
+    }
+  ]
+}

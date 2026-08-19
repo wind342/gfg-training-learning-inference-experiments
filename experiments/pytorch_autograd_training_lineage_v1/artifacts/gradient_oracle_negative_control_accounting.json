@@ -1,0 +1,1 @@
+{"all_detected":true,"automatic_repair_count":0,"control_count":20,"depth_counts":{"END_TO_END":2,"ISOLATION":4,"VALIDATOR_INTEGRATION":7,"VALIDATOR_UNIT":7},"execution_count_total":20,"fail_closed_count":20,"repeated_mutation_fingerprint_count":0,"status":"GRADIENT_ORACLE_NEGATIVE_CONTROLS_SUPPORTED","unique_mutation_fingerprint_count":20}

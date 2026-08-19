@@ -1,0 +1,92 @@
+{
+  "called_symbols": [
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/compare_nx_paths.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/compare_nx_paths.py",
+      "symbol": "_write"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/compare_nx_paths.py",
+      "symbol": "main"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/__init__.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/exact_comparison.py",
+      "symbol": "<genexpr>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/exact_comparison.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/exact_comparison.py",
+      "symbol": "_case_key"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/exact_comparison.py",
+      "symbol": "_case_observations"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/exact_comparison.py",
+      "symbol": "_observation_mismatch_count"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/exact_comparison.py",
+      "symbol": "_semantic_result"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/exact_comparison.py",
+      "symbol": "compare_nx_corpora"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/exact_comparison.py",
+      "symbol": "compare_nx_corpora_v2"
+    }
+  ],
+  "events": [
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/scripts/__pycache__/compare_nx_paths.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/__init__.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/exact_comparison.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/native_nx_polynomials.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/core_projected_nx_polynomials.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "w",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/comparison.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "w",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/coverage.json"
+    }
+  ],
+  "module": "experiments.provenance_semiring_projection_v1.scripts.compare_nx_paths",
+  "return_code": 0,
+  "schema_version": "isolated-entrypoint-trace-v1"
+}

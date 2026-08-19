@@ -1,0 +1,23 @@
+{
+  "claim_id": "w3c-prov-generation-strict-projection-v1",
+  "strongest_allowed_claim": "Within the declared W3C PROV-DM generation profile, the PROV representation is an exact strict projection of complete generation facts.",
+  "supported_only_if": [
+    "candidate equals independent native reference",
+    "PROV-N equals qualified PROV-O after independent normalization",
+    "at least two valid distinct Snapshots have identical profile projections",
+    "all blocking criteria are satisfied"
+  ],
+  "prohibited_interpretations": [
+    "W3C PROV is incomplete, wrong, non-general, or non-extensible",
+    "Core replaces or dominates W3C PROV",
+    "all possible PROV extensions fail to represent complete generation facts",
+    "excluded PROV components were tested",
+    "a result for this fixture automatically generalizes to every domain"
+  ],
+  "not_evaluated": [
+    "PROV components and serializations excluded by the profile",
+    "arbitrary extensions and RDF entailment",
+    "the complete PROV ecosystem",
+    "domains outside the deterministic fixture family"
+  ]
+}

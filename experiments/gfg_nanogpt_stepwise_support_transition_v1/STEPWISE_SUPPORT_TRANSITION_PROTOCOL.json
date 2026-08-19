@@ -1,0 +1,58 @@
+{
+  "schema": "nanogpt-stepwise-support-transition-protocol-v1",
+  "protocol_id": "STEPWISE-SUPPORT-TRANSITION-v1",
+  "status": "FROZEN_BEFORE_STEPWISE_RESULT_GENERATION",
+  "direct_recipient": "external_controller_codex",
+  "persistent_ai_role": "READ_ONLY_DISCOVERY_AFTER_EXTERNAL_VALIDATION_ONLY",
+  "source_runs": 13,
+  "source_training_steps_per_run": 10000,
+  "scientific_question": "local transition identification X_(k+1)=F(X_k,U_k,O_k), followed by separately evaluated prospective transport without future realized U/O inputs",
+  "time_semantics": {
+    "local_transition_identification": "The realized update U_k and optimizer transition O_k may explain the already executed transition from X_k to X_(k+1).",
+    "prospective_prediction": "At a prediction cut r, no realized update, gradient, parameter, Adam state, capability result or label at r or later may be supplied. Multi-step prediction must recursively generate its state and use only a pre-frozen exogenous plan or a driver model trained without the held-out run.",
+    "earliest_divergence": "Retrospective development evidence only. Leave-one-run-out distances, thresholds and feature choices are fitted on the other twelve runs."
+  },
+  "window_policy": {
+    "decline": "Every legal complete post-formation decline interval contributes the 100-step window from the immediately previous native evaluation checkpoint through the first native evaluation confirming decline.",
+    "stable_match": "Every decline receives one stable next-interval control selected by a deterministic frozen standardized-distance rule without using future outcomes as model inputs.",
+    "recovery": "Exactly one complete recovery window per run is selected by minimum native validation accuracy, then earliest onset.",
+    "deduplication": "Identical entry/start/end execution windows are materialized once and may be referenced by multiple pairing records; duplicate references are not independent samples."
+  },
+  "runtime_boundary": {
+    "model_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+    "device": "cuda",
+    "dropout": 0.0,
+    "gradient_clip": 1.0,
+    "learning_rate": 0.003,
+    "adam_betas": [0.9, 0.98],
+    "weight_decay": 1.0,
+    "training_batch_policy": "Load the content-addressed training_batch_inputs, training_batch_targets and batch_selection_order for each exact optimizer opportunity from the source training GFG.",
+    "historical_rng_boundary": "Historical CPU/CUDA RNG payloads were not materialized. The admitted dropout-free path is reexecuted with a content-derived current-runtime RNG commitment and is never mislabeled as historical RNG restoration.",
+    "historical_exactness": "Historical endpoint identity is true only if every available parameter and Adam hash matches. Otherwise report the deterministic current-runtime replay and per-object drift without tolerance repair."
+  },
+  "probe_layer": {
+    "component_registry_file": "component_registry_csrg_4c_v1.json",
+    "probe_contract_file": "probe_contract_csrg_4c_v1.json",
+    "executor_hardcoded_component_count": false,
+    "gfg_builder_hardcoded_component_count": false,
+    "validator_hardcoded_component_count": false,
+    "restorable_state_required": true,
+    "append_only_probe_observations": true
+  },
+  "occurrence_semantics": {
+    "real_occurrences_only": true,
+    "forward_and_loss": "The native model forward is one occurrence whose outcomes include logits and loss; loss is not invented as a separate occurrence.",
+    "optimizer_update": "The native optimizer.step is one occurrence that changes Adam and parameter state; separate Adam and parameter occurrences are not invented when the implementation does not expose them.",
+    "skip": "A real forward/backward/clipping occurrence followed by ExplicitDisposition(OPTIMIZER_STEP_SKIPPED_BY_FROZEN_BRANCH).",
+    "hybrids": "parameter-only and optimizer-state-only are explicit state-composition analysis occurrences, not fictional native training occurrences."
+  },
+  "atomic_generation_fact": "f=(u,tau,omega_bar,z;rho)",
+  "new_core_coordinates": false,
+  "future_label_use": ["window_category", "final_adjudication", "counterexample_audit"],
+  "future_label_forbidden_use": ["X_k", "transition_model_input", "feature_selection", "training_threshold_tuning"],
+  "causal_branches": ["full_step", "skip_step", "parameter_only", "optimizer_state_only"],
+  "causal_horizons": [1, 2, 5, 10, 20, 50, 100],
+  "independent_replay": "Hash-rank and replay one pre-registered decline/control pair per run plus its key-step branches; selection is frozen before stepwise results.",
+  "candidate_sealing": "No candidate may be sealed unless it beats frozen Stability V1 prospectively under strict leave-one-run-out, recursively transports state, reduces inherited and new counterexamples, passes temporal causal tests and an independent checker.",
+  "vm_policy": "The persistent VM and original persistent AI session remain running and unchanged; the AI is not resumed before evidence validation."
+}

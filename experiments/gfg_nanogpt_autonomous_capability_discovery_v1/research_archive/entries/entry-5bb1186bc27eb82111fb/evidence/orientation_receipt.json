@@ -1,0 +1,17 @@
+{
+  "schema": "gfg-orientation-receipt-v1",
+  "read_complete": true,
+  "target_gfg_accessed": false,
+  "generation_fact": "One atomic relation established by an execution: its source information, realized transformation, concrete occurrence, formed outcome, and relation role.",
+  "generation_occurrence": "One concrete execution; it can establish several generation facts, but the occurrence is not interchangeable with any of those facts.",
+  "atomic_generation_fact": "Each fact preserves its exact source, transformation, occurrence, outcome, and role as one indivisible record, even when an occurrence establishes multiple facts.",
+  "realizes_fact": "Connects a concrete occurrence only to each distinct generation fact that the occurrence actually established.",
+  "reads_from": "Records an actual data dependency and must be followed when establishing how a later execution used an earlier result.",
+  "GeneratedOrigin": "Allows an outcome formed by an earlier fact to participate as the exact source of a later fact.",
+  "program_order": "Records declared execution order but does not, by itself, establish a data dependency or concurrency.",
+  "equal_values": "Equal numeric values or equal outputs do not identify the same fact, occurrence, result, or formation history.",
+  "cartesian_recombination": "Facts from an occurrence must not be split into source and result sets and recombined by Cartesian product; only the recorded atomic pairings are valid.",
+  "missing_relations": "A missing edge means that the relation was not established; it is not automatically proof that the relation is false, and absent concurrency edges do not prove concurrency.",
+  "forward_query": "Follow exact identities along training sample to batch occurrence to forward occurrence to loss to backward occurrence to gradient to optimizer occurrence to new parameter version.",
+  "reverse_query": "Start from the exact evaluation or parameter result and traverse actual reads_from, GeneratedOrigin, realizes_fact, and incidence relations in reverse; timestamp proximity and numeric similarity are not substitutes."
+}

@@ -1,0 +1,146 @@
+{
+  "actual_case_count": 13,
+  "automatic_repair_count": 0,
+  "canonical_polynomial_mismatch_count": 0,
+  "cases": [
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W1"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W10"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "plan_a",
+      "workload_id": "W11"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "plan_b",
+      "workload_id": "W11"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W12"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W2"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W3"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W4"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W5"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W6"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W7"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W8"
+    },
+    {
+      "canonical_polynomial_mismatch_count": 0,
+      "coefficient_mismatch_count": 0,
+      "exact": true,
+      "exponent_mismatch_count": 0,
+      "output_identity_mismatch_count": 0,
+      "variable_identity_mismatch_count": 0,
+      "variant": "default",
+      "workload_id": "W9"
+    }
+  ],
+  "claim": "The independent Native polynomial oracle and Core-only Candidate agree on final canonical documents",
+  "coefficient_mismatch_count": 0,
+  "comparison_authority": "pure structural parsing of isolated final JSON documents",
+  "expected_case_count": 13,
+  "exponent_mismatch_count": 0,
+  "output_identity_mismatch_count": 0,
+  "schema_version": "native-candidate-nx-exact-comparison-v2",
+  "status": "INDEPENDENT_NATIVE_NX_ORACLE_EXACT_SUPPORTED",
+  "variable_identity_mismatch_count": 0
+}

@@ -1,0 +1,13 @@
+{"arguments":{"max_step":null},"count":101,"operation":"evaluations"}
+{"arguments":{"materialized":true,"max_step":null,"min_step":null,"name_contains":"validation_targets","role":null},"count":102,"operation":"objects"}
+{"arguments":{"materialized":true,"max_step":null,"min_step":null,"name_contains":null,"role":"validation_logits"},"count":101,"operation":"objects"}
+{"arguments":{"materialized":true,"max_step":null,"min_step":null,"name_contains":null,"role":"parameter_version"},"count":1515,"operation":"objects"}
+{"arguments":{"materialized":true,"max_step":null,"min_step":null,"name_contains":null,"role":"optimizer_state"},"count":4500,"operation":"objects"}
+{"arguments":{"max_step":null,"min_step":null,"occurrence_type":"gradient_clip_application"},"count":10000,"operation":"occurrences"}
+{"arguments":{"max_step":1000,"min_step":300},"count":70937,"operation":"fact_blocks"}
+{"arguments":{"max_step":800,"min_step":500,"relation_type":"GeneratedOrigin"},"count":18060,"operation":"edges"}
+{"arguments":{"optimizer_steps":[500,800],"stages":["after_optimizer_step","evaluation_validation:final_layer_norm","evaluation_validation:language_model_head","evaluation"]},"count":8,"operation":"direct_block_identity_query"}
+{"arguments":{"optimizer_steps":[4000,4100,4200,4300,4400,4500,5100,5200,6500,6600],"stage":"evaluation"},"count":10,"operation":"direct_block_identity_query"}
+{"arguments":{"max_step":10000,"min_step":0,"stage":"after_gradient_clip","threshold":6.0},"count":10000,"operation":"gradient_norm_prefix_scan"}
+{"arguments":{"cuts":[300,400,500,600,700],"future_reads_per_replay":0,"mechanism":"gain_coupled_rule_margins"},"count":5,"operation":"prefix_only_replay"}
+{"arguments":{"cuts":[500,1000,1300,1700,2100,3900,4300],"future_reads_per_replay":0,"mechanism":"adaptive_relaxation_phase"},"count":7,"operation":"prefix_only_replay"}

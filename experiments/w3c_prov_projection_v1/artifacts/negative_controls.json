@@ -1,0 +1,238 @@
+{
+  "classification_counts": {
+    "END_TO_END": 2,
+    "ISOLATION": 4,
+    "OFFICIAL_CONSTRAINT": 5,
+    "VALIDATOR_UNIT": 21
+  },
+  "controls": [
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "reference closure validator",
+      "name": "missing Entity",
+      "number": 1
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "reference closure validator",
+      "name": "missing Activity",
+      "number": 2
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "expanded derivation closure validator",
+      "name": "missing Usage",
+      "number": 3
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "expanded derivation closure validator",
+      "name": "missing Generation",
+      "number": 4
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "P1 exact comparator",
+      "name": "missing Derivation",
+      "number": 5
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "reference closure validator",
+      "name": "dangling Usage reference",
+      "number": 6
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "reference closure validator",
+      "name": "dangling Generation reference",
+      "number": 7
+    },
+    {
+      "classification": "OFFICIAL_CONSTRAINT",
+      "detected": true,
+      "detector": "Inference 11 consistency",
+      "name": "Derivation references wrong Usage",
+      "number": 8
+    },
+    {
+      "classification": "OFFICIAL_CONSTRAINT",
+      "detected": true,
+      "detector": "Inference 11 consistency",
+      "name": "Derivation references wrong Generation",
+      "number": 9
+    },
+    {
+      "classification": "OFFICIAL_CONSTRAINT",
+      "detected": true,
+      "detector": "Inference 11 consistency",
+      "name": "Derivation references wrong Activity",
+      "number": 10
+    },
+    {
+      "classification": "OFFICIAL_CONSTRAINT",
+      "detected": true,
+      "detector": "Constraint 24 unique-generation",
+      "name": "duplicate Generation for one Entity",
+      "number": 11
+    },
+    {
+      "classification": "OFFICIAL_CONSTRAINT",
+      "detected": true,
+      "detector": "Constraint 23 and identifier uniqueness",
+      "name": "duplicate relation identifier",
+      "number": 12
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "semantic-key collision guard",
+      "name": "duplicate semantic key with different payload",
+      "number": 13
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "P1 pairing comparator",
+      "name": "fabricated source-outcome pairing",
+      "number": 14
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "P1 pairing comparator",
+      "name": "Cartesian product fabrication",
+      "number": 15
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "field-exact comparator",
+      "name": "relation-role loss",
+      "number": 16
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "multiplicity comparator",
+      "name": "legal multiplicity collapse",
+      "number": 17
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "multiplicity comparator",
+      "name": "illegal multiplicity duplication",
+      "number": 18
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "GeneratedOrigin prior-support resolver",
+      "name": "GeneratedOrigin broken bridge",
+      "number": 19
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "explicit-binding comparator",
+      "name": "invented direct original-final shortcut",
+      "number": 20
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "QName lexical validator",
+      "name": "invalid QName",
+      "number": 21
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "frozen PROV-N wrapper validator",
+      "name": "invalid namespace",
+      "number": 22
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "independent PROV-N parser",
+      "name": "malformed PROV-N",
+      "number": 23
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "RDFLib plus qualified-structure normalizer",
+      "name": "invalid PROV-O qualified relation",
+      "number": 24
+    },
+    {
+      "classification": "ISOLATION",
+      "detected": true,
+      "detector": "static candidate import graph",
+      "name": "candidate reads native reference",
+      "number": 25
+    },
+    {
+      "classification": "ISOLATION",
+      "detected": true,
+      "detector": "static native import graph",
+      "name": "native reference reads Core",
+      "number": 26
+    },
+    {
+      "classification": "ISOLATION",
+      "detected": true,
+      "detector": "candidate source/storage audit",
+      "name": "second authority store",
+      "number": 27
+    },
+    {
+      "classification": "ISOLATION",
+      "detected": true,
+      "detector": "candidate file-read audit",
+      "name": "hidden lookup table",
+      "number": 28
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "closed attribute allowlist",
+      "name": "complete Snapshot embedded as PROV attribute",
+      "number": 29
+    },
+    {
+      "classification": "VALIDATOR_UNIT",
+      "detected": true,
+      "detector": "closed attribute allowlist",
+      "name": "Evidence embedded as opaque PROV blob",
+      "number": 30
+    },
+    {
+      "classification": "END_TO_END",
+      "detected": true,
+      "detector": "five-mode output byte guard",
+      "name": "output contamination",
+      "number": 31
+    },
+    {
+      "classification": "END_TO_END",
+      "detected": true,
+      "detector": "blocking-reason status gate",
+      "name": "unsupported status escalation",
+      "number": 32
+    }
+  ],
+  "detected_count": 32,
+  "negative_control_count": 32,
+  "status": "SUPPORTED",
+  "undetected_count": 0
+}

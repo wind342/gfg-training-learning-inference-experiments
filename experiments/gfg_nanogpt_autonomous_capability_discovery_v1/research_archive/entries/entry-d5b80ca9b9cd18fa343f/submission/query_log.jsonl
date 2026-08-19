@@ -1,0 +1,10 @@
+{"operation":"sqlite_schema_and_metadata","arguments":{"database":"participant-safe GFG","mode":"read-only immutable"},"count":5}
+{"operation":"evaluations","arguments":{"min_step":1,"max_step":10000},"count":101}
+{"operation":"graph_blocks","arguments":{"stage":"before_batch","optimizer_step":0},"count":1}
+{"operation":"materialized_tensors","arguments":{"roles":["training_batch_inputs","training_batch_targets"],"optimizer_step":0},"count":2}
+{"operation":"graph_blocks","arguments":{"stages":["evaluation","evaluation_validation:token_embedding","evaluation_validation:language_model_head"],"optimizer_steps":[100,1100,1300,1500,1800,1900,2000,2100,2200,2300,3400,3500,4100,4200,6900,7000,8200,8300,8600,8700,9100,9200,9900,10000]},"count":72}
+{"operation":"materialized_tensors","arguments":{"role":"parameter_version","stage":"after_optimizer_step","evaluation_grid":true},"count":1500}
+{"operation":"materialized_tensors","arguments":{"roles":["parameter_gradient","clipped_parameter_gradient","optimizer_state"],"evaluation_grid":true},"count":4500}
+{"operation":"fact_and_edge_audit","arguments":{"relations":["realizes_fact","reads_from","GeneratedOrigin","program_order"],"selected_steps":[0,100,1900,2200,2300,4100,4200,6900,7000,8600,8700,9900,10000]},"count":13}
+{"operation":"prefix_only_replay","arguments":{"cuts":[1100,1200,1300,1400,1500,1600,1700,1800,1900,2100,2300],"future_reads_per_replay":0},"count":11}
+{"operation":"state_closure_counterexample_search","arguments":{"candidate_states":["optimizer_step_only","training_memorization_only","rule_state_without_stress","selected_rule_plus_stress_state"]},"count":4}

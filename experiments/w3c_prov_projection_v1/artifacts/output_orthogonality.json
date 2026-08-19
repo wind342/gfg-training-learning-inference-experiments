@@ -1,0 +1,34 @@
+{
+  "all_bytes_equal": true,
+  "all_metadata_equal": true,
+  "forbidden_output_token_count": 0,
+  "mode_count": 5,
+  "modes": {
+    "Core + candidate PROV": {
+      "files_equal": true,
+      "metadata_equal": true,
+      "output_sha256": "afdaa5db999968e223d4a9e8c6e88e8f8086791e0bea9a94792eb3ee11328b1d"
+    },
+    "Core-only": {
+      "files_equal": true,
+      "metadata_equal": true,
+      "output_sha256": "afdaa5db999968e223d4a9e8c6e88e8f8086791e0bea9a94792eb3ee11328b1d"
+    },
+    "native + Core + dual comparison": {
+      "files_equal": true,
+      "metadata_equal": true,
+      "output_sha256": "afdaa5db999968e223d4a9e8c6e88e8f8086791e0bea9a94792eb3ee11328b1d"
+    },
+    "native-PROV-only": {
+      "files_equal": true,
+      "metadata_equal": true,
+      "output_sha256": "afdaa5db999968e223d4a9e8c6e88e8f8086791e0bea9a94792eb3ee11328b1d"
+    },
+    "output-only": {
+      "files_equal": true,
+      "metadata_equal": true,
+      "output_sha256": "afdaa5db999968e223d4a9e8c6e88e8f8086791e0bea9a94792eb3ee11328b1d"
+    }
+  },
+  "status": "SUPPORTED"
+}

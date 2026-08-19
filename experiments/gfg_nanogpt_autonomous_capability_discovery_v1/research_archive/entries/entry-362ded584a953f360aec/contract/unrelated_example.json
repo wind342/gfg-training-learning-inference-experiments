@@ -1,0 +1,30 @@
+{
+  "edges": [
+    {"source": "source-A", "target": "fact-1", "type": "origin_incidence"},
+    {"source": "occurrence-1", "target": "fact-1", "type": "realizes_fact"},
+    {"source": "fact-1", "target": "result-X", "type": "outcome_incidence"},
+    {"source": "result-X", "target": "fact-2", "type": "GeneratedOrigin"},
+    {"source": "occurrence-2", "target": "fact-2", "type": "realizes_fact"},
+    {"source": "fact-2", "target": "result-Y", "type": "outcome_incidence"},
+    {"source": "occurrence-1", "target": "occurrence-2", "type": "program_order"}
+  ],
+  "facts": [
+    {
+      "id": "fact-1",
+      "occurrence": "occurrence-1",
+      "outcome": "result-X",
+      "role": "input",
+      "source": "source-A",
+      "transformation": "toy-transform-1"
+    },
+    {
+      "id": "fact-2",
+      "occurrence": "occurrence-2",
+      "outcome": "result-Y",
+      "role": "prior-result",
+      "source": "result-X",
+      "transformation": "toy-transform-2"
+    }
+  ],
+  "schema": "unrelated-gfg-orientation-example-v1"
+}

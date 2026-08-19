@@ -1,0 +1,38 @@
+{
+  "schema": "gfg-training-intervention-spec-v1",
+  "version": "1.0.0",
+  "module": "intervention.py",
+  "class": "TrainingIntervention",
+  "name": "audited_zero-gradient_zero-lr_optimizer_pause",
+  "direction": "DELAY",
+  "transition_step_shift_interval": {
+    "step_low": 800,
+    "step_high": 1200
+  },
+  "transition_step_shift_low": 800,
+  "transition_step_shift_high": 1200,
+  "minimum_effective_shift_optimizer_steps": 800,
+  "hooks": [
+    "after_backward",
+    "before_optimizer_step"
+  ],
+  "mutations": [
+    "zero current training gradients during the pause",
+    "set every current optimizer parameter-group learning rate to zero during the pause",
+    "restore the captured native learning rates after 800 optimizer occurrences"
+  ],
+  "mechanism_state_change": {
+    "cycles_remaining": "held fixed for 800 parameter-update opportunities",
+    "rule_margin_reserve": "held at its prefix value because parameter motion is suppressed",
+    "burst_phase": "forced into a no-parameter-motion pause",
+    "optimizer_first_moment": "continues to decay by 0.9 per zero-gradient optimizer occurrence",
+    "optimizer_second_moment": "continues to decay by 0.98 per zero-gradient optimizer occurrence",
+    "restart_phase": "returns to native learning rate with reduced moment buffers"
+  },
+  "predicted_stability_effect": "WORSEN",
+  "stability_effect_rationale": "The pause delays formation, but it does not freeze AdamW step or moment state. Decayed moment buffers increase restart sensitivity, widening the clipped-burst hazard and making transient post-formation margin erosion more likely.",
+  "forbidden_inputs_used": [],
+  "validation_data_used_by_intervention": false,
+  "future_state_used": false,
+  "predicted_shift_basis": "800 exactly suppressed parameter updates plus 0 to 400 optimizer steps of restart re-equilibration; the mechanism predicts delay rather than treating the pause as a pure clock translation."
+}

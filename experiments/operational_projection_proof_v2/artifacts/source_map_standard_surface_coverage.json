@@ -1,0 +1,107 @@
+{
+  "additional_declared_exclusions": [
+    "indexed maps and sections",
+    "WebAssembly-specific behavior",
+    "CSS-specific behavior",
+    "stack-trace deobfuscation",
+    "browser DevTools UI",
+    "remote HTTP source retrieval",
+    "sourceMappingURL comment parsing",
+    "proposal and future extension fields",
+    "arbitrary compilers, optimizers, and languages"
+  ],
+  "excluded": [
+    {
+      "name": "indexMapWrongTypeSections",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapWrongTypeOffset",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapWrongTypeMap",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapInvalidBaseMappings",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapInvalidOverlap",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapInvalidOrder",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapMissingMap",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapInvalidSubMap",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapMissingOffset",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapMissingOffsetLine",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapMissingOffsetColumn",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapOffsetLineWrongType",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapOffsetColumnWrongType",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapEmptySections",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapFileWrongType1",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapFileWrongType2",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "basicMappingWithIndexMap",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapWithMissingFile",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    },
+    {
+      "name": "indexMapWithTwoConcatenatedSources",
+      "reason": "indexed maps/sections are explicitly out of profile"
+    }
+  ],
+  "indexed_exclusion_count": 19,
+  "official_applicable_passed": 80,
+  "official_applicable_total": 80,
+  "ordinary_non_indexed_profile_status": "SUPPORTED",
+  "profile_id": "ecma426-ordinary-source-map-v1",
+  "standard_surface_status": "PARTIAL",
+  "status": "PARTIAL",
+  "unavailable_evidence": [
+    {
+      "evidence": "published ECMA-426 1.0 HTML bytes",
+      "reason": "TLS handshake/HTTP 502 through the configured proxy after repeated curl and Python retrieval attempts",
+      "status": "UNAVAILABLE",
+      "substituted": false,
+      "url": "https://426.ecma-international.org/1.0/index.html"
+    }
+  ]
+}

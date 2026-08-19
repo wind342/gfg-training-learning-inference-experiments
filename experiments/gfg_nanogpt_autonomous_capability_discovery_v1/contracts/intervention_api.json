@@ -1,0 +1,50 @@
+{
+  "allowed_hooks": [
+    "before_batch",
+    "after_forward",
+    "after_backward",
+    "before_gradient_clip",
+    "after_gradient_clip",
+    "before_optimizer_step",
+    "after_optimizer_step"
+  ],
+  "allowed_mutations": [
+    "current training sample weights",
+    "current gradients",
+    "gradient clipping control",
+    "optimizer group hyperparameters",
+    "parameter trainable mask",
+    "other explicitly declared current training state"
+  ],
+  "forbidden": [
+    "validation samples injected into training",
+    "future validation labels",
+    "future parameters",
+    "hidden validation answers",
+    "precomputed final model weights",
+    "complete task answer table",
+    "task definition changes",
+    "evaluator changes",
+    "GFG capture changes",
+    "validation contract changes"
+  ],
+  "required_direction": [
+    "ADVANCE",
+    "DELAY"
+  ],
+  "required_stability_effect": [
+    "IMPROVE",
+    "WORSEN",
+    "NO_CHANGE"
+  ],
+  "required_stability_fields": [
+    "predicted_stability_effect",
+    "stability_effect_rationale"
+  ],
+  "runtime_interface": {
+    "apply": "TrainingIntervention.apply(stage, context, state)",
+    "context": "current native training objects at the declared hook only",
+    "initialize": "TrainingIntervention.initialize(mechanism_state, forecast)"
+  },
+  "version": "2.0.0"
+}

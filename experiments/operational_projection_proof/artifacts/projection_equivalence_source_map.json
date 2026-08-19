@@ -1,0 +1,16 @@
+{
+  "candidate_record_count": 0,
+  "claim_scope": "Generated position, original source and position, optional name, mapped/unmapped state, both query directions, and standard multi-stage composition.",
+  "exact_equal": null,
+  "false_negative": null,
+  "false_positive": null,
+  "field_mismatch": null,
+  "multiplicity_mismatch": null,
+  "native_domain_result_read_count": null,
+  "oracle_leakage_count": null,
+  "profile_id": "ecma426-source-map-v1",
+  "reason": "The Source Map experiment branch contains no domain implementation, frozen workload, official implementation result, tests, or machine artifacts on the selected base commit.",
+  "reference_record_count": 0,
+  "second_authority_store_count": null,
+  "status": "NOT_EVALUATED"
+}

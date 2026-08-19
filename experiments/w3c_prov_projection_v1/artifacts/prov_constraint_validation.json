@@ -1,0 +1,12 @@
+{
+  "attribute_allowlist_valid": true,
+  "constraint_violation_count": 0,
+  "generation_uniqueness": true,
+  "identified_relation_uniqueness": true,
+  "provn_syntax_valid": true,
+  "qname_and_namespace_valid": true,
+  "qualified_provo_valid": true,
+  "reference_closure": true,
+  "status": "SUPPORTED",
+  "violations": []
+}

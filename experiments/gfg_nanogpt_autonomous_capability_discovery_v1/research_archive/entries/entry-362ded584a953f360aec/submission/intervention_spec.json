@@ -1,0 +1,29 @@
+{
+  "schema": "gfg-training-intervention-spec-v1",
+  "version": "1.0.0",
+  "class": "TrainingIntervention",
+  "hook": "before_gradient_clip",
+  "allowed_mutation": "gradient clipping control",
+  "mutation": {
+    "field": "max_norm",
+    "baseline": 1.0,
+    "intervened": 0.25
+  },
+  "direction": "DELAY",
+  "predicted_direction": "DELAY",
+  "transition_step_shift_low": 600,
+  "transition_step_shift_high": 4000,
+  "predicted_transition_step_shift_interval": {
+    "step_low": 600,
+    "step_high": 4000
+  },
+  "predicted_stability_effect": "IMPROVE",
+  "stability_effect_rationale": "The hook scales only high-norm slingshot episodes. In the executable state law impulse_scale falls from 1.0 to 0.25, so formation receives smaller rule-reorganizing impulses while stability burden accumulates four times more slowly and its thresholded transient degradations become less likely.",
+  "mechanism_state_change": {
+    "formation_state.impulse_scale": {"from": 1.0, "to": 0.25},
+    "stability_state.impulse_scale": {"from": 1.0, "to": 0.25},
+    "expected_formation_effect": "smaller episode gain and later sustained crossing",
+    "expected_stability_effect": "smaller burden increments and fewer threshold discharges"
+  },
+  "forbidden_information_used": false
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "capability-forecast-spec-v1",
+  "version": "1.0.0",
+  "entrypoint": "CapabilityFormationMechanism.forecast",
+  "forecast_horizon_optimizer_step": 10000,
+  "evaluation_grid_optimizer_steps": 100,
+  "curve_scope": "strictly future grid points after the supplied prefix cut",
+  "curve_item_schema": {
+    "optimizer_step": "integer",
+    "validation_accuracy": "number in [0,1]"
+  },
+  "required_fields": [
+    "will_transition",
+    "transition_step_low_200",
+    "transition_step_high_200",
+    "transition_step_low_500",
+    "transition_step_high_500",
+    "predicted_validation_curve",
+    "mechanism_state"
+  ],
+  "transition_definition": {
+    "train_accuracy_min": 0.99,
+    "validation_accuracy_min": 0.9,
+    "sustained_evaluation_points": 3,
+    "earlier_validation_accuracy_max": 0.3
+  },
+  "curve_model": {
+    "pre_transition": "burst-indexed finite-state plateaus",
+    "rule_level_accuracy": 0.97,
+    "late_instability_offset_from_transition_optimizer_steps": 6100,
+    "late_instability_mean_accuracy": 0.6
+  },
+  "future_gfg_reads": 0,
+  "additional_ai_calls": 0
+}

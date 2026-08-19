@@ -1,0 +1,19 @@
+{
+  "base_commit": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+  "branch": "theory/operational-projection-proof-v1",
+  "dependencies": {
+    "jsonschema": "4.25.1",
+    "pytest": "9.1.1"
+  },
+  "dependency_file_sha256": {
+    "pyproject.toml": "b8b45f769a6948c2dec5b562fd8b0e34b2dfe40fe1cdbf394b8adcee4d3aa6f3",
+    "requirements.lock": "4519c994feb0662a39eb22c3dafdbc745533dda2e13961404e1f33cc923e16c2"
+  },
+  "machine": "AMD64",
+  "native_domain_runtimes_used": [],
+  "network_required": false,
+  "operating_system": "Windows-11-10.0.26200-SP0",
+  "python_executable_name": "python.exe",
+  "python_implementation": "CPython",
+  "python_version": "3.12.10"
+}

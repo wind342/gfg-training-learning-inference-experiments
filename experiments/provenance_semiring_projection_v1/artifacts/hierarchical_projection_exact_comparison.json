@@ -1,0 +1,343 @@
+{
+  "cases": [
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W1"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W1"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W1"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W1"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W10"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W10"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W10"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W10"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "plan_a",
+      "workload_id": "W11"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "plan_a",
+      "workload_id": "W11"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "plan_a",
+      "workload_id": "W11"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "plan_a",
+      "workload_id": "W11"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "plan_b",
+      "workload_id": "W11"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "plan_b",
+      "workload_id": "W11"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "plan_b",
+      "workload_id": "W11"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "plan_b",
+      "workload_id": "W11"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W12"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W12"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W12"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W12"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W2"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W2"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W2"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W2"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W3"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W3"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W3"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W3"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W4"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W4"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W4"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W4"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W5"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W5"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W5"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W5"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W6"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W6"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W6"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W6"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W7"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W7"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W7"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W7"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W8"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W8"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W8"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W8"
+    },
+    {
+      "domain_id": "bag_naturals",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W9"
+    },
+    {
+      "domain_id": "boolean",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W9"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W9"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W9"
+    }
+  ],
+  "claim": "Direct target execution equals the N[X]-derived result, with algebraic targets and task projections classified separately",
+  "coverage_complete": true,
+  "direct_path_computes_nx_first": false,
+  "domain_case_counts": {
+    "bag_naturals": 13,
+    "boolean": 13,
+    "flat_source_support_view": 13,
+    "positive_boolean_lineage": 13
+  },
+  "domain_classifications": {
+    "bag_naturals": "COMMUTATIVE_SEMIRING_TARGET",
+    "boolean": "COMMUTATIVE_SEMIRING_TARGET",
+    "flat_source_support_view": "PARTIAL_NONZERO_SUPPORT_VIEW",
+    "positive_boolean_lineage": "SEMIRING_QUOTIENT_OR_HOMOMORPHIC_IMAGE"
+  },
+  "mismatch_count": 0,
+  "repair_count": 0,
+  "required_algebraic_domains": [
+    "bag_naturals",
+    "boolean",
+    "positive_boolean_lineage"
+  ],
+  "required_task_projections": [
+    "flat_source_support_view"
+  ],
+  "schema_version": "hierarchical-projection-exact-comparison-v2",
+  "status": "FORMAL_PROJECTION_HIERARCHY_EXACT_SUPPORTED"
+}

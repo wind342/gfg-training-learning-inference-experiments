@@ -1,0 +1,42 @@
+{
+  "schema": "nanogpt-local-response-jk-protocol-v1",
+  "protocol_id": "LOCAL-RESPONSE-JK-v1",
+  "purpose": "Distinguish missing receiver-local sensitivity from higher-order curvature and CSRG-4C observation omission for one causally adjudicated matched-prestate witness.",
+  "inherited_reciprocal_protocol_id": "RECIPROCAL-MATCHED-PAIR-v2",
+  "receivers": [
+    {
+      "label": "A",
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "source_bundle_id": "711f5480406e989c824ff75ca11cfce27bbcdedf140297d1ffe60980c72da238",
+      "window_id": "phase-v3-window-0f390d3aecbe05321e0c91a1",
+      "optimizer_step": 2900
+    },
+    {
+      "label": "B",
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "source_bundle_id": "44021089c1e143060cc7da31a0df03cb4e83725755c268b7f604f80903980874",
+      "window_id": "phase-v3-window-c3a3331404540eda5b23b93e",
+      "optimizer_step": 2600
+    }
+  ],
+  "donor_update": {
+    "label": "B",
+    "source_object_id": "obj_9a009c78cfab23e4fb04119345f39b05f5bc01669aeb28d920d33a064c939fd4",
+    "semantics": "The exact named parameter delta from B's actual native training step; Adam state is not transplanted."
+  },
+  "epsilon": 0.125,
+  "branches": ["baseline", "plus_epsilon", "minus_epsilon"],
+  "horizon": 1,
+  "response_contract": {
+    "numeric": "For every floating CSRG-4C response object, compute J=(S_plus-S_minus)/(2*epsilon) and K=(S_plus+S_minus-2*S_baseline)/(epsilon^2).",
+    "categorical": "Preserve raw categorical outcomes and exact transition masks; never subtract or average labels.",
+    "probe": "CSRG-4C-v1: two baselines, four single-component gates and six pair-component gates for every branch state."
+  },
+  "adjudication": {
+    "first_order": "If receiver A and B have different J responses and those responses account for the previously observed finite donor-update effects, the missing object is receiver-local first-order sensitivity or registration.",
+    "curvature": "If J is materially aligned while K differs and accounts for the finite responses, higher-order local curvature is decisive for this witness.",
+    "observation_omission": "If the complete CSRG-4C response objects remain indistinguishable while logits, margins or later capability differ, CSRG-4C omits a relevant observation.",
+    "scope": "This experiment adjudicates one matched-prestate witness and the parameter channel only; it does not close the delayed Adam channel or all 405 surviving counterexamples."
+  },
+  "future_information_used": false
+}

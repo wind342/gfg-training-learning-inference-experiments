@@ -1,0 +1,17 @@
+{
+  "profile_id": "core-database-to-opentelemetry-v1",
+  "source_branch": "experiment/opentelemetry-projection-v1",
+  "source_commit": "25a9d2a614d2d34d36c38f7c560b818cdbc4b179",
+  "declared_input_scope": "Cross-domain hierarchical projection for the declared deterministic small workload and TPC-H-derived SF0.01 Q6.",
+  "selected_facts": ["spans", "parents", "links", "attributes", "statuses", "events", "multiplicity", "canonical bytes", "canonical SHA"],
+  "excluded_facts": ["database values not selected by the OTel profile", "distributed tracing", "sampling", "non-relational generators"],
+  "candidate_path": "ValidatedSnapshot -> core_to_otel_projection -> canonical trace A",
+  "reference_path": "ValidatedSnapshot -> core_to_database_projection -> immutable DatabaseDomainProjection -> database_to_otel_projection -> canonical trace B",
+  "exact_comparison_fields": ["complete canonical trace document and bytes"],
+  "multiplicity_semantics": "Occurrence and causal-link multiplicities are preserved independently on both traversal paths.",
+  "canonicalization_rules": "Both paths may share only the frozen trace canonicalizer and semantic-key formatting utilities.",
+  "output_orthogonality_rules": "The intermediary and both projections are read-only and cannot alter ordinary workload output.",
+  "authority_rules": "Path B reads only immutable DatabaseDomainProjection; the two paths share no occurrence, binding, producer-link, or GeneratedOrigin traversal helper.",
+  "accepted_limitations": ["declared OTel trace-shadow profile", "declared database projection", "deterministic in-process workloads"],
+  "mandatory_status_conditions": ["small canonical bytes exact", "small canonical SHA exact", "Q6 canonical bytes exact", "Q6 canonical SHA exact", "static import audit", "runtime access trap"]
+}

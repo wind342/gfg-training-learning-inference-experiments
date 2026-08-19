@@ -1,0 +1,20 @@
+{
+  "reason_code_contract": "stable fail-closed CoreV3Error.reason_code",
+  "schema_version": "3.0.0",
+  "vectors": [
+    {"expected_failure": "HASH_SELF_REFERENCE", "name": "GenerationBinding hash self-reference"},
+    {"expected_failure": "HASH_OR_ID_MISMATCH", "name": "SourceInformationRecord ID mismatch"},
+    {"expected_failure": "NON_FINITE_NUMBER", "name": "GenerationOccurrence non-finite transform"},
+    {"expected_failure": "DUPLICATE_SET_ELEMENT", "name": "PerceptualSupportRecord duplicate registered set member"},
+    {"expected_failure": "UNSUPPORTED_RUNTIME_TYPE", "name": "PredicateProfile unsupported runtime value"},
+    {"expected_failure": "LONE_SURROGATE", "name": "ExplicitDisposition lone surrogate"},
+    {"expected_failure": "HASH_OR_ID_MISMATCH", "name": "GeneratedOrigin invalid tagged union"},
+    {"expected_failure": "BINDING_OUTCOME_CARDINALITY_INVALID", "name": "support and disposition both present"},
+    {"expected_failure": "BINDING_OUTCOME_CARDINALITY_INVALID", "name": "support and disposition both absent"},
+    {"expected_failure": "NON_CANONICAL_SET_ORDER", "name": "declared set order is noncanonical"},
+    {"expected_result": "same identity as positive zero", "name": "negative zero normalization"},
+    {"expected_failure": "DUPLICATE_ENTITY_ID", "name": "duplicate table entity ID"},
+    {"expected_failure": "BINDING_ID_OR_HASH_MISMATCH", "name": "GenerationBinding payload mutation"},
+    {"expected_failure": "EVIDENCE_ENTITY_MISMATCH", "name": "GenerationBinding evidence reference mutation"}
+  ]
+}

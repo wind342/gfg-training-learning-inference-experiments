@@ -1,0 +1,69 @@
+{
+  "all_required_fields_observed": true,
+  "repair_count": 0,
+  "required_fields": [
+    {
+      "candidate_compared": true,
+      "field": "workload_id",
+      "mismatch_count": 0,
+      "native_observation_count": 13
+    },
+    {
+      "candidate_compared": true,
+      "field": "variant",
+      "mismatch_count": 0,
+      "native_observation_count": 13
+    },
+    {
+      "candidate_compared": true,
+      "field": "source_variables[].variable",
+      "mismatch_count": 0,
+      "native_observation_count": 135
+    },
+    {
+      "candidate_compared": true,
+      "field": "source_variables[].source_identity",
+      "mismatch_count": 0,
+      "native_observation_count": 135
+    },
+    {
+      "candidate_compared": true,
+      "field": "outputs[].logical_output_key",
+      "mismatch_count": 0,
+      "native_observation_count": 42
+    },
+    {
+      "candidate_compared": true,
+      "field": "outputs[].values",
+      "mismatch_count": 0,
+      "native_observation_count": 42
+    },
+    {
+      "candidate_compared": true,
+      "field": "outputs[].polynomial.schema_version",
+      "mismatch_count": 0,
+      "native_observation_count": 42
+    },
+    {
+      "candidate_compared": true,
+      "field": "outputs[].polynomial.terms[].coefficient",
+      "mismatch_count": 0,
+      "native_observation_count": 197
+    },
+    {
+      "candidate_compared": true,
+      "field": "outputs[].polynomial.terms[].monomial[].variable",
+      "mismatch_count": 0,
+      "native_observation_count": 332
+    },
+    {
+      "candidate_compared": true,
+      "field": "outputs[].polynomial.terms[].monomial[].exponent",
+      "mismatch_count": 0,
+      "native_observation_count": 332
+    }
+  ],
+  "schema_version": "nx-field-coverage-v1",
+  "status": "EXACT_SUPPORTED",
+  "uncompared_required_field_count": 0
+}

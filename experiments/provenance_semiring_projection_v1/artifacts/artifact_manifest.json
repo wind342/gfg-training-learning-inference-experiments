@@ -1,0 +1,846 @@
+{
+  "artifact_file_count": 63,
+  "file_count": 139,
+  "files": [
+    {
+      "path": "__init__.py",
+      "role": "package_metadata",
+      "sha256": "50a0e4d3ba7c7919b135b3185ce91d0cbb75ebb4c3e8c7de8d33463e4df2d473",
+      "size": 62
+    },
+    {
+      "path": "artifacts/authority_isolation.json",
+      "role": "machine_evidence",
+      "sha256": "232aef341d819e8fb71c9007111a10a1629671a1ab8fb4099007bf7256143db4",
+      "size": 52103
+    },
+    {
+      "path": "artifacts/core_projected_nx_polynomials.json",
+      "role": "machine_evidence",
+      "sha256": "41855e4dca24a849b1ccd010e40d05535679482d5e1a209e8594388487e5d5f0",
+      "size": 118751
+    },
+    {
+      "path": "artifacts/database_lineage_hierarchy.json",
+      "role": "machine_evidence",
+      "sha256": "e20ffff3feb796016312f8ce54a78c6fc9e138d40cfc834e6a6cd56617f06508",
+      "size": 929
+    },
+    {
+      "path": "artifacts/determinism.json",
+      "role": "machine_evidence",
+      "sha256": "484f0f57a27ddb9012275075491cb85b0c37c9e7e1eaed982584fc3cc75b7ff8",
+      "size": 876
+    },
+    {
+      "path": "artifacts/direct_lower_k_independence_v2.json",
+      "role": "machine_evidence",
+      "sha256": "5ae3a25136118261490f7e877993c4fdf7a2e7106ab610e03496c8ce7569e381",
+      "size": 3927
+    },
+    {
+      "path": "artifacts/evidence/core_validated_snapshot_corpus.json",
+      "role": "machine_evidence",
+      "sha256": "ec18bc88fcadb3ea5fbe9c0e29b6fec26bd7b35798397d37ac7aca1217f80306",
+      "size": 10801927
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/candidate.json",
+      "role": "machine_evidence",
+      "sha256": "77661b7b0bb9ff09066b376b0da90bca3088c192cc774da7d753e84f80cbdb3d",
+      "size": 1143
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/comparison.json",
+      "role": "machine_evidence",
+      "sha256": "e82354f4f385ec7677b13deabff410ca32f5899a0459e50579e3c1f994f5cbe5",
+      "size": 2691
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/core.json",
+      "role": "machine_evidence",
+      "sha256": "2a01089c974c56b4abb1c03121bc0c0dd53e04948b148348b3b6c900666d7af8",
+      "size": 25971
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/coverage.json",
+      "role": "machine_evidence",
+      "sha256": "02f73faa32d53204de736eea9a614062160340ae46ac4bf4e902db62de18442a",
+      "size": 1805
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/derived_lower.json",
+      "role": "machine_evidence",
+      "sha256": "3e1daeac75da5a36d2115e10dbd1ef2ad190944d41d4171984578cf87f48b379",
+      "size": 76992
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/direct_lower.json",
+      "role": "machine_evidence",
+      "sha256": "934e593da03513c3d31890ffdd32a4bba1e5e37772ea634f13932b9bd62ace90",
+      "size": 77021
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/generated_report.md",
+      "role": "machine_evidence",
+      "sha256": "67906c72f0b8090a0340bafb69217b4567fe6155849ef45b786945636bbcc4ee",
+      "size": 10068
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/native.json",
+      "role": "machine_evidence",
+      "sha256": "5dcbc3aaa6db7721beb417a0b77bac5491d63f8941dfa6440815b23e1ed82f9d",
+      "size": 1087
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/report_artifact_consistency.json",
+      "role": "machine_evidence",
+      "sha256": "a3fbd42b10d323de96a3207c57eec035069ab3911def8f44beb62dbfb02fe9c8",
+      "size": 694
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/report_statistics.json",
+      "role": "machine_evidence",
+      "sha256": "f7330e2c00bc2a2ff079293273ed765cf5dec4acdd453f06adafad762cfabc57",
+      "size": 2492
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/traces/candidate.json",
+      "role": "machine_evidence",
+      "sha256": "e6bd1dca280b97bdc03390d710ce0f2991f74f71a7295b4df68d4c627e4e6539",
+      "size": 11077
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/traces/comparison.json",
+      "role": "machine_evidence",
+      "sha256": "b263f2f9656322115995795eef4eecb02509b9d8fee2caadb75a7f3a2c807ef4",
+      "size": 2968
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/traces/derived_lower.json",
+      "role": "machine_evidence",
+      "sha256": "acb0f48b4346ddbce5faaa9a2aa988b9645ef712f25452034f0ee890073c5454",
+      "size": 4044
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/traces/direct_lower.json",
+      "role": "machine_evidence",
+      "sha256": "a0b25a4c2d9d1ebb59ee5fa4189e238e5c89c4d9d22ba6d06cc222dac448e226",
+      "size": 5200
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/traces/native.json",
+      "role": "machine_evidence",
+      "sha256": "afbba339eedebd03ea5e6607986e4f8b14236527dc8341b3be90f8f18ab54900",
+      "size": 5231
+    },
+    {
+      "path": "artifacts/evidence/isolation_probe/traces/report_statistics.json",
+      "role": "machine_evidence",
+      "sha256": "9e441944c38ad4b21ddd5b536b3e4b895be81bbf2d8ecc5bff6aade63fa33bbc",
+      "size": 8677
+    },
+    {
+      "path": "artifacts/final_status.json",
+      "role": "machine_evidence",
+      "sha256": "02b816493bf359f44af718429b393aae97ce94013e99c9c6b2b70227a8cc5c12",
+      "size": 5131
+    },
+    {
+      "path": "artifacts/flat_support_view_exact_comparison.json",
+      "role": "machine_evidence",
+      "sha256": "71b07682a866716eeef1c3a551651ff7b5aac7a974ce56636c6ff5afc8bf924b",
+      "size": 2071
+    },
+    {
+      "path": "artifacts/flat_support_view_formal_classification.json",
+      "role": "machine_evidence",
+      "sha256": "d88ea421e7a4fd4e97a2ef46c6d760a567471a8b454c80ddd0112ac54f216015",
+      "size": 716
+    },
+    {
+      "path": "artifacts/formal_semantics_hardening_determinism.json",
+      "role": "machine_evidence",
+      "sha256": "b9cc8a2f26b5f2426e8575be853a720efd8c528391446c95f2d74df7b6170b7a",
+      "size": 884
+    },
+    {
+      "path": "artifacts/formal_target_semantics_audit.json",
+      "role": "machine_evidence",
+      "sha256": "148ac8d9335543a1fc04520c8c3d989924f3db8a636861a6aec18fdc662aadb6",
+      "size": 6995
+    },
+    {
+      "path": "artifacts/formal_target_semantics_audit.md",
+      "role": "machine_evidence",
+      "sha256": "176e577f042b666800a50180549f30bce0c9834540061881e9c2f5b632de80eb",
+      "size": 1494
+    },
+    {
+      "path": "artifacts/hardening_runs/run_1/scientific_reports.json",
+      "role": "machine_evidence",
+      "sha256": "b919602dbc5c7179a33636bddc5eeb71e12b27743ac587b38793ccd9f9e72e98",
+      "size": 92524
+    },
+    {
+      "path": "artifacts/hardening_runs/run_1/test_results.json",
+      "role": "machine_evidence",
+      "sha256": "ba0628e31d663276e7f0a0681785556368a4b41be344492f65feab640dfa6e2f",
+      "size": 5130
+    },
+    {
+      "path": "artifacts/hardening_runs/run_2/scientific_reports.json",
+      "role": "machine_evidence",
+      "sha256": "b919602dbc5c7179a33636bddc5eeb71e12b27743ac587b38793ccd9f9e72e98",
+      "size": 92524
+    },
+    {
+      "path": "artifacts/hardening_runs/run_2/test_results.json",
+      "role": "machine_evidence",
+      "sha256": "ba0628e31d663276e7f0a0681785556368a4b41be344492f65feab640dfa6e2f",
+      "size": 5130
+    },
+    {
+      "path": "artifacts/hierarchical_projection_exact_comparison.json",
+      "role": "machine_evidence",
+      "sha256": "389a90d9b71f97a3d159a0f107f084be1b8b55a51590c827ed6ad1c041c59fa1",
+      "size": 7636
+    },
+    {
+      "path": "artifacts/independent_native_polynomial_oracle.json",
+      "role": "machine_evidence",
+      "sha256": "0a11646fa28da73537313c834d2965f2e08fe4f767a309a291ab4889a9b5219e",
+      "size": 3196
+    },
+    {
+      "path": "artifacts/joint_lower_projection_strictness.json",
+      "role": "machine_evidence",
+      "sha256": "a034cea2eb6503f5c1e7a6e46b4c9dde61ba5c985d846bc959ecce691a421058",
+      "size": 553
+    },
+    {
+      "path": "artifacts/lower_projection_strictness_constructions.json",
+      "role": "machine_evidence",
+      "sha256": "bbf8a3b48973cd9893d1837dded93c2de11be41b693c9b7df47618c9815052e9",
+      "size": 6481
+    },
+    {
+      "path": "artifacts/native_candidate_algebra_independence.json",
+      "role": "machine_evidence",
+      "sha256": "d8f2c785a50bb37989272d525fe08e52e9c874cc299c8c26d580dd7f385ea3aa",
+      "size": 4512
+    },
+    {
+      "path": "artifacts/native_candidate_nx_exact_comparison_v2.json",
+      "role": "machine_evidence",
+      "sha256": "a07d170baa89cfb31f63f352884bd4cceb63f8d2ef2c73598bbb3a4987ec991f",
+      "size": 4510
+    },
+    {
+      "path": "artifacts/native_direct_k_relation_results.json",
+      "role": "machine_evidence",
+      "sha256": "934e593da03513c3d31890ffdd32a4bba1e5e37772ea634f13932b9bd62ace90",
+      "size": 77021
+    },
+    {
+      "path": "artifacts/native_nx_polynomials.json",
+      "role": "machine_evidence",
+      "sha256": "da9b588ac182d4db38ceb3eff2fbabd8df13ca3cf1ce806c982971988f79a73b",
+      "size": 118119
+    },
+    {
+      "path": "artifacts/negative_control_classification.json",
+      "role": "machine_evidence",
+      "sha256": "6d846c2b972a758faa4dce0e30c0f312151ad5d25de0d226e709082861f43c81",
+      "size": 1237
+    },
+    {
+      "path": "artifacts/negative_controls.json",
+      "role": "machine_evidence",
+      "sha256": "0bd7b407600eb9adeba44ed506078717ce3b1c485ef5e4e7610b3df99bc456d7",
+      "size": 31977
+    },
+    {
+      "path": "artifacts/nx_derived_domain_results.json",
+      "role": "machine_evidence",
+      "sha256": "3e1daeac75da5a36d2115e10dbd1ef2ad190944d41d4171984578cf87f48b379",
+      "size": 76992
+    },
+    {
+      "path": "artifacts/nx_exact_comparison.json",
+      "role": "machine_evidence",
+      "sha256": "e82354f4f385ec7677b13deabff410ca32f5899a0459e50579e3c1f994f5cbe5",
+      "size": 2691
+    },
+    {
+      "path": "artifacts/nx_field_coverage.json",
+      "role": "machine_evidence",
+      "sha256": "02f73faa32d53204de736eea9a614062160340ae46ac4bf4e902db62de18442a",
+      "size": 1805
+    },
+    {
+      "path": "artifacts/nx_strictness_counterexamples.json",
+      "role": "machine_evidence",
+      "sha256": "aa811c7016a80dadf4da7e2ea809380537420d360c690cbef01f6460d36dcb66",
+      "size": 10165
+    },
+    {
+      "path": "artifacts/nx_to_existing_which_lineage.json",
+      "role": "machine_evidence",
+      "sha256": "9184653dc7bb9422220e77032b2b3ec56bb17082ae1b665c561480c606b09a6f",
+      "size": 2785
+    },
+    {
+      "path": "artifacts/nx_w3c_relation_scope.json",
+      "role": "machine_evidence",
+      "sha256": "67269ab47617285071b54e1a0d69e96a1cea84a21e5569cc512f1cd312da5929",
+      "size": 362
+    },
+    {
+      "path": "artifacts/persisted_artifact_classification.json",
+      "role": "machine_evidence",
+      "sha256": "c8d0320c33d91e18ef774791521c5286a2248325faa7763f3e63e2386afc2818",
+      "size": 17083
+    },
+    {
+      "path": "artifacts/report_artifact_consistency.json",
+      "role": "machine_evidence",
+      "sha256": "30c36b7da990608dc65f70e977dc5d29405b282d291f2ba55a117564903c7678",
+      "size": 695
+    },
+    {
+      "path": "artifacts/report_statistics.json",
+      "role": "machine_evidence",
+      "sha256": "7e854ea9ded3ceebd98bdd148eb430a7364d9ea6f5a1288fed287d6abed4ee74",
+      "size": 2585
+    },
+    {
+      "path": "artifacts/reverse_reconstruction_impossibility.json",
+      "role": "machine_evidence",
+      "sha256": "9294e1312c31685628f086dec02a04c5c676efc13e4dc5f8d9ac3de9263b9cff",
+      "size": 1400
+    },
+    {
+      "path": "artifacts/runs/run_1/scientific_reports.json",
+      "role": "machine_evidence",
+      "sha256": "f8f4a48fd234c3fe75af9eeaf8a1f9b647cf3e0dd3711fadf21e1078afb6340e",
+      "size": 49113
+    },
+    {
+      "path": "artifacts/runs/run_1/test_results.json",
+      "role": "machine_evidence",
+      "sha256": "16c70f1bc88d699e9363b29c27c55d14ffbab823126f1e358c1f35d5d067f761",
+      "size": 3645
+    },
+    {
+      "path": "artifacts/runs/run_2/scientific_reports.json",
+      "role": "machine_evidence",
+      "sha256": "f8f4a48fd234c3fe75af9eeaf8a1f9b647cf3e0dd3711fadf21e1078afb6340e",
+      "size": 49113
+    },
+    {
+      "path": "artifacts/runs/run_2/test_results.json",
+      "role": "machine_evidence",
+      "sha256": "16c70f1bc88d699e9363b29c27c55d14ffbab823126f1e358c1f35d5d067f761",
+      "size": 3645
+    },
+    {
+      "path": "artifacts/semiring_homomorphism_profiles.json",
+      "role": "machine_evidence",
+      "sha256": "3b75f139bc66e83cf2bdbda5f8eb6fd2fdfba700b393fbc0f4c237572142b9cc",
+      "size": 3186
+    },
+    {
+      "path": "artifacts/static_isolation_audit.json",
+      "role": "machine_evidence",
+      "sha256": "4da50df82536581153794017d64db5961b1026bb6f9bf32691cba704194f58bb",
+      "size": 17489
+    },
+    {
+      "path": "artifacts/two_level_unification_hierarchy.json",
+      "role": "machine_evidence",
+      "sha256": "45e45cb0ad7c5fc6bddb7e2b62bd304a9ed7f881acbdeb0eb7e6a2306f627b28",
+      "size": 259
+    },
+    {
+      "path": "artifacts/two_level_unification_hierarchy_v2.json",
+      "role": "machine_evidence",
+      "sha256": "5ba4761d6d2f06a6c16c0773ae899bdba1b27337dc5e8eb406732d208a75695b",
+      "size": 1614
+    },
+    {
+      "path": "artifacts/unification_of_unification_result.json",
+      "role": "machine_evidence",
+      "sha256": "cd6e584c548390cf5c692be9b72421d6cfc6501748a4daf1c8f1aac33ee14385",
+      "size": 256
+    },
+    {
+      "path": "artifacts/unification_of_unification_result_v2.json",
+      "role": "machine_evidence",
+      "sha256": "a42e0a7ae3a727b174c505cd4124e78825a3d5e3ca67928eea25446c7083c7e7",
+      "size": 1331
+    },
+    {
+      "path": "artifacts/v1_result_preservation.json",
+      "role": "machine_evidence",
+      "sha256": "db2ee7b7e60a0ac3186a7d3d7ba18ee45ba2d70427709f5de8a0e49a676aeda1",
+      "size": 3059
+    },
+    {
+      "path": "audits/authorities/buneman-khanna-tan-icdt2001-author-version.pdf",
+      "role": "frozen_audit_or_authority",
+      "sha256": "6c244258ab44a229957a1a16605787f1b9ade11bee0ef6eac8086eb6905e1087",
+      "size": 441260
+    },
+    {
+      "path": "audits/authorities/green-karvounarakis-tannen-pods2007-author-version.pdf",
+      "role": "frozen_audit_or_authority",
+      "sha256": "74e092702db58518afeaf909e1d3380848165b2cb9ae75dc6822b04f66aa5be0",
+      "size": 262241
+    },
+    {
+      "path": "audits/formal_semantics_hardening_preimplementation_audit.json",
+      "role": "frozen_audit_or_authority",
+      "sha256": "9b6e0235a43044c3b5c532fe3dacb1091f019f2a35b5b85308ce737c9fd4f989",
+      "size": 13477
+    },
+    {
+      "path": "audits/formal_semantics_hardening_preimplementation_audit.md",
+      "role": "frozen_audit_or_authority",
+      "sha256": "dbd9fe4e439ac8431952dec81cea3cba0b7084b468c95e98aac19bdbd48fc359",
+      "size": 6964
+    },
+    {
+      "path": "audits/preimplementation_audit.json",
+      "role": "frozen_audit_or_authority",
+      "sha256": "63556c089641371aad390a0564197d5136cf902aee8a4406cd30977bfbf6e223",
+      "size": 9935
+    },
+    {
+      "path": "audits/preimplementation_audit.md",
+      "role": "frozen_audit_or_authority",
+      "sha256": "436f2549c36450f0ff4084bb844b21ef9ec0d338665cb24dd637e5941d9e41c3",
+      "size": 5752
+    },
+    {
+      "path": "EXPERIMENT_REPORT.md",
+      "role": "report_or_readme",
+      "sha256": "390031ab91102b3d5c56e1b9debab96596ff229633d3954a20ae40fb43818748",
+      "size": 10900
+    },
+    {
+      "path": "fixtures/workloads.json",
+      "role": "frozen_fixture",
+      "sha256": "607a848aefc0641be7fccd4f208035d7fa0358654ff6bb36fa36b05edcf83086",
+      "size": 10788
+    },
+    {
+      "path": "profiles/core_to_nx_crosswalk_v1.json",
+      "role": "frozen_profile",
+      "sha256": "189c2642c778d13ae0d06f5fce1073aa9fb265694b0a17c4d7df4c797b6ad4ff",
+      "size": 2092
+    },
+    {
+      "path": "profiles/formal_projection_family_v2.json",
+      "role": "frozen_profile",
+      "sha256": "63a35f707ef7cee1c217d779805d241ce902c95d6e66c8280e52f3598d645d96",
+      "size": 2713
+    },
+    {
+      "path": "profiles/positive_relational_algebra_profile_v1.json",
+      "role": "frozen_profile",
+      "sha256": "7c38dc8f00124c00b4fd7288af4415ca4b35fc9b03e1397ce75183f2a3f788e5",
+      "size": 897
+    },
+    {
+      "path": "profiles/provenance_semiring_nx_profile_v1.json",
+      "role": "frozen_profile",
+      "sha256": "05e38924029fafabe9101f28532f79cf2a7843d3ef0dd5947d061a24c682ab6b",
+      "size": 1686
+    },
+    {
+      "path": "profiles/semiring_homomorphism_family_v1.json",
+      "role": "frozen_profile",
+      "sha256": "12ca8d8278f448b17729e5416dff29199103e9f65c38b53b60b438fb97e00f94",
+      "size": 2006
+    },
+    {
+      "path": "README.md",
+      "role": "report_or_readme",
+      "sha256": "4ea1d3160d3831a8baca67a9ee17a3d09e41056eb417a8b781ad22b221350b84",
+      "size": 3894
+    },
+    {
+      "path": "scripts/__init__.py",
+      "role": "implementation",
+      "sha256": "5c00e8a4a1c7ccb2228ac5411b56fd95e38c6e849e5e5da7ae7b22978c4b9288",
+      "size": 32
+    },
+    {
+      "path": "scripts/candidate_nx_path.py",
+      "role": "implementation",
+      "sha256": "cec33432fdbebabdbed5ebf3bed99b70ff7c0e0e1768a194238790b3a679552f",
+      "size": 2290
+    },
+    {
+      "path": "scripts/compare_nx_paths.py",
+      "role": "implementation",
+      "sha256": "68483c518f3344dbe301b606e034e4e65d5829c79a7feb5ced89d1a4ac595a0f",
+      "size": 1562
+    },
+    {
+      "path": "scripts/core_capture_path.py",
+      "role": "implementation",
+      "sha256": "095f817c5205a92bcdbdf0d02d214b39ea8eebbeaf207dafbb0ac4ee486dd820",
+      "size": 2132
+    },
+    {
+      "path": "scripts/direct_lower_k_path.py",
+      "role": "implementation",
+      "sha256": "1b64ca8febea8df15ef669ad3e3a4e924dc7edf1a2c36cd4a120e0563d5b8d84",
+      "size": 1305
+    },
+    {
+      "path": "scripts/finalize_artifacts.py",
+      "role": "implementation",
+      "sha256": "4d9ac76898261bf122add9b937272ea15878c5c04cea41e2406929ee2010592e",
+      "size": 11313
+    },
+    {
+      "path": "scripts/native_nx_path.py",
+      "role": "implementation",
+      "sha256": "806edb2c6bd9203d205cfedc310e253a2db6b45d2a410eb8e64faa27d5f5e3ef",
+      "size": 1334
+    },
+    {
+      "path": "scripts/nx_derived_lower_path.py",
+      "role": "implementation",
+      "sha256": "f9e39d8cdc2ff3650fb69d3e7d28e9ac42489e10f3a41c21c579e381afb2a6f0",
+      "size": 1224
+    },
+    {
+      "path": "scripts/run_algebra_independence_audit.py",
+      "role": "implementation",
+      "sha256": "ea250113137617513a37dc06becddefffbec0e0aac2b0ad4c183c05d72faa424",
+      "size": 968
+    },
+    {
+      "path": "scripts/run_database_which_bridge.py",
+      "role": "implementation",
+      "sha256": "3f25c9b688095052df6106cf14d500c97ea363a801ba83b1805c1c61d927c63e",
+      "size": 1112
+    },
+    {
+      "path": "scripts/run_formal_semantics_audit.py",
+      "role": "implementation",
+      "sha256": "bbd4d24b2fbe667983f9ee9509296570e661bf5db1903faa0306f651d1f782a5",
+      "size": 1095
+    },
+    {
+      "path": "scripts/run_isolation_audit.py",
+      "role": "implementation",
+      "sha256": "8bc99862f50912aeb96dcb5cb43e07321a5986b97cd0402b3f2d600e772ef25c",
+      "size": 4206
+    },
+    {
+      "path": "scripts/run_lower_strictness.py",
+      "role": "implementation",
+      "sha256": "5b8ab336595a53d64aff3280749184994f1d47ea4b2d2ec48b8eb826185e394a",
+      "size": 2027
+    },
+    {
+      "path": "scripts/run_native_oracle_selftest.py",
+      "role": "implementation",
+      "sha256": "6d03274cdb88b979a7f5e2bc549a4611afcb852bea41260b9cf5f382c3b129c1",
+      "size": 4026
+    },
+    {
+      "path": "scripts/run_negative_controls.py",
+      "role": "implementation",
+      "sha256": "6ce1b19188ad1a9cbdd6b483735e10d5d2eeed7c0353bdd8932ff2af79a8faff",
+      "size": 1005
+    },
+    {
+      "path": "scripts/run_p1_exact.py",
+      "role": "implementation",
+      "sha256": "b8be48f9af6e140094e3366867e92fb62e1749af24d622a6679668edf1ef5f34",
+      "size": 1893
+    },
+    {
+      "path": "scripts/run_p2_strictness.py",
+      "role": "implementation",
+      "sha256": "4be9d43765206291bd6873152519f3bb6ea58d530360f318ee218c13d6febc3d",
+      "size": 991
+    },
+    {
+      "path": "scripts/run_p3_hierarchy.py",
+      "role": "implementation",
+      "sha256": "dcc120bc34720b1b22f2f6dcc1e00feb363baed0ac6c2024ca3a2800601a4382",
+      "size": 4639
+    },
+    {
+      "path": "scripts/run_report_statistics.py",
+      "role": "implementation",
+      "sha256": "eaa7e8eace5744a2807507f80d9f6bb7609d9c55ae287e32edcdb582f4e8ff2e",
+      "size": 1970
+    },
+    {
+      "path": "scripts/run_scientific_execution.py",
+      "role": "implementation",
+      "sha256": "fc1c884a160de1c8ff1813e59f7ac17266b206ebeff0a4a8e63bc35a00566296",
+      "size": 15782
+    },
+    {
+      "path": "scripts/run_two_scientific_executions.py",
+      "role": "implementation",
+      "sha256": "6ed78529067b4a3ea84f9ae899e6be0a08b224b03a3082b98d4c781f900ffe87",
+      "size": 2904
+    },
+    {
+      "path": "scripts/run_v1_preservation.py",
+      "role": "implementation",
+      "sha256": "9181451a82f027a893f526adcfcc04c4c182b229d04da015decd804ee6072900",
+      "size": 945
+    },
+    {
+      "path": "scripts/trace_entrypoint.py",
+      "role": "implementation",
+      "sha256": "ca8f4898648cda5c11e27ca403d06656b3171272a892a796056b00e9a3d7e8ba",
+      "size": 3172
+    },
+    {
+      "path": "src/__init__.py",
+      "role": "implementation",
+      "sha256": "44e7b4dfea3effe1bf97d2fb18f9662fcf602dc519d339f59f6490271b393a94",
+      "size": 41
+    },
+    {
+      "path": "src/algebra_independence.py",
+      "role": "implementation",
+      "sha256": "6bd6146f025e3d71a3df3f93abc63d880057317b16b8776d46454f3f604e6c14",
+      "size": 3515
+    },
+    {
+      "path": "src/candidate_nx.py",
+      "role": "implementation",
+      "sha256": "c40eaf3e6b42af53b91cc0369241661c1aa7eaf73b5b239cddc6d05c42e07225",
+      "size": 5385
+    },
+    {
+      "path": "src/core_capture.py",
+      "role": "implementation",
+      "sha256": "9fd46245c50644c854047d258f479aad3a41a1143eecabfc9b76cf061ec79e94",
+      "size": 16999
+    },
+    {
+      "path": "src/database_which_bridge.py",
+      "role": "implementation",
+      "sha256": "c355fa5755bb472cc08f572b9e656df031a352f716b6b255311d0cc7acf5341b",
+      "size": 10881
+    },
+    {
+      "path": "src/exact_comparison.py",
+      "role": "implementation",
+      "sha256": "a9fbaae01c4a582615eb08336c3dc55b98121d6a12fc8d0014a5d8c3af27806e",
+      "size": 9793
+    },
+    {
+      "path": "src/formal_semantics.py",
+      "role": "implementation",
+      "sha256": "1166cbd47de66376d480f3a59154d0ac34ca36b69e3d643fa164fc7947081d30",
+      "size": 10002
+    },
+    {
+      "path": "src/isolation_audit.py",
+      "role": "implementation",
+      "sha256": "289605b3f607ec2506128f5abc0071f1e7faad9a8d67e2af6c9d72e0b99be7f0",
+      "size": 12527
+    },
+    {
+      "path": "src/lower_strictness.py",
+      "role": "implementation",
+      "sha256": "558979a7ae8ce2fb687d386f0bf333706fcea51f81b368cb01372ef5474ea7be",
+      "size": 12478
+    },
+    {
+      "path": "src/native_lower_k.py",
+      "role": "implementation",
+      "sha256": "dee75abf5eaa9b1aa3904be60129ba78d4cee4489dd8566fe478a9b204a7acac",
+      "size": 8111
+    },
+    {
+      "path": "src/native_nx.py",
+      "role": "implementation",
+      "sha256": "2bb91a9382fda4c927e711de3cece73057fc07d835e05d6b2f90d2c781a0ea64",
+      "size": 5474
+    },
+    {
+      "path": "src/native_polynomial_oracle.py",
+      "role": "implementation",
+      "sha256": "90160fa3c10bf087a27d738c96cfc97454dc65af7607ebba007ab9f9bfd4787f",
+      "size": 5037
+    },
+    {
+      "path": "src/negative_controls.py",
+      "role": "implementation",
+      "sha256": "fd98da600d0170ffc1f5fd94c7dcc02744211258e5960a8e4641a104b0ce1a2e",
+      "size": 28358
+    },
+    {
+      "path": "src/nx_polynomial.py",
+      "role": "implementation",
+      "sha256": "56eae9132c827c0d44f3a76999765f63746973a124f1cd8bf61aa96d2b2bc985",
+      "size": 5887
+    },
+    {
+      "path": "src/nx_strictness.py",
+      "role": "implementation",
+      "sha256": "f2d170546f4e79e8acd3f520bb6e6a551ae32003158eb55d753c411fc2b1d4c3",
+      "size": 6805
+    },
+    {
+      "path": "src/ordinary_execution.py",
+      "role": "implementation",
+      "sha256": "33e394550b9b9092c8915a62c880cb5dba7c829b47cc5ee94897dc37c105719f",
+      "size": 7969
+    },
+    {
+      "path": "src/profile_runtime.py",
+      "role": "implementation",
+      "sha256": "232bad4552412346fe5c9747cddd6fa9ca29bccde775404259214ba7c463d81f",
+      "size": 650
+    },
+    {
+      "path": "src/report_statistics.py",
+      "role": "implementation",
+      "sha256": "baad0c375eadf32af38a2a105ac3f58750331ba98ed483ce6ddc6af8e9481571",
+      "size": 9351
+    },
+    {
+      "path": "src/runtime.py",
+      "role": "implementation",
+      "sha256": "6f89d411f68b59e042b43da8deba5b5059603ef75d6b6bca8a4aa2d50531f40c",
+      "size": 2829
+    },
+    {
+      "path": "src/semiring_homomorphisms.py",
+      "role": "implementation",
+      "sha256": "e27b60eb65d8c599620f047939b9388d55eab7898256814f3d7e77fd098c67a5",
+      "size": 4348
+    },
+    {
+      "path": "src/structural.py",
+      "role": "implementation",
+      "sha256": "8bc80368b09c808eba1642a016a17263164ec014ffb351f7f93329910f9f5aac",
+      "size": 868
+    },
+    {
+      "path": "src/v1_preservation.py",
+      "role": "implementation",
+      "sha256": "a2fd3e6b946ede5d9b985dd73249df64e5584e017367e1491a86c20e70c632ab",
+      "size": 5341
+    },
+    {
+      "path": "src/workloads.py",
+      "role": "implementation",
+      "sha256": "0d0e1e229285bc488233b5bdf5aacbfcd9453bb440a378ab1da899cf5c56a3af",
+      "size": 4600
+    },
+    {
+      "path": "tests/__init__.py",
+      "role": "test",
+      "sha256": "9d4f0f443fba2f8067fd1ec58bf4f822ebd7e661b77d9c846310729f18ac54c8",
+      "size": 65
+    },
+    {
+      "path": "tests/test_bottom_up_required_areas.py",
+      "role": "test",
+      "sha256": "09a0f6b42adafe567156f485d6999fa252b12f40e376aab236c71fe61b89e9c8",
+      "size": 4576
+    },
+    {
+      "path": "tests/test_core_candidate_nx.py",
+      "role": "test",
+      "sha256": "e3238fb10f4780de093f7c5dcd88d2b9bb4664626ab670c6b8b9f50c74cde2c4",
+      "size": 2084
+    },
+    {
+      "path": "tests/test_database_which_bridge.py",
+      "role": "test",
+      "sha256": "a0bcdcf07e8f4ab18b8d90d3f38a1a941147e2711e4253f53652d6f2bca63dc7",
+      "size": 853
+    },
+    {
+      "path": "tests/test_exact_comparison_and_runtime.py",
+      "role": "test",
+      "sha256": "b581f8d2d88a65055dfd716a786488ea401fad3052cb6f058ea765dac3c0b13b",
+      "size": 1393
+    },
+    {
+      "path": "tests/test_formal_hierarchy_v2.py",
+      "role": "test",
+      "sha256": "e35ff1fb1f3cc4f64a5f6f7254d524c19053029cf82646c14e2bb5e4560e9985",
+      "size": 1230
+    },
+    {
+      "path": "tests/test_isolation_and_negative_controls.py",
+      "role": "test",
+      "sha256": "885c4cadee48878bf613e85fc7783beab73105144e602fa8ec77448958ee7e7e",
+      "size": 2545
+    },
+    {
+      "path": "tests/test_lower_strictness.py",
+      "role": "test",
+      "sha256": "1d634e374ad7b3c95c67963d84c5ab8264f46e1012a649a179b6252c47871890",
+      "size": 637
+    },
+    {
+      "path": "tests/test_native_nx.py",
+      "role": "test",
+      "sha256": "cd715161332332e7cc1589e4aa8d34486653c9a3c703768160e20888171ed598",
+      "size": 2249
+    },
+    {
+      "path": "tests/test_native_polynomial_oracle.py",
+      "role": "test",
+      "sha256": "99dd5c287f986ee119e47340bdaef3459dfaef660234d7664d00d792327255f5",
+      "size": 2970
+    },
+    {
+      "path": "tests/test_nx_strictness.py",
+      "role": "test",
+      "sha256": "ca48c3781f8abeace5c17684594b2b2a046fa8ed6d8b101747a684217887cda6",
+      "size": 780
+    },
+    {
+      "path": "tests/test_report_statistics.py",
+      "role": "test",
+      "sha256": "ac353ac12f1daa940bbbff9a7113f474da6bfa1ab0e27e65a32f41106acd163c",
+      "size": 2020
+    },
+    {
+      "path": "tests/test_semiring_hierarchy.py",
+      "role": "test",
+      "sha256": "24b7963a9bddcf48f56ce4e99fcfaae72100b3b9c52843d3cb25e37f25b05083",
+      "size": 1604
+    },
+    {
+      "path": "tests/test_v1_result_preservation.py",
+      "role": "test",
+      "sha256": "84c490b4e45ea156565b8ed0fb28c71d0e550e4138b0ccca1b7b751f05e838e2",
+      "size": 790
+    },
+    {
+      "path": "tests/test_workloads_and_ordinary_execution.py",
+      "role": "test",
+      "sha256": "96818d16936db9b4f1610a4854e60d6220f8daf84ae305438a6d413fed0b831b",
+      "size": 1453
+    }
+  ],
+  "rehash_mismatch_count": 0,
+  "rehash_mismatches": [],
+  "schema_version": "provenance-semiring-artifact-manifest-v2",
+  "scope_root": "experiments/provenance_semiring_projection_v1",
+  "self_reference_exclusion": "artifacts/artifact_manifest.json is excluded because a file cannot contain its own final SHA-256",
+  "status": "ALL_FILES_REHASHED"
+}

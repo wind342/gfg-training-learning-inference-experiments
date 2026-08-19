@@ -1,0 +1,28 @@
+{
+  "ambiguity_case_count": 2,
+  "cases": [
+    {
+      "generated_output_equal": true,
+      "left_original_source": "ambiguity-a.js",
+      "right_original_source": "ambiguity-b.js",
+      "source_maps_equal": false,
+      "sources": [
+        "ambiguity-a.js",
+        "ambiguity-b.js"
+      ]
+    },
+    {
+      "generated_output_equal": true,
+      "left_original_source": "ambiguity-c.js",
+      "right_original_source": "ambiguity-d.js",
+      "source_maps_equal": false,
+      "sources": [
+        "ambiguity-c.js",
+        "ambiguity-d.js"
+      ]
+    }
+  ],
+  "interpretation": "Generated result bytes alone do not identify a unique source or Source Map.",
+  "profile_id": "ecma426-ordinary-source-map-v1",
+  "status": "PASS"
+}

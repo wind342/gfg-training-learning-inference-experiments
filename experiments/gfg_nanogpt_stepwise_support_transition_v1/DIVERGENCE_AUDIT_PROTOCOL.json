@@ -1,0 +1,48 @@
+{
+  "schema": "nanogpt-stepwise-divergence-audit-protocol-v1",
+  "protocol_id": "STEPWISE-DIVERGENCE-AUDIT-v1",
+  "status": "FROZEN_BEFORE_FORMAL_STEPWISE_RESULTS_COMPLETE",
+  "alignment": "Pair states and transitions by relative training opportunity h, never by Adam internal step.",
+  "state_channels": [
+    "raw_probe_response",
+    "support_concentration",
+    "pair_backup",
+    "adam_state",
+    "parameter_adam_alignment",
+    "visible_capability"
+  ],
+  "transition_channels": [
+    "parameter_update_structure",
+    "optimizer_transition"
+  ],
+  "distance": {
+    "vector": "normalized_l2(a,b)=||a-b||_2/max((||a||_2+||b||_2)/2,1e-30)",
+    "alignment": "absolute difference of the global and registry-component cosine-alignment vector; undefined zero-norm coordinates are represented by an ExplicitDisposition and excluded only from that typed coordinate",
+    "typed_non_numeric": "exact identity/set comparison; nonnumeric identities are never subtracted"
+  },
+  "leave_out_policy": "For every decline/stable pair, threshold construction excludes every stable window from either source entry represented by that pair.",
+  "stability_envelope": {
+    "reference_population": "all unique preregistered stable windows remaining after leave-out",
+    "quantity": "distance between each stable window state at h and its own h=0 state, separately for each channel and h",
+    "quantile": 0.99,
+    "pair_excess": "max(0,distance(drop_h,stable_h)-distance(drop_0,stable_0))",
+    "crossing": "pair_excess strictly exceeds max(the leave-out stability-envelope quantile,1e-12) for three consecutive legal relative steps"
+  },
+  "key_step": {
+    "admitted_predictor_channels": [
+      "raw_probe_response",
+      "support_concentration",
+      "pair_backup",
+      "adam_state",
+      "parameter_adam_alignment",
+      "parameter_update_structure",
+      "optimizer_transition"
+    ],
+    "visible_capability_is_outcome_only": true,
+    "selection": "earliest persistent crossing among admitted predictor channels",
+    "no_crossing_fallback": "earliest h maximizing the channel-wise ratio pair_excess/max(envelope,1e-12), explicitly labeled NO_THRESHOLD_CROSSING_FALLBACK and never reported as a detected divergence",
+    "causal_seed_offsets": [-1, 0, 1]
+  },
+  "future_use": "The audit is retrospective development evidence. Its detected step or fallback is not a prospective model input and cannot seal a candidate theory.",
+  "result_driven_rule_changes_allowed": false
+}

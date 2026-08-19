@@ -1,0 +1,140 @@
+{
+  "schema": "nanogpt-capability-support-causal-transition-contract-v1",
+  "contract_status": "FROZEN_BEFORE_GPU_BRANCH_EXECUTION",
+  "scientific_status": "CAUSAL_DEVELOPMENT_EVIDENCE",
+  "direct_recipient": "external_controller_codex",
+  "persistent_ai_role": "READ_ONLY_SCIENTIFIC_DISCOVERY_ONLY_AFTER_ALL_EXTERNAL_VALIDATION_PASSES",
+  "scientific_question": "S_(t+h)=F_h(S_t,U_t,O_t)",
+  "formation_model_policy": "FROZEN_AND_NOT_MODIFIED",
+  "source_material": {
+    "training_runs": 13,
+    "checkpoints_per_run": 100,
+    "checkpoint_grid": "100..10000 inclusive in increments of 100",
+    "source_training_gfg": "validated participant-safe training GFG bundles",
+    "source_direction_gfg": "validated direction-analysis GFG archive",
+    "source_csrg_gfg": "validated four-component CSRG archive",
+    "historical_outputs": "development evidence only"
+  },
+  "runtime_boundary": {
+    "model_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+    "device": "cuda",
+    "dropout": 0.0,
+    "gradient_clip": 1.0,
+    "learning_rate": 0.003,
+    "adam_betas": [0.9, 0.98],
+    "weight_decay": 1.0,
+    "batch": "exact fixed-order full batch captured by the source GFG",
+    "historical_parameter_and_adam_state": "restored byte-exactly from materialized source-GFG payloads",
+    "historical_rng_payload": "not materialized in the archived source GFGs",
+    "causal_rng_policy": "derive a deterministic current-runtime RNG state from contract_sha256, entry_id and optimizer_step; restore the identical state for every matched branch and verify its commitments",
+    "rng_operationality": "the frozen model has dropout=0 and the fixed full-batch forward/backward/update path contains no admitted stochastic operator",
+    "claim_boundary": "branch differences are authoritative within the content-bound current runtime; historical native exact replay is claimed only when all available next-state object hashes match"
+  },
+  "full_scan": {
+    "checkpoint_count": 1300,
+    "branches": ["full_step", "skip_step"],
+    "full_step": "forward, backward, global gradient clipping, AdamW optimizer.step",
+    "skip_step": "the same forward, backward and global gradient clipping with ExplicitDisposition(OPTIMIZER_UPDATE_SKIPPED_BY_FROZEN_MATCHED_CONTROL)",
+    "support_probe_after_each_branch": true,
+    "effect": "tau_step(t)=S_after_full_step(t)-S_after_skip_step(t)"
+  },
+  "anchor_selection": {
+    "anchor_count": 52,
+    "anchors_per_run": 4,
+    "categories": [
+      "post_formation_sustained_stable",
+      "immediate_pre_severe_decline",
+      "matched_non_declining_control",
+      "recovery_after_same_severe_decline"
+    ],
+    "selection_receipt_required_before_gpu_execution": true,
+    "new_branch_results_used_for_selection": false,
+    "absolute_step_used_in_matching_distance": false,
+    "entry_id_used_in_matching_distance": false,
+    "future_outcome_use": "only to define the four pre-registered anchor categories; never used as a transition-model feature"
+  },
+  "deep_branches": {
+    "full_update": "real forward, backward, clipping and AdamW update",
+    "skip_update": "same forward, backward and clipping; no parameter or Adam mutation",
+    "parameter_only": "use the independently replayed full-update parameter poststate with the exact Adam prestate",
+    "optimizer_state_only": "use the independently replayed full-update Adam poststate with the exact parameter prestate",
+    "immutable_prestate": true,
+    "mutable_tensor_sharing_between_branches": false,
+    "horizons": [1, 5, 20, 100],
+    "alignment": "training opportunities, not optimizer internal step",
+    "effects": {
+      "parameter": "S_parameter_only(t+h)-S_skip(t+h)",
+      "optimizer": "S_optimizer_state_only(t+h)-S_skip(t+h)",
+      "full": "S_full_update(t+h)-S_skip(t+h)",
+      "interaction": "S_full_update-S_parameter_only-S_optimizer_state_only+S_skip"
+    }
+  },
+  "support_measurement": {
+    "components": ["h0.attn", "h0.mlp", "h1.attn", "h1.mlp"],
+    "target_groups": 23,
+    "baseline_repetitions": 2,
+    "single_component_gates": 4,
+    "pair_component_gates": 6,
+    "forward_count_per_state": 12,
+    "required_repeated_output_equality": "byte-identical current-runtime logits",
+    "outputs": [
+      "complete decision logits",
+      "per-example target margins",
+      "predictions",
+      "23 target-group q10 margins",
+      "component necessity",
+      "pair backup",
+      "single failure slack",
+      "double failure slack",
+      "effective support",
+      "support allocation",
+      "support concentration"
+    ]
+  },
+  "historical_labels": {
+    "actual_future_decline_and_recovery": "post-execution adjudication only",
+    "admitted_as_transition_feature": false,
+    "run_identity_admitted_as_transition_feature": false,
+    "absolute_optimizer_step_admitted_as_transition_feature": false
+  },
+  "generation_fact_model": {
+    "atomic_form": "f=(u,tau,omega_bar,z;rho)",
+    "new_coordinates": false,
+    "large_tensor_policy": "content-addressed external payload with identity, version, shape, dtype, canonical order, SHA-256 and locator",
+    "required_relations": [
+      "realizes_fact",
+      "reads_from",
+      "generated_origin_dependency",
+      "program_order",
+      "matched_branch_of"
+    ],
+    "undefined_or_absent_result": "ExplicitDisposition",
+    "identity_rule": "numerically equal branch results retain distinct occurrence and fact identities"
+  },
+  "validation_gates": [
+    "source parameter and Adam payload hashes",
+    "current-runtime baseline byte equality",
+    "branch tensor isolation and RNG restoration",
+    "full-update comparison to available historical next-state commitments",
+    "CSRG repeated-output equality and hook removal",
+    "GFG five-coordinate completeness and incidence",
+    "GeneratedOrigin resolution and external payload hashes",
+    "matched branches share one immutable prestate",
+    "future-leakage audit",
+    "independent GPU replay selected without reading branch results"
+  ],
+  "independent_replay": {
+    "selection": "for every entry, hash-rank all 100 optimizer steps by SHA256(contract_sha256,entry_id,optimizer_step) and replay the minimum-ranked checkpoint",
+    "checkpoint_count": 13,
+    "implementation": "separate controller entry point",
+    "expected_match": "branch state, support state, effect and graph commitments"
+  },
+  "completion_policy": {
+    "unseen_training_run": false,
+    "new_real_intervention_run": false,
+    "persistent_vm_stopped": false,
+    "persistent_ai_resumed_before_external_validation": false,
+    "failed_results_preserved": true,
+    "manual_decision_required_before_unseen_validation": true
+  }
+}

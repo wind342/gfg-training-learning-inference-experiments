@@ -1,0 +1,36 @@
+{
+  "allowed": [
+    "complete participant-safe GFG",
+    "actual training samples and participation",
+    "batch composition",
+    "token and target tensors",
+    "parameter versions and content objects",
+    "forward layer activations",
+    "logits and loss",
+    "backward gradients",
+    "gradient clipping",
+    "optimizer state reads and writes",
+    "parameter updates",
+    "evaluation predictions and accuracies",
+    "source roles and relation roles",
+    "occurrence identity",
+    "reads_from",
+    "GeneratedOrigin",
+    "program_order",
+    "realizes_fact"
+  ],
+  "derived_work_allowed": true,
+  "forbidden": [
+    "private task generation rule",
+    "token permutation",
+    "mechanism answer",
+    "reference candidate",
+    "hidden validation future",
+    "another participant candidate or result",
+    "external scientific input",
+    "network access",
+    "another AI"
+  ],
+  "query_log_is_success_criterion": false,
+  "version": "1.0.0"
+}

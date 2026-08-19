@@ -1,0 +1,24 @@
+{
+  "schema": "nanogpt-aborted-pre-v2-ai-read-stage-receipt-v1",
+  "stage": "one-step-405-theory-v1",
+  "definition_status": "SUPERSEDED_BY_V2_CONTRACT",
+  "started_at": "2026-08-05T00:08:05+08:00",
+  "stop_verified_at": "2026-08-05T00:11:42.3769043+08:00",
+  "same_persistent_thread_id": "019fc332-71f5-7ce3-a82c-ad9be0c60ec2",
+  "actions_observed": [
+    "read inherited stepwise state schema",
+    "read portions of the inherited stepwise feature cache",
+    "inspect prior counterexample and model-diagnosis material"
+  ],
+  "candidate_delivery_directory_created": false,
+  "ready_marker_created": false,
+  "training_started": false,
+  "model_fitting_started": false,
+  "gpu_execution_started": false,
+  "new_gfg_build_started": false,
+  "scientific_result_produced": false,
+  "vm_stopped": false,
+  "container_stopped": true,
+  "model_proxy_process_stopped": true,
+  "disposition": "ABORTED_BEFORE_DELIVERY_AND_EXCLUDED_FROM_V2_EXPERIMENT"
+}

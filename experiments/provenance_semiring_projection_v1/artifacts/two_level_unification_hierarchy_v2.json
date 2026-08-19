@@ -1,0 +1,55 @@
+{
+  "forbidden_conflation": "Level 2A and Level 2B are not jointly described as semiring homomorphic images",
+  "gates": {
+    "algebra_independence": true,
+    "existing_database_which": true,
+    "flat_support_classified_as_task_projection": true,
+    "flat_support_exact": true,
+    "independent_native_candidate_exact": true,
+    "joint_lower_strictness": true,
+    "lower_strictness": true,
+    "p1_exact_nx": true,
+    "p2_gamma_strictness": true,
+    "p3_classified_projection_hierarchy": true,
+    "three_formal_algebraic_targets": true
+  },
+  "levels": [
+    {
+      "domain": "complete Core v3 generation facts Gamma_G(omega)",
+      "level": 0,
+      "outgoing_arrow": "exact strict projection"
+    },
+    {
+      "domain": "canonical provenance polynomial N[X]",
+      "incoming_arrow": "exact strict projection from Gamma_G(omega)",
+      "level": 1
+    },
+    {
+      "classification": "formal algebraic targets",
+      "domains": [
+        "bag N",
+        "Boolean B",
+        "PosBool(X)"
+      ],
+      "incoming_arrow": "exact semiring homomorphism or quotient projection from N[X]",
+      "level": "2A"
+    },
+    {
+      "classification": "non-semiring task projections",
+      "domains": [
+        "flat source-support view",
+        "Vars(N[X])",
+        "existing Database which-lineage"
+      ],
+      "incoming_arrow": "exact task projection from N[X]",
+      "level": "2B"
+    }
+  ],
+  "not_evaluated": [
+    "Which(X)",
+    "Trio(X)",
+    "witness-basis Why provenance"
+  ],
+  "schema_version": "two-level-unification-hierarchy-v2",
+  "status": "TWO_LEVEL_FORMAL_HIERARCHY_SUPPORTED"
+}

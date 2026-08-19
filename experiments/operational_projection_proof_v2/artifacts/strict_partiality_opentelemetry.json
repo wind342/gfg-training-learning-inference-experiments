@@ -1,0 +1,85 @@
+{
+  "cases": [
+    {
+      "backward_lineage_equal": false,
+      "binding_set_equal": false,
+      "binding_symmetric_difference_count": 4,
+      "complete_snapshot_equal": false,
+      "counterexample_id": "distinct_selection_source_identities",
+      "direct_core_projection_equal": true,
+      "direct_relation_set_equal": false,
+      "direct_relation_symmetric_difference_count": 4,
+      "left_snapshot_id": "snap3_ea73a79f5be01d1cc6e334645c4641092f40215e39f73aedb5f05291b5c9c88f",
+      "left_snapshot_semantic_sha256": "0e4fc31e958da0bd7897e0ea8284fdb52ab4d8a1b7b0d92effca4abe1641431d",
+      "native_normalized_otel_equal": true,
+      "normalized_trace_hash_equal": true,
+      "normalized_trace_sha256": "ee13dcd852c8ba2537192644319b0d11672d961cd170eac5f9310a2291b2e87c",
+      "occurrence_projection_equal": true,
+      "ordinary_output_equal": true,
+      "right_snapshot_id": "snap3_89fabcd821ef18d2b4e0284e11a8b910171193fd7a2191f80aac612355d5703c",
+      "right_snapshot_semantic_sha256": "2e1acce0643862196458da103a7062f961f23f04a1be89e1a9f5d077c0108c99",
+      "source_difference": {
+        "equal": false,
+        "left_count": 2,
+        "left_only": [
+          "alpha:source:1",
+          "alpha:source:2"
+        ],
+        "right_count": 2,
+        "right_only": [
+          "beta:source:1",
+          "beta:source:2"
+        ],
+        "symmetric_difference_count": 4
+      },
+      "source_set_equal": false,
+      "source_symmetric_difference_count": 4,
+      "valid_counterexample": true
+    },
+    {
+      "backward_lineage_equal": false,
+      "binding_set_equal": false,
+      "binding_symmetric_difference_count": 16,
+      "complete_snapshot_equal": false,
+      "counterexample_id": "distinct_many_to_many_tuple_identities_with_equal_values",
+      "direct_core_projection_equal": true,
+      "direct_relation_set_equal": false,
+      "direct_relation_symmetric_difference_count": 16,
+      "left_snapshot_id": "snap3_5e61417a6bbaa754ef3f837b55f5c1dc55d2849359d9e2c87f4e9232ba7d01ce",
+      "left_snapshot_semantic_sha256": "d877d3e01a8b145428da9c2adedb502d4e5a22a026e39e660e255be41a27078e",
+      "native_normalized_otel_equal": true,
+      "normalized_trace_hash_equal": true,
+      "normalized_trace_sha256": "5339245514179ee67cf0f7de1f798cf1f03bf76eb5d201f8b8ec621f7367dd0e",
+      "occurrence_projection_equal": true,
+      "ordinary_output_equal": true,
+      "right_snapshot_id": "snap3_4df90d1bf530f1e288a9a7c99d4931447e41e71cb1722a492a93e91f20a5122b",
+      "right_snapshot_semantic_sha256": "895e26ac143c9d0d26040b67e18929a771860b0d165e88bd1714c733587f5716",
+      "source_difference": {
+        "equal": false,
+        "left_count": 4,
+        "left_only": [
+          "gamma:left:1",
+          "gamma:left:2",
+          "gamma:right:1",
+          "gamma:right:2"
+        ],
+        "right_count": 4,
+        "right_only": [
+          "delta:left:1",
+          "delta:left:2",
+          "delta:right:1",
+          "delta:right:2"
+        ],
+        "symmetric_difference_count": 8
+      },
+      "source_set_equal": false,
+      "source_symmetric_difference_count": 8,
+      "valid_counterexample": true
+    }
+  ],
+  "counterexample_count": 2,
+  "frozen_expected_total_binding_symmetric_difference_count": 20,
+  "profile_id": "opentelemetry-occurrence-execution-v1",
+  "status": "SUPPORTED",
+  "total_binding_symmetric_difference_count": 20
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="580" viewBox="0 0 1480 580">
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#0f172a}.title{font-size:30px;font-weight:700}.sub{font-size:16px;fill:#475569}.label{font-size:20px;font-weight:650}.stat{font-size:16px;fill:#334155}.arrow{stroke:#64748b;stroke-width:3;fill:none}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text class="title" x="85" y="55">nanoGPT complete training-run generation fact graph</text>
+<text class="sub" x="85" y="88">Three real CUDA updates. Cross-step parameter versions are preserved in the complete JSON graph.</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+<rect x="85" y="145" width="1310" height="84" rx="14" fill="#dbeafe" stroke="#94a3b8" stroke-width="1.5"/>
+<text class="label" x="113" y="180">Training step 0: batch → forward → backward → AdamW</text>
+<text class="stat" x="113" y="209">actual occurrences: 1,378   tensor outcomes: 1,621   atomic five-coordinate facts: 4,462</text>
+<path class="arrow" marker-end="url(#arrow)" d="M 740.0 229 L 740.0 252"/>
+<rect x="85" y="260" width="1310" height="84" rx="14" fill="#e0e7ff" stroke="#94a3b8" stroke-width="1.5"/>
+<text class="label" x="113" y="295">Training step 1: batch → forward → backward → AdamW</text>
+<text class="stat" x="113" y="324">actual occurrences: 1,124   tensor outcomes: 1,367   atomic five-coordinate facts: 4,272</text>
+<path class="arrow" marker-end="url(#arrow)" d="M 740.0 344 L 740.0 367"/>
+<rect x="85" y="375" width="1310" height="84" rx="14" fill="#ede9fe" stroke="#94a3b8" stroke-width="1.5"/>
+<text class="label" x="113" y="410">Training step 2: batch → forward → backward → AdamW</text>
+<text class="stat" x="113" y="439">actual occurrences: 1,124   tensor outcomes: 1,367   atomic five-coordinate facts: 4,272</text>
+</svg>

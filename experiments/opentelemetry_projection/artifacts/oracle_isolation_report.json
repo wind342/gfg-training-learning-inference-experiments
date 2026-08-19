@@ -1,0 +1,8 @@
+{
+  "native_independent_of_projection_module": true,
+  "native_trace_existed_before_deletion": true,
+  "oracle_leakage_count": 0,
+  "projection_after_native_record_deletion": true,
+  "runtime_trap_passed": true,
+  "static_import_violations": 0
+}

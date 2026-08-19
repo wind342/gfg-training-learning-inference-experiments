@@ -1,0 +1,1 @@
+"""OpenTelemetry projection experiment tests."""

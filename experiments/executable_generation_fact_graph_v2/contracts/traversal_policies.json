@@ -1,0 +1,30 @@
+{
+  "policies": {
+    "formation_adjacent_generated_origin": {
+      "edge_kinds": [
+        "execution_or_generation_relation"
+      ],
+      "relation_types": [
+        "generated_origin_dependency"
+      ],
+      "stop_at_registered_source": true
+    },
+    "order_execution": {
+      "edge_kinds": [
+        "fact_occurrence_incidence",
+        "execution_or_generation_relation"
+      ],
+      "relation_types": [
+        "commits_version",
+        "conflicts_with",
+        "generated_origin_dependency",
+        "message_send_receive",
+        "program_order",
+        "reads_from",
+        "realizes_fact",
+        "synchronizes_with"
+      ]
+    }
+  },
+  "registry_id": "executable-generation-fact-graph-traversal-v2"
+}

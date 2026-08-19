@@ -1,0 +1,18 @@
+{
+  "database_head": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+  "inherited_core_changes_main_to_database": [
+    "src/generation_relation_core/relation_evidence.py"
+  ],
+  "inherited_core_schema_change_count": 0,
+  "measurement_base_head": "cb58a33a6542e2778e6c7dbd1aa916ce521c3f8e",
+  "new_core_change_count": 0,
+  "new_core_changes_database_to_unified": [],
+  "new_core_schema_change_count": 0,
+  "new_domain_specific_core_field_count": 0,
+  "original_main_base": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+  "otel_specific_core_field_count": 0,
+  "source_map_specific_core_field_count": 0,
+  "status": "PASS",
+  "unified_head": "integration/unified-operational-projection-proof-v2 working tree at audit time",
+  "unified_proof_specific_core_field_count": 0
+}

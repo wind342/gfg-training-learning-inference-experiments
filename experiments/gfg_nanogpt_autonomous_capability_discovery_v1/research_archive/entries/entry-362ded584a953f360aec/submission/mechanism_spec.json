@@ -1,0 +1,44 @@
+{
+  "schema": "gfg-dual-dynamics-mechanism-spec-v1",
+  "version": "1.0.0",
+  "unified_mechanism": "CapabilityDynamicsMechanism",
+  "formation_submodel": "FormationDynamics",
+  "stability_submodel": "StabilityDynamics",
+  "scientific_claim": "Weight decay recharges a clipped-gradient relaxation oscillator. Its bounded impulses reorganize a learned cyclic rule representation and form generalization; after formation, the same impulses load a distinct recovery/burden state that can transiently degrade and then restore the formed capability.",
+  "formation_update": {
+    "baseline": "Before formation, capability advances by formation_velocity times optimizer-step delta; after formation it closes exponentially toward one without falling below 0.90.",
+    "episode_impulse": "Observed or recursively generated oscillator episodes add gain(capability) * impulse_scale * (1-capability).",
+    "gain_regions": [
+      {"capability_low": 0.0, "capability_high": 0.2, "gain": 0.08},
+      {"capability_low": 0.2, "capability_high": 0.6, "gain": 0.72},
+      {"capability_low": 0.6, "capability_high": 0.9, "gain": 0.16},
+      {"capability_low": 0.9, "capability_high": 1.0, "gain": 0.55}
+    ]
+  },
+  "stability_update": {
+    "state": [
+      "next_episode_onset",
+      "recharge_period",
+      "impulse_burden",
+      "recovery_memory",
+      "fragility_discharge_done",
+      "shock_onset",
+      "shock_amplitude",
+      "impulse_scale"
+    ],
+    "burden_increment": "0.07 * impulse_scale per post-formation oscillator episode",
+    "ordinary_recovery": "0.035 * exp(-episode_age/30) for episode_age from 0 through 90",
+    "shock_recovery": "shock_amplitude * exp(-shock_age/70) for shock_age from 0 through 90",
+    "closure": "Formation fragility can discharge after burden 0.20 at formation age 600-1200. Accumulated burden discharges at 0.995, resets to 0.72, and updates recovery memory and recharge period.",
+    "recharge_periods": {
+      "preformation": 350.0,
+      "early_postformation": 380.0,
+      "closed_formed": 358.0,
+      "post_catastrophe_recovery_memory": 395.0
+    }
+  },
+  "composition": "predicted_validation = clamp(FormationDynamics.output - StabilityDynamics.output, 0, 1)",
+  "prefix_only": true,
+  "future_gfg_reads": 0,
+  "forbidden_identity_lookups": []
+}

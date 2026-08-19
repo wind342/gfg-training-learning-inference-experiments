@@ -1,0 +1,264 @@
+{
+  "artifact_count": 14,
+  "artifacts": [
+    {
+      "path": "environment.json",
+      "sha256": "829e8c0b9a860e17cc36894e72bbccc0a943c034e43b0727425731a36ed932e6",
+      "size": 660
+    },
+    {
+      "path": "hierarchical_consistency_core_database_to_opentelemetry.json",
+      "sha256": "4a47b47a008e6e51a2008d2d8b3d8af6d3dd1c24fe048e970188e8739bf4e744",
+      "size": 503
+    },
+    {
+      "path": "hierarchical_consistency_source_map_composition.json",
+      "sha256": "29f104d72477760297b3127443adeddea0fb06d2b625ba1e8acbc2db8743935f",
+      "size": 492
+    },
+    {
+      "path": "negative_controls.json",
+      "sha256": "f3d533973f8d75c81710c862a242be830fb7665daab8fbe4b7b2cea368d2be8b",
+      "size": 2683
+    },
+    {
+      "path": "oracle_isolation.json",
+      "sha256": "a48586f85f828cf5485e71c9a01742f4b26c501672e499ec222c08cbc6441cb2",
+      "size": 320
+    },
+    {
+      "path": "output_orthogonality.json",
+      "sha256": "e0432f4e6cabdf171746ec671288d735237fd333d03ca44d9e78de0803f2aee8",
+      "size": 284
+    },
+    {
+      "path": "projection_equivalence_database.json",
+      "sha256": "db4a5074d876864aa3e2ca909f047c53e25c417ad1cde0010f60b55bafe47d1a",
+      "size": 2776
+    },
+    {
+      "path": "projection_equivalence_opentelemetry.json",
+      "sha256": "79db06726b49c908195e5d6e71522f8c0581c8a7138018301874f03b1a089078",
+      "size": 728
+    },
+    {
+      "path": "projection_equivalence_source_map.json",
+      "sha256": "8da17d62ee2a8089f6d03408a4fdbd4d3ae1229f255d7ebe8c639dd336f2803f",
+      "size": 742
+    },
+    {
+      "path": "run_summary.json",
+      "sha256": "ac2ecb413b7e07b23e824329c43cd1d24ad2a8cd662e509d4ee4ea5efbfa529c",
+      "size": 610
+    },
+    {
+      "path": "second_authority_audit.json",
+      "sha256": "6ad0ac39b828b175c9b0bfc3c469384741341ea34569b2d764e4b5db8b720fd6",
+      "size": 818
+    },
+    {
+      "path": "strict_partiality_database.json",
+      "sha256": "455b1f249efd7f0d01e99bb19b501b9b8f1bfbbe970b4eaca31ab66867126abf",
+      "size": 1262
+    },
+    {
+      "path": "strict_partiality_opentelemetry.json",
+      "sha256": "e7a1e9b83c31e328d7435e7b94ba0852df7eae42b2c6db6d38800bd4851b726d",
+      "size": 528
+    },
+    {
+      "path": "strict_partiality_source_map.json",
+      "sha256": "f1c2dc7f69226ad78e033a2869ad6fa054a4bb88fea302972048607d1a53b8a2",
+      "size": 511
+    }
+  ],
+  "base_commit": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+  "implementation_files": [
+    {
+      "path": "__init__.py",
+      "sha256": "fbde75dc07ebde55b8bd8611b270eadeb61a3636358809bdfe5803ea4871d89e",
+      "size": 53
+    },
+    {
+      "path": "EXPERIMENT_REPORT.md",
+      "sha256": "8cb2268f52a05954cbf592a905a44ac33f05b0e8ec21d5a9b10ab81bc599c29c",
+      "size": 5238
+    },
+    {
+      "path": "profiles/database_which_lineage_v1.json",
+      "sha256": "518ba0f6de62fc4eb53ae6afb1fcf40177c6483c090a63be37cbbb119a4fcce9",
+      "size": 1367
+    },
+    {
+      "path": "profiles/ecma426_source_map_v1.json",
+      "sha256": "2e967e00143dc591be975e2fd83202855636e0557cc0c870aa54c03ce68823f0",
+      "size": 938
+    },
+    {
+      "path": "profiles/opentelemetry_occurrence_v1.json",
+      "sha256": "ee0386e7f4b53b2e0966e0305437f96d1f05dcb8c267a75381720bd0e04a461e",
+      "size": 943
+    },
+    {
+      "path": "README.md",
+      "sha256": "ff4e3ca5227efa3f974c67e6780a2d9dd52f8c9fce36562a45e9a763a5f818b4",
+      "size": 3216
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha256": "f67a437b3910b0400486a45167d0001163081e3b8b3f1d6166df4e3a3adf3581",
+      "size": 44
+    },
+    {
+      "path": "scripts/run_all.py",
+      "sha256": "7623bb9f094b3db6bd0bccc7258ec7c686d3a98205a6fba16cc251a6824478d7",
+      "size": 14399
+    },
+    {
+      "path": "src/__init__.py",
+      "sha256": "ad37077ab9c3511b7e79149591690de9a0413e77139a8b542f77dd0c50aad68c",
+      "size": 56
+    },
+    {
+      "path": "src/database_projection.py",
+      "sha256": "d558fea7f2cb85d59845cec01e89bb48de9923d22474eb6e87ac13e0fdec85ba",
+      "size": 9398
+    },
+    {
+      "path": "src/database_reference.py",
+      "sha256": "93839d5be128fd1863b97b7750cca5080cdb04919e692b8cbfe4f2afa8829b4c",
+      "size": 8773
+    },
+    {
+      "path": "src/errors.py",
+      "sha256": "cbbbaa10c523eff3f9aa547d7dd726b3a346c6f5b8a94d73a130e0d7f945d97f",
+      "size": 342
+    },
+    {
+      "path": "src/exact_derivability.py",
+      "sha256": "4d6664ecbc855b9168adb47f88d867b74d75f216f741db8a84fda73106152c58",
+      "size": 2251
+    },
+    {
+      "path": "src/hierarchical_consistency.py",
+      "sha256": "c2bab47479c3a7ce5ff6b9b5bcde459ac0c858442542563412357f3e9bdc807f",
+      "size": 2790
+    },
+    {
+      "path": "src/isolation_checks.py",
+      "sha256": "e7793082c013c16eb75ec6e90857b61f3567d5a67d6567267bf255e2ee12abbe",
+      "size": 6420
+    },
+    {
+      "path": "src/negative_controls.py",
+      "sha256": "06158b99d079f35a17491a1f34b8b9f2a10e6f9394ec15563974b93e4f236c9b",
+      "size": 6906
+    },
+    {
+      "path": "src/output_orthogonality.py",
+      "sha256": "4296c977b45e6ba42a5c1e05f35bb55ab7adce82101ac69588f4f63c1982a3d3",
+      "size": 1429
+    },
+    {
+      "path": "src/projection_profile.py",
+      "sha256": "d15558e654fce92cc8ffb109c1a54364a6ac97c3be61789fdc6acd42dd58621d",
+      "size": 3361
+    },
+    {
+      "path": "src/projection_result.py",
+      "sha256": "3bdab80de59735c66d641d262dfdf60e27ef05eca9029d3497fc82abd852177f",
+      "size": 5651
+    },
+    {
+      "path": "src/report_builder.py",
+      "sha256": "c5b8967b1750244ea655a33cba8e31922888c55c947c7e854a8a67c1f374330c",
+      "size": 2594
+    },
+    {
+      "path": "src/strict_partiality.py",
+      "sha256": "2f8dc53d46161277a277fd33cf0eeb0743ca0f3056db47405a588e4cbb91dcd5",
+      "size": 4877
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "443441113ee2e0a21295797e689285d187522044dc2534be8e1127e0ed671e65",
+      "size": 60
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "d577e3bb92a3e58e3e7f8ed14bd19e4211aa5c9a8e0cb131ad66ec7862448822",
+      "size": 217
+    },
+    {
+      "path": "tests/test_database_p1.py",
+      "sha256": "e8dfdbca5f05713922e6a3f7cbb96c6738a7f5ca64bd68ab04d3e11f0329b12b",
+      "size": 1365
+    },
+    {
+      "path": "tests/test_database_p2.py",
+      "sha256": "7d738aa172bdf50e4cfea1823484c2e1e5171f6759a2348736281e1b9a4c36db",
+      "size": 659
+    },
+    {
+      "path": "tests/test_hierarchical_consistency.py",
+      "sha256": "99689fc026716cb3a41065642ab94f33e982d24bd046e070df060a7d17bc808b",
+      "size": 1046
+    },
+    {
+      "path": "tests/test_negative_controls.py",
+      "sha256": "5b4ef1faab6b0b15680ff3db2208a51c817382a92053f04ffa407be06f1f9899",
+      "size": 450
+    },
+    {
+      "path": "tests/test_no_second_authority.py",
+      "sha256": "c913308c6d716f3a6a7884e6bae100d05c56ac0e73bc3fb915e96af4e13fc1b5",
+      "size": 556
+    },
+    {
+      "path": "tests/test_oracle_isolation.py",
+      "sha256": "b8729cfe3a441438ae09e5398f9e1f01cfc8d349a17663b632e6d44508f56cd2",
+      "size": 927
+    },
+    {
+      "path": "tests/test_otel_p1.py",
+      "sha256": "077aa58ccb3cd8869cd15fde5daefd3dc5912d2098ec5ebabcb2702a75649c65",
+      "size": 227
+    },
+    {
+      "path": "tests/test_otel_p2.py",
+      "sha256": "98c7b599afdf8e5ea036432ab73e227d937a413eeaac3cb158990dfa79a10b3d",
+      "size": 198
+    },
+    {
+      "path": "tests/test_otel_p3.py",
+      "sha256": "06ff35450cfccaa344ac250c548deb02cec903ba3b9331de41c62cbd801bf3b1",
+      "size": 218
+    },
+    {
+      "path": "tests/test_output_orthogonality.py",
+      "sha256": "81d872fac6d873ecd5c9e1912d2fb632fb3348ebb6d3e3e7c0d72440eecd0cae",
+      "size": 339
+    },
+    {
+      "path": "tests/test_source_map_composition.py",
+      "sha256": "e6551ef278d41e78b104ab911b0e6b41a1b19f2894f5946da520cc04bf418f12",
+      "size": 225
+    },
+    {
+      "path": "tests/test_source_map_p1.py",
+      "sha256": "55d53429237540aedca573110f3ea5bc085330d55f3981b6cf0fc6faba796025",
+      "size": 231
+    },
+    {
+      "path": "tests/test_source_map_p2.py",
+      "sha256": "f806f9f88af7927819eab2397ec7a58dcaec7db8d7150302c3e582c69bce4660",
+      "size": 210
+    },
+    {
+      "path": "tests/test_status_boundaries.py",
+      "sha256": "fc8d91233a04c2727cda66130d658bc4f2fff9969eb5dd41667f0fe355acd09b",
+      "size": 567
+    }
+  ],
+  "status": "SUPPORTED"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "capability-formation-mechanism-spec-v1",
+  "name": "cyclic_rule_completion_with_adaptive_relaxation",
+  "version": "1.0.0",
+  "deterministic": true,
+  "scientific_claim": "Full-batch training first memorizes observed pairs, then a distributed composition rule makes unseen-pair logit margins uniformly positive. After formation, Adam second-moment relaxation can cause clipped excursions, but the same full-batch rule gradients restore the formed capability.",
+  "finite_states": [
+    "SAMPLE_MEMORIZATION",
+    "RULE_FORMING",
+    "RULE_CANDIDATE",
+    "RULE_FORMED",
+    "TRANSIENT_DEGRADED",
+    "RULE_RECOVERED"
+  ],
+  "state_variables": {
+    "memorization_gap": "train_accuracy minus validation_accuracy",
+    "rule_completion_fraction": "validation-grid fraction whose learned rule margin is positive, represented by validation accuracy",
+    "adaptive_risk": "LOW, HIGH, or EXCURSION state of the optimizer relaxation oscillator",
+    "effective_optimizer_updates": "parameter-changing updates; this differs from declared step only under the intervention"
+  },
+  "primitive_gfg_bindings": [
+    "evaluation facts read exact parameter-version outcomes",
+    "batch materialization facts identify the repeated complete training source",
+    "forward/loss, backward, clipping, and optimizer fact blocks bind each source to its concrete outcome",
+    "GeneratedOrigin binds each new parameter and optimizer-state version into later occurrences"
+  ],
+  "formation_transition": {
+    "guard": "an earlier validation accuracy is at most 0.30 and three consecutive grid evaluations have train accuracy at least 0.99 and validation accuracy at least 0.90",
+    "forecast_estimator": "snap(cut_step + 150 + 1000 * max(0, 0.90 - current_validation_accuracy)) to the observed evaluation grid",
+    "high_precision_interval": "estimate plus or minus one evaluation interval",
+    "primary_interval": "estimate plus or minus two evaluation intervals"
+  },
+  "stability_transition": {
+    "preconditions": [
+      "formed rule with a broad positive unseen-pair margin",
+      "small full-batch loss and gradients",
+      "decayed Adam exp_avg_sq followed by an adaptive update excursion"
+    ],
+    "degradation": "a parameter version formed during the excursion loses train and validation rule margins",
+    "recovery": "large full-batch gradients are clipped and subsequent exact optimizer generations rebuild positive margins",
+    "classification": "TRANSIENT_DEGRADATION_RECOVERY"
+  },
+  "calibration": {
+    "first_post_formation_risk_offset": 2900,
+    "later_risk_period": 4500,
+    "calibration_is_formula_not_trajectory_table": true
+  }
+}

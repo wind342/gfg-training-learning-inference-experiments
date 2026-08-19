@@ -1,0 +1,73 @@
+{
+  "access_date": "2026-07-21",
+  "authority_policy": {
+    "semantic_authority": "Official W3C publications and official errata only",
+    "third_party_role": "Independent parser or implementation only; never semantic authority",
+    "unavailable_status": "W3C_PROV_REFERENCE_UNAVAILABLE"
+  },
+  "documents": [
+    {
+      "bytes": 271572,
+      "canonical_publication_identity": "W3C Recommendation 30 April 2013",
+      "id": "PROV-DM",
+      "media_type": "text/html; charset=utf-8",
+      "sha256": "5c925c21bc96c285b25017c3b90d82cf74251d07713b71fcb81ca60f873c9e88",
+      "url": "https://www.w3.org/TR/2013/REC-prov-dm-20130430/"
+    },
+    {
+      "bytes": 205708,
+      "canonical_publication_identity": "W3C Recommendation 30 April 2013",
+      "id": "PROV-N",
+      "media_type": "text/html; charset=utf-8",
+      "sha256": "c7320ed45cc643eca0819b0616835529dfb35dc819eaf50deaf209ee1e974e49",
+      "url": "https://www.w3.org/TR/2013/REC-prov-n-20130430/"
+    },
+    {
+      "bytes": 464179,
+      "canonical_publication_identity": "W3C Recommendation 30 April 2013",
+      "id": "PROV-O",
+      "media_type": "text/html; charset=utf-8",
+      "sha256": "6b96671ab84faf12ce3f041aca12c3f93a6df2ed242348810743179a68e69555",
+      "url": "https://www.w3.org/TR/2013/REC-prov-o-20130430/"
+    },
+    {
+      "bytes": 285333,
+      "canonical_publication_identity": "W3C Recommendation 30 April 2013",
+      "id": "PROV-CONSTRAINTS",
+      "media_type": "text/html; charset=utf-8",
+      "sha256": "0e65d02339347af6f6e5744cb69a99cf56430e8fd9dd904ac476541634361287",
+      "url": "https://www.w3.org/TR/2013/REC-prov-constraints-20130430/"
+    },
+    {
+      "bytes": 18090,
+      "canonical_publication_identity": "Official W3C PROV errata index",
+      "id": "PROV-ERRATA",
+      "media_type": "text/html; charset=utf-8",
+      "sha256": "88dc4c9ce06c589f2d91e5462c34c5f4f1377e408892ea07868930ae5787691a",
+      "url": "https://www.w3.org/2011/prov/errata.html"
+    },
+    {
+      "bytes": 275610,
+      "canonical_publication_identity": "W3C Working Group Note 30 April 2013",
+      "id": "PROV-IMPLEMENTATIONS",
+      "media_type": "text/html; charset=utf-8",
+      "sha256": "fd2799a60ba7aee0e18223da165a0fd0752e7abe442982a275452df2374da310",
+      "url": "https://www.w3.org/TR/2013/NOTE-prov-implementations-20130430/"
+    },
+    {
+      "bytes": 232460,
+      "canonical_publication_identity": "Official W3C PROV Constraints test process snapshot",
+      "id": "PROV-CONSTRAINTS-TEST-PROCESS",
+      "media_type": "text/html; charset=utf-8",
+      "sha256": "5a8dd5d121b55cb505f32094ae719ddcda77069486fbe4229ddae087039553ea",
+      "url": "https://dvcs.w3.org/hg/prov/raw-file/default/testcases/process.html"
+    }
+  ],
+  "download_storage": {
+    "committed": false,
+    "path": "experiments/w3c_prov_projection_v1/runtime/authorities",
+    "reason": "Full W3C documents remain in an ignored runtime directory. Only identities, clauses, and audits are committed."
+  },
+  "freeze_status": "FROZEN_AND_AVAILABLE",
+  "manifest_version": 1
+}

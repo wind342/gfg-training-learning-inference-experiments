@@ -1,0 +1,26 @@
+{
+  "ai_scientific_input": "complete validated participant-safe training GFG only",
+  "baseline_commit": "f8a9df00dcd4b240d2a911d431553d1b9cc84b7a",
+  "capture_binding_profile": "v2 single-outcome outcome-specific semantic bindings; source-by-outcome Cartesian expansion forbidden",
+  "claim": "Within the preregistered nanoGPT model, task, training, prediction and intervention domain, GFG-driven AI can autonomously submit one unified executable theory containing distinct formation and post-formation stability dynamics; both submodels prospectively forecast an unseen training future and predict their corresponding effects under one sealed causal intervention.",
+  "prospective_secondary_question": "superseded: post-formation stability is a primary component of the v7 claim rather than a secondary question",
+  "secondary_question_is_primary_pass_gate": true,
+  "stability_state_closure_submission_requirement": true,
+  "formal_instance_count": 3,
+  "minimum_instance_passes": 2,
+  "nanoGPT_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+  "no_additional_instance_after_failure": true,
+  "one_candidate_per_instance": true,
+  "participant_task_method_orientation": {
+    "document": "EXECUTABLE_MECHANISM_DISCOVERY_GUIDE.md",
+    "minimum_reading_seconds_shared_with_gfg_orientation": 300,
+    "purpose": "define the executable mechanism-discovery workflow, state-sufficiency test, operational state-use audit, report-code correspondence, prefix-only falsification, matched-state divergent-future search, explicit formation/stability submodels, full-horizon stability closure, cross-run transition-law discipline and intervention-state audit",
+    "target_mechanism_or_hidden_answer_disclosed": false
+  },
+  "sequential_instances": true,
+  "status_if_at_least_two_pass": "GFG_AI_AUTONOMOUS_SCIENTIFIC_DISCOVERY_FEASIBLE",
+  "status_otherwise": "GFG_AI_AUTONOMOUS_SCIENTIFIC_DISCOVERY_NOT_ESTABLISHED",
+  "dual_executable_submodels_required": true,
+  "component_curve_composition_required": true,
+  "version": "2.0.0"
+}

@@ -1,0 +1,65 @@
+{
+  "derivation_rules": {
+    "lower_comparisons": "count classified comparison cases and split by algebraic/task domain IDs",
+    "manifest": "file_count fields from artifact_manifest.json",
+    "observations": "read native_observation_count from nx_field_coverage required fields",
+    "tests": "passed_count from the first hardening run when present, otherwise the frozen v1 run",
+    "unique_sources": "set cardinality of source_identity across Native corpus source-variable maps"
+  },
+  "manual_statistic_literals_allowed": false,
+  "schema_version": "report-statistics-v1",
+  "sources": {
+    "coverage": {
+      "path": "nx_field_coverage.json",
+      "sha256": "02f73faa32d53204de736eea9a614062160340ae46ac4bf4e902db62de18442a"
+    },
+    "lower": {
+      "path": "hierarchical_projection_exact_comparison.json",
+      "sha256": "389a90d9b71f97a3d159a0f107f084be1b8b55a51590c827ed6ad1c041c59fa1"
+    },
+    "manifest": {
+      "path": "artifact_manifest.json",
+      "sha256": "295502458b112b25ceb0d598f9856c1ae698572b3b0b55aad3c380cf450449ba"
+    },
+    "native": {
+      "path": "native_nx_polynomials.json",
+      "sha256": "da9b588ac182d4db38ceb3eff2fbabd8df13ca3cf1ce806c982971988f79a73b"
+    },
+    "negative": {
+      "path": "negative_controls.json",
+      "sha256": "000247377fe17c448006da718e773f6b82e32c7dfdb477268a61b0d4faf38ef1"
+    },
+    "p1": {
+      "path": "nx_exact_comparison.json",
+      "sha256": "e82354f4f385ec7677b13deabff410ca32f5899a0459e50579e3c1f994f5cbe5"
+    },
+    "p2": {
+      "path": "nx_strictness_counterexamples.json",
+      "sha256": "aa811c7016a80dadf4da7e2ea809380537420d360c690cbef01f6460d36dcb66"
+    },
+    "tests": {
+      "path": "runs/run_1/test_results.json",
+      "sha256": "16c70f1bc88d699e9363b29c27c55d14ffbab823126f1e358c1f35d5d067f761"
+    }
+  },
+  "statistics": {
+    "case_count": 13,
+    "coefficient_observation_count": 197,
+    "exponent_observation_count": 332,
+    "formal_algebraic_comparison_count": 39,
+    "lower_domain_comparison_count": 52,
+    "manifest_artifact_file_count": 37,
+    "manifest_file_count": 93,
+    "monomial_factor_count": 332,
+    "negative_control_count": 45,
+    "output_count": 42,
+    "polynomial_term_count": 197,
+    "real_execution_count": 10,
+    "source_variable_observation_count": 135,
+    "strictness_pair_count": 5,
+    "task_projection_comparison_count": 13,
+    "test_count": 35,
+    "unique_source_identity_count": 131
+  },
+  "status": "REPORT_STATISTICS_DERIVED_FROM_ARTIFACTS"
+}

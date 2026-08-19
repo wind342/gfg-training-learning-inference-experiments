@@ -1,0 +1,221 @@
+{
+  "audit_id": "provenance-semiring-projection-v1-preimplementation",
+  "audit_date": "2026-07-22",
+  "repository": "wind342/source-information-continuity",
+  "base": {
+    "branch": "integration/unified-operational-projection-proof-v2",
+    "commit": "7320fe8a2d690fc87da77d0739b432ea1812d63b"
+  },
+  "protected_trees": {
+    "src/generation_relation_core": "03fbdce13249f84abe9d8fb605da31cdc36eda27",
+    "protocol/core_v3": "0b4a2608864e771ebca7cdbfad95aabaed2d0723",
+    "compat/v2": "7bbb49d18daf7ea99d7633b40c6df5bc002824ca",
+    "tests/core": "280cb44d592ae48d986719638980c11e57aab1f9"
+  },
+  "existing_database_authority": {
+    "source_branch": "experiment/database-lineage-core-v3-native-v1",
+    "source_head": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+    "source_tree": "64b5365d9a828a645c99b536254a07a2519f0cc0",
+    "integrated_tree": "64b5365d9a828a645c99b536254a07a2519f0cc0",
+    "integrated_tree_exact": true,
+    "which_lineage_profile": {
+      "path": "experiments/operational_projection_proof_v2/profiles/database_which_lineage_v1.json",
+      "bytes": 3364,
+      "sha256": "d32b809931644617d763bad597b62904bba3273e7fa62f9afa963fc74387ac40"
+    },
+    "which_lineage_result": {
+      "path": "experiments/operational_projection_proof_v2/artifacts/projection_equivalence_database.json",
+      "bytes": 4198,
+      "sha256": "337b92bd88f11a51fe88d6dc2c47896c2bed731470016cd503b7fc2b44b4b8f9",
+      "candidate_reference_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+      "candidate_record_count": 112,
+      "reference_record_count": 112,
+      "status": "SUPPORTED"
+    },
+    "synthetic_result_artifact_sha256": "5b98dbdd85d8d84e73c2dc31103237c963a97d083758c2495e086359829a1419",
+    "reused_executor_files": {
+      "experiments/database_lineage/src/relational_executor.py": "b44c82bad0eda9a229145f24c0e228563385e44b375f8897dac0686bb8566094",
+      "experiments/database_lineage/src/operators.py": "2570549868c67906087de065cc367cdd55522ca5991fa986d98212a9b8c0718e",
+      "experiments/database_lineage/src/core_adapter.py": "7e66d32187a8c8683eec459749db2ca508ec843e9c48c8336f4a7630b23eb7c7"
+    }
+  },
+  "primary_theory_authority": {
+    "title": "Provenance Semirings",
+    "authors": [
+      "Todd J. Green",
+      "Grigoris Karvounarakis",
+      "Val Tannen"
+    ],
+    "venue": "Proceedings of the Twenty-Sixth ACM SIGMOD-SIGACT-SIGART Symposium on Principles of Database Systems (PODS 2007)",
+    "year": 2007,
+    "pages": "31-40",
+    "doi": "10.1145/1265530.1265535",
+    "doi_url": "https://doi.org/10.1145/1265530.1265535",
+    "author_public_url": "https://www.cs.ucdavis.edu/~green/papers/pods07.pdf",
+    "local_path": "experiments/provenance_semiring_projection_v1/audits/authorities/green-karvounarakis-tannen-pods2007-author-version.pdf",
+    "download_date": "2026-07-22",
+    "bytes": 262241,
+    "sha256": "74e092702db58518afeaf909e1d3380848165b2cb9ae75dc6822b04f66aa5be0",
+    "pdf_pages": 10,
+    "version_note": "Author-hosted public PDF with the PODS 2007 ACM proceedings layout. Its ten PDF pages correspond to proceedings pages 31-40 (PDF page n maps to proceedings page 30+n). The ACM-hosted binary was not used as a second theory source, so byte-level publisher-version differences were not asserted.",
+    "definition_locations": [
+      {
+        "subject": "K-relations and finite support",
+        "location": "Definition 3.1, PDF page 3, proceedings page 33"
+      },
+      {
+        "subject": "positive relational algebra on K-relations; union addition, projection summation, selection multiplication, natural-join multiplication, renaming",
+        "location": "Definition 3.2, PDF page 3, proceedings page 33"
+      },
+      {
+        "subject": "bag semantics over (N,+,multiplication,0,1), set semantics over Boolean semiring, and positive Boolean expressions",
+        "location": "discussion following Proposition 3.3, PDF page 3, proceedings page 33"
+      },
+      {
+        "subject": "query evaluation commutes exactly with semiring homomorphisms",
+        "location": "Proposition 3.5, PDF page 4, proceedings page 34"
+      },
+      {
+        "subject": "why-provenance as P(X) with union for both semiring operations",
+        "location": "Section 4, PDF page 4, proceedings page 34"
+      },
+      {
+        "subject": "positive-algebra provenance semiring N[X]",
+        "location": "Definition 4.1, PDF page 4, proceedings page 34"
+      },
+      {
+        "subject": "natural-number coefficients and exponents, including 2s^2+rs",
+        "location": "Figure 5 and accompanying example, PDF page 4, proceedings page 34"
+      },
+      {
+        "subject": "universal valuation homomorphism and factorization through N[X]",
+        "location": "Proposition 4.2 and Theorem 4.3, PDF page 4, proceedings page 34"
+      }
+    ]
+  },
+  "allowed_authored_path": "experiments/provenance_semiring_projection_v1/",
+  "prohibited_modifications": [
+    "src/generation_relation_core/",
+    "protocol/core_v3/",
+    "compat/v2/",
+    "tests/core/",
+    "experiments/database_lineage/",
+    "experiments/source_map_projection/",
+    "experiments/opentelemetry_projection/",
+    "experiments/operational_projection_proof_v2/"
+  ],
+  "frozen_claim_scope": {
+    "included": [
+      "base relation",
+      "selection",
+      "projection",
+      "renaming",
+      "union and union-all behavior under K-relation addition",
+      "natural or explicit-key equi-join",
+      "self-join",
+      "duplicate-valued identity-distinct tuples",
+      "finite multistage positive relational-algebra composition"
+    ],
+    "excluded": [
+      "difference",
+      "negation",
+      "antijoin",
+      "NOT EXISTS",
+      "aggregation",
+      "recursion",
+      "Datalog",
+      "window functions",
+      "NULL three-valued logic",
+      "outer join",
+      "arbitrary SQL",
+      "probabilistic event evaluation",
+      "arbitrary semirings",
+      "universal query equivalence",
+      "the full database-provenance literature",
+      "all database management systems",
+      "a reproof of all Green-Karvounarakis-Tannen results"
+    ],
+    "mandatory_scope_prefix": "Within the frozen positive relational-algebra profile"
+  },
+  "candidate_authority": {
+    "allowed_reads": [
+      "ValidatedSnapshot",
+      "matching SnapshotValidation",
+      "frozen provenance_semiring_nx_profile_v1",
+      "frozen core_to_nx_crosswalk_v1",
+      "structural polynomial canonicalizer"
+    ],
+    "prohibited_reads": [
+      "base relation fixture",
+      "SQL",
+      "positive-RA AST",
+      "ordinary database result",
+      "Native N[X] output",
+      "existing which-lineage output",
+      "execution receipt answer",
+      "Python object identity",
+      "test expected values",
+      "prior candidate artifacts"
+    ]
+  },
+  "native_authority": {
+    "allowed_reads": [
+      "base annotated relations",
+      "frozen positive-RA AST",
+      "frozen semiring authority profile"
+    ],
+    "prohibited_reads": [
+      "Core runtime or protocol",
+      "ValidatedSnapshot",
+      "GenerationBinding",
+      "existing lineage answer",
+      "Candidate code or output",
+      "Candidate artifacts"
+    ]
+  },
+  "planned_independent_paths": [
+    {
+      "path": "ordinary_execution_process",
+      "inputs": ["base relations", "frozen RA AST"],
+      "outputs": ["ordinary tuples", "canonical CSV", "canonical JSON"],
+      "forbidden": ["Core", "polynomial evaluator", "Native annotations", "Candidate"]
+    },
+    {
+      "path": "native_k_relation_process",
+      "inputs": ["base annotated relations", "frozen RA AST", "semiring profile"],
+      "outputs": ["Native N[X] and direct lower-K results"],
+      "forbidden": ["Core", "Candidate", "existing lineage answers"]
+    },
+    {
+      "path": "core_candidate_process",
+      "inputs": ["ValidatedSnapshot", "SnapshotValidation", "N[X] profile", "crosswalk"],
+      "outputs": ["Core-projected N[X]"],
+      "forbidden": ["fixtures", "RA AST", "ordinary outputs", "Native outputs", "existing lineage answers"]
+    },
+    {
+      "path": "comparison_process",
+      "inputs": ["canonical outputs from isolated processes"],
+      "outputs": ["exact mismatch accounting"],
+      "forbidden": ["mutation", "completion", "automatic repair", "hidden relationship registry"]
+    }
+  ],
+  "preimplementation_hypotheses": [
+    "Stable registered SourceInformation identities can define identity-distinct polynomial variables without a Core schema change.",
+    "GenerationBinding groups actual origins by concrete occurrence and outcome, permitting product within an occurrence and sum across alternative producers.",
+    "GeneratedOrigin prior_support_id permits finite recursive polynomial substitution across real adjacent stages.",
+    "Evidence, Environment, ExplicitDisposition and GeneratorOperationResult can vary without changing selected N[X] facts.",
+    "The existing database executor callbacks can be reused write-only without reading its which-lineage answer or changing ordinary output."
+  ],
+  "falsifiers_and_blockers": [
+    "Actual Core facts cannot express a required derivation without a domain-specific field.",
+    "The reused database execution path cannot emit one real occurrence per derivation while preserving ordinary bytes.",
+    "The primary authority does not support the frozen K-relation operation used by an evaluated profile.",
+    "The Candidate requires the RA AST, fixture or Native output to recover addition or multiplication.",
+    "Independent Native and Candidate canonical N[X] results differ on any blocking field.",
+    "A legal workload refutes the frozen recursion, coefficient or exponent semantics.",
+    "Five real equal-N[X]/unequal-Gamma pairs cannot be built.",
+    "Any required implementation change escapes the allowed experiment directory."
+  ],
+  "implementation_started": false,
+  "status": "PREIMPLEMENTATION_AUTHORITY_AND_SCOPE_FROZEN"
+}

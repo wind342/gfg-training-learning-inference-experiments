@@ -1,0 +1,9 @@
+{
+  "candidate_additional_ai_calls": 0,
+  "future_gfg_reads": 0,
+  "normalized_rmse_max": 0.2,
+  "transition_classification_required": true,
+  "transition_interval_contains_actual": true,
+  "transition_interval_max_fraction_of_remaining_training": 0.2,
+  "version": "1.0.0"
+}

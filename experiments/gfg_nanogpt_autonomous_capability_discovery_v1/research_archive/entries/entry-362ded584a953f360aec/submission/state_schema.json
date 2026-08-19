@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gfg-dual-dynamics-state-v1",
+  "type": "object",
+  "required": ["formation_state", "stability_state"],
+  "properties": {
+    "formation_state": {
+      "type": "object",
+      "required": [
+        "step",
+        "capability",
+        "formation_velocity",
+        "formed",
+        "transition_step",
+        "episode_impulses_used",
+        "impulse_scale"
+      ],
+      "properties": {
+        "step": {"type": "integer"},
+        "capability": {"type": "number", "minimum": 0, "maximum": 1},
+        "formation_velocity": {"type": "number", "minimum": 0},
+        "formed": {"type": "boolean"},
+        "transition_step": {"type": ["integer", "null"]},
+        "episode_impulses_used": {"type": "integer", "minimum": 0},
+        "impulse_scale": {"type": "number", "minimum": 0}
+      }
+    },
+    "stability_state": {
+      "type": "object",
+      "required": [
+        "step",
+        "last_episode_onset",
+        "next_episode_onset",
+        "recharge_period",
+        "phase",
+        "impulse_burden",
+        "impulse_scale",
+        "recovery_memory",
+        "fragility_discharge_done",
+        "shock_onset",
+        "shock_amplitude",
+        "degradation"
+      ],
+      "properties": {
+        "step": {"type": "integer"},
+        "last_episode_onset": {"type": "number"},
+        "next_episode_onset": {"type": "number"},
+        "recharge_period": {"type": "number", "exclusiveMinimum": 0},
+        "phase": {"type": "number", "minimum": 0},
+        "impulse_burden": {"type": "number", "minimum": 0},
+        "impulse_scale": {"type": "number", "minimum": 0},
+        "recovery_memory": {"type": "integer", "minimum": 0},
+        "fragility_discharge_done": {"type": "boolean"},
+        "shock_onset": {"type": ["number", "null"]},
+        "shock_amplitude": {"type": "number", "minimum": 0, "maximum": 1},
+        "degradation": {"type": "number", "minimum": 0, "maximum": 1}
+      }
+    }
+  }
+}

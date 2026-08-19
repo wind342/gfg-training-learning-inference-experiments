@@ -1,0 +1,24 @@
+{
+  "contract_id": "source-map-projection-generated-inputs-v1",
+  "crlf_fixture": {
+    "path": "unicode-crlf.js",
+    "encoding": "UTF-8",
+    "line_ending": "CRLF",
+    "lines": [
+      "const emoji = \"🔥\";",
+      "",
+      "const composed = \"é\";",
+      "const decomposed = \"é\";",
+      "\tconsole.log(emoji, composed, decomposed);",
+      ""
+    ]
+  },
+  "medium_fixture": {
+    "source_file_count": 3,
+    "records_per_file": 220,
+    "line_template": "const s{source}_{index} = {value};",
+    "encoding": "UTF-8",
+    "line_ending": "LF",
+    "trailing_newline": true
+  }
+}

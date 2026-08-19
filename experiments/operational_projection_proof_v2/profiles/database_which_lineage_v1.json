@@ -1,0 +1,39 @@
+{
+  "profile_id": "database-which-lineage-v1",
+  "source_branch": "experiment/database-lineage-core-v3-native-v1",
+  "source_commit": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+  "declared_input_scope": "Fixed deterministic tuple-level synthetic business and many-to-many relational workloads with bag-preserving selection, projection, equi-join, aggregation, sort, and limit operators.",
+  "selected_facts": [
+    "direct tuple relations",
+    "backward which-lineage",
+    "forward which-lineage",
+    "complete derivation paths",
+    "explicit dispositions",
+    "relation and path multiplicity",
+    "duplicate-valued distinct tuple identities"
+  ],
+  "excluded_facts": [
+    "arbitrary SQL syntax",
+    "optimizer plans",
+    "transactions and concurrency",
+    "distributed execution",
+    "value provenance beyond the declared tuple relations"
+  ],
+  "candidate_path": "actual relational execution -> Core v3 facts -> ValidatedSnapshot -> experiments.operational_projection_proof.src.database_projection.project_database_snapshot",
+  "reference_path": "frozen workload -> hand-authored experiments.database_lineage.src.synthetic_oracle -> experiments.operational_projection_proof.src.database_reference",
+  "exact_comparison_fields": {
+    "direct_relations": ["workload_id", "input_tuple_id", "output_tuple_id", "outcome_kind", "relation_role", "relation_ordinal"],
+    "backward_lineage": ["workload_id", "output_tuple_id", "source_tuple_ids", "derivation_path_count"],
+    "forward_lineage": ["workload_id", "source_tuple_id", "output_tuple_ids", "derivation_path_count"],
+    "derivation_paths": ["workload_id", "output_tuple_id", "source_tuple_id", "path_ordinal", "tuple_path", "relation_roles", "path_length"],
+    "explicit_dispositions": ["workload_id", "input_tuple_id", "output_tuple_id", "core_disposition_category", "reason_code"],
+    "multiplicity": ["workload_id", "total_relation_count", "support_relation_count", "disposition_relation_count", "derivation_path_count", "final_output_count"],
+    "duplicate_identities": ["workload_id", "case_id", "source_tuple_ids", "distinct_identity_count", "source_payload_equal", "output_tuple_ids", "direct_relation_count"]
+  },
+  "multiplicity_semantics": "Bag semantics are preserved with explicit relation/path ordinals and counts; equal values with distinct tuple identities remain distinct.",
+  "canonicalization_rules": "UTF-8 canonical JSON with sorted object keys; section identity fields are explicit; duplicate semantic keys fail before dictionary construction.",
+  "output_orthogonality_rules": "Contract-off and contract-on CSV and JSON bytes, value order, types, and field names must be identical and contain no control-plane field.",
+  "authority_rules": "Candidate reads only ValidatedSnapshot plus its exact validation proof and this profile; Oracle/native results are comparison-only; no persisted secondary relationship store is permitted.",
+  "accepted_limitations": ["fixed deterministic fixtures", "declared relational operators only", "tuple-level which-lineage only"],
+  "mandatory_status_conditions": ["candidate_record_count=112", "reference_record_count=112", "false_positive=0", "false_negative=0", "field_mismatch=0", "multiplicity_mismatch=0", "two valid strict-partiality counterexamples", "output byte identity", "Oracle isolation", "second_authority_store_count=0"]
+}

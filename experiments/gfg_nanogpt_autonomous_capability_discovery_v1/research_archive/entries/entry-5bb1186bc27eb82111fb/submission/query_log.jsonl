@@ -1,0 +1,16 @@
+{"arguments":{"tables":["metadata","chunks","graph_blocks","evaluations"]},"count":4,"operation":"direct_sql_schema"}
+{"arguments":{"max_step":10000,"order":"optimizer_step"},"count":101,"operation":"evaluations"}
+{"arguments":{"group_by":"stage"},"count":24,"operation":"graph_block_stage_inventory"}
+{"arguments":{"stage":"before_batch","max_step":9999},"count":10000,"operation":"batch_source_identity_audit"}
+{"arguments":{"step":0,"roles":["training_task","optimizer_configuration","training_batch_inputs","training_batch_targets"]},"count":19,"operation":"objects"}
+{"arguments":{"relation":"coordinate(output)=coordinate(left)+coordinate(right) mod operand_count"},"count":317,"operation":"training_relation_constraint_solve"}
+{"arguments":{"result":"rank 22 with one generator-scale degree of freedom"},"count":23,"operation":"cyclic_coordinate_validation"}
+{"arguments":{"stages":["evaluation_train:token_embedding","evaluation_validation:token_embedding","evaluation"],"grid_points":101},"count":101,"operation":"evaluation_tensor_alignment"}
+{"arguments":{"metric":"true-class logit margin","split":"validation","grid_points":101},"count":21412,"operation":"derived_margin_scan"}
+{"arguments":{"steps":[1100,1200,1300,1400],"stages":["after_optimizer_step","evaluation"]},"count":8,"operation":"transition_boundary_fact_trace"}
+{"arguments":{"steps":[3700,3800,3900,4000,4100,4200],"roles":["optimizer_state","parameter_gradient","clipped_parameter_gradient"]},"count":450,"operation":"first_stability_episode_tensor_scan"}
+{"arguments":{"steps":[8400,8500,8600,8700],"roles":["optimizer_state","parameter_gradient","clipped_parameter_gradient"]},"count":300,"operation":"second_stability_episode_tensor_scan"}
+{"arguments":{"steps":[4099,4100,4199,4200],"relations":["reads_from","GeneratedOrigin","realizes_fact","program_order"]},"count":16,"operation":"first_stability_generation_chain"}
+{"arguments":{"steps":[8599,8600,8699,8700],"relations":["reads_from","GeneratedOrigin","realizes_fact","program_order"]},"count":16,"operation":"second_stability_generation_chain"}
+{"arguments":{"interval":100,"role":"parameter_version"},"count":1500,"operation":"checkpoint_parameter_displacement_scan"}
+{"arguments":{"hypotheses":["distributed_rule_completion","incremental_lookup","scalar_norm_threshold","strict_post_formation_stability"]},"count":4,"operation":"mechanism_falsification_summary"}

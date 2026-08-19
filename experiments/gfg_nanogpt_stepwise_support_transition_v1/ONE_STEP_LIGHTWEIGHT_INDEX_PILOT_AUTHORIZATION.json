@@ -1,0 +1,22 @@
+{
+  "schema": "nanogpt-one-step-lightweight-index-pilot-authorization-v1",
+  "status": "AUTHORIZED",
+  "execution_authorization": true,
+  "authorization_source": "user message: ok, after review of the lightweight index and 500-record pilot plan",
+  "authorized_scope": [
+    "build one lightweight reference index over the 13 already-validated runs",
+    "fit a CPU-only run-isolated capability-screening baseline",
+    "count baseline-error candidates without calling them full-state counterexamples",
+    "freeze at most 500 deterministic development records for a later full-state pilot"
+  ],
+  "explicitly_forbidden": [
+    "new nanoGPT training",
+    "GPU execution",
+    "persistent AI session",
+    "new GFG construction",
+    "tensor payload duplication",
+    "use of the held-out run for fitting, normalization, threshold selection or sampling"
+  ],
+  "held_out_entry_id": "entry-362ded584a953f360aec",
+  "maximum_selected_development_records": 500
+}

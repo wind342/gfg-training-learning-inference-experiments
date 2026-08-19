@@ -1,0 +1,32 @@
+{
+  "command": "python -m experiments.opentelemetry_projection.scripts.run_tests",
+  "database_lineage": {
+    "failed": 0,
+    "passed": 31,
+    "seconds": 56.18
+  },
+  "final_opentelemetry_projection_recheck": {
+    "failed": 0,
+    "passed": 14,
+    "seconds": 13.98
+  },
+  "generation_relation_core": {
+    "failed": 0,
+    "passed": 33,
+    "seconds": 10.94
+  },
+  "opentelemetry_projection": {
+    "failed": 0,
+    "passed": 14,
+    "seconds": 19.39
+  },
+  "post_format_opentelemetry_projection_recheck": {
+    "failed": 0,
+    "passed": 14,
+    "seconds": 19.96
+  },
+  "total": {
+    "failed": 0,
+    "passed": 78
+  }
+}

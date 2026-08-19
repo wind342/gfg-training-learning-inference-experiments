@@ -1,0 +1,129 @@
+{
+  "audit_version": 1,
+  "baseline": {
+    "actual_remote_main": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+    "actual_remote_main_tree": "ffd70bc0fec126961bf0ac8b4e6963e6c03c3963",
+    "difference_from_expected": "NONE",
+    "expected_main": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+    "independent_baseline_suitable": true,
+    "reason": "The fetched remote main exactly matches the expected commit and tree. The experiment branch was created directly from origin/main, not from any prior projection experiment."
+  },
+  "core_read_audit": {
+    "passes": 2,
+    "result": "ValidatedSnapshot already supplies complete validated authoritative tables and validation closure; no Core source or schema change is required.",
+    "reviewed": [
+      "src/generation_relation_core/entities.py",
+      "src/generation_relation_core/snapshots.py",
+      "src/generation_relation_core/relation_evidence.py",
+      "src/generation_relation_core/canonical.py",
+      "protocol/core_v3/core_v3_protocol.json",
+      "protocol/core_v3/core_v3_entities.schema.json"
+    ]
+  },
+  "questions": [
+    {
+      "number": 1,
+      "answer": "Entity is a physical, digital, conceptual, or other thing with fixed aspects; Activity is something occurring over time that acts upon or with entities; Agent bears responsibility for an activity, entity, or another agent's activity. A GeneratorManifest is therefore projected as prov:SoftwareAgent, not as an activity.",
+      "question": "What do PROV-DM Entity, Activity, and Agent express?"
+    },
+    {
+      "number": 2,
+      "answer": "Generation is the instantaneous completion of producing a new Entity by an Activity. Usage is the instantaneous beginning of an Activity utilizing an Entity. Derivation asserts that a used Entity influenced the creation, transformation, or update of a generated Entity; coincident use and generation alone are not sufficient without the asserted influence.",
+      "question": "What are the normative meanings of Generation, Usage, and Derivation?"
+    },
+    {
+      "number": 3,
+      "answer": "PROV-N permits an identifier before the semicolon in used(id; activity, entity, time, attrs), wasGeneratedBy(id; entity, activity, time, attrs), and wasDerivedFrom(id; generated, used, activity, generation, usage, attrs). The profile always supplies identifiers for these relations.",
+      "question": "How are identified Usage, Generation, and Derivation expressed?"
+    },
+    {
+      "number": 4,
+      "answer": "An expanded derivation names the generated Entity, used Entity, Activity, the Generation of the generated Entity by that Activity, and the Usage of the used Entity by that Activity. The referenced Generation and Usage are first-class identified relations and must agree with the derivation's participants.",
+      "question": "How does expanded derivation cite its five participants?"
+    },
+    {
+      "number": 5,
+      "answer": "Applicable rules are Constraint 23 key-properties for consistent identified relations; Constraint 24 unique-generation; Inference 11 for derivation-generation-use closure; Constraint 50 typing; Constraint 51 prohibiting generation/usage parameters with an unspecified activity; and Constraint 53 impossible type/property overlap. Temporal ordering constraints are NOT_EVALUATED because Start, End, times, and temporal ordering are outside the declared profile. Profile validators additionally require all Usage, Generation, Derivation, and Association references to resolve.",
+      "question": "Which PROV-CONSTRAINTS rules apply to uniqueness, references, derivation consistency, identifiers, and typing?"
+    },
+    {
+      "number": 6,
+      "answer": "In qualified PROV-O, an Activity cites a prov:Usage through prov:qualifiedUsage and the Usage cites its Entity with prov:entity; an Entity cites prov:Generation through prov:qualifiedGeneration and the Generation cites its Activity with prov:activity; an Entity cites prov:Derivation through prov:qualifiedDerivation and the Derivation cites prov:entity, prov:hadActivity, prov:hadGeneration, and prov:hadUsage. Qualified Association uses prov:qualifiedAssociation and prov:agent.",
+      "question": "How does PROV-O express qualified Usage, Generation, Derivation, and Association?"
+    },
+    {
+      "number": 7,
+      "answer": "Unambiguous selected facts are: SourceInformationRecord as Entity; PerceptualSupportRecord as ex:GeneratedSupport Entity; ExplicitDisposition as ex:DispositionRecord Entity; GenerationOccurrence as Activity; GeneratorManifest as SoftwareAgent; occurrence responsibility as Association; and each GenerationBinding as one identified Usage plus one identified Derivation sharing the unique outcome/activity Generation.",
+      "question": "Which Core facts project without ambiguity?"
+    },
+    {
+      "number": 8,
+      "answer": "Excluded facts are EvidenceRecord, EvidenceLink, relation-evidence closure, GeneratorOperationResult, complete EnvironmentRecord, Snapshot validation state and hashes, query indexes, Core registries, complete source/support/occurrence/disposition payloads, complete transform context, GeneratedOrigin bridge identity/evidence/operation facts, and undeclared metadata.",
+      "question": "Which Core facts do not enter this profile?"
+    },
+    {
+      "number": 9,
+      "answer": "When GeneratedOrigin authoritatively refers to a prior generated support, the bridge object collapses in the profile: the downstream Activity directly uses the prior support's PROV Entity. The bridge's independent Core identity and profile-external facts are deliberately not projected.",
+      "question": "How is GeneratedOrigin handled?"
+    },
+    {
+      "number": 10,
+      "answer": "PROV Invalidation means the start of destruction, cessation, or expiry of an Entity. Core ExplicitDisposition records how source information was suppressed, unsupported, or otherwise not represented; it does not assert that an Entity ceased to exist. It is projected as an Entity typed ex:DispositionRecord generated by the Activity.",
+      "question": "Why is ExplicitDisposition not PROV Invalidation?"
+    },
+    {
+      "number": 11,
+      "answer": "The projection uses semantic identifiers for every Usage and Derivation, one Generation per outcome/activity pair, and a deterministic ordinal when identical selected binding semantics repeat. It projects only explicit bindings, never a source-outcome Cartesian product or inferred diagonal. Duplicate-valued sources retain distinct selected source identities.",
+      "question": "How are multi-source, multi-output, repeated use, and multiplicity preserved?"
+    },
+    {
+      "number": 12,
+      "answer": "Yes, but only a closed allowlist is permitted: ex:sourceIdentity, ex:sourceGranularity, ex:domainType, ex:stableDomainIdentity, ex:resultCategory, ex:resultIdentity, ex:dispositionCategory, ex:reasonCode, ex:occurrenceStage, ex:occurrenceType, ex:stableInstanceKey, ex:occurrenceIndex, ex:operationType, ex:generatorName, ex:generatorVersion, ex:codeIdentity, and ex:relationOrdinal, plus prov:type and prov:role.",
+      "question": "Are PROV extension attributes needed?"
+    },
+    {
+      "number": 13,
+      "answer": "Legal extensions encode only the declared stable domain semantics needed to identify or type selected PROV records. Embedding a complete Snapshot, Core table, Core object, Evidence text/blob, operation closure, full payload, full environment, or a mechanical list of Core IDs would bypass the projection boundary and is prohibited.",
+      "question": "Which extensions are legal and which would smuggle Core into PROV?"
+    },
+    {
+      "number": 14,
+      "answer": "The experiment can test whether this frozen generation profile is exactly derivable from a ValidatedSnapshot, agrees with an independent native reference, and is strict relative to complete validated generation-fact states. It cannot establish claims about all PROV extensions, the whole PROV ecosystem, excluded PROV components, all domains, or the inability of PROV in general to encode additional facts.",
+      "question": "What can and cannot be proved?"
+    },
+    {
+      "number": 15,
+      "answer": "Yes. RDFLib 7.6.0 is frozen as an independent standards-based Turtle/RDF parser for the native PROV-O path. Candidate PROV-N parsing and normalization will be experiment-owned and will not call RDFLib, preserving representation independence.",
+      "question": "Is a freezable independent PROV implementation or parser available?"
+    },
+    {
+      "number": 16,
+      "answer": "RDFLib 7.6.0, Git tag 7.6.0 at commit 8b32146a0f9cb748c2068662e50d02b42fc86dfd, wheel rdflib-7.6.0-py3-none-any.whl SHA-256 30c0a3ebf4c0e09215f066be7246794b6492e054e782d7ac2a34c9f70a15e0dd, BSD-3-Clause. Its parser dependency is pyparsing 3.3.2, wheel SHA-256 850ba148bd908d7e2411587e247a1e4f0327839c40e2e5e6d05a007ecc69911d, MIT. PyPI records an active RDFLib release and maintainers; maintenance status is ACTIVE as of access date. Both are implementation dependencies, not semantic authorities, and run from local wheels without network access.",
+      "question": "What third-party version, commit, wheel/hash, license, and maintenance state are frozen?"
+    },
+    {
+      "number": 17,
+      "answer": "A deterministic actual generator will emit documented synchronous callbacks to two independent collectors. The native collector may consume callbacks and emit qualified PROV-O but is forbidden to import Core, read a Snapshot, or call candidate mapping code. The candidate accepts only a ValidatedSnapshot and emits PROV-N; it is forbidden to read native output, receipts, expected answers, or persisted lookup tables. Static import audits, runtime read traces, monkeypatch isolation controls, and independent PROV-N/PROV-O normalizers will enforce this boundary.",
+      "question": "How will native reference and Core candidate be completely isolated?"
+    }
+  ],
+  "third_party_freeze": {
+    "commit": "8b32146a0f9cb748c2068662e50d02b42fc86dfd",
+    "license": "BSD-3-Clause",
+    "maintenance_status": "ACTIVE_AS_OF_2026-07-21",
+    "name": "RDFLib",
+    "role": "Native PROV-O Turtle/RDF parsing only",
+    "semantic_authority": false,
+    "version": "7.6.0",
+    "wheel": "rdflib-7.6.0-py3-none-any.whl",
+    "wheel_sha256": "30c0a3ebf4c0e09215f066be7246794b6492e054e782d7ac2a34c9f70a15e0dd",
+    "transitive_parser_dependency": {
+      "license": "MIT",
+      "name": "pyparsing",
+      "semantic_authority": false,
+      "version": "3.3.2",
+      "wheel": "pyparsing-3.3.2-py3-none-any.whl",
+      "wheel_sha256": "850ba148bd908d7e2411587e247a1e4f0327839c40e2e5e6d05a007ecc69911d"
+    }
+  }
+}

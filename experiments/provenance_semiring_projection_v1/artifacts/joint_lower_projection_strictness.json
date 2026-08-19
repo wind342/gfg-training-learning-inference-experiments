@@ -1,0 +1,16 @@
+{
+  "claim": "The joint tuple of three algebraic targets and the flat-support task projection is non-injective with respect to N[X]",
+  "evaluated_domains": [
+    "bag_naturals",
+    "boolean",
+    "flat_source_support_view",
+    "positive_boolean_lineage"
+  ],
+  "honesty_rule": "NOT_ESTABLISHED would be emitted if no real joint witness existed",
+  "joint_witness_count": 1,
+  "joint_witness_pair_ids": [
+    "lower-exponent"
+  ],
+  "schema_version": "joint-lower-projection-strictness-v1",
+  "status": "JOINT_LOWER_PROJECTION_STRICTNESS_SUPPORTED"
+}

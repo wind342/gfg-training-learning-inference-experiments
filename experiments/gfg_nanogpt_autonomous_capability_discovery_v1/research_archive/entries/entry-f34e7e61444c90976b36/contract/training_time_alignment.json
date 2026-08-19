@@ -1,0 +1,28 @@
+{
+  "batch_t_reads_parameter_version": "theta_t",
+  "evaluation_binding": "evaluation_t reads the exact parameter ResultHandle theta_t current after optimizer step t",
+  "future_after_cut": "all occurrences with optimizer_step greater than prediction_cut_step",
+  "gradient_order": [
+    "forward_t",
+    "loss_t",
+    "backward_t",
+    "gradient_t",
+    "gradient_clip_t",
+    "optimizer_state_read_t",
+    "optimizer_step_t",
+    "optimizer_state_write_t",
+    "theta_t_plus_1"
+  ],
+  "optimizer_step_t": "the concrete optimizer occurrence that reads theta_t and forms theta_t_plus_1",
+  "parameter_generated_origin": "theta_t_plus_1 is the GeneratedOrigin read by the next forward occurrence",
+  "prediction_cut_rule": {
+    "earliest_step": 500,
+    "requires_no_prior_transition": true,
+    "train_accuracy_last_three_min": 0.99,
+    "validation_accuracy_current_max": 0.75,
+    "validation_accuracy_current_min": 0.2
+  },
+  "time_authority": "occurrence identity, exact reads_from, GeneratedOrigin, program_order and parameter-version identity",
+  "wall_clock_alignment_forbidden": true,
+  "version": "1.0.0"
+}

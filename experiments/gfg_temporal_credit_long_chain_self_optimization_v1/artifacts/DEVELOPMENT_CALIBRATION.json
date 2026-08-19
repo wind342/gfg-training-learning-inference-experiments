@@ -1,0 +1,46 @@
+{
+  "base_gfg_validation": {
+    "coordinate_mapping_exact": true,
+    "fact_node_count": 674,
+    "forbidden_label_hits": [],
+    "graph_id": "gfg2_530e8768c4e37d47a952246c0b261d43ca03d345b01f4fe95ae62aa7d56502fe",
+    "graph_sha256": "d89a4d93a52d821b5e1dd6e6585179130657102b0b7caff3d0478b75be417ebb",
+    "incidence_edge_count": 674,
+    "occurrence_node_count": 136,
+    "relation_edge_count": 621,
+    "relation_mapping_exact": true,
+    "snapshot_id": "snap3_d577843fc340372dee17d9ee4d8b61e36d51970f8019e6b7b64d725e578b28b2",
+    "status": "PASS",
+    "validation_sha256": "f42e9834d3cee727f7e0fdb9b50c19ee0b8eda3fb9c7f37b7725bf5ac118195e"
+  },
+  "base_graph_build_seconds": 4.432195900000806,
+  "credit_discovery_gfg_validation": {
+    "coordinate_mapping_exact": true,
+    "fact_node_count": 788,
+    "forbidden_label_hits": [],
+    "graph_id": "gfg2_4a695a5a896599978d124a78697bb97159af9632895e60c630f7c75b5f10953d",
+    "graph_sha256": "d6d95639f9c2c21066702e0d313be5e1767b838be8fe6869db98b5480d5fc55d",
+    "incidence_edge_count": 788,
+    "occurrence_node_count": 345,
+    "relation_edge_count": 1130,
+    "relation_mapping_exact": true,
+    "snapshot_id": "snap3_1e40cbef719a20355e9feb852e5292a22be827e1db1b73d0af03319db1fb161b",
+    "status": "PASS",
+    "validation_sha256": "83b0987ce225cc803f59f725c2a8afad0a711de1971ed372c5a0453b12acd871"
+  },
+  "credit_discovery_graph_build_seconds": 4.791362100000697,
+  "development_episode_count": 144,
+  "formal_thresholds_unchanged": true,
+  "frozen_candidate_count": 9,
+  "frozen_term_group_sizes": {
+    "term-0": 1,
+    "term-1": 2,
+    "term-2": 2,
+    "term-3": 1,
+    "term-4": 3,
+    "term-5": 6,
+    "term-6": 3
+  },
+  "status": "PASS",
+  "trace_score_count": 63
+}

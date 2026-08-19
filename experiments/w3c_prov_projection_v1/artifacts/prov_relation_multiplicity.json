@@ -1,0 +1,14 @@
+{
+  "association_count": 3,
+  "binding_count": 14,
+  "derivation_count": 14,
+  "duplicate_generation_event_count": 0,
+  "generation_count": 6,
+  "generation_shared_count": 8,
+  "legal_multiplicity_preserved": true,
+  "status": "SUPPORTED",
+  "unique_derivation_semantics": 14,
+  "unique_generation_pairs": 6,
+  "unique_usage_semantics": 14,
+  "usage_count": 14
+}

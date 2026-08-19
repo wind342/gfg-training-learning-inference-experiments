@@ -1,0 +1,177 @@
+{
+  "allowed_shared_content": [
+    "JSON field protocol",
+    "frozen workload and RA AST",
+    "first-hand authority files",
+    "pure structural parsing in comparison"
+  ],
+  "candidate_algebra": "src/nx_polynomial.py::NXPolynomial",
+  "candidate_native_hits": [],
+  "candidate_variable_identity": "src/structural.py::variable_for_source",
+  "counts": {
+    "candidate_native_algebra_import_count": 0,
+    "candidate_native_artifact_read_count": 0,
+    "native_candidate_artifact_read_count": 0,
+    "shared_algebra_helper_count": 0,
+    "shared_expected_monomial_table_count": 0,
+    "shared_variable_identity_helper_count": 0
+  },
+  "files": [
+    {
+      "imports": [
+        {
+          "module": "__future__",
+          "symbol": "annotations"
+        },
+        {
+          "module": "dataclasses",
+          "symbol": "dataclass"
+        },
+        {
+          "module": "hashlib",
+          "symbol": "*"
+        },
+        {
+          "module": "json",
+          "symbol": "*"
+        },
+        {
+          "module": "native_polynomial_oracle",
+          "symbol": "NativePolynomialOracle"
+        },
+        {
+          "module": "native_polynomial_oracle",
+          "symbol": "native_variable_for_source"
+        },
+        {
+          "module": "typing",
+          "symbol": "Any"
+        },
+        {
+          "module": "workloads",
+          "symbol": "select_query"
+        }
+      ],
+      "path": "src/native_nx.py",
+      "sha256": "2bb91a9382fda4c927e711de3cece73057fc07d835e05d6b2f90d2c781a0ea64"
+    },
+    {
+      "imports": [
+        {
+          "module": "__future__",
+          "symbol": "annotations"
+        },
+        {
+          "module": "dataclasses",
+          "symbol": "dataclass"
+        },
+        {
+          "module": "hashlib",
+          "symbol": "*"
+        },
+        {
+          "module": "typing",
+          "symbol": "Iterable"
+        },
+        {
+          "module": "typing",
+          "symbol": "Mapping"
+        }
+      ],
+      "path": "src/native_polynomial_oracle.py",
+      "sha256": "90160fa3c10bf087a27d738c96cfc97454dc65af7607ebba007ab9f9bfd4787f"
+    },
+    {
+      "imports": [
+        {
+          "module": "__future__",
+          "symbol": "annotations"
+        },
+        {
+          "module": "collections",
+          "symbol": "defaultdict"
+        },
+        {
+          "module": "generation_relation_core.snapshots",
+          "symbol": "SnapshotValidation"
+        },
+        {
+          "module": "generation_relation_core.snapshots",
+          "symbol": "ValidatedSnapshot"
+        },
+        {
+          "module": "nx_polynomial",
+          "symbol": "NXPolynomial"
+        },
+        {
+          "module": "profile_runtime",
+          "symbol": "load_profile"
+        },
+        {
+          "module": "structural",
+          "symbol": "variable_for_source"
+        },
+        {
+          "module": "typing",
+          "symbol": "Any"
+        }
+      ],
+      "path": "src/candidate_nx.py",
+      "sha256": "c40eaf3e6b42af53b91cc0369241661c1aa7eaf73b5b239cddc6d05c42e07225"
+    },
+    {
+      "imports": [
+        {
+          "module": "__future__",
+          "symbol": "annotations"
+        },
+        {
+          "module": "dataclasses",
+          "symbol": "dataclass"
+        },
+        {
+          "module": "structural",
+          "symbol": "variable_for_source"
+        },
+        {
+          "module": "typing",
+          "symbol": "Iterable"
+        },
+        {
+          "module": "typing",
+          "symbol": "Mapping"
+        }
+      ],
+      "path": "src/nx_polynomial.py",
+      "sha256": "56eae9132c827c0d44f3a76999765f63746973a124f1cd8bf61aa96d2b2bc985"
+    },
+    {
+      "imports": [
+        {
+          "module": "__future__",
+          "symbol": "annotations"
+        },
+        {
+          "module": "hashlib",
+          "symbol": "*"
+        },
+        {
+          "module": "json",
+          "symbol": "*"
+        },
+        {
+          "module": "typing",
+          "symbol": "Any"
+        }
+      ],
+      "path": "src/structural.py",
+      "sha256": "8bc80368b09c808eba1642a016a17263164ec014ffb351f7f93329910f9f5aac"
+    }
+  ],
+  "native_algebra": "src/native_polynomial_oracle.py::NativePolynomialOracle",
+  "native_candidate_algebra_hits": [],
+  "native_candidate_variable_hits": [],
+  "native_variable_identity": "src/native_polynomial_oracle.py::native_variable_for_source",
+  "schema_version": "native-candidate-algebra-independence-v1",
+  "status": "NATIVE_CANDIDATE_ALGEBRA_INDEPENDENCE_SUPPORTED"
+}

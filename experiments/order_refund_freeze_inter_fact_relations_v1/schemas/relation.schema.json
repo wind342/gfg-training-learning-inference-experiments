@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "relation_id",
+    "execution_run_id",
+    "relation_type",
+    "source_id",
+    "target_id",
+    "endpoint_level",
+    "authority_id",
+    "establishment_source",
+    "evidence_refs"
+  ],
+  "properties": {
+    "relation_id": {"type": "string", "pattern": "^orrel1_[0-9a-f]{64}$"},
+    "execution_run_id": {"type": "string"},
+    "relation_type": {
+      "enum": [
+        "program_order",
+        "reads_from",
+        "conflicts_with",
+        "message_send_receive",
+        "synchronizes_with",
+        "generated_origin_dependency",
+        "commits_version"
+      ]
+    },
+    "source_id": {"type": "string"},
+    "target_id": {"type": "string"},
+    "endpoint_level": {"enum": ["occurrence", "fact"]},
+    "authority_id": {"type": "string"},
+    "establishment_source": {"const": "wrapper_established"},
+    "evidence_refs": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {"type": "string"}
+    }
+  },
+  "additionalProperties": false
+}

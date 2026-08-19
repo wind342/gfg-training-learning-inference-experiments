@@ -1,0 +1,18 @@
+{
+  "expected_answer_read_count": 0,
+  "native_reference_read_count": 0,
+  "only_input": "ValidatedSnapshot",
+  "profile_id": "w3c-prov-generation-profile-v1",
+  "provn_sha256": "df4337aac9973461b03d732c48e94d38e0149617869cd2e9fabd3a9fec3de90a",
+  "record_count": 51,
+  "record_counts": {
+    "activity": 3,
+    "agent": 1,
+    "association": 3,
+    "derivation": 14,
+    "entity": 10,
+    "generation": 6,
+    "usage": 14
+  },
+  "status": "SUPPORTED"
+}

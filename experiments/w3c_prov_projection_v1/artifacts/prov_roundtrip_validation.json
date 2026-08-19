@@ -1,0 +1,7 @@
+{
+  "candidate_provn_parses_to_original_records": true,
+  "native_provo_parses_to_original_records": true,
+  "provn_byte_sha256": "df4337aac9973461b03d732c48e94d38e0149617869cd2e9fabd3a9fec3de90a",
+  "provo_byte_sha256": "beb6a6f6a3236af523f656314915276dc44aa884a2d53cf40f7e603f066124d1",
+  "status": "SUPPORTED"
+}

@@ -1,0 +1,12 @@
+{
+  "attribute_mismatch": null,
+  "direct_projection_hash": null,
+  "edge_mismatch": null,
+  "exact_equal": null,
+  "hierarchical_projection_hash": null,
+  "profile_id": "ecma426-source-map-composition-v1",
+  "reason": "The Source Map experiment branch contains no domain implementation, frozen workload, official implementation result, tests, or machine artifacts on the selected base commit.",
+  "record_false_negative": null,
+  "record_false_positive": null,
+  "status": "NOT_EVALUATED"
+}

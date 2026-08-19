@@ -1,0 +1,147 @@
+{
+  "artifact_hashes": {
+    "dual_baseline_segment_result_sha256": "e809ccc23bf41cf72241b1fe4fd3b6c79ffe8b9033295f0afd5d4d1a99c7d551",
+    "dual_candidate_seal_sha256": "576597ce4aeb7064c2873a4de934dfd72debf34096c6c81c18bc4ae3f65cecd8",
+    "dual_causal_validation_file_sha256": "7dc2148f453ea885e2ce3cfc7e91df36f55292a122daf098253db335ef317a0f",
+    "dual_forecast_validation_file_sha256": "59bb37f6c497aef8fdf8b9dd11054644124d237036fe7ae5a49e918a6e2e4060",
+    "dual_sealed_forecast_file_sha256": "413a0eaec8fa1a1a597b1fe77a1da5441c8e9d8c3bdfaf61d1e67f105c44a528",
+    "original_forecast_validation_file_sha256": "0a87e04b66fa4b97325e01c5d3084ce058a4c7bbfef5c55f2cd728cc2732a3b9"
+  },
+  "causal_validation": {
+    "actual_shift_optimizer_steps": 1600,
+    "baseline_transition_step": 1700,
+    "direction": "DELAY",
+    "intervention_transition_step": 3300,
+    "predicted_shift_high": 1800,
+    "predicted_shift_low": 600,
+    "status": "CAUSAL_INTERVENTION_PASS"
+  },
+  "code_authorities": {
+    "candidate_burst_prediction": {
+      "path": "private sealed candidate mechanism.py",
+      "symbols": [
+        "_burst_clusters",
+        "_predict_bursts",
+        "CapabilityFormationMechanism.initialize",
+        "CapabilityFormationMechanism.forecast"
+      ]
+    },
+    "forecast_scoring": {
+      "path": "experiments/gfg_nanogpt_autonomous_capability_discovery_v1/forecast_evaluator.py",
+      "symbol": "evaluate_forecast"
+    },
+    "native_training_and_transition": {
+      "path": "experiments/gfg_nanogpt_autonomous_capability_discovery_v1/nanogpt_adapter.py",
+      "symbols": [
+        "train_plain",
+        "detect_transition"
+      ]
+    }
+  },
+  "conclusion": {
+    "dual_formal_result_unchanged": "AUTONOMOUS_CAPABILITY_MECHANISM_DISCOVERY_NOT_ESTABLISHED",
+    "late_collapse_prediction_dominated_rmse_failure": true,
+    "nanogpt_100_step_counter_defect_found": false,
+    "one_grid_miss_explained_by_observation_quantization_and_missing_consolidation_delay": true,
+    "primary_500_step_interval_passed": true
+  },
+  "dual_interval_run": {
+    "actual_future_burst_peaks": [
+      1094,
+      1445
+    ],
+    "actual_transition_step": 1700,
+    "candidate_historical_burst_peaks": [
+      187,
+      434,
+      742
+    ],
+    "candidate_predicted_future_burst_centers": [
+      1150,
+      1500
+    ],
+    "candidate_predicted_transition_center": 1500,
+    "evaluation_interval_optimizer_steps": 100,
+    "full_curve_normalized_rmse": 0.20744731482023054,
+    "high_precision_interval_200": {
+      "contains_actual": false,
+      "high": 1600,
+      "low": 1400
+    },
+    "late_actual_validation": {
+      "first_step": 7600,
+      "last_step": 10000,
+      "maximum": 1.0,
+      "mean": 0.9875471711158752,
+      "minimum": 0.8773584961891174,
+      "point_count": 25
+    },
+    "late_candidate_validation_accuracy": 0.6,
+    "prediction_cut_step": 800,
+    "primary_interval_500": {
+      "contains_actual": true,
+      "high": 1700,
+      "low": 1300
+    },
+    "rmse_decomposition": [
+      {
+        "end_step": 2000,
+        "point_count": 12,
+        "rmse": 0.0839,
+        "start_step": 900
+      },
+      {
+        "end_step": 7500,
+        "point_count": 55,
+        "rmse": 0.042275,
+        "start_step": 2100
+      },
+      {
+        "end_step": 10000,
+        "point_count": 25,
+        "rmse": 0.388659,
+        "start_step": 7600
+      }
+    ],
+    "transition_local_validation_accuracy": [
+      {
+        "step": 1300,
+        "validation_accuracy": 0.7075471878051758
+      },
+      {
+        "step": 1400,
+        "validation_accuracy": 0.7971698045730591
+      },
+      {
+        "step": 1500,
+        "validation_accuracy": 0.8443396091461182
+      },
+      {
+        "step": 1600,
+        "validation_accuracy": 0.8679245114326477
+      },
+      {
+        "step": 1700,
+        "validation_accuracy": 0.9103773832321167
+      },
+      {
+        "step": 1800,
+        "validation_accuracy": 0.9386792182922363
+      },
+      {
+        "step": 1900,
+        "validation_accuracy": 0.9292452931404114
+      }
+    ]
+  },
+  "original_single_interval_run": {
+    "actual_transition_step": 2100,
+    "distance_beyond_interval_high": 100,
+    "normalized_rmse": 0.09902485465551636,
+    "prediction_cut_step": 1100,
+    "transition_interval_high": 2000,
+    "transition_interval_low": 1800
+  },
+  "schema": "nanogpt-transition-offset-and-forecast-gate-audit-v1",
+  "status": "READ_ONLY_DIAGNOSTIC_COMPLETE"
+}

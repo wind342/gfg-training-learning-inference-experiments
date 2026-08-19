@@ -1,0 +1,17 @@
+{
+  "automatic_repair": false,
+  "blocking_reasons": [],
+  "checks": {
+    "all_statistic_source_files_present": true,
+    "persisted_sources_equal_recomputation": true,
+    "persisted_statistics_equal_recomputation": true,
+    "report_generated_block_exact": true,
+    "stale_report_tuple_absent": true
+  },
+  "gate": "REPORT_STATISTICS_EXACT_AGAINST_ARTIFACTS",
+  "report_path": "generated_report.md",
+  "report_sha256": "67906c72f0b8090a0340bafb69217b4567fe6155849ef45b786945636bbcc4ee",
+  "schema_version": "report-artifact-consistency-v1",
+  "statistics_sha256": "f7330e2c00bc2a2ff079293273ed765cf5dec4acdd453f06adafad762cfabc57",
+  "status": "REPORT_STATISTICS_EXACT_AGAINST_ARTIFACTS"
+}

@@ -1,0 +1,8 @@
+{
+  "candidate_relation_authority": "validated Core Snapshot Γ",
+  "native_reference_authority": "independent synchronous callback collector",
+  "prov_documents_are_projection_results": true,
+  "status": "SUPPORTED",
+  "third_party_semantic_authority_count": 0,
+  "w3c_semantic_authority": "official frozen W3C documents"
+}

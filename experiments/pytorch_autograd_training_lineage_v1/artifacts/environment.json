@@ -1,0 +1,40 @@
+{
+  "blas": {
+    "backend": "Intel oneAPI Math Kernel Library 2026.1",
+    "lapack_enabled": true,
+    "mkl_available": true,
+    "mkldnn": "3.12.0",
+    "openmp": "2019"
+  },
+  "cpu": {
+    "architecture": "AMD64",
+    "logical_processors": 12,
+    "model": "12th Gen Intel(R) Core(TM) i5-12490F",
+    "physical_cores": 6
+  },
+  "frozen_execution": {
+    "cuda": false,
+    "deterministic_algorithms": true,
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "interop_threads": 1,
+    "intraop_threads": 1,
+    "random_seed": 424242
+  },
+  "operating_system": {
+    "architecture": "64-bit",
+    "build": "26200",
+    "caption": "Microsoft Windows 11 Professional",
+    "version": "10.0.26200"
+  },
+  "python": {
+    "implementation": "CPython",
+    "version": "3.12.10"
+  },
+  "torch": {
+    "build_commit": "cf30153c4c131c8164ee7798e5022d810682e2cb",
+    "cpu_capability": "AVX2",
+    "cuda_build": null,
+    "version": "2.13.0+cpu"
+  }
+}

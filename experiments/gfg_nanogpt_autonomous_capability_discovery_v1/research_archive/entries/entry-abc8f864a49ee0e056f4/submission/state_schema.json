@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cyclic-composition-state-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "phase",
+    "cut_step",
+    "evaluation_interval",
+    "train_accuracy",
+    "validation_accuracy",
+    "formation_progress",
+    "transition_already_observed",
+    "observed_transition_step",
+    "cyclic_constraint_rank",
+    "cyclic_symbol_count",
+    "rule_logit_circulant_eta",
+    "rule_margin_z",
+    "predicted_table_commutativity",
+    "predicted_table_latin_fraction",
+    "predicted_table_associativity"
+  ],
+  "properties": {
+    "schema": {
+      "const": "cyclic-composition-state-v1"
+    },
+    "phase": {
+      "enum": [
+        "FITTING",
+        "MEMORIZATION",
+        "RULE_ASSEMBLY",
+        "RULE_EXPRESSED",
+        "RULE_LOCKED"
+      ]
+    },
+    "cut_step": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10000
+    },
+    "evaluation_interval": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "train_accuracy": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "validation_accuracy": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "formation_progress": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "transition_already_observed": {
+      "type": "boolean"
+    },
+    "observed_transition_step": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "cyclic_constraint_rank": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "cyclic_symbol_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rule_logit_circulant_eta": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "rule_margin_z": {
+      "type": "number"
+    },
+    "predicted_table_commutativity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "predicted_table_latin_fraction": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "predicted_table_associativity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  }
+}

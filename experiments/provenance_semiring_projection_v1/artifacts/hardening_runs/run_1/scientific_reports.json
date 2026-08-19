@@ -1,0 +1,2784 @@
+{
+  "artifact_materialization": {
+    "execution_manifest_rehash_match": true,
+    "file_count": 55,
+    "files": [
+      {
+        "path": "artifact_manifest.json",
+        "sha256": "345a6400aeb5a00e0fe7c667c87f549b52a53973eab172abb70bf02314c730b7",
+        "size": 5512
+      },
+      {
+        "path": "authority_isolation.json",
+        "sha256": "32f340f20e585289974a5f4e7fa038db2b9850db8c3c501b5e330a5569614b77",
+        "size": 52995
+      },
+      {
+        "path": "core_projected_nx_polynomials.json",
+        "sha256": "41855e4dca24a849b1ccd010e40d05535679482d5e1a209e8594388487e5d5f0",
+        "size": 118751
+      },
+      {
+        "path": "database_lineage_hierarchy.json",
+        "sha256": "e20ffff3feb796016312f8ce54a78c6fc9e138d40cfc834e6a6cd56617f06508",
+        "size": 929
+      },
+      {
+        "path": "direct_lower_k_independence_v2.json",
+        "sha256": "8b93787ce6756fb3550caf0d41d924a4bc6f7955934ecb660917e25c6959a527",
+        "size": 3961
+      },
+      {
+        "path": "evidence/core_validated_snapshot_corpus.json",
+        "sha256": "ec18bc88fcadb3ea5fbe9c0e29b6fec26bd7b35798397d37ac7aca1217f80306",
+        "size": 10801927
+      },
+      {
+        "path": "evidence/isolation_probe/candidate.json",
+        "sha256": "77661b7b0bb9ff09066b376b0da90bca3088c192cc774da7d753e84f80cbdb3d",
+        "size": 1143
+      },
+      {
+        "path": "evidence/isolation_probe/comparison.json",
+        "sha256": "e82354f4f385ec7677b13deabff410ca32f5899a0459e50579e3c1f994f5cbe5",
+        "size": 2691
+      },
+      {
+        "path": "evidence/isolation_probe/core.json",
+        "sha256": "2a01089c974c56b4abb1c03121bc0c0dd53e04948b148348b3b6c900666d7af8",
+        "size": 25971
+      },
+      {
+        "path": "evidence/isolation_probe/coverage.json",
+        "sha256": "02f73faa32d53204de736eea9a614062160340ae46ac4bf4e902db62de18442a",
+        "size": 1805
+      },
+      {
+        "path": "evidence/isolation_probe/derived_lower.json",
+        "sha256": "3e1daeac75da5a36d2115e10dbd1ef2ad190944d41d4171984578cf87f48b379",
+        "size": 76992
+      },
+      {
+        "path": "evidence/isolation_probe/direct_lower.json",
+        "sha256": "934e593da03513c3d31890ffdd32a4bba1e5e37772ea634f13932b9bd62ace90",
+        "size": 77021
+      },
+      {
+        "path": "evidence/isolation_probe/generated_report.md",
+        "sha256": "8126e5dd8bf904bfad15141ed69a2cfce82f802b0f90522a94144b0fa3694b9c",
+        "size": 10899
+      },
+      {
+        "path": "evidence/isolation_probe/native.json",
+        "sha256": "5dcbc3aaa6db7721beb417a0b77bac5491d63f8941dfa6440815b23e1ed82f9d",
+        "size": 1087
+      },
+      {
+        "path": "evidence/isolation_probe/report_artifact_consistency.json",
+        "sha256": "aa2e214362a4a588d9101354f7d0ca66337f6602647a5b9c070f7febf03903be",
+        "size": 694
+      },
+      {
+        "path": "evidence/isolation_probe/report_statistics.json",
+        "sha256": "8cae1f057453611721e746000c6a0833afff23313eb4bc872403328e0254d3e3",
+        "size": 2563
+      },
+      {
+        "path": "evidence/isolation_probe/traces/candidate.json",
+        "sha256": "9b8e1a13e68428a9881e71d6443f054a8b017a99253ddc9a072d78f585747c7c",
+        "size": 11111
+      },
+      {
+        "path": "evidence/isolation_probe/traces/comparison.json",
+        "sha256": "8b4cb2b8b6f306d8a59e30fa2c0a28e98c35b715a897e0e3c613f9e5b51b187a",
+        "size": 3036
+      },
+      {
+        "path": "evidence/isolation_probe/traces/derived_lower.json",
+        "sha256": "8df92c40cecbe8e4fc04e7b7560d0079d08d7a112a7237f536009832929ccda0",
+        "size": 4078
+      },
+      {
+        "path": "evidence/isolation_probe/traces/direct_lower.json",
+        "sha256": "feb74f73696fa53160122f00c524ce915367446e5c7333f3c1a56e852c507336",
+        "size": 5217
+      },
+      {
+        "path": "evidence/isolation_probe/traces/native.json",
+        "sha256": "8b593fad8513ce78e04c5ad094ce21255946c51b7f6743e4303a2517a5a73eec",
+        "size": 5248
+      },
+      {
+        "path": "evidence/isolation_probe/traces/report_statistics.json",
+        "sha256": "724899b309fa569f4fde1855b599b1f2d574473f517aaf0b9d088e161fbc2b99",
+        "size": 9052
+      },
+      {
+        "path": "flat_support_view_exact_comparison.json",
+        "sha256": "71b07682a866716eeef1c3a551651ff7b5aac7a974ce56636c6ff5afc8bf924b",
+        "size": 2071
+      },
+      {
+        "path": "flat_support_view_formal_classification.json",
+        "sha256": "d88ea421e7a4fd4e97a2ef46c6d760a567471a8b454c80ddd0112ac54f216015",
+        "size": 716
+      },
+      {
+        "path": "formal_target_semantics_audit.json",
+        "sha256": "148ac8d9335543a1fc04520c8c3d989924f3db8a636861a6aec18fdc662aadb6",
+        "size": 6995
+      },
+      {
+        "path": "formal_target_semantics_audit.md",
+        "sha256": "176e577f042b666800a50180549f30bce0c9834540061881e9c2f5b632de80eb",
+        "size": 1494
+      },
+      {
+        "path": "generated_experiment_report.md",
+        "sha256": "8126e5dd8bf904bfad15141ed69a2cfce82f802b0f90522a94144b0fa3694b9c",
+        "size": 10899
+      },
+      {
+        "path": "hierarchical_projection_exact_comparison.json",
+        "sha256": "389a90d9b71f97a3d159a0f107f084be1b8b55a51590c827ed6ad1c041c59fa1",
+        "size": 7636
+      },
+      {
+        "path": "independent_native_polynomial_oracle.json",
+        "sha256": "0a11646fa28da73537313c834d2965f2e08fe4f767a309a291ab4889a9b5219e",
+        "size": 3196
+      },
+      {
+        "path": "joint_lower_projection_strictness.json",
+        "sha256": "a034cea2eb6503f5c1e7a6e46b4c9dde61ba5c985d846bc959ecce691a421058",
+        "size": 553
+      },
+      {
+        "path": "lower_projection_strictness_constructions.json",
+        "sha256": "bbf8a3b48973cd9893d1837dded93c2de11be41b693c9b7df47618c9815052e9",
+        "size": 6481
+      },
+      {
+        "path": "native_candidate_algebra_independence.json",
+        "sha256": "d8f2c785a50bb37989272d525fe08e52e9c874cc299c8c26d580dd7f385ea3aa",
+        "size": 4512
+      },
+      {
+        "path": "native_candidate_nx_exact_comparison_v2.json",
+        "sha256": "a07d170baa89cfb31f63f352884bd4cceb63f8d2ef2c73598bbb3a4987ec991f",
+        "size": 4510
+      },
+      {
+        "path": "native_direct_k_relation_results.json",
+        "sha256": "934e593da03513c3d31890ffdd32a4bba1e5e37772ea634f13932b9bd62ace90",
+        "size": 77021
+      },
+      {
+        "path": "native_nx_polynomials.json",
+        "sha256": "da9b588ac182d4db38ceb3eff2fbabd8df13ca3cf1ce806c982971988f79a73b",
+        "size": 118119
+      },
+      {
+        "path": "negative_control_classification.json",
+        "sha256": "6d846c2b972a758faa4dce0e30c0f312151ad5d25de0d226e709082861f43c81",
+        "size": 1237
+      },
+      {
+        "path": "negative_controls.json",
+        "sha256": "0bd7b407600eb9adeba44ed506078717ce3b1c485ef5e4e7610b3df99bc456d7",
+        "size": 31977
+      },
+      {
+        "path": "nx_derived_domain_results.json",
+        "sha256": "3e1daeac75da5a36d2115e10dbd1ef2ad190944d41d4171984578cf87f48b379",
+        "size": 76992
+      },
+      {
+        "path": "nx_exact_comparison.json",
+        "sha256": "e82354f4f385ec7677b13deabff410ca32f5899a0459e50579e3c1f994f5cbe5",
+        "size": 2691
+      },
+      {
+        "path": "nx_field_coverage.json",
+        "sha256": "02f73faa32d53204de736eea9a614062160340ae46ac4bf4e902db62de18442a",
+        "size": 1805
+      },
+      {
+        "path": "nx_strictness_counterexamples.json",
+        "sha256": "aa811c7016a80dadf4da7e2ea809380537420d360c690cbef01f6460d36dcb66",
+        "size": 10165
+      },
+      {
+        "path": "nx_to_existing_which_lineage.json",
+        "sha256": "9184653dc7bb9422220e77032b2b3ec56bb17082ae1b665c561480c606b09a6f",
+        "size": 2785
+      },
+      {
+        "path": "nx_w3c_relation_scope.json",
+        "sha256": "67269ab47617285071b54e1a0d69e96a1cea84a21e5569cc512f1cd312da5929",
+        "size": 362
+      },
+      {
+        "path": "persisted_artifact_classification.json",
+        "sha256": "ae6417c84c8981f36bf13c7e11b43ed7149f43a49abbffa53ddcf6f3e0cb502b",
+        "size": 26710
+      },
+      {
+        "path": "report_artifact_consistency.json",
+        "sha256": "f4d36b829a0574eccc71fcd8f4d2365894d7616dcdf7aa4ef53eace19e2d3fb0",
+        "size": 705
+      },
+      {
+        "path": "report_statistics.json",
+        "sha256": "8cae1f057453611721e746000c6a0833afff23313eb4bc872403328e0254d3e3",
+        "size": 2563
+      },
+      {
+        "path": "reverse_reconstruction_impossibility.json",
+        "sha256": "9294e1312c31685628f086dec02a04c5c676efc13e4dc5f8d9ac3de9263b9cff",
+        "size": 1400
+      },
+      {
+        "path": "semiring_homomorphism_profiles.json",
+        "sha256": "3b75f139bc66e83cf2bdbda5f8eb6fd2fdfba700b393fbc0f4c237572142b9cc",
+        "size": 3186
+      },
+      {
+        "path": "static_isolation_audit.json",
+        "sha256": "e472dcb927e95410caa27dbdd407859c582844ddf1e2673f5aae8d56b16d08b6",
+        "size": 17749
+      },
+      {
+        "path": "test_results.json",
+        "sha256": "ba0628e31d663276e7f0a0681785556368a4b41be344492f65feab640dfa6e2f",
+        "size": 5130
+      },
+      {
+        "path": "two_level_unification_hierarchy.json",
+        "sha256": "45e45cb0ad7c5fc6bddb7e2b62bd304a9ed7f881acbdeb0eb7e6a2306f627b28",
+        "size": 259
+      },
+      {
+        "path": "two_level_unification_hierarchy_v2.json",
+        "sha256": "5ba4761d6d2f06a6c16c0773ae899bdba1b27337dc5e8eb406732d208a75695b",
+        "size": 1614
+      },
+      {
+        "path": "unification_of_unification_result.json",
+        "sha256": "cd6e584c548390cf5c692be9b72421d6cfc6501748a4daf1c8f1aac33ee14385",
+        "size": 256
+      },
+      {
+        "path": "unification_of_unification_result_v2.json",
+        "sha256": "a42e0a7ae3a727b174c505cd4124e78825a3d5e3ca67928eea25446c7083c7e7",
+        "size": 1331
+      },
+      {
+        "path": "v1_result_preservation.json",
+        "sha256": "db2ee7b7e60a0ac3186a7d3d7ba18ee45ba2d70427709f5de8a0e49a676aeda1",
+        "size": 3059
+      }
+    ],
+    "independent_rehash_match": true
+  },
+  "authority_isolation": {
+    "authorized_core_validation_git_subprocess_count": 17,
+    "status": "ISOLATION_SUPPORTED",
+    "target_counts": {
+      "automatic_repair_count": 0,
+      "candidate_native_read_count": 0,
+      "direct_lower_nx_read_count": 0,
+      "hidden_relation_registry_count": 0,
+      "native_candidate_read_count": 0,
+      "native_core_read_count": 0,
+      "shared_algebra_helper_count": 0,
+      "shared_answer_store_count": 0,
+      "shared_projection_helper_count": 0,
+      "shared_target_answer_helper_count": 0,
+      "shared_variable_identity_helper_count": 0,
+      "socket_count": 0,
+      "unauthorized_subprocess_count": 0,
+      "unclassified_persisted_file_count": 0
+    }
+  },
+  "direct_lower_k_independence": {
+    "artifact_reads": [
+      {
+        "event": "file_open",
+        "mode": "w",
+        "path": "experiments/provenance_semiring_projection_v1/artifacts/_scientific_work/evidence/isolation_probe/direct_lower.json"
+      }
+    ],
+    "base_annotation_execution": true,
+    "called_symbols": [
+      "BagCarrier",
+      "BooleanCarrier",
+      "DirectLowerKEvaluator",
+      "DirectLowerKEvaluator(workload, carrier).evaluate",
+      "FIXTURE_PATH.read_text",
+      "FlatSourceSupportCarrier",
+      "LowerKRow",
+      "Path",
+      "Path(__file__).resolve",
+      "PositiveBooleanCarrier",
+      "SystemExit",
+      "ValueError",
+      "_absorb",
+      "_direct_canonical_values",
+      "_direct_canonical_values(values).encode",
+      "_direct_logical_output_key",
+      "_direct_variable_for_source",
+      "_predicate",
+      "_stress_relations",
+      "_walk_ast",
+      "all_source_identities.add",
+      "any",
+      "argparse.ArgumentParser",
+      "args.output.parent.mkdir",
+      "args.output.write_text",
+      "bool",
+      "carrier.document",
+      "dataclass",
+      "deepcopy",
+      "dict",
+      "document.get",
+      "domains.append",
+      "evaluate_direct_lower_domains",
+      "frozenset",
+      "generator.get",
+      "hashlib.sha256",
+      "hashlib.sha256(_direct_canonical_values(values).encode('utf-8')).hexdigest",
+      "hashlib.sha256(source_identity.encode('utf-8')).hexdigest",
+      "int",
+      "isinstance",
+      "item.get",
+      "json.dumps",
+      "json.loads",
+      "left.values",
+      "len",
+      "load_workloads",
+      "local_identities.add",
+      "main",
+      "node.get",
+      "outputs.sort",
+      "parser.add_argument",
+      "parser.parse_args",
+      "queries.values",
+      "range",
+      "relation.get",
+      "relation.lower",
+      "relation.values",
+      "relations[relation].append",
+      "results.append",
+      "right.values",
+      "right_row.values.items",
+      "row.get",
+      "select_query",
+      "self._insert",
+      "self.carrier.plus",
+      "self.carrier.times",
+      "self.carrier.variable",
+      "self.evaluate",
+      "self.evaluate(child).values",
+      "self.evaluate(node['input']).items",
+      "self.evaluate(node['input']).values",
+      "set",
+      "sorted",
+      "source_identity.encode",
+      "stages.add",
+      "tuple",
+      "workload.get",
+      "workload.pop",
+      "workload['relations'].values"
+    ],
+    "computes_nx_first": false,
+    "counts": {
+      "direct_lower_k_calls_nx_evaluator_count": 0,
+      "direct_lower_k_imports_nx_count": 0,
+      "direct_lower_k_reads_nx_artifact_count": 0,
+      "shared_target_answer_helper_count": 0
+    },
+    "file_opens": [
+      {
+        "event": "file_open",
+        "mode": "r",
+        "path": "experiments/provenance_semiring_projection_v1/scripts/__pycache__/direct_lower_k_path.cpython-312.pyc"
+      },
+      {
+        "event": "file_open",
+        "mode": "r",
+        "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/__init__.cpython-312.pyc"
+      },
+      {
+        "event": "file_open",
+        "mode": "r",
+        "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/native_lower_k.cpython-312.pyc"
+      },
+      {
+        "event": "file_open",
+        "mode": "r",
+        "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/workloads.cpython-312.pyc"
+      },
+      {
+        "event": "file_open",
+        "mode": "r",
+        "path": "experiments/provenance_semiring_projection_v1/fixtures/workloads.json"
+      },
+      {
+        "event": "file_open",
+        "mode": "w",
+        "path": "experiments/provenance_semiring_projection_v1/artifacts/_scientific_work/evidence/isolation_probe/direct_lower.json"
+      }
+    ],
+    "imports": [
+      "__future__",
+      "argparse",
+      "copy",
+      "dataclasses",
+      "experiments.provenance_semiring_projection_v1.src.native_lower_k",
+      "experiments.provenance_semiring_projection_v1.src.workloads",
+      "hashlib",
+      "json",
+      "pathlib",
+      "typing",
+      "workloads"
+    ],
+    "profile_reads": [],
+    "schema_version": "direct-lower-k-independence-v2",
+    "sockets": [],
+    "status": "DIRECT_LOWER_K_INDEPENDENCE_SUPPORTED",
+    "subprocesses": []
+  },
+  "existing_which": {
+    "comparisons": [
+      {
+        "core_candidate_existing_source_tuple_ids": [
+          "customers:c1",
+          "items:i1",
+          "items:i2",
+          "items:i3",
+          "orders:o1",
+          "orders:o2",
+          "products:p1a",
+          "products:p1b",
+          "products:p2"
+        ],
+        "native_existing_source_tuple_ids": [
+          "customers:c1",
+          "items:i1",
+          "items:i2",
+          "items:i3",
+          "orders:o1",
+          "orders:o2",
+          "products:p1a",
+          "products:p1b",
+          "products:p2"
+        ],
+        "nx_source_tuple_ids": [
+          "customers:c1",
+          "items:i1",
+          "items:i2",
+          "items:i3",
+          "orders:o1",
+          "orders:o2",
+          "products:p1a",
+          "products:p1b",
+          "products:p2"
+        ],
+        "nx_variables": [
+          "x_6a538f47f7d416305b9bba99f07a0767ed9a025491755b3fff083b7a151a09d5",
+          "x_9fffcb146c70d5942ef0717990b1921ac9dd07a7d56ccb62c802cc5c02ea3d96",
+          "x_aeeb82649684fa0d097ef664d1349369960090e0b32a313a7b2d1ddb8a0b20d0",
+          "x_cb77fc5e39563b6eb7a03b0a7348a966ae898f09a9a3be99107bfa7d653ec926",
+          "x_d495a82b6b568fb9e9b51dca5c6a8f8872df7c9e1c82984328aabf43d12c867c",
+          "x_df1424f342f196ed0747601a41716aa920c37ca67892258e94fffb85e48b5b02",
+          "x_e3108a6e40933563cee1990eb9250a63ae06045f92d84708d63cbd720cd0a7ee",
+          "x_e7312c02b9d2a7b2a426a26e2122790d5ddac0311f0fb74e783bbb94f8abe25b",
+          "x_fecb00dcd4938be4f58ae8e486bbc14d6f4d59b4243a78f9afaf41a78d70844e"
+        ],
+        "output_tuple_id": "customer_top_1:00000000",
+        "three_way_exact": true
+      }
+    ],
+    "existing_candidate_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+    "existing_candidate_record_count": 112,
+    "existing_native_candidate_all_records_exact": true,
+    "existing_native_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+    "existing_native_record_count": 112,
+    "frozen_authority_profile_sha256": "d32b809931644617d763bad597b62904bba3273e7fa62f9afa963fc74387ac40",
+    "frozen_authority_profile_sha256_exact": true,
+    "frozen_database_source_commit": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+    "frozen_execution_profile_sha256": "518ba0f6de62fc4eb53ae6afb1fcf40177c6483c090a63be37cbbb119a4fcce9",
+    "frozen_execution_profile_sha256_exact": true,
+    "frozen_existing_result_sha256": "337b92bd88f11a51fe88d6dc2c47896c2bed731470016cd503b7fc2b44b4b8f9",
+    "frozen_existing_result_sha256_exact": true,
+    "frozen_expected_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+    "nx_terminal_output_count": 5,
+    "schema_version": "nx-to-existing-which-lineage-v1",
+    "status": "THREE_WAY_EXACT_SUPPORTED",
+    "three_way_exact": true,
+    "which_output_comparison_count": 1
+  },
+  "flat_support_task_projection": {
+    "case_count": 13,
+    "cases": [
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W1"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W10"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "plan_a",
+        "workload_id": "W11"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "plan_b",
+        "workload_id": "W11"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W12"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W2"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W3"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W4"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W5"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W6"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W7"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W8"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W9"
+      }
+    ],
+    "derived_operation": "Vars(N[X])",
+    "direct_path_computes_nx_first": false,
+    "mismatch_count": 0,
+    "schema_version": "flat-support-view-exact-comparison-v1",
+    "scope": "frozen nonzero output support",
+    "status": "FLAT_SOURCE_SUPPORT_VIEW_EXACT_PROJECTION_SUPPORTED"
+  },
+  "formal_target_semantics": {
+    "authority": {
+      "icdt_2001": {
+        "minimal_witness_basis": "Definition 7, paper page 10",
+        "sha256": "6c244258ab44a229957a1a16605787f1b9ade11bee0ef6eac8086eb6905e1087",
+        "witness_basis": "Section 5 and Definition 6, paper pages 8-9"
+      },
+      "pods_2007": {
+        "commutative_semiring_definition": "Definition 3.2 and Proposition 3.4, proceedings page 33",
+        "flat_powerset_calculation": "Section 4 and Figure 5, proceedings page 34",
+        "homomorphism_condition": "Proposition 3.5, proceedings page 34",
+        "nx_universal_property": "Definition 4.1, Proposition 4.2, and Theorem 4.3, proceedings page 34",
+        "sha256": "74e092702db58518afeaf909e1d3380848165b2cb9ae75dc6822b04f66aa5be0"
+      }
+    },
+    "flat_view_findings": {
+      "complete_semiring_homomorphism_supported": false,
+      "former_name_why_powerset_accurate": false,
+      "multiplicative_zero_annihilation": false,
+      "observed_only_on_nonzero_output_support": true,
+      "replacement_name": "flat_source_support_view",
+      "zero_equals_one": true
+    },
+    "formal_algebraic_target_count": 3,
+    "formal_algebraic_target_ids": [
+      "bag_naturals",
+      "boolean",
+      "positive_boolean_lineage"
+    ],
+    "not_evaluated": [
+      {
+        "classification": "NOT_EVALUATED",
+        "reason": "not formally defined in the frozen PODS 2007 authority",
+        "target": "Which(X)"
+      },
+      {
+        "classification": "NOT_EVALUATED",
+        "reason": "not formally defined in the frozen PODS 2007 authority",
+        "target": "Trio(X)"
+      },
+      {
+        "classification": "NOT_EVALUATED",
+        "reason": "the current flat view does not preserve the set of alternative witnesses",
+        "target": "witness-basis Why provenance"
+      },
+      {
+        "classification": "NON_SEMIRING_TASK_PROJECTION",
+        "reason": "tuple-level source-set result connected separately through Vars(N[X])",
+        "target": "existing Database which-lineage"
+      }
+    ],
+    "schema_version": "formal-target-semantics-audit-v1",
+    "status": "FORMAL_TARGET_SEMANTICS_CLASSIFIED",
+    "targets": [
+      {
+        "addition": "natural addition",
+        "authority": "Green-Karvounarakis-Tannen PODS 2007, proceedings pages 33-34",
+        "axiom_check_scope": "executable generating sample set plus frozen authority definition",
+        "axiom_checks": {
+          "addition_associative": true,
+          "addition_commutative": true,
+          "addition_idempotent": false,
+          "addition_identity": true,
+          "lattice_absorption": false,
+          "left_distributive": true,
+          "multiplication_associative": true,
+          "multiplication_commutative": true,
+          "multiplication_idempotent": false,
+          "multiplication_identity": true,
+          "multiplicative_zero_annihilation": true,
+          "right_distributive": true,
+          "zero_and_one_distinct": true
+        },
+        "carrier": "natural numbers",
+        "classification": "COMMUTATIVE_SEMIRING_TARGET",
+        "counted_as_formal_algebraic_target": true,
+        "domain_id": "bag_naturals",
+        "multiplication": "natural multiplication",
+        "one": 1,
+        "required_commutative_semiring_axioms_pass": true,
+        "target": "N",
+        "whole_carrier_semiring_homomorphism_claimed": true,
+        "zero": 0
+      },
+      {
+        "addition": "logical OR",
+        "authority": "Green-Karvounarakis-Tannen PODS 2007, proceedings pages 33-34",
+        "axiom_check_scope": "executable generating sample set plus frozen authority definition",
+        "axiom_checks": {
+          "addition_associative": true,
+          "addition_commutative": true,
+          "addition_idempotent": true,
+          "addition_identity": true,
+          "lattice_absorption": true,
+          "left_distributive": true,
+          "multiplication_associative": true,
+          "multiplication_commutative": true,
+          "multiplication_idempotent": true,
+          "multiplication_identity": true,
+          "multiplicative_zero_annihilation": true,
+          "right_distributive": true,
+          "zero_and_one_distinct": true
+        },
+        "carrier": "false and true",
+        "classification": "COMMUTATIVE_SEMIRING_TARGET",
+        "counted_as_formal_algebraic_target": true,
+        "domain_id": "boolean",
+        "multiplication": "logical AND",
+        "one": true,
+        "required_commutative_semiring_axioms_pass": true,
+        "target": "B",
+        "whole_carrier_semiring_homomorphism_claimed": true,
+        "zero": false
+      },
+      {
+        "addition": "OR with canonical absorption",
+        "authority": "Green-Karvounarakis-Tannen PODS 2007, proceedings pages 33-34",
+        "axiom_check_scope": "executable generating sample set plus frozen authority definition",
+        "axiom_checks": {
+          "addition_associative": true,
+          "addition_commutative": true,
+          "addition_idempotent": true,
+          "addition_identity": true,
+          "lattice_absorption": true,
+          "left_distributive": true,
+          "multiplication_associative": true,
+          "multiplication_commutative": true,
+          "multiplication_idempotent": true,
+          "multiplication_identity": true,
+          "multiplicative_zero_annihilation": true,
+          "right_distributive": true,
+          "zero_and_one_distinct": true
+        },
+        "carrier": "positive Boolean expressions modulo Boolean-function equivalence",
+        "classification": "SEMIRING_QUOTIENT_OR_HOMOMORPHIC_IMAGE",
+        "counted_as_formal_algebraic_target": true,
+        "domain_id": "positive_boolean_lineage",
+        "multiplication": "AND with canonical absorption",
+        "one": {
+          "terms": [
+            []
+          ]
+        },
+        "required_commutative_semiring_axioms_pass": true,
+        "target": "PosBool(X)",
+        "whole_carrier_semiring_homomorphism_claimed": true,
+        "zero": {
+          "terms": []
+        }
+      },
+      {
+        "addition": "set union",
+        "authority": "Green-Karvounarakis-Tannen PODS 2007, proceedings pages 33-34",
+        "axiom_check_scope": "executable generating sample set plus frozen authority definition",
+        "axiom_checks": {
+          "addition_associative": true,
+          "addition_commutative": true,
+          "addition_idempotent": true,
+          "addition_identity": true,
+          "lattice_absorption": false,
+          "left_distributive": true,
+          "multiplication_associative": true,
+          "multiplication_commutative": true,
+          "multiplication_idempotent": true,
+          "multiplication_identity": true,
+          "multiplicative_zero_annihilation": false,
+          "right_distributive": true,
+          "zero_and_one_distinct": false
+        },
+        "carrier": "finite source-variable sets",
+        "classification": "PARTIAL_NONZERO_SUPPORT_VIEW",
+        "counted_as_formal_algebraic_target": false,
+        "domain_id": "flat_source_support_view",
+        "multiplication": "set union",
+        "one": {
+          "variables": []
+        },
+        "required_commutative_semiring_axioms_pass": false,
+        "target": "Vars(N[X])",
+        "whole_carrier_semiring_homomorphism_claimed": false,
+        "zero": {
+          "variables": []
+        }
+      }
+    ]
+  },
+  "gates": {
+    "all_ordinary_capture_bytes_equal": true,
+    "artifact_rehash": true,
+    "direct_lower_independence": true,
+    "execution_manifest_rehash": true,
+    "existing_which": true,
+    "flat_support_task_projection": true,
+    "formal_target_semantics": true,
+    "formal_two_level_hierarchy": true,
+    "independent_native_candidate_exact": true,
+    "independent_native_oracle": true,
+    "isolation": true,
+    "joint_lower_strictness": true,
+    "lower_strictness": true,
+    "native_candidate_algebra_independence": true,
+    "negative_controls": true,
+    "p1_exact": true,
+    "p2_strict": true,
+    "p3_hierarchy": true,
+    "report_statistics": true,
+    "tests": true,
+    "v1_results_preserved": true
+  },
+  "independent_native_candidate_exact": {
+    "actual_case_count": 13,
+    "automatic_repair_count": 0,
+    "canonical_polynomial_mismatch_count": 0,
+    "cases": [
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W1"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W10"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "plan_a",
+        "workload_id": "W11"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "plan_b",
+        "workload_id": "W11"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W12"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W2"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W3"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W4"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W5"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W6"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W7"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W8"
+      },
+      {
+        "canonical_polynomial_mismatch_count": 0,
+        "coefficient_mismatch_count": 0,
+        "exact": true,
+        "exponent_mismatch_count": 0,
+        "output_identity_mismatch_count": 0,
+        "variable_identity_mismatch_count": 0,
+        "variant": "default",
+        "workload_id": "W9"
+      }
+    ],
+    "claim": "The independent Native polynomial oracle and Core-only Candidate agree on final canonical documents",
+    "coefficient_mismatch_count": 0,
+    "comparison_authority": "pure structural parsing of isolated final JSON documents",
+    "expected_case_count": 13,
+    "exponent_mismatch_count": 0,
+    "output_identity_mismatch_count": 0,
+    "schema_version": "native-candidate-nx-exact-comparison-v2",
+    "status": "INDEPENDENT_NATIVE_NX_ORACLE_EXACT_SUPPORTED",
+    "variable_identity_mismatch_count": 0
+  },
+  "independent_native_polynomial_oracle": {
+    "checks": {
+      "binomial_middle_coefficient": true,
+      "binomial_term_count": true,
+      "coefficient_aggregation": true,
+      "exponent_aggregation": true,
+      "one_multiplicative_identity": true,
+      "zero_additive_identity": true,
+      "zero_multiplicative_annihilation": true
+    },
+    "implementation": {
+      "banned_import_hits": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "typing"
+      ],
+      "monomial_representation": "frozenset[(variable, exponent)]",
+      "path": "src/native_polynomial_oracle.py",
+      "polynomial_representation": "immutable tuple of (frozenset monomial, natural coefficient)",
+      "sha256": "90160fa3c10bf087a27d738c96cfc97454dc65af7607ebba007ab9f9bfd4787f"
+    },
+    "reads_candidate_artifact": false,
+    "reads_comparison_answer": false,
+    "reads_core": false,
+    "reads_expected_polynomial": false,
+    "schema_version": "independent-native-polynomial-oracle-v1",
+    "status": "INDEPENDENT_NATIVE_POLYNOMIAL_PRIMITIVES_SUPPORTED",
+    "variable_identity_examples": [
+      {
+        "source_identity": "oracle-source-x",
+        "variable": "x_303d145ac67520502cf675743080b46093ee1414f8dc54169c09a6a6481e7c31"
+      },
+      {
+        "source_identity": "oracle-source-y",
+        "variable": "x_f6276868adfc0425f5acf771b81f0cd2bfd48c66a97f0e1b7f20d54dc16f028c"
+      }
+    ],
+    "vectors": {
+      "one": {
+        "schema_version": "nx-polynomial-v1",
+        "terms": [
+          {
+            "coefficient": 1,
+            "monomial": []
+          }
+        ]
+      },
+      "x_plus_x": {
+        "schema_version": "nx-polynomial-v1",
+        "terms": [
+          {
+            "coefficient": 2,
+            "monomial": [
+              {
+                "exponent": 1,
+                "variable": "x_303d145ac67520502cf675743080b46093ee1414f8dc54169c09a6a6481e7c31"
+              }
+            ]
+          }
+        ]
+      },
+      "x_plus_y_squared": {
+        "schema_version": "nx-polynomial-v1",
+        "terms": [
+          {
+            "coefficient": 2,
+            "monomial": [
+              {
+                "exponent": 1,
+                "variable": "x_303d145ac67520502cf675743080b46093ee1414f8dc54169c09a6a6481e7c31"
+              },
+              {
+                "exponent": 1,
+                "variable": "x_f6276868adfc0425f5acf771b81f0cd2bfd48c66a97f0e1b7f20d54dc16f028c"
+              }
+            ]
+          },
+          {
+            "coefficient": 1,
+            "monomial": [
+              {
+                "exponent": 2,
+                "variable": "x_303d145ac67520502cf675743080b46093ee1414f8dc54169c09a6a6481e7c31"
+              }
+            ]
+          },
+          {
+            "coefficient": 1,
+            "monomial": [
+              {
+                "exponent": 2,
+                "variable": "x_f6276868adfc0425f5acf771b81f0cd2bfd48c66a97f0e1b7f20d54dc16f028c"
+              }
+            ]
+          }
+        ]
+      },
+      "x_times_x": {
+        "schema_version": "nx-polynomial-v1",
+        "terms": [
+          {
+            "coefficient": 1,
+            "monomial": [
+              {
+                "exponent": 2,
+                "variable": "x_303d145ac67520502cf675743080b46093ee1414f8dc54169c09a6a6481e7c31"
+              }
+            ]
+          }
+        ]
+      },
+      "zero": {
+        "schema_version": "nx-polynomial-v1",
+        "terms": []
+      }
+    }
+  },
+  "joint_lower_strictness": {
+    "claim": "The joint tuple of three algebraic targets and the flat-support task projection is non-injective with respect to N[X]",
+    "evaluated_domains": [
+      "bag_naturals",
+      "boolean",
+      "flat_source_support_view",
+      "positive_boolean_lineage"
+    ],
+    "honesty_rule": "NOT_ESTABLISHED would be emitted if no real joint witness existed",
+    "joint_witness_count": 1,
+    "joint_witness_pair_ids": [
+      "lower-exponent"
+    ],
+    "schema_version": "joint-lower-projection-strictness-v1",
+    "status": "JOINT_LOWER_PROJECTION_STRICTNESS_SUPPORTED"
+  },
+  "lower_strictness": {
+    "claim": "Each evaluated lower projection forgets distinctions retained by N[X]",
+    "pair_count": 3,
+    "pairs": [
+      {
+        "gamma_snapshot_ids_different": true,
+        "left_nx": [
+          {
+            "logical_output_key": "LS_COEFFICIENT:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+            "polynomial": {
+              "schema_version": "nx-polynomial-v1",
+              "terms": [
+                {
+                  "coefficient": 1,
+                  "monomial": [
+                    {
+                      "exponent": 1,
+                      "variable": "x_91fdea99ab6d71c91b4960f06d2d3bb6b3b0f277504bf9b500e9c0634185d47d"
+                    },
+                    {
+                      "exponent": 1,
+                      "variable": "x_f287ae8c2248a4bce0d88614fc360ea1889b6d42e603215630517a9e7f01cf3c"
+                    }
+                  ]
+                }
+              ]
+            },
+            "values": {
+              "value": "same"
+            }
+          }
+        ],
+        "left_variant": "single",
+        "native_candidate_exact_both_sides": true,
+        "nx_different": true,
+        "ordinary_rows_equal": false,
+        "pair_id": "lower-coefficient",
+        "real_execution_count": 2,
+        "right_nx": [
+          {
+            "logical_output_key": "LS_COEFFICIENT:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+            "polynomial": {
+              "schema_version": "nx-polynomial-v1",
+              "terms": [
+                {
+                  "coefficient": 2,
+                  "monomial": [
+                    {
+                      "exponent": 1,
+                      "variable": "x_91fdea99ab6d71c91b4960f06d2d3bb6b3b0f277504bf9b500e9c0634185d47d"
+                    },
+                    {
+                      "exponent": 1,
+                      "variable": "x_f287ae8c2248a4bce0d88614fc360ea1889b6d42e603215630517a9e7f01cf3c"
+                    }
+                  ]
+                }
+              ]
+            },
+            "values": {
+              "value": "same"
+            }
+          }
+        ],
+        "right_variant": "double",
+        "same_lower_domains": [
+          "boolean",
+          "flat_source_support_view",
+          "positive_boolean_lineage"
+        ],
+        "supported": true,
+        "workload_id": "LS_COEFFICIENT"
+      },
+      {
+        "gamma_snapshot_ids_different": true,
+        "left_nx": [
+          {
+            "logical_output_key": "LS_BALANCED_BAG:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+            "polynomial": {
+              "schema_version": "nx-polynomial-v1",
+              "terms": [
+                {
+                  "coefficient": 1,
+                  "monomial": [
+                    {
+                      "exponent": 1,
+                      "variable": "x_0b49631eaad11f7c6d7cc623181d2f1af9bf49001b01e750f12e0a777fa0ffdd"
+                    }
+                  ]
+                },
+                {
+                  "coefficient": 1,
+                  "monomial": [
+                    {
+                      "exponent": 1,
+                      "variable": "x_61c6b24bf6959e74ae07f2dade9a7dd50599af902c1246978cde5f16409f0350"
+                    }
+                  ]
+                }
+              ]
+            },
+            "values": {
+              "value": "same"
+            }
+          }
+        ],
+        "left_variant": "two_sources",
+        "native_candidate_exact_both_sides": true,
+        "nx_different": true,
+        "ordinary_rows_equal": true,
+        "pair_id": "lower-balanced-bag",
+        "real_execution_count": 2,
+        "right_nx": [
+          {
+            "logical_output_key": "LS_BALANCED_BAG:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+            "polynomial": {
+              "schema_version": "nx-polynomial-v1",
+              "terms": [
+                {
+                  "coefficient": 2,
+                  "monomial": [
+                    {
+                      "exponent": 1,
+                      "variable": "x_61c6b24bf6959e74ae07f2dade9a7dd50599af902c1246978cde5f16409f0350"
+                    }
+                  ]
+                }
+              ]
+            },
+            "values": {
+              "value": "same"
+            }
+          }
+        ],
+        "right_variant": "one_source_twice",
+        "same_lower_domains": [
+          "bag_naturals",
+          "boolean"
+        ],
+        "supported": true,
+        "workload_id": "LS_BALANCED_BAG"
+      },
+      {
+        "gamma_snapshot_ids_different": true,
+        "left_nx": [
+          {
+            "logical_output_key": "LS_EXPONENT:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+            "polynomial": {
+              "schema_version": "nx-polynomial-v1",
+              "terms": [
+                {
+                  "coefficient": 1,
+                  "monomial": [
+                    {
+                      "exponent": 1,
+                      "variable": "x_8ff61fd424d36b1a94028391b6594fba831d2d7f9b5d320bb406a5672ad52708"
+                    }
+                  ]
+                }
+              ]
+            },
+            "values": {
+              "value": "same"
+            }
+          }
+        ],
+        "left_variant": "single_use",
+        "native_candidate_exact_both_sides": true,
+        "nx_different": true,
+        "ordinary_rows_equal": true,
+        "pair_id": "lower-exponent",
+        "real_execution_count": 2,
+        "right_nx": [
+          {
+            "logical_output_key": "LS_EXPONENT:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+            "polynomial": {
+              "schema_version": "nx-polynomial-v1",
+              "terms": [
+                {
+                  "coefficient": 1,
+                  "monomial": [
+                    {
+                      "exponent": 2,
+                      "variable": "x_8ff61fd424d36b1a94028391b6594fba831d2d7f9b5d320bb406a5672ad52708"
+                    }
+                  ]
+                }
+              ]
+            },
+            "values": {
+              "value": "same"
+            }
+          }
+        ],
+        "right_variant": "self_join",
+        "same_lower_domains": [
+          "bag_naturals",
+          "boolean",
+          "flat_source_support_view",
+          "positive_boolean_lineage"
+        ],
+        "supported": true,
+        "workload_id": "LS_EXPONENT"
+      }
+    ],
+    "real_execution_count": 6,
+    "requirements": {
+      "same_bag_naturals": true,
+      "same_boolean": true,
+      "same_flat_source_support_view": true,
+      "same_positive_boolean_lineage": true,
+      "same_which_vars": true
+    },
+    "schema_version": "lower-projection-strictness-constructions-v1",
+    "status": "LOWER_PROJECTION_STRICTNESS_SUPPORTED"
+  },
+  "native_candidate_algebra_independence": {
+    "allowed_shared_content": [
+      "JSON field protocol",
+      "frozen workload and RA AST",
+      "first-hand authority files",
+      "pure structural parsing in comparison"
+    ],
+    "candidate_algebra": "src/nx_polynomial.py::NXPolynomial",
+    "candidate_native_hits": [],
+    "candidate_variable_identity": "src/structural.py::variable_for_source",
+    "counts": {
+      "candidate_native_algebra_import_count": 0,
+      "candidate_native_artifact_read_count": 0,
+      "native_candidate_artifact_read_count": 0,
+      "shared_algebra_helper_count": 0,
+      "shared_expected_monomial_table_count": 0,
+      "shared_variable_identity_helper_count": 0
+    },
+    "files": [
+      {
+        "imports": [
+          {
+            "module": "__future__",
+            "symbol": "annotations"
+          },
+          {
+            "module": "dataclasses",
+            "symbol": "dataclass"
+          },
+          {
+            "module": "hashlib",
+            "symbol": "*"
+          },
+          {
+            "module": "json",
+            "symbol": "*"
+          },
+          {
+            "module": "native_polynomial_oracle",
+            "symbol": "NativePolynomialOracle"
+          },
+          {
+            "module": "native_polynomial_oracle",
+            "symbol": "native_variable_for_source"
+          },
+          {
+            "module": "typing",
+            "symbol": "Any"
+          },
+          {
+            "module": "workloads",
+            "symbol": "select_query"
+          }
+        ],
+        "path": "src/native_nx.py",
+        "sha256": "2bb91a9382fda4c927e711de3cece73057fc07d835e05d6b2f90d2c781a0ea64"
+      },
+      {
+        "imports": [
+          {
+            "module": "__future__",
+            "symbol": "annotations"
+          },
+          {
+            "module": "dataclasses",
+            "symbol": "dataclass"
+          },
+          {
+            "module": "hashlib",
+            "symbol": "*"
+          },
+          {
+            "module": "typing",
+            "symbol": "Iterable"
+          },
+          {
+            "module": "typing",
+            "symbol": "Mapping"
+          }
+        ],
+        "path": "src/native_polynomial_oracle.py",
+        "sha256": "90160fa3c10bf087a27d738c96cfc97454dc65af7607ebba007ab9f9bfd4787f"
+      },
+      {
+        "imports": [
+          {
+            "module": "__future__",
+            "symbol": "annotations"
+          },
+          {
+            "module": "collections",
+            "symbol": "defaultdict"
+          },
+          {
+            "module": "generation_relation_core.snapshots",
+            "symbol": "SnapshotValidation"
+          },
+          {
+            "module": "generation_relation_core.snapshots",
+            "symbol": "ValidatedSnapshot"
+          },
+          {
+            "module": "nx_polynomial",
+            "symbol": "NXPolynomial"
+          },
+          {
+            "module": "profile_runtime",
+            "symbol": "load_profile"
+          },
+          {
+            "module": "structural",
+            "symbol": "variable_for_source"
+          },
+          {
+            "module": "typing",
+            "symbol": "Any"
+          }
+        ],
+        "path": "src/candidate_nx.py",
+        "sha256": "c40eaf3e6b42af53b91cc0369241661c1aa7eaf73b5b239cddc6d05c42e07225"
+      },
+      {
+        "imports": [
+          {
+            "module": "__future__",
+            "symbol": "annotations"
+          },
+          {
+            "module": "dataclasses",
+            "symbol": "dataclass"
+          },
+          {
+            "module": "structural",
+            "symbol": "variable_for_source"
+          },
+          {
+            "module": "typing",
+            "symbol": "Iterable"
+          },
+          {
+            "module": "typing",
+            "symbol": "Mapping"
+          }
+        ],
+        "path": "src/nx_polynomial.py",
+        "sha256": "56eae9132c827c0d44f3a76999765f63746973a124f1cd8bf61aa96d2b2bc985"
+      },
+      {
+        "imports": [
+          {
+            "module": "__future__",
+            "symbol": "annotations"
+          },
+          {
+            "module": "hashlib",
+            "symbol": "*"
+          },
+          {
+            "module": "json",
+            "symbol": "*"
+          },
+          {
+            "module": "typing",
+            "symbol": "Any"
+          }
+        ],
+        "path": "src/structural.py",
+        "sha256": "8bc80368b09c808eba1642a016a17263164ec014ffb351f7f93329910f9f5aac"
+      }
+    ],
+    "native_algebra": "src/native_polynomial_oracle.py::NativePolynomialOracle",
+    "native_candidate_algebra_hits": [],
+    "native_candidate_variable_hits": [],
+    "native_variable_identity": "src/native_polynomial_oracle.py::native_variable_for_source",
+    "schema_version": "native-candidate-algebra-independence-v1",
+    "status": "NATIVE_CANDIDATE_ALGEBRA_INDEPENDENCE_SUPPORTED"
+  },
+  "negative_controls": {
+    "actual_control_count": 70,
+    "automatic_repair_count": 0,
+    "fingerprints": [
+      "a2255695457961984d74ebf7e671d03a4649bb393d37bec2bc13b1d5acc1a132",
+      "cef971280e488db90f2b3e44bac28a608bf9a2f2c2c37e4ff61e3f1a76fe2943",
+      "974877c8aeab77a4d495de00ef2974850a7b7528b70804a411a1933287c42f4d",
+      "0a7c66322dec390c797a799184b5f12248059f9ca957f4d5847aab7315c0f5c1",
+      "ee35384353ae441919190c36dbda1cd08ed519a1a6d0279a9af88e0455575da5",
+      "e8f0ac53ed0871e4f9b21829dbfd47b47142bc4d7445a8c219775636f5dd9f89",
+      "e86110a12ba095e4746e7206029470cd0c02ee3f72bfef13d44a442d8441e941",
+      "5f476c714a82603d17759260e1d3395945a21f17a38b1a131cb81d4573a94614",
+      "9b4d0026ae0962f991df0d7a7b50a8e9d93acb4dfda1d2f92f896a075663f672",
+      "dd4d9122632051c3ae83ebdd90d48ca5512c4fca09be84663cc7bb838508042d",
+      "51bcf8d4b85590f428dcd64875fafbfc5285991d084b062a3716e1979be08501",
+      "01bbfec56ab1b0b9312f5aec1e420d713f441c02d3ed3b364150a740aaeb2ed3",
+      "15318f3291b38eac7864aad68dcfd1c04e77721a26a479b0880b8b712a4a4e74",
+      "62e1b1dd1c6c26283da707d2972af4854a42c033bea5b065aeabd91f870d06c8",
+      "4346b534eca361be038a94b706e346bc7c5559a9251485602ef1819c391d8528",
+      "69c0d94d4a3fec0c437885bb8c406fa7d3a9bbc00e51b7c5d742d71d6c472c8b",
+      "94ae655c33edafdc5156428e76a3f8524fcaf2778287304615102a4addb434d0",
+      "cbaa6bd2fd6dc01a07c832bc4dd484964df30f491f0bb59dd380c057836e5d32",
+      "ffe381bc8a4f8068fffa4871d6a188ca67a78486f2cd9d34911f3c45f7bf7d0e",
+      "23d9afbd91ecf1fcaf8e6f986639b75445af3d074af88f4bb2be615206919ce9",
+      "2376875c3b4754480f140d9786c4e37e6c7a3cdc3ea698909e34fbc3c2a93902",
+      "33369ff444b0192bbebb3448023b17233cc06ac0d81ad4b454d64c05606f3643",
+      "60472f348ce1736d14aafbcde2d828355cffae7d986622410a02855d98b3928b",
+      "5efac208420bef43ffc09731683d6991563bd8f65672df4c4da447e61e9d2c4b",
+      "5a2d2ba02d44ba70622829be2b0fc9465d32b6b48dc12df62722e9f9337b3d20",
+      "ba79e0bdb91c2756962cdc902261d344ad1c1f94345f827be01a968c3f5a34d2",
+      "de1824699253d23f12d0044ded2bc30427d123ec7dcdbfec89400515a351ad99",
+      "4e7e7405672dd8ce3f991ff1d965158ff9ae9f9c905af318e4d4be4186777a77",
+      "bc6204510284c65a00057962a37ee1cd03c5cff7c22805630e996de6b5ba99fb",
+      "c1b6e045eb2026d38c75769008d56c8e049e2ad6a33298418f51f089d1df930b",
+      "e721969f781ceb283e9c9020b0817648d1bacfc280c76e8b2c3fc31175f9bbc9",
+      "36b00e89b0a0da05a3e23b6bd2504ae4242ac788105ef872a71bec28bfd2d2cd",
+      "1454c01cacc21be279a94b758ad2576f0107cf0b066a50c4582591b678b40079",
+      "09b8691f86b76d560a2f30d0cf2baaa7da77f05812db2339a49e4873fd4aa9e3",
+      "152476ee62e9d5021ed68d3d3762cca8f77fb12f447620aec0e96f73d22722bb",
+      "24a9447516ac8ced2ec14cf0c5ecf4efae70350afc60c0de96d42d7f1b486587",
+      "55d2ad35f8d6b4e2b8454d13348daf64260b77a667cddae1ba0db3f9109828ce",
+      "4f27c367394427413662fe0a095c002bb8fcf91b59df820b8109d15f70df8d59",
+      "b09906a674d74d40da1febc2d0f96cd56ba377a03eb6313cc4c165353968d2ce",
+      "7aedc7b2bb25fc88ac19f0988e575fcc72591dc72ce307ba153303b7761e295b",
+      "070395eb109ec3729d3b64c9dfd0694e0c7f75b95d70958b035f3c0d90060d88",
+      "14f132954db760aa4ed45c1350082c0c8ba23607d74e2685c01f9f33fda01ef2",
+      "994dfbe857866a8528d7cdca67de220b8f47384a4a5cdde5a08f961336175382",
+      "731f4681674e980e7b64082774ef76e8185f2882cb8393b89b984ec474e72fa1",
+      "07e51c57d508f163396e25a9b49f5681382703b2d6b1ecbbe562b4f9a91a91f3",
+      "e9ee63f263dfb4cc538c7bd459a4cdfd75425141f7b724bdf31eb11537e683ec",
+      "0f33c044871c658e590f1bd05ffa4b65d77ef87cfde8cd4be55a1f18d54f7286",
+      "fbf8c127d42add0fe9bbb1306f869e03a169db4909904ef555df2cb938d40281",
+      "3995177f1c8150327e9980fcf1978804045110c4dc38f530bf04b8947256c525",
+      "c2b2ef81b3ad79bb33b94d7eb685e828106b1c69d9c4c8d71557613a0df852b0",
+      "c55f378358c1c2d018ee2b3f4d6ca74ec0f6634b6194c821faabf450efa57240",
+      "5d9f6c0655e5e14e37a9a88ba17760b09c7dec4f55aaabef4f65ffe1abd6dedd",
+      "ba7cd194765c4bafa6ff34bf0c45365c70c66fc8f9d254664bee3c787051e07f",
+      "b3fdf5264273c51f01b6906874f6f8abe2c5df7b6a26f0244b6b08122952c029",
+      "a2c95e5f76939a050a2139c54d8cb2cd54f933f8c25f3b63fff7aca0605dec11",
+      "430faa741981d14c28e79f7acbf5f58f48d64e673cd4df49f4bcf872c4b88427",
+      "6a8af0fd2a76b5622aa01ce7a6b7ce863f025516827b6a9127fd2ab45d58b388",
+      "2958f747bd812ee62eeda8037580616da15c372bdd117d8c06a32022ee86a5cb",
+      "df96a55f38231eb5cbd7d534b2588e019f87d65fbdbb0dad9a6f332eb319934a",
+      "1590bbe32541c7bc6d1a434be640cf377ca2882a50cc7e2cd658dd12ea263e6d",
+      "f358ca8fbea41454d6563cc24af9cfe932abee35213c0fff12f666e179543ca9",
+      "059625384028e6fd244b6324098a75f85d963646b46b530d4e31e915669ab598",
+      "29106342db751e8f22a0a3ee44682360d6de2c3953bb411d5c4eac61330d3f92",
+      "c125d87062ae5999b4d3127f04bd6bc9c60780e9301b68381820d3bb8c341b92",
+      "875ae3ec4de11d0c94a931f5e9ea4f75b90da28e15dead474461ce00a9666a1a",
+      "d4a5498e7a85a3b196704767f06f055eef09387c8e7a485a0acf1111a1b59e0d",
+      "5eb7d5e69b9b3da10773c6b6db2e9b165208f7eb3895bf86175e7c59137eb7a6",
+      "05fb9737cb773a6254662d2b8bc18b92c8dab1666500cb890c71ab39441081fa",
+      "6317247776f666b7ed78b84ff952e30480b0b4dbfd2262d4adcd6eb31de7431e",
+      "7823810ac2062d0d8c60b7a7d5e3592aadee6c5b1045d0932b4adc1b147d65d5"
+    ],
+    "hardening_control_count": 25,
+    "hardening_passed_control_count": 25,
+    "original_control_count": 45,
+    "original_passed_control_count": 45,
+    "passed_control_count": 70,
+    "status": "ALL_NEGATIVE_CONTROLS_FAILED_CLOSED",
+    "unique_fingerprint_count": 70
+  },
+  "ordinary_execution": {
+    "case_count": 13,
+    "cases": [
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 2,
+          "ordinary_row_count": 2,
+          "source_count": 3
+        },
+        "ordinary_sha256": "3797ed50905b70ede75698b70eb272f29d55caa26307cbacf092968af8286a9a",
+        "variant": "default",
+        "workload_id": "W1"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 1,
+          "ordinary_row_count": 1,
+          "source_count": 4
+        },
+        "ordinary_sha256": "42b8faeddf569081137ddbd7ad412344de6aa845deb24813dbb84b28e92400cd",
+        "variant": "default",
+        "workload_id": "W2"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 2,
+          "ordinary_row_count": 2,
+          "source_count": 2
+        },
+        "ordinary_sha256": "fd0f3cedf778cba8d31c686601a709a56a71520ee3ce9f6e7f9fcc1668b5e5ed",
+        "variant": "default",
+        "workload_id": "W3"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 4,
+          "ordinary_row_count": 2,
+          "source_count": 2
+        },
+        "ordinary_sha256": "f7d180493ca24095ef38692d4f903d3a6a15aa8f7a7d202a626dd8fb0ac6b562",
+        "variant": "default",
+        "workload_id": "W4"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 2,
+          "ordinary_row_count": 2,
+          "source_count": 2
+        },
+        "ordinary_sha256": "31423b4a4de2d5df5386deba5a473458bcea56d74f05d81d82308416b7ecf7e0",
+        "variant": "default",
+        "workload_id": "W5"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 1,
+          "ordinary_row_count": 1,
+          "source_count": 1
+        },
+        "ordinary_sha256": "200d5095ec627f51ff11568ec5819230c7ec52deef1b3e95b03052bd34938a94",
+        "variant": "default",
+        "workload_id": "W6"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 4,
+          "ordinary_row_count": 2,
+          "source_count": 2
+        },
+        "ordinary_sha256": "5d43f02c7afb36d8a8c69260776059bf67593e8f06cbf847faaa81ecaa5063d4",
+        "variant": "default",
+        "workload_id": "W7"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 2,
+          "ordinary_row_count": 2,
+          "source_count": 2
+        },
+        "ordinary_sha256": "583727b585de40218f0f3f64caab2b81c307d2d78efe6e45e5d498467edd1cc3",
+        "variant": "default",
+        "workload_id": "W8"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 4,
+          "ordinary_row_count": 2,
+          "source_count": 3
+        },
+        "ordinary_sha256": "ba6df4e12adaeb67fb586f7175b699ce10ca3be2b1f6d62b3d01ee7963821020",
+        "variant": "default",
+        "workload_id": "W9"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 13,
+          "ordinary_row_count": 3,
+          "source_count": 6
+        },
+        "ordinary_sha256": "dad0f20381513fbc7f134a91409b729590034367eddaff59222ec3bf4d7d75aa",
+        "variant": "default",
+        "workload_id": "W10"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 4,
+          "ordinary_row_count": 2,
+          "source_count": 4
+        },
+        "ordinary_sha256": "e1305e81422eef29da93c296d90c82b887db4aa48e387620bd9826c536e79167",
+        "variant": "plan_a",
+        "workload_id": "W11"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 6,
+          "ordinary_row_count": 2,
+          "source_count": 4
+        },
+        "ordinary_sha256": "726e0fa8ddeac433230051ba371e71207ca6f94d7daaea47702cc3c93cd993df",
+        "variant": "plan_b",
+        "workload_id": "W11"
+      },
+      {
+        "capture_on_off_bytes_equal": true,
+        "measurements": {
+          "occurrence_count": 1100,
+          "ordinary_row_count": 300,
+          "source_count": 100
+        },
+        "ordinary_sha256": "eb2c7b7f4cb254be46a2f390b182794df3b3f63e3cb970ad8b443635fde88fcc",
+        "variant": "default",
+        "workload_id": "W12"
+      }
+    ]
+  },
+  "p1": {
+    "actual_case_count": 13,
+    "cases": [
+      {
+        "candidate_output_count": 2,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 2,
+        "variant": "default",
+        "workload_id": "W1"
+      },
+      {
+        "candidate_output_count": 3,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 3,
+        "variant": "default",
+        "workload_id": "W10"
+      },
+      {
+        "candidate_output_count": 2,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 2,
+        "variant": "plan_a",
+        "workload_id": "W11"
+      },
+      {
+        "candidate_output_count": 2,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 2,
+        "variant": "plan_b",
+        "workload_id": "W11"
+      },
+      {
+        "candidate_output_count": 25,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 25,
+        "variant": "default",
+        "workload_id": "W12"
+      },
+      {
+        "candidate_output_count": 1,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 1,
+        "variant": "default",
+        "workload_id": "W2"
+      },
+      {
+        "candidate_output_count": 1,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 1,
+        "variant": "default",
+        "workload_id": "W3"
+      },
+      {
+        "candidate_output_count": 1,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 1,
+        "variant": "default",
+        "workload_id": "W4"
+      },
+      {
+        "candidate_output_count": 1,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 1,
+        "variant": "default",
+        "workload_id": "W5"
+      },
+      {
+        "candidate_output_count": 1,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 1,
+        "variant": "default",
+        "workload_id": "W6"
+      },
+      {
+        "candidate_output_count": 1,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 1,
+        "variant": "default",
+        "workload_id": "W7"
+      },
+      {
+        "candidate_output_count": 1,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 1,
+        "variant": "default",
+        "workload_id": "W8"
+      },
+      {
+        "candidate_output_count": 1,
+        "exact": true,
+        "missing_side": null,
+        "native_output_count": 1,
+        "variant": "default",
+        "workload_id": "W9"
+      }
+    ],
+    "claim": "Native K-relation N[X] equals Core-only Candidate N[X] exactly",
+    "expected_case_count": 13,
+    "expected_case_coverage": true,
+    "mismatch_count": 0,
+    "repair_count": 0,
+    "schema_version": "nx-exact-comparison-v1",
+    "status": "EXACT_SUPPORTED"
+  },
+  "p2": {
+    "actual_pair_count": 5,
+    "claim": "Gamma_G(omega) is strictly richer than its N[X] projection",
+    "pairs": [
+      {
+        "different_authoritative_tables": [
+          "evidence_links",
+          "evidence_records",
+          "generated_origins",
+          "generation_bindings",
+          "generation_occurrences",
+          "generator_operation_results",
+          "perceptual_support_records"
+        ],
+        "dimension": "physical occurrence structure",
+        "gamma_snapshot_ids_different": true,
+        "left_counts": {
+          "environment_records": 1,
+          "evidence_links": 6,
+          "evidence_records": 6,
+          "explicit_dispositions": 0,
+          "generated_origins": 2,
+          "generation_bindings": 6,
+          "generation_occurrences": 4,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "migration_records": 0,
+          "perceptual_support_records": 4,
+          "predicate_profiles": 1,
+          "source_information_records": 4,
+          "support_space_records": 1
+        },
+        "left_snapshot_id": "snap3_ded34b4ddb3b04959be2f6c85a6592b7b8eb2c9202de34fdef180d5c80e7c280",
+        "native_candidate_exact_on_both_sides": true,
+        "nx_equal_across_pair": true,
+        "ordinary_output_equal": true,
+        "pair_id": "P2-physical-occurrence-structure",
+        "real_execution_count": 2,
+        "required_difference_present": true,
+        "required_different_tables": [
+          "generation_occurrences"
+        ],
+        "right_counts": {
+          "environment_records": 1,
+          "evidence_links": 8,
+          "evidence_records": 8,
+          "explicit_dispositions": 0,
+          "generated_origins": 4,
+          "generation_bindings": 8,
+          "generation_occurrences": 6,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "migration_records": 0,
+          "perceptual_support_records": 6,
+          "predicate_profiles": 1,
+          "source_information_records": 4,
+          "support_space_records": 1
+        },
+        "right_snapshot_id": "snap3_0f9055b289d81b550c014ab092d48f3e1e693206dd0bf5ca69d5d3536291fccd",
+        "supported": true,
+        "workload_id": "W11"
+      },
+      {
+        "different_authoritative_tables": [
+          "evidence_links",
+          "evidence_records",
+          "generation_bindings",
+          "generator_operation_results"
+        ],
+        "dimension": "evidence",
+        "gamma_snapshot_ids_different": true,
+        "left_counts": {
+          "environment_records": 1,
+          "evidence_links": 4,
+          "evidence_records": 4,
+          "explicit_dispositions": 2,
+          "generated_origins": 0,
+          "generation_bindings": 4,
+          "generation_occurrences": 3,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "migration_records": 0,
+          "perceptual_support_records": 1,
+          "predicate_profiles": 1,
+          "source_information_records": 4,
+          "support_space_records": 1
+        },
+        "left_snapshot_id": "snap3_f31eb409f576dd3f5d11ab76ae3be41fc1a7a4f5346d41bb54845fb963939271",
+        "native_candidate_exact_on_both_sides": true,
+        "nx_equal_across_pair": true,
+        "ordinary_output_equal": true,
+        "pair_id": "P2-evidence",
+        "real_execution_count": 2,
+        "required_difference_present": true,
+        "required_different_tables": [
+          "evidence_records"
+        ],
+        "right_counts": {
+          "environment_records": 1,
+          "evidence_links": 4,
+          "evidence_records": 4,
+          "explicit_dispositions": 2,
+          "generated_origins": 0,
+          "generation_bindings": 4,
+          "generation_occurrences": 3,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "migration_records": 0,
+          "perceptual_support_records": 1,
+          "predicate_profiles": 1,
+          "source_information_records": 4,
+          "support_space_records": 1
+        },
+        "right_snapshot_id": "snap3_da56acc8c85bc5e71ec4e731b9d05f6e60de953ee01fba06d5b20d30e1590dd3",
+        "supported": true,
+        "workload_id": "W2"
+      },
+      {
+        "different_authoritative_tables": [
+          "environment_records",
+          "evidence_links",
+          "evidence_records",
+          "generation_bindings",
+          "generation_occurrences",
+          "generator_manifests",
+          "generator_operation_results"
+        ],
+        "dimension": "environment",
+        "gamma_snapshot_ids_different": true,
+        "left_counts": {
+          "environment_records": 1,
+          "evidence_links": 4,
+          "evidence_records": 4,
+          "explicit_dispositions": 2,
+          "generated_origins": 0,
+          "generation_bindings": 4,
+          "generation_occurrences": 3,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "migration_records": 0,
+          "perceptual_support_records": 1,
+          "predicate_profiles": 1,
+          "source_information_records": 4,
+          "support_space_records": 1
+        },
+        "left_snapshot_id": "snap3_f0eae17433135205a72c54322e214953b96f7f5f59cde2a83943e8e013bf0d01",
+        "native_candidate_exact_on_both_sides": true,
+        "nx_equal_across_pair": true,
+        "ordinary_output_equal": true,
+        "pair_id": "P2-environment",
+        "real_execution_count": 2,
+        "required_difference_present": true,
+        "required_different_tables": [
+          "environment_records"
+        ],
+        "right_counts": {
+          "environment_records": 1,
+          "evidence_links": 4,
+          "evidence_records": 4,
+          "explicit_dispositions": 2,
+          "generated_origins": 0,
+          "generation_bindings": 4,
+          "generation_occurrences": 3,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "migration_records": 0,
+          "perceptual_support_records": 1,
+          "predicate_profiles": 1,
+          "source_information_records": 4,
+          "support_space_records": 1
+        },
+        "right_snapshot_id": "snap3_3937312af7d2115af7761aab3e77fd7f5602b0a4f8da4d3afa1434aee6ed5e53",
+        "supported": true,
+        "workload_id": "W2"
+      },
+      {
+        "different_authoritative_tables": [
+          "evidence_links",
+          "evidence_records",
+          "explicit_dispositions",
+          "generation_bindings",
+          "generator_operation_results"
+        ],
+        "dimension": "disposition",
+        "gamma_snapshot_ids_different": true,
+        "left_counts": {
+          "environment_records": 1,
+          "evidence_links": 3,
+          "evidence_records": 3,
+          "explicit_dispositions": 1,
+          "generated_origins": 0,
+          "generation_bindings": 3,
+          "generation_occurrences": 3,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "migration_records": 0,
+          "perceptual_support_records": 2,
+          "predicate_profiles": 1,
+          "source_information_records": 3,
+          "support_space_records": 1
+        },
+        "left_snapshot_id": "snap3_f62e064361cdafab894bf0de07ecca1b96aa5efcd0a659b3f4dff92536fcc150",
+        "native_candidate_exact_on_both_sides": true,
+        "nx_equal_across_pair": true,
+        "ordinary_output_equal": true,
+        "pair_id": "P2-disposition",
+        "real_execution_count": 2,
+        "required_difference_present": true,
+        "required_different_tables": [
+          "explicit_dispositions"
+        ],
+        "right_counts": {
+          "environment_records": 1,
+          "evidence_links": 3,
+          "evidence_records": 3,
+          "explicit_dispositions": 1,
+          "generated_origins": 0,
+          "generation_bindings": 3,
+          "generation_occurrences": 3,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "migration_records": 0,
+          "perceptual_support_records": 2,
+          "predicate_profiles": 1,
+          "source_information_records": 3,
+          "support_space_records": 1
+        },
+        "right_snapshot_id": "snap3_3927ba175ec28788a57bfdaf3491a4baa63802b5c9ac7ca4ea6560d4a0095f3a",
+        "supported": true,
+        "workload_id": "W1"
+      },
+      {
+        "different_authoritative_tables": [
+          "generator_operation_results"
+        ],
+        "dimension": "operation result",
+        "gamma_snapshot_ids_different": true,
+        "left_counts": {
+          "environment_records": 1,
+          "evidence_links": 4,
+          "evidence_records": 4,
+          "explicit_dispositions": 2,
+          "generated_origins": 0,
+          "generation_bindings": 4,
+          "generation_occurrences": 3,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "migration_records": 0,
+          "perceptual_support_records": 1,
+          "predicate_profiles": 1,
+          "source_information_records": 4,
+          "support_space_records": 1
+        },
+        "left_snapshot_id": "snap3_c68fec0c809d5572ac8c81abe442dfc2c796420b6553077e056eb822b2c41be2",
+        "native_candidate_exact_on_both_sides": true,
+        "nx_equal_across_pair": true,
+        "ordinary_output_equal": true,
+        "pair_id": "P2-operation-result",
+        "real_execution_count": 2,
+        "required_difference_present": true,
+        "required_different_tables": [
+          "generator_operation_results"
+        ],
+        "right_counts": {
+          "environment_records": 1,
+          "evidence_links": 4,
+          "evidence_records": 4,
+          "explicit_dispositions": 2,
+          "generated_origins": 0,
+          "generation_bindings": 4,
+          "generation_occurrences": 3,
+          "generator_manifests": 1,
+          "generator_operation_results": 1,
+          "hierarchy_records": 0,
+          "migration_records": 0,
+          "perceptual_support_records": 1,
+          "predicate_profiles": 1,
+          "source_information_records": 4,
+          "support_space_records": 1
+        },
+        "right_snapshot_id": "snap3_0857d32e9d978e033b302f18204d9074bad022c33d9c688ba992d7706b3f66a1",
+        "supported": true,
+        "workload_id": "W2"
+      }
+    ],
+    "real_execution_count": 10,
+    "required_pair_count": 5,
+    "schema_version": "nx-strictness-counterexamples-v1",
+    "status": "STRICTNESS_SUPPORTED"
+  },
+  "p3": {
+    "cases": [
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W1"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W1"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W1"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W1"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W10"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W10"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W10"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W10"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "plan_a",
+        "workload_id": "W11"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "plan_a",
+        "workload_id": "W11"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "plan_a",
+        "workload_id": "W11"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "plan_a",
+        "workload_id": "W11"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "plan_b",
+        "workload_id": "W11"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "plan_b",
+        "workload_id": "W11"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "plan_b",
+        "workload_id": "W11"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "plan_b",
+        "workload_id": "W11"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W12"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W12"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W12"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W12"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W2"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W2"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W2"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W2"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W3"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W3"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W3"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W3"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W4"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W4"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W4"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W4"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W5"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W5"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W5"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W5"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W6"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W6"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W6"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W6"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W7"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W7"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W7"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W7"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W8"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W8"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W8"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W8"
+      },
+      {
+        "domain_id": "bag_naturals",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W9"
+      },
+      {
+        "domain_id": "boolean",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W9"
+      },
+      {
+        "domain_id": "flat_source_support_view",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W9"
+      },
+      {
+        "domain_id": "positive_boolean_lineage",
+        "exact": true,
+        "variant": "default",
+        "workload_id": "W9"
+      }
+    ],
+    "claim": "Direct target execution equals the N[X]-derived result, with algebraic targets and task projections classified separately",
+    "coverage_complete": true,
+    "direct_path_computes_nx_first": false,
+    "domain_case_counts": {
+      "bag_naturals": 13,
+      "boolean": 13,
+      "flat_source_support_view": 13,
+      "positive_boolean_lineage": 13
+    },
+    "domain_classifications": {
+      "bag_naturals": "COMMUTATIVE_SEMIRING_TARGET",
+      "boolean": "COMMUTATIVE_SEMIRING_TARGET",
+      "flat_source_support_view": "PARTIAL_NONZERO_SUPPORT_VIEW",
+      "positive_boolean_lineage": "SEMIRING_QUOTIENT_OR_HOMOMORPHIC_IMAGE"
+    },
+    "mismatch_count": 0,
+    "repair_count": 0,
+    "required_algebraic_domains": [
+      "bag_naturals",
+      "boolean",
+      "positive_boolean_lineage"
+    ],
+    "required_task_projections": [
+      "flat_source_support_view"
+    ],
+    "schema_version": "hierarchical-projection-exact-comparison-v2",
+    "status": "FORMAL_PROJECTION_HIERARCHY_EXACT_SUPPORTED"
+  },
+  "performance_fields_not_recorded": true,
+  "persisted_classification": {
+    "hidden_registry_count": 0,
+    "relation_answer_store_count": 0,
+    "status": "SUPPORTED",
+    "unclassified_file_count": 0
+  },
+  "report_artifact_consistency": {
+    "automatic_repair": false,
+    "blocking_reasons": [],
+    "checks": {
+      "all_statistic_source_files_present": true,
+      "persisted_sources_equal_recomputation": true,
+      "persisted_statistics_equal_recomputation": true,
+      "report_generated_block_exact": true,
+      "stale_report_tuple_absent": true
+    },
+    "gate": "REPORT_STATISTICS_EXACT_AGAINST_ARTIFACTS",
+    "report_path": "generated_experiment_report.md",
+    "report_sha256": "8126e5dd8bf904bfad15141ed69a2cfce82f802b0f90522a94144b0fa3694b9c",
+    "schema_version": "report-artifact-consistency-v1",
+    "statistics_sha256": "8cae1f057453611721e746000c6a0833afff23313eb4bc872403328e0254d3e3",
+    "status": "REPORT_STATISTICS_EXACT_AGAINST_ARTIFACTS"
+  },
+  "report_statistics": {
+    "derivation_rules": {
+      "lower_comparisons": "count classified comparison cases and split by algebraic/task domain IDs",
+      "manifest": "file_count fields and a stable summary digest from artifact_manifest.json; per-file hashes remain verified by the manifest gate",
+      "observations": "read native_observation_count from nx_field_coverage required fields",
+      "tests": "passed_count from the first hardening run when present, otherwise the frozen v1 run",
+      "unique_sources": "set cardinality of source_identity across Native corpus source-variable maps"
+    },
+    "manual_statistic_literals_allowed": false,
+    "schema_version": "report-statistics-v1",
+    "sources": {
+      "coverage": {
+        "path": "nx_field_coverage.json",
+        "sha256": "02f73faa32d53204de736eea9a614062160340ae46ac4bf4e902db62de18442a"
+      },
+      "lower": {
+        "path": "hierarchical_projection_exact_comparison.json",
+        "sha256": "389a90d9b71f97a3d159a0f107f084be1b8b55a51590c827ed6ad1c041c59fa1"
+      },
+      "manifest": {
+        "path": "artifact_manifest.json",
+        "sha256": "cb052e7a90163347d0bc02362a0a3f45e48dff7c8044a78ad9fb3e92356b602a"
+      },
+      "native": {
+        "path": "native_nx_polynomials.json",
+        "sha256": "da9b588ac182d4db38ceb3eff2fbabd8df13ca3cf1ce806c982971988f79a73b"
+      },
+      "negative": {
+        "path": "negative_controls.json",
+        "sha256": "0bd7b407600eb9adeba44ed506078717ce3b1c485ef5e4e7610b3df99bc456d7"
+      },
+      "p1": {
+        "path": "nx_exact_comparison.json",
+        "sha256": "e82354f4f385ec7677b13deabff410ca32f5899a0459e50579e3c1f994f5cbe5"
+      },
+      "p2": {
+        "path": "nx_strictness_counterexamples.json",
+        "sha256": "aa811c7016a80dadf4da7e2ea809380537420d360c690cbef01f6460d36dcb66"
+      },
+      "tests": {
+        "path": "test_results.json",
+        "sha256": "ba0628e31d663276e7f0a0681785556368a4b41be344492f65feab640dfa6e2f"
+      }
+    },
+    "statistics": {
+      "case_count": 13,
+      "coefficient_observation_count": 197,
+      "exponent_observation_count": 332,
+      "formal_algebraic_comparison_count": 39,
+      "lower_domain_comparison_count": 52,
+      "manifest_artifact_file_count": 31,
+      "manifest_file_count": 31,
+      "monomial_factor_count": 332,
+      "negative_control_count": 70,
+      "output_count": 42,
+      "polynomial_term_count": 197,
+      "real_execution_count": 10,
+      "source_variable_observation_count": 135,
+      "strictness_pair_count": 5,
+      "task_projection_comparison_count": 13,
+      "test_count": 50,
+      "unique_source_identity_count": 131
+    },
+    "status": "REPORT_STATISTICS_DERIVED_FROM_ARTIFACTS"
+  },
+  "run_identity": "repeated-complete-formal-semantics-hardening-execution-v1",
+  "schema_version": "complete-formal-semantics-hardening-execution-v1",
+  "scientific_determinism_exclusions": [],
+  "snapshot_identities": [
+    {
+      "snapshot_id": "snap3_e534c963802fb2e6412aa866f0b0ef882664f825a527cde1141f4df50b3d0635",
+      "variant": "default",
+      "workload_id": "W1"
+    },
+    {
+      "snapshot_id": "snap3_fafa32f248d70405de2a72d007e1acf7595cde88afa99016fa8658d05e6c9e28",
+      "variant": "default",
+      "workload_id": "W2"
+    },
+    {
+      "snapshot_id": "snap3_510c7e7b9a067837f1dc087b90742bfe12e1b7b3d1be8506fc8fc978188d62f1",
+      "variant": "default",
+      "workload_id": "W3"
+    },
+    {
+      "snapshot_id": "snap3_e61faaa45925045fec6de91454ef64ea340ab9934047cd7cf532b4a8545962e6",
+      "variant": "default",
+      "workload_id": "W4"
+    },
+    {
+      "snapshot_id": "snap3_afbee654b843fec08ac0cc49f7d53b447c779fad718ca8ae414083c3a7e6aef2",
+      "variant": "default",
+      "workload_id": "W5"
+    },
+    {
+      "snapshot_id": "snap3_f3b7d520f19e0f6ceb55200d176f3837848ca98039fdc3059bcb270187e5b435",
+      "variant": "default",
+      "workload_id": "W6"
+    },
+    {
+      "snapshot_id": "snap3_d303b67735164e17d127741dea56a9b1a19bf1c5892e20c08e4243f105288825",
+      "variant": "default",
+      "workload_id": "W7"
+    },
+    {
+      "snapshot_id": "snap3_ec14c43729813b1534feb2fcae6d1c8d0e3d8240d7b05179c9f9a02db966cd65",
+      "variant": "default",
+      "workload_id": "W8"
+    },
+    {
+      "snapshot_id": "snap3_7c1fdac8d198266db52b643170b182284ecf68ecae71d8f5c2a3912cd6d6751e",
+      "variant": "default",
+      "workload_id": "W9"
+    },
+    {
+      "snapshot_id": "snap3_0cdead2c8a7e81a9b590a58bea5019ccacaa503b4183b84d8f45ac932f63ff7b",
+      "variant": "default",
+      "workload_id": "W10"
+    },
+    {
+      "snapshot_id": "snap3_770a0516ddd68feb90d1083985a2ba13299572b36db174a0991f34df8661a1ec",
+      "variant": "plan_a",
+      "workload_id": "W11"
+    },
+    {
+      "snapshot_id": "snap3_453e55b859cee98967df2ad28a5a4a69e610cd128acad97103be1cbe2ab45da9",
+      "variant": "plan_b",
+      "workload_id": "W11"
+    },
+    {
+      "snapshot_id": "snap3_387f8a10fafd697cb65bcd2d2119218bc27a0865b9237426f1f83fd4021b93bf",
+      "variant": "default",
+      "workload_id": "W12"
+    }
+  ],
+  "status": "COMPLETE_HARDENING_RUN_SUPPORTED",
+  "two_level_hierarchy": {
+    "forbidden_conflation": "Level 2A and Level 2B are not jointly described as semiring homomorphic images",
+    "gates": {
+      "algebra_independence": true,
+      "existing_database_which": true,
+      "flat_support_classified_as_task_projection": true,
+      "flat_support_exact": true,
+      "independent_native_candidate_exact": true,
+      "joint_lower_strictness": true,
+      "lower_strictness": true,
+      "p1_exact_nx": true,
+      "p2_gamma_strictness": true,
+      "p3_classified_projection_hierarchy": true,
+      "three_formal_algebraic_targets": true
+    },
+    "levels": [
+      {
+        "domain": "complete Core v3 generation facts Gamma_G(omega)",
+        "level": 0,
+        "outgoing_arrow": "exact strict projection"
+      },
+      {
+        "domain": "canonical provenance polynomial N[X]",
+        "incoming_arrow": "exact strict projection from Gamma_G(omega)",
+        "level": 1
+      },
+      {
+        "classification": "formal algebraic targets",
+        "domains": [
+          "bag N",
+          "Boolean B",
+          "PosBool(X)"
+        ],
+        "incoming_arrow": "exact semiring homomorphism or quotient projection from N[X]",
+        "level": "2A"
+      },
+      {
+        "classification": "non-semiring task projections",
+        "domains": [
+          "flat source-support view",
+          "Vars(N[X])",
+          "existing Database which-lineage"
+        ],
+        "incoming_arrow": "exact task projection from N[X]",
+        "level": "2B"
+      }
+    ],
+    "not_evaluated": [
+      "Which(X)",
+      "Trio(X)",
+      "witness-basis Why provenance"
+    ],
+    "schema_version": "two-level-unification-hierarchy-v2",
+    "status": "TWO_LEVEL_FORMAL_HIERARCHY_SUPPORTED"
+  },
+  "v1_result_preservation": {
+    "automatic_repair": false,
+    "blocking_reasons": [],
+    "comparison_policy": "compare frozen scientific conclusions and witness dimensions; regenerated Snapshot identities are retained as run evidence rather than required to equal an earlier commit",
+    "frozen_pr19_head": "f20ff57501b754b111be893565092c0e107c8b73",
+    "gates": {
+      "database_which_bridge_preserved": true,
+      "joint_lower_strictness_preserved": true,
+      "lower_strictness_preserved": true,
+      "p1_case_count_preserved": true,
+      "p1_status_preserved": true,
+      "p1_zero_mismatch_preserved": true,
+      "p1_zero_repair_preserved": true,
+      "p2_pair_count_preserved": true,
+      "p2_real_execution_count_preserved": true,
+      "p2_semantic_witnesses_preserved": true,
+      "p2_status_preserved": true,
+      "protected_trees_preserved": true,
+      "w12_large_case_preserved": true
+    },
+    "p2_witnesses": {
+      "P2-disposition": {
+        "dimension": "disposition",
+        "nx_equal_across_pair": true,
+        "ordinary_output_equal": true,
+        "real_execution_count": 2,
+        "required_difference_present": true,
+        "supported": true
+      },
+      "P2-environment": {
+        "dimension": "environment",
+        "nx_equal_across_pair": true,
+        "ordinary_output_equal": true,
+        "real_execution_count": 2,
+        "required_difference_present": true,
+        "supported": true
+      },
+      "P2-evidence": {
+        "dimension": "evidence",
+        "nx_equal_across_pair": true,
+        "ordinary_output_equal": true,
+        "real_execution_count": 2,
+        "required_difference_present": true,
+        "supported": true
+      },
+      "P2-operation-result": {
+        "dimension": "operation result",
+        "nx_equal_across_pair": true,
+        "ordinary_output_equal": true,
+        "real_execution_count": 2,
+        "required_difference_present": true,
+        "supported": true
+      },
+      "P2-physical-occurrence-structure": {
+        "dimension": "physical occurrence structure",
+        "nx_equal_across_pair": true,
+        "ordinary_output_equal": true,
+        "real_execution_count": 2,
+        "required_difference_present": true,
+        "supported": true
+      }
+    },
+    "protected_tree_checks": {
+      "compat/v2": {
+        "current_tree": "7bbb49d18daf7ea99d7633b40c6df5bc002824ca",
+        "frozen_tree": "7bbb49d18daf7ea99d7633b40c6df5bc002824ca"
+      },
+      "experiments/database_lineage": {
+        "current_tree": "64b5365d9a828a645c99b536254a07a2519f0cc0",
+        "frozen_tree": "64b5365d9a828a645c99b536254a07a2519f0cc0"
+      },
+      "protocol/core_v3": {
+        "current_tree": "0b4a2608864e771ebca7cdbfad95aabaed2d0723",
+        "frozen_tree": "0b4a2608864e771ebca7cdbfad95aabaed2d0723"
+      },
+      "src/generation_relation_core": {
+        "current_tree": "03fbdce13249f84abe9d8fb605da31cdc36eda27",
+        "frozen_tree": "03fbdce13249f84abe9d8fb605da31cdc36eda27"
+      },
+      "tests/core": {
+        "current_tree": "280cb44d592ae48d986719638980c11e57aab1f9",
+        "frozen_tree": "280cb44d592ae48d986719638980c11e57aab1f9"
+      }
+    },
+    "schema_version": "v1-result-preservation-v1",
+    "status": "PR19_V1_RESULTS_PRESERVED"
+  }
+}

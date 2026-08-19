@@ -1,0 +1,60 @@
+{
+  "completed_sf_0_01_queries": [
+    "Q1",
+    "Q3",
+    "Q6",
+    "Q10"
+  ],
+  "completed_total_bindings": 462399,
+  "evidence_disabled": false,
+  "partial_validation_used": false,
+  "physical_memory_gb": 17.0,
+  "sampling_used": false,
+  "sf_0_1_q1": {
+    "estimate_basis": {
+      "sf_0_01_bindings": 178797,
+      "sf_0_01_peak_rss_gb": 2.1581824
+    },
+    "projected_bindings": 1784292,
+    "projected_peak_rss_gb": 21.5,
+    "reason": "Projected in-memory representation exceeds available physical memory",
+    "relation_model_failure": false,
+    "status": "NOT_RUN_RESOURCE_BOUND"
+  },
+  "sf_0_1_q6": {
+    "command": [
+      "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "-m",
+      "experiments.database_lineage.scripts.run_tpch",
+      "--scale",
+      "0.1",
+      "--query",
+      "6"
+    ],
+    "elapsed_seconds": 464.48383899999317,
+    "max_process_rss_bytes": 4205154304,
+    "minimum_available_memory_limit_bytes": 2147483648,
+    "minimum_system_available_bytes": 2101391360,
+    "partial_validation_used": false,
+    "physical_memory_bytes": 17011310592,
+    "preflight": {
+      "basis": "SF0.01/Q6 actual 62,557 bindings, 1,011,310,592 peak RSS, 148.104626 s build, 72.266917 s validation",
+      "estimated_bindings": 623808,
+      "estimated_in_memory_snapshot_peak_bytes": 10084621030,
+      "estimated_peak_rss_bytes": 10084621030,
+      "estimated_snapshot_build_seconds": 1476.874697,
+      "estimated_validation_seconds": 720.63368,
+      "qualifying_rows": 11618,
+      "total_input_rows": 600572
+    },
+    "returncode": 1,
+    "rss_limit_bytes": 13609048473,
+    "rss_limit_fraction": 0.8,
+    "sampling_validation_used": false,
+    "standards_reduced": false,
+    "status": "RESOURCE_LIMITED",
+    "stop_reason": "system_available_memory_fell_below_safety_threshold"
+  },
+  "snapshot_disabled": false,
+  "standards_reduced": false
+}

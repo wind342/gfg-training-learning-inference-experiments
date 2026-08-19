@@ -1,0 +1,266 @@
+{
+  "called_symbols": [
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/run_report_statistics.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/run_report_statistics.py",
+      "symbol": "_write_json"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/run_report_statistics.py",
+      "symbol": "main"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/__init__.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/report_statistics.py",
+      "symbol": "<genexpr>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/report_statistics.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/report_statistics.py",
+      "symbol": "_coverage_count"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/report_statistics.py",
+      "symbol": "_read"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/report_statistics.py",
+      "symbol": "_sha"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/report_statistics.py",
+      "symbol": "compute_report_statistics"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/report_statistics.py",
+      "symbol": "inject_report_statistics"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/report_statistics.py",
+      "symbol": "render_report_statistics_block"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/report_statistics.py",
+      "symbol": "verify_report_artifact_consistency"
+    }
+  ],
+  "events": [
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/scripts/__pycache__/run_report_statistics.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/__init__.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/report_statistics.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_exact_comparison.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_field_coverage.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/native_nx_polynomials.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_strictness_counterexamples.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/hierarchical_projection_exact_comparison.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/negative_controls.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/artifact_manifest.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/runs/run_1/test_results.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_exact_comparison.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_field_coverage.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/native_nx_polynomials.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_strictness_counterexamples.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/hierarchical_projection_exact_comparison.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/negative_controls.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/artifact_manifest.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/runs/run_1/test_results.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/EXPERIMENT_REPORT.md"
+    },
+    {
+      "event": "file_open",
+      "mode": "w",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/generated_report.md"
+    },
+    {
+      "event": "file_open",
+      "mode": "w",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/report_statistics.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_exact_comparison.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_field_coverage.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/native_nx_polynomials.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_strictness_counterexamples.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/hierarchical_projection_exact_comparison.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/negative_controls.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/artifact_manifest.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/runs/run_1/test_results.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_exact_comparison.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_field_coverage.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/native_nx_polynomials.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/nx_strictness_counterexamples.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/hierarchical_projection_exact_comparison.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/negative_controls.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/artifact_manifest.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/runs/run_1/test_results.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/generated_report.md"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/generated_report.md"
+    },
+    {
+      "event": "file_open",
+      "mode": "w",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/report_artifact_consistency.json"
+    }
+  ],
+  "module": "experiments.provenance_semiring_projection_v1.scripts.run_report_statistics",
+  "return_code": 0,
+  "schema_version": "isolated-entrypoint-trace-v1"
+}

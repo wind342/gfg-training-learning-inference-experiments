@@ -1,0 +1,10 @@
+{"arguments":{"tables":["graph_blocks","evaluations","metadata","chunks"]},"count":4,"operation":"direct_sqlite_schema"}
+{"arguments":{"optimizer_step_max":10000,"order":"optimizer_step"},"count":101,"operation":"direct_sqlite_evaluations"}
+{"arguments":{"stage":"before_batch","optimizer_step_min":0,"optimizer_step_max":9999},"count":10000,"operation":"scan_batch_source_identities"}
+{"arguments":{"stage":"after_gradient_clip","optimizer_step_min":0,"optimizer_step_max":9999},"count":10000,"operation":"scan_gradient_clip_occurrences"}
+{"arguments":{"stage":"after_optimizer_step","selected_boundary_steps":41},"count":2460,"operation":"inspect_parameter_and_optimizer_state_objects"}
+{"arguments":{"stages":["evaluation","evaluation_train:token_embedding","evaluation_validation:token_embedding","evaluation_validation:language_model_head"],"evaluation_grid":100},"count":404,"operation":"inspect_evaluation_fact_blocks_and_objects"}
+{"arguments":{"role":"validation_logits","selected_evaluation_steps":41},"count":41,"operation":"materialize_validation_logits"}
+{"arguments":{"role":"parameter_version","selected_boundary_steps":41},"count":615,"operation":"materialize_parameter_versions"}
+{"arguments":{"relation_type":"GeneratedOrigin","selected_optimizer_steps":[1600,1900,4500,6300,7100,7800,8200,8600]},"count":480,"operation":"trace_parameter_origin_edges"}
+{"arguments":{"hypotheses":["rule_margin_relaxation","memorization_threshold","batch_novelty","clip_magnitude","post_formation_stability"]},"count":5,"operation":"falsification_tests"}

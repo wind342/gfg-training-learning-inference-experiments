@@ -1,0 +1,215 @@
+{
+  "run_1": {
+    "status": "PASS",
+    "suite_count": 6,
+    "suites": [
+      {
+        "command": "python -m pytest tests/core -q --disable-warnings",
+        "elapsed_seconds": 13.84991450002417,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 0,
+        "normalized_terminal_summary": [
+          ".................................                                        [100%]",
+          "33 passed in <elapsed>"
+        ],
+        "passed_count": 33,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 0,
+        "status": "PASS",
+        "suite": "core"
+      },
+      {
+        "command": "python -m pytest experiments/database_lineage/tests -q --disable-warnings",
+        "elapsed_seconds": 70.81404010002734,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 0,
+        "normalized_terminal_summary": [
+          "...............................                                          [100%]",
+          "31 passed in <elapsed>"
+        ],
+        "passed_count": 31,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 0,
+        "status": "PASS",
+        "suite": "database_lineage"
+      },
+      {
+        "command": "python -m pytest experiments/opentelemetry_projection/tests -q --disable-warnings",
+        "elapsed_seconds": 21.889957199979108,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 0,
+        "normalized_terminal_summary": [
+          "..............                                                           [100%]",
+          "14 passed in <elapsed>"
+        ],
+        "passed_count": 14,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 0,
+        "status": "PASS",
+        "suite": "opentelemetry_projection"
+      },
+      {
+        "command": "python -m pytest tests/experiments/source_map_projection -q --disable-warnings",
+        "elapsed_seconds": 38.94929930003127,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 0,
+        "normalized_terminal_summary": [
+          "..........                                                               [100%]",
+          "10 passed in <elapsed>"
+        ],
+        "passed_count": 10,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 0,
+        "status": "PASS",
+        "suite": "source_map_projection"
+      },
+      {
+        "command": "python -m pytest experiments/operational_projection_proof/tests -q --disable-warnings",
+        "elapsed_seconds": 20.74253350001527,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 6,
+        "normalized_terminal_summary": [
+          "SKIPPED [1] experiments\\operational_projection_proof\\tests\\test_source_map_p1.py:4: NOT_EVALUATED: no Source Map implementation or official reference artifact exists on the base commit",
+          "SKIPPED [1] experiments\\operational_projection_proof\\tests\\test_source_map_p2.py:4: NOT_EVALUATED: Source Map P1 prerequisite is not established on the base commit",
+          "12 passed, 6 skipped in <elapsed>"
+        ],
+        "passed_count": 12,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 6,
+        "status": "PASS",
+        "suite": "operational_projection_proof_v1"
+      },
+      {
+        "command": "python -m pytest experiments/operational_projection_proof_v2/tests -q --disable-warnings",
+        "elapsed_seconds": 1.353605400014203,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 0,
+        "normalized_terminal_summary": [
+          ".................                                                        [100%]",
+          "17 passed in <elapsed>"
+        ],
+        "passed_count": 17,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 0,
+        "status": "PASS",
+        "suite": "operational_projection_proof_v2"
+      }
+    ],
+    "total_failed": 0,
+    "total_passed": 117,
+    "total_skipped": 6
+  },
+  "run_2": {
+    "status": "PASS",
+    "suite_count": 6,
+    "suites": [
+      {
+        "command": "python -m pytest tests/core -q --disable-warnings",
+        "elapsed_seconds": 13.18322010000702,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 0,
+        "normalized_terminal_summary": [
+          ".................................                                        [100%]",
+          "33 passed in <elapsed>"
+        ],
+        "passed_count": 33,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 0,
+        "status": "PASS",
+        "suite": "core"
+      },
+      {
+        "command": "python -m pytest experiments/database_lineage/tests -q --disable-warnings",
+        "elapsed_seconds": 53.7709690000047,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 0,
+        "normalized_terminal_summary": [
+          "...............................                                          [100%]",
+          "31 passed in <elapsed>"
+        ],
+        "passed_count": 31,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 0,
+        "status": "PASS",
+        "suite": "database_lineage"
+      },
+      {
+        "command": "python -m pytest experiments/opentelemetry_projection/tests -q --disable-warnings",
+        "elapsed_seconds": 13.387247799953911,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 0,
+        "normalized_terminal_summary": [
+          "..............                                                           [100%]",
+          "14 passed in <elapsed>"
+        ],
+        "passed_count": 14,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 0,
+        "status": "PASS",
+        "suite": "opentelemetry_projection"
+      },
+      {
+        "command": "python -m pytest tests/experiments/source_map_projection -q --disable-warnings",
+        "elapsed_seconds": 25.483447900041938,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 0,
+        "normalized_terminal_summary": [
+          "..........                                                               [100%]",
+          "10 passed in <elapsed>"
+        ],
+        "passed_count": 10,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 0,
+        "status": "PASS",
+        "suite": "source_map_projection"
+      },
+      {
+        "command": "python -m pytest experiments/operational_projection_proof/tests -q --disable-warnings",
+        "elapsed_seconds": 11.33466849999968,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 6,
+        "normalized_terminal_summary": [
+          "SKIPPED [1] experiments\\operational_projection_proof\\tests\\test_source_map_p1.py:4: NOT_EVALUATED: no Source Map implementation or official reference artifact exists on the base commit",
+          "SKIPPED [1] experiments\\operational_projection_proof\\tests\\test_source_map_p2.py:4: NOT_EVALUATED: Source Map P1 prerequisite is not established on the base commit",
+          "12 passed, 6 skipped in <elapsed>"
+        ],
+        "passed_count": 12,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 6,
+        "status": "PASS",
+        "suite": "operational_projection_proof_v1"
+      },
+      {
+        "command": "python -m pytest experiments/operational_projection_proof_v2/tests -q --disable-warnings",
+        "elapsed_seconds": 0.5893844999955036,
+        "exit_code": 0,
+        "failed_count": 0,
+        "historical_v1_status_boundary_skip_count": 0,
+        "normalized_terminal_summary": [
+          ".................                                                        [100%]",
+          "17 passed in <elapsed>"
+        ],
+        "passed_count": 17,
+        "prohibited_dependency_or_mandatory_skip_count": 0,
+        "skipped_count": 0,
+        "status": "PASS",
+        "suite": "operational_projection_proof_v2"
+      }
+    ],
+    "total_failed": 0,
+    "total_passed": 117,
+    "total_skipped": 6
+  },
+  "status": "PASS"
+}

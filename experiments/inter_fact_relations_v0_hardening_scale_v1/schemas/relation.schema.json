@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/inter-fact-relation-hardening-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "relation_id",
+    "endpoint_level",
+    "relation_type",
+    "source_id",
+    "target_id",
+    "establishment_source",
+    "authority_id",
+    "execution_run_id",
+    "evidence_refs",
+    "rule_id",
+    "input_relation_refs",
+    "schema_version"
+  ],
+  "properties": {
+    "relation_id": {"type": "string", "pattern": "^ifr1_[0-9a-f]{64}$"},
+    "endpoint_level": {"enum": ["occurrence", "fact"]},
+    "relation_type": {
+      "enum": [
+        "program_order",
+        "generated_origin_dependency",
+        "message_send_receive",
+        "synchronizes_with",
+        "reads_from",
+        "conflicts_with",
+        "happens_before",
+        "concurrent_with"
+      ]
+    },
+    "source_id": {"type": "string", "minLength": 1},
+    "target_id": {"type": "string", "minLength": 1},
+    "establishment_source": {
+      "enum": [
+        "generator_established",
+        "wrapper_established",
+        "inferred",
+        "independent_reference"
+      ]
+    },
+    "authority_id": {"type": "string", "minLength": 1},
+    "execution_run_id": {"type": "string", "minLength": 1},
+    "evidence_refs": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "rule_id": {"type": ["string", "null"]},
+    "input_relation_refs": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "schema_version": {"const": "inter-fact-relation-hardening-v1"}
+  }
+}

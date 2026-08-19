@@ -1,0 +1,60 @@
+{
+  "schema": "nanogpt-b-update-amplitude-path-protocol-v1",
+  "protocol_id": "B-UPDATE-AMPLITUDE-PATH-CONTINUATION-v1",
+  "purpose": "Discriminate finite-amplitude receiver-local response structure from delayed optimizer-conditioned transport on the frozen A/B survivor using B's exact realized parameter update.",
+  "inherited_reciprocal_protocol_id": "RECIPROCAL-MATCHED-PAIR-v2",
+  "source_response_transport_protocol_id": "RESPONSE-TRANSPORT-CROSS-v1",
+  "receivers": [
+    {
+      "label": "A",
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "source_bundle_id": "711f5480406e989c824ff75ca11cfce27bbcdedf140297d1ffe60980c72da238",
+      "window_id": "phase-v3-window-0f390d3aecbe05321e0c91a1",
+      "optimizer_step": 2900,
+      "skip_state_source_object_id": "obj_0d6cb0c475b305bbb3f59b66391fc02e25e0623135c17803fd661446f6cf64ac"
+    },
+    {
+      "label": "B",
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "source_bundle_id": "44021089c1e143060cc7da31a0df03cb4e83725755c268b7f604f80903980874",
+      "window_id": "phase-v3-window-c3a3331404540eda5b23b93e",
+      "optimizer_step": 2600,
+      "skip_state_source_object_id": "obj_6afd9ba72cd93ac4817c646ce19b28b16cf203b2c87b2a5edaba81747c933355"
+    }
+  ],
+  "donor_update": {
+    "label": "B",
+    "source_object_id": "obj_9a009c78cfab23e4fb04119345f39b05f5bc01669aeb28d920d33a064c939fd4",
+    "semantics": "The exact named parameter delta from B's actual native training step; each receiver retains its exact skip-state Adam state at amplitude-path initialization."
+  },
+  "epsilon": 0.125,
+  "scales": [-0.125, 0.0, 0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875, 1.0, 1.125],
+  "response_centers": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "continuation_scales": [0.0, 0.25, 0.5, 0.75, 1.0],
+  "horizons": [1, 2, 5, 20, 100],
+  "probe_contract_id": "CSRG-4C-v1",
+  "initial_optimizer_semantics": "For every amplitude at one receiver, copy that receiver's exact skip-state optimizer tensors without transplantation or interpolation.",
+  "continuation_semantics": "After h1 path materialization, continue only the five registered center states with the receiver's actual subsequent batches, identical content-derived RNG opportunity across its five branches, and ordinary native AdamW updates.",
+  "response_contract": {
+    "numeric": "At every registered center, compute J and K by the frozen central finite difference with epsilon 0.125. Before any h100 result exists, compute the fixed five-center composite-Simpson prediction of the scale-zero to scale-one numeric response.",
+    "categorical": "Preserve every raw categorical value and adjacent-scale transition mask; never subtract, average or interpolate category labels.",
+    "probe": "At every registered state execute CSRG-4C-v1: two baselines, four single-component gates and six pair-component gates.",
+    "step_capture": "For every continuation step preserve the actual batch identity, training logits, registered activations, raw and clipped gradients, parameter update, weight-decay update, adaptive residual, Adam first- and second-moment deltas, Adam step delta and post-preconditioned direction."
+  },
+  "simpson_contract": {
+    "interval": [0.0, 1.0],
+    "subinterval_width": 0.25,
+    "weights": [1.0, 4.0, 2.0, 4.0, 1.0],
+    "normalizer": 12.0,
+    "tuning_permitted": false
+  },
+  "adjudication": {
+    "finite_path_local_closure": "The fixed Simpson response-path prediction must improve over both registered endpoint first-order and signed endpoint second-order predictions on the frozen large-failure roles, introduce no failure among the other nonzero numeric roles at either receiver, and reproduce the exact categorical endpoint transitions.",
+    "coarse_path_falsification": "Any raw-logit or frozen large-failure role that fails the fixed test falsifies five-center finite-path sufficiency; the grid must not be enlarged after reading outcomes.",
+    "delayed_dynamics_requirement": "If h1 finite-path closure passes but branch support or capability ordering first separates during continuation, the earliest separating horizon and exact training-step facts become the next causal target.",
+    "observation_omission_witness": "Only equal complete numeric and categorical CSRG paths plus equal prefix optimizer/update facts followed by different capability futures support a specific CSRG-4C observation omission.",
+    "counterexample_count_reduction": "No surviving counterexample is counted as resolved unless this candidate is rolled prospectively against that registered pair's future.",
+    "scientific_interpretation_performed_by_executor": false
+  },
+  "future_information_used": false
+}

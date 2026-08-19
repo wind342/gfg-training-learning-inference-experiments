@@ -1,0 +1,48 @@
+{
+  "schema": "nanogpt-local-response-jk-protocol-v1",
+  "protocol_id": "LOCAL-RESPONSE-A-UPDATE-CROSSCHECK-v1",
+  "purpose": "Falsify or replicate the receiver-local first-order response-state hypothesis with a second independently realized update vector after the B-update witness established receiver-conditioned local response.",
+  "inherited_reciprocal_protocol_id": "RECIPROCAL-MATCHED-PAIR-v2",
+  "predecessor_protocol_id": "LOCAL-RESPONSE-JK-v1",
+  "receivers": [
+    {
+      "label": "A",
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "source_bundle_id": "711f5480406e989c824ff75ca11cfce27bbcdedf140297d1ffe60980c72da238",
+      "window_id": "phase-v3-window-0f390d3aecbe05321e0c91a1",
+      "optimizer_step": 2900
+    },
+    {
+      "label": "B",
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "source_bundle_id": "44021089c1e143060cc7da31a0df03cb4e83725755c268b7f604f80903980874",
+      "window_id": "phase-v3-window-c3a3331404540eda5b23b93e",
+      "optimizer_step": 2600
+    }
+  ],
+  "donor_update": {
+    "label": "A",
+    "source_object_id": "obj_ed08966a875091dccba48166e09282df83487071f306fd43375c4b8c30ef06b1",
+    "semantics": "The exact named parameter delta from A's actual native training step; Adam state is not transplanted."
+  },
+  "epsilon": 0.125,
+  "branches": [
+    "baseline",
+    "plus_epsilon",
+    "minus_epsilon"
+  ],
+  "horizon": 1,
+  "response_contract": {
+    "numeric": "For every floating CSRG-4C response object, compute J=(S_plus-S_minus)/(2*epsilon) and K=(S_plus+S_minus-2*S_baseline)/(epsilon^2).",
+    "categorical": "Preserve raw categorical outcomes and exact transition masks; never subtract or average labels.",
+    "probe": "CSRG-4C-v1: two baselines, four single-component gates and six pair-component gates for every branch state."
+  },
+  "adjudication": {
+    "receiver_local_replication": "For this independent A update, each receiver's registered J must predict its own exact finite h1 support response substantially better than the other receiver's J or a shared-J model.",
+    "falsification": "If A-update J is not receiver-conditioned and receiver registration gives no improvement for the exact finite h1 A-update responses, the receiver-local response-state hypothesis fails as a general explanation.",
+    "curvature": "If J is shared across receivers while K or the finite-amplitude remainder separates them, curvature or nonlocal response becomes the leading measured object.",
+    "observation_omission": "If complete CSRG-4C responses match while raw logits, margins or capability outcomes diverge, specific observation omission gains support.",
+    "scope": "This cross-check tests two receivers, the independently realized A parameter update, epsilon 0.125 and h1 only; it does not establish a recursive response-state law or close long-horizon stability."
+  },
+  "future_information_used": false
+}

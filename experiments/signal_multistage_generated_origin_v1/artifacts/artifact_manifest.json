@@ -1,0 +1,28 @@
+{
+  "schema_version": "signal-multistage-generated-origin-artifact-manifest-v1",
+  "local_bundle_root": "results/signal_multistage_generated_origin_v1",
+  "files": [
+    {
+      "path": "final_report.json",
+      "sha256": "15943e4c4daecd22ef4a1d987e1346f385c59c9a2cee73499f88e6ff7c095829"
+    },
+    {
+      "path": "run_1/snapshot.json",
+      "sha256": "4fb9fd838d5a9707b6bd5c149e87e8dc9786bdce717571b4565a6c54441d6526"
+    },
+    {
+      "path": "run_1/candidate_answer.json",
+      "sha256": "5e212c216df92e3ef00654ef6c3a88bcf59ec13bb47b10272b27fb0ec59ec7fc"
+    },
+    {
+      "path": "run_1/reference_answer.json",
+      "sha256": "9943a4ffb6b71e6d812480923d1f27dac0497a36ba46042824af43b92c676467"
+    },
+    {
+      "path": "run_1/continuity.svg",
+      "sha256": "a83b8cdcbb1ae4e60e331ed0c841c597538480e7f25c3e3bfd6ea1e35779f7cf"
+    }
+  ],
+  "replay_scientific_summary_sha256": "202a7ba75e9c48e153fcfd3f563334188e4aefed91551da10c6b70dd1f4a285d",
+  "path_signature_multiset_sha256": "f99609b8bf9dd7f0397c35b7a2331c93ddfc66182658cd013ea12de41bfc3049"
+}

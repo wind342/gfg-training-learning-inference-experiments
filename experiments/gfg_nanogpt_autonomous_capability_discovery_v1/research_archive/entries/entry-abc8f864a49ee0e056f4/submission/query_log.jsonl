@@ -1,0 +1,11 @@
+{"arguments":{"max_step":null},"count":1,"operation":"summary"}
+{"arguments":{"max_step":null},"count":101,"operation":"evaluations"}
+{"arguments":{"keys":"all"},"count":5,"operation":"metadata"}
+{"arguments":{"group_by":"stage"},"count":24,"operation":"graph_block_stage_summary"}
+{"arguments":{"max_step":900,"min_step":0,"stages":"evaluation and training boundary"},"count":9,"operation":"selected_block_expansion"}
+{"arguments":{"materialized":true,"max_step":10000,"min_step":0,"roles":"all"},"count":33322,"operation":"objects"}
+{"arguments":{"relation_type":"GeneratedOrigin","source_scope":"evaluation objects","target_scope":"non-evaluation blocks"},"count":0,"operation":"edges"}
+{"arguments":{"max_step":9999,"min_step":0,"occurrence_type":"batch_materialization"},"count":10000,"operation":"occurrences"}
+{"arguments":{"max_step":9999,"min_step":0,"occurrence_type":"gradient_clip"},"count":10000,"operation":"occurrences"}
+{"arguments":{"max_step":1000,"min_step":100,"roles":["parameter_version","optimizer_state","parameter_gradient","clipped_parameter_gradient"]},"count":10,"operation":"materialized_checkpoint_statistics"}
+{"arguments":{"fact_block_ids":["factblock_f737ae1c404863732f0745f177c5aeac13edc631940cdbcc6cb8f563da386b97","factblock_ce26b21d1b2dcb98d7be5293b472dd6e883a2f4bc9b1eee12ef0a4f083d0cd70","factblock_5d11d8f4d4128ad3064b41f4c07ffb3a2a51318f3442b8b0280d7d027e7344a2"]},"count":3,"operation":"fact_blocks"}

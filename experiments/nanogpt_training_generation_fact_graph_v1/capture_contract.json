@@ -1,0 +1,46 @@
+{
+  "capture_boundary": {
+    "included": [
+      "actual CPU dataset batch tensors and exact source windows",
+      "every tensor-producing or tensor-mutating ATen dispatch during CUDA training",
+      "each micro-step parameter-gradient snapshot",
+      "global gradient clipping",
+      "fused AdamW parameter and optimizer-state updates",
+      "zero_grad completion"
+    ],
+    "operator_pairing": "Each atomic binding is created only from input tensor references held by the completed concrete dispatch and output tensor references returned or mutated by that same dispatch.",
+    "out_of_scope": [
+      "CUDA kernel-internal instruction dependencies below ATen dispatch",
+      "causal importance inferred by perturbation",
+      "optimization recommendations"
+    ]
+  },
+  "five_coordinates": {
+    "rho": "The frozen input role at the actual operation boundary.",
+    "tau": "The ATen operator schema or explicit PyTorch training-boundary operation.",
+    "u": "A registered dataset/parameter/config source or a GeneratedOrigin for an earlier runtime tensor outcome.",
+    "omega_bar": "The concrete run, step, micro-step, phase and monotonically indexed completed call.",
+    "z": "The exact Core support record for the runtime tensor outcome."
+  },
+  "frozen_profile": {
+    "batch_size": 8,
+    "block_size": 128,
+    "cuda_required": true,
+    "dataset": "nanoGPT data/shakespeare_char/train.bin",
+    "gradient_accumulation_steps": 2,
+    "model": {
+      "bias": false,
+      "dropout": 0.0,
+      "n_embd": 128,
+      "n_head": 4,
+      "n_layer": 4
+    },
+    "nanoGPT_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+    "optimizer": "fused AdamW",
+    "seed": 1337,
+    "training_steps": 3
+  },
+  "no_post_hoc_pairing": true,
+  "schema_version": "1.0.0"
+}
+

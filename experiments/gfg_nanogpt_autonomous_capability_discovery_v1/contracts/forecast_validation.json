@@ -1,0 +1,17 @@
+{
+  "candidate_additional_ai_calls": 0,
+  "future_gfg_reads": 0,
+  "normalized_rmse_max": 0.2,
+  "component_curve_composition_tolerance": 1e-09,
+  "stability_validation_contract": "stability_validation.json version 2.0.0",
+  "transition_classification_required": true,
+  "transition_interval_200": {
+    "contains_actual_reported_as_high_precision_diagnostic": true,
+    "maximum_width_optimizer_steps": 200
+  },
+  "transition_interval_500": {
+    "contains_actual_required_for_forecast_pass": true,
+    "maximum_width_optimizer_steps": 500
+  },
+  "version": "2.0.0"
+}

@@ -1,0 +1,126 @@
+{
+  "candidate_input": "ValidatedSnapshot plus exact SnapshotValidation only",
+  "exact_comparison_fields": [
+    "trace semantic identity",
+    "complete span set",
+    "span name",
+    "parent edge",
+    "Span Links with multiplicity",
+    "status",
+    "selected attributes",
+    "selected events",
+    "occurrence cardinality",
+    "logical order"
+  ],
+  "formal_tpch_q6": {
+    "causal_link_count": 2382,
+    "core_binding_count": 62557,
+    "core_occurrence_count": 61367,
+    "core_snapshot_id": "snap3_aa80894e4ab38379d13df72ed2fa717c91f5081c0835ad6a451a97464ea9c952",
+    "core_snapshot_validated": true,
+    "direct_projected_span_count": 61368,
+    "direct_vs_hierarchical": {
+      "attribute_mismatches": 0,
+      "event_mismatches": 0,
+      "exact": true,
+      "link_edge_false_negatives": 0,
+      "link_edge_false_positives": 0,
+      "parent_edge_false_negatives": 0,
+      "parent_edge_false_positives": 0,
+      "span_false_negatives": 0,
+      "span_false_positives": 0,
+      "status_mismatches": 0
+    },
+    "duckdb_exact": true,
+    "hierarchical_projected_span_count": 61368,
+    "native_span_count": 61368,
+    "native_vs_direct": {
+      "attribute_mismatches": 0,
+      "event_mismatches": 0,
+      "exact": true,
+      "link_edge_false_negatives": 0,
+      "link_edge_false_positives": 0,
+      "parent_edge_false_negatives": 0,
+      "parent_edge_false_positives": 0,
+      "span_false_negatives": 0,
+      "span_false_positives": 0,
+      "status_mismatches": 0
+    },
+    "official_answer_exact": true,
+    "ordinary_output_row_count": 1,
+    "output_orthogonality": {
+      "csv_sha256": "f0fc5c69031d81a87e2376e06bd8242fe260a452dc2d3b4c1d34704c9445c87c",
+      "forbidden_output_fields": [],
+      "json_sha256": "92d5c251c4a231893c6022c42352a2799ae40d54acd6fa616fdece83c76e8a71",
+      "ordinary_vs_core_and_otel_csv_byte_identical": true,
+      "ordinary_vs_core_and_otel_json_byte_identical": true,
+      "types_equal": true,
+      "values_and_order_equal": true
+    },
+    "query_number": 6,
+    "scale_factor": 0.01,
+    "sql": "SELECT\n    sum(l_extendedprice * l_discount) AS revenue\nFROM\n    lineitem\nWHERE\n    l_shipdate >= CAST('1994-01-01' AS date)\n    AND l_shipdate < CAST('1995-01-01' AS date)\n    AND l_discount BETWEEN 0.05\n    AND 0.07\n    AND l_quantity < 24;\n",
+    "trace_sha256": {
+      "direct": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8",
+      "hierarchical": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8",
+      "native": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8"
+    },
+    "validated_relation_evidence_count": 62557,
+    "workload": "TPC-H-derived SF0.01 Q6"
+  },
+  "frozen_q6_checks": {
+    "causal_link_count": true,
+    "core_binding_count": true,
+    "core_occurrence_count": true,
+    "direct_hierarchical_exact": true,
+    "direct_sha": true,
+    "direct_span_count": true,
+    "executed": true,
+    "hierarchical_sha": true,
+    "hierarchical_span_count": true,
+    "native_direct_exact": true,
+    "native_sha": true,
+    "native_span_count": true,
+    "output_orthogonality": true
+  },
+  "frozen_q6_expected": {
+    "causal_link_count": 2382,
+    "core_binding_count": 62557,
+    "core_occurrence_count": 61367,
+    "span_count": 61368,
+    "trace_sha256": "a0095ed24e3ad6ec58064a1b5803e532b11c85c08a5ad7541b03dac1e064efe8"
+  },
+  "mandatory_checks": {
+    "candidate_native_isolation": true,
+    "formal_frozen_workload": true,
+    "output_orthogonality": true,
+    "second_authority_store_count": true,
+    "selection_independent_oracle_exact": true,
+    "small_complete_trace_exact": true,
+    "small_generated_origin_link_rule": true
+  },
+  "profile_id": "opentelemetry-occurrence-execution-v1",
+  "reference_implementation": "official OpenTelemetry Python SDK synchronous in-memory span exporter",
+  "small": {
+    "canonical_trace_document_sha256": "0a93193eae9a9c7aa91c48d7abb82df4acd4e349235e21f49872020d4619a734",
+    "canonical_trace_sha256": "0a93193eae9a9c7aa91c48d7abb82df4acd4e349235e21f49872020d4619a734",
+    "causal_link_count": 32,
+    "core_occurrence_count": 36,
+    "direct_span_count": 37,
+    "generated_origin_binding_count": 32,
+    "native_span_count": 37,
+    "native_vs_direct": {
+      "attribute_mismatches": 0,
+      "event_mismatches": 0,
+      "exact": true,
+      "link_edge_false_negatives": 0,
+      "link_edge_false_positives": 0,
+      "parent_edge_false_negatives": 0,
+      "parent_edge_false_positives": 0,
+      "span_false_negatives": 0,
+      "span_false_positives": 0,
+      "status_mismatches": 0
+    }
+  },
+  "status": "SUPPORTED"
+}

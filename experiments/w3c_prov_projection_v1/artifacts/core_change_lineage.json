@@ -1,0 +1,26 @@
+{
+  "actual_remote_main": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+  "actual_remote_main_tree": "ffd70bc0fec126961bf0ac8b4e6963e6c03c3963",
+  "base_commit": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+  "compat_v2_change_count": 0,
+  "core_schema_change_count": 0,
+  "core_source_change_count": 0,
+  "existing_experiment_change_count": 0,
+  "generator_name_branch_count": 0,
+  "hardening_diff_outside_target_count": 0,
+  "ordinary_outputs_unaffected": true,
+  "original_pr_commit_order": [
+    "de532dae85df5890507e0eb68fc03fee80ca463f",
+    "221863bf086ade497d1b67e818716136f13be137",
+    "b4236b4fce417f3f069431c35638197c3942343d",
+    "b8e71a84d85dc361889a615d32348b9ac4d0481f"
+  ],
+  "original_pr_commit_order_preserved": true,
+  "pr12_head": "b8e71a84d85dc361889a615d32348b9ac4d0481f",
+  "pr12_head_is_ancestor": true,
+  "pr12_head_tree_id": "c811c2ab8236eb00f4ca8f6c743163c8aa4fec20",
+  "prov_entity_activity_core_branch_count": 0,
+  "prov_specific_core_field_count": 0,
+  "status": "SUPPORTED",
+  "tests_core_change_count": 0
+}

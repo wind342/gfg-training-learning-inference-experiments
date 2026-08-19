@@ -1,0 +1,71 @@
+{
+  "domains": {
+    "database": {
+      "csv_byte_identical": true,
+      "csv_sha256": "acd1070a778de25b0d8884336f5cca92b34eb5e5966a5332363bddec9c96ad69",
+      "forbidden_fields": [],
+      "json_byte_identical": true,
+      "json_sha256": "7e58890bbfeecdc3200a497be0e3ce19e961f2af130e7be9d672337a9d82cf7d",
+      "status": "SUPPORTED"
+    },
+    "opentelemetry": {
+      "business_types_equal": true,
+      "business_values_equal": true,
+      "csv_byte_identical": true,
+      "csv_sha256_by_mode": {
+        "A_core_off_otel_off": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a",
+        "B_core_on_otel_off": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a",
+        "C_core_off_otel_on": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a",
+        "D_core_on_otel_on": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a"
+      },
+      "forbidden_output_fields": [],
+      "json_byte_identical": true,
+      "json_sha256_by_mode": {
+        "A_core_off_otel_off": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498",
+        "B_core_on_otel_off": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498",
+        "C_core_off_otel_on": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498",
+        "D_core_on_otel_on": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498"
+      },
+      "mode_count": 4,
+      "passed": true,
+      "schema_and_order_equal": true,
+      "status": "PASS"
+    },
+    "source_map": {
+      "cases": {
+        "adversarial": {
+          "generated_artifact": "adversarial-output.js",
+          "output_bytes": 343,
+          "output_sha256": "b7eba5fe8e85f62dd7e6a4d1d8a6b17f7272205387dcd2dc53ccbcf8ea7258dd",
+          "prohibited_token_hit_count": 0,
+          "syntax_status": "PASS"
+        },
+        "medium": {
+          "generated_artifact": "medium-output.js",
+          "output_bytes": 13200,
+          "output_sha256": "83cae374a3b7e377207f92eeea8cea8f21c598b95386db8f7bd77d6b38b7aeac",
+          "prohibited_token_hit_count": 0,
+          "syntax_status": "PASS"
+        },
+        "minified": {
+          "generated_artifact": "minified-output.js",
+          "output_bytes": 127,
+          "output_sha256": "0f05a87e575a526108e610b572d899d03715302caaf9be19f1586759ac818ee1",
+          "prohibited_token_hit_count": 0,
+          "syntax_status": "PASS"
+        },
+        "unicode_crlf": {
+          "generated_artifact": "unicode-crlf-output.js",
+          "output_bytes": 120,
+          "output_sha256": "57eeee1aa77175ec7720e355f7c509fb1a70cbc8c23c9266cb5692938d35a5ca",
+          "prohibited_token_hit_count": 0,
+          "syntax_status": "PASS"
+        }
+      },
+      "four_mode_byte_identity": true,
+      "multistage_four_mode_byte_identity": true,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS"
+}

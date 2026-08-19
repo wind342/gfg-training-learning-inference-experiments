@@ -1,0 +1,64 @@
+{
+  "schema": "gfg-capability-mechanism-spec-v1",
+  "name": "cyclic-rule-margin-with-adam-renewal",
+  "version": "1.0.0",
+  "implementation": "mechanism.py:CapabilityFormationMechanism",
+  "scientific_authority": "The sealed initialize/forecast code is authoritative; this specification is descriptive.",
+  "initialization_boundary": "Only the supplied complete GFG prefix is read. No GFG handle, path, object ID, run identifier, date, or future value is retained.",
+  "mechanism": {
+    "rule_state": "Solve the training generation facts for the unique bijective cyclic code on all non-operator tokens. Apply that code to validation inputs and use correct-rule-class logit margins as the capability state.",
+    "formation_state": "The operative rule_fraction is the fraction of held-out rule margins above zero. It drifts between and gains at optimizer renewal episodes until three evaluation-grid points satisfy the frozen transition contract.",
+    "optimizer_state": "Gradient-clipping episodes identify renewal events caused by decay and replenishment of Adam second-moment state. Their observed phase and beta2 determine the next event interval and its recurrence update.",
+    "stability_state": "After formation, renewal shocks can temporarily consume rule-margin reserve; the same full-batch gradient/clip/Adam chain restores the margins, yielding TRANSIENT_DEGRADATION_RECOVERY."
+  },
+  "fixed_structural_laws": {
+    "evaluation_interval": 100,
+    "transition_train_accuracy_min": 0.99,
+    "transition_validation_accuracy_min": 0.9,
+    "transition_sustained_points": 3,
+    "pre_transition_validation_accuracy_max": 0.3,
+    "maximum_forecast_step": 10000,
+    "renewal_episode_gap": 20,
+    "minimum_rule_renewal_peak_step": 200
+  },
+  "discovery_estimated_parameters": {
+    "initial_renewal_interval": 320.0,
+    "minimum_renewal_interval": 300.0,
+    "renewal_interval_cap": 440.0,
+    "formation_drift_per_grid": 0.02,
+    "formation_gain_per_renewal": 0.18,
+    "formed_recovery_per_grid": 0.035,
+    "shock_recovery_time_constant": 35.0,
+    "shock_amplitude_cap": 0.7
+  },
+  "prefix_inferred_fields": [
+    "rule_code_by_token",
+    "current_rule_fraction",
+    "current_mean_rule_margin",
+    "current_q10_rule_margin",
+    "renewal_episodes",
+    "adam_beta2",
+    "observed_curve"
+  ],
+  "update_law": {
+    "preformation": "q_next=min(0.995,q+0.02+0.18*renewal_event)",
+    "renewal_interval": "I_next=min(440,I*(1+3*(1-beta2))); the first unseen interval uses 1+4*(1-beta2)",
+    "formed_recovery": "If a formed state is below 0.90, the next full-batch grid restores q to 0.99; otherwise q_next=min(0.995,q+0.035). A renewal then applies the explicitly coded lag-dependent transient shock.",
+    "transition": "Apply the frozen three-point transition definition to the combined observed-prefix and generated-future curve."
+  },
+  "executable_use_audit": {
+    "rule_code_by_token": "Computes every held-out rule label and therefore every margin sign and initial rule_fraction.",
+    "current_rule_fraction": "Initial condition q for every future accuracy and the transition interval.",
+    "renewal_episodes": "Their peak steps set future renewal events, formation gains, instability intervals, and recovery phases.",
+    "adam_beta2": "Changes both first-interval and recurrence growth expressions.",
+    "mean_and_q10_margins": "Reported as prefix diagnostics only; they are not claimed as independent controllers once all margin signs are represented by rule_fraction.",
+    "diagnostic_fields": "rule_code_rank, training_fact_count, validation_case_count, negative_margin_count, margin_history, and the mean/q10 margins document initialization checks but are not claimed as independent controllers.",
+    "absolute_step": "Used only as the declared evaluation coordinate and endpoint, not as an independent transition trigger."
+  },
+  "uncertainty": {
+    "transition_high_precision_half_width": 100,
+    "transition_primary_half_width": 200,
+    "instability_interval_half_width": 175,
+    "cross_run_note": "The cyclic constraint and AdamW state law are structural; scalar renewal gains and shock amplitude are discovery-estimated and are the main limited-observation uncertainty."
+  }
+}

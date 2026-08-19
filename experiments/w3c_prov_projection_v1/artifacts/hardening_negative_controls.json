@@ -1,0 +1,311 @@
+{
+  "control_families": [
+    {
+      "control_family": "secondary_authority_mutations",
+      "controls": [
+        {
+          "detected": true,
+          "expected_reason_code": "PERSISTENT_CORE_PROV_ID_MAPPING",
+          "mutation": "forged_core_prov_lookup",
+          "number": 1,
+          "observed_reason_codes": [
+            "PERSISTENT_CORE_PROV_ID_MAPPING",
+            "UNCLASSIFIED_FILE"
+          ],
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "expected_reason_code": "CANDIDATE_READS_NATIVE_REFERENCE",
+          "mutation": "candidate_reads_native_ttl",
+          "number": 2,
+          "observed_reason_codes": [
+            "CANDIDATE_READS_NATIVE_REFERENCE"
+          ],
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "expected_reason_code": "CANDIDATE_READS_NATIVE_REFERENCE",
+          "mutation": "candidate_reads_normalized_reference",
+          "number": 3,
+          "observed_reason_codes": [
+            "CANDIDATE_READS_NATIVE_REFERENCE"
+          ],
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "expected_reason_code": "CANDIDATE_READS_OLD_CANDIDATE_PROVN",
+          "mutation": "candidate_reads_old_provn",
+          "number": 4,
+          "observed_reason_codes": [
+            "CANDIDATE_READS_OLD_CANDIDATE_PROVN"
+          ],
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "expected_reason_code": "CANDIDATE_READS_EXPECTED_ANSWER",
+          "mutation": "candidate_reads_expected_answer",
+          "number": 5,
+          "observed_reason_codes": [
+            "CANDIDATE_READS_EXPECTED_ANSWER"
+          ],
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "expected_reason_code": "CANDIDATE_READS_CALLBACK_RECEIPT",
+          "mutation": "candidate_reads_callback_receipt",
+          "number": 6,
+          "observed_reason_codes": [
+            "CANDIDATE_READS_CALLBACK_RECEIPT"
+          ],
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "expected_reason_code": "FORBIDDEN_SECONDARY_RELATION_STORE",
+          "mutation": "hidden_binding_crosswalk",
+          "number": 7,
+          "observed_reason_codes": [
+            "FORBIDDEN_SECONDARY_RELATION_STORE",
+            "UNCLASSIFIED_FILE"
+          ],
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "expected_reason_code": "SNAPSHOT_BLOB_EMBEDDED_IN_PROV",
+          "mutation": "snapshot_blob_in_prov",
+          "number": 8,
+          "observed_reason_codes": [
+            "SNAPSHOT_BLOB_EMBEDDED_IN_PROV"
+          ],
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "expected_reason_code": "EVIDENCE_BLOB_EMBEDDED_IN_PROV",
+          "mutation": "evidence_blob_in_prov",
+          "number": 9,
+          "observed_reason_codes": [
+            "EVIDENCE_BLOB_EMBEDDED_IN_PROV"
+          ],
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "expected_reason_code": "UNCLASSIFIED_FILE",
+          "mutation": "unclassified_relation_file",
+          "number": 10,
+          "observed_reason_codes": [
+            "UNCLASSIFIED_FILE"
+          ],
+          "status": "FAIL_CLOSED"
+        }
+      ],
+      "detected_count": 10,
+      "negative_control_count": 10,
+      "status": "SUPPORTED",
+      "undetected_count": 0
+    },
+    {
+      "control_family": "oracle_isolation_mutations",
+      "controls": [
+        {
+          "detected": true,
+          "evidence": "mutated AST/import graph",
+          "expected_reason_code": "CANDIDATE_IMPORTS_NATIVE",
+          "mutation": "candidate_imports_native_collector",
+          "number": 1,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "evidence": "mutated AST/import graph",
+          "expected_reason_code": "NATIVE_IMPORTS_CANDIDATE",
+          "mutation": "native_imports_candidate_projection",
+          "number": 2,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "evidence": "mutated AST/import graph",
+          "expected_reason_code": "NATIVE_IMPORTS_CORE",
+          "mutation": "native_imports_core",
+          "number": 3,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "evidence": "subprocess audit-hook open event",
+          "expected_reason_code": "CANDIDATE_READS_NATIVE_OUTPUT",
+          "mutation": "candidate_reads_native_ttl",
+          "number": 4,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "evidence": "subprocess audit-hook open event",
+          "expected_reason_code": "NATIVE_READS_CANDIDATE_OUTPUT",
+          "mutation": "native_reads_candidate_provn",
+          "number": 5,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "evidence": "mutated call graph and policy",
+          "expected_reason_code": "SHARED_MAPPING_HELPER",
+          "mutation": "shared_binding_derivation_helper",
+          "number": 6,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "evidence": "subprocess audit-hook open event",
+          "expected_reason_code": "CANDIDATE_READS_EXPECTED_RECORDS",
+          "mutation": "candidate_reads_expected_records",
+          "number": 7,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "evidence": "subprocess audit-hook open event",
+          "expected_reason_code": "NATIVE_READS_EXPECTED_RECORDS",
+          "mutation": "native_reads_expected_records",
+          "number": 8,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "evidence": "mutated comparison AST",
+          "expected_reason_code": "COMPARISON_MUTATES_BEFORE_PROJECTION",
+          "mutation": "comparison_mutates_before_projection",
+          "number": 9,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "evidence": "two subprocess audit-hook traces share an actual temporary answer file",
+          "expected_reason_code": "HIDDEN_PROCESS_ANSWER_EXCHANGE",
+          "mutation": "hidden_process_answer_exchange",
+          "number": 10,
+          "status": "FAIL_CLOSED"
+        }
+      ],
+      "detected_count": 10,
+      "negative_control_count": 10,
+      "status": "SUPPORTED",
+      "undetected_count": 0
+    },
+    {
+      "control_family": "actual_transform_counterexample_mutations",
+      "controls": [
+        {
+          "detected": true,
+          "mutated_conditions": {
+            "actual_executed_branch_different": false,
+            "intermediate_state_digest_different": false,
+            "report_only_mutation": true
+          },
+          "mutation": "report_branch_name_only",
+          "number": 1,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "mutated_conditions": {
+            "actual_executed_branch_different": false,
+            "metadata_only_mutation": true
+          },
+          "mutation": "evidence_only_disguised_as_transform",
+          "number": 2,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "mutated_conditions": {
+            "ordinary_output_equal": false
+          },
+          "mutation": "different_branch_different_output",
+          "number": 3,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "mutated_conditions": {
+            "profile_selected_activity_semantics_equal": false
+          },
+          "mutation": "different_branch_different_profile",
+          "number": 4,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "mutated_conditions": {
+            "transform_reference_different": false
+          },
+          "mutation": "same_transform_reference",
+          "number": 5,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "mutated_conditions": {
+            "occurrence_payload_transform_context_different": false
+          },
+          "mutation": "same_occurrence_payload_context",
+          "number": 6,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "mutated_conditions": {
+            "intermediate_state_digest_different": false
+          },
+          "mutation": "same_intermediate_state_digest",
+          "number": 7,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "mutated_conditions": {
+            "snapshot_ids_different": false
+          },
+          "mutation": "same_snapshot_id",
+          "number": 8,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "mutated_conditions": {
+            "candidate_prov_records_equal": false,
+            "candidate_provn_bytes_equal": false
+          },
+          "mutation": "different_candidate_prov",
+          "number": 9,
+          "status": "FAIL_CLOSED"
+        },
+        {
+          "detected": true,
+          "mutated_conditions": {
+            "native_provo_normalized_equal": false
+          },
+          "mutation": "different_native_prov",
+          "number": 10,
+          "status": "FAIL_CLOSED"
+        }
+      ],
+      "detected_count": 10,
+      "negative_control_count": 10,
+      "status": "SUPPORTED",
+      "undetected_count": 0
+    }
+  ],
+  "detected_count": 30,
+  "negative_control_count": 30,
+  "status": "SUPPORTED",
+  "undetected_count": 0
+}

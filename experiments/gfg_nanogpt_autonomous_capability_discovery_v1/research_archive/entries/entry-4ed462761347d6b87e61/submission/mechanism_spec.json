@@ -1,0 +1,59 @@
+{
+  "schema": "gfg-executable-capability-mechanism-spec-v1",
+  "version": "1.0.0",
+  "implementation": "mechanism.py",
+  "class": "CapabilityFormationMechanism",
+  "initialize": "CapabilityFormationMechanism.initialize(gfg_prefix)",
+  "forecast": "CapabilityFormationMechanism.forecast(state)",
+  "selected_mechanism": "cyclic-rule-margin formation coupled to endogenous AdamW slingshot reservoir dynamics",
+  "prefix_inputs": [
+    "training_batch_inputs and training_batch_targets generation outcomes",
+    "validation token inputs and validation logits at observed evaluations",
+    "capability evaluation outcomes",
+    "gradient_clip occurrence total_norm payloads",
+    "materialized parameter and Adam first/second-moment states",
+    "optimizer configuration"
+  ],
+  "fixed_structural_law": {
+    "rule_coordinate_equation": "coordinate(target) = coordinate(left) + coordinate(right) modulo operand vocabulary size",
+    "burst_detection": "contiguous total_norm > 1 regions whose peak exceeds 5",
+    "formation_rule": "positive prefix rule-probability velocity plus the next state-predicted slingshot/recovery cycle",
+    "mature_cycle_interval_optimizer_steps": 375,
+    "slingshot_recovery_width_optimizer_steps": 100
+  },
+  "prefix_inferred_state": [
+    "rule probability, margins and velocity",
+    "last and next slingshot burst state",
+    "cycle interval",
+    "gradient norm",
+    "Adam second-moment reservoir depletion",
+    "relative normalized Adam update",
+    "optimizer hyperparameters"
+  ],
+  "operative_state_fields": {
+    "rule_probability and rule_probability_velocity_per_grid": "advance the predicted rule state and validation curve and are required for will_transition",
+    "next_burst_step and cycle_interval_estimate": "set the transition timing blend, projected instability intervals and slingshot phase",
+    "reservoir_depletion": "adjusts the mature cycle recurrence",
+    "relative_adam_step and current_gradient_norm": "set forecast degradation amplitude",
+    "optimizer_learning_rate and optimizer_weight_decay": "scale executable rule-progress velocity",
+    "major_burst_count": "selects TRANSIENT_DEGRADATION_RECOVERY versus UNDETERMINED"
+  },
+  "diagnostic_state_fields": [
+    "rule_margin_mean",
+    "rule_margin_q10",
+    "rule_positive_margin_fraction",
+    "second_moment_mean",
+    "cyclic_rule_recovered"
+  ],
+  "discovery_estimated_constants": [
+    "0.65 burst / 0.35 rule-probability transition blend",
+    "60-step burst recovery lag",
+    "375-step mature cycle attractor",
+    "0.97 post-formation expected validation baseline"
+  ],
+  "uncertainty": "Within-run prefix replay supports the state law; one discovery execution cannot prove cross-run invariance, so both sealed transition intervals and transient-risk intervals remain prospective claims.",
+  "forbidden_lookup_keys_used": [],
+  "future_gfg_reads": 0,
+  "contains_trajectory_answer_table": false,
+  "deterministic": true
+}

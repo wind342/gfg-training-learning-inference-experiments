@@ -1,0 +1,57 @@
+{
+  "authority": "official PyTorch distribution and versioned documentation",
+  "documentation_snapshots": [
+    {
+      "name": "autograd.html",
+      "sha256": "b4918789057f202a10763f0a0a2a8855256ca105670259d5f27d2e636d2c67c2",
+      "size_bytes": 816179,
+      "url": "https://docs.pytorch.org/docs/2.13/autograd.html"
+    },
+    {
+      "name": "checkpoint.html",
+      "sha256": "060296068416d3a941c3516050f20fbde98165f0228d9a725c9e12004a4b1c6c",
+      "size_bytes": 691834,
+      "url": "https://docs.pytorch.org/docs/2.13/checkpoint.html"
+    },
+    {
+      "name": "node_name.html",
+      "sha256": "eebd79518c6ae74bcc14e3d9e9bb6565cb5d53f967c656cf10cdf622826ff205",
+      "size_bytes": 157019,
+      "url": "https://docs.pytorch.org/docs/2.13/generated/torch.autograd.graph.Node.name.html"
+    },
+    {
+      "name": "sgd.html",
+      "sha256": "624a4bfa1962cb28b946be4be06766635f07e7f32dda41eb97051a474276f8e9",
+      "size_bytes": 274825,
+      "url": "https://docs.pytorch.org/docs/2.13/generated/torch.optim.SGD.html"
+    },
+    {
+      "name": "tensor_post_accumulate_hook.html",
+      "sha256": "52d7181657007cf4734a75cc59e9f6a394939f6edf304814a38c04469e2f4512",
+      "size_bytes": 213209,
+      "url": "https://docs.pytorch.org/docs/2.13/generated/torch.Tensor.register_post_accumulate_grad_hook.html"
+    },
+    {
+      "name": "tensor_register_hook.html",
+      "sha256": "61a5f9d7eb92dd3c6e5cf098fb403456f35034d91a436ba4cd19165e9cd641fc",
+      "size_bytes": 211737,
+      "url": "https://docs.pytorch.org/docs/2.13/generated/torch.Tensor.register_hook.html"
+    },
+    {
+      "name": "wheel_index.html",
+      "sha256": "e83074413dcb898a008f36bd4c275d6c157dd48372583116a4bc64420b558b0e",
+      "size_bytes": 376117,
+      "url": "https://download.pytorch.org/whl/cpu/torch/"
+    }
+  ],
+  "torch_build_commit": "cf30153c4c131c8164ee7798e5022d810682e2cb",
+  "torch_version": "2.13.0+cpu",
+  "wheel": {
+    "filename": "torch-2.13.0+cpu-cp312-cp312-win_amd64.whl",
+    "index_declared_sha256": "a8b450c1e58e5800e5b4691dac412f8d2d65a1dc3298166f91596603a3531e6f",
+    "license_expression": "Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND MIT",
+    "local_sha256": "a8b450c1e58e5800e5b4691dac412f8d2d65a1dc3298166f91596603a3531e6f",
+    "size_bytes": 121933498,
+    "url": "https://download-r2.pytorch.org/whl/cpu/torch-2.13.0%2Bcpu-cp312-cp312-win_amd64.whl"
+  }
+}

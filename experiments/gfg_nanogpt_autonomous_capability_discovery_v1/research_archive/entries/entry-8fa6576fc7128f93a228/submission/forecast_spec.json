@@ -1,0 +1,33 @@
+{
+  "schema": "capability-forecast-spec-v1",
+  "version": "1.0.0",
+  "evaluation_grid": {
+    "first_point": 1,
+    "interval_after_first": 100,
+    "last_point": 10000
+  },
+  "predicted_validation_curve_item": {
+    "optimizer_step": "integer optimizer step",
+    "validation_accuracy": "number in [0,1]"
+  },
+  "transition_definition": "First point of a three-point validation-accuracy window at or above 0.9, with the prefix supplying an earlier point at or below 0.3 and the last three observed training accuracies at or above 0.99.",
+  "transition_interval_200": {
+    "fields": ["transition_step_low_200", "transition_step_high_200"],
+    "maximum_width": 200
+  },
+  "transition_interval_500": {
+    "fields": ["transition_step_low_500", "transition_step_high_500"],
+    "maximum_width": 500
+  },
+  "mechanism_state_output": {
+    "initial": "the finite prefix-derived state",
+    "evolution": "generated state points on every future evaluation-grid step"
+  },
+  "stability_values": [
+    "STABLE",
+    "TRANSIENT_DEGRADATION_RECOVERY",
+    "PERSISTENT_DEGRADATION",
+    "UNDETERMINED"
+  ],
+  "instability_interval_semantics": "Inclusive optimizer-step intervals generated when the relaxation phase overlaps a circuit-fragility state of at least 0.20."
+}

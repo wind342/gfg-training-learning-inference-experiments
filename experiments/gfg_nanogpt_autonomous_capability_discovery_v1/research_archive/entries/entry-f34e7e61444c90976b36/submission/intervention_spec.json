@@ -1,0 +1,39 @@
+{
+  "schema": "gfg-training-intervention-spec-v1",
+  "version": "1.0.0",
+  "scientific_authority": "TrainingIntervention in intervention.py",
+  "name": "finite optimizer learning-rate hold",
+  "direction": "DELAY",
+  "predicted_direction": "DELAY",
+  "declared_hook": "before_optimizer_step",
+  "allowed_mutation": "optimizer group hyperparameters",
+  "mutation": {
+    "field": "lr",
+    "held_value": 0.0,
+    "hold_optimizer_steps": 1200,
+    "restore": "Restore each optimizer group's value captured at the first hook application."
+  },
+  "predicted_shift_interval": {
+    "semantics": "intervention transition step minus baseline transition step",
+    "step_low": 600,
+    "step_high": 1800
+  },
+  "transition_step_shift_low": 600,
+  "transition_step_shift_high": 1800,
+  "minimum_effective_shift_optimizer_steps": 600,
+  "mechanism_state_change": {
+    "rule_logit": "Held constant while parameters are unchanged.",
+    "decay_progress": "Held constant because decoupled weight decay is multiplied by learning rate.",
+    "gradient_state": "Continues evolving because forward, backward, and clipping still run.",
+    "adam_exp_avg": "Continues evolving.",
+    "adam_exp_avg_sq": "Continues evolving.",
+    "adam_step": "Continues evolving."
+  },
+  "predicted_stability_effect": "NO_CHANGE",
+  "stability_effect_rationale": "The pause delays rule-margin and decay-progress updates, but it does not freeze gradients or Adam moments. The discovery graph supports the same long-run transient-degradation/recovery class after restoration, not a justified directional stability improvement or worsening.",
+  "forbidden_information_used": false,
+  "validation": {
+    "unit_test": "1200 consecutive before_optimizer_step calls kept both optimizer-group learning rates at zero; call 1201 restored both captured rates.",
+    "branch_prediction_status": "Sealed for prospective causal validation; no discovery branch execution was available in the supplied scientific input."
+  }
+}

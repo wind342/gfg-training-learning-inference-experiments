@@ -1,0 +1,68 @@
+{
+  "schema": "gfg-temporal-credit-discovery-contract-v1",
+  "status": "FROZEN_FOR_FORMAL_EXECUTION_AFTER_RECORDED_DEVELOPMENT",
+  "claim_scope": "one procedurally scheduled 64-step terminal-consequence environment with replayable deterministic dynamics",
+  "environment": {
+    "horizon": 64,
+    "cue_bits": 6,
+    "actions": 2,
+    "functional_action_occurrences": 6,
+    "formation_ancestor_passengers": 3,
+    "terminal_consequence": "scalar emitted only after the final action",
+    "interaction_types": ["necessity", "backup_or_substitution", "synergy"]
+  },
+  "candidate_budget": 9,
+  "trace_decomposition_ridge": 1.0,
+  "development": {
+    "seeds": [1729, 2718, 31415],
+    "trace_fit_episodes": 512,
+    "credit_training_episodes": 192,
+    "candidate_test_episodes": 128,
+    "policy_test_episodes": 256,
+    "policy_epochs": 120
+  },
+  "formal": {
+    "seeds": [57721, 65537, 104729, 130363, 161803, 271828, 314159, 424243, 524287, 999983, 1000003, 2000003],
+    "trace_fit_episodes": 768,
+    "credit_training_episodes": 256,
+    "candidate_test_episodes": 192,
+    "policy_test_episodes": 384,
+    "policy_epochs": 160
+  },
+  "policy": {
+    "hidden_size": 48,
+    "learning_rate": 0.01
+  },
+  "methods": [
+    "gfg_forks",
+    "trace_decomposition_forks",
+    "temporal_recency_forks",
+    "rewired_gfg_forks",
+    "gfg_ancestry_only",
+    "terminal_all_actions",
+    "oracle_forks"
+  ],
+  "success_gates": {
+    "gfg_candidate_recall_min": 0.95,
+    "gfg_candidate_history_fraction_max": 0.20,
+    "gfg_causal_credit_f1_min": 0.95,
+    "gfg_pair_interaction_f1_min": 0.90,
+    "gfg_mean_terminal_success_min": 0.70,
+    "gfg_oracle_success_gap_max": 0.02,
+    "gfg_policy_advantage_over_trace_min": 0.05,
+    "gfg_policy_advantage_over_terminal_min": 0.40,
+    "gfg_policy_advantage_over_rewired_min": 0.40,
+    "all_base_gfgs_valid": true,
+    "all_independent_replays_pass": true
+  },
+  "forbidden": [
+    "credit or causal labels in the base GFG",
+    "program_order traversal for GFG candidate retrieval",
+    "post-update or evaluation-set targets in policy inputs",
+    "future action ledgers in inference",
+    "discarding failed seeds",
+    "treating formation ancestry as causal credit",
+    "claiming all delayed-reward problems are solved",
+    "ignoring counterfactual replay cost"
+  ]
+}

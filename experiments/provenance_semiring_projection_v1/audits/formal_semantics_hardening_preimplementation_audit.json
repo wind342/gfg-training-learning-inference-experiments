@@ -1,0 +1,307 @@
+{
+  "audit_id": "provenance-semiring-formal-semantics-hardening-v1-preimplementation",
+  "audit_date": "2026-07-22",
+  "repository": "wind342/source-information-continuity",
+  "stacked_branch": "maintenance/provenance-semiring-formal-semantics-hardening-v1",
+  "stacked_pr_base": "experiment/provenance-semiring-projection-v1",
+  "frozen_pr_19": {
+    "head": "f20ff57501b754b111be893565092c0e107c8b73",
+    "tree": "906e6e3be5e0085f4c993ef9b6fb5eaf18761e27",
+    "highest_status": "PROVENANCE_SEMIRING_AS_STRICT_HIERARCHICAL_PROJECTION_SUPPORTED",
+    "gate_count": 16,
+    "passed_gate_count": 16,
+    "final_status_sha256": "f1883801a366f880dbd0e5238899d0267398e10122d9db57a119df38412ecacc"
+  },
+  "current_flat_powerset_implementation": {
+    "class": "src/native_lower_k.py::WhyCarrier",
+    "source_sha256": "a79549d4549913df7f8eea2b02fbddc7f236dc0fd51fc86b0fecce45a1d37e86",
+    "domain_id": "why_powerset",
+    "carrier": "finite subsets of source-variable identifiers",
+    "zero": "empty set",
+    "one_as_base_annotation": "not separately implemented; a source variable is a singleton",
+    "addition": "set union",
+    "multiplication": "set union",
+    "serialization": "sorted variable list",
+    "formal_observation": "If an empty set is supplied as both 0 and 1, multiplication does not annihilate a nonempty set: empty union A equals A, not empty.",
+    "current_profile": {
+      "path": "profiles/semiring_homomorphism_family_v1.json",
+      "sha256": "12ca8d8278f448b17729e5416dff29199103e9f65c38b53b60b438fb97e00f94",
+      "target": "P(X)",
+      "variable_image": "singleton variable set",
+      "addition": "set union",
+      "multiplication": "set union"
+    },
+    "nx_derived_function": {
+      "symbol": "src/semiring_homomorphisms.py::_why",
+      "source_sha256": "26cdbd5adf38fadd85982a6236a2b60c1a5812c58047bcff289a468b623bac36",
+      "operation": "return the sorted union of every variable occurring in the canonical N[X] polynomial"
+    },
+    "preimplementation_classification": "PARTIAL_NONZERO_SUPPORT_VIEW",
+    "preimplementation_name": "flat_source_support_view"
+  },
+  "shared_polynomial_dependency_graph": {
+    "shared_algebra_module": "src/nx_polynomial.py",
+    "shared_algebra_module_sha256": "56eae9132c827c0d44f3a76999765f63746973a124f1cd8bf61aa96d2b2bc985",
+    "shared_variable_module": "src/structural.py",
+    "shared_variable_module_sha256": "8bc80368b09c808eba1642a016a17263164ec014ffb351f7f93329910f9f5aac",
+    "edges": [
+      {
+        "from": "src/native_nx.py",
+        "from_sha256": "8ab9326744d2e8d775472ba8be7785c9cb0bb7aeaac24399e5deb8ddc961def5",
+        "to": "src/nx_polynomial.py::NXPolynomial",
+        "kind": "algebra implementation import"
+      },
+      {
+        "from": "src/candidate_nx.py",
+        "from_sha256": "c40eaf3e6b42af53b91cc0369241661c1aa7eaf73b5b239cddc6d05c42e07225",
+        "to": "src/nx_polynomial.py::NXPolynomial",
+        "kind": "algebra implementation import"
+      },
+      {
+        "from": "src/native_nx.py",
+        "to": "src/structural.py::variable_for_source",
+        "kind": "variable-identity helper import"
+      },
+      {
+        "from": "src/candidate_nx.py",
+        "to": "src/structural.py::variable_for_source",
+        "kind": "variable-identity helper import"
+      }
+    ],
+    "shared_algebra_helper_count": 1,
+    "shared_variable_identity_helper_count": 1,
+    "conclusion": "The two semantic authorities are input-independent but not algebra-implementation-independent at the frozen head."
+  },
+  "report_artifact_statistic_drift": {
+    "report_path": "EXPERIMENT_REPORT.md",
+    "report_sha256": "06444a09f3a0b25fa2f0064cfac0946399a38da8093a6f2aafcda8ad51a7042f",
+    "artifact_sources": [
+      {
+        "path": "artifacts/nx_field_coverage.json",
+        "sha256": "02f73faa32d53204de736eea9a614062160340ae46ac4bf4e902db62de18442a"
+      },
+      {
+        "path": "artifacts/nx_exact_comparison.json",
+        "sha256": "e82354f4f385ec7677b13deabff410ca32f5899a0459e50579e3c1f994f5cbe5"
+      }
+    ],
+    "differences": [
+      {
+        "metric": "source-variable observations",
+        "report": 155,
+        "artifact": 135,
+        "delta": 20
+      },
+      {
+        "metric": "outputs",
+        "report": 27,
+        "artifact": 42,
+        "delta": -15
+      },
+      {
+        "metric": "polynomial terms/coefficient observations",
+        "report": 592,
+        "artifact": 197,
+        "delta": 395
+      },
+      {
+        "metric": "monomial factor/exponent observations",
+        "report": 1112,
+        "artifact": 332,
+        "delta": 780
+      }
+    ],
+    "root_cause_classification": "MANUALLY_HARDCODED_STALE_OR_MIXED_STAGE_STATISTICS",
+    "artifact_mutation_to_match_report_allowed": false,
+    "required_remedy": "Derive and inject report statistics from final machine artifacts, then fail closed on any mismatch."
+  },
+  "primary_authorities": [
+    {
+      "title": "Provenance Semirings",
+      "authors": [
+        "Todd J. Green",
+        "Grigoris Karvounarakis",
+        "Val Tannen"
+      ],
+      "venue": "PODS 2007",
+      "doi": "10.1145/1265530.1265535",
+      "public_url": "https://www.cs.ucdavis.edu/~green/papers/pods07.pdf",
+      "local_path": "audits/authorities/green-karvounarakis-tannen-pods2007-author-version.pdf",
+      "bytes": 262241,
+      "sha256": "74e092702db58518afeaf909e1d3380848165b2cb9ae75dc6822b04f66aa5be0",
+      "pdf_pages": 10,
+      "locations": [
+        {
+          "location": "Definition 3.1 and Definition 3.2, PDF page 3, proceedings page 33",
+          "finding": "K-relations use finite support; positive RA uses 0 and 1, addition for union/projection, and multiplication for selection/join."
+        },
+        {
+          "location": "discussion after Proposition 3.3 and Proposition 3.4, PDF page 3, proceedings page 33",
+          "finding": "The paper requires commutative-semiring identities, explicitly including multiplication annihilation 0*a=a*0=0; N, B, PosBool(B), and P(Omega) with union/intersection are listed as examples."
+        },
+        {
+          "location": "Proposition 3.5, PDF page 4, proceedings page 34",
+          "finding": "Query evaluation commutes with h exactly when K and K-prime are commutative semirings and h is a semiring homomorphism."
+        },
+        {
+          "location": "Section 4 and Figure 5, PDF page 4, proceedings page 34",
+          "finding": "The flat P(X) calculation is written with union for both operations and empty set for both constants; it records all contributing tuple identifiers but loses alternative derivation structure."
+        },
+        {
+          "location": "Definition 4.1, Proposition 4.2, and Theorem 4.3, PDF page 4, proceedings page 34",
+          "finding": "N[X] is the positive-algebra provenance semiring and uniquely evaluates into each actual commutative target semiring."
+        }
+      ],
+      "literal_name_counts": {
+        "P(X)": 1,
+        "PosBool": 9,
+        "Which(X)": 0,
+        "Why(X)": 0,
+        "Trio(X)": 0
+      }
+    },
+    {
+      "title": "Why and Where: A Characterization of Data Provenance",
+      "authors": [
+        "Peter Buneman",
+        "Sanjeev Khanna",
+        "Wang-Chiew Tan"
+      ],
+      "venue": "ICDT 2001",
+      "doi": "10.1007/3-540-44503-X_20",
+      "public_url": "https://www.pure.ed.ac.uk/ws/files/16509989/Why_and_Where_A_Characterization_of_Data_Provenance.pdf",
+      "local_path": "audits/authorities/buneman-khanna-tan-icdt2001-author-version.pdf",
+      "bytes": 441260,
+      "sha256": "6c244258ab44a229957a1a16605787f1b9ade11bee0ef6eac8086eb6905e1087",
+      "pdf_pages": 16,
+      "locations": [
+        {
+          "location": "Section 5, PDF page 9, paper page 8",
+          "finding": "Why-provenance is introduced through witnesses that prove an output."
+        },
+        {
+          "location": "Definition 6, PDF page 10, paper page 9",
+          "finding": "A witness basis is a set of witnesses tied to query structure; flattening all witnesses into one source set erases this structure."
+        },
+        {
+          "location": "Definition 7, PDF page 11, paper page 10",
+          "finding": "Minimal witness basis is separately defined, confirming that Why semantics is not merely one flat union of source identifiers."
+        }
+      ]
+    }
+  ],
+  "preimplementation_formal_classifications": [
+    {
+      "target": "bag N",
+      "classification": "COMMUTATIVE_SEMIRING_TARGET",
+      "carrier": "natural numbers",
+      "zero": 0,
+      "one": 1,
+      "addition": "natural addition",
+      "multiplication": "natural multiplication",
+      "addition_idempotent": false,
+      "multiplication_idempotent": false,
+      "annihilation": true,
+      "nx_homomorphism_status": "SUPPORTED_PENDING_REEXECUTION"
+    },
+    {
+      "target": "Boolean B",
+      "classification": "COMMUTATIVE_SEMIRING_TARGET",
+      "carrier": "false and true",
+      "zero": false,
+      "one": true,
+      "addition": "logical OR",
+      "multiplication": "logical AND",
+      "addition_idempotent": true,
+      "multiplication_idempotent": true,
+      "annihilation": true,
+      "nx_homomorphism_status": "SUPPORTED_PENDING_REEXECUTION"
+    },
+    {
+      "target": "PosBool(X)",
+      "classification": "SEMIRING_QUOTIENT_OR_HOMOMORPHIC_IMAGE",
+      "carrier": "positive Boolean expressions modulo Boolean-function equivalence",
+      "zero": "false",
+      "one": "true",
+      "addition": "OR",
+      "multiplication": "AND",
+      "addition_idempotent": true,
+      "multiplication_idempotent": true,
+      "annihilation": true,
+      "nx_homomorphism_status": "SUPPORTED_PENDING_REEXECUTION"
+    },
+    {
+      "target": "current flat P(X)",
+      "classification": "PARTIAL_NONZERO_SUPPORT_VIEW",
+      "carrier": "finite source-variable sets",
+      "zero": "empty set",
+      "one": "empty set",
+      "addition": "union",
+      "multiplication": "union",
+      "addition_idempotent": true,
+      "multiplication_idempotent": true,
+      "annihilation": false,
+      "nx_homomorphism_status": "NOT_SUPPORTED_AS_COMPLETE_COMMUTATIVE_SEMIRING_HOMOMORPHISM",
+      "task_projection_status": "SUPPORTED_PENDING_REEXECUTION_ON_NONZERO_OUTPUT_SUPPORT"
+    },
+    {
+      "target": "Buneman-Khanna-Tan witness-basis Why provenance",
+      "classification": "NOT_EVALUATED",
+      "reason": "The current flat support view does not preserve sets of witnesses and no new direct evaluator is authorized without a fully frozen cross-model representation."
+    },
+    {
+      "target": "Which(X)",
+      "classification": "NOT_EVALUATED",
+      "reason": "No formal Which(X) carrier or operations occur in the frozen PODS 2007 authority."
+    },
+    {
+      "target": "Trio(X)",
+      "classification": "NOT_EVALUATED",
+      "reason": "No formal Trio(X) carrier or operations occur in the frozen PODS 2007 authority."
+    },
+    {
+      "target": "existing Database which-lineage / Vars(N[X])",
+      "classification": "NON_SEMIRING_TASK_PROJECTION",
+      "reason": "The existing bridge returns a tuple-level flat source set and is not counted as an algebraic target."
+    }
+  ],
+  "conclusion_change_policy": {
+    "must_downgrade": [
+      "Remove current flat P(X) from the count and language of complete semiring homomorphic targets.",
+      "Stop calling the flat variable union unqualified Why provenance."
+    ],
+    "may_upgrade_only_after_machine_evidence": [
+      "Independent Native N[X] algebra oracle exactness.",
+      "Shared algebra helper count equals zero.",
+      "Shared variable-identity helper count equals zero.",
+      "Machine-derived report statistics exactness.",
+      "Formal-semantics hardening highest status."
+    ],
+    "may_be_preserved_only_after_reexecution": [
+      "P1 exactness on all 13 frozen cases.",
+      "P2 strictness on all 5 pairs and 10 real executions.",
+      "At least bag N, Boolean B, and PosBool(X) exact direct-versus-derived algebraic projections.",
+      "Database which-lineage bridge, lower strictness, joint strictness, output orthogonality, and protected tree equality."
+    ],
+    "not_evaluated": [
+      "Which(X)",
+      "Trio(X)",
+      "a full witness-basis Why evaluator"
+    ]
+  },
+  "falsifiers_and_blockers": [
+    "Any frozen P1 coefficient, exponent, source-variable identity, output identity, or polynomial mismatch.",
+    "Any frozen P2 pair ceases to have equal N[X] and unequal complete generation facts.",
+    "The independent Native algebra oracle differs from the Core-only Candidate on any canonical field.",
+    "Native retains any NXPolynomial or Candidate algebra dependency, or retains structural.variable_for_source.",
+    "Fewer than three formally valid algebraic lower targets pass direct-versus-derived comparison.",
+    "The flat support view is counted as a complete semiring target or whole-carrier homomorphism.",
+    "Any report statistic cannot be recomputed from final artifacts or differs from the generated report block.",
+    "Any original or new negative control does not fail closed exactly once.",
+    "The two complete hardening runs differ in any non-excluded scientific field.",
+    "Any protected Core, protocol, compatibility, Core-test, Database-experiment, or other-experiment tree changes.",
+    "Any required fix would need a semiring-specific Core field."
+  ],
+  "implementation_started": false,
+  "preimplementation_status": "FORMAL_SEMANTICS_HARDENING_SCOPE_FROZEN_WITH_SUBCLAIM_DOWNGRADE_REQUIRED"
+}

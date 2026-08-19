@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/inter-fact-evidence-hardening-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence_id",
+    "evidence_kind",
+    "establishment_source",
+    "authority_id",
+    "execution_run_id",
+    "receipt_ref",
+    "occurrence_ids",
+    "fact_ids",
+    "payload",
+    "schema_version"
+  ],
+  "properties": {
+    "evidence_id": {"type": "string", "pattern": "^ifev1_[0-9a-f]{64}$"},
+    "evidence_kind": {"type": "string", "minLength": 1},
+    "establishment_source": {
+      "enum": ["generator_established", "wrapper_established"]
+    },
+    "authority_id": {"type": "string", "minLength": 1},
+    "execution_run_id": {"type": "string", "minLength": 1},
+    "receipt_ref": {"type": "string", "minLength": 1},
+    "occurrence_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "fact_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "uniqueItems": true
+    },
+    "payload": {"type": "object"},
+    "schema_version": {"const": "inter-fact-evidence-hardening-v1"}
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "gfg-temporal-credit-long-chain-self-optimization-contract-v1",
+  "status": "FROZEN_BEFORE_FORMAL_EXECUTION",
+  "horizon": 64,
+  "action_count": 2,
+  "opaque_event_codes": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "candidate_count_expected": 9,
+  "functional_count_hidden_evaluator_only": 6,
+  "passenger_count_hidden_evaluator_only": 3,
+  "minimum_post_event_native_transitions": 36,
+  "coalition_semantics": "members retain observed action; non-members use matched binary alternative",
+  "exact_credit": "Shapley over terminal scalar consequence",
+  "credit_tolerance": 1e-12,
+  "required_conditions": [
+    "exact_naive",
+    "trace_profile",
+    "hand_engineered",
+    "dependency_dag",
+    "gfg_guided",
+    "rewired_gfg"
+  ],
+  "formal_seeds": [9101, 9102, 9103, 9104, 9105, 9106, 9107, 9108],
+  "development_seeds": [8101, 8102, 8103],
+  "episodes_per_formal_seed": 24,
+  "held_out_policy_episodes_per_seed": 128,
+  "minimum_transition_reduction": 0.75,
+  "minimum_end_to_end_speedup": 2.0,
+  "forbidden_graph_labels": [
+    "causal_credit",
+    "necessary",
+    "backup",
+    "substitution",
+    "synergy",
+    "functional_action",
+    "hidden_target"
+  ],
+  "future_information_forbidden": true,
+  "direct_terminal_projection_forbidden": true,
+  "dependency_dag_is_falsification_control": true
+}

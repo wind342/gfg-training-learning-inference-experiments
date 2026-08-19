@@ -1,0 +1,35 @@
+{
+  "schema": "gfg-capability-forecast-spec-v1",
+  "version": "1.0.0",
+  "entrypoint": "CapabilityFormationMechanism.forecast",
+  "prediction_horizon_optimizer_step": 10000,
+  "evaluation_grid_optimizer_steps": 100,
+  "prefix_only": true,
+  "future_gfg_reads": 0,
+  "required_output": {
+    "will_transition": "boolean",
+    "transition_step_low_200": "inclusive integer lower bound",
+    "transition_step_high_200": "inclusive integer upper bound with width at most 200",
+    "transition_step_low_500": "inclusive integer lower bound",
+    "transition_step_high_500": "inclusive integer upper bound with width at most 500",
+    "predicted_validation_curve": "future 100-step-grid list of optimizer_step and validation_accuracy",
+    "mechanism_state": "prefix-initial state, generated state evolution, and formation-burst step",
+    "post_formation_stability": "STABLE, TRANSIENT_DEGRADATION_RECOVERY, PERSISTENT_DEGRADATION, or UNDETERMINED",
+    "predicted_instability_intervals": "zero or more inclusive integer step_low/step_high intervals"
+  },
+  "transition_rule": {
+    "train_accuracy_min": 0.99,
+    "validation_accuracy_min": 0.9,
+    "sustained_evaluation_points": 3,
+    "requires_earlier_validation_accuracy_at_most": 0.3
+  },
+  "interval_construction": {
+    "high_precision": "forecast transition grid point plus or minus one evaluation interval",
+    "primary": "forecast transition grid point plus or minus two evaluation intervals"
+  },
+  "curve_values": {
+    "optimizer_step": {"type": "integer", "minimum": 0, "maximum": 10000},
+    "validation_accuracy": {"type": "number", "minimum": 0, "maximum": 1}
+  },
+  "deterministic": true
+}

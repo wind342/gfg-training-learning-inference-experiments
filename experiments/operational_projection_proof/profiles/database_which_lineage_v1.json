@@ -1,0 +1,28 @@
+{
+  "profile_id": "database-which-lineage-v1",
+  "domain": "database_which_lineage",
+  "evaluation_status": "EVALUATED",
+  "claim_scope": "Fixed deterministic bag-preserving relational operators over the synthetic business and many-to-many workloads; tuple-level direct relations, backward/forward which-lineage, exact derivation paths, explicit dispositions, multiplicity, and duplicate-valued distinct identities.",
+  "prerequisite": "The committed database-lineage experiment and frozen hand-authored Oracle are available.",
+  "sections": {
+    "direct_relations": ["workload_id", "input_tuple_id", "output_tuple_id", "outcome_kind", "relation_role", "relation_ordinal"],
+    "backward_lineage": ["workload_id", "output_tuple_id"],
+    "forward_lineage": ["workload_id", "source_tuple_id"],
+    "derivation_paths": ["workload_id", "output_tuple_id", "source_tuple_id", "path_ordinal"],
+    "explicit_dispositions": ["workload_id", "input_tuple_id", "reason_code"],
+    "multiplicity": ["workload_id"],
+    "duplicate_identities": ["workload_id", "case_id"]
+  },
+  "multiplicity_fields": [
+    "relation_ordinal",
+    "derivation_path_count",
+    "path_ordinal",
+    "path_length",
+    "total_relation_count",
+    "support_relation_count",
+    "disposition_relation_count",
+    "final_output_count",
+    "distinct_identity_count",
+    "direct_relation_count"
+  ]
+}

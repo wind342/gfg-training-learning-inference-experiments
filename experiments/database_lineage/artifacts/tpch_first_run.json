@@ -1,0 +1,35 @@
+{
+  "core_commit": "50a21fd4dfc7ca7cd1e939e844c2ca07877e8a16",
+  "q1": {
+    "backward_lineage_file_bytes": 1412501,
+    "backward_lineage_file_sha256": "5c1074956fa60ec428fde8922f76a3cc8e2fa45ac5d7018d8eaf347479018cd8",
+    "binding_count": 178797,
+    "csv_sha256": "6d7cda2a814e75d1313a32764e0f7d365a86f3dc868331d54396dab91e709b18",
+    "json_sha256": "8656675e7811a00dcd29d4cd29b7e8c892e5609e7d74ce94cb81bebd02cc13a9",
+    "snapshot_id": "snap3_3fa86040bd848ab59494313cd4655440f0b0a16dec2a5f36d35e24f1bd242dfe"
+  },
+  "q10": {
+    "backward_lineage_file_bytes": 6231,
+    "backward_lineage_file_sha256": "8de74e45345c58f91370532f4fa1e71cd63472d1773b36a05b3b4f2ef2b32af2",
+    "binding_count": 99933,
+    "csv_sha256": "f2018cc8e7d53fb54e43cbc104955564f943493b91b5bb8b3bde7ea05a65bbb4",
+    "json_sha256": "cd7df63313cad3a9f94de6b643d3b8e8e95b1b6e16361a1733345a528f07fe01",
+    "snapshot_id": "snap3_d1090e6ccbc16c4f1be41b728c8f2eb8e14f62f452ab5f89aeb1c90d07d2985b"
+  },
+  "q3": {
+    "backward_lineage_file_bytes": 1996,
+    "backward_lineage_file_sha256": "c80d26d435b0ff8c86214efb4ca9f1c857810b8016c91cda5bf71a55c73c7486",
+    "binding_count": 121112,
+    "csv_sha256": "89edb0980979a8688ccc0e7f881044c9e43ac6eae468883aa66ea20e8f9387aa",
+    "json_sha256": "76ca631e0578e9510160425b1bb3885c25c517925f744387026f373dd694aeaa",
+    "snapshot_id": "snap3_ed0916238bd6784acfcad09dd94bd05bdce395f68890b205fa32ddb0bebdac86"
+  },
+  "q6": {
+    "backward_lineage_file_bytes": 28386,
+    "backward_lineage_file_sha256": "63416c47a97d06c2a45066c5979ed6bdb6915656695e0e5437bdc888d0c78de2",
+    "binding_count": 62557,
+    "csv_sha256": "f0fc5c69031d81a87e2376e06bd8242fe260a452dc2d3b4c1d34704c9445c87c",
+    "json_sha256": "92d5c251c4a231893c6022c42352a2799ae40d54acd6fa616fdece83c76e8a71",
+    "snapshot_id": "snap3_4daa7163c4040ad3492828153c4c7ae8d819a4dd3a6c4cf79c67c3301a83f19d"
+  }
+}

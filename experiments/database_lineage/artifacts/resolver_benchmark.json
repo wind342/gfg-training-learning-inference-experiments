@@ -1,0 +1,117 @@
+{
+  "after": {
+    "maximum_peak_tracemalloc_bytes": 430694,
+    "maximum_seconds": 0.06594520004000515,
+    "mean_peak_tracemalloc_bytes": 421311.6,
+    "mean_seconds": 0.056272495011216964,
+    "median_seconds": 0.05550484999548644,
+    "minimum_seconds": 0.05424870003480464,
+    "repeats": 20
+  },
+  "authoritative_storage_changed": false,
+  "before": {
+    "maximum_peak_tracemalloc_bytes": 105466,
+    "maximum_seconds": 0.06172100000549108,
+    "mean_peak_tracemalloc_bytes": 105214.4,
+    "mean_seconds": 0.056145305000245574,
+    "median_seconds": 0.05544940000982024,
+    "minimum_seconds": 0.0544264999916777,
+    "repeats": 20
+  },
+  "binding_count": 300,
+  "core_schema_changed": false,
+  "database_specific_semantics_added": false,
+  "evidence_count": 300,
+  "fixture": "fixed 300-stage modality-independent generation chain",
+  "indexed_structures": [
+    "produced entity -> all candidate operations",
+    "operation -> produced entity set",
+    "operation -> evidence set",
+    "binding -> all primary-evidence candidates",
+    "entity id -> entity"
+  ],
+  "operation_count": 300,
+  "success_and_failure_reason_codes": {
+    "bad_authority": {
+      "indexed": {
+        "reason_code": "EVIDENCE_AUTHORITY_UNAUTHORIZED",
+        "status": "failure"
+      },
+      "legacy": {
+        "reason_code": "EVIDENCE_AUTHORITY_UNAUTHORIZED",
+        "status": "failure"
+      }
+    },
+    "duplicate_operation": {
+      "indexed": {
+        "reason_code": "OPERATION_BINDING_CLOSURE_FAILED",
+        "status": "failure"
+      },
+      "legacy": {
+        "reason_code": "OPERATION_BINDING_CLOSURE_FAILED",
+        "status": "failure"
+      }
+    },
+    "duplicate_primary": {
+      "indexed": {
+        "reason_code": "BINDING_HAS_MULTIPLE_PRIMARY_EVIDENCE",
+        "status": "failure"
+      },
+      "legacy": {
+        "reason_code": "BINDING_HAS_MULTIPLE_PRIMARY_EVIDENCE",
+        "status": "failure"
+      }
+    },
+    "material_mismatch": {
+      "indexed": {
+        "reason_code": "BINDING_EVIDENCE_MATERIAL_MISMATCH",
+        "status": "failure"
+      },
+      "legacy": {
+        "reason_code": "BINDING_EVIDENCE_MATERIAL_MISMATCH",
+        "status": "failure"
+      }
+    },
+    "missing_operation": {
+      "indexed": {
+        "reason_code": "OPERATION_BINDING_CLOSURE_FAILED",
+        "status": "failure"
+      },
+      "legacy": {
+        "reason_code": "OPERATION_BINDING_CLOSURE_FAILED",
+        "status": "failure"
+      }
+    },
+    "missing_primary": {
+      "indexed": {
+        "reason_code": "BINDING_HAS_NO_PRIMARY_EVIDENCE",
+        "status": "failure"
+      },
+      "legacy": {
+        "reason_code": "BINDING_HAS_NO_PRIMARY_EVIDENCE",
+        "status": "failure"
+      }
+    },
+    "missing_related": {
+      "indexed": {
+        "reason_code": "EVIDENCE_ENTITY_MISMATCH",
+        "status": "failure"
+      },
+      "legacy": {
+        "reason_code": "EVIDENCE_ENTITY_MISMATCH",
+        "status": "failure"
+      }
+    },
+    "success": {
+      "indexed": {
+        "resolved_bindings": 300,
+        "status": "success"
+      },
+      "legacy": {
+        "resolved_bindings": 300,
+        "status": "success"
+      }
+    }
+  },
+  "validation_results_identical": true
+}

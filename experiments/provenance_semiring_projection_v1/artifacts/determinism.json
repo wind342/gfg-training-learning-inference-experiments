@@ -1,0 +1,23 @@
+{
+  "excluded_scientific_fields": [],
+  "included_non_excludable_fields": [
+    "variable identity",
+    "polynomial terms",
+    "coefficient",
+    "exponent",
+    "source identity",
+    "output identity",
+    "Snapshot identity",
+    "strictness pairs",
+    "homomorphism results",
+    "relation classification"
+  ],
+  "run_1_scientific_sha256": "f8f4a48fd234c3fe75af9eeaf8a1f9b647cf3e0dd3711fadf21e1078afb6340e",
+  "run_1_test_sha256": "16c70f1bc88d699e9363b29c27c55d14ffbab823126f1e358c1f35d5d067f761",
+  "run_2_scientific_sha256": "f8f4a48fd234c3fe75af9eeaf8a1f9b647cf3e0dd3711fadf21e1078afb6340e",
+  "run_2_test_sha256": "16c70f1bc88d699e9363b29c27c55d14ffbab823126f1e358c1f35d5d067f761",
+  "schema_version": "two-run-scientific-determinism-v1",
+  "scientific_reports_byte_equal": true,
+  "status": "TWO_COMPLETE_RUNS_BYTE_IDENTICAL",
+  "test_results_byte_equal": true
+}

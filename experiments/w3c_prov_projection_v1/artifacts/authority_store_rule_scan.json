@@ -1,0 +1,419 @@
+{
+  "authoritative_candidate_input_count": 0,
+  "candidate_projection_output_count": 3,
+  "classified_file_count": 78,
+  "classified_file_count_check": 78,
+  "expected_answer_artifact_count": 0,
+  "files": [
+    {
+      "findings": [],
+      "path": "EXPERIMENT_REPORT.md",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "README.md",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "__init__.py",
+      "role": "neutral_shared_schema_or_record_model"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/actual_transform_context_counterexample.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/artifact_manifest.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/authority_audit.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/authority_store_rule_scan.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/candidate.provn",
+      "role": "candidate_projection_output"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/candidate_prov_projection_summary.json",
+      "role": "candidate_projection_output"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/core_change_lineage.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/determinism.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/evidence_hardening_run_summary.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/hardening_negative_control_accounting.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/hardening_negative_controls.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/native_prov_reference_summary.json",
+      "role": "native_reference_output"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/native_reference.ttl",
+      "role": "native_reference_output"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/negative_controls.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/normalized_prov_dm_candidate.json",
+      "role": "candidate_projection_output"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/normalized_prov_dm_reference.json",
+      "role": "native_reference_output"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/official_test_results.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/oracle_import_dependency_graph.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/oracle_isolation.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/oracle_runtime_process_trace.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/output_orthogonality.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/prov_constraint_validation.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/prov_identifier_determinism.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/prov_n_prov_o_equivalence.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/prov_record_exact_comparison.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/prov_relation_multiplicity.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/prov_roundtrip_validation.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/reverse_non_identifiability.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/run_summary.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/runtime_authority_dependency_trace.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/runtime_dependency_trace.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/second_authority_audit.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/strict_projection_counterexamples.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "artifacts/test_results.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "audits/evidence_hardening_preimplementation_audit.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "audits/evidence_hardening_preimplementation_audit.md",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "audits/preimplementation_audit.json",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "audits/preimplementation_audit.md",
+      "role": "diagnostic_report"
+    },
+    {
+      "findings": [],
+      "path": "authorities/applicable_normative_clauses.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "authorities/official_errata_audit.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "authorities/official_test_inventory.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "authorities/w3c_prov_authority_manifest.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "profiles/actual_transform_counterexample_contract_v1.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "profiles/authority_store_audit_policy_v2.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "profiles/claim_boundary_v1.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "profiles/core_to_w3c_prov_crosswalk_v1.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "profiles/core_to_w3c_prov_crosswalk_v1.md",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "profiles/oracle_isolation_policy_v2.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "profiles/prov_semantic_identifier_scheme_v1.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "profiles/w3c_prov_generation_profile_v1.json",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "profiles/w3c_prov_generation_profile_v1.md",
+      "role": "normative_authority_manifest"
+    },
+    {
+      "findings": [],
+      "path": "requirements.txt",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/__init__.py",
+      "role": "neutral_shared_schema_or_record_model"
+    },
+    {
+      "findings": [],
+      "path": "src/audit_process.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/authority_store_audit.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/bootstrap_references.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/candidate_projection.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/core_capture.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/events.py",
+      "role": "neutral_shared_schema_or_record_model"
+    },
+    {
+      "findings": [],
+      "path": "src/experiment.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/generator.py",
+      "role": "neutral_shared_schema_or_record_model"
+    },
+    {
+      "findings": [],
+      "path": "src/native_reference.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/negative_controls.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/official_tests.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/oracle_isolation_audit.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/provn.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/provo_normalizer.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/record_model.py",
+      "role": "neutral_shared_schema_or_record_model"
+    },
+    {
+      "findings": [],
+      "path": "src/science_runs.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "src/validation.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "tests/test_actual_transform_counterexample.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "tests/test_dual_paths.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "tests/test_evidence_hardening_audits.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "tests/test_profile_freeze.py",
+      "role": "test_fixture"
+    },
+    {
+      "findings": [],
+      "path": "tests/test_science_controls.py",
+      "role": "test_fixture"
+    }
+  ],
+  "forbidden_secondary_relation_store_count": 0,
+  "hidden_binding_crosswalk_count": 0,
+  "native_reference_output_count": 3,
+  "persistent_candidate_lookup_table_count": 0,
+  "policy_id": "authority-store-audit-policy-v2",
+  "receipt_answer_index_count": 0,
+  "role_counts": {
+    "candidate_projection_output": 3,
+    "diagnostic_report": 34,
+    "native_reference_output": 3,
+    "neutral_shared_schema_or_record_model": 5,
+    "normative_authority_manifest": 13,
+    "test_fixture": 20
+  },
+  "scan_run_count": 2,
+  "scanned_file_count": 78,
+  "snapshot_blob_embedded_in_prov_count": 0,
+  "status": "PASS",
+  "two_scans_equal": true,
+  "unclassified_file_count": 0
+}

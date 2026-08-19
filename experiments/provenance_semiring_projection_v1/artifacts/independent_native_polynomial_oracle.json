@@ -1,0 +1,118 @@
+{
+  "checks": {
+    "binomial_middle_coefficient": true,
+    "binomial_term_count": true,
+    "coefficient_aggregation": true,
+    "exponent_aggregation": true,
+    "one_multiplicative_identity": true,
+    "zero_additive_identity": true,
+    "zero_multiplicative_annihilation": true
+  },
+  "implementation": {
+    "banned_import_hits": [],
+    "imports": [
+      "__future__",
+      "dataclasses",
+      "typing"
+    ],
+    "monomial_representation": "frozenset[(variable, exponent)]",
+    "path": "src/native_polynomial_oracle.py",
+    "polynomial_representation": "immutable tuple of (frozenset monomial, natural coefficient)",
+    "sha256": "90160fa3c10bf087a27d738c96cfc97454dc65af7607ebba007ab9f9bfd4787f"
+  },
+  "reads_candidate_artifact": false,
+  "reads_comparison_answer": false,
+  "reads_core": false,
+  "reads_expected_polynomial": false,
+  "schema_version": "independent-native-polynomial-oracle-v1",
+  "status": "INDEPENDENT_NATIVE_POLYNOMIAL_PRIMITIVES_SUPPORTED",
+  "variable_identity_examples": [
+    {
+      "source_identity": "oracle-source-x",
+      "variable": "x_303d145ac67520502cf675743080b46093ee1414f8dc54169c09a6a6481e7c31"
+    },
+    {
+      "source_identity": "oracle-source-y",
+      "variable": "x_f6276868adfc0425f5acf771b81f0cd2bfd48c66a97f0e1b7f20d54dc16f028c"
+    }
+  ],
+  "vectors": {
+    "one": {
+      "schema_version": "nx-polynomial-v1",
+      "terms": [
+        {
+          "coefficient": 1,
+          "monomial": []
+        }
+      ]
+    },
+    "x_plus_x": {
+      "schema_version": "nx-polynomial-v1",
+      "terms": [
+        {
+          "coefficient": 2,
+          "monomial": [
+            {
+              "exponent": 1,
+              "variable": "x_303d145ac67520502cf675743080b46093ee1414f8dc54169c09a6a6481e7c31"
+            }
+          ]
+        }
+      ]
+    },
+    "x_plus_y_squared": {
+      "schema_version": "nx-polynomial-v1",
+      "terms": [
+        {
+          "coefficient": 2,
+          "monomial": [
+            {
+              "exponent": 1,
+              "variable": "x_303d145ac67520502cf675743080b46093ee1414f8dc54169c09a6a6481e7c31"
+            },
+            {
+              "exponent": 1,
+              "variable": "x_f6276868adfc0425f5acf771b81f0cd2bfd48c66a97f0e1b7f20d54dc16f028c"
+            }
+          ]
+        },
+        {
+          "coefficient": 1,
+          "monomial": [
+            {
+              "exponent": 2,
+              "variable": "x_303d145ac67520502cf675743080b46093ee1414f8dc54169c09a6a6481e7c31"
+            }
+          ]
+        },
+        {
+          "coefficient": 1,
+          "monomial": [
+            {
+              "exponent": 2,
+              "variable": "x_f6276868adfc0425f5acf771b81f0cd2bfd48c66a97f0e1b7f20d54dc16f028c"
+            }
+          ]
+        }
+      ]
+    },
+    "x_times_x": {
+      "schema_version": "nx-polynomial-v1",
+      "terms": [
+        {
+          "coefficient": 1,
+          "monomial": [
+            {
+              "exponent": 2,
+              "variable": "x_303d145ac67520502cf675743080b46093ee1414f8dc54169c09a6a6481e7c31"
+            }
+          ]
+        }
+      ]
+    },
+    "zero": {
+      "schema_version": "nx-polynomial-v1",
+      "terms": []
+    }
+  }
+}

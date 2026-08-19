@@ -1,0 +1,26 @@
+{"arguments":{"tables":["chunks","evaluations","graph_blocks","metadata"]},"count":4,"operation":"sqlite_schema_read"}
+{"arguments":{"keys":["capture_profile","final_block_sha256","final_counts","final_step","participant_task"]},"count":5,"operation":"metadata_read"}
+{"arguments":{"group_by":"stage","measures":["blocks","objects","occurrences","facts","explicit_edges"]},"count":24,"operation":"graph_block_stage_summary"}
+{"arguments":{"max_step":10000},"count":101,"operation":"evaluations_prefix_read"}
+{"arguments":{"max_step":0,"roles":["training_task","optimizer_configuration","parameter_version","training_batch_inputs","training_batch_targets"],"stage":"before_batch"},"count":19,"operation":"block_payload_read"}
+{"arguments":{"outcomes":["training_batch_inputs","training_batch_targets"],"stage":"before_batch","step":0},"count":2,"operation":"materialized_tensor_read"}
+{"arguments":{"blocks":10000,"roles":["training_batch_inputs","training_batch_targets"]},"count":2,"operation":"distinct_full_batch_content_hash_check"}
+{"arguments":{"equation":"code(left)+code(right)-code(outcome)=0 mod operand_count","training_facts":317},"count":317,"operation":"cyclic_rule_constraint_expansion"}
+{"arguments":{"field":"GF(23) constraint matrix","nullity":1},"count":22,"operation":"cyclic_rule_rank_test"}
+{"arguments":{"materialized_only":true,"name_contains":"token_embedding.input.0","scope":"evaluation_validation"},"count":100,"operation":"validation_input_object_query"}
+{"arguments":{"materialized_only":true,"roles":["validation_logits","validation_predictions"],"steps":"100:100:10000"},"count":200,"operation":"validation_output_object_query"}
+{"arguments":{"definition":"decoded-rule logit minus largest other logit","validation_cases_per_step":212},"count":21200,"operation":"rule_margin_derivation"}
+{"arguments":{"check":"positive margin fraction equals exact evaluation validation_accuracy","steps":"100:100:10000"},"count":100,"operation":"rule_margin_accuracy_validation"}
+{"arguments":{"occurrence_type":"gradient_clip","max_step":10000},"count":10000,"operation":"occurrence_query"}
+{"arguments":{"gap_tolerance_steps":20,"threshold":"total_norm > transform_reference.max_norm"},"count":25,"operation":"gradient_clip_episode_derivation"}
+{"arguments":{"roles":["parameter_version","optimizer_state"],"stage":"after_optimizer_step","steps":"100:100:10000"},"count":6000,"operation":"materialized_optimizer_object_query"}
+{"arguments":{"expression":"RMS(exp_avg/(sqrt(exp_avg_sq)+1e-8))","parameters":15,"steps":"100:100:10000"},"count":1500,"operation":"adam_effective_update_derivation"}
+{"arguments":{"expression":"cyclic-difference explained variance of token-embedding Gram matrix","steps":"100:100:10000"},"count":100,"operation":"embedding_geometry_derivation"}
+{"arguments":{"counterexample":"nearly equal training loss and equal train accuracy with incompatible validation state","steps":[700,2000]},"count":2,"operation":"state_closure_counterexample_search"}
+{"arguments":{"counterexample":"equal cyclic embedding geometry with incompatible validation state, separated by Adam state","steps":[1900,5800]},"count":2,"operation":"state_closure_counterexample_search"}
+{"arguments":{"stages":["after_forward","after_backward","after_gradient_clip","after_optimizer_step"],"training_steps":[1435,5797]},"count":8,"operation":"exact_generation_chain_trace"}
+{"arguments":{"steps":[500,1400,1500,1600,1700,5800,5900],"stage":"evaluation"},"count":7,"operation":"exact_evaluation_fact_trace"}
+{"arguments":{"cuts":[500,600,700,800,900,1000,1100],"future_reads_per_replay":0},"count":7,"operation":"prefix_only_replay"}
+{"arguments":{"cuts":[1700,3500,5700,5800],"branches":["formed","pre_instability","recovery"],"future_reads_per_replay":0},"count":4,"operation":"postformation_prefix_branch_replay"}
+{"arguments":{"fields":["current_rule_fraction","renewal_peak_phase","rule_code_by_token","adam_beta2"]},"count":4,"operation":"executable_use_perturbation_audit"}
+{"arguments":{"mutated_hook_state":["current gradients","optimizer group learning rate fallback"],"read_write_audit":["parameter","gradient","optimizer configuration","exp_avg","exp_avg_sq","step"]},"count":6,"operation":"intervention_state_audit"}

@@ -1,0 +1,208 @@
+{
+  "artifact_count": 31,
+  "artifacts": [
+    {
+      "bytes": 1209,
+      "path": "artifacts/composition_consistency_source_map.json",
+      "sha256": "759ba712093ac9018dcfb198d525b4d437d1fcacc4f87352213ba58119169b6e"
+    },
+    {
+      "bytes": 766,
+      "path": "artifacts/core_change_lineage.json",
+      "sha256": "b62939255c6a097db36d7ce971941676316c247ad84b1788f8eb10b553f6228b"
+    },
+    {
+      "bytes": 2130,
+      "path": "artifacts/determinism.json",
+      "sha256": "5aac1b3f4002244e0fdab636cf284eaf6db6e1739da31dfa9c6ab0d1ee19281f"
+    },
+    {
+      "bytes": 8065,
+      "path": "artifacts/environment.json",
+      "sha256": "2e02bb37f8ebbcb619a92d5fbd49eac902d637066cd44b9e3f145ad7375d3234"
+    },
+    {
+      "bytes": 2272,
+      "path": "artifacts/hierarchical_consistency_core_database_to_opentelemetry.json",
+      "sha256": "59e1ae2a1c24edae4f4e2f1db731de6c687ff209beebaeda0726019756b688c6"
+    },
+    {
+      "bytes": 22381,
+      "path": "artifacts/negative_control_classification.json",
+      "sha256": "45f0bc48819e663e15228ec289bd53573c3509b547aad180702d7e23c0a5b538"
+    },
+    {
+      "bytes": 1571,
+      "path": "artifacts/oracle_isolation.json",
+      "sha256": "00fb10ca02166b2af123641a14e957dbd212d56670898e73d0652f05c80ab933"
+    },
+    {
+      "bytes": 2883,
+      "path": "artifacts/output_orthogonality.json",
+      "sha256": "997f42e0c4a415847679bb4adf3cbdbc3a3877fc1a0f27ececd69edd90d9c8f1"
+    },
+    {
+      "bytes": 1844,
+      "path": "artifacts/profile_validation.json",
+      "sha256": "ca3fcf20eb7d19257df71b6af3e4c376db922a64fee118de5adb60bdd7fd4130"
+    },
+    {
+      "bytes": 4198,
+      "path": "artifacts/projection_equivalence_database.json",
+      "sha256": "337b92bd88f11a51fe88d6dc2c47896c2bed731470016cd503b7fc2b44b4b8f9"
+    },
+    {
+      "bytes": 4632,
+      "path": "artifacts/projection_equivalence_opentelemetry.json",
+      "sha256": "0ff5c3d4f65a46e15e66df114d792ab8e9295c9ce3e8aec96efdc38c69af0f64"
+    },
+    {
+      "bytes": 9770,
+      "path": "artifacts/projection_equivalence_source_map.json",
+      "sha256": "bf3ab70abdbd5b259c152af8de45153db74a4753a66e4ccb49921d91d2844e88"
+    },
+    {
+      "bytes": 738,
+      "path": "artifacts/result_only_ambiguity_source_map.json",
+      "sha256": "3ddb9630cf48bcd67f4e2abe30a8021efa51b0b5009e7964647ded0408912ec7"
+    },
+    {
+      "bytes": 1057,
+      "path": "artifacts/run_summary.json",
+      "sha256": "a33d008b73ceba437fb6cc7ad22e78cd0a358745d75c64a8f52fc9d1197567fb"
+    },
+    {
+      "bytes": 742,
+      "path": "artifacts/runs/run_1/performance_observations.json",
+      "sha256": "e7f402965d9f62bf9d2a93c4570b212ab04132cdca369338b2a5d8d1cd7bd7de"
+    },
+    {
+      "bytes": 95570,
+      "path": "artifacts/runs/run_1/scientific_reports.json",
+      "sha256": "210712bcd42a1da87f75cf85ba1f4137dde96d8448bb0e66523b49e179f789c8"
+    },
+    {
+      "bytes": 4018,
+      "path": "artifacts/runs/run_1/test_results.json",
+      "sha256": "63dfb6121ef48a8297a8ba79ff1d62bf330f40e1dfd5649e3b2b553056eed6bb"
+    },
+    {
+      "bytes": 740,
+      "path": "artifacts/runs/run_2/performance_observations.json",
+      "sha256": "0568cab49c0f1f96171bf701ba760ac0f41debb3de4f30bb87e6649b632eb853"
+    },
+    {
+      "bytes": 95570,
+      "path": "artifacts/runs/run_2/scientific_reports.json",
+      "sha256": "210712bcd42a1da87f75cf85ba1f4137dde96d8448bb0e66523b49e179f789c8"
+    },
+    {
+      "bytes": 4019,
+      "path": "artifacts/runs/run_2/test_results.json",
+      "sha256": "85af5b7610f23a7f34fc2f94f93b4c1854e31b7390c770de16813e8dfa84cb23"
+    },
+    {
+      "bytes": 1090,
+      "path": "artifacts/second_authority_audit.json",
+      "sha256": "6b7b23d9c295f4de1fbbe7956a6be5d9e9908d9fbda213cfa538ebad68ec31a0"
+    },
+    {
+      "bytes": 1561,
+      "path": "artifacts/source_branch_lineage.json",
+      "sha256": "a109d657ec0cbd3adb9c7cdcba6814b34f2951e4914af37309150e7593d17b84"
+    },
+    {
+      "bytes": 3384,
+      "path": "artifacts/source_map_standard_surface_coverage.json",
+      "sha256": "e7f978e08917d08064a7e82e43f422554a9d36ba6fe222b4ec538081cf0d4dd8"
+    },
+    {
+      "bytes": 255,
+      "path": "artifacts/static_isolation_audit.json",
+      "sha256": "3179fd408ad5352886cc9593be6b82abab6778085f47884449345bffa4c622e3"
+    },
+    {
+      "bytes": 4266,
+      "path": "artifacts/strict_partiality_database.json",
+      "sha256": "aac4690dd32164272caea11233d1471e18aa7e02700f8027f3eb433e2be2aef8"
+    },
+    {
+      "bytes": 3389,
+      "path": "artifacts/strict_partiality_opentelemetry.json",
+      "sha256": "47d5abaa8c2775e8d945b601e7fc5fd3e5cd7b4e06c98da1687393edb5ba10af"
+    },
+    {
+      "bytes": 11638,
+      "path": "artifacts/strict_partiality_source_map.json",
+      "sha256": "9a79481aadd679477ccba734765d9692fe149e1749a0711f730e478ef2acc198"
+    },
+    {
+      "bytes": 8504,
+      "path": "artifacts/test_results.json",
+      "sha256": "87d5d8abbe1b6a8d94eb04214d47d7ade7670101220cdf879606744079161413"
+    },
+    {
+      "bytes": 2877,
+      "path": "artifacts/unified_projection_matrix.json",
+      "sha256": "7c902721b0edce98af2107bcf6e3386f957934f5fd595d648fb61c7f6dabb707"
+    },
+    {
+      "bytes": 788,
+      "path": "artifacts/unified_projection_matrix.md",
+      "sha256": "0e6caa21f7968363ec3314ef335d2a3c721ec58f4340ece5ef30f1b187c2a9ec"
+    },
+    {
+      "bytes": 445,
+      "path": "artifacts/v1_preservation.json",
+      "sha256": "cba92e13b530fdb28337b26088c8db01a74bda5c7615ff86d3b5c1255bc213fb"
+    }
+  ],
+  "comparison_scope": [
+    "all machine reports",
+    "normalized records",
+    "projection document hashes",
+    "trace canonical bytes and SHA",
+    "map bytes",
+    "unified matrix",
+    "profiles",
+    "environment identity",
+    "source branch identity",
+    "v2 code hashes",
+    "normalized test summaries"
+  ],
+  "excluded_fields": [
+    {
+      "field": "runs/run_1/performance_observations.json#/run_elapsed_seconds",
+      "reason": "elapsed wall-clock time is machine-load dependent"
+    },
+    {
+      "field": "runs/run_2/performance_observations.json#/run_elapsed_seconds",
+      "reason": "elapsed wall-clock time is machine-load dependent"
+    },
+    {
+      "field": "runs/run_1/performance_observations.json#/peak_process_rss_bytes",
+      "reason": "process peak RSS depends on allocator and concurrent OS state"
+    },
+    {
+      "field": "runs/run_2/performance_observations.json#/peak_process_rss_bytes",
+      "reason": "process peak RSS depends on allocator and concurrent OS state"
+    },
+    {
+      "field": "runs/run_1/performance_observations.json#/otel_formal/performance_seconds",
+      "reason": "per-stage elapsed time is explicitly observational"
+    },
+    {
+      "field": "runs/run_2/performance_observations.json#/otel_formal/performance_seconds",
+      "reason": "per-stage elapsed time is explicitly observational"
+    },
+    {
+      "field": "runs/run_1/test_results.json#/suites/*/elapsed_seconds",
+      "reason": "test wall-clock duration is machine-load dependent"
+    },
+    {
+      "field": "runs/run_2/test_results.json#/suites/*/elapsed_seconds",
+      "reason": "test wall-clock duration is machine-load dependent"
+    }
+  ],
+  "v1_artifact_tree_id": "7e60b4fc4a3ad58bd91279f07eff15208c1729a2"
+}

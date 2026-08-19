@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gfg-rule-oscillator-state-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "cut_step",
+    "evaluation_interval",
+    "observation_count",
+    "latest_train_accuracy",
+    "latest_validation_accuracy",
+    "rule_log_odds",
+    "rule_log_odds_gain_per_step",
+    "transition_estimate",
+    "will_transition_by_10000",
+    "mechanism_state",
+    "clip_threshold",
+    "pulse_episode_count",
+    "pulse_episode_starts",
+    "mature_pulse_period",
+    "recent_clip_fraction",
+    "recent_peak_preclip_norm",
+    "observed_evaluations"
+  ],
+  "properties": {
+    "schema": {
+      "const": "gfg-rule-oscillator-state-v1"
+    },
+    "cut_step": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000
+    },
+    "evaluation_interval": {
+      "const": 100
+    },
+    "observation_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "latest_train_accuracy": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "latest_validation_accuracy": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "rule_log_odds": {
+      "type": "number"
+    },
+    "rule_log_odds_gain_per_step": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "transition_estimate": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000
+    },
+    "will_transition_by_10000": {
+      "type": "boolean"
+    },
+    "mechanism_state": {
+      "enum": [
+        "FITTING_SAMPLES",
+        "SAMPLE_MEMORIZATION",
+        "RULE_EXTRACTION",
+        "RULE_MARGIN_CROSSING",
+        "RULE_GENERALIZED"
+      ]
+    },
+    "clip_threshold": {
+      "const": 1.0
+    },
+    "pulse_episode_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "pulse_episode_starts": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "mature_pulse_period": {
+      "type": "integer",
+      "minimum": 250,
+      "maximum": 500
+    },
+    "recent_clip_fraction": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "recent_peak_preclip_norm": {
+      "type": "number",
+      "minimum": 0
+    },
+    "observed_evaluations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "optimizer_step",
+          "train_accuracy",
+          "validation_accuracy"
+        ],
+        "properties": {
+          "optimizer_step": {
+            "type": "integer"
+          },
+          "train_accuracy": {
+            "type": "number"
+          },
+          "validation_accuracy": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

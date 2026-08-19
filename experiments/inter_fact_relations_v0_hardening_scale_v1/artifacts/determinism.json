@@ -1,0 +1,1 @@
+{"diagnostic_exclusions":["elapsed_seconds","peak_rss_bytes","available_bytes_at_guard","process_id","temporary_path"],"exclusion_count":5,"run_1_scientific_sha256":"0328eb1cc0d0f7c54b8f6629e09f79d36158abc55ea2573e05ab77ca4a2cc286","run_2_scientific_sha256":"0328eb1cc0d0f7c54b8f6629e09f79d36158abc55ea2573e05ab77ca4a2cc286","scientific_results_byte_equal":true,"status":"PASS"}

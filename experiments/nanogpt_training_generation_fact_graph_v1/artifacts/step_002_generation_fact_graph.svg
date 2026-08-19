@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1040" viewBox="0 0 1480 1040">
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#0f172a}.title{font-size:30px;font-weight:700}.sub{font-size:16px;fill:#475569}.label{font-size:20px;font-weight:650}.stat{font-size:16px;fill:#334155}.arrow{stroke:#64748b;stroke-width:3;fill:none}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text class="title" x="85" y="55">nanoGPT training generation facts — step 2</text>
+<text class="sub" x="85" y="88">Validated projection of the complete machine graph; boxes aggregate actual five-coordinate bindings by phase.</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+<rect x="85" y="145" width="1310" height="84" rx="14" fill="#dbeafe" stroke="#94a3b8" stroke-width="1.5"/>
+<text class="label" x="113" y="180">nanoGPT forward + loss</text>
+<text class="stat" x="113" y="209">actual occurrences: 340   tensor outcomes: 418   atomic five-coordinate facts: 596</text>
+<path class="arrow" marker-end="url(#arrow)" d="M 740.0 229 L 740.0 252"/>
+<rect x="85" y="260" width="1310" height="84" rx="14" fill="#e0e7ff" stroke="#94a3b8" stroke-width="1.5"/>
+<text class="label" x="113" y="295">Async next-batch transfer</text>
+<text class="stat" x="113" y="324">actual occurrences: 8   tensor outcomes: 8   atomic five-coordinate facts: 8</text>
+<path class="arrow" marker-end="url(#arrow)" d="M 740.0 344 L 740.0 367"/>
+<rect x="85" y="375" width="1310" height="84" rx="14" fill="#ede9fe" stroke="#94a3b8" stroke-width="1.5"/>
+<text class="label" x="113" y="410">Autograd backward</text>
+<text class="stat" x="113" y="439">actual occurrences: 548   tensor outcomes: 582   atomic five-coordinate facts: 1,043</text>
+<path class="arrow" marker-end="url(#arrow)" d="M 740.0 459 L 740.0 482"/>
+<rect x="85" y="490" width="1310" height="84" rx="14" fill="#fae8ff" stroke="#94a3b8" stroke-width="1.5"/>
+<text class="label" x="113" y="525">Parameter gradients</text>
+<text class="stat" x="113" y="554">actual occurrences: 54   tensor outcomes: 54   atomic five-coordinate facts: 135</text>
+<path class="arrow" marker-end="url(#arrow)" d="M 740.0 574 L 740.0 597"/>
+<rect x="85" y="605" width="1310" height="84" rx="14" fill="#fee2e2" stroke="#94a3b8" stroke-width="1.5"/>
+<text class="label" x="113" y="640">Global gradient clip</text>
+<text class="stat" x="113" y="669">actual occurrences: 89   tensor outcomes: 141   atomic five-coordinate facts: 1,598</text>
+<path class="arrow" marker-end="url(#arrow)" d="M 740.0 689 L 740.0 712"/>
+<rect x="85" y="720" width="1310" height="84" rx="14" fill="#ffedd5" stroke="#94a3b8" stroke-width="1.5"/>
+<text class="label" x="113" y="755">Fused AdamW update</text>
+<text class="stat" x="113" y="784">actual occurrences: 83   tensor outcomes: 162   atomic five-coordinate facts: 864</text>
+<path class="arrow" marker-end="url(#arrow)" d="M 740.0 804 L 740.0 827"/>
+<rect x="85" y="835" width="1310" height="84" rx="14" fill="#dcfce7" stroke="#94a3b8" stroke-width="1.5"/>
+<text class="label" x="113" y="870">Gradient release</text>
+<text class="stat" x="113" y="899">actual occurrences: 2   tensor outcomes: 2   atomic five-coordinate facts: 28</text>
+</svg>

@@ -1,0 +1,39 @@
+{
+  "all_passed": true,
+  "suites": [
+    {
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests"
+      ],
+      "errors": 0,
+      "failed": 0,
+      "name": "existing_core",
+      "passed": 33,
+      "returncode": 0,
+      "seconds": 8.614647699985653,
+      "skipped": 0,
+      "summary_output": ".................................                                        [100%]\n33 passed in 8.04s\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "experiments/database_lineage/tests"
+      ],
+      "errors": 0,
+      "failed": 0,
+      "name": "database_lineage_experiment",
+      "passed": 31,
+      "returncode": 0,
+      "seconds": 48.56980170001043,
+      "skipped": 0,
+      "summary_output": "...............................                                          [100%]\n31 passed in 48.06s\n"
+    }
+  ]
+}

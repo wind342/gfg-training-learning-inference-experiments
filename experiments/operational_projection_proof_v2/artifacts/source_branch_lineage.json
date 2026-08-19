@@ -1,0 +1,43 @@
+{
+  "blocking_reasons": [],
+  "historical_main_base": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+  "historical_main_base_exists": true,
+  "merge_commits": [
+    "652113055be4fb401106b53b9f8a8fa43470ef1c",
+    "672999026ca88ba5e5968f9ca48affd6cfbe5c72",
+    "448170807967c70ee512877b26b01074d1433b61"
+  ],
+  "source_commit_ancestry": {
+    "03caa31b8a6abfe6e112a0544071618c689bb11f": true,
+    "25a9d2a614d2d34d36c38f7c560b818cdbc4b179": true,
+    "7dba987713da345453781e4b95130f1deb5f04d4": true,
+    "bc0bca1eae513f72c4ba578a285dbb56c742eae6": true
+  },
+  "source_heads": [
+    {
+      "exact": true,
+      "expected_head": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+      "observed_head": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+      "remote_branch": "origin/experiment/database-lineage-core-v3-native-v1"
+    },
+    {
+      "exact": true,
+      "expected_head": "25a9d2a614d2d34d36c38f7c560b818cdbc4b179",
+      "observed_head": "25a9d2a614d2d34d36c38f7c560b818cdbc4b179",
+      "remote_branch": "origin/experiment/opentelemetry-projection-v1"
+    },
+    {
+      "exact": true,
+      "expected_head": "7dba987713da345453781e4b95130f1deb5f04d4",
+      "observed_head": "7dba987713da345453781e4b95130f1deb5f04d4",
+      "remote_branch": "origin/experiment/source-map-projection-v1"
+    },
+    {
+      "exact": true,
+      "expected_head": "bc0bca1eae513f72c4ba578a285dbb56c742eae6",
+      "observed_head": "bc0bca1eae513f72c4ba578a285dbb56c742eae6",
+      "remote_branch": "origin/theory/operational-projection-proof-v1"
+    }
+  ],
+  "status": "PASS"
+}

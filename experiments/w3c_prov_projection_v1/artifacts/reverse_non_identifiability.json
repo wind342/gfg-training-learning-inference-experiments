@@ -1,0 +1,44 @@
+{
+  "conclusion": "PROV equality does not entail complete generation-fact equality within the tested claim boundary.",
+  "equivalence_classes": [
+    {
+      "preimage_count": 2,
+      "prov_record_sha256": "6a95edc65b2dc4d6df159aefe59479c97beb7e8d7052da585d7b1b077f038e28",
+      "unique_reconstruction_possible": false,
+      "validated_snapshot_ids": [
+        "snap3_36d623feaa0f725e3ef5f7d34c256f85651684087337fa01f32cb47217a390c0",
+        "snap3_f22f68aff59a43a097d3500f67e516e2d9d02db95a622f3a225a343f61827d8a"
+      ]
+    },
+    {
+      "preimage_count": 2,
+      "prov_record_sha256": "6a95edc65b2dc4d6df159aefe59479c97beb7e8d7052da585d7b1b077f038e28",
+      "unique_reconstruction_possible": false,
+      "validated_snapshot_ids": [
+        "snap3_2bd3b1f8192689a60a8bda5160d49e789dd73d1e650661208e6a504f3136cd38",
+        "snap3_f22f68aff59a43a097d3500f67e516e2d9d02db95a622f3a225a343f61827d8a"
+      ]
+    },
+    {
+      "preimage_count": 2,
+      "prov_record_sha256": "6a95edc65b2dc4d6df159aefe59479c97beb7e8d7052da585d7b1b077f038e28",
+      "unique_reconstruction_possible": false,
+      "validated_snapshot_ids": [
+        "snap3_f0c8c5fccdfb7a4002b5eaefffdde6acfaf17f98bf8cc551808edb1b44beedc6",
+        "snap3_f22f68aff59a43a097d3500f67e516e2d9d02db95a622f3a225a343f61827d8a"
+      ]
+    },
+    {
+      "preimage_count": 2,
+      "prov_record_sha256": "6a95edc65b2dc4d6df159aefe59479c97beb7e8d7052da585d7b1b077f038e28",
+      "unique_reconstruction_possible": false,
+      "validated_snapshot_ids": [
+        "snap3_66f058dd33c958d138e56164db6c049a7ec6806bbe0a50d778ac8ff3c030343e",
+        "snap3_f22f68aff59a43a097d3500f67e516e2d9d02db95a622f3a225a343f61827d8a"
+      ]
+    }
+  ],
+  "mapping": "PROV document -> candidate reconstruction of complete generation facts",
+  "same_prov_has_multiple_valid_snapshots": true,
+  "status": "SUPPORTED"
+}

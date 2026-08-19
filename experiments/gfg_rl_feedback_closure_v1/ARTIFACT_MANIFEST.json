@@ -1,0 +1,20 @@
+{
+  "schema": "gfg-rl-feedback-closure-artifact-manifest-v1",
+  "status": "PASS",
+  "formal_aggregate": {
+    "path": "E:\\gfg-evidence\\rl-feedback-closure-v1\\formal-v1\\formal\\AGGREGATE_RESULT.json",
+    "sha256": "773be6735c99f45b14f5c5ec52afe0e74eaac806115901b5c09d4c3cd9b2bfe6"
+  },
+  "evidence_manifest": {
+    "path": "E:\\gfg-evidence\\rl-feedback-closure-v1\\formal-v1-evidence\\EVIDENCE_MANIFEST.json",
+    "sha256": "68af0e3cd990a3bc4bf4d62f57c563a43fc270bca79d786072750493f973b596"
+  },
+  "independent_check": {
+    "path": "E:\\gfg-evidence\\rl-feedback-closure-v1\\formal-v1\\INDEPENDENT_CHECK.json",
+    "sha256": "8085fef496e72c60aaa48e600095a0c1863bbe21990ca00a86e056ea06fc4654"
+  },
+  "raw_formal_bytes": 338156176,
+  "core_and_gfg_evidence_bytes": 694311545,
+  "raw_artifacts_committed_to_git": false
+}
+

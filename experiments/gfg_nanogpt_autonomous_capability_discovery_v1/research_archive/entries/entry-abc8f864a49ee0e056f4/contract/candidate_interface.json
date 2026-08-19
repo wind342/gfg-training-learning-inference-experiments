@@ -1,0 +1,33 @@
+{
+  "deterministic": true,
+  "forbidden_lookup_keys": [
+    "run_id",
+    "absolute_date",
+    "wall_clock_time"
+  ],
+  "initialize": "CapabilityFormationMechanism.initialize(gfg_prefix) -> finite canonical JSON state",
+  "forecast": "CapabilityFormationMechanism.forecast(state) -> forecast object",
+  "intervention_initialize": "TrainingIntervention.initialize(mechanism_state, forecast) -> finite canonical JSON state",
+  "intervention_apply": "TrainingIntervention.apply(stage, context, state) -> finite canonical JSON state or null",
+  "forecast_required_fields": [
+    "will_transition",
+    "transition_step_low",
+    "transition_step_high",
+    "predicted_validation_curve",
+    "mechanism_state"
+  ],
+  "network_forbidden": true,
+  "required_files": [
+    "mechanism.py",
+    "mechanism_spec.json",
+    "state_schema.json",
+    "forecast_spec.json",
+    "intervention.py",
+    "intervention_spec.json",
+    "discovery_report.md",
+    "query_log.jsonl"
+  ],
+  "state_dimension_limit": null,
+  "subprocess_forbidden": true,
+  "version": "1.0.0"
+}

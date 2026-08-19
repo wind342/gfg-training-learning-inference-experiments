@@ -1,0 +1,37 @@
+{
+  "schema": "gfg-training-intervention-spec-v1",
+  "version": "1.0.0",
+  "entrypoint": {
+    "module": "intervention",
+    "class": "TrainingIntervention",
+    "initialize": "initialize(mechanism_state, forecast)",
+    "apply": "apply(stage, context, state)"
+  },
+  "name": "finite_optimizer_state_pause",
+  "hook": "before_optimizer_step",
+  "direction": "DELAY",
+  "pause_optimizer_updates": 800,
+  "predicted_transition_step_shift_low": 700,
+  "predicted_transition_step_shift_high": 900,
+  "predicted_shift_interval": {
+    "step_low": 700,
+    "step_high": 900
+  },
+  "allowed_mutations": [
+    "current gradients",
+    "optimizer group learning rate"
+  ],
+  "mutation": "For 800 consecutive optimizer hooks set current group learning rates to zero and detach current parameter gradients; restore the exact prefix-observed group rates before the following update.",
+  "mechanism_state_change": {
+    "rule_progress": "held for 800 optimizer updates",
+    "oscillator_phase": "held for 800 optimizer updates",
+    "optimizer_moments_and_step": "held because parameters have no current gradients",
+    "parameter_versions": "held because learning rate is zero",
+    "decoupled_weight_decay": "held because the parameter update is skipped and learning rate is zero",
+    "RNG_and_data_order": "continue to evolve; the graph shows a complete 317-sample training batch each update, so ordering is not claimed to be frozen"
+  },
+  "predicted_stability_effect": "NO_CHANGE",
+  "stability_effect_rationale": "The intervention pauses every operative formation and relaxation-oscillator variable rather than selectively reducing stability reserve. After restoration, the same reserve law resumes 800 optimizer updates later, so the stability class is unchanged while its optimizer-step intervals are delayed by approximately the pause.",
+  "minimum_effective_shift_optimizer_steps": 600,
+  "deterministic": true
+}

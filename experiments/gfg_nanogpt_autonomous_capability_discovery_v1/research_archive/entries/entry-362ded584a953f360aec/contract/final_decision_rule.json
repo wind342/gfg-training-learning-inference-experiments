@@ -1,0 +1,13 @@
+{
+  "instance_pass": "FORMATION_FORECAST_PASS and STABILITY_FORECAST_PASS and FORMATION_CAUSAL_PASS and STABILITY_CAUSAL_PASS for the same sealed candidate",
+  "forecast_pass_interval": "transition_interval_500_contains_actual",
+  "high_precision_interval": "transition_interval_200_contains_actual is reported independently and is not required for instance pass",
+  "post_formation_stability": "an independently executable and independently scored primary submodel coupled to formation dynamics through the composed validation curve",
+  "instance_pass_status": "AUTONOMOUS_CAPABILITY_AND_STABILITY_DYNAMICS_DISCOVERY_PASS",
+  "instance_other_status": "AUTONOMOUS_CAPABILITY_AND_STABILITY_DYNAMICS_DISCOVERY_NOT_ESTABLISHED",
+  "overall_not_established_status": "GFG_AI_AUTONOMOUS_SCIENTIFIC_DISCOVERY_NOT_ESTABLISHED",
+  "overall_pass_status": "GFG_AI_AUTONOMOUS_SCIENTIFIC_DISCOVERY_FEASIBLE",
+  "required_instance_passes": 2,
+  "total_instances": 3,
+  "version": "2.0.0"
+}

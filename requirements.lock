@@ -1,0 +1,3 @@
+# Direct runtime dependency lock for the frozen Core v3 reference environment.
+# Experiment extras and external runtimes are intentionally not locked here.
+jsonschema==4.26.0

@@ -1,0 +1,47 @@
+{
+  "counterexample_id": "actual_transform_context_difference",
+  "description": "Two validated executions follow distinct integer transformation branches and retain distinct occurrence-specific transform contexts while ordinary output and the declared PROV profile projection remain identical.",
+  "forbidden_substitutes": [
+    "artifact metadata only",
+    "Evidence locator only",
+    "Environment string only",
+    "operation-name label only",
+    "post-hoc report branch label",
+    "random identifier"
+  ],
+  "required_false_conditions": [
+    "report_only_mutation",
+    "metadata_only_mutation"
+  ],
+  "required_true_conditions": [
+    "both_snapshots_valid",
+    "ordinary_output_equal",
+    "source_entities_equal",
+    "profile_selected_activity_semantics_equal",
+    "binding_semantics_equal",
+    "candidate_prov_records_equal",
+    "candidate_provn_bytes_equal",
+    "native_provo_normalized_equal",
+    "snapshot_ids_different",
+    "transform_reference_different",
+    "occurrence_payload_transform_context_different",
+    "actual_executed_branch_different",
+    "intermediate_state_digest_different"
+  ],
+  "transform_inputs": {
+    "x": 5,
+    "y": 6,
+    "z": 0
+  },
+  "variants": {
+    "left_associative": {
+      "code_path": "generator._execute_left_associative",
+      "expression": "(x + y) + z"
+    },
+    "right_associative": {
+      "code_path": "generator._execute_right_associative",
+      "expression": "x + (y + z)"
+    }
+  },
+  "version": 1
+}

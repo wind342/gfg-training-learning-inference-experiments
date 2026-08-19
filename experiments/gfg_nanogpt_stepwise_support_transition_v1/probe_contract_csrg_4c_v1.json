@@ -1,0 +1,37 @@
+{
+  "schema": "nanogpt-support-probe-contract-v1",
+  "probe_contract_id": "CSRG-4C-v1",
+  "component_registry_id": "CSRG-4C-v1",
+  "status": "FROZEN_BEFORE_STEPWISE_EXECUTION",
+  "baseline_repetitions": 2,
+  "derivation_profile": "CSRG-support-metrics-v1",
+  "gate_sets": [
+    ["h0.attn"],
+    ["h0.mlp"],
+    ["h1.attn"],
+    ["h1.mlp"],
+    ["h0.attn", "h0.mlp"],
+    ["h0.attn", "h1.attn"],
+    ["h0.attn", "h1.mlp"],
+    ["h0.mlp", "h1.attn"],
+    ["h0.mlp", "h1.mlp"],
+    ["h1.attn", "h1.mlp"]
+  ],
+  "target_group_count": 23,
+  "required_outputs": [
+    "complete_decision_logits",
+    "complete_per_example_margins",
+    "complete_predictions",
+    "complete_group_membership",
+    "complete_target_group_q10_margins",
+    "component_necessity_matrix",
+    "pair_backup_matrix",
+    "single_failure_slack",
+    "double_failure_slack",
+    "support_allocation",
+    "support_concentration",
+    "effective_support",
+    "component_optimizer_loads"
+  ],
+  "append_only_observation_rule": "A different probe_contract_id creates an additional observation layer on the same restorable training-state identity and never replaces CSRG-4C-v1 results."
+}

@@ -1,0 +1,199 @@
+{
+  "audit_id": "w3c-prov-projection-v1-evidence-hardening-preimplementation-audit",
+  "audit_scope": "Read-only assessment of evidence-generation mechanisms before hardening implementation",
+  "audit_status": "PREIMPLEMENTATION_AUDIT_COMPLETE",
+  "audited_pr": {
+    "base_branch": "main",
+    "base_sha": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+    "head_branch": "experiment/w3c-prov-projection-v1",
+    "head_sha": "b8e71a84d85dc361889a615d32348b9ac4d0481f",
+    "head_tree_id": "c811c2ab8236eb00f4ca8f6c743163c8aa4fec20",
+    "is_draft": true,
+    "number": 12,
+    "original_commit_count": 4,
+    "url": "https://github.com/wind342/source-information-continuity/pull/12"
+  },
+  "branch_context": {
+    "audit_branch": "maintenance/w3c-prov-projection-v1-evidence-hardening",
+    "audit_branch_initial_head": "b8e71a84d85dc361889a615d32348b9ac4d0481f",
+    "isolated_worktree_initial_state": "clean",
+    "primary_worktree_preexisting_unrelated_change_count": 5
+  },
+  "findings": [
+    {
+      "classification": "audit implementation",
+      "conclusion": "The current second-authority result is a fixed dictionary, not a repository, artifact-role, content, or runtime dependency scan.",
+      "evidence": [
+        "src/experiment.py:189-196 directly assigns all five zero counts and status SUPPORTED",
+        "artifacts/second_authority_audit.json contains only the assigned fields"
+      ],
+      "id": "SECOND_AUTHORITY_COUNTS_ARE_DIRECT_ASSIGNMENTS",
+      "scientific_implication": "This is an evidence-layer insufficiency; it is not a falsification of P1 or P2."
+    },
+    {
+      "classification": "audit implementation",
+      "conclusion": "The current second-authority counts do not derive from repository file enumeration, artifact classification, content/schema rules, runtime file reads, candidate input tracing, or native input tracing.",
+      "evidence": [
+        "src/experiment.py:86-101 runs science and legacy controls but no authority-store scan",
+        "src/experiment.py:189-196 constructs the result without scan inputs"
+      ],
+      "id": "SECOND_AUTHORITY_HAS_NO_MEASURED_INPUTS"
+    },
+    {
+      "classification": "audit implementation",
+      "conclusion": "Three Oracle import booleans are computed from AST imports, while shared_mapping_helper_count and expected_answer_read_count are direct assignments.",
+      "evidence": [
+        "src/experiment.py:38-46 implements AST import extraction",
+        "src/experiment.py:169-174 computes native_imports_core, native_imports_candidate, and candidate_imports_native",
+        "src/experiment.py:177-178 assigns shared_mapping_helper_count=0 and expected_answer_read_count=0"
+      ],
+      "id": "ORACLE_AUDIT_IS_PARTLY_STATIC_AND_PARTLY_ASSIGNED"
+    },
+    {
+      "classification": "runtime dependency",
+      "conclusion": "The current full run is a dual-callback in-process execution and is not process-level Oracle isolation evidence.",
+      "evidence": [
+        "src/science_runs.py:28-36 constructs CoreCaptureCollector and NativeProvCollector in one process, sends both to one run_generator call, and compares their products",
+        "src/generator.py:24-26 forwards the same callback event object to every sink"
+      ],
+      "id": "CURRENT_ORACLES_SHARE_A_PROCESS"
+    },
+    {
+      "classification": "Candidate implementation",
+      "conclusion": "The candidate declares and type-checks one ValidatedSnapshot input and constructs PROV relations locally, but current evidence does not trace its runtime reads.",
+      "evidence": [
+        "src/candidate_projection.py:35-40 accepts and type-checks ValidatedSnapshot",
+        "src/candidate_projection.py:46-214 constructs entities, activities, usages, generations, derivations, and associations from snapshot tables"
+      ],
+      "id": "CANDIDATE_INPUT_CONTRACT_EXISTS_WITHOUT_RUNTIME_TRACE"
+    },
+    {
+      "classification": "native reference",
+      "conclusion": "The native collector consumes generator events and independently constructs its PROV relations, but current evidence does not trace its runtime reads.",
+      "evidence": [
+        "src/native_reference.py:36-73 collects callbacks without importing Core or candidate",
+        "src/native_reference.py:75-188 constructs normalized records independently",
+        "src/native_reference.py:190-241 serializes qualified PROV-O"
+      ],
+      "id": "NATIVE_CALLBACK_ORACLE_EXISTS_WITHOUT_RUNTIME_TRACE"
+    }
+  ],
+  "shared_component_assessment": [
+    {
+      "component": "event dataclasses and callback protocol",
+      "evidence": "src/events.py:7-69",
+      "classification": "legal neutral representation foundation",
+      "reason": "Defines event shapes and callback names without a Core-to-PROV or callback-to-PROV mapping."
+    },
+    {
+      "component": "deterministic generator fixture and callbacks",
+      "evidence": "src/generator.py:37-139",
+      "classification": "legal frozen scientific fixture",
+      "reason": "Both paths must observe the same generation semantics, but process-level runs must not share memory or outputs."
+    },
+    {
+      "component": "normalized record ordering and canonical JSON",
+      "evidence": "src/record_model.py:8-24",
+      "classification": "legal neutral comparison foundation",
+      "reason": "Contains no mapping from Core or callbacks into PROV relations."
+    },
+    {
+      "component": "semantic identifiers and relation construction",
+      "evidence": "src/candidate_projection.py:16-32,46-214 and src/native_reference.py:16-33,75-188",
+      "classification": "not shared in the current implementation",
+      "reason": "Each path has separately authored semantic-ID and Usage/Generation/Derivation construction code."
+    },
+    {
+      "component": "crosswalks, binding pairing, relation IDs, expected record builders",
+      "classification": "forbidden shared mapping foundation",
+      "reason": "Sharing any such implementation would invalidate Oracle independence and must fail closed."
+    }
+  ],
+  "existing_counterexample_assessment": [
+    {
+      "changed_complete_facts": [
+        "EvidenceRecord.extraction_method",
+        "EvidenceRecord identity",
+        "EvidenceLink identity",
+        "GenerationBinding identity"
+      ],
+      "evidence": "src/science_runs.py:50-55",
+      "id": "evidence_profile_external_difference",
+      "actual_transform_path_changed": false
+    },
+    {
+      "changed_complete_facts": [
+        "EnvironmentRecord",
+        "manifest dependency hashes",
+        "GeneratorOperationResult.operation_name"
+      ],
+      "evidence": "src/science_runs.py:56-61",
+      "id": "environment_and_operation_result_difference",
+      "actual_transform_path_changed": false
+    },
+    {
+      "changed_complete_facts": [
+        "GeneratedOrigin identity",
+        "GeneratedOrigin profile-external payload",
+        "producer operation result"
+      ],
+      "evidence": "src/science_runs.py:62-67",
+      "id": "generated_origin_bridge_difference",
+      "actual_transform_path_changed": false
+    }
+  ],
+  "existing_counterexample_conclusion": {
+    "evidence": [
+      "src/events.py:72-77 defines only evidence, environment, operation-name, and bridge variants",
+      "src/generator.py:84-139 computes the same intermediate rows and ordinary output without a variant-dependent transform branch",
+      "src/science_runs.py:47-121 does not require an executed-branch or intermediate-state difference"
+    ],
+    "scientific_conclusion": "The three existing strict-projection counterexamples remain scientific evidence for their declared complete-fact differences, but none demonstrates a different actual transformation algorithm, branch, parameter, or code path."
+  },
+  "proposed_actual_transform_counterexample": {
+    "construction": "Execute two deterministic integer branches in the generator: left_associative computes (x + y) + z and right_associative computes x + (y + z). Capture branch ID, code path, intermediate values, and digests from execution, not from a post-hoc report label.",
+    "must_differ_in_complete_gamma": [
+      "GenerationOccurrence.transform_reference",
+      "occurrence_payload actual evaluation order",
+      "executed branch",
+      "intermediate-state digest",
+      "transformation-plan digest",
+      "GeneratorOperationResult execution summary",
+      "ValidatedSnapshot identity"
+    ],
+    "must_remain_equal_in_profile_projection": [
+      "occurrence stage",
+      "occurrence type",
+      "stable instance key",
+      "occurrence index",
+      "operation type",
+      "Entity identity",
+      "Agent identity",
+      "Usage",
+      "Generation",
+      "Derivation",
+      "Association",
+      "prov:role",
+      "relation ordinal",
+      "canonical PROV-N bytes",
+      "normalized PROV-O records"
+    ],
+    "must_remain_equal_outside_gamma": [
+      "source entities",
+      "source identities",
+      "result entities",
+      "ordinary output bytes",
+      "GenerationBinding semantics"
+    ],
+    "receipt_constraint": "Branch receipts may prove which code ran but may not be candidate input, native projection input, or a source of relation answers."
+  },
+  "separation_of_claims": {
+    "audit_implementation": "Must be hardened; current direct assignments are not machine evidence.",
+    "candidate_implementation": "Locally maps ValidatedSnapshot to normalized PROV records; runtime read isolation is not yet measured.",
+    "native_reference": "Locally maps callbacks to qualified PROV-O; runtime read isolation is not yet measured.",
+    "runtime_dependencies": "Current path is in-process; independent subprocess traces are required.",
+    "scientific_conclusion": "Existing P1/P2 results are not overturned by the audit gap and must be rerun without assuming support.",
+    "strict_projection_counterexample": "A fourth counterexample must depend on different executed transformation paths, not metadata-only mutation."
+  },
+  "implementation_gate": "No implementation code was modified before this audit commit."
+}

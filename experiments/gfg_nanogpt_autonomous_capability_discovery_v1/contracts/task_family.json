@@ -1,0 +1,21 @@
+{
+  "input_form": "three opaque tokens representing left item, operator and right item",
+  "operation_family": "finite cyclic binary operation with a randomly relabelled token alphabet",
+  "participant_disclosures": [
+    "opaque token sequences",
+    "actual split membership",
+    "actual training participation",
+    "actual evaluation participation"
+  ],
+  "participant_withheld": [
+    "arithmetic name",
+    "group terminology",
+    "unpermuted item identity",
+    "token permutation",
+    "private generation rule"
+  ],
+  "formal_modulus": 23,
+  "train_fraction": 0.6,
+  "validation_fraction": 0.4,
+  "version": "1.0.0"
+}

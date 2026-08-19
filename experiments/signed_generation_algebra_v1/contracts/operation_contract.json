@@ -1,0 +1,221 @@
+{
+  "baseline": {
+    "commit": "5694f19d5884cb3572f944db10de2812db86b6b8",
+    "protected_paths": [
+      "src/generation_relation_core",
+      "protocol/core_v3",
+      "tests/core",
+      "manuscript"
+    ],
+    "protected_tree_sha1": {
+      "manuscript": "3652bd5aef4cfc14f1bf5f1ea08e0f42cd523d47",
+      "protocol/core_v3": "0b4a2608864e771ebca7cdbfad95aabaed2d0723",
+      "src/generation_relation_core": "03fbdce13249f84abe9d8fb605da31cdc36eda27",
+      "tests/core": "280cb44d592ae48d986719638980c11e57aab1f9"
+    }
+  },
+  "executions": [
+    {
+      "case_id": "case_1_never_vs_insert_delete",
+      "engine": "sqlite_records",
+      "execution_id": "case1_never_insert",
+      "initial_state": {
+        "records": []
+      },
+      "operations": []
+    },
+    {
+      "case_id": "case_1_never_vs_insert_delete",
+      "engine": "sqlite_records",
+      "execution_id": "case1_insert_then_delete",
+      "initial_state": {
+        "records": []
+      },
+      "operations": [
+        {
+          "effect_identity": "x_record_a",
+          "effect_multiplicity": 1,
+          "kind": "insert_record",
+          "occurrence_key": "case1:insert-record-a:0000",
+          "occurrence_type": "sqlite_insert_occurrence",
+          "outcome_kind": "support",
+          "record_id": "a",
+          "relation_role": "record_insert_effect",
+          "sequence_index": 0,
+          "source_identity": "command:insert-record-a"
+        },
+        {
+          "effect_identity": "x_record_a",
+          "effect_multiplicity": 1,
+          "kind": "delete_record",
+          "occurrence_key": "case1:delete-record-a:0001",
+          "occurrence_type": "sqlite_delete_occurrence",
+          "outcome_kind": "support",
+          "record_id": "a",
+          "relation_role": "record_delete_effect",
+          "sequence_index": 1,
+          "source_identity": "record:a:before-delete"
+        }
+      ]
+    },
+    {
+      "case_id": "case_2_no_update_vs_compensated_update",
+      "engine": "sqlite_scalar",
+      "execution_id": "case2_no_update",
+      "initial_state": {
+        "value": 10
+      },
+      "operations": []
+    },
+    {
+      "case_id": "case_2_no_update_vs_compensated_update",
+      "engine": "sqlite_scalar",
+      "execution_id": "case2_update_then_compensate",
+      "initial_state": {
+        "value": 10
+      },
+      "operations": [
+        {
+          "delta": 7,
+          "effect_identity": "x_scalar_value",
+          "effect_multiplicity": 7,
+          "kind": "increase_scalar",
+          "occurrence_key": "case2:increase-scalar:0000",
+          "occurrence_type": "scalar_increase_occurrence",
+          "outcome_kind": "support",
+          "relation_role": "scalar_increase_effect",
+          "sequence_index": 0,
+          "source_identity": "command:increase-scalar-by-7"
+        },
+        {
+          "delta": -7,
+          "effect_identity": "x_scalar_value",
+          "effect_multiplicity": 7,
+          "kind": "compensate_scalar",
+          "occurrence_key": "case2:compensate-scalar:0001",
+          "occurrence_type": "scalar_compensation_occurrence",
+          "outcome_kind": "support",
+          "relation_role": "scalar_compensation_effect",
+          "sequence_index": 1,
+          "source_identity": "command:compensate-scalar-by-7"
+        }
+      ]
+    },
+    {
+      "case_id": "case_3_no_delta_vs_opposite_deltas",
+      "engine": "counter",
+      "execution_id": "case3_no_increment",
+      "initial_state": {
+        "counter": 0
+      },
+      "operations": []
+    },
+    {
+      "case_id": "case_3_no_delta_vs_opposite_deltas",
+      "engine": "counter",
+      "execution_id": "case3_plus5_minus5",
+      "initial_state": {
+        "counter": 0
+      },
+      "operations": [
+        {
+          "delta": 5,
+          "effect_identity": "x_counter",
+          "effect_multiplicity": 5,
+          "kind": "increment_counter",
+          "occurrence_key": "case3:increment-counter:0000",
+          "occurrence_type": "counter_increment_occurrence",
+          "outcome_kind": "support",
+          "relation_role": "counter_increment_effect",
+          "sequence_index": 0,
+          "source_identity": "command:increment-counter-by-5"
+        },
+        {
+          "delta": -5,
+          "effect_identity": "x_counter",
+          "effect_multiplicity": 5,
+          "kind": "decrement_counter",
+          "occurrence_key": "case3:decrement-counter:0001",
+          "occurrence_type": "counter_decrement_occurrence",
+          "outcome_kind": "support",
+          "relation_role": "counter_decrement_effect",
+          "sequence_index": 1,
+          "source_identity": "command:decrement-counter-by-5"
+        }
+      ]
+    },
+    {
+      "case_id": "case_4_partial_cancellation",
+      "engine": "multiset",
+      "execution_id": "case4_add_x_add_y_remove_x",
+      "initial_state": {
+        "x": 0,
+        "y": 0
+      },
+      "operations": [
+        {
+          "delta": 1,
+          "effect_identity": "x_item_x",
+          "effect_multiplicity": 1,
+          "item": "x",
+          "kind": "add_multiset",
+          "occurrence_key": "case4:add-x:0000",
+          "occurrence_type": "multiset_add_occurrence",
+          "outcome_kind": "support",
+          "relation_role": "multiset_add_effect",
+          "sequence_index": 0,
+          "source_identity": "command:add-x"
+        },
+        {
+          "delta": 1,
+          "effect_identity": "x_item_y",
+          "effect_multiplicity": 1,
+          "item": "y",
+          "kind": "add_multiset",
+          "occurrence_key": "case4:add-y:0001",
+          "occurrence_type": "multiset_add_occurrence",
+          "outcome_kind": "support",
+          "relation_role": "multiset_add_effect",
+          "sequence_index": 1,
+          "source_identity": "command:add-y"
+        },
+        {
+          "delta": -1,
+          "effect_identity": "x_item_x",
+          "effect_multiplicity": 1,
+          "item": "x",
+          "kind": "remove_multiset",
+          "occurrence_key": "case4:remove-x:0002",
+          "occurrence_type": "multiset_remove_occurrence",
+          "outcome_kind": "support",
+          "relation_role": "multiset_remove_effect",
+          "sequence_index": 2,
+          "source_identity": "command:remove-x"
+        }
+      ]
+    },
+    {
+      "case_id": "case_5_explicit_disposition_control",
+      "engine": "filter",
+      "execution_id": "case5_filter_exclusion",
+      "initial_state": {},
+      "operations": [
+        {
+          "disposition_reason": "FILTER_PREDICATE_FALSE",
+          "effect_identity": "x_filter_candidate",
+          "effect_multiplicity": 1,
+          "item": "excluded",
+          "kind": "filter_evaluate",
+          "occurrence_key": "case5:filter-exclusion:0000",
+          "occurrence_type": "filter_evaluation_occurrence",
+          "outcome_kind": "disposition",
+          "relation_role": "filter_excluded_candidate",
+          "required_prefix": "keep-",
+          "sequence_index": 0,
+          "source_identity": "filter-candidate:excluded"
+        }
+      ]
+    }
+  ],
+  "schema_version": "signed-generation-operation-contract-v1"
+}

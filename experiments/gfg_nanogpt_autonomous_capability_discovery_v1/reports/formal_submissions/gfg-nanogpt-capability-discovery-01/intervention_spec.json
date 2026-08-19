@@ -1,0 +1,35 @@
+{
+  "schema": "gfg-training-intervention-spec-v1",
+  "version": "1.0.0",
+  "implementation": "intervention.py",
+  "class": "TrainingIntervention",
+  "initialize": "TrainingIntervention.initialize(mechanism_state, forecast)",
+  "apply": "TrainingIntervention.apply(stage, context, state)",
+  "hook": "before_optimizer_step",
+  "mutation": "set each current optimizer parameter-group learning rate to zero for 1600 optimizer steps, then restore its prefix-native value",
+  "allowed_mutation_category": "optimizer group hyperparameters",
+  "direction": "DELAY",
+  "transition_step_shift_low": 1300,
+  "transition_step_shift_high": 1900,
+  "predicted_shift_interval": {
+    "step_low": 1300,
+    "step_high": 1900
+  },
+  "transition_step_shift_interval": {
+    "step_low": 1300,
+    "step_high": 1900
+  },
+  "predicted_stability_effect": "NO_CHANGE",
+  "stability_effect_rationale": "The hold freezes rule-bearing parameters and therefore rule-probability progress, while gradients and Adam moments continue to update. After learning-rate restoration the same rule-margin/slingshot law resumes from a re-equilibrated optimizer reservoir; capability formation is delayed, but the recurrent post-formation slingshot class is not removed.",
+  "mechanism_state_change": {
+    "rule_probability": "held at its intervention-start value while learning rate is zero",
+    "rule_probability_velocity_per_grid": "zero during the hold and restored afterward",
+    "optimizer_reservoir": "continues adapting because gradient and Adam moment formation are not frozen",
+    "predicted_transition_step": "shifted later by 1300 to 1900 optimizer steps"
+  },
+  "hold_steps": 1600,
+  "minimum_effective_shift_satisfied": true,
+  "uses_validation_samples": false,
+  "uses_future_information": false,
+  "deterministic": true
+}

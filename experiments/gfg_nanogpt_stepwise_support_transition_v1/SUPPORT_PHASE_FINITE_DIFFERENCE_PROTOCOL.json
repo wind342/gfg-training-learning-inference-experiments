@@ -1,0 +1,18 @@
+{
+  "schema": "nanogpt-support-phase-finite-difference-protocol-v1",
+  "protocol_id": "SUPPORT-PHASE-FD-v1",
+  "status": "FROZEN_BEFORE_FORMAL_V2_RESULT_GENERATION",
+  "parent_protocol_id": "STEPWISE-SUPPORT-TRANSITION-PHASE-v2",
+  "lookback_scales": [1, 2, 5, 10],
+  "finite_difference_only": true,
+  "continuous_derivative_claimed": false,
+  "left_acceleration_scale": 1,
+  "right_difference_target_only": true,
+  "law_break_target_only": true,
+  "identity_mismatch_policy": "FAIL_CLOSED",
+  "shape_or_dtype_mismatch_policy": "FAIL_CLOSED",
+  "categorical_predictions": "identity_aligned_change_mask",
+  "numeric_missing_value_policy": "preserve_defined_mask_and_emit_disposition_when_no_shared_defined_coordinate",
+  "generated_origin_required": true,
+  "derived_gfg_layer": "support_phase_finite_difference_v1"
+}

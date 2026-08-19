@@ -1,0 +1,70 @@
+{
+  "comparisons": [
+    {
+      "core_candidate_existing_source_tuple_ids": [
+        "customers:c1",
+        "items:i1",
+        "items:i2",
+        "items:i3",
+        "orders:o1",
+        "orders:o2",
+        "products:p1a",
+        "products:p1b",
+        "products:p2"
+      ],
+      "native_existing_source_tuple_ids": [
+        "customers:c1",
+        "items:i1",
+        "items:i2",
+        "items:i3",
+        "orders:o1",
+        "orders:o2",
+        "products:p1a",
+        "products:p1b",
+        "products:p2"
+      ],
+      "nx_source_tuple_ids": [
+        "customers:c1",
+        "items:i1",
+        "items:i2",
+        "items:i3",
+        "orders:o1",
+        "orders:o2",
+        "products:p1a",
+        "products:p1b",
+        "products:p2"
+      ],
+      "nx_variables": [
+        "x_6a538f47f7d416305b9bba99f07a0767ed9a025491755b3fff083b7a151a09d5",
+        "x_9fffcb146c70d5942ef0717990b1921ac9dd07a7d56ccb62c802cc5c02ea3d96",
+        "x_aeeb82649684fa0d097ef664d1349369960090e0b32a313a7b2d1ddb8a0b20d0",
+        "x_cb77fc5e39563b6eb7a03b0a7348a966ae898f09a9a3be99107bfa7d653ec926",
+        "x_d495a82b6b568fb9e9b51dca5c6a8f8872df7c9e1c82984328aabf43d12c867c",
+        "x_df1424f342f196ed0747601a41716aa920c37ca67892258e94fffb85e48b5b02",
+        "x_e3108a6e40933563cee1990eb9250a63ae06045f92d84708d63cbd720cd0a7ee",
+        "x_e7312c02b9d2a7b2a426a26e2122790d5ddac0311f0fb74e783bbb94f8abe25b",
+        "x_fecb00dcd4938be4f58ae8e486bbc14d6f4d59b4243a78f9afaf41a78d70844e"
+      ],
+      "output_tuple_id": "customer_top_1:00000000",
+      "three_way_exact": true
+    }
+  ],
+  "existing_candidate_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+  "existing_candidate_record_count": 112,
+  "existing_native_candidate_all_records_exact": true,
+  "existing_native_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+  "existing_native_record_count": 112,
+  "frozen_authority_profile_sha256": "d32b809931644617d763bad597b62904bba3273e7fa62f9afa963fc74387ac40",
+  "frozen_authority_profile_sha256_exact": true,
+  "frozen_database_source_commit": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+  "frozen_execution_profile_sha256": "518ba0f6de62fc4eb53ae6afb1fcf40177c6483c090a63be37cbbb119a4fcce9",
+  "frozen_execution_profile_sha256_exact": true,
+  "frozen_existing_result_sha256": "337b92bd88f11a51fe88d6dc2c47896c2bed731470016cd503b7fc2b44b4b8f9",
+  "frozen_existing_result_sha256_exact": true,
+  "frozen_expected_canonical_sha256": "a54037abf452d7308f13a27a287b19a3797b5e9ab77bd62efbb48c1a81672360",
+  "nx_terminal_output_count": 5,
+  "schema_version": "nx-to-existing-which-lineage-v1",
+  "status": "THREE_WAY_EXACT_SUPPORTED",
+  "three_way_exact": true,
+  "which_output_comparison_count": 1
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "gfg-capability-formation-mechanism-spec-v1",
+  "version": "1.0.0",
+  "class": "CapabilityFormationMechanism",
+  "module": "mechanism.py",
+  "scientific_authority": "sealed_executable",
+  "deterministic": true,
+  "future_gfg_reads": 0,
+  "state_name": "clipped-burst rule-margin reserve",
+  "formation_states": [
+    "MEMORIZED",
+    "FORMATION_BURST",
+    "FORMED_VULNERABLE",
+    "FORMED_RECOVERED"
+  ],
+  "operative_state_fields": [
+    "validation_accuracy",
+    "rule_margin_q10",
+    "cycles_remaining",
+    "last_burst_peak_step",
+    "last_burst_period",
+    "burst_period_delta",
+    "burst_phase",
+    "optimizer_tension"
+  ],
+  "update_law": {
+    "burst_detection": "contiguous gradient_total_norm > clip_threshold intervals, merging sub-bursts separated by at most 50 optimizer steps; major bursts have peak norm at least 10 times the clip threshold",
+    "burst_recurrence": "period_next = clamp(period + period_delta, 150, 650); center_next = center + period_next; period_delta_next = 0.5 * period_delta",
+    "formation_condition": "prefix validation state determines how many observed-state burst cycles remain; the transition is the first 100-step evaluation after the last required cycle",
+    "curve_law": "log-odds progress from current prefix validation accuracy to 0.95 at the state-predicted transition, followed by a bounded burst-hazard decrement",
+    "stability_law": "post-formation margin reserve grows during quiescent full-batch updates and is transiently reduced around predicted clipped-burst intervals"
+  },
+  "discovery_estimated_constants": {
+    "major_burst_to_clip_ratio": 10.0,
+    "low_margin_boundary": -7.0,
+    "low_accuracy_boundary": 0.18,
+    "period_delta_damping": 0.5,
+    "transition_target_validation_accuracy": 0.95
+  },
+  "structural_inputs": [
+    "capability evaluations and their exact parameter binding",
+    "materialized validation logits and validation targets at the prefix cut",
+    "gradient_clip_application occurrence payloads",
+    "current AdamW first- and second-moment tensors"
+  ],
+  "cross_run_scope": "Constants are discovery-estimated; all location, phase, margin, recurrence period and optimizer tension are re-initialized from the unseen prefix. No run identity or fixed transition step is used.",
+  "uncertainty": "The 200-step and 500-step intervals encode within-run replay error. Burst-risk windows widen with optimizer tension and forecast horizon because one discovery execution cannot establish exact cross-run pulse timing."
+}

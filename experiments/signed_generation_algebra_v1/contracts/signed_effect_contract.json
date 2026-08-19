@@ -1,0 +1,71 @@
+{
+  "contract_id": "signed-effect-interpretation-v1",
+  "explicit_disposition_default_sign": "forbidden",
+  "rules": [
+    {
+      "occurrence_type": "multiset_add_occurrence",
+      "outcome_kind": "support",
+      "relation_role": "multiset_add_effect",
+      "sign": "positive",
+      "transform_operation": "add_multiset"
+    },
+    {
+      "occurrence_type": "scalar_compensation_occurrence",
+      "outcome_kind": "support",
+      "relation_role": "scalar_compensation_effect",
+      "sign": "negative",
+      "transform_operation": "compensate_scalar"
+    },
+    {
+      "occurrence_type": "counter_decrement_occurrence",
+      "outcome_kind": "support",
+      "relation_role": "counter_decrement_effect",
+      "sign": "negative",
+      "transform_operation": "decrement_counter"
+    },
+    {
+      "occurrence_type": "sqlite_delete_occurrence",
+      "outcome_kind": "support",
+      "relation_role": "record_delete_effect",
+      "sign": "negative",
+      "transform_operation": "delete_record"
+    },
+    {
+      "occurrence_type": "filter_evaluation_occurrence",
+      "outcome_kind": "disposition",
+      "relation_role": "filter_excluded_candidate",
+      "sign": "neutral_or_not_applicable",
+      "transform_operation": "filter_evaluate"
+    },
+    {
+      "occurrence_type": "scalar_increase_occurrence",
+      "outcome_kind": "support",
+      "relation_role": "scalar_increase_effect",
+      "sign": "positive",
+      "transform_operation": "increase_scalar"
+    },
+    {
+      "occurrence_type": "counter_increment_occurrence",
+      "outcome_kind": "support",
+      "relation_role": "counter_increment_effect",
+      "sign": "positive",
+      "transform_operation": "increment_counter"
+    },
+    {
+      "occurrence_type": "sqlite_insert_occurrence",
+      "outcome_kind": "support",
+      "relation_role": "record_insert_effect",
+      "sign": "positive",
+      "transform_operation": "insert_record"
+    },
+    {
+      "occurrence_type": "multiset_remove_occurrence",
+      "outcome_kind": "support",
+      "relation_role": "multiset_remove_effect",
+      "sign": "negative",
+      "transform_operation": "remove_multiset"
+    }
+  ],
+  "schema_version": "signed-effect-contract-v1",
+  "unmatched_fact_policy": "report_and_fail_release_gate"
+}

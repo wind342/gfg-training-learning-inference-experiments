@@ -1,0 +1,22 @@
+{
+  "business_types_equal": true,
+  "business_values_equal": true,
+  "csv_byte_identical": true,
+  "csv_sha256_by_mode": {
+    "A_core_off_otel_off": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a",
+    "B_core_on_otel_off": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a",
+    "C_core_off_otel_on": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a",
+    "D_core_on_otel_on": "d5543a4abdb0900e4f233cf0509ed81211035d8cffda5d7e97a414fb588a741a"
+  },
+  "forbidden_output_fields": [],
+  "json_byte_identical": true,
+  "json_sha256_by_mode": {
+    "A_core_off_otel_off": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498",
+    "B_core_on_otel_off": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498",
+    "C_core_off_otel_on": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498",
+    "D_core_on_otel_on": "903ff25646332aafc10bf7195514eb75b8e0987fbf595307608e8fac7dc2b498"
+  },
+  "mode_count": 4,
+  "passed": true,
+  "schema_and_order_equal": true
+}

@@ -1,0 +1,28 @@
+{
+  "base_commit": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+  "branch": "experiment/database-lineage-core-v3-native-v1",
+  "core_version": "3.0.0",
+  "docker_client": {
+    "available": false,
+    "error": "TimeoutExpired: Command '['C:\\\\Program Files\\\\Docker\\\\Docker\\\\resources\\\\bin\\\\docker.exe', 'version', '--format', '{{.Client.Version}}']' timed out after 30 seconds"
+  },
+  "docker_desktop_installed_version": "4.83.0",
+  "docker_server": {
+    "available": false,
+    "error": "TimeoutExpired: Command '['C:\\\\Program Files\\\\Docker\\\\Docker\\\\resources\\\\bin\\\\docker.exe', 'version', '--format', '{{.Server.Version}}']' timed out after 30 seconds"
+  },
+  "duckdb_version": "1.5.4",
+  "host_setup_note": "WSL 2.7.10 installed; VirtualMachinePlatform and WSL features enabled by DISM with restart-required exit code 3010. No reboot was performed inside the active task.",
+  "jsonschema_version": "4.26.0",
+  "operating_system": "Windows-11-10.0.26200-SP0",
+  "physical_memory_bytes": 17011310592,
+  "pinned_image_postgresql_major": 17,
+  "postgresql_version": null,
+  "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+  "provsql_extension_version": null,
+  "provsql_image_digest": "inriavalda/provsql@sha256:57c7877fe86638f201bc26fc0cb8ef759aeb09e9bfc03789c2d3a2b315305268",
+  "provsql_required_image": "inriavalda/provsql:1.4.0@sha256:57c7877fe86638f201bc26fc0cb8ef759aeb09e9bfc03789c2d3a2b315305268",
+  "psutil_version": "7.2.2",
+  "psycopg_version": "3.3.3",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+}

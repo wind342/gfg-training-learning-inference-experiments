@@ -1,0 +1,116 @@
+{
+  "actual_case_count": 13,
+  "cases": [
+    {
+      "candidate_output_count": 2,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 2,
+      "variant": "default",
+      "workload_id": "W1"
+    },
+    {
+      "candidate_output_count": 3,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 3,
+      "variant": "default",
+      "workload_id": "W10"
+    },
+    {
+      "candidate_output_count": 2,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 2,
+      "variant": "plan_a",
+      "workload_id": "W11"
+    },
+    {
+      "candidate_output_count": 2,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 2,
+      "variant": "plan_b",
+      "workload_id": "W11"
+    },
+    {
+      "candidate_output_count": 25,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 25,
+      "variant": "default",
+      "workload_id": "W12"
+    },
+    {
+      "candidate_output_count": 1,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 1,
+      "variant": "default",
+      "workload_id": "W2"
+    },
+    {
+      "candidate_output_count": 1,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 1,
+      "variant": "default",
+      "workload_id": "W3"
+    },
+    {
+      "candidate_output_count": 1,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 1,
+      "variant": "default",
+      "workload_id": "W4"
+    },
+    {
+      "candidate_output_count": 1,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 1,
+      "variant": "default",
+      "workload_id": "W5"
+    },
+    {
+      "candidate_output_count": 1,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 1,
+      "variant": "default",
+      "workload_id": "W6"
+    },
+    {
+      "candidate_output_count": 1,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 1,
+      "variant": "default",
+      "workload_id": "W7"
+    },
+    {
+      "candidate_output_count": 1,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 1,
+      "variant": "default",
+      "workload_id": "W8"
+    },
+    {
+      "candidate_output_count": 1,
+      "exact": true,
+      "missing_side": null,
+      "native_output_count": 1,
+      "variant": "default",
+      "workload_id": "W9"
+    }
+  ],
+  "claim": "Native K-relation N[X] equals Core-only Candidate N[X] exactly",
+  "expected_case_count": 13,
+  "expected_case_coverage": true,
+  "mismatch_count": 0,
+  "repair_count": 0,
+  "schema_version": "nx-exact-comparison-v1",
+  "status": "EXACT_SUPPORTED"
+}

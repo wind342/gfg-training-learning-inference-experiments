@@ -1,0 +1,77 @@
+{
+  "all_equal": true,
+  "first_run_core_commit": "50a21fd4dfc7ca7cd1e939e844c2ca07877e8a16",
+  "legacy_snapshot_id_reconstruction_used": true,
+  "normalization": "Snapshot IDs bind implementation hashes. Full Snapshot envelopes are compared after removing only implementation-derived fields. For the retained legacy baseline without an envelope, the second envelope is re-finalized with the first run's tracked Core hashes. Both paths cover all authoritative and derived table counts and hashes while allowing an audited implementation identity change.",
+  "queries": {
+    "q1": {
+      "after_forward_lineage_sha256": "148c130a67501e553b30fe1b473cf789a4366912062d67b2f09c0bca61b6ce7b",
+      "after_lineage_sha256": "5c1074956fa60ec428fde8922f76a3cc8e2fa45ac5d7018d8eaf347479018cd8",
+      "before_lineage_sha256": "5c1074956fa60ec428fde8922f76a3cc8e2fa45ac5d7018d8eaf347479018cd8",
+      "checks": {
+        "backward_lineage_bytes_equal": true,
+        "backward_path_counts_equal": true,
+        "binding_count_equal": true,
+        "csv_hash_equal": true,
+        "entity_counts_equal": true,
+        "forward_lineage_equal_to_inverted_first_run_backward": true,
+        "json_hash_equal": true,
+        "normalized_snapshot_content_equal": true,
+        "raw_snapshot_id_equal": false
+      },
+      "exact": true
+    },
+    "q10": {
+      "after_forward_lineage_sha256": "727fa2b1a9b94a446b609c8a4de782adf387152c9b3703663e188cc7895138b7",
+      "after_lineage_sha256": "8de74e45345c58f91370532f4fa1e71cd63472d1773b36a05b3b4f2ef2b32af2",
+      "before_lineage_sha256": "8de74e45345c58f91370532f4fa1e71cd63472d1773b36a05b3b4f2ef2b32af2",
+      "checks": {
+        "backward_lineage_bytes_equal": true,
+        "backward_path_counts_equal": true,
+        "binding_count_equal": true,
+        "csv_hash_equal": true,
+        "entity_counts_equal": true,
+        "forward_lineage_equal_to_inverted_first_run_backward": true,
+        "json_hash_equal": true,
+        "normalized_snapshot_content_equal": true,
+        "raw_snapshot_id_equal": false
+      },
+      "exact": true
+    },
+    "q3": {
+      "after_forward_lineage_sha256": "5bd1d3e86220a1cfd8451cbf9e264d18edc28b89e4c392dbbb85bacf2b2aca6c",
+      "after_lineage_sha256": "c80d26d435b0ff8c86214efb4ca9f1c857810b8016c91cda5bf71a55c73c7486",
+      "before_lineage_sha256": "c80d26d435b0ff8c86214efb4ca9f1c857810b8016c91cda5bf71a55c73c7486",
+      "checks": {
+        "backward_lineage_bytes_equal": true,
+        "backward_path_counts_equal": true,
+        "binding_count_equal": true,
+        "csv_hash_equal": true,
+        "entity_counts_equal": true,
+        "forward_lineage_equal_to_inverted_first_run_backward": true,
+        "json_hash_equal": true,
+        "normalized_snapshot_content_equal": true,
+        "raw_snapshot_id_equal": false
+      },
+      "exact": true
+    },
+    "q6": {
+      "after_forward_lineage_sha256": "3aa0dfd4f88ddf041af0e3f5db67d29e113d26a862d40f2eaec32f6d4764300a",
+      "after_lineage_sha256": "63416c47a97d06c2a45066c5979ed6bdb6915656695e0e5437bdc888d0c78de2",
+      "before_lineage_sha256": "63416c47a97d06c2a45066c5979ed6bdb6915656695e0e5437bdc888d0c78de2",
+      "checks": {
+        "backward_lineage_bytes_equal": true,
+        "backward_path_counts_equal": true,
+        "binding_count_equal": true,
+        "csv_hash_equal": true,
+        "entity_counts_equal": true,
+        "forward_lineage_equal_to_inverted_first_run_backward": true,
+        "json_hash_equal": true,
+        "normalized_snapshot_content_equal": true,
+        "raw_snapshot_id_equal": false
+      },
+      "exact": true
+    }
+  },
+  "scale_factor": 0.01
+}

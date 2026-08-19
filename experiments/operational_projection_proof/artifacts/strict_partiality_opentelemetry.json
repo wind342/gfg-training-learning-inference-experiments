@@ -1,0 +1,11 @@
+{
+  "binding_set_equal": null,
+  "complete_snapshot_equal": null,
+  "counterexample_count": 0,
+  "interpretation": "Projection equality does not imply complete generation-fact equality.",
+  "profile_id": "opentelemetry-occurrence-v1",
+  "projection_equal": null,
+  "reason": "The OpenTelemetry experiment is still untracked and lacks a completed frozen workload, tests, machine artifacts, and reviewed official-SDK reference result on the selected base commit.",
+  "status": "NOT_EVALUATED",
+  "transform_context_equal": null
+}

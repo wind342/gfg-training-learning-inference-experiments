@@ -1,0 +1,15 @@
+{"arguments":{"database":"participant_gfg.sqlite3","read_only":true,"immutable":true},"count":1,"operation":"open_validated_gfg"}
+{"arguments":{"group_by":"stage","table":"graph_blocks"},"count":24,"operation":"direct_sqlite_stage_summary"}
+{"arguments":{"order_by":"optimizer_step","table":"evaluations"},"count":101,"operation":"direct_sqlite_evaluations"}
+{"arguments":{"key":"participant_task","table":"metadata"},"count":1,"operation":"direct_sqlite_metadata"}
+{"arguments":{"max_step":0,"roles":["training_task","optimizer_configuration","training_batch_inputs","training_batch_targets"]},"count":19,"operation":"expand_graph_blocks_objects"}
+{"arguments":{"max_step":10000,"role":"validation_logits","stage":"evaluation"},"count":101,"operation":"expand_graph_blocks_objects"}
+{"arguments":{"max_step":10000,"role":"validation_predictions","stage":"evaluation"},"count":101,"operation":"expand_graph_blocks_objects"}
+{"arguments":{"max_step":10000,"name":"token_embedding.input.0","stage":"evaluation_validation:token_embedding"},"count":101,"operation":"expand_graph_blocks_objects"}
+{"arguments":{"max_step":10000,"occurrence_type":"gradient_clip"},"count":10000,"operation":"expand_graph_blocks_occurrences"}
+{"arguments":{"evaluation_steps":100,"roles":["parameter_version","optimizer_state"]},"count":6000,"operation":"expand_materialized_optimizer_objects"}
+{"arguments":{"steps":[729,1135,1583,2046,2525,2988,3554,4032,4411,4780,5142,5502,5873,6259,6652,7040,7404,7768,8129,8506,8898,9239,9598,9989],"stage":"after_gradient_clip"},"count":24,"operation":"inspect_exact_occurrences_and_fact_blocks"}
+{"arguments":{"steps":[100,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,3000,3100,8900,9000,9600,9700,10000],"stage":"evaluation"},"count":19,"operation":"inspect_exact_occurrences_and_fact_blocks"}
+{"arguments":{"relation_type":"GeneratedOrigin","stage":"after_optimizer_step","step":1136},"count":60,"operation":"expand_explicit_edges"}
+{"arguments":{"stage":"after_optimizer_step","step":1136},"count":15,"operation":"expand_optimizer_fact_blocks"}
+{"arguments":{"cuts":[800,900,1100,1400,2500,5000,8800],"future_reads":0},"count":7,"operation":"prefix_only_replay"}

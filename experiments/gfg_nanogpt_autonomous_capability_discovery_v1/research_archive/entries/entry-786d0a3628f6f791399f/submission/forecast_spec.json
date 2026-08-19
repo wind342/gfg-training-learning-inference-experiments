@@ -1,0 +1,30 @@
+{
+  "schema": "gfg-capability-forecast-spec-v1",
+  "version": "1.0.0",
+  "forecast_class": "CapabilityFormationMechanism",
+  "evaluation_grid_optimizer_steps": 100,
+  "horizon_optimizer_step": 10000,
+  "transition_contract": {
+    "train_accuracy_min": 0.99,
+    "validation_accuracy_min": 0.9,
+    "sustained_evaluation_points": 3,
+    "requires_earlier_validation_accuracy_at_most": 0.3
+  },
+  "required_fields": {
+    "will_transition": "boolean",
+    "transition_step_low_200": "integer or NO_TRANSITION",
+    "transition_step_high_200": "integer or NO_TRANSITION; inclusive width <= 200",
+    "transition_step_low_500": "integer or NO_TRANSITION",
+    "transition_step_high_500": "integer or NO_TRANSITION; inclusive width <= 500",
+    "predicted_validation_curve": "ordered list of {optimizer_step, validation_accuracy} for every future 100-step grid point through 10000",
+    "mechanism_state": "object containing the exact initial finite state and generated future state evolution",
+    "post_formation_stability": "STABLE, TRANSIENT_DEGRADATION_RECOVERY, PERSISTENT_DEGRADATION or UNDETERMINED",
+    "predicted_instability_intervals": "ordered list of inclusive {step_low, step_high} optimizer-step risk intervals"
+  },
+  "interval_construction": {
+    "high_precision_200": "state-predicted evaluation step +/- 100 optimizer steps",
+    "primary_500": "state-predicted evaluation step +/- 200 optimizer steps"
+  },
+  "curve_semantics": "Expected validation accuracy, initialized at the last prefix evaluation; cyclic risk is generated from prefix burst phase and optimizer tension, not from a stored trajectory.",
+  "stability_prediction": "TRANSIENT_DEGRADATION_RECOVERY when formation is forecast because the prefix exposes repeated clipped relaxation bursts and the sealed state law propagates post-formation margin erosion followed by quiescent recovery."
+}

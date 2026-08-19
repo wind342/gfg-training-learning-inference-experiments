@@ -1,0 +1,10 @@
+{
+  "evaluation_interval_optimizer_steps": 100,
+  "no_transition_value": "NO_TRANSITION",
+  "pre_transition_validation_accuracy_max": 0.3,
+  "sustained_evaluation_points": 3,
+  "train_accuracy_min": 0.99,
+  "transition_step": "first evaluation point of the first three-point window satisfying both train_accuracy_min and validation_accuracy_min after an earlier evaluation at or below pre_transition_validation_accuracy_max",
+  "validation_accuracy_min": 0.9,
+  "version": "1.0.0"
+}

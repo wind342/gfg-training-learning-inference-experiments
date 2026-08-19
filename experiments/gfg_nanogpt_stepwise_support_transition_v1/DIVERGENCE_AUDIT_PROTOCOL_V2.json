@@ -1,0 +1,40 @@
+{
+  "schema": "nanogpt-stepwise-divergence-audit-protocol-v2",
+  "protocol_id": "STEPWISE-PHASE-DIVERGENCE-AUDIT-v2",
+  "status": "FROZEN_BEFORE_FORMAL_V2_RESULT_GENERATION",
+  "supersedes": "STEPWISE-DIVERGENCE-AUDIT-v1",
+  "scientific_anchor": "All relative h values begin at scientific_start_optimizer_step. The ten captured predecessor states are input history only and never shift the event label.",
+  "predictor_channels": [
+    "raw_probe_response",
+    "support_concentration",
+    "pair_backup",
+    "adam_state",
+    "parameter_adam_alignment",
+    "phase_left_rate_m1",
+    "phase_left_rate_multiscale",
+    "phase_left_acceleration",
+    "parameter_update_structure",
+    "optimizer_transition"
+  ],
+  "adjudication_only_channels": [
+    "visible_capability",
+    "right_rate_target_only",
+    "law_break_target_only",
+    "future_mode",
+    "future_capability"
+  ],
+  "state_tiers": {
+    "M0": ["raw_probe_response", "support_concentration", "pair_backup", "adam_state", "parameter_adam_alignment"],
+    "M1": ["M0", "phase_left_rate_m1", "phase_left_rate_multiscale"],
+    "M2": ["M1", "phase_left_acceleration"],
+    "M3": ["M2", "candidate_discrete_mode_discovered_without_held_out_run"],
+    "M4": ["minimal_additional_state_discovered_from_training_facts_at_or_before_cut"]
+  },
+  "leave_one_run_out": "For each decline/control pair, threshold populations and any candidate mode rule exclude both involved entry identities.",
+  "persistent_crossing_length": 3,
+  "stable_envelope_quantile": 0.99,
+  "causal_seed_offsets": [-1, 0, 1],
+  "future_leakage_policy": "No right difference, law break, successor state, future capability or future mode participates in distance, feature choice, threshold or seed selection.",
+  "accept_phase_state_rule": "V or A is admitted only if strict leave-one-run-out pre-decline prediction improves, inherited and new near-state/different-future counterexamples are reduced, and ablation reverses the gain.",
+  "fail_closed_rule": "If the phase state does not improve transport or does not close counterexamples, report missing state rather than claiming a derivative or hybrid theory."
+}

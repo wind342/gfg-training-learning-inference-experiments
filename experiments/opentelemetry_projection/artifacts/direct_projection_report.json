@@ -1,0 +1,20 @@
+{
+  "classification": "SUPPORTED",
+  "core_occurrence_count": 36,
+  "direct_span_count": 37,
+  "multistage_native_vs_direct": {
+    "attribute_mismatches": 0,
+    "event_mismatches": 0,
+    "exact": true,
+    "link_edge_false_negatives": 0,
+    "link_edge_false_positives": 0,
+    "parent_edge_false_negatives": 0,
+    "parent_edge_false_positives": 0,
+    "span_false_negatives": 0,
+    "span_false_positives": 0,
+    "status_mismatches": 0
+  },
+  "native_span_count": 37,
+  "selection_oracle_exact": true,
+  "trace_sha256": "3cc1775ee4590c3c7e5e76a47e0628a6b39c08a5410d713a20c0d3c0d2e83051"
+}

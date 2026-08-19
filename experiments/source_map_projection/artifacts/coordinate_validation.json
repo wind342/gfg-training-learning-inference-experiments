@@ -1,0 +1,1 @@
+{"cases":["ASCII","Chinese","emoji","combining_sequence","tab","CRLF","LF","empty_line","trailing_newline"],"checked_boundaries":20,"column_base":0,"column_unit":"UTF-16 code units","line_base":0,"status":"PASS"}

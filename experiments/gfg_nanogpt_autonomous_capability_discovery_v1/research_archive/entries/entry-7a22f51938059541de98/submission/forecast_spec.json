@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gfg://capability-forecast-v1",
+  "title": "Capability formation forecast",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "will_transition",
+    "transition_step_low_200",
+    "transition_step_high_200",
+    "transition_step_low_500",
+    "transition_step_high_500",
+    "predicted_validation_curve",
+    "mechanism_state",
+    "post_formation_stability",
+    "predicted_instability_intervals"
+  ],
+  "properties": {
+    "will_transition": {"type": "boolean"},
+    "transition_step_low_200": {"type": ["integer", "string"]},
+    "transition_step_high_200": {"type": ["integer", "string"]},
+    "transition_step_low_500": {"type": ["integer", "string"]},
+    "transition_step_high_500": {"type": ["integer", "string"]},
+    "predicted_validation_curve": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["optimizer_step", "validation_accuracy"],
+        "properties": {
+          "optimizer_step": {"type": "integer", "minimum": 0, "maximum": 10000},
+          "validation_accuracy": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "mechanism_state": {
+      "type": "object",
+      "required": ["schema", "initial", "predicted_state_curve"]
+    },
+    "post_formation_stability": {
+      "enum": ["STABLE", "TRANSIENT_DEGRADATION_RECOVERY", "PERSISTENT_DEGRADATION", "UNDETERMINED"]
+    },
+    "predicted_instability_intervals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["step_low", "step_high"],
+        "properties": {
+          "step_low": {"type": "integer", "minimum": 0, "maximum": 10000},
+          "step_high": {"type": "integer", "minimum": 0, "maximum": 10000}
+        }
+      }
+    }
+  }
+}

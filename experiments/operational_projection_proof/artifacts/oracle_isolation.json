@@ -1,0 +1,12 @@
+{
+  "candidate_after_reference_deleted_equal": true,
+  "candidate_files": [
+    "database_projection.py"
+  ],
+  "native_domain_result_read_count": 0,
+  "native_domain_result_read_findings": [],
+  "oracle_leakage_count": 0,
+  "oracle_leakage_findings": [],
+  "oracle_runtime_trap_passed": true,
+  "status": "SUPPORTED"
+}

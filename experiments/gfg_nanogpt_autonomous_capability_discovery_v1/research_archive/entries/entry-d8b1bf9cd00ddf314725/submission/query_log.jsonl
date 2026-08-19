@@ -1,0 +1,16 @@
+{"arguments":{"database":"participant_gfg.sqlite3","mode":"read-only immutable","scope":"sqlite schema"},"count":4,"operation":"sqlite_schema_tables"}
+{"arguments":{"files":["manifest.json","capture_manifest.json","core_representative_validation.json","gfg_validation.json"]},"count":4,"operation":"read_validation_manifests"}
+{"arguments":{"order_by":"optimizer_step","table":"evaluations"},"count":101,"operation":"evaluations"}
+{"arguments":{"aggregate":["block count","step bounds","object count","fact count"],"group_by":"stage","table":"graph_blocks"},"count":24,"operation":"stage_summary"}
+{"arguments":{"max_step":0,"roles":["training_task","training_batch_inputs","training_batch_targets"]},"count":3,"operation":"objects"}
+{"arguments":{"content_sha256_verified":true,"roles":["training_batch_inputs","training_batch_targets"]},"count":951,"operation":"load_materialized_tensor_elements"}
+{"arguments":{"max_step":1100,"occurrence_type":"gradient_clip"},"count":1101,"operation":"occurrences"}
+{"arguments":{"episode_gap_max":20,"initialization_transient_excluded":true,"total_norm_gt":1.0},"count":4,"operation":"derive_gradient_burst_peaks"}
+{"arguments":{"materialized":true,"name":"transformer.wte.weight","role":"parameter_version","steps":[100,500,800,1100,1400,1500,1800,3900]},"count":8,"operation":"objects"}
+{"arguments":{"content_sha256_verified":true,"name":"transformer.wte.weight","steps":[100,500,800,1100,1400,1500,1800,3900]},"count":12288,"operation":"load_materialized_tensor_elements"}
+{"arguments":{"equations":317,"method":"modular row reduction","serialized_answer_table":false},"count":23,"operation":"derive_cyclic_token_coordinates"}
+{"arguments":{"metric":"off-diagonal Gram displacement R-squared","steps":[100,500,800,1100,1400,1500,1800,3900]},"count":8,"operation":"derive_translation_equivariance"}
+{"arguments":{"deterministic_permutations":100,"steps":[1100,1800]},"count":200,"operation":"permutation_null_falsification"}
+{"arguments":{"stages":["after_backward","after_gradient_clip","after_optimizer_step"],"steps":[1041,1042,1714,1715]},"count":6,"operation":"fact_blocks"}
+{"arguments":{"parameter_name":"transformer.wte.weight","relation_type":"GeneratedOrigin","selected_result_versions":[1042,1715]},"count":2,"operation":"edges"}
+{"arguments":{"fact_block_id":"factblock_628c75a87ceac61b26b49592ab8877c51cb5cccce85f5e37e964a99db8af78d5","optimizer_step":1800},"count":5,"operation":"expand_atomic_evaluation_facts"}

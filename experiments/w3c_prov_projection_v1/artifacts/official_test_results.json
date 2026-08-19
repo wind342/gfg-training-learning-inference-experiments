@@ -1,0 +1,493 @@
+{
+  "applicable_test_count": 53,
+  "cases": [
+    {
+      "detected_reasons": [
+        "C51_UNSPECIFIED_DERIVATION_ACTIVITY"
+      ],
+      "expected": "INVALID",
+      "id": "prov-o-property-hadGeneration-FAIL-c51-DM",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "714ac0371bf32afb9b729a36f49c05a4ca8d04a6c35f92cb505eab71164c60ef"
+    },
+    {
+      "detected_reasons": [
+        "C51_UNSPECIFIED_DERIVATION_ACTIVITY"
+      ],
+      "expected": "INVALID",
+      "id": "prov-o-property-hadUsage-FAIL-c51-DM",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "ece2212f6d22a526cd3e33849aec97e3f3b85e0eb8d2c04748f875b8b6fb6b1b"
+    },
+    {
+      "detected_reasons": [
+        "C50_TYPE_CONFLICT:ex:e1"
+      ],
+      "expected": "INVALID",
+      "id": "type-f1-FAIL-c50-c55",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "fbc7ae4626c042dec6844858429c47fd94c7754b495d92e0907f2fbe71ca12bd"
+    },
+    {
+      "detected_reasons": [
+        "C50_TYPE_CONFLICT:ex:e2"
+      ],
+      "expected": "INVALID",
+      "id": "type-f2-FAIL-c50-c55",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "4064f5bef5da086202ae9a5fa4f6d54f6c38ffe936429c1df8d4b205816cf92d"
+    },
+    {
+      "detected_reasons": [
+        "C53_RELATION_OVERLAP:ex:gen"
+      ],
+      "expected": "INVALID",
+      "id": "type-f4-FAIL-c53",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "0883902b41118c4f22e818f68280285ca0ba9a662ef482c05874198e37b471fd"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "type-s1-PASS-c50-c55",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "092f06030f0ac34bfa4e2a86ca9f5870341749c6b50296222051ff09ecfea127"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "type-s2-PASS-c50-c55",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "c480a25f475331dc624788801fb216ec431179f93d38dced9911a73c30bd4a18"
+    },
+    {
+      "detected_reasons": [
+        "C23_ASSOCIATION_AGENT:ex:assoc1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-association-f1-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "8a94e38c200ca15ef8c8ae08966c952ef7d75e04cd22ef5fab18c0c891407fea"
+    },
+    {
+      "detected_reasons": [
+        "C23_ASSOCIATION_ACTIVITY:ex:assoc1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-association-f2-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "18e33158ac4929fc8032312ffea7e8e259d763e735c323e02b7400e1d45a0a7f"
+    },
+    {
+      "detected_reasons": [
+        "C23_ASSOCIATION_PLAN:ex:assoc1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-association-f3-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "d332b9f131cdef7f1ca464a1a160fd7a8d22d24b0e4be20c804a3b09fd00d468"
+    },
+    {
+      "detected_reasons": [
+        "C23_ASSOCIATION_PLAN:ex:assoc1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-association-f4-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "e4f9e83af53ca681281d53383ab3da025b73c58ba2c01e33eb4f19708b9fd7c1"
+    },
+    {
+      "detected_reasons": [
+        "C23_ASSOCIATION_PLAN:ex:assoc1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-association-f5-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "8684b343c888b8de2d72f8d6d0467338dca3b92720d5a255410aff4661bb8c11"
+    },
+    {
+      "detected_reasons": [
+        "ASSOCIATION_ACTIVITY_REQUIRED"
+      ],
+      "expected": "INVALID",
+      "id": "unification-association-f6-FAIL-DM",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "93bc3f4ee29074927490d6ac9d05d40733ec72fcdbe7c15e2e2561df9095e0f6"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-association-s1-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "d1f834c050400d233c963b9e4bf92dd767f8e49379a2a9566ebea575c2bf8886"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-association-s2-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "58d3f37965d94833e17033aa7497fee63f95d69907273239555769a56c35af38"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-association-s3-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "786fca9c9a2d6ab9199dd2ab8351cd64106350de9fd67d6e8ad449f1fe9f6b17"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-association-s4-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "786fca9c9a2d6ab9199dd2ab8351cd64106350de9fd67d6e8ad449f1fe9f6b17"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-association-s5-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "e8905e9d6cf642a1669d9967a33abf38ce0270ff1384c03b28c460222f48a3d9"
+    },
+    {
+      "detected_reasons": [
+        "C23_DERIVATION_ARITY:ex:der1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-derivation-f1-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "81079667ac7711ed39b5931d152bda1c80637fc1b2f096a5d6012c7c393a878a"
+    },
+    {
+      "detected_reasons": [
+        "C23_DERIVATION_ARITY:ex:der1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-derivation-f2-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "b2e39720a2c26b3a710057201ea49b9fd7548703fd78ae90b2b802fa61b63e89"
+    },
+    {
+      "detected_reasons": [
+        "C23_DERIVATION_ARITY:ex:der1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-derivation-f3-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "65309533dce5dc8644df38fef08c2dcb144c87661db3e0f83ffb1fd55176afba"
+    },
+    {
+      "detected_reasons": [
+        "C23_DERIVATION_ARITY:ex:der1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-derivation-f4-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "cd05ff844edde1c254f4339f0d7a867b621c2407014ffd9afb43496d5e247c98"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-derivation-s1-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "1556b8170d66016a8be6b1444aa7f5ca35f59043a534967c5b51468a87fcd7f1"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-derivation-s2-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "90b2b6ecb858c8dd5e79a90b7f2edb40adf61d56c7ada0853ecb5a7c573a1c8d"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-derivation-s3-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "073de11239b5166e58cc4dc9a4612f698e3b946059f942a8900cf7521274dcfb"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-derivation-s4-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "ad8f5edc67a66b28f5e614c1fd1e1c9231e86f18faa36c0b34798477c866d300"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-derivation-s5-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "e1c54c4d67553b725e3ae87f6ff5b000c339d8b905c969308b21eb712bb054e3"
+    },
+    {
+      "detected_reasons": [
+        "C24_UNIQUE_GENERATION:ex:e1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-generation-f1-FAIL-c24",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "c3d5ee966e605dd6e2fc131f1c2fa2af35ea657d9cc238dc365f8c639b93ffd7"
+    },
+    {
+      "detected_reasons": [
+        "C23_KEY_CONFLICT:wasGeneratedBy:ex:gen1:0"
+      ],
+      "expected": "INVALID",
+      "id": "unification-generation-f2-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "f09ca1ce9a9ac6c57f9c932777ccc7e4de60e0c0f821902dad0fc2c96889a947"
+    },
+    {
+      "detected_reasons": [
+        "C23_GENERATION_CONFLICT:ex:e1:1",
+        "C23_KEY_CONFLICT:wasGeneratedBy:ex:gen1:1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-generation-f3-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "7767ea6bacaee9ae4f638650d46ed28a63b63796a4382255b6a6800422dc3cd9"
+    },
+    {
+      "detected_reasons": [
+        "C23_GENERATION_CONFLICT:ex:e1:2",
+        "C23_KEY_CONFLICT:wasGeneratedBy:ex:gen1:2"
+      ],
+      "expected": "INVALID",
+      "id": "unification-generation-f4-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "d26bba26f5bb9ef42bc942b2a4b3a2e3434748e4a750fbf18a5c10aecf4d1354"
+    },
+    {
+      "detected_reasons": [
+        "C23_GENERATION_CONFLICT:ex:e1:2"
+      ],
+      "expected": "INVALID",
+      "id": "unification-generation-f5-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "43dd267bbf13154078fe7cbb1ee94216ac0bba07f0562d16e550db7544b2e4bb"
+    },
+    {
+      "detected_reasons": [
+        "C23_GENERATION_CONFLICT:ex:e1:2"
+      ],
+      "expected": "INVALID",
+      "id": "unification-generation-f6-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "520b2b2414108b69a27f1ab6c434b51ecb3d241d0a1dc2eefdeb1512436bfc37"
+    },
+    {
+      "detected_reasons": [
+        "C23_GENERATION_CONFLICT:ex:e1:2"
+      ],
+      "expected": "INVALID",
+      "id": "unification-generation-f7-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "d5e96e7294465996cbc7b7a16208c795df7d944af6b5f1fa8a69ab7635c4a65c"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-generation-s1-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "de24f9e04c366d1e1e2935ff227291074cede65fb73d986e79801ad69209527b"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-generation-s2-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "7a9ace2b6ffced439e843d204f5c2b0e74648d76dab120d0ec66ebef41987465"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-generation-s3-PASS-c24",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "0b04de38466363205645928ee17b8ec9d55c1dc45d53678da738af324cfc1991"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-generation-s5-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "d25d05f739e5dcbbfc60a09e3e5ebfb63b287236a6a462a09b256bfe09e55e1f"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-generation-s6-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "bfaafebcb206c3333eb3ebc6de95ec38aec89b20b3bc139892b5cdbedf15d34b"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-generation-s7-PASS-c23-c24",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "4183792a919d233a95fcfadef2f38b3143c1260722bfcc23e6eb688ae1d71521"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-generation-s8-PASS-c23-c24",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "8de237f0da8ab091ae0fcf62c6d0d0bdac84a2a821173541b970d3c160bd9766"
+    },
+    {
+      "detected_reasons": [
+        "C23_KEY_CONFLICT:used:ex:use1:0"
+      ],
+      "expected": "INVALID",
+      "id": "unification-usage-f2-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "faee3bd15f5e9c6b86c642eef76ba01a36bc07cf0d8019fea0aa678fc54c2772"
+    },
+    {
+      "detected_reasons": [
+        "C23_KEY_CONFLICT:used:ex:use1:1"
+      ],
+      "expected": "INVALID",
+      "id": "unification-usage-f3-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "8749f19bf5900dac2fd36aec55e10729abefa2448c0e905a7d47ba41d769425e"
+    },
+    {
+      "detected_reasons": [
+        "C23_KEY_CONFLICT:used:ex:use1:2"
+      ],
+      "expected": "INVALID",
+      "id": "unification-usage-f4-FAIL-c23",
+      "observed": "INVALID",
+      "passed": true,
+      "sha256": "6e779e38f102b7b67c3a0005a4454dd644ff1a29552ff4845520014ce5d0bd46"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-usage-f5-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "d3ae171d3b3a2b1930c85666a31acf11cdc231cf6d4ef8e5147711bf4c6cf792"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-usage-f6-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "b3a14b852871c4290e5e7b4b6d35be2617b82dafda0b854360ae0c06e17e9333"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-usage-f7-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "b3faf08bc997eeb05307a9bc266bd1749cdc3b664495be048ec5336a11c09b1e"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-usage-s1-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "b22a88a102952d7781d0fb1f1f85170d7bbd13aa19b8baf520fc47997442fa2e"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-usage-s2-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "9e7fc76b61875389f73c008c6fadaf762ce2bb2980e482a7319e8950b4fc7ff2"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-usage-s5-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "e24e1476227303166c005daa6e658f35693e1da6a678e57626ef7f85e9b28fb6"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-usage-s6-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "43643c2c1f3b8e981d2eea40ece0005cadadb4a9e07f639c692c6a975973c9bf"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-usage-s7-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "94845a6fd369fe4a8aada8b5eac8acf58817dd94261585a109d82916b5ae6a58"
+    },
+    {
+      "detected_reasons": [],
+      "expected": "VALID",
+      "id": "unification-usage-s8-PASS-c23",
+      "observed": "VALID",
+      "passed": true,
+      "sha256": "40354557ff9986b00e0f2536a7fd8a957a7c44b50c080e3d39ffb29c14449a61"
+    }
+  ],
+  "excluded_test_count": 238,
+  "exclusion_reasons": [
+    "PROV component outside the frozen profile",
+    "temporal ordering, Start, End, or Invalidation outside the frozen profile",
+    "generic normalization or entailment beyond the selected identified relations",
+    "representation outside deterministic PROV-N and qualified PROV-O selected terms"
+  ],
+  "failed_applicable_count": 0,
+  "historical_implementation_report_total": 280,
+  "official_test_total": 291,
+  "passed_applicable_count": 53,
+  "status": "SUPPORTED"
+}

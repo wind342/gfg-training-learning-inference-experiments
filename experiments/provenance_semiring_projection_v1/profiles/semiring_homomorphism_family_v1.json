@@ -1,0 +1,51 @@
+{
+  "profile_id": "semiring-homomorphism-family-v1",
+  "source_semiring": "N[X]",
+  "authority": {
+    "citation": "Green, Karvounarakis, and Tannen, Provenance Semirings, PODS 2007",
+    "doi": "10.1145/1265530.1265535",
+    "frozen_author_pdf_sha256": "74e092702db58518afeaf909e1d3380848165b2cb9ae75dc6822b04f66aa5be0",
+    "homomorphism_surface": "proceedings page 34, Proposition 3.5 and Definition 4.1",
+    "why_surface": "proceedings page 34, P(X) with union for both addition and multiplication",
+    "positive_boolean_surface": "proceedings page 33, positive Boolean expressions PosBool(X)"
+  },
+  "maps": [
+    {
+      "map_id": "nx-to-bag-naturals-v1",
+      "target": "N",
+      "variable_image": "1",
+      "coefficient_rule": "preserve natural coefficient",
+      "exponent_rule": "1^e=1",
+      "addition": "natural addition",
+      "multiplication": "natural multiplication"
+    },
+    {
+      "map_id": "nx-to-boolean-v1",
+      "target": "B",
+      "variable_image": "true",
+      "coefficient_rule": "positive is true; zero is false",
+      "exponent_rule": "true^e=true",
+      "addition": "logical OR",
+      "multiplication": "logical AND"
+    },
+    {
+      "map_id": "nx-to-why-powerset-v1",
+      "target": "P(X)",
+      "variable_image": "singleton variable set",
+      "coefficient_rule": "positive repetition is idempotent",
+      "exponent_rule": "repeated variable is idempotent",
+      "addition": "set union",
+      "multiplication": "set union"
+    },
+    {
+      "map_id": "nx-to-positive-boolean-lineage-v1",
+      "target": "PosBool(X)",
+      "variable_image": "singleton positive literal",
+      "coefficient_rule": "OR is idempotent",
+      "exponent_rule": "AND is idempotent",
+      "addition": "OR with canonical absorption",
+      "multiplication": "AND with canonical absorption"
+    }
+  ],
+  "direct_evaluation_requirement": "Each target must also be evaluated directly as a K-relation from fixtures and RA AST; direct evaluation may not first compute N[X]."
+}

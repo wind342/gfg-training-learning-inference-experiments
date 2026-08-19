@@ -1,0 +1,19 @@
+{
+  "candidate_authority_count": 1,
+  "candidate_authority_identity": "validated Core Snapshot Γ",
+  "candidate_hidden_lookup_read_count": 0,
+  "candidate_native_reference_read_count": 0,
+  "candidate_old_artifact_read_count": 0,
+  "classified_file_count": 78,
+  "expected_prov_document_input_count": 0,
+  "hidden_binding_crosswalk_count": 0,
+  "native_test_oracle_count": 1,
+  "persisted_secondary_relation_store_count": 0,
+  "persistent_candidate_lookup_table_count": 0,
+  "receipt_answer_index_count": 0,
+  "scanned_file_count": 78,
+  "second_authority_count": 0,
+  "snapshot_blob_embedded_in_prov_count": 0,
+  "status": "SUPPORTED",
+  "unclassified_file_count": 0
+}

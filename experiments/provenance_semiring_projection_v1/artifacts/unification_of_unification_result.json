@@ -1,0 +1,6 @@
+{
+  "reason": "v2 states the formal projection boundary explicitly",
+  "schema_version": "superseded-artifact-pointer-v1",
+  "status": "UNIFICATION_OF_UNIFICATION_FORMAL_BOUNDARY_SUPPORTED",
+  "superseded_by": "unification_of_unification_result_v2.json"
+}

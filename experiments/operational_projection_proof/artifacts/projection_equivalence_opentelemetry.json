@@ -1,0 +1,16 @@
+{
+  "candidate_record_count": 0,
+  "claim_scope": "Span semantic identities, names, parent edges, links, status, selected attributes, selected events, and multiplicity.",
+  "exact_equal": null,
+  "false_negative": null,
+  "false_positive": null,
+  "field_mismatch": null,
+  "multiplicity_mismatch": null,
+  "native_domain_result_read_count": null,
+  "oracle_leakage_count": null,
+  "profile_id": "opentelemetry-occurrence-v1",
+  "reason": "The OpenTelemetry experiment is still untracked and lacks a completed frozen workload, tests, machine artifacts, and reviewed official-SDK reference result on the selected base commit.",
+  "reference_record_count": 0,
+  "second_authority_store_count": null,
+  "status": "NOT_EVALUATED"
+}

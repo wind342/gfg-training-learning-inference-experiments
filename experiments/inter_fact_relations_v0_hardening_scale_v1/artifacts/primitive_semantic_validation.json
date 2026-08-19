@@ -1,0 +1,1 @@
+{"all_six_relation_types_exercised":true,"execution_run_id":"run1_fee3bc584c20ba2fb3a85e6b811100305adf9f5456d702fd70c8e64f8826e91d","primitive_relation_count":6,"relation_type_counts":{"conflicts_with":1,"generated_origin_dependency":1,"message_send_receive":1,"program_order":1,"reads_from":1,"synchronizes_with":1},"status":"PASS"}

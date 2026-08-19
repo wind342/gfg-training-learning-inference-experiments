@@ -1,0 +1,40 @@
+{
+  "compression": "lossless reversible single-outcome fact blocks with deterministic atomic expansion",
+  "content_hash_every_tensor_instance": true,
+  "core_closure": "Core v3 and Executable GFG v2 closure on every capture family plus deterministic boundary blocks; every block and every expanded fact is independently hash-validated",
+  "large_tensor_policy": "evaluation-grid and boundary materialization plus deterministic exact replay locators",
+  "no_statistical_substitution": true,
+  "binding_rule": "each fact block has exactly one outcome and only the source-role records that participated in forming that outcome; source-by-outcome Cartesian expansion is forbidden",
+  "participant_graph": [
+    "task and actual participating samples",
+    "batch composition",
+    "tokens and targets",
+    "all parameter versions",
+    "actual layer computations and activations",
+    "logits and loss",
+    "backward gradients",
+    "gradient clipping",
+    "optimizer state reads and writes",
+    "parameter updates",
+    "evaluation predictions and accuracy",
+    "source and relation roles",
+    "occurrence identity",
+    "reads_from",
+    "GeneratedOrigin",
+    "program_order",
+    "realizes_fact"
+  ],
+  "semantic_binding_profiles": [
+    "dataset inputs plus actual selection order to batch inputs",
+    "dataset targets plus actual selection order to batch targets",
+    "input tokens and parameter versions to logits",
+    "logits and target tokens to cross-entropy loss",
+    "all active raw gradients to global gradient norm",
+    "raw gradient, global norm and clipping configuration to each clipped gradient",
+    "outcome-specific AdamW dependencies to each parameter or optimizer-state result",
+    "exact evaluation inputs and parameter versions to evaluation logits",
+    "evaluation logits to predictions",
+    "predictions, exact targets and latest training loss to evaluation metrics"
+  ],
+  "version": "2.0.0"
+}

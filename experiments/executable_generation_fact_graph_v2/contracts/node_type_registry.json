@@ -1,0 +1,15 @@
+{
+  "node_types": {
+    "generation_fact": {
+      "authority": "ValidatedSnapshot.GenerationBinding",
+      "cardinality": "one node per binding instance",
+      "enters_gamma_projection": true
+    },
+    "generation_occurrence": {
+      "authority": "ValidatedSnapshot, synchronous receipt, or validated endpoint catalog",
+      "cardinality": "one node per concrete occurrence instance per run",
+      "enters_gamma_projection": false
+    }
+  },
+  "registry_id": "executable-generation-fact-graph-node-types-v2"
+}

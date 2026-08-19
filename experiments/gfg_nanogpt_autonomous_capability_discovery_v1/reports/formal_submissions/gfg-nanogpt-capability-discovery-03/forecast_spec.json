@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gfg-capability-forecast-v1",
+  "title": "CapabilityFormationMechanism forecast",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "will_transition",
+    "transition_step_low_200",
+    "transition_step_high_200",
+    "transition_step_low_500",
+    "transition_step_high_500",
+    "predicted_validation_curve",
+    "mechanism_state",
+    "post_formation_stability",
+    "predicted_instability_intervals"
+  ],
+  "properties": {
+    "will_transition": {"type": "boolean"},
+    "transition_step_low_200": {"type": ["integer", "null"], "minimum": 1, "maximum": 10000},
+    "transition_step_high_200": {"type": ["integer", "null"], "minimum": 1, "maximum": 10000},
+    "transition_step_low_500": {"type": ["integer", "null"], "minimum": 1, "maximum": 10000},
+    "transition_step_high_500": {"type": ["integer", "null"], "minimum": 1, "maximum": 10000},
+    "predicted_validation_curve": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["optimizer_step", "validation_accuracy"],
+        "properties": {
+          "optimizer_step": {"type": "integer", "minimum": 1, "maximum": 10000},
+          "validation_accuracy": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "mechanism_state": {
+      "type": "object",
+      "required": ["schema", "initial", "operative_fields", "trajectory"],
+      "properties": {
+        "schema": {"const": "gfg-capability-state-trajectory-v1"},
+        "initial": {"type": "object"},
+        "operative_fields": {"type": "array", "items": {"type": "string"}},
+        "trajectory": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "post_formation_stability": {
+      "enum": ["STABLE", "TRANSIENT_DEGRADATION_RECOVERY", "PERSISTENT_DEGRADATION", "UNDETERMINED"]
+    },
+    "predicted_instability_intervals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["step_low", "step_high"],
+        "properties": {
+          "step_low": {"type": "integer", "minimum": 1, "maximum": 10000},
+          "step_high": {"type": "integer", "minimum": 1, "maximum": 10000}
+        }
+      }
+    }
+  },
+  "interval_constraints": {
+    "transition_step_high_200_minus_low_max": 200,
+    "transition_step_high_500_minus_low_max": 500
+  }
+}

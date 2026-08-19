@@ -1,0 +1,38 @@
+{
+  "graph_profile_id": "executable-generation-fact-graph-profile-v1",
+  "graph_schema_version": "executable-generation-fact-graph-v1",
+  "allowed_relation_semantics": [
+    "directed",
+    "symmetric"
+  ],
+  "primitive_relation_types": [
+    "commits_version",
+    "conflicts_with",
+    "generated_origin_dependency",
+    "message_send_receive",
+    "program_order",
+    "reads_from",
+    "synchronizes_with"
+  ],
+  "derived_relation_types": [
+    "happens_before"
+  ],
+  "query_local_relation_types": [
+    "concurrent_with"
+  ],
+  "dag_relation_types": [
+    "commits_version",
+    "generated_origin_dependency",
+    "message_send_receive",
+    "program_order",
+    "reads_from",
+    "synchronizes_with"
+  ],
+  "symmetric_relation_types": [
+    "conflicts_with",
+    "concurrent_with"
+  ],
+  "global_transitive_closure_materialized": false,
+  "cross_run_edges_allowed": false,
+  "canonicalization": "RFC8785-compatible sorted compact JSON with repository Core numeric guards"
+}

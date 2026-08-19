@@ -1,0 +1,17 @@
+{
+  "profile_id": "ecma426-multistage-composition-v1",
+  "source_branch": "experiment/source-map-projection-v1",
+  "source_commit": "7dba987713da345453781e4b95130f1deb5f04d4",
+  "declared_input_scope": "Two-stage deterministic JavaScript generation with ordinary non-indexed Source Maps and explicit GeneratedOrigin prior-support bridges.",
+  "selected_facts": ["stage-1 mappings", "stage-2 mappings", "GeneratedOrigin bridges", "final-to-original composed mappings", "binding paths"],
+  "excluded_facts": ["indexed-map composition", "ambiguous bridges", "cyclic generation", "invented direct original-to-final bindings"],
+  "candidate_path": "stage-1 and stage-2 Core direct bindings -> GeneratedOrigin bridges -> compose_core_relations",
+  "reference_path": "native stage-1 and stage-2 maps -> independent official SourceMapConsumer composition",
+  "exact_comparison_fields": ["generated_file", "generated_line", "generated_column", "mapped", "original_source", "original_line", "original_column", "original_name"],
+  "multiplicity_semantics": "Every composed mapping has a two-binding path; derived paths are not GenerationBinding entities and receive no fabricated gb3_ identity.",
+  "canonicalization_rules": "Final-to-original records are ordered by final generated position and compared field-for-field.",
+  "output_orthogonality_rules": "Both stage outputs remain byte-identical across output-only, native, Core, and dual modes.",
+  "authority_rules": "Core composition follows only validated direct bindings and GeneratedOrigin prior_support_id bridges; native composition reads only the two native maps.",
+  "accepted_limitations": ["two deterministic stages", "five frozen mapping cases", "unique unambiguous bridge per mapping"],
+  "mandatory_status_conditions": ["5/5 mappings exact", "false_positive=0", "false_negative=0", "broken_bridge=0", "ambiguity=0", "cycle=0", "invented_transitive_mapping=0", "direct_original_to_final_binding=0", "GeneratedOrigin bridges=5", "output bytes unchanged"]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "gfg-temporal-credit-contract-freeze-v1",
+  "frozen_after_development_artifact": "external://gfg-temporal-credit-discovery-v1/development-v3/AGGREGATE_RESULT.json",
+  "experiment_contract_sha256": "507f078c231efc36ff02af587b2c94b373b8733c0a9cd64ee874934d936b1377",
+  "protocol_sha256": "b81c0dc2282e7d3dadb47b60fe9a15b538085497c59e361d6c691e3308b57a81",
+  "source_hashes": {
+    "__init__.py": "77ca4f0163bab2ed6d7c2a3fe8a0610f45f49301bcfc36d68312857fecbf5bd4",
+    "independent_checker.py": "b94e617781129e98fdea1352dd14159b3b2cadbc7a9b0951a3d3c487b8fc3861",
+    "runner.py": "ce03f9664f7f289257d0527b09c00e593f9d02892f63b281946e6b93aa8d6de3",
+    "runtime.py": "fd657870a73f1339430d20bd3bd951c567ac6094455cb7e8d654118f919174ae"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "graph_query_contract_id": "executable-generation-fact-graph-query-v1",
+  "formation_subgraph": {
+    "requires_validated_graph": true,
+    "preserve_node_identity": true,
+    "preserve_edge_identity": true,
+    "preserve_path_multiplicity": true,
+    "materialize_global_closure": false
+  },
+  "concurrent_with": {
+    "requires_capture_status": "CAPTURE_COMPLETE",
+    "requires_concurrency_scope": "CONTROLLED_CAPTURE_SCOPE_ONLY",
+    "result_kind": "query-local"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema": "gfg-capability-mechanism-spec-v1",
+  "version": "1.0.0",
+  "name": "rule-margin weight-decay/Adam relaxation-burst mechanism",
+  "scientific_authority": "CapabilityFormationMechanism in mechanism.py",
+  "prefix_only": true,
+  "future_gfg_reads": 0,
+  "run_identity_lookup": false,
+  "state_variables": {
+    "rule_logit": "Rule-level validation margin inferred from the latest prefix evaluation; it directly controls predicted validation accuracy.",
+    "stable_rule_logit": "Highest formed-capability margin in the prefix; it supplies the one-grid recovery target only when a prefix ends inside an observed transient degradation.",
+    "recovery_active_at_cut": "Whether a previously formed prefix currently lies below the formation threshold; it selects the operational recovery update on the next grid point.",
+    "memorization_strength": "Latest training accuracy; formation is impossible in the executable sustained-window test when this is below 0.99.",
+    "decay_progress": "Fractional progress since the last realized high-gradient relaxation burst; it directly controls the next burst time.",
+    "estimated_next_period": "Prefix-conditioned recurrence scale estimated from realized burst intervals, not an absolute timestamp.",
+    "positive_weight_decay": "The positive AdamW decay coefficient read from the prefix optimizer-configuration object; it controls the equilibrium relaxation period.",
+    "rule_logit_gain_per_burst": "Prefix-frozen structural increment applied to rule_logit for each predicted relaxation burst.",
+    "adam_recovery_active": "Forecast state indicating evaluation-grid resonance with a burst/recovery window; it directly lowers the validation forecast.",
+    "stability_buffer": "Post-formation recovery count compressed to [0,1]; it narrows the mature-state resonance window."
+  },
+  "diagnostic_state": [
+    "gradient_burst_peak_norms",
+    "learning_rate",
+    "observed_evaluations"
+  ],
+  "update_law": {
+    "burst_detection": "Merge nearby contiguous gradient_clip occurrences with total_norm >= 1.0 and retain the concrete peak optimizer step.",
+    "next_period": "Extrapolate recent realized inter-burst intervals, bound the result, and relax future intervals toward 380/sqrt(positive_weight_decay).",
+    "rule_margin": "rule_logit_next = rule_logit + 0.0004*elapsed_optimizer_steps + 1.75*new_burst_count.",
+    "validation_accuracy": "sigmoid(rule_logit_next), with an operational burst/recovery resonance reduction after formation.",
+    "transition": "Apply the frozen three-point train>=0.99 and validation>=0.9 contract after an earlier validation<=0.3 point.",
+    "stability": "Formation is retained, but close post-formation burst/evaluation resonance creates transient degradation followed by Adam/clipped-gradient recovery."
+  },
+  "constants": {
+    "evaluation_grid_optimizer_steps": 100,
+    "forecast_endpoint_optimizer_step": 10000,
+    "burst_total_norm_threshold": 1.0,
+    "reference_period_optimizer_steps": 380.0,
+    "rule_logit_gain_per_burst": 1.75,
+    "rule_logit_drift_per_optimizer_step": 0.0004
+  },
+  "prefix_replay_validation": {
+    "cuts": [800, 900, 1000, 1100, 1200, 1300, 1400],
+    "actual_transition_step": 1500,
+    "all_transition_interval_200_containment": true,
+    "all_transition_interval_500_containment": true,
+    "suffix_rmse_range": [0.1358, 0.1402],
+    "normalized_rmse_gate": 0.2
+  },
+  "stability_prefix_replay_validation": {
+    "cuts": [1500, 1700, 1800, 1900, 5400, 5500, 9500, 9600],
+    "includes": ["at formation", "after formation", "inside degradation", "after recovery"],
+    "suffix_rmse_range": [0.0187, 0.1659],
+    "all_suffix_rmse_below_gate": true
+  },
+  "transport_status": "Within-run prefix tests did not falsify the state law. The reference period and burst gain remain discovery-estimated parameters and are not claimed proven invariant until the sealed unseen continuous execution."
+}

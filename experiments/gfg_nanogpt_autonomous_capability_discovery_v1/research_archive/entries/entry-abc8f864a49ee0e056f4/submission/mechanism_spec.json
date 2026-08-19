@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "schema": "cyclic-composition-mechanism-spec-v1",
+  "name": "CyclicCompositionCircuitFormation",
+  "deterministic": true,
+  "scientific_claim": "Generalization is the expression of a token-map-invariant cyclic composition circuit: the partial training operation table fixes a one-dimensional cyclic coordinate, and training progressively makes held-out logits depend on output_coordinate minus the two operand coordinates.",
+  "primitive_inputs": [
+    "training batch input and target objects formed by exact batch occurrences",
+    "evaluation logits formed from the parameter version bound to each evaluation occurrence",
+    "evaluation-grid train and validation token-input objects"
+  ],
+  "derived_state": {
+    "cyclic_constraint_rank": "Rank of equations phi(left)+phi(right)-phi(target)=0 over the prime-size operand alphabet, using training facts only.",
+    "rule_logit_circulant_eta": "Fraction of logit variance explained by the cyclic residual phi(output)-phi(left)-phi(right).",
+    "predicted_table_associativity": "Associativity fraction of the complete current prediction table.",
+    "formation_progress": "Bounded composite of circulant logit organization, predicted-table associativity, and current validation expression."
+  },
+  "finite_states": [
+    "FITTING",
+    "MEMORIZATION",
+    "RULE_ASSEMBLY",
+    "RULE_EXPRESSED",
+    "RULE_LOCKED"
+  ],
+  "forecast_endpoint_optimizer_step": 10000,
+  "evaluation_grid_source": "Inferred from exact evaluation occurrence optimizer steps.",
+  "future_data_access": false,
+  "run_identity_lookup": false,
+  "wall_clock_lookup": false,
+  "trajectory_table_embedded": false
+}

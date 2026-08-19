@@ -1,0 +1,19 @@
+{
+  "authority": "Synchronous callbacks from the actual deterministic generator",
+  "candidate_import_count": 0,
+  "core_import_count": 0,
+  "normalization": "RDFLib Turtle parser followed by independent qualified PROV-O normalizer",
+  "profile_id": "w3c-prov-generation-profile-v1",
+  "qualified_provo_sha256": "beb6a6f6a3236af523f656314915276dc44aa884a2d53cf40f7e603f066124d1",
+  "record_count": 51,
+  "record_counts": {
+    "activity": 3,
+    "agent": 1,
+    "association": 3,
+    "derivation": 14,
+    "entity": 10,
+    "generation": 6,
+    "usage": 14
+  },
+  "status": "SUPPORTED"
+}

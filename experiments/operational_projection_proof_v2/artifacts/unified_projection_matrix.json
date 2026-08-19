@@ -1,0 +1,80 @@
+{
+  "matrix_id": "unified-operational-projection-proof-v2",
+  "rows": [
+    {
+      "candidate_input": "ValidatedSnapshot plus exact validation proof",
+      "composition_case_count": 0,
+      "core_specialization_count": 0,
+      "declared_scope": "fixed deterministic tuple-level profile",
+      "domain_mechanism": "Database which-lineage",
+      "exact_record_count": 112,
+      "false_negative": 0,
+      "false_positive": 0,
+      "limitations": [
+        "fixed deterministic fixtures",
+        "declared relational operators",
+        "tuple-level which-lineage"
+      ],
+      "native_or_reference_implementation": "hand-authored frozen independent Oracle",
+      "output_orthogonality": "SUPPORTED",
+      "p1": "SUPPORTED",
+      "p2": "SUPPORTED",
+      "p3": "NOT_APPLICABLE",
+      "p3_subtype": "domain root/wider projection",
+      "second_authority_store_count": 0,
+      "strict_counterexample_count": 2
+    },
+    {
+      "candidate_input": "ValidatedSnapshot plus exact validation proof",
+      "composition_case_count": 2,
+      "core_specialization_count": 0,
+      "declared_scope": "deterministic in-process occurrence/execution/causal shadow",
+      "domain_mechanism": "OpenTelemetry trace",
+      "exact_record_count": {
+        "formal_q6_spans": 61368,
+        "small_spans": 37
+      },
+      "false_negative": 0,
+      "false_positive": 0,
+      "limitations": [
+        "deterministic in-process execution",
+        "selected occurrence attributes/events",
+        "no distributed causality or sampling"
+      ],
+      "native_or_reference_implementation": "official OpenTelemetry Python SDK",
+      "output_orthogonality": "PASS",
+      "p1": "SUPPORTED",
+      "p2": "SUPPORTED",
+      "p3": "SUPPORTED",
+      "p3_subtype": "cross-domain hierarchical projection",
+      "second_authority_store_count": 0,
+      "strict_counterexample_count": 2
+    },
+    {
+      "candidate_input": "ValidatedSnapshot only",
+      "composition_case_count": 5,
+      "core_specialization_count": 0,
+      "declared_scope": "ordinary non-indexed JavaScript profile",
+      "domain_mechanism": "ECMA-426 Source Map",
+      "exact_record_count": 685,
+      "false_negative": 0,
+      "false_positive": 0,
+      "limitations": [
+        "ordinary non-indexed version-3 maps",
+        "JavaScript UTF-16 coordinates",
+        "indexed maps and non-JavaScript surfaces excluded"
+      ],
+      "native_or_reference_implementation": "official source-map 0.8.0 generator and consumer",
+      "output_orthogonality": "PASS",
+      "p1": "SUPPORTED",
+      "p2": "SUPPORTED",
+      "p3": "SUPPORTED",
+      "p3_subtype": "multistage generation composition",
+      "second_authority_store_count": 0,
+      "standard_surface_status": "PARTIAL",
+      "strict_counterexample_count": 3
+    }
+  ],
+  "source_map_standard_surface_status": "PARTIAL",
+  "status": "SUPPORTED"
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "nanogpt-csrg-current-runtime-capture-contract-v2",
+  "contract_status": "FROZEN_BEFORE_V2_PROBE_GENERATION",
+  "scientific_status": "ANALYSIS_STAGE_MEASUREMENT",
+  "source_scope": {
+    "entry_count": 13,
+    "checkpoint_steps": "100 through 10000 inclusive, stride 100",
+    "checkpoints_per_entry": 100,
+    "source_state": "exact content-addressed historical parameter, optimizer, gradient, task-input and validation-input objects",
+    "source_model_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291"
+  },
+  "execution_scope": {
+    "components": ["h0.attn", "h0.mlp", "h1.attn", "h1.mlp"],
+    "single_gates_per_checkpoint": 4,
+    "pair_gates_per_checkpoint": 6,
+    "gate_value": 0.0,
+    "model_mode": "eval",
+    "dropout": 0.0,
+    "gate_site": "component output after its output projection and before residual addition",
+    "persistent_state_mutation": "forbidden"
+  },
+  "baseline_gate": {
+    "current_runtime_repetitions": 2,
+    "required_current_runtime_equality": "raw float32 decision-logit bytes, predictions and capability must be exactly equal between repetitions",
+    "historical_comparison": "record historical raw-logit hash equality, prediction equality, capability equality and maximum absolute logit error",
+    "historical_raw_logit_equality_required": false,
+    "reason": "the historical experiment did not preserve its CUDA driver/kernel environment; v2 is a new real analysis execution from exact historical checkpoint states and does not claim to reproduce the unpreserved historical kernel",
+    "mixing_rule": "all baseline, gated and derived v2 quantities at a checkpoint must come from the same current runtime; historical logits are audit-only and never enter a support calculation"
+  },
+  "target_mapping": {
+    "source": "derived from exact training input/target facts as linear constraints over the prime field F_23",
+    "admission": "rank 22, nullity 1, observed training targets exactly reproduced, and the completed token operation table invariant under every nonzero field scalar",
+    "native_cross_check": "when an explicit historical validation-target object exists, it must equal the derived target tensor element for element",
+    "provenance": "the derivation is a new analysis occurrence with GeneratedOrigin links to the exact training inputs, training targets and validation inputs; it is not relabelled as a native training fact"
+  },
+  "margin": {
+    "per_example": "true-target decision logit minus maximum non-target decision logit, preserving validation row order",
+    "target_group": "linear-interpolation 0.10 quantile of per-example margins for each of the 23 derived target-token groups",
+    "complete_payloads": "all decision logits, predictions, per-example margins and group memberships are stored content-addressed",
+    "summaries_are_projections": true
+  },
+  "derived_definitions": {
+    "necessity": "N_jkt=max(0,m_kt-m_minus_j_kt)",
+    "pair_backup": "R_ijkt=max(0,(m_kt-m_minus_ij_kt)-N_ikt-N_jkt)",
+    "single_failure_slack": "S_kt=min_j(m_minus_j_kt)",
+    "double_failure_slack": "P_kt=min_i_less_j(m_minus_ij_kt)",
+    "effective_support": "Q_kt=1/sum_j(w_jkt^2), w_jkt=N_jkt/sum_j(N_jkt); zero total necessity produces ExplicitDisposition",
+    "support_turnover": "U_kt=RMS_j(N_jkt-N_jk_previous_materialized_checkpoint); the first checkpoint produces ExplicitDisposition",
+    "component_optimizer_load": "for parameter version t, derive RMS Adam first moment, square-root mean Adam second moment and parameter RMS from exact source objects; derive clipped-gradient RMS only when the exact payload from producing training-loop index t-1 is materialized, otherwise preserve its exact object identities and form ExplicitDisposition rather than borrowing the differently indexed materialized gradient at t"
+  },
+  "generation_fact_model": {
+    "atomic_form": "f=(u,tau,omega_bar,z;rho)",
+    "new_coordinates": false,
+    "required_graph_relations": ["realizes_fact", "reads_from", "generated_origin_dependency", "program_order"],
+    "identity_rule": "equal numeric values do not collapse objects, occurrences or facts",
+    "zero_effect_rule": "a real byte-identical gated output retains its distinct occurrence and records ZERO_EFFECT_OBSERVED"
+  },
+  "future_leakage": {
+    "suffix_facts_in_measurement": "forbidden",
+    "phase_labels_in_measurement": "forbidden",
+    "optimizer_step": "provenance and ordering only",
+    "new_stability_model_fit": "outside this capture"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "branch_identity_required": [
+    "checkpoint",
+    "optimizer state",
+    "RNG state",
+    "data order",
+    "model code",
+    "task",
+    "training endpoint",
+    "evaluation grid",
+    "capture environment"
+  ],
+  "direction_must_match": true,
+  "minimum_effective_shift_optimizer_steps": 600,
+  "only_allowed_difference": "sealed AI intervention",
+  "predicted_shift_interval_must_contain_actual": true,
+  "predicted_stability_effect_must_match_actual": true,
+  "stability_effect_mean_deficit_epsilon": 0.0001,
+  "version": "2.0.0"
+}

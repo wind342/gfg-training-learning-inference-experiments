@@ -1,0 +1,66 @@
+{
+  "candidate_authority": "ValidatedSnapshot plus matching SnapshotValidation, this frozen profile, this frozen crosswalk, and the structural canonicalizer",
+  "crosswalk_id": "core-to-pytorch-autograd-crosswalk-v1",
+  "declarations": [
+    {
+      "core_occurrence_type": "tracked_add",
+      "native_node_name": "AddBackward0",
+      "ordered_input_slots": "forward argument order",
+      "output_nr": 0
+    },
+    {
+      "core_occurrence_type": "tracked_matmul",
+      "native_node_name": "MmBackward0",
+      "ordered_input_slots": "forward argument order",
+      "output_nr": 0
+    },
+    {
+      "core_occurrence_type": "tracked_mean",
+      "native_node_name": "MeanBackward0",
+      "ordered_input_slots": "single tensor argument",
+      "output_nr": 0
+    },
+    {
+      "core_occurrence_type": "tracked_mul",
+      "native_node_name": "MulBackward0",
+      "ordered_input_slots": "forward argument order, including a None edge for a non-grad tensor input",
+      "output_nr": 0
+    },
+    {
+      "core_occurrence_type": "tracked_pow",
+      "native_node_name": "PowBackward0",
+      "ordered_input_slots": "tensor base only; scalar exponent is operation payload",
+      "output_nr": 0
+    },
+    {
+      "core_occurrence_type": "tracked_relu",
+      "native_node_name": "ReluBackward0",
+      "ordered_input_slots": "single tensor argument",
+      "output_nr": 0
+    },
+    {
+      "core_occurrence_type": "tracked_sum",
+      "native_node_name": "SumBackward0",
+      "ordered_input_slots": "single tensor argument",
+      "output_nr": 0
+    }
+  ],
+  "leaf_declaration": {
+    "condition": "requires_grad leaf reachable from the selected loss",
+    "native_node_name": "struct torch::autograd::AccumulateGrad",
+    "ordered_input_slots": "none"
+  },
+  "prohibited_candidate_inputs": [
+    "Python object addresses",
+    "execution receipts",
+    "expected graphs",
+    "loss.grad_fn",
+    "native Autograd graph artifacts",
+    "native graph node IDs",
+    "next_functions",
+    "profiler output",
+    "reference results"
+  ],
+  "torch_build_commit": "cf30153c4c131c8164ee7798e5022d810682e2cb",
+  "torch_version": "2.13.0+cpu"
+}

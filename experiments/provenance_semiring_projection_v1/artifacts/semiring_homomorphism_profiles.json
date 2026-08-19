@@ -1,0 +1,87 @@
+{
+  "all_algebraic_targets_exercised": true,
+  "all_task_projections_exercised": true,
+  "direct_domain_invocation_counts": {
+    "bag_naturals": 13,
+    "boolean": 13,
+    "flat_source_support_view": 13,
+    "positive_boolean_lineage": 13
+  },
+  "profile": {
+    "algebraic_targets": [
+      {
+        "addition": "natural addition",
+        "classification": "COMMUTATIVE_SEMIRING_TARGET",
+        "domain_id": "bag_naturals",
+        "multiplication": "natural multiplication",
+        "one": "1",
+        "target": "N",
+        "variable_image": "1",
+        "zero": "0"
+      },
+      {
+        "addition": "logical OR",
+        "classification": "COMMUTATIVE_SEMIRING_TARGET",
+        "domain_id": "boolean",
+        "multiplication": "logical AND",
+        "one": "true",
+        "target": "B",
+        "variable_image": "true",
+        "zero": "false"
+      },
+      {
+        "addition": "OR modulo Boolean-function equivalence",
+        "classification": "SEMIRING_QUOTIENT_OR_HOMOMORPHIC_IMAGE",
+        "domain_id": "positive_boolean_lineage",
+        "multiplication": "AND modulo Boolean-function equivalence",
+        "one": "true",
+        "target": "PosBool(X)",
+        "variable_image": "corresponding positive literal",
+        "zero": "false"
+      }
+    ],
+    "authority": {
+      "citation": "Green, Karvounarakis, and Tannen, Provenance Semirings, PODS 2007",
+      "commutative_semiring_surface": "Definition 3.2 and Proposition 3.4, proceedings page 33",
+      "doi": "10.1145/1265530.1265535",
+      "flat_powerset_surface": "Section 4, proceedings page 34",
+      "frozen_author_pdf_sha256": "74e092702db58518afeaf909e1d3380848165b2cb9ae75dc6822b04f66aa5be0",
+      "homomorphism_surface": "Proposition 3.5, Proposition 4.2, and Theorem 4.3, proceedings page 34"
+    },
+    "direct_evaluation_requirement": "Every evaluated algebraic target and task projection is executed directly from base annotations and the frozen RA AST without first computing N[X].",
+    "not_evaluated": [
+      {
+        "classification": "NOT_EVALUATED",
+        "reason": "No formal definition in the frozen PODS 2007 authority",
+        "target": "Which(X)"
+      },
+      {
+        "classification": "NOT_EVALUATED",
+        "reason": "No formal definition in the frozen PODS 2007 authority",
+        "target": "Trio(X)"
+      },
+      {
+        "classification": "NOT_EVALUATED",
+        "reason": "The current representation does not preserve alternative witness sets",
+        "target": "witness-basis Why provenance"
+      }
+    ],
+    "profile_id": "formal-projection-family-v2",
+    "source_semiring": "N[X]",
+    "task_projections": [
+      {
+        "addition": "set union",
+        "classification": "PARTIAL_NONZERO_SUPPORT_VIEW",
+        "complete_semiring_homomorphism": false,
+        "domain_id": "flat_source_support_view",
+        "former_domain_id": "why_powerset",
+        "multiplication": "set union",
+        "multiplicative_zero_annihilation": false,
+        "one": "empty set",
+        "target": "Vars(N[X]) on frozen nonzero output support",
+        "zero": "empty set"
+      }
+    ]
+  },
+  "schema_version": "evaluated-formal-projection-profiles-v2"
+}

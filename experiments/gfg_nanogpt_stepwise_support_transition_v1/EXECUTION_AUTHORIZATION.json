@@ -1,0 +1,11 @@
+{
+  "schema": "nanogpt-one-step-405-execution-authorization-revocation-v1",
+  "contract_id": "NANOGPT-ONE-STEP-TRANSITION-AND-405-LONG-HORIZON-CHALLENGE-v2-draft",
+  "authorized_at": "2026-08-05T00:03:46.1018261+08:00",
+  "authorization_source": "user message: 行动吧",
+  "revoked_at": "2026-08-05T00:13:43.4244976+08:00",
+  "revocation_source": "user instruction to pause and revise the contract",
+  "execution_authorization": false,
+  "scope": "No training, fitting, GPU execution, persistent-AI stage, new GFG construction, or new experiment is authorized under the V2 draft.",
+  "status": "REVOKED_AWAITING_USER_CONFIRMATION"
+}

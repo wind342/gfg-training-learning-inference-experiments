@@ -1,0 +1,27 @@
+{
+  "schema": "nanogpt-component-registry-v1",
+  "registry_id": "CSRG-4C-v1",
+  "status": "FROZEN_BEFORE_STEPWISE_EXECUTION",
+  "components": [
+    {
+      "component_id": "h0.attn",
+      "module_path": "transformer.h.0.attn",
+      "parameter_prefix": "transformer.h.0.attn."
+    },
+    {
+      "component_id": "h0.mlp",
+      "module_path": "transformer.h.0.mlp",
+      "parameter_prefix": "transformer.h.0.mlp."
+    },
+    {
+      "component_id": "h1.attn",
+      "module_path": "transformer.h.1.attn",
+      "parameter_prefix": "transformer.h.1.attn."
+    },
+    {
+      "component_id": "h1.mlp",
+      "module_path": "transformer.h.1.mlp",
+      "parameter_prefix": "transformer.h.1.mlp."
+    }
+  ]
+}

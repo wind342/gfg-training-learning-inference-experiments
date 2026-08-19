@@ -1,0 +1,35 @@
+{
+  "authoritative_core_fact_store": [
+    "environment_records",
+    "evidence_links",
+    "evidence_records",
+    "explicit_dispositions",
+    "generated_origins",
+    "generation_bindings",
+    "generation_occurrences",
+    "generator_manifests",
+    "generator_operation_results",
+    "hierarchy_records",
+    "migration_records",
+    "perceptual_support_records",
+    "predicate_profiles",
+    "source_information_records",
+    "support_space_records"
+  ],
+  "candidate_answer_input_from_reference_count": 0,
+  "candidate_fallback_relation_store_count": 0,
+  "ephemeral_projection_or_view_objects": [
+    "immutable DatabaseDomainProjection",
+    "canonical projected trace",
+    "projected Source Map document",
+    "report comparison records"
+  ],
+  "forbidden_persisted_secondary_relation_stores": [],
+  "independent_native_or_reference_comparison_artifacts": [
+    "hand-authored database Oracle",
+    "official OpenTelemetry SDK finished spans",
+    "official source-map generated maps and consumer query answers"
+  ],
+  "secondary_authority_store_count": 0,
+  "status": "PASS"
+}

@@ -1,0 +1,1 @@
+{"file":"bundled-intermediate.js","mappings":"AAAA;AACA;AACA;ACFA;AACA","names":[],"sourceRoot":"../src","sources":["source-a.js","source-b.js"],"sourcesContent":["export function add(left, right) {\n  return left + right;\n}\n","export const label = \"总计🔥\";\nconsole.log(label, add(2, 3));\n"],"version":3}

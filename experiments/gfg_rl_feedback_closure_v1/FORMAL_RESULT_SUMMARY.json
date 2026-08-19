@@ -1,0 +1,64 @@
+{
+  "schema": "gfg-rl-feedback-closure-formal-summary-v1",
+  "status": "PASS",
+  "scientific_scope": "executed delayed two-decision GRU-policy AdamW system",
+  "formal_seed_count": 12,
+  "updates_per_condition_per_seed": 300,
+  "episodes_per_update": 128,
+  "condition_results": {
+    "A": {
+      "mean_final_stage_1_accuracy": 1.0,
+      "mean_final_stage_2_accuracy": 1.0,
+      "mean_final_chain_accuracy": 1.0,
+      "mean_old_rule_chain_accuracy": 0.0,
+      "mean_auc": 0.8516051912568305,
+      "threshold_episodes_mean": 10880.0,
+      "threshold_episodes_range": [6400, 14720]
+    },
+    "B": {
+      "mean_final_stage_1_accuracy": 0.5625,
+      "mean_final_stage_2_accuracy": 0.59375,
+      "mean_final_chain_accuracy": 0.34375,
+      "mean_old_rule_chain_accuracy": 0.1875,
+      "mean_auc": 0.19544057377049182,
+      "seeds_reaching_threshold": 0
+    },
+    "C": {
+      "mean_final_stage_1_accuracy": 0.4791666666666667,
+      "mean_final_stage_2_accuracy": 0.4791666666666667,
+      "mean_final_chain_accuracy": 0.24479166666666666,
+      "mean_old_rule_chain_accuracy": 0.2864583333333333,
+      "mean_auc": 0.1837431693989071,
+      "seeds_reaching_threshold": 0
+    }
+  },
+  "paired_results": {
+    "A_auc_minus_B_mean": 0.6561646174863388,
+    "A_auc_minus_B_95pct_t_interval": [0.6396805389208701, 0.6726486960518075],
+    "A_auc_wins_over_B": "12/12",
+    "A_auc_minus_C_mean": 0.6678620218579235,
+    "A_auc_minus_C_95pct_t_interval": [0.6454655178498818, 0.6902585258659653],
+    "A_auc_wins_over_C": "12/12"
+  },
+  "one_step_causal_forks": {
+    "count": 48,
+    "same_receiving_state_action_ledger_and_physical_consequence": "48/48",
+    "A_vs_B_binding_identity_changed": "48/48",
+    "A_vs_C_credit_identity_changed": "48/48",
+    "A_vs_B_actual_update_changed": "48/48",
+    "A_vs_C_actual_update_changed": "48/48",
+    "A_vs_B_post_update_logits_changed": "48/48",
+    "A_vs_C_post_update_logits_changed": "48/48"
+  },
+  "machine_evidence": {
+    "validated_core_v3_snapshots": 12,
+    "validated_gfgs": 12,
+    "atomic_generation_facts": 75600,
+    "gfg_nodes": 270000,
+    "gfg_edges": 334764,
+    "independent_check": "PASS"
+  },
+  "claim": "In the executed system, correct environment-consequence binding and temporal credit are causal components of the feedback closure that re-forms future policy.",
+  "non_claim": "This experiment does not establish a unique reinforcement-learning algorithm or universal coverage of all reinforcement-learning systems."
+}
+

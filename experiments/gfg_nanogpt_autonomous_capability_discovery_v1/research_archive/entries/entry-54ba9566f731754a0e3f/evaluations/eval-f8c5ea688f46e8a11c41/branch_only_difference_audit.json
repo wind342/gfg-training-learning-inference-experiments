@@ -1,0 +1,1 @@
+{"audit_sha256":"1eeae999cc59475e24d8337c9297c5010b802d44eb0e1dfbaaaa6ebf48debaa9","gates":{"intervention_executed":true,"parent_receipt_matches":true,"same_exact_initial_checkpoint":true,"same_start_step":true,"same_stop_step":true,"same_task_commitment":true,"same_training_config":true},"schema":"baseline-intervention-only-difference-audit-v1","status":"PASS"}

@@ -1,0 +1,102 @@
+{
+  "blocking_reasons": [],
+  "criteria": [
+    {
+      "criterion": "original W3C PROV P1 remains supported",
+      "passed": true
+    },
+    {
+      "criterion": "original three strict counterexamples remain supported",
+      "passed": true
+    },
+    {
+      "criterion": "actual transform-context counterexample supported",
+      "passed": true
+    },
+    {
+      "criterion": "all four strict counterexamples valid",
+      "passed": true
+    },
+    {
+      "criterion": "second-authority rule scan passes",
+      "passed": true
+    },
+    {
+      "criterion": "runtime authority dependency trace passes",
+      "passed": true
+    },
+    {
+      "criterion": "unclassified artifact count zero",
+      "passed": true
+    },
+    {
+      "criterion": "persisted secondary relation store count zero",
+      "passed": true
+    },
+    {
+      "criterion": "candidate native-reference reads zero",
+      "passed": true
+    },
+    {
+      "criterion": "candidate old-artifact reads zero",
+      "passed": true
+    },
+    {
+      "criterion": "hidden crosswalk reads zero",
+      "passed": true
+    },
+    {
+      "criterion": "Candidate and native independent processes pass",
+      "passed": true
+    },
+    {
+      "criterion": "shared mapping helper count zero",
+      "passed": true
+    },
+    {
+      "criterion": "native Core reads zero",
+      "passed": true
+    },
+    {
+      "criterion": "Candidate native module reads zero",
+      "passed": true
+    },
+    {
+      "criterion": "normalized Candidate and native records exactly equal",
+      "passed": true
+    },
+    {
+      "criterion": "all new negative controls fail closed",
+      "passed": true
+    },
+    {
+      "criterion": "output orthogonality passes",
+      "passed": true
+    },
+    {
+      "criterion": "all applicable W3C tests pass",
+      "passed": true
+    },
+    {
+      "criterion": "Core changes zero",
+      "passed": true
+    },
+    {
+      "criterion": "two complete science runs consistent",
+      "passed": true
+    },
+    {
+      "criterion": "two complete test runs consistent",
+      "passed": true
+    },
+    {
+      "criterion": "blocking_reasons empty",
+      "passed": true
+    }
+  ],
+  "experiment": "w3c_prov_projection_v1_evidence_hardening",
+  "final_status": "W3C_PROV_PROJECTION_V1_EVIDENCE_HARDENING_SUPPORTED",
+  "mandatory_criterion_count": 23,
+  "passed_criterion_count": 23,
+  "profile_id": "w3c-prov-generation-profile-v1"
+}

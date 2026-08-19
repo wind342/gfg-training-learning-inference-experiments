@@ -1,0 +1,70 @@
+{
+  "deterministic": true,
+  "forbidden_lookup_keys": [
+    "run_id",
+    "absolute_date",
+    "wall_clock_time"
+  ],
+  "unified_mechanism": "CapabilityDynamicsMechanism",
+  "formation_submodel": "FormationDynamics.initialize(gfg_prefix) -> formation_state; FormationDynamics.step(state, context) -> next_state; FormationDynamics.output(state) -> capability in [0,1]",
+  "stability_submodel": "StabilityDynamics.initialize(gfg_prefix) -> stability_state; StabilityDynamics.step(state, context) -> next_state; StabilityDynamics.output(state) -> nonnegative degradation in [0,1]",
+  "initialize": "CapabilityDynamicsMechanism.initialize(gfg_prefix) -> finite canonical JSON object containing formation_state and stability_state",
+  "forecast": "CapabilityDynamicsMechanism.forecast(state) -> forecast object",
+  "intervention_initialize": "TrainingIntervention.initialize(mechanism_state, forecast) -> finite canonical JSON state",
+  "intervention_apply": "TrainingIntervention.apply(stage, context, state) -> finite canonical JSON state or null",
+  "forecast_required_fields": [
+    "will_transition",
+    "transition_step_low_200",
+    "transition_step_high_200",
+    "transition_step_low_500",
+    "transition_step_high_500",
+    "predicted_formation_curve",
+    "predicted_stability_degradation_curve",
+    "predicted_validation_curve",
+    "mechanism_state",
+    "post_formation_stability",
+    "predicted_instability_intervals"
+  ],
+  "component_curve_row": {
+    "predicted_formation_curve": {
+      "capability": "number in [0,1]",
+      "step": "integer optimizer step"
+    },
+    "predicted_stability_degradation_curve": {
+      "degradation": "number in [0,1]",
+      "step": "integer optimizer step"
+    }
+  },
+  "curve_composition": "For every forecast step, predicted_validation_curve.accuracy = clamp(predicted_formation_curve.capability - predicted_stability_degradation_curve.degradation, 0, 1).",
+  "post_formation_attribution": "After capability formation, a predicted validation deficit below 0.90 must be produced by a positive StabilityDynamics degradation output; FormationDynamics must not hide the deficit by lowering its base capability below 0.90.",
+  "mechanism_state_required_fields": [
+    "formation_state",
+    "stability_state",
+    "state_trajectory"
+  ],
+  "state_trajectory_row_required_fields": [
+    "step",
+    "formation_state",
+    "stability_state"
+  ],
+  "post_formation_stability_values": [
+    "STABLE",
+    "TRANSIENT_DEGRADATION_RECOVERY",
+    "PERSISTENT_DEGRADATION",
+    "UNDETERMINED"
+  ],
+  "network_forbidden": true,
+  "required_files": [
+    "mechanism.py",
+    "mechanism_spec.json",
+    "state_schema.json",
+    "forecast_spec.json",
+    "intervention.py",
+    "intervention_spec.json",
+    "discovery_report.md",
+    "query_log.jsonl"
+  ],
+  "state_dimension_limit": null,
+  "subprocess_forbidden": true,
+  "version": "2.0.0"
+}

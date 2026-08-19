@@ -1,0 +1,86 @@
+{
+  "controls": [
+    {
+      "actual_reason_code": "FALSE_POSITIVE_RECORD",
+      "control_id": "candidate_extra_relation",
+      "expected_reason_code": "FALSE_POSITIVE_RECORD",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "FALSE_NEGATIVE_RECORD",
+      "control_id": "candidate_missing_relation",
+      "expected_reason_code": "FALSE_NEGATIVE_RECORD",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "FIELD_MISMATCH",
+      "control_id": "field_value_mismatch",
+      "expected_reason_code": "FIELD_MISMATCH",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "MULTIPLICITY_MISMATCH",
+      "control_id": "multiplicity_mismatch",
+      "expected_reason_code": "MULTIPLICITY_MISMATCH",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "DUPLICATE_SEMANTIC_KEY",
+      "control_id": "duplicate_dictionary_overwrite",
+      "expected_reason_code": "DUPLICATE_SEMANTIC_KEY",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "ORACLE_LEAKAGE",
+      "control_id": "candidate_reads_oracle",
+      "expected_reason_code": "ORACLE_LEAKAGE",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "NATIVE_DOMAIN_RESULT_LEAKAGE",
+      "control_id": "candidate_reads_native_domain_file",
+      "expected_reason_code": "NATIVE_DOMAIN_RESULT_LEAKAGE",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "SECOND_AUTHORITY_STORE",
+      "control_id": "second_authority_table",
+      "expected_reason_code": "SECOND_AUTHORITY_STORE",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "CONTROL_PLANE_OUTPUT_CONTAMINATION",
+      "control_id": "control_plane_output_field",
+      "expected_reason_code": "CONTROL_PLANE_OUTPUT_CONTAMINATION",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "HIERARCHICAL_MISMATCH",
+      "control_id": "direct_hierarchical_mismatch",
+      "expected_reason_code": "HIERARCHICAL_MISMATCH",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "PROJECTION_EQUALITY_NOT_COMPLETE_EQUALITY",
+      "control_id": "projection_equality_implies_complete_equality",
+      "expected_reason_code": "PROJECTION_EQUALITY_NOT_COMPLETE_EQUALITY",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "UNSUPPORTED_STATUS_ESCALATION",
+      "control_id": "partial_promoted_to_supported",
+      "expected_reason_code": "UNSUPPORTED_STATUS_ESCALATION",
+      "passed": true
+    },
+    {
+      "actual_reason_code": "HIERARCHY_CYCLE",
+      "control_id": "hierarchy_cycle",
+      "expected_reason_code": "HIERARCHY_CYCLE",
+      "passed": true
+    }
+  ],
+  "failed_count": 0,
+  "negative_control_count": 13,
+  "passed_count": 13,
+  "status": "SUPPORTED"
+}

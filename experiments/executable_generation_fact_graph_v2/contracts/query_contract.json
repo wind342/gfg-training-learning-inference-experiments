@@ -1,0 +1,15 @@
+{
+  "capture_partial_forbidden_queries": [
+    "concurrent_with"
+  ],
+  "formation_subgraph": {
+    "materialize_global_closure": false,
+    "preserve_edge_identity": true,
+    "preserve_node_identity": true,
+    "preserve_path_multiplicity": true,
+    "requires_validated_graph": true
+  },
+  "query_contract_id": "executable-generation-fact-graph-query-v2.1",
+  "reachability_semantics": "nodes reachable under an explicit relation-type policy; not a domain compensation decision",
+  "shortest_path_semantics": "minimum admitted edge count under the supplied relation policy"
+}

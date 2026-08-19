@@ -1,0 +1,64 @@
+{
+  "schema": "capability-formation-mechanism-spec-v1",
+  "version": "1.0.0",
+  "entrypoint": "mechanism.CapabilityFormationMechanism",
+  "scientific_authority": "the deterministic executable state and update law in mechanism.py",
+  "mechanism_name": "final-norm-gain coupled to clipped-Adam recovery oscillator",
+  "initialization": {
+    "prefix_only": true,
+    "required_gfg_inputs": [
+      "capability_evaluation occurrences through the cut",
+      "materialized transformer.ln_f.weight parameter versions through the cut",
+      "gradient_clip occurrence total_norm payloads through the cut"
+    ],
+    "forbidden_inputs": [
+      "future GFG facts",
+      "run identity",
+      "date",
+      "wall clock",
+      "absolute evidence path"
+    ]
+  },
+  "state_variables": {
+    "gain_l2": "L2 norm of the exact current final-layer-normalization gain tensor; formation coordinate",
+    "gain_rate_l2_per_step": "prefix-conditioned current gain velocity",
+    "last_burst_step": "start of the latest observed clipped-gradient relaxation burst",
+    "last_burst_period": "latest observed interval between burst starts",
+    "recovery_load": "current post-burst recovery burden",
+    "resonance_used": "whether a prolonged high-gain recovery episode was already observed",
+    "observed_transition_step": "exact prefix transition, or null when formation remains in the future"
+  },
+  "update_law": {
+    "gain": "g(d)=g_cut+0.0043*d+(r_cut-0.0043)*2000*(1-exp(-d/2000)); r_cut blends the prefix slope with 0.0043+0.0034*exp(-max(0,g_cut-14.4)/12)",
+    "rule_strength": "sigmoid(4.5*(g/sqrt(gain_dimension)-2.11))",
+    "oscillator_period": "p_next=0.2*p_last+0.8*(270+17*gain_rms_at_burst)",
+    "normal_recovery": "amplitude*exp(-burst_age/35), with a 70-step support",
+    "high_gain_resonance": "the first burst at gain_rms>=6.995 has a 300-step recovery and a minimum 600-step recharge",
+    "validation_accuracy": "clip(rule_strength-oscillator_recovery_load,0,1)"
+  },
+  "discovery_estimated_constants": {
+    "structural_gain_rate_l2_per_step": "0.0043+0.0034*exp(-max(0,gain_l2-14.4)/12)",
+    "gain_rate_floor_l2_per_step": 0.0043,
+    "gain_rate_relaxation_steps": 2000,
+    "rule_sigmoid_center_gain_rms": 2.11,
+    "rule_sigmoid_slope": 4.5,
+    "formation_gain_rms": 2.6,
+    "resonance_gain_rms": 6.995
+  },
+  "prefix_conditioning": {
+    "gain_rate": "25 percent robust median prefix rate plus 75 percent state-dependent structural rate, bounded to reject one-burst outliers",
+    "oscillator_phase": "latest burst start and latest observed burst interval",
+    "gain_scale": "exact prefix tensor norm and its element count",
+    "capability_status": "exact prefix evaluations under capability_transition.json"
+  },
+  "operational_use_audit": {
+    "gain_l2": "changes gain_at, rule_strength, transition intervals, curve, and resonance timing",
+    "gain_rate_l2_per_step": "changes every future gain and therefore transition and curve",
+    "last_burst_step": "changes projected pulse phase and instability timing",
+    "last_burst_period": "changes the next pulse and all subsequent pulse times",
+    "recovery_load": "records active prefix recovery; active last_burst_step executes its effect in the first forecast",
+    "resonance_used": "suppresses a second prolonged recovery episode",
+    "recent_evaluations": "diagnostic only and not claimed as operative state"
+  },
+  "transport_claim": "The functional form is structural; tensor scale, rate and oscillator phase are reinitialized from each supplied prefix. Discovery-estimated constants remain prospective hypotheses, not proven cross-run invariants."
+}

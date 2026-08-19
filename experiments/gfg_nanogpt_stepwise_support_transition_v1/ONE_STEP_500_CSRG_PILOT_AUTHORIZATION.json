@@ -1,0 +1,23 @@
+{
+  "schema": "nanogpt-one-step-500-csrg-pilot-authorization-v1",
+  "status": "AUTHORIZED",
+  "execution_authorization": true,
+  "authorization_source": "user message: 工作, after approval of the 500-record full-CSRG follow-up and same-session AI handoff",
+  "authorized_scope": [
+    "resolve the frozen 500 development records to their existing CSRG states and GFG provenance",
+    "read but not copy the referenced update tensors to compute compact current-action summaries",
+    "run a CPU-only leave-one-development-run-out pilot baseline",
+    "build and validate a read-only AI evidence package",
+    "resume the same persistent cumulative-scientist conversation after the evidence package passes validation"
+  ],
+  "explicitly_forbidden": [
+    "new nanoGPT training",
+    "GPU execution",
+    "new GFG construction",
+    "raw tensor payload duplication",
+    "use of entry-362ded584a953f360aec in fitting, scaling, threshold selection or AI development",
+    "calling development-pilot errors an unseen-run scientific result"
+  ],
+  "selected_development_record_count": 500,
+  "held_out_entry_id": "entry-362ded584a953f360aec"
+}

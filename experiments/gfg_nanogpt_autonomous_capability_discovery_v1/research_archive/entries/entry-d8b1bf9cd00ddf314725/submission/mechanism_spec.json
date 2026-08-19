@@ -1,0 +1,41 @@
+{
+  "schema": "capability-formation-mechanism-spec-v1",
+  "version": "1.0.0",
+  "entrypoint": "mechanism.CapabilityFormationMechanism",
+  "deterministic": true,
+  "mechanism_name": "gradient-burst-driven cyclic-equivariance formation",
+  "scientific_claim": "Separated clipped-gradient burst episodes act as discrete circuit rewrites. Under AdamW pressure, successive rewrites increase cyclic translation equivariance of the token embedding; the transition occurs when the equivariant representation and its readout consolidate after the forecast number of bursts.",
+  "prefix_inputs": [
+    "capability evaluations through the cut",
+    "gradient_clip occurrence payload total_norm",
+    "training task literal",
+    "materialized training batch inputs and targets",
+    "materialized transformer.wte.weight parameter versions at evaluation boundaries"
+  ],
+  "finite_states": [
+    "SYMMETRY_NUCLEATION",
+    "RULE_CIRCUIT_CONSOLIDATING",
+    "RULE_GENERALIZATION",
+    "REGULARIZATION_LIMIT_CYCLE"
+  ],
+  "order_parameter": {
+    "name": "cyclic_translation_equivariance",
+    "definition": "R-squared of the off-diagonal centered token-embedding Gram matrix explained by cyclic group displacement",
+    "task_coordinate_inference": "modular row reduction of observed atomic training equations only",
+    "serialized_task_answer_table": false
+  },
+  "burst_detector": {
+    "total_gradient_norm_threshold": 1.0,
+    "maximum_within_episode_gap_optimizer_steps": 20,
+    "initialization_transient_peak_step_max_exclusive": 100
+  },
+  "transition_forecast": {
+    "burst_spacing_method": "bounded median finite-difference extrapolation",
+    "evaluation_grid_optimizer_steps": 100,
+    "high_precision_interval_width_optimizer_steps": 200,
+    "primary_interval_width_optimizer_steps": 400
+  },
+  "forbidden_lookup_keys_used": [],
+  "network_used": false,
+  "filesystem_used_at_runtime": false
+}

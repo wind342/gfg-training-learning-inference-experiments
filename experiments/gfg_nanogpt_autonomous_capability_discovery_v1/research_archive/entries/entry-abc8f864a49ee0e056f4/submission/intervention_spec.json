@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "schema": "zero-lr-delay-intervention-spec-v1",
+  "name": "FiniteRuleAssemblyPause",
+  "direction": "DELAY",
+  "hooks": [
+    "after_backward",
+    "before_optimizer_step",
+    "after_optimizer_step"
+  ],
+  "allowed_mutations_used": [
+    "current gradients",
+    "optimizer group hyperparameters"
+  ],
+  "pause_optimizer_steps": 1200,
+  "transition_step_shift_low": 1000,
+  "transition_step_shift_high": 1800,
+  "mechanism_state_change": "Hold RULE_ASSEMBLY formation_progress constant for 1200 parameter-update opportunities, then restore the captured learning rates and resume assembly.",
+  "operation": "At each paused update, zero only current gradients and set each current optimizer-group learning rate to zero. Parameter Results therefore remain fixed while optimizer occurrences and declared data order continue. Restore the captured group learning rates after the finite pause.",
+  "forbidden_data_used": false,
+  "validation_state_mutated": false,
+  "task_or_evaluator_mutated": false,
+  "deterministic": true
+}

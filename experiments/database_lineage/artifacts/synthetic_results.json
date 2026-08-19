@@ -1,0 +1,158 @@
+{
+  "aggregate_contributor_checks": {
+    "customer_aggregates:00000000": {
+      "actual": [
+        "line_totals:00000000",
+        "line_totals:00000001",
+        "line_totals:00000002",
+        "line_totals:00000003",
+        "line_totals:00000004"
+      ],
+      "exact": true,
+      "expected": [
+        "line_totals:00000000",
+        "line_totals:00000001",
+        "line_totals:00000002",
+        "line_totals:00000003",
+        "line_totals:00000004"
+      ],
+      "false_negatives": [],
+      "false_positives": []
+    },
+    "customer_aggregates:00000001": {
+      "actual": [
+        "line_totals:00000005"
+      ],
+      "exact": true,
+      "expected": [
+        "line_totals:00000005"
+      ],
+      "false_negatives": [],
+      "false_positives": []
+    }
+  },
+  "backward_exact_matches": 1,
+  "backward_false_negatives": 0,
+  "backward_false_positives": 0,
+  "backward_total": 1,
+  "cases": 13,
+  "determinism": {
+    "bindings_equal": true,
+    "dispositions_equal": true,
+    "evidence_equal": true,
+    "lineage_equal": true,
+    "occurrences_equal": true,
+    "origins_equal": true,
+    "outputs_equal": true,
+    "semantic_snapshots_equal": true,
+    "supports_equal": true
+  },
+  "direct_relation_exact_matches": 1,
+  "direct_relation_total": 1,
+  "fabricated_pairings": 0,
+  "false_negative_relations": 0,
+  "false_positive_relations": 0,
+  "forward_exact_matches": 19,
+  "forward_false_negatives": 0,
+  "forward_false_positives": 0,
+  "forward_total": 19,
+  "missing_dispositions": 0,
+  "named_cases": [
+    "selection",
+    "projection",
+    "derived_column",
+    "one_to_many_join",
+    "many_to_many_join",
+    "duplicate_value_identity",
+    "group_by_sum",
+    "group_by_count",
+    "group_by_avg",
+    "sort",
+    "limit",
+    "explicit_exclusion",
+    "multistage_business_query"
+  ],
+  "output_exact_matches": 1,
+  "output_orthogonality": {
+    "csv_byte_identical": true,
+    "csv_sha256": "acd1070a778de25b0d8884336f5cca92b34eb5e5966a5332363bddec9c96ad69",
+    "forbidden_fields": [],
+    "json_byte_identical": true,
+    "json_sha256": "7e58890bbfeecdc3200a497be0e3ce19e961f2af130e7be9d672337a9d82cf7d",
+    "schema_equal": true
+  },
+  "output_total": 1,
+  "performance": {
+    "average_bindings_per_source": 2.8421052631578947,
+    "average_contributors_per_output": 9,
+    "contract_disabled_seconds": 0.0006973999552428722,
+    "contract_enabled_seconds": 0.10792110004695132,
+    "core_capture_overhead_seconds": 0.10722370009170845,
+    "entity_counts": {
+      "environment_records": 1,
+      "evidence_links": 54,
+      "evidence_records": 54,
+      "explicit_dispositions": 7,
+      "generated_origins": 28,
+      "generation_bindings": 54,
+      "generation_occurrences": 36,
+      "generator_manifests": 1,
+      "generator_operation_results": 8,
+      "hierarchy_records": 0,
+      "migration_records": 0,
+      "perceptual_support_records": 29,
+      "predicate_profiles": 1,
+      "source_information_records": 19,
+      "support_space_records": 1
+    },
+    "entity_storage_bytes": {
+      "environment_records": 490,
+      "evidence_links": 24624,
+      "evidence_records": 61700,
+      "explicit_dispositions": 4343,
+      "generated_origins": 21676,
+      "generation_bindings": 47486,
+      "generation_occurrences": 40808,
+      "generator_manifests": 1057,
+      "generator_operation_results": 18860,
+      "hierarchy_records": 0,
+      "legacy_occurrence_binding_projections": 19400,
+      "legacy_source_binding_projections": 11437,
+      "migration_records": 0,
+      "perceptual_support_records": 22350,
+      "predicate_profiles": 934,
+      "source_information_records": 13563,
+      "support_space_records": 1090
+    },
+    "max_contributors": 9,
+    "max_path_depth": 8,
+    "output_bytes": 144,
+    "peak_rss_bytes": 35287040,
+    "relation_evidence_storage_bytes": 133810,
+    "snapshot_build_seconds": 2.5487907000351697,
+    "snapshot_record_bytes": 5081,
+    "snapshot_validation_seconds": 2.0102081999648362
+  },
+  "status": "passed",
+  "unexpected_dispositions": 0,
+  "validation": {
+    "bindings_covered": true,
+    "dispositions_covered": true,
+    "evidence_authority_valid": true,
+    "evidence_covered": true,
+    "fabricated_pairing_count": 0,
+    "foreign_keys_valid": true,
+    "input_output_plan_environment_hashes_complete": true,
+    "occurrences_covered": true,
+    "one_primary_evidence_per_binding": true,
+    "one_successful_operation_per_binding": true,
+    "operation_closure_complete": true,
+    "origins_covered": true,
+    "orphan_entities": 0,
+    "related_entities_valid": true,
+    "relation_material_exact": true,
+    "silent_loss_count": 0,
+    "snapshot_validator_passed": true,
+    "supports_covered": true
+  }
+}

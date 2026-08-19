@@ -1,0 +1,10 @@
+{
+  "all_qnames_legal": true,
+  "contains_core_content_id_count": 0,
+  "duplicate_identifier_count": 0,
+  "identifier_count": 51,
+  "profile_external_counterexamples_keep_prov_ids": true,
+  "scheme_id": "prov-semantic-identifier-scheme-v1",
+  "status": "SUPPORTED",
+  "two_science_runs_identical": true
+}

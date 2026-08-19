@@ -1,0 +1,11 @@
+{
+  "binding_set_equal": null,
+  "complete_snapshot_equal": null,
+  "counterexample_count": 0,
+  "interpretation": "Projection equality does not imply complete generation-fact equality.",
+  "profile_id": "ecma426-source-map-v1",
+  "projection_equal": null,
+  "reason": "The Source Map experiment branch contains no domain implementation, frozen workload, official implementation result, tests, or machine artifacts on the selected base commit.",
+  "status": "NOT_EVALUATED",
+  "transform_context_equal": null
+}

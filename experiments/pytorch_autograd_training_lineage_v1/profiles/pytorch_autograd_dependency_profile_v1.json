@@ -1,0 +1,51 @@
+{
+  "claim_scope": "the frozen PyTorch Autograd dependency profile over the declared deterministic workloads",
+  "device": "cpu",
+  "dtype": "torch.float64",
+  "excluded_surfaces": [
+    "AMP",
+    "CUDA",
+    "custom C++ operators",
+    "distributed execution",
+    "forward-mode AD",
+    "higher-order gradients",
+    "in-place mutation",
+    "neural causal attribution",
+    "non-SGD optimizers",
+    "sparse tensors",
+    "torch.compile"
+  ],
+  "profile_id": "pytorch-autograd-dependency-profile-v1",
+  "public_native_graph_surface": [
+    "Tensor.grad_fn",
+    "torch.autograd.graph.Node.name",
+    "torch.autograd.graph.Node.next_functions"
+  ],
+  "random_seed": 424242,
+  "threading": {
+    "interop_threads": 1,
+    "intraop_threads": 1
+  },
+  "torch_build_commit": "cf30153c4c131c8164ee7798e5022d810682e2cb",
+  "torch_version": "2.13.0+cpu",
+  "training": {
+    "deterministic_algorithms": true,
+    "optimizer": {
+      "dampening": 0.0,
+      "foreach": false,
+      "fused": false,
+      "lr": 0.05,
+      "maximize": false,
+      "momentum": 0.25,
+      "nesterov": false,
+      "weight_decay": 0.0
+    }
+  },
+  "workloads": [
+    "linear_chain",
+    "branch_and_merge",
+    "shared_tensor_reuse",
+    "duplicate_valued_distinct_sources",
+    "zero_gradient_and_unused_sources"
+  ]
+}

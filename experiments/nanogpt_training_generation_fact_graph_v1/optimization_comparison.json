@@ -1,0 +1,124 @@
+{
+  "candidate_changes": [
+    {
+      "evidence": "Six identical aten.arange.start occurrences in six forwards.",
+      "source": "model.py",
+      "transformation": "Replace per-forward CUDA arange with a non-persistent device-moving position-index buffer."
+    },
+    {
+      "evidence": "Seven batches produced 112 lift_fresh operations and 14 stack operations.",
+      "source": "train.py",
+      "transformation": "Replace per-sample NumPy slices and torch.stack with one vectorized index matrix per input/target batch."
+    }
+  ],
+  "correctness": {
+    "best_val_loss": 3.686431884765625,
+    "best_val_loss_exact": true,
+    "checkpoint_after_updates": 10,
+    "configuration_exact_except_out_dir": true,
+    "model_args_exact": true,
+    "model_tensor_count": 28,
+    "model_tensors_bitwise_equal": true,
+    "optimizer_state_bitwise_equal": true,
+    "variable_length_forward_bitwise_equal": [
+      1,
+      17,
+      64,
+      128
+    ],
+    "crop_block_size_64_bitwise_equal": true
+  },
+  "environment": {
+    "cuda": "13.2",
+    "device": "NVIDIA GeForce RTX 4060 Ti",
+    "nanoGPT_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+    "torch": "2.13.0+cu132"
+  },
+  "file_hashes": {
+    "line_ending_note": "Raw candidate hashes identify the executed files. A fresh patch application used CRLF for untouched lines; after canonical LF normalization, both rebuilt files were byte-identical to the executed candidate.",
+    "model_py_normalized_lf_sha256": "84af05ff5e9abf16c2f1d50fe9a23ead4cf61cfb72bbc8322e8f6411c8ee5368",
+    "optimized_model_py_sha256": "5b3484b0db97a7c2b23096c72ccac6d63feb28ca8a57792794b0914a70ac0987",
+    "optimized_train_py_sha256": "31b1db2f0db58f7a8ec26f7a6e43fbd9be0ab972c252e5b0dbd95e646dbf419f",
+    "original_model_py_sha256": "63d46bccd28157de4ae3d4e714f3945370be708852d2f411e0d017a7da5f8d39",
+    "original_train_py_sha256": "5bf6d2fd907c0f86849eb24a2b13d704304adedd4eba8cf0ac81259c8bae64dc",
+    "patch_rebuild_normalized_equal": true,
+    "train_py_normalized_lf_sha256": "a0586226381b0f8cf48de45fd7dd90d0ca0fcb391f66806c464804e13ec7eea3"
+  },
+  "isolated_microbenchmarks": {
+    "batch_cpu": {
+      "optimized_median_us": 21.7,
+      "original_median_us": 73.5,
+      "outputs_exact": true,
+      "speedup": 3.3870967741935485
+    },
+    "batch_with_pin_and_cuda_transfer": {
+      "optimized_median_us": 112.35,
+      "original_median_us": 278.75,
+      "speedup": 2.481085892300846
+    },
+    "position_index": {
+      "cached_reference_us": 0.05904,
+      "cuda_arange_us": 15.47041,
+      "saved_us_per_forward": 15.41137
+    }
+  },
+  "performance": {
+    "independent_train_process_wall_clock": {
+      "note": "Includes process startup, initial evaluation and 501 updates. Later runs experienced system-wide slowdown; medians are reported instead of means.",
+      "optimized_runs_seconds": [
+        11.411858399980702,
+        11.503001000033692,
+        19.80886929994449
+      ],
+      "optimized_median_seconds": 11.503001000033692,
+      "original_runs_seconds": [
+        11.919250800041482,
+        11.798407500027679,
+        15.429058599984273
+      ],
+      "original_median_seconds": 11.919250800041482,
+      "percent_faster_by_median": 3.4922480195344274,
+      "speedup_by_median": 1.0361861917604434
+    },
+    "synchronized_steady_state_training_loop": {
+      "optimized_trial_medians_ms": [
+        15.262450000000001,
+        14.32455,
+        14.81275,
+        14.27675,
+        14.553
+      ],
+      "optimized_median_of_trials_ms": 14.553,
+      "original_trial_medians_ms": [
+        14.818,
+        16.0667,
+        17.2424,
+        16.49935,
+        15.819749999999999
+      ],
+      "original_median_of_trials_ms": 16.0667,
+      "percent_faster_by_median": 9.42134974823704,
+      "samples_per_trial": 120,
+      "speedup_by_median": 1.1040129182986327
+    }
+  },
+  "profile": {
+    "batch_size": 8,
+    "block_size": 128,
+    "compile": false,
+    "dtype": "bfloat16",
+    "gradient_accumulation_steps": 2,
+    "model": "4 layers, 4 heads, 128 embedding dimensions, 0.80M parameters"
+  },
+  "rejected_changes": [
+    {
+      "reason": "Gradient norms 3.72, 2.13 and 1.50 show that clipping was active.",
+      "transformation": "Remove gradient clipping"
+    },
+    {
+      "reason": "Although approximately 2.01x faster, one update produced a maximum parameter difference of 0.0019932910799980164.",
+      "transformation": "Replace batch 8 x two micro-steps with batch 16 x one step"
+    }
+  ],
+  "status": "PASS_STRICT_CORRECTNESS_AND_MEASURED_SPEEDUP"
+}

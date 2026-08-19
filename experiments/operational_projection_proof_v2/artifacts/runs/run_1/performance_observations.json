@@ -1,0 +1,22 @@
+{
+  "otel_formal": {
+    "excluded_from_deterministic_comparison": [
+      "performance_seconds",
+      "peak_process_rss_bytes"
+    ],
+    "peak_process_rss_bytes": 1573036032,
+    "performance_seconds": {
+      "core_and_otel_execution": 79.68793400004506,
+      "database_projection": 0.35991980001563206,
+      "direct_projection": 10.558850599976722,
+      "duckdb_reference": 0.001421599998138845,
+      "hierarchical_projection": 10.117560300044715,
+      "native_normalization": 10.905950999993365,
+      "ordinary_execution": 0.02904720004880801,
+      "snapshot_build": 153.95210350002162,
+      "snapshot_validation": 75.7562872999697
+    }
+  },
+  "peak_process_rss_bytes": 1573036032,
+  "run_elapsed_seconds": 631.1240603000042
+}

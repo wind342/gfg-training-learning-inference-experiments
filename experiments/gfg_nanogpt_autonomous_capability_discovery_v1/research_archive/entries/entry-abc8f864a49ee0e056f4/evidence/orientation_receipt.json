@@ -1,0 +1,17 @@
+{
+  "schema": "gfg-orientation-receipt-v1",
+  "read_complete": true,
+  "target_gfg_accessed": false,
+  "generation_fact": "One atomic relation established by one concrete execution: source information, realized transformation, concrete occurrence, formed outcome, and relation role.",
+  "generation_occurrence": "One concrete execution; it can establish several separate generation facts.",
+  "atomic_generation_fact": "Each fact keeps its exact source, transformation, occurrence, outcome, and role together as one indivisible record.",
+  "realizes_fact": "Connects an occurrence node to a specific fact that the occurrence established.",
+  "reads_from": "Records an actual data dependency and must not be inferred from order, time, or value similarity.",
+  "GeneratedOrigin": "Allows a previously formed outcome to serve as the exact source of a later generation fact.",
+  "program_order": "Records declared execution order but does not by itself establish a data dependency or concurrency.",
+  "equal_values": "Equal numeric values do not identify the same fact, occurrence, or result, and equal outputs do not establish equal formation.",
+  "cartesian_recombination": "Facts from an occurrence must remain separate; their sources and outcomes must not be split into sets and recombined by Cartesian product.",
+  "missing_relations": "A missing relation means it was not established, not automatically that it is false; in particular, absence of a concurrency edge does not prove concurrency.",
+  "forward_query": "Follow exact identities along training sample -> batch occurrence -> forward occurrence -> loss -> backward occurrence -> gradient -> optimizer occurrence -> new parameter version.",
+  "reverse_query": "Start from an evaluation or parameter result and traverse its actual reads_from, GeneratedOrigin, realizes_fact, and incidence relations; never substitute timestamp proximity or numeric similarity."
+}

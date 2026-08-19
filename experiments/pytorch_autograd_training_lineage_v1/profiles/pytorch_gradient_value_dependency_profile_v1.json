@@ -1,0 +1,36 @@
+{
+  "claim_scope": "frozen deterministic CPU float64 eager PyTorch workloads declared by pytorch-autograd-training-lineage-v1",
+  "excluded_interpretations": [
+    "semantic importance",
+    "sample importance",
+    "causal contribution magnitude",
+    "neural causal explanation",
+    "arbitrary PyTorch programs outside the frozen profile"
+  ],
+  "frozen_interventions": [
+    "additive_pattern",
+    "multiplicative_scaling",
+    "sign_mask_crossing"
+  ],
+  "gradient_value_dependency_definition": [
+    "the dependency tensor is produced or registered in the actual forward or checkpoint recomputation",
+    "the real PyTorch backward retrieves or uses its corresponding saved tensor, or the dependency is a replayable registered source",
+    "at least one frozen one-at-a-time intervention changes the normalized target-gradient value while program, graph topology, other sources and other saved tensors remain fixed",
+    "the relation is not derived from a handwritten operation-specific derivative rule"
+  ],
+  "semantic_distinctions": {
+    "actual_participation": "A source or intermediate result actually occurs in the generation chain; numerical gradient influence is not required.",
+    "gradient_for_leaf": "Identifies the leaf tensor for which a gradient was produced; it does not identify values used to compute that gradient.",
+    "gradient_value_dependency": "A real backward-used saved value or replayable registered source whose isolated frozen intervention changes a concrete target gradient.",
+    "semantic_importance_or_causal_contribution_magnitude": "Not evaluated by this experiment."
+  },
+  "source_classes": [
+    "training_sample",
+    "parameter_before_step",
+    "external_state",
+    "checkpoint_recomputation_state",
+    "zero_multiplier"
+  ],
+  "status": "PYTORCH_GRADIENT_VALUE_DEPENDENCY_PROFILE_V1_FROZEN",
+  "torch_version": "2.13.0+cpu"
+}

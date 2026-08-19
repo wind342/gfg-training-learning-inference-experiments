@@ -1,0 +1,37 @@
+{
+  "schema": "capability-formation-mechanism-spec-v1",
+  "version": "1.0.0",
+  "module": "mechanism",
+  "class": "CapabilityFormationMechanism",
+  "initialize": "CapabilityFormationMechanism.initialize(gfg_prefix)",
+  "forecast": "CapabilityFormationMechanism.forecast(state)",
+  "state_schema": "state_schema.json",
+  "forecast_spec": "forecast_spec.json",
+  "deterministic": true,
+  "future_gfg_reads": 0,
+  "run_identity_lookup": false,
+  "mechanism": "Prefix validation correct-class margins are advanced by the observed final-layer-normalization gain law; a weight-decayed circuit reserve, gradient-relaxation phase and optimizer pressure form an independent transient-stability state.",
+  "structural_parameters": {
+    "margin_gain_per_final_norm": 2.0,
+    "circuit_decay_per_optimizer_step": 0.00026,
+    "gradient_burst_threshold": 6.0,
+    "burst_debounce_steps": 60,
+    "cycle_period_growth": 1.15,
+    "cycle_period_max": 380.0,
+    "fragility_ratio_low": 6.0,
+    "fragility_ratio_span": 6.0,
+    "maximum_expected_shock_load": 0.08
+  },
+  "prefix_inferred_state": [
+    "cut_step",
+    "observed_curve",
+    "rule_margins",
+    "final_layer_norm_gain",
+    "final_layer_norm_rate",
+    "circuit_norm",
+    "adam_pressure",
+    "burst_onsets",
+    "cycle_period"
+  ],
+  "uncertainty": "Relaxation-cycle amplitude and exact phase transport imperfectly across task, token map, split, initialization and continuing RNG/data-order inputs; the curve therefore uses an expected shallow shock load and explicit instability intervals."
+}

@@ -1,0 +1,92 @@
+{
+  "registry_id": "executable-generation-fact-graph-relation-types-v2.1",
+  "relations": {
+    "commits_version": {
+      "acyclic_family_id": "version_commit",
+      "allowed_endpoint_signatures": [
+        "generation_fact->generation_fact"
+      ],
+      "capture_completeness_requirement": "validated_relation_evidence",
+      "cycle_policy": "ACYCLIC",
+      "kind": "primitive",
+      "lifting_policy": "NONE_NATIVE_ENDPOINTS",
+      "semantics": "directed"
+    },
+    "conflicts_with": {
+      "allowed_endpoint_signatures": [
+        "generation_fact->generation_fact"
+      ],
+      "capture_completeness_requirement": "validated_resource_access_evidence",
+      "cycle_policy": "ALLOW",
+      "kind": "primitive",
+      "lifting_policy": "NONE_NATIVE_ENDPOINTS",
+      "semantics": "symmetric"
+    },
+    "generated_origin_dependency": {
+      "acyclic_family_id": "generation_dependency",
+      "allowed_endpoint_signatures": [
+        "generation_fact->generation_fact"
+      ],
+      "capture_completeness_requirement": "validated_generated_origin",
+      "cycle_policy": "ACYCLIC",
+      "kind": "primitive",
+      "lifting_policy": "NONE_NATIVE_ENDPOINTS",
+      "semantics": "directed"
+    },
+    "happens_before": {
+      "acyclic_family_id": "execution_order",
+      "allowed_endpoint_signatures": [
+        "generation_occurrence->generation_occurrence"
+      ],
+      "capture_completeness_requirement": "CAPTURE_COMPLETE",
+      "cycle_policy": "ACYCLIC",
+      "kind": "derived",
+      "lifting_policy": "NONE_NATIVE_ENDPOINTS",
+      "semantics": "directed"
+    },
+    "message_send_receive": {
+      "acyclic_family_id": "execution_order",
+      "allowed_endpoint_signatures": [
+        "generation_occurrence->generation_occurrence"
+      ],
+      "capture_completeness_requirement": "validated_message_receipt",
+      "cycle_policy": "ACYCLIC",
+      "kind": "primitive",
+      "lifting_policy": "NONE_NATIVE_ENDPOINTS",
+      "semantics": "directed"
+    },
+    "program_order": {
+      "acyclic_family_id": "execution_order",
+      "allowed_endpoint_signatures": [
+        "generation_occurrence->generation_occurrence"
+      ],
+      "capture_completeness_requirement": "validated_adjacent_program_order",
+      "cycle_policy": "ACYCLIC",
+      "kind": "primitive",
+      "lifting_policy": "NONE_NATIVE_ENDPOINTS",
+      "semantics": "directed"
+    },
+    "reads_from": {
+      "acyclic_family_id": "version_read_dependency",
+      "allowed_endpoint_signatures": [
+        "generation_fact->generation_fact"
+      ],
+      "capture_completeness_requirement": "validated_exact_version_receipt",
+      "cycle_policy": "ACYCLIC",
+      "kind": "primitive",
+      "lifting_policy": "NONE_NATIVE_ENDPOINTS",
+      "semantics": "directed"
+    },
+    "synchronizes_with": {
+      "acyclic_family_id": "execution_order",
+      "allowed_endpoint_signatures": [
+        "generation_occurrence->generation_occurrence"
+      ],
+      "capture_completeness_requirement": "validated_synchronization_receipt",
+      "cycle_policy": "ACYCLIC",
+      "kind": "primitive",
+      "lifting_policy": "NONE_NATIVE_ENDPOINTS",
+      "semantics": "directed"
+    }
+  }
+}

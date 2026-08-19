@@ -1,0 +1,24 @@
+data_private/
+__pycache__/
+.pytest_cache/
+.venv/
+dist/
+build/
+results/
+runtime/
+*.log
+*.junit.xml
+*.egg-info/
+*.py[cod]
+
+# Local import bundles used to assemble this companion repository.
+.*-import.tar
+
+# Large base-GFG payloads remain content-addressed in the frozen source
+# repository. Their identities, byte sizes and SHA-256 hashes are recorded in
+# EXTERNAL_ARTIFACTS.md; the construction code and compact validation outputs
+# remain tracked here.
+experiments/nanogpt_training_generation_fact_graph_v1/artifacts/core_v3_snapshot.json
+experiments/nanogpt_training_generation_fact_graph_v1/artifacts/complete_generation_fact_graph.json
+experiments/nanogpt_training_generation_fact_graph_v1/artifacts/runtime_receipts.json
+experiments/nanogpt_training_generation_fact_graph_v1/artifacts/runtime_receipts_checkpoint.json

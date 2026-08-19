@@ -1,0 +1,26 @@
+{
+  "command": "python -m pytest -vv tests experiments/w3c_prov_projection_v1/tests",
+  "consistent_ignoring_run_index_and_duration": true,
+  "run_count": 2,
+  "runs": [
+    {
+      "exit_code": 0,
+      "failed_count": 0,
+      "normalized_status": "PASSED",
+      "passed_count": 47,
+      "run": 1,
+      "skipped_count": 0,
+      "test_count": 47
+    },
+    {
+      "exit_code": 0,
+      "failed_count": 0,
+      "normalized_status": "PASSED",
+      "passed_count": 47,
+      "run": 2,
+      "skipped_count": 0,
+      "test_count": 47
+    }
+  ],
+  "status": "SUPPORTED"
+}

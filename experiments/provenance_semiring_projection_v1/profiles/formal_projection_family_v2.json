@@ -1,0 +1,76 @@
+{
+  "profile_id": "formal-projection-family-v2",
+  "source_semiring": "N[X]",
+  "authority": {
+    "citation": "Green, Karvounarakis, and Tannen, Provenance Semirings, PODS 2007",
+    "doi": "10.1145/1265530.1265535",
+    "frozen_author_pdf_sha256": "74e092702db58518afeaf909e1d3380848165b2cb9ae75dc6822b04f66aa5be0",
+    "commutative_semiring_surface": "Definition 3.2 and Proposition 3.4, proceedings page 33",
+    "homomorphism_surface": "Proposition 3.5, Proposition 4.2, and Theorem 4.3, proceedings page 34",
+    "flat_powerset_surface": "Section 4, proceedings page 34"
+  },
+  "algebraic_targets": [
+    {
+      "domain_id": "bag_naturals",
+      "classification": "COMMUTATIVE_SEMIRING_TARGET",
+      "target": "N",
+      "zero": "0",
+      "one": "1",
+      "addition": "natural addition",
+      "multiplication": "natural multiplication",
+      "variable_image": "1"
+    },
+    {
+      "domain_id": "boolean",
+      "classification": "COMMUTATIVE_SEMIRING_TARGET",
+      "target": "B",
+      "zero": "false",
+      "one": "true",
+      "addition": "logical OR",
+      "multiplication": "logical AND",
+      "variable_image": "true"
+    },
+    {
+      "domain_id": "positive_boolean_lineage",
+      "classification": "SEMIRING_QUOTIENT_OR_HOMOMORPHIC_IMAGE",
+      "target": "PosBool(X)",
+      "zero": "false",
+      "one": "true",
+      "addition": "OR modulo Boolean-function equivalence",
+      "multiplication": "AND modulo Boolean-function equivalence",
+      "variable_image": "corresponding positive literal"
+    }
+  ],
+  "task_projections": [
+    {
+      "domain_id": "flat_source_support_view",
+      "former_domain_id": "why_powerset",
+      "classification": "PARTIAL_NONZERO_SUPPORT_VIEW",
+      "target": "Vars(N[X]) on frozen nonzero output support",
+      "zero": "empty set",
+      "one": "empty set",
+      "addition": "set union",
+      "multiplication": "set union",
+      "multiplicative_zero_annihilation": false,
+      "complete_semiring_homomorphism": false
+    }
+  ],
+  "not_evaluated": [
+    {
+      "target": "Which(X)",
+      "classification": "NOT_EVALUATED",
+      "reason": "No formal definition in the frozen PODS 2007 authority"
+    },
+    {
+      "target": "Trio(X)",
+      "classification": "NOT_EVALUATED",
+      "reason": "No formal definition in the frozen PODS 2007 authority"
+    },
+    {
+      "target": "witness-basis Why provenance",
+      "classification": "NOT_EVALUATED",
+      "reason": "The current representation does not preserve alternative witness sets"
+    }
+  ],
+  "direct_evaluation_requirement": "Every evaluated algebraic target and task projection is executed directly from base annotations and the frozen RA AST without first computing N[X]."
+}

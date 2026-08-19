@@ -1,0 +1,629 @@
+{
+  "files": [
+    {
+      "classification": "package_marker",
+      "path": "__init__.py",
+      "size": 62
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/artifact_manifest.json",
+      "size": 19071
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/authority_isolation.json",
+      "size": 35472
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/core_projected_nx_polynomials.json",
+      "size": 118751
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/database_lineage_hierarchy.json",
+      "size": 929
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/determinism.json",
+      "size": 876
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/direct_lower_k_independence_v2.json",
+      "size": 3927
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/core_validated_snapshot_corpus.json",
+      "size": 10801927
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/candidate.json",
+      "size": 1143
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/comparison.json",
+      "size": 2691
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/core.json",
+      "size": 25971
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/coverage.json",
+      "size": 1805
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/derived_lower.json",
+      "size": 76992
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/direct_lower.json",
+      "size": 77021
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/generated_report.md",
+      "size": 10068
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/native.json",
+      "size": 1087
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/report_artifact_consistency.json",
+      "size": 694
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/report_statistics.json",
+      "size": 2492
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/traces/candidate.json",
+      "size": 11077
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/traces/comparison.json",
+      "size": 2968
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/traces/derived_lower.json",
+      "size": 4044
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/traces/direct_lower.json",
+      "size": 5200
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/traces/native.json",
+      "size": 5231
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/evidence/isolation_probe/traces/report_statistics.json",
+      "size": 8677
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/final_status.json",
+      "size": 4468
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/flat_support_view_exact_comparison.json",
+      "size": 2071
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/flat_support_view_formal_classification.json",
+      "size": 716
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/formal_target_semantics_audit.json",
+      "size": 6995
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/formal_target_semantics_audit.md",
+      "size": 1494
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/hierarchical_projection_exact_comparison.json",
+      "size": 7636
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/independent_native_polynomial_oracle.json",
+      "size": 3196
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/joint_lower_projection_strictness.json",
+      "size": 517
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/lower_projection_strictness_constructions.json",
+      "size": 6445
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/native_candidate_algebra_independence.json",
+      "size": 4512
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/native_candidate_nx_exact_comparison_v2.json",
+      "size": 4510
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/native_direct_k_relation_results.json",
+      "size": 77021
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/native_nx_polynomials.json",
+      "size": 118119
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/negative_control_classification.json",
+      "size": 791
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/negative_controls.json",
+      "size": 19975
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/nx_derived_domain_results.json",
+      "size": 76992
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/nx_exact_comparison.json",
+      "size": 2691
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/nx_field_coverage.json",
+      "size": 1805
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/nx_strictness_counterexamples.json",
+      "size": 10165
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/nx_to_existing_which_lineage.json",
+      "size": 2785
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/nx_w3c_relation_scope.json",
+      "size": 362
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/persisted_artifact_classification.json",
+      "size": 15631
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/report_artifact_consistency.json",
+      "size": 695
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/report_statistics.json",
+      "size": 2492
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/reverse_reconstruction_impossibility.json",
+      "size": 1400
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/semiring_homomorphism_profiles.json",
+      "size": 3186
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/static_isolation_audit.json",
+      "size": 15350
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/two_level_unification_hierarchy.json",
+      "size": 710
+    },
+    {
+      "classification": "machine_evidence_artifact",
+      "path": "artifacts/unification_of_unification_result.json",
+      "size": 580
+    },
+    {
+      "classification": "frozen_audit_or_authority",
+      "path": "audits/authorities/buneman-khanna-tan-icdt2001-author-version.pdf",
+      "size": 441260
+    },
+    {
+      "classification": "frozen_audit_or_authority",
+      "path": "audits/authorities/green-karvounarakis-tannen-pods2007-author-version.pdf",
+      "size": 262241
+    },
+    {
+      "classification": "frozen_audit_or_authority",
+      "path": "audits/formal_semantics_hardening_preimplementation_audit.json",
+      "size": 13477
+    },
+    {
+      "classification": "frozen_audit_or_authority",
+      "path": "audits/formal_semantics_hardening_preimplementation_audit.md",
+      "size": 6964
+    },
+    {
+      "classification": "frozen_audit_or_authority",
+      "path": "audits/preimplementation_audit.json",
+      "size": 9935
+    },
+    {
+      "classification": "frozen_audit_or_authority",
+      "path": "audits/preimplementation_audit.md",
+      "size": 5752
+    },
+    {
+      "classification": "experiment_report_or_readme",
+      "path": "EXPERIMENT_REPORT.md",
+      "size": 10068
+    },
+    {
+      "classification": "frozen_input_fixture",
+      "path": "fixtures/workloads.json",
+      "size": 10788
+    },
+    {
+      "classification": "frozen_profile",
+      "path": "profiles/core_to_nx_crosswalk_v1.json",
+      "size": 2092
+    },
+    {
+      "classification": "frozen_profile",
+      "path": "profiles/formal_projection_family_v2.json",
+      "size": 2713
+    },
+    {
+      "classification": "frozen_profile",
+      "path": "profiles/positive_relational_algebra_profile_v1.json",
+      "size": 897
+    },
+    {
+      "classification": "frozen_profile",
+      "path": "profiles/provenance_semiring_nx_profile_v1.json",
+      "size": 1686
+    },
+    {
+      "classification": "frozen_profile",
+      "path": "profiles/semiring_homomorphism_family_v1.json",
+      "size": 2006
+    },
+    {
+      "classification": "experiment_report_or_readme",
+      "path": "README.md",
+      "size": 2822
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/__init__.py",
+      "size": 32
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/candidate_nx_path.py",
+      "size": 2290
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/compare_nx_paths.py",
+      "size": 1562
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/core_capture_path.py",
+      "size": 2132
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/direct_lower_k_path.py",
+      "size": 1305
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/finalize_artifacts.py",
+      "size": 8760
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/native_nx_path.py",
+      "size": 1334
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/nx_derived_lower_path.py",
+      "size": 1224
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_algebra_independence_audit.py",
+      "size": 968
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_database_which_bridge.py",
+      "size": 1112
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_formal_semantics_audit.py",
+      "size": 1095
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_isolation_audit.py",
+      "size": 4206
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_lower_strictness.py",
+      "size": 1341
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_native_oracle_selftest.py",
+      "size": 4026
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_negative_controls.py",
+      "size": 1005
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_p1_exact.py",
+      "size": 1893
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_p2_strictness.py",
+      "size": 991
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_p3_hierarchy.py",
+      "size": 4639
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_report_statistics.py",
+      "size": 1970
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_scientific_execution.py",
+      "size": 10105
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/run_two_scientific_executions.py",
+      "size": 2505
+    },
+    {
+      "classification": "entrypoint_source",
+      "path": "scripts/trace_entrypoint.py",
+      "size": 3172
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/__init__.py",
+      "size": 41
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/algebra_independence.py",
+      "size": 3515
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/candidate_nx.py",
+      "size": 5385
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/core_capture.py",
+      "size": 16999
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/database_which_bridge.py",
+      "size": 10881
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/exact_comparison.py",
+      "size": 9793
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/formal_semantics.py",
+      "size": 10002
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/isolation_audit.py",
+      "size": 12438
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/lower_strictness.py",
+      "size": 10234
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/native_lower_k.py",
+      "size": 8111
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/native_nx.py",
+      "size": 5474
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/native_polynomial_oracle.py",
+      "size": 5037
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/negative_controls.py",
+      "size": 15289
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/nx_polynomial.py",
+      "size": 5887
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/nx_strictness.py",
+      "size": 6805
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/ordinary_execution.py",
+      "size": 7969
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/profile_runtime.py",
+      "size": 650
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/report_statistics.py",
+      "size": 8527
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/runtime.py",
+      "size": 2829
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/semiring_homomorphisms.py",
+      "size": 4348
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/structural.py",
+      "size": 868
+    },
+    {
+      "classification": "implementation_source",
+      "path": "src/workloads.py",
+      "size": 4600
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/__init__.py",
+      "size": 65
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_bottom_up_required_areas.py",
+      "size": 4576
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_core_candidate_nx.py",
+      "size": 2084
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_database_which_bridge.py",
+      "size": 853
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_exact_comparison_and_runtime.py",
+      "size": 1393
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_isolation_and_negative_controls.py",
+      "size": 1537
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_lower_strictness.py",
+      "size": 637
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_native_nx.py",
+      "size": 2249
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_native_polynomial_oracle.py",
+      "size": 2970
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_nx_strictness.py",
+      "size": 780
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_report_statistics.py",
+      "size": 2020
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_semiring_hierarchy.py",
+      "size": 1604
+    },
+    {
+      "classification": "test_source",
+      "path": "tests/test_workloads_and_ordinary_execution.py",
+      "size": 1453
+    }
+  ],
+  "hidden_registry_hits": [],
+  "relation_answer_store_hits": [],
+  "schema_version": "persisted-artifact-classification-v1",
+  "status": "SUPPORTED",
+  "unclassified_files": []
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "control": "delete_expected_span",
+    "reason_code": "MISSING_SPAN",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "add_fabricated_span",
+    "reason_code": "FABRICATED_SPAN",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "modify_parent",
+    "reason_code": "PARENT_EDGE_MISMATCH",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "modify_causal_link",
+    "reason_code": "LINK_EDGE_MISMATCH",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "modify_status",
+    "reason_code": "STATUS_MISMATCH",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "modify_operation_type",
+    "reason_code": "OPERATION_TYPE_MISMATCH",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "modify_selected_attribute",
+    "reason_code": "ATTRIBUTE_MISMATCH",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "duplicate_span",
+    "reason_code": "DUPLICATE_SPAN",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "merge_occurrences",
+    "reason_code": "OCCURRENCE_MERGED",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "unknown_occurrence",
+    "reason_code": "UNKNOWN_OCCURRENCE",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "binding_derived_span",
+    "reason_code": "BINDING_DERIVED_SPAN",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "break_hierarchical_path",
+    "reason_code": "HIERARCHICAL_PROJECTION_MISMATCH",
+    "result": "FAIL_CLOSED"
+  },
+  {
+    "control": "projection_reads_oracle_or_native",
+    "reason_code": "ORACLE_OR_NATIVE_DEPENDENCY_PROHIBITED",
+    "result": "FAIL_CLOSED"
+  }
+]

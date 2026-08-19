@@ -1,0 +1,35 @@
+{
+  "scheme_id": "prov-semantic-identifier-scheme-v1",
+  "version": 1,
+  "status": "FROZEN_BEFORE_IMPLEMENTATION",
+  "algorithm": "SHA-256 of UTF-8 canonical JSON (sorted object keys, compact separators, arrays preserved) over only the selected semantic key",
+  "namespace": "https://example.org/w3c-prov-projection-v1#",
+  "qname_prefix": "ex",
+  "id_forms": {
+    "Entity": "ex:e_<64 lowercase hex>",
+    "Activity": "ex:a_<64 lowercase hex>",
+    "Agent": "ex:ag_<64 lowercase hex>",
+    "Usage": "ex:u_<64 lowercase hex>",
+    "Generation": "ex:g_<64 lowercase hex>",
+    "Derivation": "ex:d_<64 lowercase hex>",
+    "Association": "ex:as_<64 lowercase hex>"
+  },
+  "semantic_keys": {
+    "Entity": "record subtype plus declared stable identity fields",
+    "Activity": "stage, type, stable instance key, occurrence index, operation type",
+    "Agent": "generator name, version, code identity",
+    "Usage": "Activity ID, used Entity ID, base role, deterministic ordinal",
+    "Generation": "generated Entity ID and Activity ID",
+    "Derivation": "generated Entity ID, used Entity ID, Activity ID, Generation ID, Usage ID, base role, ordinal",
+    "Association": "Activity ID, Agent ID, role, ordinal"
+  },
+  "invariants": [
+    "Same selected semantics produce the same ID.",
+    "Profile-external Core changes do not change an ID.",
+    "Selected semantic changes change an ID or normalized record.",
+    "No randomness, wall time, memory address, local path, or execution order is used.",
+    "A deterministic ordinal distinguishes legal repeated relations.",
+    "Statement ordering does not affect canonical records.",
+    "PROV-N and PROV-O normalize to these same identifiers and records."
+  ]
+}

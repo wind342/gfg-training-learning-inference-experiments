@@ -1,0 +1,24 @@
+{
+  "schema": "gfg-temporal-credit-artifact-manifest-v1",
+  "tracked_artifacts": {
+    "contract": "EXPERIMENT_CONTRACT.json",
+    "contract_freeze": "CONTRACT_FREEZE.json",
+    "protocol": "PROTOCOL_FREEZE.md",
+    "development_record": "DEVELOPMENT_CALIBRATION.md",
+    "formal_summary": "FORMAL_RESULT_SUMMARY.json",
+    "results": "RESULTS.md"
+  },
+  "external_formal_artifacts": {
+    "root": "external://gfg-temporal-credit-discovery-v1/formal",
+    "file_count": 134,
+    "total_mib": 81.72,
+    "aggregate": {
+      "path": "external://gfg-temporal-credit-discovery-v1/formal/AGGREGATE_RESULT.json",
+      "sha256": "c1bf98a259e842594585bf373c50dd45a187607d5f33f01e2fcc026d1f168a3b"
+    },
+    "independent_check": {
+      "path": "external://gfg-temporal-credit-discovery-v1/formal/INDEPENDENT_CHECK.json",
+      "sha256": "4fec707d93f009daaf5bbdba09fb12df1438295b5e90e46366abefcaf7f59043"
+    }
+  }
+}

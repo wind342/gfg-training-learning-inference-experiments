@@ -1,0 +1,32 @@
+{
+  "binding_set_equal": false,
+  "cases": [
+    {
+      "binding_set_equal": false,
+      "complete_snapshot_equal": false,
+      "counterexample_id": "same-lineage-distinct-execution-run",
+      "left_snapshot_sha256": "3a5f54cae5514c669c7a8115fb1730276a653892e1523326cde1b8c3e9b7fe67",
+      "projection_equal": true,
+      "right_snapshot_sha256": "9289c45deaaac8dadcc8fd49e6932dc05d111fc62700ffaea4f66993348bdc2e",
+      "transform_context_equal": false,
+      "valid_counterexample": true
+    },
+    {
+      "binding_set_equal": false,
+      "complete_snapshot_equal": false,
+      "counterexample_id": "same-lineage-distinct-environment-context",
+      "left_snapshot_sha256": "c9c0d127611dab36f68e84bc7b9809859a41c48c8922b5b1abb624b3bfd5aa54",
+      "projection_equal": true,
+      "right_snapshot_sha256": "e3d20bc6ad31bfa9489840fc072d101318a5f7e93c9c6df7b52128f5862f96d8",
+      "transform_context_equal": false,
+      "valid_counterexample": true
+    }
+  ],
+  "complete_snapshot_equal": false,
+  "counterexample_count": 2,
+  "interpretation": "Projection equality does not imply complete generation-fact equality.",
+  "profile_id": "database-which-lineage-v1",
+  "projection_equal": true,
+  "status": "SUPPORTED",
+  "transform_context_equal": false
+}

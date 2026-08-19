@@ -1,0 +1,54 @@
+{
+  "checks": {
+    "all_machine_reports": true,
+    "code_hashes": true,
+    "environment_identity": true,
+    "map_bytes": true,
+    "matrices": true,
+    "normalized_records_and_projection_documents": true,
+    "profiles": true,
+    "source_branch_identity": true,
+    "test_summaries": true,
+    "trace_bytes": true
+  },
+  "complete_run_count": 2,
+  "excluded_fields": [
+    {
+      "field": "runs/run_1/performance_observations.json#/run_elapsed_seconds",
+      "reason": "elapsed wall-clock time is machine-load dependent"
+    },
+    {
+      "field": "runs/run_2/performance_observations.json#/run_elapsed_seconds",
+      "reason": "elapsed wall-clock time is machine-load dependent"
+    },
+    {
+      "field": "runs/run_1/performance_observations.json#/peak_process_rss_bytes",
+      "reason": "process peak RSS depends on allocator and concurrent OS state"
+    },
+    {
+      "field": "runs/run_2/performance_observations.json#/peak_process_rss_bytes",
+      "reason": "process peak RSS depends on allocator and concurrent OS state"
+    },
+    {
+      "field": "runs/run_1/performance_observations.json#/otel_formal/performance_seconds",
+      "reason": "per-stage elapsed time is explicitly observational"
+    },
+    {
+      "field": "runs/run_2/performance_observations.json#/otel_formal/performance_seconds",
+      "reason": "per-stage elapsed time is explicitly observational"
+    },
+    {
+      "field": "runs/run_1/test_results.json#/suites/*/elapsed_seconds",
+      "reason": "test wall-clock duration is machine-load dependent"
+    },
+    {
+      "field": "runs/run_2/test_results.json#/suites/*/elapsed_seconds",
+      "reason": "test wall-clock duration is machine-load dependent"
+    }
+  ],
+  "normalized_test_run_1_sha256": "21eadb4ecb9200cdbf165d5212d0e328048307d839798b5cda5a45089836d84d",
+  "normalized_test_run_2_sha256": "21eadb4ecb9200cdbf165d5212d0e328048307d839798b5cda5a45089836d84d",
+  "scientific_run_1_sha256": "9a69bcc8b2a26a71372bd12e268ae6e915e855912db1a0f311a02cfbc84f6f5d",
+  "scientific_run_2_sha256": "9a69bcc8b2a26a71372bd12e268ae6e915e855912db1a0f311a02cfbc84f6f5d",
+  "status": "PASS"
+}

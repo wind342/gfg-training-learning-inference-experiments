@@ -1,0 +1,1 @@
+{"canonical_bytes_equal":true,"diagnostic_exclusions":["SQLite DB binary hash","SQLite WAL binary hash and salt","process ID","temporary path","wall clock","test elapsed time"],"run_1_scientific_sha256":"47400c460c62a04b60b3412c4de4dea2c9ad70f6fe73a889527927d6cce36b0d","run_2_scientific_sha256":"47400c460c62a04b60b3412c4de4dea2c9ad70f6fe73a889527927d6cce36b0d","status":"PASS"}

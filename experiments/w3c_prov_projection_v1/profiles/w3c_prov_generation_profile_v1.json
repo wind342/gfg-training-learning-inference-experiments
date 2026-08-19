@@ -1,0 +1,77 @@
+{
+  "profile_id": "w3c-prov-generation-profile-v1",
+  "version": 1,
+  "status": "FROZEN_BEFORE_IMPLEMENTATION",
+  "included_prov_components": [
+    "Entity",
+    "Activity",
+    "SoftwareAgent",
+    "Usage",
+    "Generation",
+    "Derivation",
+    "Association",
+    "prov:type",
+    "prov:role",
+    "PROV-N",
+    "qualified PROV-O"
+  ],
+  "extension_attribute_allowlist": [
+    "ex:sourceIdentity",
+    "ex:sourceGranularity",
+    "ex:domainType",
+    "ex:stableDomainIdentity",
+    "ex:resultCategory",
+    "ex:resultIdentity",
+    "ex:dispositionCategory",
+    "ex:reasonCode",
+    "ex:occurrenceStage",
+    "ex:occurrenceType",
+    "ex:stableInstanceKey",
+    "ex:occurrenceIndex",
+    "ex:operationType",
+    "ex:generatorName",
+    "ex:generatorVersion",
+    "ex:codeIdentity",
+    "ex:relationOrdinal"
+  ],
+  "namespaces": {
+    "ex": "https://example.org/w3c-prov-projection-v1#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "relation_policy": {
+    "association": "one identified Association per Activity and projected SoftwareAgent",
+    "derivation": "one identified expanded Derivation per Core GenerationBinding",
+    "generation": "one identified Generation per generated Entity and Activity pair, shared by bindings",
+    "role": "base Core relation role becomes prov:role",
+    "usage": "one identified Usage per Core GenerationBinding",
+    "multiplicity": "deterministic relation ordinal is mandatory and participates in Usage and Derivation semantics"
+  },
+  "excluded_or_not_evaluated": [
+    "Bundle",
+    "provenance of provenance",
+    "Collection",
+    "Dictionary",
+    "Alternate",
+    "Specialization",
+    "Delegation",
+    "Communication",
+    "Start",
+    "End",
+    "temporal ordering",
+    "Invalidation",
+    "arbitrary custom PROV extensions",
+    "arbitrary RDF entailment",
+    "complete PROV ecosystem",
+    "all PROV serializations"
+  ],
+  "prohibited_attributes": [
+    "complete Snapshot",
+    "complete Core JSON or table",
+    "complete source/support/occurrence payload",
+    "Evidence text or opaque blob",
+    "operation-result closure",
+    "complete EnvironmentRecord",
+    "mechanical copy of all Core identifiers"
+  ]
+}

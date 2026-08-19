@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gfg://cyclic-rule-renewal-state-v1",
+  "title": "Cyclic rule and Adam renewal prefix state",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "cut_step",
+    "evaluation_interval",
+    "rule_modulus",
+    "operator_token",
+    "rule_code_by_token",
+    "rule_code_rank",
+    "training_fact_count",
+    "validation_case_count",
+    "current_rule_fraction",
+    "current_mean_rule_margin",
+    "current_q10_rule_margin",
+    "negative_margin_count",
+    "margin_history",
+    "observed_curve",
+    "renewal_episodes",
+    "adam_beta2",
+    "renewal_growth",
+    "next_interval_growth",
+    "renewal_interval_cap",
+    "formation_drift_per_grid",
+    "formation_gain_per_renewal",
+    "formed_recovery_per_grid",
+    "observed_transition_step"
+  ],
+  "properties": {
+    "schema": {"const": "cyclic-rule-renewal-state-v1"},
+    "cut_step": {"type": "integer", "minimum": 0, "maximum": 10000},
+    "evaluation_interval": {"const": 100},
+    "rule_modulus": {"type": "integer", "minimum": 2},
+    "operator_token": {"type": "integer", "minimum": 0},
+    "rule_code_by_token": {
+      "type": "array",
+      "minItems": 3,
+      "items": {"type": ["integer", "null"]}
+    },
+    "rule_code_rank": {"type": "integer", "minimum": 1},
+    "training_fact_count": {"type": "integer", "minimum": 1},
+    "validation_case_count": {"type": "integer", "minimum": 1},
+    "current_rule_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+    "current_mean_rule_margin": {"type": "number"},
+    "current_q10_rule_margin": {"type": "number"},
+    "negative_margin_count": {"type": "integer", "minimum": 0},
+    "margin_history": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["optimizer_step", "rule_fraction", "mean_rule_margin", "q10_rule_margin", "negative_margin_count"],
+        "properties": {
+          "optimizer_step": {"type": "integer"},
+          "rule_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+          "mean_rule_margin": {"type": "number"},
+          "q10_rule_margin": {"type": "number"},
+          "negative_margin_count": {"type": "integer", "minimum": 0}
+        }
+      }
+    },
+    "observed_curve": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["optimizer_step", "train_accuracy", "validation_accuracy"],
+        "properties": {
+          "optimizer_step": {"type": "integer"},
+          "train_accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+          "validation_accuracy": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "renewal_episodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["step_low", "step_high", "peak_step", "peak_total_norm", "clipped_step_count"],
+        "properties": {
+          "step_low": {"type": "integer"},
+          "step_high": {"type": "integer"},
+          "peak_step": {"type": "integer"},
+          "peak_total_norm": {"type": "number"},
+          "clipped_step_count": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "adam_beta2": {"type": "number", "exclusiveMinimum": 0, "exclusiveMaximum": 1},
+    "renewal_growth": {"type": "number", "minimum": 1},
+    "next_interval_growth": {"type": "number", "minimum": 1},
+    "renewal_interval_cap": {"type": "number", "minimum": 100},
+    "formation_drift_per_grid": {"type": "number", "minimum": 0},
+    "formation_gain_per_renewal": {"type": "number", "minimum": 0},
+    "formed_recovery_per_grid": {"type": "number", "minimum": 0},
+    "observed_transition_step": {"type": ["integer", "null"]}
+  }
+}

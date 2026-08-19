@@ -1,0 +1,163 @@
+{
+  "called_symbols": [
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/direct_lower_k_path.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/direct_lower_k_path.py",
+      "symbol": "main"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/__init__.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "<genexpr>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "<lambda>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "BagCarrier"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "BooleanCarrier"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "Carrier"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "DirectLowerKEvaluator"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "FlatSourceSupportCarrier"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "LowerKRow"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "PositiveBooleanCarrier"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "__init__"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "_absorb"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "_direct_canonical_values"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "_direct_logical_output_key"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "_direct_variable_for_source"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "_insert"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "_predicate"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "document"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "evaluate"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "evaluate_direct_lower_domains"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "plus"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "times"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/native_lower_k.py",
+      "symbol": "variable"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/workloads.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/workloads.py",
+      "symbol": "_stress_relations"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/workloads.py",
+      "symbol": "_walk_ast"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/workloads.py",
+      "symbol": "load_workloads"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/workloads.py",
+      "symbol": "select_query"
+    }
+  ],
+  "events": [
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/scripts/__pycache__/direct_lower_k_path.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/__init__.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/native_lower_k.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/workloads.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/fixtures/workloads.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "w",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/direct_lower.json"
+    }
+  ],
+  "module": "experiments.provenance_semiring_projection_v1.scripts.direct_lower_k_path",
+  "return_code": 0,
+  "schema_version": "isolated-entrypoint-trace-v1"
+}

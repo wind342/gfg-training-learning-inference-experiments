@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "capability-formation-state-v1",
+  "title": "CapabilityFormationMechanism finite state",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "cut_step",
+    "forecast_end_step",
+    "evaluation_interval",
+    "gain_l2",
+    "gain_dimension",
+    "gain_rate_l2_per_step",
+    "gain_rate_floor_l2_per_step",
+    "gain_rate_relaxation_steps",
+    "rule_sigmoid_center_gain_rms",
+    "rule_sigmoid_slope",
+    "formation_gain_rms",
+    "resonance_gain_rms",
+    "last_burst_step",
+    "last_burst_period",
+    "observed_burst_count",
+    "recovery_load",
+    "resonance_used",
+    "had_low_validation",
+    "observed_transition_step",
+    "recent_evaluations"
+  ],
+  "properties": {
+    "schema": {"const": "capability-formation-state-v1"},
+    "cut_step": {"type": "integer", "minimum": 0, "maximum": 10000},
+    "forecast_end_step": {"const": 10000},
+    "evaluation_interval": {"const": 100},
+    "gain_l2": {"type": "number", "minimum": 0},
+    "gain_dimension": {"type": "integer", "minimum": 1},
+    "gain_rate_l2_per_step": {"type": "number", "minimum": 0},
+    "gain_rate_floor_l2_per_step": {"type": "number", "minimum": 0},
+    "gain_rate_relaxation_steps": {"type": "number", "exclusiveMinimum": 0},
+    "rule_sigmoid_center_gain_rms": {"type": "number"},
+    "rule_sigmoid_slope": {"type": "number", "exclusiveMinimum": 0},
+    "formation_gain_rms": {"type": "number", "exclusiveMinimum": 0},
+    "resonance_gain_rms": {"type": "number", "exclusiveMinimum": 0},
+    "last_burst_step": {"type": "integer", "minimum": 0, "maximum": 10000},
+    "last_burst_period": {"type": "number", "minimum": 200, "maximum": 600},
+    "observed_burst_count": {"type": "integer", "minimum": 0},
+    "recovery_load": {"type": "number", "minimum": 0, "maximum": 1},
+    "resonance_used": {"type": "boolean"},
+    "had_low_validation": {"type": "boolean"},
+    "observed_transition_step": {"type": ["integer", "null"], "minimum": 0, "maximum": 10000},
+    "recent_evaluations": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["optimizer_step", "train_accuracy", "validation_accuracy"],
+        "properties": {
+          "optimizer_step": {"type": "integer"},
+          "train_accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+          "validation_accuracy": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    }
+  }
+}

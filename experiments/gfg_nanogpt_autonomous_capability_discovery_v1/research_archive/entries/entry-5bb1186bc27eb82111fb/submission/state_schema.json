@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "capability-formation-state-v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "phase",
+    "prediction_cut_step",
+    "evaluation_interval",
+    "train_accuracy",
+    "validation_accuracy",
+    "memorization_gap",
+    "rule_completion_fraction",
+    "transition_estimate",
+    "observed_transition",
+    "observed_evaluations",
+    "stability_oscillator"
+  ],
+  "properties": {
+    "schema": {"const": "capability-formation-state-v1"},
+    "phase": {"enum": ["SAMPLE_MEMORIZATION", "RULE_FORMING", "RULE_CANDIDATE", "RULE_FORMED"]},
+    "prediction_cut_step": {"type": "integer", "minimum": 0, "maximum": 10000},
+    "evaluation_interval": {"type": "integer", "minimum": 1},
+    "train_accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+    "validation_accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+    "memorization_gap": {"type": "number", "minimum": 0, "maximum": 1},
+    "rule_completion_fraction": {"type": "number", "minimum": 0, "maximum": 1},
+    "transition_estimate": {"type": "integer", "minimum": 0, "maximum": 10000},
+    "observed_transition": {"type": ["integer", "null"]},
+    "observed_evaluations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["optimizer_step", "train_accuracy", "validation_accuracy", "loss"],
+        "properties": {
+          "optimizer_step": {"type": "integer"},
+          "train_accuracy": {"type": "number"},
+          "validation_accuracy": {"type": "number"},
+          "loss": {"type": "number"}
+        },
+        "additionalProperties": false
+      }
+    },
+    "stability_oscillator": {
+      "type": "object",
+      "required": ["mode", "first_post_formation_offset", "later_period", "recovery_driver"],
+      "properties": {
+        "mode": {"const": "ADAPTIVE_SECOND_MOMENT_RELAXATION"},
+        "first_post_formation_offset": {"type": "integer"},
+        "later_period": {"type": "integer"},
+        "recovery_driver": {"const": "CLIPPED_FULL_BATCH_GRADIENTS"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,261 @@
+{
+  "schema_version": "positive-ra-workloads-v1",
+  "semantics": "finite ordered input fixtures with bag-valued positive relational algebra",
+  "workloads": [
+    {
+      "id": "W1",
+      "title": "selection with explicit excluded inputs",
+      "relations": {
+        "R": [
+          {"source_identity": "W1:R:r1", "values": {"name": "alpha", "score": 5}},
+          {"source_identity": "W1:R:r2", "values": {"name": "beta", "score": 1}},
+          {"source_identity": "W1:R:r3", "values": {"name": "gamma", "score": 8}}
+        ]
+      },
+      "query": {
+        "op": "select", "stage": "w1_select", "input": {"op": "base", "relation": "R"},
+        "predicate": {"field": "score", "operator": "ge", "value": 5}
+      }
+    },
+    {
+      "id": "W2",
+      "title": "equi-join product",
+      "relations": {
+        "R": [
+          {"source_identity": "W2:R:r1", "values": {"key": 1, "left_value": "L1"}},
+          {"source_identity": "W2:R:r2", "values": {"key": 2, "left_value": "L2"}}
+        ],
+        "S": [
+          {"source_identity": "W2:S:s1", "values": {"key": 1, "right_value": "S1"}},
+          {"source_identity": "W2:S:s2", "values": {"key": 3, "right_value": "S3"}}
+        ]
+      },
+      "query": {
+        "op": "join", "stage": "w2_join",
+        "left": {"op": "base", "relation": "R"}, "right": {"op": "base", "relation": "S"},
+        "left_keys": ["key"], "right_keys": ["key"], "right_prefix": "s_"
+      }
+    },
+    {
+      "id": "W3",
+      "title": "projection collapse as alternative sum",
+      "relations": {
+        "R": [
+          {"source_identity": "W3:R:r1", "values": {"group": "A", "detail": "one"}},
+          {"source_identity": "W3:R:r2", "values": {"group": "A", "detail": "two"}}
+        ]
+      },
+      "query": {
+        "op": "project", "stage": "w3_project", "input": {"op": "base", "relation": "R"},
+        "fields": [{"output": "group", "input": "group"}]
+      }
+    },
+    {
+      "id": "W4",
+      "title": "two identical derivations produce coefficient two",
+      "relations": {
+        "R": [{"source_identity": "W4:R:r1", "values": {"key": 1, "left_value": "L"}}],
+        "S": [{"source_identity": "W4:S:s1", "values": {"key": 1, "right_value": "S"}}]
+      },
+      "query": {
+        "op": "union", "stage": "w4_union", "inputs": [
+          {
+            "op": "join", "stage": "w4_join_a",
+            "left": {"op": "base", "relation": "R"}, "right": {"op": "base", "relation": "S"},
+            "left_keys": ["key"], "right_keys": ["key"], "right_prefix": "s_"
+          },
+          {
+            "op": "join", "stage": "w4_join_b",
+            "left": {"op": "base", "relation": "R"}, "right": {"op": "base", "relation": "S"},
+            "left_keys": ["key"], "right_keys": ["key"], "right_prefix": "s_"
+          }
+        ]
+      }
+    },
+    {
+      "id": "W5",
+      "title": "duplicate-valued but identity-distinct sources",
+      "relations": {
+        "R": [
+          {"source_identity": "W5:R:r1", "values": {"value": "same"}},
+          {"source_identity": "W5:R:r2", "values": {"value": "same"}}
+        ]
+      },
+      "query": {
+        "op": "project", "stage": "w5_project", "input": {"op": "base", "relation": "R"},
+        "fields": [{"output": "value", "input": "value"}]
+      }
+    },
+    {
+      "id": "W6",
+      "title": "self-join repeated-use exponent",
+      "relations": {
+        "R": [{"source_identity": "W6:R:r1", "values": {"key": 1, "value": "self"}}]
+      },
+      "query": {
+        "op": "join", "stage": "w6_self_join",
+        "left": {"op": "base", "relation": "R"}, "right": {"op": "base", "relation": "R"},
+        "left_keys": ["key"], "right_keys": ["key"], "right_prefix": "right_"
+      }
+    },
+    {
+      "id": "W7",
+      "title": "multistage GeneratedOrigin bridge",
+      "relations": {
+        "R": [
+          {"source_identity": "W7:R:r1", "values": {"kind": "K", "detail": "one"}},
+          {"source_identity": "W7:R:r2", "values": {"kind": "K", "detail": "two"}}
+        ]
+      },
+      "query": {
+        "op": "rename", "stage": "w7_rename",
+        "input": {
+          "op": "project", "stage": "w7_project", "input": {"op": "base", "relation": "R"},
+          "fields": [{"output": "kind", "input": "kind"}]
+        },
+        "fields": [{"output": "category", "input": "kind"}]
+      }
+    },
+    {
+      "id": "W8",
+      "title": "union alternatives",
+      "relations": {
+        "R": [{"source_identity": "W8:R:r1", "values": {"value": "shared"}}],
+        "S": [{"source_identity": "W8:S:s1", "values": {"value": "shared"}}]
+      },
+      "query": {
+        "op": "union", "stage": "w8_union",
+        "inputs": [{"op": "base", "relation": "R"}, {"op": "base", "relation": "S"}]
+      }
+    },
+    {
+      "id": "W9",
+      "title": "join followed by projection collapse",
+      "relations": {
+        "R": [
+          {"source_identity": "W9:R:r1", "values": {"key": 1, "group": "G", "detail": "a"}},
+          {"source_identity": "W9:R:r2", "values": {"key": 1, "group": "G", "detail": "b"}}
+        ],
+        "S": [{"source_identity": "W9:S:s1", "values": {"key": 1, "tag": "T"}}]
+      },
+      "query": {
+        "op": "project", "stage": "w9_project",
+        "input": {
+          "op": "join", "stage": "w9_join",
+          "left": {"op": "base", "relation": "R"}, "right": {"op": "base", "relation": "S"},
+          "left_keys": ["key"], "right_keys": ["key"], "right_prefix": "s_"
+        },
+        "fields": [{"output": "group", "input": "group"}, {"output": "tag", "input": "tag"}]
+      }
+    },
+    {
+      "id": "W10",
+      "title": "selection join projection union and rename",
+      "relations": {
+        "R": [
+          {"source_identity": "W10:R:r1", "values": {"key": 1, "active": true, "label": "A"}},
+          {"source_identity": "W10:R:r2", "values": {"key": 2, "active": false, "label": "B"}},
+          {"source_identity": "W10:R:r3", "values": {"key": 3, "active": true, "label": "C"}}
+        ],
+        "S": [
+          {"source_identity": "W10:S:s1", "values": {"key": 1, "kind": "joined"}},
+          {"source_identity": "W10:S:s2", "values": {"key": 3, "kind": "joined"}}
+        ],
+        "T": [{"source_identity": "W10:T:t1", "values": {"name": "fallback", "kind": "direct"}}]
+      },
+      "query": {
+        "op": "rename", "stage": "w10_rename",
+        "input": {
+          "op": "union", "stage": "w10_union", "inputs": [
+            {
+              "op": "project", "stage": "w10_project_join",
+              "input": {
+                "op": "join", "stage": "w10_join",
+                "left": {
+                  "op": "select", "stage": "w10_select", "input": {"op": "base", "relation": "R"},
+                  "predicate": {"field": "active", "operator": "eq", "value": true}
+                },
+                "right": {"op": "base", "relation": "S"},
+                "left_keys": ["key"], "right_keys": ["key"], "right_prefix": "s_"
+              },
+              "fields": [{"output": "name", "input": "label"}, {"output": "kind", "input": "kind"}]
+            },
+            {"op": "project", "stage": "w10_project_t", "input": {"op": "base", "relation": "T"},
+             "fields": [{"output": "name", "input": "name"}, {"output": "kind", "input": "kind"}]}
+          ]
+        },
+        "fields": [{"output": "item", "input": "name"}, {"output": "origin_kind", "input": "kind"}]
+      }
+    },
+    {
+      "id": "W11",
+      "title": "plan-equivalent outputs with different generation relations",
+      "relations": {
+        "R": [
+          {"source_identity": "W11:R:r1", "values": {"key": 1, "name": "A"}},
+          {"source_identity": "W11:R:r2", "values": {"key": 2, "name": "B"}}
+        ],
+        "S": [
+          {"source_identity": "W11:S:s1", "values": {"key": 1, "kind": "K1"}},
+          {"source_identity": "W11:S:s2", "values": {"key": 2, "kind": "K2"}}
+        ]
+      },
+      "queries": {
+        "plan_a": {
+          "op": "project", "stage": "w11a_project",
+          "input": {"op": "join", "stage": "w11a_join", "left": {"op": "base", "relation": "R"},
+                    "right": {"op": "base", "relation": "S"}, "left_keys": ["key"],
+                    "right_keys": ["key"], "right_prefix": "s_"},
+          "fields": [{"output": "name", "input": "name"}, {"output": "kind", "input": "kind"}]
+        },
+        "plan_b": {
+          "op": "project", "stage": "w11b_project",
+          "input": {
+            "op": "rename", "stage": "w11b_identity_rename",
+            "input": {"op": "join", "stage": "w11b_join", "left": {"op": "base", "relation": "R"},
+                      "right": {"op": "base", "relation": "S"}, "left_keys": ["key"],
+                      "right_keys": ["key"], "right_prefix": "s_"},
+            "fields": [{"output": "key", "input": "key"}, {"output": "name", "input": "name"},
+                       {"output": "s_key", "input": "s_key"}, {"output": "kind", "input": "kind"}]
+          },
+          "fields": [{"output": "name", "input": "name"}, {"output": "kind", "input": "kind"}]
+        }
+      },
+      "default_query": "plan_a"
+    },
+    {
+      "id": "W12",
+      "title": "deterministic stress workload with coefficients exponents and varied terms",
+      "relation_generator": {"kind": "stress_tables_v1", "rows_per_relation": 50, "key_modulus": 25},
+      "query": {
+        "op": "union", "stage": "w12_outer_union", "inputs": [
+          {
+            "op": "union", "stage": "w12_duplicate_union", "inputs": [
+              {
+                "op": "project", "stage": "w12_project_a",
+                "input": {"op": "join", "stage": "w12_join_a", "left": {"op": "base", "relation": "R"},
+                          "right": {"op": "base", "relation": "S"}, "left_keys": ["key"],
+                          "right_keys": ["key"], "right_prefix": "s_"},
+                "fields": [{"output": "key", "input": "key"}]
+              },
+              {
+                "op": "project", "stage": "w12_project_b",
+                "input": {"op": "join", "stage": "w12_join_b", "left": {"op": "base", "relation": "R"},
+                          "right": {"op": "base", "relation": "S"}, "left_keys": ["key"],
+                          "right_keys": ["key"], "right_prefix": "s_"},
+                "fields": [{"output": "key", "input": "key"}]
+              }
+            ]
+          },
+          {
+            "op": "project", "stage": "w12_project_self",
+            "input": {"op": "join", "stage": "w12_self_join", "left": {"op": "base", "relation": "R"},
+                      "right": {"op": "base", "relation": "R"}, "left_keys": ["key"],
+                      "right_keys": ["key"], "right_prefix": "r2_"},
+            "fields": [{"output": "key", "input": "key"}]
+          }
+        ]
+      }
+    }
+  ]
+}

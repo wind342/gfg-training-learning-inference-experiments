@@ -1,0 +1,70 @@
+{
+  "crosswalk_id": "core-to-w3c-prov-crosswalk-v1",
+  "version": 1,
+  "status": "FROZEN_BEFORE_IMPLEMENTATION",
+  "mappings": [
+    {
+      "core": "SourceInformationRecord",
+      "prov": "Entity",
+      "prov_type": "ex:SourceInformation",
+      "selected": ["source_identity", "source_granularity", "source_payload.domain_type", "source_payload.stable_domain_identity"],
+      "excluded": ["complete source_payload", "Core hashes", "Evidence", "operation closure"]
+    },
+    {
+      "core": "PerceptualSupportRecord",
+      "prov": "Entity",
+      "prov_type": "ex:GeneratedSupport",
+      "selected": ["support_payload.result_category", "support_payload.result_identity"],
+      "excluded": ["complete support_payload", "support space and predicate internals"]
+    },
+    {
+      "core": "ExplicitDisposition",
+      "prov": "Entity",
+      "prov_type": "ex:DispositionRecord",
+      "selected": ["core_disposition_category", "domain_reason_code"],
+      "excluded": ["complete disposition_payload"],
+      "not_invalidation": true
+    },
+    {
+      "core": "GenerationOccurrence",
+      "prov": "Activity",
+      "prov_type": "ex:GenerationOccurrence",
+      "selected": ["occurrence_stage", "occurrence_type", "stable_instance_key", "occurrence_index", "occurrence_payload.operation_type"],
+      "excluded": ["complete occurrence_payload", "transform_reference", "environment state"]
+    },
+    {
+      "core": "GeneratorManifest",
+      "prov": "SoftwareAgent",
+      "selected": ["generator_name", "generator_version", "generator_code_hash"],
+      "excluded": ["complete manifest", "dependencies", "evidence authorities", "supported Core registries"]
+    },
+    {
+      "core": "GeneratedOrigin",
+      "prov": "no independent record",
+      "selected": ["origin_payload.prior_support_id"],
+      "rule": "Resolve to the prior support Entity used by the downstream Activity.",
+      "excluded": ["bridge Core identity", "bridge payload beyond prior_support_id", "bridge Evidence", "bridge operation facts"]
+    },
+    {
+      "core": "GenerationBinding",
+      "prov": "identified Usage plus shared identified Generation plus identified expanded Derivation",
+      "selected": ["origin_reference", "generation_occurrence_id", "outcome_reference", "relation_role base role", "relation_role deterministic ordinal"],
+      "rule": "Usage and Derivation are per binding; Generation is unique per outcome/activity; expanded Derivation cites generated Entity, used Entity, Activity, Generation, and Usage."
+    }
+  ],
+  "excluded_core_types": [
+    "EvidenceRecord",
+    "EvidenceLink",
+    "GeneratorOperationResult",
+    "EnvironmentRecord",
+    "ValidatedSnapshot validation state",
+    "relation evidence closure",
+    "query indexes",
+    "Core registries"
+  ],
+  "relation_role_encoding": {
+    "core_format": "<base-role>|ordinal=<four decimal digits>",
+    "prov_role": "ex:<base-role with non-name characters mapped to underscore>",
+    "prov_ordinal": "ex:relationOrdinal integer"
+  }
+}

@@ -1,0 +1,997 @@
+{
+  "after_indexed_reader": {
+    "backward_mean_seconds": 0.00032476500200573355,
+    "backward_minimum_seconds": 0.0002637000288814306,
+    "construction_mean_seconds": 0.00020571000350173564,
+    "forward_mean_seconds": 0.0010809450031956658,
+    "forward_minimum_seconds": 0.0009106000070460141,
+    "last_backward": {
+      "customer_top_1:00000000": {
+        "binding_paths": [
+          [
+            "gb3_046935ddd16462d674112c50f57529eef1a0231b79d22333df5b723df3991fcd",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_1537b4aca4c00b832a0ab83404f9e479b489598215f8fd5e3568391be5bb262e",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_2f375583e410b3ea77f02dc4fcc232b7935e0e57645e4db083fbc7d4ba529822",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_51c313d641bf5ee74df68ce4a2350a9fd4275773a61d3cca58fb72068ba610a3",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_51efa625f966c1dfa1a7794df5a0d84026f1f2c9b03ba73c369ebf31db07af22",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_6a7fd2077efd07ff17dad46095bc24e7d53ddbd40673443f971b425fb0b76c33",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+            "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+            "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 20,
+        "tuple_ids": [
+          "customers:c1",
+          "items:i1",
+          "items:i2",
+          "items:i3",
+          "orders:o1",
+          "orders:o2",
+          "products:p1a",
+          "products:p1b",
+          "products:p2"
+        ]
+      }
+    },
+    "last_forward": {
+      "customers:c1": {
+        "binding_paths": [
+          [
+            "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 5,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "customers:c2": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "customers:c3": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "items:i1": {
+        "binding_paths": [
+          [
+            "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 2,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "items:i2": {
+        "binding_paths": [
+          [
+            "gb3_2f375583e410b3ea77f02dc4fcc232b7935e0e57645e4db083fbc7d4ba529822",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 1,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "items:i3": {
+        "binding_paths": [
+          [
+            "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 2,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "items:i4": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "items:i5": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "items:i6": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "orders:o1": {
+        "binding_paths": [
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 3,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "orders:o2": {
+        "binding_paths": [
+          [
+            "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+            "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+            "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 2,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "orders:o3": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "orders:o4": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "orders:o5": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "products:p1a": {
+        "binding_paths": [
+          [
+            "gb3_046935ddd16462d674112c50f57529eef1a0231b79d22333df5b723df3991fcd",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_1537b4aca4c00b832a0ab83404f9e479b489598215f8fd5e3568391be5bb262e",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 2,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "products:p1b": {
+        "binding_paths": [
+          [
+            "gb3_51c313d641bf5ee74df68ce4a2350a9fd4275773a61d3cca58fb72068ba610a3",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_6a7fd2077efd07ff17dad46095bc24e7d53ddbd40673443f971b425fb0b76c33",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 2,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "products:p2": {
+        "binding_paths": [
+          [
+            "gb3_51efa625f966c1dfa1a7794df5a0d84026f1f2c9b03ba73c369ebf31db07af22",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 1,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "products:p3": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "products:p9": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      }
+    },
+    "maximum_peak_tracemalloc_bytes": 32480,
+    "mean_peak_tracemalloc_bytes": 28905.05,
+    "repeats": 20
+  },
+  "authoritative_storage_changed": false,
+  "backward_false_negatives": 0,
+  "backward_false_positives": 0,
+  "backward_results_identical": true,
+  "before_scan_reader": {
+    "backward_mean_seconds": 0.0005811500072013587,
+    "backward_minimum_seconds": 0.0004930999712087214,
+    "construction_mean_seconds": 3.550006658770144e-06,
+    "forward_mean_seconds": 0.001992984995013103,
+    "forward_minimum_seconds": 0.0018282000091858208,
+    "last_backward": {
+      "customer_top_1:00000000": {
+        "binding_paths": [
+          [
+            "gb3_046935ddd16462d674112c50f57529eef1a0231b79d22333df5b723df3991fcd",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_1537b4aca4c00b832a0ab83404f9e479b489598215f8fd5e3568391be5bb262e",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_2f375583e410b3ea77f02dc4fcc232b7935e0e57645e4db083fbc7d4ba529822",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_51c313d641bf5ee74df68ce4a2350a9fd4275773a61d3cca58fb72068ba610a3",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_51efa625f966c1dfa1a7794df5a0d84026f1f2c9b03ba73c369ebf31db07af22",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_6a7fd2077efd07ff17dad46095bc24e7d53ddbd40673443f971b425fb0b76c33",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+            "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+            "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 20,
+        "tuple_ids": [
+          "customers:c1",
+          "items:i1",
+          "items:i2",
+          "items:i3",
+          "orders:o1",
+          "orders:o2",
+          "products:p1a",
+          "products:p1b",
+          "products:p2"
+        ]
+      }
+    },
+    "last_forward": {
+      "customers:c1": {
+        "binding_paths": [
+          [
+            "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_2adffa2634993cf25fa0c9878e1c8264ad61135e82ea84f6a8a8b9550e15d4db",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3367ad9558eff6db2994e6670b69e99ff627534aa860caa2a9ac33eafa0b0848",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 5,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "customers:c2": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "customers:c3": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "items:i1": {
+        "binding_paths": [
+          [
+            "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_cc25e7fbe324f49a744e2d0d3d8fda057663a760f1f8c3a3ee944d8a0e5fa430",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 2,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "items:i2": {
+        "binding_paths": [
+          [
+            "gb3_2f375583e410b3ea77f02dc4fcc232b7935e0e57645e4db083fbc7d4ba529822",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 1,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "items:i3": {
+        "binding_paths": [
+          [
+            "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_c2946b9ae60c557bf45cc4b3c164bbb625f9b611da9ab3525aac96b969541bc9",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 2,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "items:i4": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "items:i5": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "items:i6": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "orders:o1": {
+        "binding_paths": [
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_0449112d73cbff301088361ff56eb311615755919cdc54ac10037b9433df19ca",
+            "gb3_246fb887945fe51d26f80f0513f970e21b29b7212cd5baa74cfa00aa6ec8f235",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_0288c907fbc38e79ced06dc1c1b33df66ccf344168052103041bd74c24aa2a8f",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_3d78382e0e6e4f19267dfa2ced2df28b4f7a49b1faf803f9de6f17fba7c73969",
+            "gb3_ffc94f6e39e199f2930665667978285e36d3364320807a6c24729eca3fe05692",
+            "gb3_d2b185ec35344ae249d6f3dcb2f0c6384ad151ac96728ea0c99c4e50ffadcdcc",
+            "gb3_2ee6b0b1dc7199275c0e29859342d926ded63d0c0f3d72c451a6345af57f884f",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 3,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "orders:o2": {
+        "binding_paths": [
+          [
+            "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+            "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_1c6de97ecc3ef5b47e52ee9bec7b8d7b5b7203e555a740c1325d63a03a442a02",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_6bc01066d262e13464f897fc24a3a56f4465e9719a89d6b5d3772439044eaea7",
+            "gb3_de5ec1061b868e4a0c39b8b4b25a74484b7907b7aafc319f7cdbc7dafb9ce8d8",
+            "gb3_6e00ff8a5d7270633f66165d4d06e1aa4dd8c552fdc530cc5dbd2de88ce797fb",
+            "gb3_a895b80d606099b84787d144e29457d5b99d986082c2639cd0ed1635c32754f4",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 2,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "orders:o3": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "orders:o4": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "orders:o5": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "products:p1a": {
+        "binding_paths": [
+          [
+            "gb3_046935ddd16462d674112c50f57529eef1a0231b79d22333df5b723df3991fcd",
+            "gb3_2c68cee63912c9a3de726771df96c9c33f7a0d9375d04b93ea42b93896a05feb",
+            "gb3_7da931c2b7f9435d0bf13ff5a3b24c66d6b964bb38ee28bf2bf8c02f9ccffe3a",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_1537b4aca4c00b832a0ab83404f9e479b489598215f8fd5e3568391be5bb262e",
+            "gb3_4de294e093b5238f12aaaa3e6c56823f3b5f8770be722a2aba713295042c4254",
+            "gb3_0afce33192fdaeb96997ab4586e1fa071fd9eabfed8f1ec6878a9c23bef3c426",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 2,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "products:p1b": {
+        "binding_paths": [
+          [
+            "gb3_51c313d641bf5ee74df68ce4a2350a9fd4275773a61d3cca58fb72068ba610a3",
+            "gb3_0eab3e21a59ef55c6d13d2751350c30634b573584a4915d38aa96e48d730a1fe",
+            "gb3_fe34d096374d3e1ce4139e2fa91d4be8379b08d7833b118bfc037a4908b76086",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ],
+          [
+            "gb3_6a7fd2077efd07ff17dad46095bc24e7d53ddbd40673443f971b425fb0b76c33",
+            "gb3_a936ec0cfdbcdfd769d1096009408fed45d487970e6c5629a9fa60e1fdb3aaf3",
+            "gb3_314b3337764ef6d09dd669c3a36a4b89d5edd0d9a6731badff1b475a6c867c93",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 2,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "products:p2": {
+        "binding_paths": [
+          [
+            "gb3_51efa625f966c1dfa1a7794df5a0d84026f1f2c9b03ba73c369ebf31db07af22",
+            "gb3_f70d6011feeddb1874b638f265a0a1e621ed61d4413b00b94ce098da96c24ed1",
+            "gb3_ac817ac0b58c9ea46719713bf0eaeae0d500731e764d6d58d173644ae6e7e660",
+            "gb3_cf03a1c095b03f9b8362044a2c93dbbcc298778798d11efa25e1b1cb0bcfc345",
+            "gb3_afc66ec2fddb8e24ca96db68b200a845b6e104ece2935a590002bf7d4b26b961"
+          ]
+        ],
+        "derivation_path_count": 1,
+        "tuple_ids": [
+          "customer_top_1:00000000"
+        ]
+      },
+      "products:p3": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      },
+      "products:p9": {
+        "binding_paths": [],
+        "derivation_path_count": 0,
+        "tuple_ids": []
+      }
+    },
+    "maximum_peak_tracemalloc_bytes": 18880,
+    "mean_peak_tracemalloc_bytes": 13924.2,
+    "repeats": 20
+  },
+  "binding_count": 54,
+  "database_specific_fields_added": false,
+  "fixture": "fixed adversarial multistage business query",
+  "forward_false_negatives": 0,
+  "forward_false_positives": 0,
+  "forward_results_identical": true,
+  "indexes_are_temporary_and_rebuildable": true
+}

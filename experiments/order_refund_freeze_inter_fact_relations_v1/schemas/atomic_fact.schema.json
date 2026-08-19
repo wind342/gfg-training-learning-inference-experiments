@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "fact_id",
+    "execution_run_id",
+    "result_id",
+    "coordinates",
+    "schema_version"
+  ],
+  "properties": {
+    "fact_id": {"type": "string", "pattern": "^orfact1_[0-9a-f]{64}$"},
+    "execution_run_id": {"type": "string"},
+    "result_id": {"type": "string"},
+    "coordinates": {
+      "type": "object",
+      "required": ["u", "tau", "omega_bar", "z", "rho"],
+      "properties": {
+        "u": {"type": "object"},
+        "tau": {"type": "object"},
+        "omega_bar": {"type": "object"},
+        "z": {"type": "object"},
+        "rho": {"type": "object"}
+      },
+      "additionalProperties": false
+    },
+    "schema_version": {
+      "const": "order-refund-freeze-atomic-fact-v1"
+    }
+  },
+  "additionalProperties": false
+}

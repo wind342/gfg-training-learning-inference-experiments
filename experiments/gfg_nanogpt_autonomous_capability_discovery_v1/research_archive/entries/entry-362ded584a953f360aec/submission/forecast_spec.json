@@ -1,0 +1,30 @@
+{
+  "schema": "gfg-dual-dynamics-forecast-spec-v1",
+  "forecast_start": "first 100-step evaluation-grid point strictly after the supplied prefix",
+  "forecast_end_optimizer_step": 10000,
+  "evaluation_interval_optimizer_steps": 100,
+  "transition_rule": "first point of the first three-point window with predicted validation at least 0.90 after the prefix train state has reached at least 0.99 and an earlier observed validation is at most 0.30",
+  "high_precision_interval": {
+    "fields": ["transition_step_low_200", "transition_step_high_200"],
+    "maximum_width_optimizer_steps": 200
+  },
+  "primary_interval": {
+    "fields": ["transition_step_low_500", "transition_step_high_500"],
+    "maximum_width_optimizer_steps": 500
+  },
+  "component_curves": [
+    "predicted_formation_curve",
+    "predicted_stability_degradation_curve",
+    "predicted_validation_curve"
+  ],
+  "composition_tolerance": 1e-09,
+  "composition": "accuracy = max(0, min(1, capability - degradation))",
+  "full_horizon_recursive_stability": true,
+  "trajectory_table_embedded": false,
+  "post_formation_stability_values": [
+    "STABLE",
+    "TRANSIENT_DEGRADATION_RECOVERY",
+    "PERSISTENT_DEGRADATION",
+    "UNDETERMINED"
+  ]
+}

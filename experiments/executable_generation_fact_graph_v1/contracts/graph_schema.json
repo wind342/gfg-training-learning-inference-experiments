@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/executable-generation-fact-graph-v1.schema.json",
+  "title": "Executable Generation-Fact Graph v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "graph_schema_version",
+        "graph_id",
+        "execution_run_id",
+        "domain_scope_id",
+        "source_snapshot_ids",
+        "source_relation_store_ids",
+        "capture_audit_id",
+        "graph_profile_id",
+        "compiler_code_hash",
+        "validator_code_hash",
+        "relation_contract_hash",
+        "node_count",
+        "edge_count",
+        "primitive_edge_count",
+        "derived_edge_count"
+      ]
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edge"
+      }
+    }
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "graph_node_id",
+        "execution_run_id",
+        "snapshot_id",
+        "generation_binding_id",
+        "domain_scope_id",
+        "source_reference",
+        "realized_transformation",
+        "concrete_occurrence",
+        "outcome_reference",
+        "relation_role",
+        "occurrence_identity",
+        "outcome_identity",
+        "evidence_refs",
+        "fact_content_hash",
+        "node_instance_hash",
+        "native_fact_identity"
+      ],
+      "properties": {
+        "graph_node_id": {"type": "string"},
+        "execution_run_id": {"type": "string"},
+        "snapshot_id": {"type": "string"},
+        "generation_binding_id": {"type": "string"},
+        "domain_scope_id": {"type": "string"},
+        "source_reference": {"type": "object"},
+        "realized_transformation": {},
+        "concrete_occurrence": {},
+        "outcome_reference": {"type": "object"},
+        "relation_role": {"type": "string"},
+        "occurrence_identity": {"type": "string"},
+        "outcome_identity": {"type": "string"},
+        "evidence_refs": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "fact_content_hash": {"type": "string"},
+        "node_instance_hash": {"type": "string"},
+        "native_fact_identity": {"type": ["object", "null"]}
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "graph_edge_id",
+        "execution_run_id",
+        "source_graph_node_id",
+        "target_graph_node_id",
+        "relation_type",
+        "relation_semantics",
+        "relation_payload",
+        "establishment_source",
+        "authority_id",
+        "evidence_refs",
+        "rule_id",
+        "input_relation_refs",
+        "primitive_or_derived",
+        "relation_instance_hash"
+      ],
+      "properties": {
+        "graph_edge_id": {"type": "string"},
+        "execution_run_id": {"type": "string"},
+        "source_graph_node_id": {"type": "string"},
+        "target_graph_node_id": {"type": "string"},
+        "relation_type": {"type": "string"},
+        "relation_semantics": {"enum": ["directed", "symmetric"]},
+        "relation_payload": {"type": "object"},
+        "establishment_source": {"type": "string"},
+        "authority_id": {"type": "string"},
+        "evidence_refs": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "rule_id": {"type": ["string", "null"]},
+        "input_relation_refs": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "primitive_or_derived": {"enum": ["primitive", "derived"]},
+        "relation_instance_hash": {"type": "string"}
+      }
+    }
+  }
+}

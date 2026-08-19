@@ -1,0 +1,34 @@
+{
+  "profile_id": "finite-positive-relational-algebra-v1",
+  "bag_of_values_semantics": true,
+  "included_operators": [
+    "base relation",
+    "selection",
+    "projection",
+    "rename",
+    "union",
+    "natural/equi-join",
+    "self-join",
+    "multistage composition"
+  ],
+  "required_cases": [
+    "identity-distinct equal-valued sources",
+    "alternative derivations of one logical output",
+    "same-source repeated aliases",
+    "plan-equivalent executions",
+    "at least 100 source identities and generation occurrences"
+  ],
+  "excluded_operators": [
+    "difference",
+    "negation",
+    "antijoin",
+    "NOT EXISTS",
+    "EXCEPT",
+    "aggregation",
+    "recursion",
+    "infinite relations",
+    "updates",
+    "probabilistic annotations"
+  ],
+  "exclusion_reason": "These operations are outside the frozen positive-relational-algebra theorem and are not silently generalized."
+}

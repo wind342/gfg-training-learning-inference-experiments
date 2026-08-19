@@ -1,0 +1,25 @@
+{
+  "schema": "nanogpt-stepwise-support-transition-protocol-v3",
+  "protocol_id": "STEPWISE-SUPPORT-TRANSITION-PHASE-v3",
+  "status": "FROZEN_AFTER_FORMAL_V2_SOURCE_SCOPE_COUNTEREXAMPLE_BEFORE_FORMAL_V3_EXECUTION",
+  "inherits_protocol": {
+    "protocol_id": "STEPWISE-SUPPORT-TRANSITION-PHASE-v2",
+    "file": "STEPWISE_SUPPORT_TRANSITION_PROTOCOL_V2.json",
+    "file_sha256": "945fe0d701a86ed4465821d78ecce522a4f147ed16e3c03fe0dc2fc078bded96",
+    "inheritance": "All scientific windows, finite-difference definitions, model tiers, breakpoint rules, causal branch rules, future-leakage gates, state-sufficiency tests, runtime boundaries and probe contracts are inherited unchanged."
+  },
+  "supersession_reason": "Formal V2 execution rejected source run entry-481b86f81d58d496a687 at optimizer step 2200 because batch_selection_order was absent. A complete source audit established that 4 of 13 runs captured this optional object and 9 did not, while every run captured exactly one content-addressed training_batch_inputs and training_batch_targets object at each training opportunity.",
+  "batch_identity_availability_contract": {
+    "training_batch_inputs": "Exactly one content-addressed source object is required at every training opportunity.",
+    "training_batch_targets": "Exactly one content-addressed source object is required at every training opportunity.",
+    "batch_selection_order": "At most one source object is admitted. When present it is preserved exactly. When absent, no order is reconstructed or guessed; the outcome position records ExplicitDisposition(SOURCE_BATCH_SELECTION_ORDER_NOT_CAPTURED_IN_PARTICIPANT_GFG).",
+    "replay_semantics": "The native training operation consumes the captured ordered input and target tensors. The optional selection-order object is provenance about how that already ordered batch was selected, not an additional numerical input required to replay the native forward/backward/update operation.",
+    "multiple_object_rule": "More than one object for any required or optional batch role remains a fail-closed error.",
+    "scientific_selection_changed": false,
+    "result_dependent_change": false
+  },
+  "failed_predecessor_evidence_policy": "The partial Formal V2 execution and its failure log are retained unchanged and are never relabeled as Formal V3 evidence.",
+  "atomic_generation_fact": "f=(u,tau,omega_bar,z;rho)",
+  "new_core_coordinates": false,
+  "persistent_ai_role": "READ_ONLY_DISCOVERY_AFTER_EXTERNAL_VALIDATION_ONLY"
+}

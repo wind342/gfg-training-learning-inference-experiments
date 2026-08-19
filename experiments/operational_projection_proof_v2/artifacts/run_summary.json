@@ -1,0 +1,34 @@
+{
+  "blocking_reasons": [],
+  "determinism": "PASS",
+  "domain_statuses": {
+    "database_p1": "SUPPORTED",
+    "database_p2": "SUPPORTED",
+    "otel_p1": "SUPPORTED",
+    "otel_p2": "SUPPORTED",
+    "otel_p3": "SUPPORTED",
+    "source_map_p1": "SUPPORTED",
+    "source_map_p2": "SUPPORTED",
+    "source_map_p3": "SUPPORTED"
+  },
+  "framework": "unified-operational-projection-proof-v2",
+  "mandatory_checks": {
+    "all_domain_properties_supported": true,
+    "all_negative_controls_fail_closed": true,
+    "exact_source_heads_and_ancestry": true,
+    "matrix_supported": true,
+    "new_core_changes_zero": true,
+    "new_core_schema_changes_zero": true,
+    "new_domain_specific_core_fields_zero": true,
+    "oracle_isolation": true,
+    "output_orthogonality": true,
+    "profiles_valid": true,
+    "second_authority_count_zero": true,
+    "v1_preserved": true
+  },
+  "status": "UNIFIED_OPERATIONAL_PROJECTION_PROOF_V2_SUPPORTED",
+  "test_run_1": "PASS",
+  "test_run_2": "PASS",
+  "two_complete_scientific_runs": true,
+  "two_complete_test_runs": true
+}

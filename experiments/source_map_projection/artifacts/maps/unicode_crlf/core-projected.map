@@ -1,0 +1,1 @@
+{"file":"unicode-crlf-output.js","mappings":"AAAA;A;AAEA;AACA;AACA","names":[],"sourceRoot":"../src","sources":["unicode-crlf.js"],"sourcesContent":["const emoji = \"🔥\";\r\n\r\nconst composed = \"é\";\r\nconst decomposed = \"é\";\r\n\tconsole.log(emoji, composed, decomposed);\r\n"],"version":3}

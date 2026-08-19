@@ -1,0 +1,18 @@
+{
+  "schema": "nanogpt-stepwise-causal-branch-profile-v1",
+  "profile_id": "STEPWISE-FOUR-BRANCH-v1",
+  "status": "FROZEN_BEFORE_FORMAL_DIVERGENCE_RESULTS_COMPLETE",
+  "branches": ["full_step", "skip_step", "parameter_only", "optimizer_state_only"],
+  "horizons": [1, 2, 5, 10, 20, 50, 100],
+  "alignment": "training opportunity",
+  "seed_step_materialization": "complete forward logits, registered activations, loss, raw and clipped gradients, parameter update, Adam deltas, decay contribution and adaptive residual for full and skip executions",
+  "horizon_materialization": "complete restorable parameter/Adam state and complete versioned ProbeContract observation for every branch at every legal registered horizon",
+  "intermediate_continuation_materialization": "content identity, dtype and shape commitments for all step tensors; the absent duplicate payload is represented as ExplicitDisposition(BRANCH_INTERMEDIATE_TENSOR_PAYLOAD_NOT_MATERIALIZED_UNDER_FROZEN_PROFILE)",
+  "reason_for_intermediate_policy": "The causal object is the matched branch state and raw support response at each registered horizon. Persisting every dense intermediate tensor for every branch would duplicate hundreds of gigabytes without changing the registered causal contrasts.",
+  "effects": ["Phi_full", "Phi_P", "Phi_O", "Phi_PxO"],
+  "numeric_effect_rule": "elementwise arithmetic on continuous outputs with identity, shape and dtype preserved",
+  "categorical_effect_rule": "exact changed masks and equality counts; categorical identities are never subtracted",
+  "branch_isolation": "Every branch starts from an independently cloned immutable prestate and shares no mutable tensor storage.",
+  "skip_alignment": "Skipping optimizer.step consumes the same batch opportunity and never receives an extra batch later.",
+  "result_driven_profile_changes_allowed": false
+}

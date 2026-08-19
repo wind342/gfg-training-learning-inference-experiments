@@ -1,0 +1,45 @@
+{
+  "registry_id": "executable-generation-fact-graph-relation-types-v1",
+  "relations": {
+    "commits_version": {
+      "semantics": "directed",
+      "kind": "primitive",
+      "declared_dag": true
+    },
+    "conflicts_with": {
+      "semantics": "symmetric",
+      "kind": "primitive",
+      "declared_dag": false
+    },
+    "generated_origin_dependency": {
+      "semantics": "directed",
+      "kind": "primitive",
+      "declared_dag": true
+    },
+    "happens_before": {
+      "semantics": "directed",
+      "kind": "derived",
+      "declared_dag": true
+    },
+    "message_send_receive": {
+      "semantics": "directed",
+      "kind": "primitive",
+      "declared_dag": true
+    },
+    "program_order": {
+      "semantics": "directed",
+      "kind": "primitive",
+      "declared_dag": true
+    },
+    "reads_from": {
+      "semantics": "directed",
+      "kind": "primitive",
+      "declared_dag": true
+    },
+    "synchronizes_with": {
+      "semantics": "directed",
+      "kind": "primitive",
+      "declared_dag": true
+    }
+  }
+}

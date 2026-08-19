@@ -1,0 +1,34 @@
+{
+  "profile_id": "provenance-semiring-nx-v1",
+  "authority": {
+    "citation": "Green, Karvounarakis, and Tannen, Provenance Semirings, PODS 2007",
+    "doi": "10.1145/1265530.1265535",
+    "frozen_author_pdf_sha256": "74e092702db58518afeaf909e1d3380848165b2cb9ae75dc6822b04f66aa5be0",
+    "definition_pages": ["proceedings page 33: Definitions 3.1 and 3.2", "proceedings page 34: Definition 4.1 and Figure 5"]
+  },
+  "carrier": "N[X]",
+  "coefficient_domain": "natural numbers including zero",
+  "variable_rule": "x_ followed by lowercase SHA-256 of the complete UTF-8 SourceInformationRecord.source_identity",
+  "canonical_form": {
+    "schema_version": "nx-polynomial-v1",
+    "zero": {"schema_version": "nx-polynomial-v1", "terms": []},
+    "term_order": "ascending lexicographic monomial; each monomial is ascending variable",
+    "coefficient": "explicit positive integer; zero terms omitted",
+    "exponent": "explicit positive integer; repeated variable factors are merged by exponent addition",
+    "duplicate_monomial": "merged by coefficient addition"
+  },
+  "recursion": {
+    "registered_source": "P(u)=x_u",
+    "generated_origin": "P(origin)=P(prior_support_id)",
+    "support_occurrence": "product of every inbound GenerationBinding origin polynomial",
+    "logical_output": "sum of producer-support polynomials having the same terminal logical_output_key"
+  },
+  "forbidden_factors": [
+    "GenerationOccurrence identity",
+    "EvidenceRecord identity or payload",
+    "EnvironmentRecord identity or payload",
+    "GeneratorOperationResult identity or payload",
+    "ExplicitDisposition identity or payload"
+  ],
+  "scope": "finite positive relational algebra only"
+}

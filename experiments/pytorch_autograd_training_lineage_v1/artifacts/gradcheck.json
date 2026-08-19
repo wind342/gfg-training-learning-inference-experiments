@@ -1,0 +1,1 @@
+{"dtype":"torch.float64","function":"mean(pow(relu(matmul(a,b)),2))","passed":true}

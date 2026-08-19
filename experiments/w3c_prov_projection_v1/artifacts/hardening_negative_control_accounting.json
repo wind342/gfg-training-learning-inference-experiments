@@ -1,0 +1,11 @@
+{
+  "hardening_authority_control_count": 10,
+  "hardening_oracle_control_count": 10,
+  "hardening_transform_control_count": 10,
+  "new_hardening_control_count": 30,
+  "new_hardening_controls_are_separate": true,
+  "original_control_count": 32,
+  "original_control_status": "SUPPORTED",
+  "status": "SUPPORTED",
+  "total_control_count": 62
+}

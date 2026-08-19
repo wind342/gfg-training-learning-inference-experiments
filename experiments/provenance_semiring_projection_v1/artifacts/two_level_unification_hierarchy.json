@@ -1,0 +1,6 @@
+{
+  "reason": "v2 separates formal algebraic targets from non-semiring task projections",
+  "schema_version": "superseded-artifact-pointer-v1",
+  "status": "TWO_LEVEL_FORMAL_HIERARCHY_SUPPORTED",
+  "superseded_by": "two_level_unification_hierarchy_v2.json"
+}

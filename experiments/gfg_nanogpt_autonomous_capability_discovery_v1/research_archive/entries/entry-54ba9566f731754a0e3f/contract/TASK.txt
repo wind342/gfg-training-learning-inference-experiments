@@ -1,0 +1,73 @@
+You may read one complete, real, validated participant-safe
+nanoGPT training generation-fact graph mounted at /evidence. This graph is
+your only scientific input.
+
+Autonomously discover an executable finite-state mechanism by which this
+training execution changed from training-sample memorization to rule-level
+generalization. You are not being asked to optimize source code or merely
+describe an accuracy curve.
+
+In addition to capability formation, determine whether the formed capability
+is dynamically stable. Test, rather than assume, whether the graph supports
+stable generalization, transient degradation followed by recovery, persistent
+degradation, or an undetermined result. If instability is supported, identify
+its observable preconditions and recovery mechanism from generation facts.
+
+Your sealed mechanism must initialize from a previously unseen run's complete
+GFG prefix and forecast, before the future occurs:
+1. whether a capability transition will occur by step 10000;
+2. two independently frozen transition intervals: a high-precision interval
+   no wider than 200 optimizer steps and a primary success interval no wider
+   than 500 optimizer steps;
+3. the validation-accuracy curve on the 100-step evaluation grid; and
+4. the evolution of your declared mechanism state;
+5. post_formation_stability, using exactly STABLE,
+   TRANSIENT_DEGRADATION_RECOVERY, PERSISTENT_DEGRADATION or UNDETERMINED; and
+6. predicted_instability_intervals as a list of zero or more inclusive
+   optimizer-step intervals, each with integer step_low and step_high.
+
+Submit one executable intervention that acts only through the frozen training
+hook API and predicts ADVANCE or DELAY, a transition-step shift interval, and
+the corresponding change in your mechanism state. Also declare the predicted
+post-formation stability effect as IMPROVE, WORSEN or NO_CHANGE and explain
+which mechanism variable should change. The same sealed candidate
+will be evaluated on an unseen task, token map, split, initialization and data
+order. It must not identify runs or dates and must not contain a trajectory
+answer table.
+
+Use the complete graph freely: sources, batch membership, tensors, layer
+activations, logits, gradients, clipping, optimizer states, parameter
+versions, exact occurrence identities, roles, reads_from, GeneratedOrigin,
+program_order and realizes_fact. You may derive matrices and temporary files.
+The helper gfg_client.py is optional; direct read-only SQLite access is also
+allowed. Do not use the network, another AI, external literature, or hidden
+material.
+
+Use transition_step_low_200 and transition_step_high_200 for the 200-step
+high-precision interval. Use transition_step_low_500 and
+transition_step_high_500 for the 500-step primary interval. The 200-step
+interval is reported as an additional precision diagnostic; the 500-step
+interval is the interval-containment gate for forecast success. Both are
+sealed before the unseen future is generated.
+
+After the external runner releases /evidence, the formal-work budget is
+exactly 120 minutes. Stop expanding analysis by formal-work minute 110 and
+use the final ten minutes only to complete and check every required file in
+submission/. You may submit earlier as soon as the required work is ready.
+The runner does not provide an interactive last-minute message.
+
+The sealed mechanism and intervention are replayed in a restricted runtime.
+They may import ordinary numerical modules and gfg_client, but must not
+import filesystem, process, dynamic-import, system or network modules; call
+open; retain an absolute evidence path in serialized state; or perform
+run-identity, date or wall-clock lookup. Temporary analysis scripts used
+before submission are not subject to this executable-candidate restriction.
+
+Before submitting, propose and attempt to falsify at least three mechanisms,
+including the selected mechanism and at least two rejected alternatives.
+Record the GFG evidence for each in discovery_report.md. At least one tested
+hypothesis must concern post-formation stability. Do not assume that a
+transient degradation exists merely because this task asks you to test for it.
+
+Write exactly the required candidate files under submission/ as specified by
+candidate_interface.json and intervention_api.json. Do not modify /evidence.

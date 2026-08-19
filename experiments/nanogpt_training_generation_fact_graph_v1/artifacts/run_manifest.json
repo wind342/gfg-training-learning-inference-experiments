@@ -1,0 +1,40 @@
+{
+  "artifact_files": [
+    "runtime_receipts.json",
+    "core_v3_snapshot.json",
+    "complete_generation_fact_graph.json",
+    "validation.json",
+    "step_000_generation_fact_graph.svg",
+    "step_001_generation_fact_graph.svg",
+    "step_002_generation_fact_graph.svg",
+    "full_run_generation_fact_graph.svg"
+  ],
+  "capture_checkpoint": "runtime_receipts_checkpoint.json",
+  "cuda": "13.2",
+  "device": "NVIDIA GeForce RTX 4060 Ti",
+  "nanoGPT_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+  "torch": "2.13.0+cu132",
+  "validation": {
+    "counts": {
+      "atomic_generation_facts": 13010,
+      "events": 3630,
+      "parameter_tensors": 27,
+      "registered_sources": 197,
+      "steps": 3,
+      "tensor_outcomes": 4359
+    },
+    "gates": {
+      "all_input_references_resolve": true,
+      "complete_five_coordinate_facts": true,
+      "core_snapshot_validated": true,
+      "every_binding_has_primary_evidence": true,
+      "expected_training_phases_per_step": true,
+      "parameter_gradient_receipts_complete": true,
+      "parameter_optimizer_receipts_complete": true,
+      "unique_output_producer": true,
+      "zero_heuristic_or_similarity_links": true
+    },
+    "status": "PASS",
+    "unresolved_input_refs": []
+  }
+}

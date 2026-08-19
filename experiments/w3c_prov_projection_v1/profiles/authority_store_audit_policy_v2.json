@@ -1,0 +1,127 @@
+{
+  "candidate_authorities": [
+    {
+      "identity": "validated Core Snapshot Γ",
+      "role": "authoritative_candidate_input"
+    }
+  ],
+  "classification_rules": [
+    {
+      "patterns": [
+        "artifacts/candidate.provn",
+        "artifacts/candidate_prov_projection_summary.json",
+        "artifacts/normalized_prov_dm_candidate.json"
+      ],
+      "role": "candidate_projection_output"
+    },
+    {
+      "patterns": [
+        "artifacts/native_reference.ttl",
+        "artifacts/native_prov_reference_summary.json",
+        "artifacts/normalized_prov_dm_reference.json"
+      ],
+      "role": "native_reference_output"
+    },
+    {
+      "patterns": [
+        "authorities/*",
+        "profiles/*"
+      ],
+      "role": "normative_authority_manifest"
+    },
+    {
+      "patterns": [
+        "__init__.py",
+        "src/__init__.py",
+        "src/events.py",
+        "src/generator.py",
+        "src/record_model.py"
+      ],
+      "role": "neutral_shared_schema_or_record_model"
+    },
+    {
+      "patterns": [
+        "src/*.py",
+        "tests/*",
+        "requirements.txt"
+      ],
+      "role": "test_fixture"
+    },
+    {
+      "patterns": [
+        "README.md",
+        "EXPERIMENT_REPORT.md",
+        "audits/*",
+        "artifacts/*"
+      ],
+      "role": "diagnostic_report"
+    }
+  ],
+  "forbidden_candidate_read_targets": {
+    "candidate.provn": "CANDIDATE_READS_OLD_CANDIDATE_PROVN",
+    "expected": "CANDIDATE_READS_EXPECTED_ANSWER",
+    "gold_records": "CANDIDATE_READS_EXPECTED_ANSWER",
+    "native_reference.ttl": "CANDIDATE_READS_NATIVE_REFERENCE",
+    "normalized_prov_dm_reference": "CANDIDATE_READS_NATIVE_REFERENCE",
+    "receipt": "CANDIDATE_READS_CALLBACK_RECEIPT"
+  },
+  "forbidden_json_key_sets": [
+    {
+      "all_keys": [
+        "core_id",
+        "prov_id"
+      ],
+      "reason_code": "PERSISTENT_CORE_PROV_ID_MAPPING"
+    },
+    {
+      "any_keys": [
+        "answer_lookup",
+        "binding_crosswalk",
+        "expected_records",
+        "gold_records",
+        "origin_activity_outcome_lookup",
+        "receipt_answer_index"
+      ],
+      "reason_code": "FORBIDDEN_SECONDARY_RELATION_STORE"
+    }
+  ],
+  "forbidden_prov_attribute_tokens": {
+    "evidence_blob": "EVIDENCE_BLOB_EMBEDDED_IN_PROV",
+    "snapshot_json": "SNAPSHOT_BLOB_EMBEDDED_IN_PROV",
+    "snapshot_id": "SNAPSHOT_BLOB_EMBEDDED_IN_PROV"
+  },
+  "native_test_oracles": [
+    {
+      "identity": "independent synchronous runtime callback collector",
+      "role": "native test reference"
+    }
+  ],
+  "policy_id": "authority-store-audit-policy-v2",
+  "projection_evidence_is_not_candidate_input": true,
+  "roles": [
+    "authoritative_candidate_input",
+    "native_reference_output",
+    "candidate_projection_output",
+    "normative_authority_manifest",
+    "neutral_shared_schema_or_record_model",
+    "diagnostic_report",
+    "test_fixture",
+    "forbidden_secondary_relation_store",
+    "unclassified"
+  ],
+  "scan_exclusions": [
+    "runtime/authorities/*",
+    "runtime/official_tests/*",
+    "runtime/venv/*",
+    "runtime/wheels/*",
+    "**/__pycache__/*",
+    "**/.pytest_cache/*"
+  ],
+  "semantic_authorities": [
+    {
+      "identity": "frozen official W3C PROV documents",
+      "relation_answer_authority": false
+    }
+  ],
+  "version": 2
+}

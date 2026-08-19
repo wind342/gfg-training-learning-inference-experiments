@@ -1,0 +1,98 @@
+{
+  "blocking_reasons": [],
+  "criteria": [
+    {
+      "criterion": "official W3C authority freeze",
+      "passed": true
+    },
+    {
+      "criterion": "profile and crosswalk frozen before implementation",
+      "passed": true
+    },
+    {
+      "criterion": "native reference independent",
+      "passed": true
+    },
+    {
+      "criterion": "candidate reads only ValidatedSnapshot",
+      "passed": true
+    },
+    {
+      "criterion": "P1 exact derivability",
+      "passed": true
+    },
+    {
+      "criterion": "P2 all four strict counterexamples",
+      "passed": true
+    },
+    {
+      "criterion": "applicable PROV constraints",
+      "passed": true
+    },
+    {
+      "criterion": "applicable official tests",
+      "passed": true
+    },
+    {
+      "criterion": "PROV-N syntax",
+      "passed": true
+    },
+    {
+      "criterion": "qualified PROV-O",
+      "passed": true
+    },
+    {
+      "criterion": "PROV-N and PROV-O normalization equality",
+      "passed": true
+    },
+    {
+      "criterion": "multi-source multi-output pairing",
+      "passed": true
+    },
+    {
+      "criterion": "generation uniqueness",
+      "passed": true
+    },
+    {
+      "criterion": "legal multiplicity preserved",
+      "passed": true
+    },
+    {
+      "criterion": "GeneratedOrigin mapping",
+      "passed": true
+    },
+    {
+      "criterion": "output orthogonality",
+      "passed": true
+    },
+    {
+      "criterion": "second authority count zero by machine scan",
+      "passed": true
+    },
+    {
+      "criterion": "candidate reference leakage zero",
+      "passed": true
+    },
+    {
+      "criterion": "Core changes zero",
+      "passed": true
+    },
+    {
+      "criterion": "two science runs and artifact materializations consistent",
+      "passed": true
+    },
+    {
+      "criterion": "two test runs consistent",
+      "passed": true
+    },
+    {
+      "criterion": "blocking_reasons empty",
+      "passed": true
+    }
+  ],
+  "experiment": "w3c_prov_projection_v1",
+  "final_status": "W3C_PROV_PROJECTION_V1_SUPPORTED",
+  "mandatory_criterion_count": 22,
+  "passed_criterion_count": 22,
+  "profile_id": "w3c-prov-generation-profile-v1"
+}

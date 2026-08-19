@@ -1,0 +1,23 @@
+{
+  "schema": "gfg-training-intervention-spec-v1",
+  "entrypoint": "intervention.TrainingIntervention",
+  "direction": "DELAY",
+  "transition_step_shift_interval": {
+    "step_low": 1400,
+    "step_high": 2000
+  },
+  "predicted_shift_step_low": 1400,
+  "predicted_shift_step_high": 2000,
+  "predicted_stability_effect": "NO_CHANGE",
+  "stability_effect_rationale": "The pause translates formation and oscillator phase but restores the exact native learning rates, so the post-formation clipped-gradient relaxation oscillator and its transient degradation/recovery behavior should remain.",
+  "declared_hook": "before_optimizer_step",
+  "allowed_mutation": "optimizer group hyperparameters",
+  "mutation": "Set every current optimizer-group learning rate to 0.0 for 1600 optimizer-step hook calls, then restore the values captured from the first call.",
+  "mechanism_variable_expected_to_change": "rule_log_odds",
+  "mechanism_effect": "rule_log_odds and pulse phase remain nearly fixed during the pause, delaying the rule-margin crossing by approximately the number of paused updates.",
+  "minimum_effective_shift_optimizer_steps": 600,
+  "validation_data_used": false,
+  "future_parameters_used": false,
+  "task_or_evaluator_changed": false,
+  "deterministic": true
+}

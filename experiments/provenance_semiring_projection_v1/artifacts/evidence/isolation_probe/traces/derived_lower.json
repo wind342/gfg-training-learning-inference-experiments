@@ -1,0 +1,124 @@
+{
+  "called_symbols": [
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/nx_derived_lower_path.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/nx_derived_lower_path.py",
+      "symbol": "main"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/__init__.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "NXPolynomial"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "_canonical_monomial"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "from_document"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "from_mapping"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "to_document"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "variables"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/semiring_homomorphisms.py",
+      "symbol": "<genexpr>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/semiring_homomorphisms.py",
+      "symbol": "<lambda>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/semiring_homomorphisms.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/semiring_homomorphisms.py",
+      "symbol": "_bag"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/semiring_homomorphisms.py",
+      "symbol": "_boolean"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/semiring_homomorphisms.py",
+      "symbol": "_derived_absorb"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/semiring_homomorphisms.py",
+      "symbol": "_flat_source_support"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/semiring_homomorphisms.py",
+      "symbol": "_positive_boolean"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/semiring_homomorphisms.py",
+      "symbol": "derive_lower_domains_from_nx"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/structural.py",
+      "symbol": "<module>"
+    }
+  ],
+  "events": [
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/scripts/__pycache__/nx_derived_lower_path.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/__init__.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/semiring_homomorphisms.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/nx_polynomial.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/structural.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/native_nx_polynomials.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "w",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/derived_lower.json"
+    }
+  ],
+  "module": "experiments.provenance_semiring_projection_v1.scripts.nx_derived_lower_path",
+  "return_code": 0,
+  "schema_version": "isolated-entrypoint-trace-v1"
+}

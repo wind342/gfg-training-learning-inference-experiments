@@ -1,0 +1,41 @@
+{
+  "results": [
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W6:value:a714216eba58d8121ee871fffd7c912e7f390c7859dd09310501c130c62f00ca",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_7de26b7fbcf9e71a985f0d1bec9fa6e0054274cf6b5ac8108581e33e3c9d7fc9"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 1,
+            "right_key": 1,
+            "right_value": "self",
+            "value": "self"
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W6:R:r1",
+          "variable": "x_7de26b7fbcf9e71a985f0d1bec9fa6e0054274cf6b5ac8108581e33e3c9d7fc9"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W6"
+    }
+  ],
+  "schema_version": "native-nx-corpus-v1"
+}

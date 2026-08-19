@@ -1,0 +1,47 @@
+{
+  "schema": "gfg-training-intervention-spec-v1",
+  "version": "1.0.0",
+  "authority": "submission/intervention.py",
+  "name": "bounded-zero-learning-rate-pause",
+  "hook": "before_optimizer_step",
+  "mutation": "Set every current optimizer parameter-group learning rate to zero for exactly 800 optimizer calls, then restore the prefix-native group learning rates.",
+  "allowed_mutation": "optimizer group hyperparameters",
+  "direction": "DELAY",
+  "shift_step_low": 600,
+  "shift_step_high": 1100,
+  "predicted_shift_step_low": 600,
+  "predicted_shift_step_high": 1100,
+  "transition_step_shift_low": 600,
+  "transition_step_shift_high": 1100,
+  "transition_step_shift_interval": {
+    "step_low": 600,
+    "step_high": 1100
+  },
+  "predicted_mechanism_state_change": {
+    "parameter_progress_steps_suppressed": 800,
+    "decay_exposure_increment_during_pause": 0,
+    "optimizer_age_steps_advanced": 800,
+    "rule_margin": "held near its intervention-start value during the pause",
+    "stress_phase": "rephased because Adam moments continue to evolve"
+  },
+  "mechanism_state_change": "Suppress 800 parameter/decay-progress steps while advancing Adam moment age by 800 steps; hold rule margin near its cut value and rephase optimizer stress.",
+  "predicted_stability_effect": "NO_CHANGE",
+  "stability_effect_rationale": "The pause shifts decay exposure and rule-margin formation while allowing Adam first/second moments and step counters to evolve. It therefore rephases individual stress pulses, but it neither removes the moment/gradient feedback nor changes the long-run learning rate, clipping threshold, or parameter groups, so the predicted stability class remains transient degradation with recovery.",
+  "intervention_state_audit": {
+    "changed_or_frozen": [
+      "optimizer-group learning rates",
+      "parameter updates",
+      "decoupled weight-decay updates",
+      "parameter-progress counter"
+    ],
+    "left_evolving": [
+      "training forward and loss",
+      "raw and clipped gradients",
+      "Adam exp_avg",
+      "Adam exp_avg_sq",
+      "Adam step counters",
+      "optimizer-age counter"
+    ],
+    "restored": ["each original optimizer-group learning rate"]
+  }
+}

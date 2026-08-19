@@ -1,0 +1,3456 @@
+{
+  "results": [
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W1:value:06692e4aef5708b7f4a468d909a8fe1a3a8f1dbd56ee4b05caa94e88ad0ebda1",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_bea785f74d31e7dec6d499f77483be7ed19ba414a3b86151214b605b9f53d4ee"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "name": "alpha",
+            "score": 5
+          }
+        },
+        {
+          "logical_output_key": "W1:value:559d78a59608ee95a4ff1bcd23a39c051979419dbe5048f701c451706daac1fa",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_ec9d126083b4d9b4d42372f2097ca1f2d0ae7f0943537bf802945a7c9a986011"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "name": "gamma",
+            "score": 8
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W1:R:r2",
+          "variable": "x_111a3ae88dad9e01705cb4b332457df82fb2c511f8ca31866a4688469e87a873"
+        },
+        {
+          "source_identity": "W1:R:r1",
+          "variable": "x_bea785f74d31e7dec6d499f77483be7ed19ba414a3b86151214b605b9f53d4ee"
+        },
+        {
+          "source_identity": "W1:R:r3",
+          "variable": "x_ec9d126083b4d9b4d42372f2097ca1f2d0ae7f0943537bf802945a7c9a986011"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W1"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W2:value:5770ee7a10a65f5009b9f41b9b8d45060a20b3074d0562a01d1a2d4cf9ef90e7",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_a4da0e938983cbf894656160f8bc5e76f39f5704b96fc33c8c18f162fe407d7c"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c35d5bf0693e02ae9059b0c8b5ff8e2632ded1caaf3d2f9b861770934456c76b"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 1,
+            "left_value": "L1",
+            "right_value": "S1",
+            "s_key": 1
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W2:S:s2",
+          "variable": "x_0f0f2d28f4842f1fa3aa3fe47ff73358a385dba71713c4581961fdd116206332"
+        },
+        {
+          "source_identity": "W2:S:s1",
+          "variable": "x_a4da0e938983cbf894656160f8bc5e76f39f5704b96fc33c8c18f162fe407d7c"
+        },
+        {
+          "source_identity": "W2:R:r1",
+          "variable": "x_c35d5bf0693e02ae9059b0c8b5ff8e2632ded1caaf3d2f9b861770934456c76b"
+        },
+        {
+          "source_identity": "W2:R:r2",
+          "variable": "x_e8749973fc617ed1ace5a52ecd13bd69270e11da161ad6a5c3c5a332ddf80dfa"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W2"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W3:value:b6324ecfbcdce61d2348bb80195944f1386f8fd21af00f005931c0007dca6ed9",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_6936de12c2094f4e6bab47ca9abb1771f14ac8cd267f05627185fdd485dd6c8c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_905808650f61660d1488f1a9f59552e656212306b30c59fc28379359b4dff5a5"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "group": "A"
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W3:R:r2",
+          "variable": "x_6936de12c2094f4e6bab47ca9abb1771f14ac8cd267f05627185fdd485dd6c8c"
+        },
+        {
+          "source_identity": "W3:R:r1",
+          "variable": "x_905808650f61660d1488f1a9f59552e656212306b30c59fc28379359b4dff5a5"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W3"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W4:value:55c82e23be34237162b6aeeab7ddc72e37e7e6589d67d12a6bb72e7f387c8b7f",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_2bc80fe45f048874be2fe012029dc8e7bdbbd027a95c86fee78733e0686640a3"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c339b488a0f6c146d8fee5241d86167997006ed1914ab28b45fdc3c42bf630e3"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 1,
+            "left_value": "L",
+            "right_value": "S",
+            "s_key": 1
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W4:R:r1",
+          "variable": "x_2bc80fe45f048874be2fe012029dc8e7bdbbd027a95c86fee78733e0686640a3"
+        },
+        {
+          "source_identity": "W4:S:s1",
+          "variable": "x_c339b488a0f6c146d8fee5241d86167997006ed1914ab28b45fdc3c42bf630e3"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W4"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W5:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_02483edcd2c30ed644f6e0f7fd902ff2ce3d9d2d5cb6cd569e0a8fae15047af1"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0d94bef6e3d223b596680a2f87ceadd3b14ba8d01c10a236597399ba45516e97"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "value": "same"
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W5:R:r2",
+          "variable": "x_02483edcd2c30ed644f6e0f7fd902ff2ce3d9d2d5cb6cd569e0a8fae15047af1"
+        },
+        {
+          "source_identity": "W5:R:r1",
+          "variable": "x_0d94bef6e3d223b596680a2f87ceadd3b14ba8d01c10a236597399ba45516e97"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W5"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W6:value:a714216eba58d8121ee871fffd7c912e7f390c7859dd09310501c130c62f00ca",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_7de26b7fbcf9e71a985f0d1bec9fa6e0054274cf6b5ac8108581e33e3c9d7fc9"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 1,
+            "right_key": 1,
+            "right_value": "self",
+            "value": "self"
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W6:R:r1",
+          "variable": "x_7de26b7fbcf9e71a985f0d1bec9fa6e0054274cf6b5ac8108581e33e3c9d7fc9"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W6"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W7:value:f42991a6fae1ff8a84ba0ad47f4cb810eb83ad29900b98cd3acadf77b6c49d46",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_5e68f564902e1c33d5dc495ce2378c9ebbacb9e4e3ce34908e914af2cdfaa288"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_9d39b0d2e6961592cf2b159117183190c661275c0fe0739eb324afb53d02e805"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "category": "K"
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W7:R:r2",
+          "variable": "x_5e68f564902e1c33d5dc495ce2378c9ebbacb9e4e3ce34908e914af2cdfaa288"
+        },
+        {
+          "source_identity": "W7:R:r1",
+          "variable": "x_9d39b0d2e6961592cf2b159117183190c661275c0fe0739eb324afb53d02e805"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W7"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W8:value:6070a6b0db1263a825d203530b6f319f4a3eccff8703b0d51d36e548b5a9beae",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_4b26444f43203a99befd686fb4482a9c90793f19cebeae2e858c5ee839b804d7"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_fdf3923ea975bbb9c7283d9ed2977e0c4677c71c239d7235a7db717a03d024bf"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "value": "shared"
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W8:S:s1",
+          "variable": "x_4b26444f43203a99befd686fb4482a9c90793f19cebeae2e858c5ee839b804d7"
+        },
+        {
+          "source_identity": "W8:R:r1",
+          "variable": "x_fdf3923ea975bbb9c7283d9ed2977e0c4677c71c239d7235a7db717a03d024bf"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W8"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W9:value:11517c3a4828c879383bc44f9183d65123e3acac9ad5df61a146225a84bbbd25",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0365ba0780ebd2cce90bd3f2d35d6c016dbe165e272c229af84d523643e9ec4f"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_559026d2944a666ada16ef99593e9e3baba60682b00ac393177d2547a46de9c2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0365ba0780ebd2cce90bd3f2d35d6c016dbe165e272c229af84d523643e9ec4f"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_a34ab7026bc336d1e279bc0e404cc2d5f124dcd9c4aa8741534b98cfad9a5a10"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "group": "G",
+            "tag": "T"
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W9:S:s1",
+          "variable": "x_0365ba0780ebd2cce90bd3f2d35d6c016dbe165e272c229af84d523643e9ec4f"
+        },
+        {
+          "source_identity": "W9:R:r1",
+          "variable": "x_559026d2944a666ada16ef99593e9e3baba60682b00ac393177d2547a46de9c2"
+        },
+        {
+          "source_identity": "W9:R:r2",
+          "variable": "x_a34ab7026bc336d1e279bc0e404cc2d5f124dcd9c4aa8741534b98cfad9a5a10"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W9"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W10:value:0980206c3c3beadcef28e59616fd2e779facaa5f9781e2745110db20c9d8fc3c",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_c73399c97327c43d6e819b7a605560a4632f65e3a6023f5829116f2c1ea9f640"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "item": "fallback",
+            "origin_kind": "direct"
+          }
+        },
+        {
+          "logical_output_key": "W10:value:8d58dcd671bff9db0760cd0b4baa0bc500cdd156682fd9975938e8c6cd9d67a3",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_5b9adba24119a11ecc7d673b6330338f1ffc020bf2f7a024546205d8cf5ee26f"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_7bae4e8be16f3b34b20b21d6d6d32cf9a6ecf9a10c2de5117935fa3ed7714d80"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "item": "A",
+            "origin_kind": "joined"
+          }
+        },
+        {
+          "logical_output_key": "W10:value:8fce0746bd68ae0e8550aa4d2c6bf33f36739618679db35077d845cf1c7e9d80",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_e621ac54f723e6c7610634c170e0c78f1eaa1952ce75199f7936d59f385196d5"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_f708d6e48eb0fdec0a185cd6e4fa8c360b0949babf1287c275efb241d3cdcabd"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "item": "C",
+            "origin_kind": "joined"
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W10:R:r2",
+          "variable": "x_192b9dadffa541c396539e8a4593bab524281f165a076da471ab527777597b5d"
+        },
+        {
+          "source_identity": "W10:R:r1",
+          "variable": "x_5b9adba24119a11ecc7d673b6330338f1ffc020bf2f7a024546205d8cf5ee26f"
+        },
+        {
+          "source_identity": "W10:S:s1",
+          "variable": "x_7bae4e8be16f3b34b20b21d6d6d32cf9a6ecf9a10c2de5117935fa3ed7714d80"
+        },
+        {
+          "source_identity": "W10:T:t1",
+          "variable": "x_c73399c97327c43d6e819b7a605560a4632f65e3a6023f5829116f2c1ea9f640"
+        },
+        {
+          "source_identity": "W10:S:s2",
+          "variable": "x_e621ac54f723e6c7610634c170e0c78f1eaa1952ce75199f7936d59f385196d5"
+        },
+        {
+          "source_identity": "W10:R:r3",
+          "variable": "x_f708d6e48eb0fdec0a185cd6e4fa8c360b0949babf1287c275efb241d3cdcabd"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W10"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W11:value:62f78bc7d70d5271cd44a5e59ebda7d02d167bfd639e14b072f377fd211d6d67",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_8f415a16e70a16ff2571c5895a15a22c8e42a79610f5b6359411509e2cb48187"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_be0ad53a6e75353581daf3279ad714747859d943333148b01ad66be1fec4d81f"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "kind": "K1",
+            "name": "A"
+          }
+        },
+        {
+          "logical_output_key": "W11:value:d93842e99dcb18d576ca437c7f3cfb1e5d1796b1614f9fee409249228001cd17",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_6ac52895056b57a849beb8600852305a461f4a812ee2367164f5358105c9975e"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_81c347382f9ef7bce268d4a2a5a23b6b0ce22d6e04f631e953f16145677d3a92"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "kind": "K2",
+            "name": "B"
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W11:R:r2",
+          "variable": "x_6ac52895056b57a849beb8600852305a461f4a812ee2367164f5358105c9975e"
+        },
+        {
+          "source_identity": "W11:S:s2",
+          "variable": "x_81c347382f9ef7bce268d4a2a5a23b6b0ce22d6e04f631e953f16145677d3a92"
+        },
+        {
+          "source_identity": "W11:R:r1",
+          "variable": "x_8f415a16e70a16ff2571c5895a15a22c8e42a79610f5b6359411509e2cb48187"
+        },
+        {
+          "source_identity": "W11:S:s1",
+          "variable": "x_be0ad53a6e75353581daf3279ad714747859d943333148b01ad66be1fec4d81f"
+        }
+      ],
+      "variant": "plan_a",
+      "workload_id": "W11"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W11:value:62f78bc7d70d5271cd44a5e59ebda7d02d167bfd639e14b072f377fd211d6d67",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_8f415a16e70a16ff2571c5895a15a22c8e42a79610f5b6359411509e2cb48187"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_be0ad53a6e75353581daf3279ad714747859d943333148b01ad66be1fec4d81f"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "kind": "K1",
+            "name": "A"
+          }
+        },
+        {
+          "logical_output_key": "W11:value:d93842e99dcb18d576ca437c7f3cfb1e5d1796b1614f9fee409249228001cd17",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_6ac52895056b57a849beb8600852305a461f4a812ee2367164f5358105c9975e"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_81c347382f9ef7bce268d4a2a5a23b6b0ce22d6e04f631e953f16145677d3a92"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "kind": "K2",
+            "name": "B"
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W11:R:r2",
+          "variable": "x_6ac52895056b57a849beb8600852305a461f4a812ee2367164f5358105c9975e"
+        },
+        {
+          "source_identity": "W11:S:s2",
+          "variable": "x_81c347382f9ef7bce268d4a2a5a23b6b0ce22d6e04f631e953f16145677d3a92"
+        },
+        {
+          "source_identity": "W11:R:r1",
+          "variable": "x_8f415a16e70a16ff2571c5895a15a22c8e42a79610f5b6359411509e2cb48187"
+        },
+        {
+          "source_identity": "W11:S:s1",
+          "variable": "x_be0ad53a6e75353581daf3279ad714747859d943333148b01ad66be1fec4d81f"
+        }
+      ],
+      "variant": "plan_b",
+      "workload_id": "W11"
+    },
+    {
+      "outputs": [
+        {
+          "logical_output_key": "W12:value:13d285a3d3f4da6bd015adf0b5101c8ac5d7d159b4dec3ffe568a628e359b623",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_185ad063ace7baa890151498d8c2e4124829856579077042b10f54bb3d17e7f0"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_1e3e0dbd012170e425457c826badce59b14277be5ac63871c61cf318ec103edf"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_185ad063ace7baa890151498d8c2e4124829856579077042b10f54bb3d17e7f0"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_6e0f6b86fbac3afefb1a3444b019a4e28dfd11d9c8476533e39b104fa8604637"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_1e3e0dbd012170e425457c826badce59b14277be5ac63871c61cf318ec103edf"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_6e0f6b86fbac3afefb1a3444b019a4e28dfd11d9c8476533e39b104fa8604637"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_1e3e0dbd012170e425457c826badce59b14277be5ac63871c61cf318ec103edf"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_735b014c3a984ee934a33c588ec93a6cdc3ad6255bb63d7509dcccec92a207ab"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_1e3e0dbd012170e425457c826badce59b14277be5ac63871c61cf318ec103edf"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_6e0f6b86fbac3afefb1a3444b019a4e28dfd11d9c8476533e39b104fa8604637"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_735b014c3a984ee934a33c588ec93a6cdc3ad6255bb63d7509dcccec92a207ab"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_6e0f6b86fbac3afefb1a3444b019a4e28dfd11d9c8476533e39b104fa8604637"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 3
+          }
+        },
+        {
+          "logical_output_key": "W12:value:17e4a0bd7bbba847847e907512b019f42a0acab6b3d2076cb1b78777004f2c1d",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_40f04606a0512f0f46c3b6c2a8e738064cd81324aa4f877c987346cdf47c8bf2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_777470a5e51e77f54243e5e333c8c5adee0b200765ff318d9de331b0ccd2c9c6"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_40f04606a0512f0f46c3b6c2a8e738064cd81324aa4f877c987346cdf47c8bf2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c83cd1f0ce4627b8cf1d3a1acf84cda764b06702edf192155bd7abab292d762c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_40f04606a0512f0f46c3b6c2a8e738064cd81324aa4f877c987346cdf47c8bf2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e2243c10dffaf4607eceab15e41cf07af8186b218c0ae7c55e9af2b862c518a9"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_40f04606a0512f0f46c3b6c2a8e738064cd81324aa4f877c987346cdf47c8bf2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_777470a5e51e77f54243e5e333c8c5adee0b200765ff318d9de331b0ccd2c9c6"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c83cd1f0ce4627b8cf1d3a1acf84cda764b06702edf192155bd7abab292d762c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_777470a5e51e77f54243e5e333c8c5adee0b200765ff318d9de331b0ccd2c9c6"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e2243c10dffaf4607eceab15e41cf07af8186b218c0ae7c55e9af2b862c518a9"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_777470a5e51e77f54243e5e333c8c5adee0b200765ff318d9de331b0ccd2c9c6"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 2
+          }
+        },
+        {
+          "logical_output_key": "W12:value:187f5e64327d0437058ed0358a9630d6f091c5f311b58b57f94ad8d5a38c4749",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_145783ae63f187a527508df55959ffc5071cbcf8a92d9e3a8903a0da1044da4a"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_64118a1203abea7f4eff374db8d7edd7a1e6684bff857d8af8fad42f8d114dc9"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_145783ae63f187a527508df55959ffc5071cbcf8a92d9e3a8903a0da1044da4a"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_9dd7181f04c91e3627d7deec87e92ebfd7b00df52a7123ff7e81c776a2b5cccb"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_179fee4964f2509b8c3aa94367b5c8da1f6d200e66ce42c019eb718a74010b78"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_64118a1203abea7f4eff374db8d7edd7a1e6684bff857d8af8fad42f8d114dc9"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_179fee4964f2509b8c3aa94367b5c8da1f6d200e66ce42c019eb718a74010b78"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_9dd7181f04c91e3627d7deec87e92ebfd7b00df52a7123ff7e81c776a2b5cccb"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_64118a1203abea7f4eff374db8d7edd7a1e6684bff857d8af8fad42f8d114dc9"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_9dd7181f04c91e3627d7deec87e92ebfd7b00df52a7123ff7e81c776a2b5cccb"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_64118a1203abea7f4eff374db8d7edd7a1e6684bff857d8af8fad42f8d114dc9"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_9dd7181f04c91e3627d7deec87e92ebfd7b00df52a7123ff7e81c776a2b5cccb"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 10
+          }
+        },
+        {
+          "logical_output_key": "W12:value:21790d4b6d604acb3314fe4fb6727baf2316a9c327c36b169b0bbbde6b088067",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0594086b95206a11fe65a825045f1160e00376c7f58e2be8cad1c693e6431a0a"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_622386ba39698ff011b217ac48defabe6f6a8ec9e974689e9d0679e4d9fce4e7"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0594086b95206a11fe65a825045f1160e00376c7f58e2be8cad1c693e6431a0a"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d1a2f2b71c93edcdb85db17e3ec6850da565aae795b1be93859079c240a4244a"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0594086b95206a11fe65a825045f1160e00376c7f58e2be8cad1c693e6431a0a"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d91ce9848dda9d03c798a07d6b91422663c951a2155eb7dbe5366d694107855e"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_0594086b95206a11fe65a825045f1160e00376c7f58e2be8cad1c693e6431a0a"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_622386ba39698ff011b217ac48defabe6f6a8ec9e974689e9d0679e4d9fce4e7"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d1a2f2b71c93edcdb85db17e3ec6850da565aae795b1be93859079c240a4244a"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_d1a2f2b71c93edcdb85db17e3ec6850da565aae795b1be93859079c240a4244a"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d91ce9848dda9d03c798a07d6b91422663c951a2155eb7dbe5366d694107855e"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_d1a2f2b71c93edcdb85db17e3ec6850da565aae795b1be93859079c240a4244a"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 7
+          }
+        },
+        {
+          "logical_output_key": "W12:value:22dbd96b873dfd58da1f92ce045e4cbc92c728e7859bc730590a27e988047f4c",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_53d6ce6c65a5e718167812c414209854700b7308f0396e07668251c227726543"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_975e80cca9bd700d55214de441b8972aee38848b523076f58d74c09fca64c9a8"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_53d6ce6c65a5e718167812c414209854700b7308f0396e07668251c227726543"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_b7585389105b9340f06c49eb12b402fb8ad1065c72aabe5ac317c6f8c0e92061"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_7f6faa26c2e1d091259165f33f6ca8d5053f05f95a15dff9b7546e17e8d9215d"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_975e80cca9bd700d55214de441b8972aee38848b523076f58d74c09fca64c9a8"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_7f6faa26c2e1d091259165f33f6ca8d5053f05f95a15dff9b7546e17e8d9215d"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_b7585389105b9340f06c49eb12b402fb8ad1065c72aabe5ac317c6f8c0e92061"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_975e80cca9bd700d55214de441b8972aee38848b523076f58d74c09fca64c9a8"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_b7585389105b9340f06c49eb12b402fb8ad1065c72aabe5ac317c6f8c0e92061"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_975e80cca9bd700d55214de441b8972aee38848b523076f58d74c09fca64c9a8"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_b7585389105b9340f06c49eb12b402fb8ad1065c72aabe5ac317c6f8c0e92061"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 4
+          }
+        },
+        {
+          "logical_output_key": "W12:value:23e46a4cf5294033922565282e552a1ad928ea9b046ed4007ac64fea5b385095",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_3de362a6ff91bb9ca1bcac60041887b36252b3ec8b53a587cbc724da9b7de017"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_86532926bf5c99ab5601af08bc3690e2d27d1b0b5b12e892d069037a0406da6c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_3de362a6ff91bb9ca1bcac60041887b36252b3ec8b53a587cbc724da9b7de017"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_91edb9c6be5283948c699738a2483377ff446bbc54d6c80a4fe80725a21c8a51"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_3de362a6ff91bb9ca1bcac60041887b36252b3ec8b53a587cbc724da9b7de017"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_dfc9532a3f982148c422c3e173134798509ac71872a1b80aa3eec4985b4fda36"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_3de362a6ff91bb9ca1bcac60041887b36252b3ec8b53a587cbc724da9b7de017"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_86532926bf5c99ab5601af08bc3690e2d27d1b0b5b12e892d069037a0406da6c"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_91edb9c6be5283948c699738a2483377ff446bbc54d6c80a4fe80725a21c8a51"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_91edb9c6be5283948c699738a2483377ff446bbc54d6c80a4fe80725a21c8a51"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_dfc9532a3f982148c422c3e173134798509ac71872a1b80aa3eec4985b4fda36"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_91edb9c6be5283948c699738a2483377ff446bbc54d6c80a4fe80725a21c8a51"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 13
+          }
+        },
+        {
+          "logical_output_key": "W12:value:28938fcb08ac3ba81fb9b61257aa2e1c2fbf0cf7a381e2df4a218af0107df828",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0ec3c156b47cfef7bbe34d722eaa0edbc5eee28d5693461081d69e8b8ba831f2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_936d6f5b2bfc90127c02f2330895f161cc506c97bff5e6170f6f3583fd298b07"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0ec3c156b47cfef7bbe34d722eaa0edbc5eee28d5693461081d69e8b8ba831f2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d4a2ebceb3883575be502b85547eba8de45a96e548d1581bcfe2a807797babcd"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_201df74ebed948358e58582212f2cafb88891299611a5d7aa971208a665d538a"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_936d6f5b2bfc90127c02f2330895f161cc506c97bff5e6170f6f3583fd298b07"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_201df74ebed948358e58582212f2cafb88891299611a5d7aa971208a665d538a"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d4a2ebceb3883575be502b85547eba8de45a96e548d1581bcfe2a807797babcd"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_936d6f5b2bfc90127c02f2330895f161cc506c97bff5e6170f6f3583fd298b07"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d4a2ebceb3883575be502b85547eba8de45a96e548d1581bcfe2a807797babcd"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_936d6f5b2bfc90127c02f2330895f161cc506c97bff5e6170f6f3583fd298b07"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_d4a2ebceb3883575be502b85547eba8de45a96e548d1581bcfe2a807797babcd"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 23
+          }
+        },
+        {
+          "logical_output_key": "W12:value:2b5a9313d4f859fb772fa49dcaf244e9b53ceee24b7069c4990c982b351872a9",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_3faf950ea6aa774ab1a3b03eebe593e011a41c0614f47155ea1557899b0b16f2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_4bd74c88705e268fb5c2eb61c99da148c650554da301578b514b8b01c927bc16"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_3faf950ea6aa774ab1a3b03eebe593e011a41c0614f47155ea1557899b0b16f2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_dff228fa702272ed6b982352d0d881c3d9d77b3d17cebdc0fafaf73fce240e5a"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_4bd74c88705e268fb5c2eb61c99da148c650554da301578b514b8b01c927bc16"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_dff228fa702272ed6b982352d0d881c3d9d77b3d17cebdc0fafaf73fce240e5a"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_4bd74c88705e268fb5c2eb61c99da148c650554da301578b514b8b01c927bc16"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_f38775a3bee440230ec6a99fd131fdedf9cc12d4feed2868a6e5e9c602fd3a83"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_4bd74c88705e268fb5c2eb61c99da148c650554da301578b514b8b01c927bc16"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_dff228fa702272ed6b982352d0d881c3d9d77b3d17cebdc0fafaf73fce240e5a"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_f38775a3bee440230ec6a99fd131fdedf9cc12d4feed2868a6e5e9c602fd3a83"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_dff228fa702272ed6b982352d0d881c3d9d77b3d17cebdc0fafaf73fce240e5a"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 12
+          }
+        },
+        {
+          "logical_output_key": "W12:value:2d85b427ac63eae513bd73891235dc586edbc374675869391666c5796eeaa5e3",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_01d159dc737e7ddf21cb804f22b6f7b8047035ae5bc1f79d9e3589bb1bd851f7"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_5b561b234ed2ad0a4b891a21bd7f9be7a3e2e8f1682e6e1fa44f3a9da44e3fe6"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_01d159dc737e7ddf21cb804f22b6f7b8047035ae5bc1f79d9e3589bb1bd851f7"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_705580e7393a29ecd1421e33cdd7eca88788ebae1fbabb696b6b1e7600d30e70"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_01d159dc737e7ddf21cb804f22b6f7b8047035ae5bc1f79d9e3589bb1bd851f7"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c4d00fe7c7475d99993a16843f41e9096c8cdf0c9d062160e94a73a5149a5bab"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_01d159dc737e7ddf21cb804f22b6f7b8047035ae5bc1f79d9e3589bb1bd851f7"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_5b561b234ed2ad0a4b891a21bd7f9be7a3e2e8f1682e6e1fa44f3a9da44e3fe6"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_705580e7393a29ecd1421e33cdd7eca88788ebae1fbabb696b6b1e7600d30e70"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_5b561b234ed2ad0a4b891a21bd7f9be7a3e2e8f1682e6e1fa44f3a9da44e3fe6"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c4d00fe7c7475d99993a16843f41e9096c8cdf0c9d062160e94a73a5149a5bab"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_5b561b234ed2ad0a4b891a21bd7f9be7a3e2e8f1682e6e1fa44f3a9da44e3fe6"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 24
+          }
+        },
+        {
+          "logical_output_key": "W12:value:43c607322e6d5b490dfe49df95cee69a34717a1297d24487194bb654ff026f70",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_35c9a2f6a618bc7362aa1eca667bc725b0cac0b23e5b7df64619231b29c87411"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_521a2c0d0b010f377894aab143d02037bba883f64054ffa34332efaff5647284"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_35c9a2f6a618bc7362aa1eca667bc725b0cac0b23e5b7df64619231b29c87411"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_9c47a23b589289b11c0af8428ab11e754c9677e02ac15f15177fd8781625d96e"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_35c9a2f6a618bc7362aa1eca667bc725b0cac0b23e5b7df64619231b29c87411"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d39477c248a412b8266d70abd42c03109d1ad6f27b2747127cd2ecd96da6aa96"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_35c9a2f6a618bc7362aa1eca667bc725b0cac0b23e5b7df64619231b29c87411"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_521a2c0d0b010f377894aab143d02037bba883f64054ffa34332efaff5647284"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_9c47a23b589289b11c0af8428ab11e754c9677e02ac15f15177fd8781625d96e"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_9c47a23b589289b11c0af8428ab11e754c9677e02ac15f15177fd8781625d96e"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d39477c248a412b8266d70abd42c03109d1ad6f27b2747127cd2ecd96da6aa96"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_9c47a23b589289b11c0af8428ab11e754c9677e02ac15f15177fd8781625d96e"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 18
+          }
+        },
+        {
+          "logical_output_key": "W12:value:4ba8f642035e61aa7c19436399e258046afe04eea68f66bc6dd1ca42899aa955",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_7489776ac09d3eb933621fbd9ee3e98c8337e8be8545e40c43a52cf270dcab39"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_ae17f716f4a97ed93e8c47b3d47bad4177f41e4cb56a1cb08da4c14a8b03627b"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_7489776ac09d3eb933621fbd9ee3e98c8337e8be8545e40c43a52cf270dcab39"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d171c8d2d5d3fe4fdeaa1462161d55ad6435a2422495406fffa50ba7abed5d75"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_9c835acb4bb63da31cc48a661283265100cf7d99d47f1ce42bc4c198cda24bdc"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_ae17f716f4a97ed93e8c47b3d47bad4177f41e4cb56a1cb08da4c14a8b03627b"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_9c835acb4bb63da31cc48a661283265100cf7d99d47f1ce42bc4c198cda24bdc"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d171c8d2d5d3fe4fdeaa1462161d55ad6435a2422495406fffa50ba7abed5d75"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_ae17f716f4a97ed93e8c47b3d47bad4177f41e4cb56a1cb08da4c14a8b03627b"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d171c8d2d5d3fe4fdeaa1462161d55ad6435a2422495406fffa50ba7abed5d75"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_ae17f716f4a97ed93e8c47b3d47bad4177f41e4cb56a1cb08da4c14a8b03627b"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_d171c8d2d5d3fe4fdeaa1462161d55ad6435a2422495406fffa50ba7abed5d75"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 5
+          }
+        },
+        {
+          "logical_output_key": "W12:value:4c50d8872bc5a4252ec20decafab388f692d6a9d190f0f07416968c080ed0e28",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_006e721011fa2c6b94257a1ec152b4bc702249defc4ca584ffa5cb18397c2907"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_13e4475dacb6ec5311282a1f3ea46db9b5be8441c92af75cbea63253aae36993"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_006e721011fa2c6b94257a1ec152b4bc702249defc4ca584ffa5cb18397c2907"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_72392c793e0e2ab5b823c72105a1a9bc25ae9676099a3f663ba0fc2911acdd36"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_006e721011fa2c6b94257a1ec152b4bc702249defc4ca584ffa5cb18397c2907"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_bfd66b784eaae16210fd30c14933a52f016b45a9fe56324d59ac34f86f2f8813"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_006e721011fa2c6b94257a1ec152b4bc702249defc4ca584ffa5cb18397c2907"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_13e4475dacb6ec5311282a1f3ea46db9b5be8441c92af75cbea63253aae36993"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_bfd66b784eaae16210fd30c14933a52f016b45a9fe56324d59ac34f86f2f8813"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_72392c793e0e2ab5b823c72105a1a9bc25ae9676099a3f663ba0fc2911acdd36"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_bfd66b784eaae16210fd30c14933a52f016b45a9fe56324d59ac34f86f2f8813"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_bfd66b784eaae16210fd30c14933a52f016b45a9fe56324d59ac34f86f2f8813"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 9
+          }
+        },
+        {
+          "logical_output_key": "W12:value:4c67618bde452806fdf58e8c7900fa82a4346e1ea76d75b9c89f2abec8c6accb",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_1af37a47d6e3810840c88e0e4a143ca90ead698c4178a10a86aee5f38d150bb7"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_6a701fa16f16db737e20492679c0ea84336c97f57a822aaf9601c70db19313ac"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_1af37a47d6e3810840c88e0e4a143ca90ead698c4178a10a86aee5f38d150bb7"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_af161a00d83efca2ab52cf5363c6aa9404f92df000f685026e00faf09977e7c2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_2e66ff39e2de4a6342e7f8b11ac0642371a4e289b73767b4f1baf0eb59a7a3a8"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_6a701fa16f16db737e20492679c0ea84336c97f57a822aaf9601c70db19313ac"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_2e66ff39e2de4a6342e7f8b11ac0642371a4e289b73767b4f1baf0eb59a7a3a8"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_af161a00d83efca2ab52cf5363c6aa9404f92df000f685026e00faf09977e7c2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_6a701fa16f16db737e20492679c0ea84336c97f57a822aaf9601c70db19313ac"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_af161a00d83efca2ab52cf5363c6aa9404f92df000f685026e00faf09977e7c2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_6a701fa16f16db737e20492679c0ea84336c97f57a822aaf9601c70db19313ac"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_af161a00d83efca2ab52cf5363c6aa9404f92df000f685026e00faf09977e7c2"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 0
+          }
+        },
+        {
+          "logical_output_key": "W12:value:53c50b1e576b646f7f95c2bfa042f0511de715c7cd8c514ad5a6046fb671cda2",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_08e283cdb4c7573913fa55ec8ffd2bb8c6ce4bd010d724b9799763e31316c5fb"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c13c52863f9ec6ef4c7e45353ab428b958901fa69ca51cadfb26986ddbb174e8"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_08e283cdb4c7573913fa55ec8ffd2bb8c6ce4bd010d724b9799763e31316c5fb"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_feef73daa3d7da815f938eb3fbb6a3f8686a24d55b4ab8202e292fe9a78fdd5c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_c13c52863f9ec6ef4c7e45353ab428b958901fa69ca51cadfb26986ddbb174e8"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c8b0f6ccf72b89a4cd643c83576f091b20f98cfdbf74e2a8b04d9eef4727f04c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_c13c52863f9ec6ef4c7e45353ab428b958901fa69ca51cadfb26986ddbb174e8"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_feef73daa3d7da815f938eb3fbb6a3f8686a24d55b4ab8202e292fe9a78fdd5c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_c13c52863f9ec6ef4c7e45353ab428b958901fa69ca51cadfb26986ddbb174e8"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_c8b0f6ccf72b89a4cd643c83576f091b20f98cfdbf74e2a8b04d9eef4727f04c"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_feef73daa3d7da815f938eb3fbb6a3f8686a24d55b4ab8202e292fe9a78fdd5c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_feef73daa3d7da815f938eb3fbb6a3f8686a24d55b4ab8202e292fe9a78fdd5c"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 22
+          }
+        },
+        {
+          "logical_output_key": "W12:value:5cf4e79579d9a83686b77d0333d7528ffc8daa48801b5e5b1362b57ea83e6dba",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_373a77cb611c04157d6c818e956ac4c23ed4a4c227f9c5ff897d2a1418b9bc5e"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_40d33237809729cd428ae0db38d6e7bff1a14ba2f2270ef1a97d53d66303ab13"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_373a77cb611c04157d6c818e956ac4c23ed4a4c227f9c5ff897d2a1418b9bc5e"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c8032595e382a3c3b101702eb285b958a7d2e3aad5f87e7de50b58fc3051a4da"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_40d33237809729cd428ae0db38d6e7bff1a14ba2f2270ef1a97d53d66303ab13"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c8032595e382a3c3b101702eb285b958a7d2e3aad5f87e7de50b58fc3051a4da"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_40d33237809729cd428ae0db38d6e7bff1a14ba2f2270ef1a97d53d66303ab13"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_f297a247cc69aa28861226a49da621f7ca9939ef2c22925fa4e0940c374812c9"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_40d33237809729cd428ae0db38d6e7bff1a14ba2f2270ef1a97d53d66303ab13"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_c8032595e382a3c3b101702eb285b958a7d2e3aad5f87e7de50b58fc3051a4da"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_f297a247cc69aa28861226a49da621f7ca9939ef2c22925fa4e0940c374812c9"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_c8032595e382a3c3b101702eb285b958a7d2e3aad5f87e7de50b58fc3051a4da"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 16
+          }
+        },
+        {
+          "logical_output_key": "W12:value:690c187efdde84ce875f1b43b6768cbebec3af5906782dc4000473250464c521",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_749e684767bc4fb58b78e83e48b76142ff371c4163691a1c0c04fe30b16ff56e"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_95240b30d2ef87c20b4300a4e56708497e126d6c7a1b69f9b05b3a50204e1c48"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_749e684767bc4fb58b78e83e48b76142ff371c4163691a1c0c04fe30b16ff56e"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c750f5b51a10efe11a9bb93fbf8067e0c935a14f7a54af8603344e0527057ce2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_95240b30d2ef87c20b4300a4e56708497e126d6c7a1b69f9b05b3a50204e1c48"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_c750f5b51a10efe11a9bb93fbf8067e0c935a14f7a54af8603344e0527057ce2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_95240b30d2ef87c20b4300a4e56708497e126d6c7a1b69f9b05b3a50204e1c48"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_fc793d88fc98305c646b4c0545dd91408c7c63b97acfbf6edb6c7cbd35a4d802"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_95240b30d2ef87c20b4300a4e56708497e126d6c7a1b69f9b05b3a50204e1c48"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_c750f5b51a10efe11a9bb93fbf8067e0c935a14f7a54af8603344e0527057ce2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_fc793d88fc98305c646b4c0545dd91408c7c63b97acfbf6edb6c7cbd35a4d802"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_c750f5b51a10efe11a9bb93fbf8067e0c935a14f7a54af8603344e0527057ce2"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 6
+          }
+        },
+        {
+          "logical_output_key": "W12:value:aa0cc5379f0b79d4e07b9888517b132e0312dc8a62227870dab48be550aeca83",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_06119200d5e45b7a49f290a3f4afe6822a8e3818363e93bbb1f7fdc6996e5d73"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_0d3a08ea9a0f6773b603cda0721128522158d90bc97c26811ae393859999a486"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_06119200d5e45b7a49f290a3f4afe6822a8e3818363e93bbb1f7fdc6996e5d73"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e29ebb8595785a4c07e7a48297505f067a2364f1430f0ffed5795bd9c66513d8"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0d3a08ea9a0f6773b603cda0721128522158d90bc97c26811ae393859999a486"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_cccbf260c91d78acfacf21c8ffeee306727a385ee9b46dcddd06e32aeeb2b523"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0d3a08ea9a0f6773b603cda0721128522158d90bc97c26811ae393859999a486"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e29ebb8595785a4c07e7a48297505f067a2364f1430f0ffed5795bd9c66513d8"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_0d3a08ea9a0f6773b603cda0721128522158d90bc97c26811ae393859999a486"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_cccbf260c91d78acfacf21c8ffeee306727a385ee9b46dcddd06e32aeeb2b523"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e29ebb8595785a4c07e7a48297505f067a2364f1430f0ffed5795bd9c66513d8"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_e29ebb8595785a4c07e7a48297505f067a2364f1430f0ffed5795bd9c66513d8"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 8
+          }
+        },
+        {
+          "logical_output_key": "W12:value:aeb1bb57ae2c327156fa5ec6c3600dcf7409aa54f8f952787487654652b79283",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_50f3ca47c4e084afb74b7edfee847be0794b2788ecb708c964a773e0ea9d366f"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_8cdfaaa7609400208da916312100ddc16f596525a04c856c28110c8160936ff8"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_50f3ca47c4e084afb74b7edfee847be0794b2788ecb708c964a773e0ea9d366f"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_9dafec6b5c6d81353de945b450e1b566b4f232592adc249ecca7691c6b5947ca"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_50f3ca47c4e084afb74b7edfee847be0794b2788ecb708c964a773e0ea9d366f"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e2e9527b534e6346e52f7a13bf6f4eb23d6520a8a1991493e62140969d756d07"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_50f3ca47c4e084afb74b7edfee847be0794b2788ecb708c964a773e0ea9d366f"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_8cdfaaa7609400208da916312100ddc16f596525a04c856c28110c8160936ff8"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e2e9527b534e6346e52f7a13bf6f4eb23d6520a8a1991493e62140969d756d07"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_9dafec6b5c6d81353de945b450e1b566b4f232592adc249ecca7691c6b5947ca"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e2e9527b534e6346e52f7a13bf6f4eb23d6520a8a1991493e62140969d756d07"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_e2e9527b534e6346e52f7a13bf6f4eb23d6520a8a1991493e62140969d756d07"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 11
+          }
+        },
+        {
+          "logical_output_key": "W12:value:b235b2603773a7bcdf246d9973b5e030c494214c08bd6a15271f92caed2f4382",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_7cf7097ea93dbe1e908bc51ea2c853c0c44d2f95b29ed4d814680fd46ffab4d2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_9fdd41b85a138dbc8b4b38b61390cbb30da1b8b092c7084141b7f21612491659"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_7cf7097ea93dbe1e908bc51ea2c853c0c44d2f95b29ed4d814680fd46ffab4d2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d83d97093912819ce1fcbde6fd1d2773aadc99dd5d2298ad5148a78c4d6ea6b2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_9e703a670bea4494e3541686a9b583dc54edef1ea4c0de06a4823ec83c266772"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_9fdd41b85a138dbc8b4b38b61390cbb30da1b8b092c7084141b7f21612491659"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_9e703a670bea4494e3541686a9b583dc54edef1ea4c0de06a4823ec83c266772"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d83d97093912819ce1fcbde6fd1d2773aadc99dd5d2298ad5148a78c4d6ea6b2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_9fdd41b85a138dbc8b4b38b61390cbb30da1b8b092c7084141b7f21612491659"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d83d97093912819ce1fcbde6fd1d2773aadc99dd5d2298ad5148a78c4d6ea6b2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_9fdd41b85a138dbc8b4b38b61390cbb30da1b8b092c7084141b7f21612491659"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_d83d97093912819ce1fcbde6fd1d2773aadc99dd5d2298ad5148a78c4d6ea6b2"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 21
+          }
+        },
+        {
+          "logical_output_key": "W12:value:b781d5b060496e5ab39ce070cba21e2ed5d15697068a56f63909db568e66cf18",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_394ec47bc937c2d132a4cc1a9ab619b9e6212e3dcd5e6db512d8edaa211dd840"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_9e392bf05c3cce6a673e1f2721ccfdcb057939244bf1edb0d7f3ed170d38be2c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_394ec47bc937c2d132a4cc1a9ab619b9e6212e3dcd5e6db512d8edaa211dd840"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_bb648876c6b7becb94d67565a0e6ddd7dde2cce2f5545885546cd408439871a0"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_84cb74198e5fb84ac504646cf4573adbd34d169e48ce68a0ef25e081b5ae1fec"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_9e392bf05c3cce6a673e1f2721ccfdcb057939244bf1edb0d7f3ed170d38be2c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_84cb74198e5fb84ac504646cf4573adbd34d169e48ce68a0ef25e081b5ae1fec"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_bb648876c6b7becb94d67565a0e6ddd7dde2cce2f5545885546cd408439871a0"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_9e392bf05c3cce6a673e1f2721ccfdcb057939244bf1edb0d7f3ed170d38be2c"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_bb648876c6b7becb94d67565a0e6ddd7dde2cce2f5545885546cd408439871a0"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_9e392bf05c3cce6a673e1f2721ccfdcb057939244bf1edb0d7f3ed170d38be2c"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_bb648876c6b7becb94d67565a0e6ddd7dde2cce2f5545885546cd408439871a0"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 1
+          }
+        },
+        {
+          "logical_output_key": "W12:value:d23b9b6f8c8139aa05d538a5b2d4abe9c161c7a8d2e7229c53d32fbc5d4ef21b",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_214a92d6944f2ac964c2956540fc4f2a311ed6d4bb38dbf59dc3d272604bc805"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_cda4ea14eb3a62be610c8a9d54f54ae24f91082eea86cc64a2fbfc48b0fdd1b6"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_214a92d6944f2ac964c2956540fc4f2a311ed6d4bb38dbf59dc3d272604bc805"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d768030bdd4eabe5c487928bdacf84f32c3507c579df62e3cf62eb22d0c8e822"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_625d6f6cecb40f3145c54a0f68bdf084302fba5561de817a65a6082f79b851a2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_cda4ea14eb3a62be610c8a9d54f54ae24f91082eea86cc64a2fbfc48b0fdd1b6"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_625d6f6cecb40f3145c54a0f68bdf084302fba5561de817a65a6082f79b851a2"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d768030bdd4eabe5c487928bdacf84f32c3507c579df62e3cf62eb22d0c8e822"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_cda4ea14eb3a62be610c8a9d54f54ae24f91082eea86cc64a2fbfc48b0fdd1b6"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_d768030bdd4eabe5c487928bdacf84f32c3507c579df62e3cf62eb22d0c8e822"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_cda4ea14eb3a62be610c8a9d54f54ae24f91082eea86cc64a2fbfc48b0fdd1b6"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_d768030bdd4eabe5c487928bdacf84f32c3507c579df62e3cf62eb22d0c8e822"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 15
+          }
+        },
+        {
+          "logical_output_key": "W12:value:e0e19232b21eee60f10fce9b30db9330f64fa81063dc483cebd8f162b78ccf8d",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_1170e640935c1abdc220567ec0fb9b943e486d7a7babd46c76d650b86b6c03f6"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_a6fd2ced44702e14b6911ff86dd6029288862378a2553e3a33b47dbf218b9dac"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_1170e640935c1abdc220567ec0fb9b943e486d7a7babd46c76d650b86b6c03f6"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e375f1e0ca0695ea70ed3219d825a82d13258f4445b19053086fc90306135d5a"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_50cbd9ba6236d8542ddd8c1e5752206b3bac89352860463499d36e9effd445fb"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_a6fd2ced44702e14b6911ff86dd6029288862378a2553e3a33b47dbf218b9dac"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_50cbd9ba6236d8542ddd8c1e5752206b3bac89352860463499d36e9effd445fb"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e375f1e0ca0695ea70ed3219d825a82d13258f4445b19053086fc90306135d5a"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_a6fd2ced44702e14b6911ff86dd6029288862378a2553e3a33b47dbf218b9dac"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_e375f1e0ca0695ea70ed3219d825a82d13258f4445b19053086fc90306135d5a"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_a6fd2ced44702e14b6911ff86dd6029288862378a2553e3a33b47dbf218b9dac"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_e375f1e0ca0695ea70ed3219d825a82d13258f4445b19053086fc90306135d5a"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 17
+          }
+        },
+        {
+          "logical_output_key": "W12:value:e19f5314be657342ad161fb58f48b0d184fc0a5327e989b6268fdc468f1b213b",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_00b3501edc93f77fb3f6580ba683d74c94d723b5ec4f56ad2fbcbd31934c1fd8"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_6bc962f15f585e3b0ca7f868413d175d2f7785d7dd8845d51c09f7a5b810a23d"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_00b3501edc93f77fb3f6580ba683d74c94d723b5ec4f56ad2fbcbd31934c1fd8"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_f39f4d8f71984ebc4b9b50e23fda71362f47bb3afbb9307f10dc20feafd6cd1d"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_6bc962f15f585e3b0ca7f868413d175d2f7785d7dd8845d51c09f7a5b810a23d"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_816134f6d8641e483de0eee6ac4caa2c770a89196c31840ad4111d6db4942734"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_6bc962f15f585e3b0ca7f868413d175d2f7785d7dd8845d51c09f7a5b810a23d"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_f39f4d8f71984ebc4b9b50e23fda71362f47bb3afbb9307f10dc20feafd6cd1d"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_6bc962f15f585e3b0ca7f868413d175d2f7785d7dd8845d51c09f7a5b810a23d"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_816134f6d8641e483de0eee6ac4caa2c770a89196c31840ad4111d6db4942734"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_f39f4d8f71984ebc4b9b50e23fda71362f47bb3afbb9307f10dc20feafd6cd1d"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_f39f4d8f71984ebc4b9b50e23fda71362f47bb3afbb9307f10dc20feafd6cd1d"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 19
+          }
+        },
+        {
+          "logical_output_key": "W12:value:e57b88b57bb7aed8afc397437e4013e5610ea7c01f266af59715cbd65c1814f4",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_4754ed899278373e8a11617fc64f40b5c6a34fc1f24c251b801b35dccb8a7310"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_686656da2e566b9bcb02acda7b867e91cd8de9276440c062c0f0ca6801470d5b"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_4754ed899278373e8a11617fc64f40b5c6a34fc1f24c251b801b35dccb8a7310"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_90925033c75f7192c9230c407ef626a761f4db34d26c7a3981b26f0f42226161"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_686656da2e566b9bcb02acda7b867e91cd8de9276440c062c0f0ca6801470d5b"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_90925033c75f7192c9230c407ef626a761f4db34d26c7a3981b26f0f42226161"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_686656da2e566b9bcb02acda7b867e91cd8de9276440c062c0f0ca6801470d5b"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_eeef50ca23cc3829ae12dc2d8e0fd4e30d89d3f88d1cf6c42c79be2ae9574e46"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_686656da2e566b9bcb02acda7b867e91cd8de9276440c062c0f0ca6801470d5b"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_90925033c75f7192c9230c407ef626a761f4db34d26c7a3981b26f0f42226161"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_eeef50ca23cc3829ae12dc2d8e0fd4e30d89d3f88d1cf6c42c79be2ae9574e46"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_90925033c75f7192c9230c407ef626a761f4db34d26c7a3981b26f0f42226161"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 14
+          }
+        },
+        {
+          "logical_output_key": "W12:value:f1021dc155635fab7b3ad89f8d2ba804dbe2637f1db9fd027ec0407ae10ad695",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_69d44fc25c46833dd2e291c8c5d9f2d1d64a3ad573c8fcb94edde76be55578d0"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_a9aa2f66c292518b7c2be21a09d7ef3dfcf4d0dd3b9dcf7f80b16a9eec303c19"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_69d44fc25c46833dd2e291c8c5d9f2d1d64a3ad573c8fcb94edde76be55578d0"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_ba1a2627f45656f5a9ec6064dd855c501bd001fcc06d56b9124d605558058aa2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_a9aa2f66c292518b7c2be21a09d7ef3dfcf4d0dd3b9dcf7f80b16a9eec303c19"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_b4964c7eb4c1546c976a8e89573141c17768cdd94204db32d26e86a29b7b8741"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_a9aa2f66c292518b7c2be21a09d7ef3dfcf4d0dd3b9dcf7f80b16a9eec303c19"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_ba1a2627f45656f5a9ec6064dd855c501bd001fcc06d56b9124d605558058aa2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_a9aa2f66c292518b7c2be21a09d7ef3dfcf4d0dd3b9dcf7f80b16a9eec303c19"
+                  }
+                ]
+              },
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_b4964c7eb4c1546c976a8e89573141c17768cdd94204db32d26e86a29b7b8741"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_ba1a2627f45656f5a9ec6064dd855c501bd001fcc06d56b9124d605558058aa2"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_ba1a2627f45656f5a9ec6064dd855c501bd001fcc06d56b9124d605558058aa2"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "key": 20
+          }
+        }
+      ],
+      "schema_version": "native-nx-result-v1",
+      "source_variables": [
+        {
+          "source_identity": "W12:R:r034",
+          "variable": "x_006e721011fa2c6b94257a1ec152b4bc702249defc4ca584ffa5cb18397c2907"
+        },
+        {
+          "source_identity": "W12:S:s044",
+          "variable": "x_00b3501edc93f77fb3f6580ba683d74c94d723b5ec4f56ad2fbcbd31934c1fd8"
+        },
+        {
+          "source_identity": "W12:R:r024",
+          "variable": "x_01d159dc737e7ddf21cb804f22b6f7b8047035ae5bc1f79d9e3589bb1bd851f7"
+        },
+        {
+          "source_identity": "W12:R:r007",
+          "variable": "x_0594086b95206a11fe65a825045f1160e00376c7f58e2be8cad1c693e6431a0a"
+        },
+        {
+          "source_identity": "W12:S:s008",
+          "variable": "x_06119200d5e45b7a49f290a3f4afe6822a8e3818363e93bbb1f7fdc6996e5d73"
+        },
+        {
+          "source_identity": "W12:S:s047",
+          "variable": "x_08e283cdb4c7573913fa55ec8ffd2bb8c6ce4bd010d724b9799763e31316c5fb"
+        },
+        {
+          "source_identity": "W12:R:r033",
+          "variable": "x_0d3a08ea9a0f6773b603cda0721128522158d90bc97c26811ae393859999a486"
+        },
+        {
+          "source_identity": "W12:S:s048",
+          "variable": "x_0ec3c156b47cfef7bbe34d722eaa0edbc5eee28d5693461081d69e8b8ba831f2"
+        },
+        {
+          "source_identity": "W12:S:s017",
+          "variable": "x_1170e640935c1abdc220567ec0fb9b943e486d7a7babd46c76d650b86b6c03f6"
+        },
+        {
+          "source_identity": "W12:S:s034",
+          "variable": "x_13e4475dacb6ec5311282a1f3ea46db9b5be8441c92af75cbea63253aae36993"
+        },
+        {
+          "source_identity": "W12:S:s010",
+          "variable": "x_145783ae63f187a527508df55959ffc5071cbcf8a92d9e3a8903a0da1044da4a"
+        },
+        {
+          "source_identity": "W12:S:s035",
+          "variable": "x_179fee4964f2509b8c3aa94367b5c8da1f6d200e66ce42c019eb718a74010b78"
+        },
+        {
+          "source_identity": "W12:S:s003",
+          "variable": "x_185ad063ace7baa890151498d8c2e4124829856579077042b10f54bb3d17e7f0"
+        },
+        {
+          "source_identity": "W12:S:s025",
+          "variable": "x_1af37a47d6e3810840c88e0e4a143ca90ead698c4178a10a86aee5f38d150bb7"
+        },
+        {
+          "source_identity": "W12:R:r003",
+          "variable": "x_1e3e0dbd012170e425457c826badce59b14277be5ac63871c61cf318ec103edf"
+        },
+        {
+          "source_identity": "W12:S:s023",
+          "variable": "x_201df74ebed948358e58582212f2cafb88891299611a5d7aa971208a665d538a"
+        },
+        {
+          "source_identity": "W12:S:s015",
+          "variable": "x_214a92d6944f2ac964c2956540fc4f2a311ed6d4bb38dbf59dc3d272604bc805"
+        },
+        {
+          "source_identity": "W12:S:s000",
+          "variable": "x_2e66ff39e2de4a6342e7f8b11ac0642371a4e289b73767b4f1baf0eb59a7a3a8"
+        },
+        {
+          "source_identity": "W12:R:r043",
+          "variable": "x_35c9a2f6a618bc7362aa1eca667bc725b0cac0b23e5b7df64619231b29c87411"
+        },
+        {
+          "source_identity": "W12:S:s041",
+          "variable": "x_373a77cb611c04157d6c818e956ac4c23ed4a4c227f9c5ff897d2a1418b9bc5e"
+        },
+        {
+          "source_identity": "W12:S:s001",
+          "variable": "x_394ec47bc937c2d132a4cc1a9ab619b9e6212e3dcd5e6db512d8edaa211dd840"
+        },
+        {
+          "source_identity": "W12:R:r038",
+          "variable": "x_3de362a6ff91bb9ca1bcac60041887b36252b3ec8b53a587cbc724da9b7de017"
+        },
+        {
+          "source_identity": "W12:S:s012",
+          "variable": "x_3faf950ea6aa774ab1a3b03eebe593e011a41c0614f47155ea1557899b0b16f2"
+        },
+        {
+          "source_identity": "W12:R:r041",
+          "variable": "x_40d33237809729cd428ae0db38d6e7bff1a14ba2f2270ef1a97d53d66303ab13"
+        },
+        {
+          "source_identity": "W12:R:r002",
+          "variable": "x_40f04606a0512f0f46c3b6c2a8e738064cd81324aa4f877c987346cdf47c8bf2"
+        },
+        {
+          "source_identity": "W12:S:s039",
+          "variable": "x_4754ed899278373e8a11617fc64f40b5c6a34fc1f24c251b801b35dccb8a7310"
+        },
+        {
+          "source_identity": "W12:R:r012",
+          "variable": "x_4bd74c88705e268fb5c2eb61c99da148c650554da301578b514b8b01c927bc16"
+        },
+        {
+          "source_identity": "W12:S:s042",
+          "variable": "x_50cbd9ba6236d8542ddd8c1e5752206b3bac89352860463499d36e9effd445fb"
+        },
+        {
+          "source_identity": "W12:R:r036",
+          "variable": "x_50f3ca47c4e084afb74b7edfee847be0794b2788ecb708c964a773e0ea9d366f"
+        },
+        {
+          "source_identity": "W12:S:s018",
+          "variable": "x_521a2c0d0b010f377894aab143d02037bba883f64054ffa34332efaff5647284"
+        },
+        {
+          "source_identity": "W12:S:s004",
+          "variable": "x_53d6ce6c65a5e718167812c414209854700b7308f0396e07668251c227726543"
+        },
+        {
+          "source_identity": "W12:R:r049",
+          "variable": "x_5b561b234ed2ad0a4b891a21bd7f9be7a3e2e8f1682e6e1fa44f3a9da44e3fe6"
+        },
+        {
+          "source_identity": "W12:S:s032",
+          "variable": "x_622386ba39698ff011b217ac48defabe6f6a8ec9e974689e9d0679e4d9fce4e7"
+        },
+        {
+          "source_identity": "W12:S:s040",
+          "variable": "x_625d6f6cecb40f3145c54a0f68bdf084302fba5561de817a65a6082f79b851a2"
+        },
+        {
+          "source_identity": "W12:R:r035",
+          "variable": "x_64118a1203abea7f4eff374db8d7edd7a1e6684bff857d8af8fad42f8d114dc9"
+        },
+        {
+          "source_identity": "W12:R:r039",
+          "variable": "x_686656da2e566b9bcb02acda7b867e91cd8de9276440c062c0f0ca6801470d5b"
+        },
+        {
+          "source_identity": "W12:S:s020",
+          "variable": "x_69d44fc25c46833dd2e291c8c5d9f2d1d64a3ad573c8fcb94edde76be55578d0"
+        },
+        {
+          "source_identity": "W12:R:r000",
+          "variable": "x_6a701fa16f16db737e20492679c0ea84336c97f57a822aaf9601c70db19313ac"
+        },
+        {
+          "source_identity": "W12:R:r044",
+          "variable": "x_6bc962f15f585e3b0ca7f868413d175d2f7785d7dd8845d51c09f7a5b810a23d"
+        },
+        {
+          "source_identity": "W12:R:r028",
+          "variable": "x_6e0f6b86fbac3afefb1a3444b019a4e28dfd11d9c8476533e39b104fa8604637"
+        },
+        {
+          "source_identity": "W12:S:s049",
+          "variable": "x_705580e7393a29ecd1421e33cdd7eca88788ebae1fbabb696b6b1e7600d30e70"
+        },
+        {
+          "source_identity": "W12:S:s009",
+          "variable": "x_72392c793e0e2ab5b823c72105a1a9bc25ae9676099a3f663ba0fc2911acdd36"
+        },
+        {
+          "source_identity": "W12:S:s028",
+          "variable": "x_735b014c3a984ee934a33c588ec93a6cdc3ad6255bb63d7509dcccec92a207ab"
+        },
+        {
+          "source_identity": "W12:S:s030",
+          "variable": "x_7489776ac09d3eb933621fbd9ee3e98c8337e8be8545e40c43a52cf270dcab39"
+        },
+        {
+          "source_identity": "W12:S:s006",
+          "variable": "x_749e684767bc4fb58b78e83e48b76142ff371c4163691a1c0c04fe30b16ff56e"
+        },
+        {
+          "source_identity": "W12:R:r027",
+          "variable": "x_777470a5e51e77f54243e5e333c8c5adee0b200765ff318d9de331b0ccd2c9c6"
+        },
+        {
+          "source_identity": "W12:S:s046",
+          "variable": "x_7cf7097ea93dbe1e908bc51ea2c853c0c44d2f95b29ed4d814680fd46ffab4d2"
+        },
+        {
+          "source_identity": "W12:S:s029",
+          "variable": "x_7f6faa26c2e1d091259165f33f6ca8d5053f05f95a15dff9b7546e17e8d9215d"
+        },
+        {
+          "source_identity": "W12:S:s019",
+          "variable": "x_816134f6d8641e483de0eee6ac4caa2c770a89196c31840ad4111d6db4942734"
+        },
+        {
+          "source_identity": "W12:S:s026",
+          "variable": "x_84cb74198e5fb84ac504646cf4573adbd34d169e48ce68a0ef25e081b5ae1fec"
+        },
+        {
+          "source_identity": "W12:S:s013",
+          "variable": "x_86532926bf5c99ab5601af08bc3690e2d27d1b0b5b12e892d069037a0406da6c"
+        },
+        {
+          "source_identity": "W12:S:s036",
+          "variable": "x_8cdfaaa7609400208da916312100ddc16f596525a04c856c28110c8160936ff8"
+        },
+        {
+          "source_identity": "W12:R:r014",
+          "variable": "x_90925033c75f7192c9230c407ef626a761f4db34d26c7a3981b26f0f42226161"
+        },
+        {
+          "source_identity": "W12:R:r013",
+          "variable": "x_91edb9c6be5283948c699738a2483377ff446bbc54d6c80a4fe80725a21c8a51"
+        },
+        {
+          "source_identity": "W12:R:r023",
+          "variable": "x_936d6f5b2bfc90127c02f2330895f161cc506c97bff5e6170f6f3583fd298b07"
+        },
+        {
+          "source_identity": "W12:R:r031",
+          "variable": "x_95240b30d2ef87c20b4300a4e56708497e126d6c7a1b69f9b05b3a50204e1c48"
+        },
+        {
+          "source_identity": "W12:R:r029",
+          "variable": "x_975e80cca9bd700d55214de441b8972aee38848b523076f58d74c09fca64c9a8"
+        },
+        {
+          "source_identity": "W12:R:r018",
+          "variable": "x_9c47a23b589289b11c0af8428ab11e754c9677e02ac15f15177fd8781625d96e"
+        },
+        {
+          "source_identity": "W12:S:s005",
+          "variable": "x_9c835acb4bb63da31cc48a661283265100cf7d99d47f1ce42bc4c198cda24bdc"
+        },
+        {
+          "source_identity": "W12:S:s011",
+          "variable": "x_9dafec6b5c6d81353de945b450e1b566b4f232592adc249ecca7691c6b5947ca"
+        },
+        {
+          "source_identity": "W12:R:r010",
+          "variable": "x_9dd7181f04c91e3627d7deec87e92ebfd7b00df52a7123ff7e81c776a2b5cccb"
+        },
+        {
+          "source_identity": "W12:R:r001",
+          "variable": "x_9e392bf05c3cce6a673e1f2721ccfdcb057939244bf1edb0d7f3ed170d38be2c"
+        },
+        {
+          "source_identity": "W12:S:s021",
+          "variable": "x_9e703a670bea4494e3541686a9b583dc54edef1ea4c0de06a4823ec83c266772"
+        },
+        {
+          "source_identity": "W12:R:r046",
+          "variable": "x_9fdd41b85a138dbc8b4b38b61390cbb30da1b8b092c7084141b7f21612491659"
+        },
+        {
+          "source_identity": "W12:R:r017",
+          "variable": "x_a6fd2ced44702e14b6911ff86dd6029288862378a2553e3a33b47dbf218b9dac"
+        },
+        {
+          "source_identity": "W12:R:r045",
+          "variable": "x_a9aa2f66c292518b7c2be21a09d7ef3dfcf4d0dd3b9dcf7f80b16a9eec303c19"
+        },
+        {
+          "source_identity": "W12:R:r005",
+          "variable": "x_ae17f716f4a97ed93e8c47b3d47bad4177f41e4cb56a1cb08da4c14a8b03627b"
+        },
+        {
+          "source_identity": "W12:R:r025",
+          "variable": "x_af161a00d83efca2ab52cf5363c6aa9404f92df000f685026e00faf09977e7c2"
+        },
+        {
+          "source_identity": "W12:S:s045",
+          "variable": "x_b4964c7eb4c1546c976a8e89573141c17768cdd94204db32d26e86a29b7b8741"
+        },
+        {
+          "source_identity": "W12:R:r004",
+          "variable": "x_b7585389105b9340f06c49eb12b402fb8ad1065c72aabe5ac317c6f8c0e92061"
+        },
+        {
+          "source_identity": "W12:R:r020",
+          "variable": "x_ba1a2627f45656f5a9ec6064dd855c501bd001fcc06d56b9124d605558058aa2"
+        },
+        {
+          "source_identity": "W12:R:r026",
+          "variable": "x_bb648876c6b7becb94d67565a0e6ddd7dde2cce2f5545885546cd408439871a0"
+        },
+        {
+          "source_identity": "W12:R:r009",
+          "variable": "x_bfd66b784eaae16210fd30c14933a52f016b45a9fe56324d59ac34f86f2f8813"
+        },
+        {
+          "source_identity": "W12:R:r047",
+          "variable": "x_c13c52863f9ec6ef4c7e45353ab428b958901fa69ca51cadfb26986ddbb174e8"
+        },
+        {
+          "source_identity": "W12:S:s024",
+          "variable": "x_c4d00fe7c7475d99993a16843f41e9096c8cdf0c9d062160e94a73a5149a5bab"
+        },
+        {
+          "source_identity": "W12:R:r006",
+          "variable": "x_c750f5b51a10efe11a9bb93fbf8067e0c935a14f7a54af8603344e0527057ce2"
+        },
+        {
+          "source_identity": "W12:R:r016",
+          "variable": "x_c8032595e382a3c3b101702eb285b958a7d2e3aad5f87e7de50b58fc3051a4da"
+        },
+        {
+          "source_identity": "W12:S:s002",
+          "variable": "x_c83cd1f0ce4627b8cf1d3a1acf84cda764b06702edf192155bd7abab292d762c"
+        },
+        {
+          "source_identity": "W12:S:s022",
+          "variable": "x_c8b0f6ccf72b89a4cd643c83576f091b20f98cfdbf74e2a8b04d9eef4727f04c"
+        },
+        {
+          "source_identity": "W12:S:s033",
+          "variable": "x_cccbf260c91d78acfacf21c8ffeee306727a385ee9b46dcddd06e32aeeb2b523"
+        },
+        {
+          "source_identity": "W12:R:r040",
+          "variable": "x_cda4ea14eb3a62be610c8a9d54f54ae24f91082eea86cc64a2fbfc48b0fdd1b6"
+        },
+        {
+          "source_identity": "W12:R:r030",
+          "variable": "x_d171c8d2d5d3fe4fdeaa1462161d55ad6435a2422495406fffa50ba7abed5d75"
+        },
+        {
+          "source_identity": "W12:R:r032",
+          "variable": "x_d1a2f2b71c93edcdb85db17e3ec6850da565aae795b1be93859079c240a4244a"
+        },
+        {
+          "source_identity": "W12:S:s043",
+          "variable": "x_d39477c248a412b8266d70abd42c03109d1ad6f27b2747127cd2ecd96da6aa96"
+        },
+        {
+          "source_identity": "W12:R:r048",
+          "variable": "x_d4a2ebceb3883575be502b85547eba8de45a96e548d1581bcfe2a807797babcd"
+        },
+        {
+          "source_identity": "W12:R:r015",
+          "variable": "x_d768030bdd4eabe5c487928bdacf84f32c3507c579df62e3cf62eb22d0c8e822"
+        },
+        {
+          "source_identity": "W12:R:r021",
+          "variable": "x_d83d97093912819ce1fcbde6fd1d2773aadc99dd5d2298ad5148a78c4d6ea6b2"
+        },
+        {
+          "source_identity": "W12:S:s007",
+          "variable": "x_d91ce9848dda9d03c798a07d6b91422663c951a2155eb7dbe5366d694107855e"
+        },
+        {
+          "source_identity": "W12:S:s038",
+          "variable": "x_dfc9532a3f982148c422c3e173134798509ac71872a1b80aa3eec4985b4fda36"
+        },
+        {
+          "source_identity": "W12:R:r037",
+          "variable": "x_dff228fa702272ed6b982352d0d881c3d9d77b3d17cebdc0fafaf73fce240e5a"
+        },
+        {
+          "source_identity": "W12:S:s027",
+          "variable": "x_e2243c10dffaf4607eceab15e41cf07af8186b218c0ae7c55e9af2b862c518a9"
+        },
+        {
+          "source_identity": "W12:R:r008",
+          "variable": "x_e29ebb8595785a4c07e7a48297505f067a2364f1430f0ffed5795bd9c66513d8"
+        },
+        {
+          "source_identity": "W12:R:r011",
+          "variable": "x_e2e9527b534e6346e52f7a13bf6f4eb23d6520a8a1991493e62140969d756d07"
+        },
+        {
+          "source_identity": "W12:R:r042",
+          "variable": "x_e375f1e0ca0695ea70ed3219d825a82d13258f4445b19053086fc90306135d5a"
+        },
+        {
+          "source_identity": "W12:S:s014",
+          "variable": "x_eeef50ca23cc3829ae12dc2d8e0fd4e30d89d3f88d1cf6c42c79be2ae9574e46"
+        },
+        {
+          "source_identity": "W12:S:s016",
+          "variable": "x_f297a247cc69aa28861226a49da621f7ca9939ef2c22925fa4e0940c374812c9"
+        },
+        {
+          "source_identity": "W12:S:s037",
+          "variable": "x_f38775a3bee440230ec6a99fd131fdedf9cc12d4feed2868a6e5e9c602fd3a83"
+        },
+        {
+          "source_identity": "W12:R:r019",
+          "variable": "x_f39f4d8f71984ebc4b9b50e23fda71362f47bb3afbb9307f10dc20feafd6cd1d"
+        },
+        {
+          "source_identity": "W12:S:s031",
+          "variable": "x_fc793d88fc98305c646b4c0545dd91408c7c63b97acfbf6edb6c7cbd35a4d802"
+        },
+        {
+          "source_identity": "W12:R:r022",
+          "variable": "x_feef73daa3d7da815f938eb3fbb6a3f8686a24d55b4ab8202e292fe9a78fdd5c"
+        }
+      ],
+      "variant": "default",
+      "workload_id": "W12"
+    }
+  ],
+  "schema_version": "native-nx-corpus-v1"
+}

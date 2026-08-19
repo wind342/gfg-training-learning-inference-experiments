@@ -1,0 +1,217 @@
+{
+  "actual_transform_context_counterexample_status": "SUPPORTED",
+  "groups": [
+    {
+      "actual_execution_difference": false,
+      "binding_semantics_equal": true,
+      "candidate_native_both_valid": true,
+      "changed_complete_facts": [
+        "EvidenceRecord.extraction_method",
+        "EvidenceRecord identity",
+        "EvidenceLink identity",
+        "GenerationBinding identity"
+      ],
+      "first_snapshot_id": "snap3_f22f68aff59a43a097d3500f67e516e2d9d02db95a622f3a225a343f61827d8a",
+      "id": "evidence_profile_external_difference",
+      "normalized_prov_dm_equal": true,
+      "occurrence_payload_differences": [],
+      "ordinary_output_equal": true,
+      "ordinary_output_sha256": "afdaa5db999968e223d4a9e8c6e88e8f8086791e0bea9a94792eb3ee11328b1d",
+      "prov_record_sha256": "6a95edc65b2dc4d6df159aefe59479c97beb7e8d7052da585d7b1b077f038e28",
+      "provn_bytes_equal": true,
+      "provo_normalized_equal": true,
+      "second_snapshot_id": "snap3_36d623feaa0f725e3ef5f7d34c256f85651684087337fa01f32cb47217a390c0",
+      "snapshot_table_differences": [
+        "evidence_links",
+        "evidence_records",
+        "generation_bindings",
+        "generator_operation_results",
+        "legacy_occurrence_binding_projections",
+        "legacy_source_binding_projections"
+      ],
+      "snapshots_differ": true,
+      "status": "SUPPORTED",
+      "transform_reference_differences": []
+    },
+    {
+      "actual_execution_difference": false,
+      "binding_semantics_equal": true,
+      "candidate_native_both_valid": true,
+      "changed_complete_facts": [
+        "EnvironmentRecord",
+        "manifest dependency hashes",
+        "GeneratorOperationResult.operation_name"
+      ],
+      "first_snapshot_id": "snap3_f22f68aff59a43a097d3500f67e516e2d9d02db95a622f3a225a343f61827d8a",
+      "id": "environment_and_operation_result_difference",
+      "normalized_prov_dm_equal": true,
+      "occurrence_payload_differences": [],
+      "ordinary_output_equal": true,
+      "ordinary_output_sha256": "afdaa5db999968e223d4a9e8c6e88e8f8086791e0bea9a94792eb3ee11328b1d",
+      "prov_record_sha256": "6a95edc65b2dc4d6df159aefe59479c97beb7e8d7052da585d7b1b077f038e28",
+      "provn_bytes_equal": true,
+      "provo_normalized_equal": true,
+      "second_snapshot_id": "snap3_2bd3b1f8192689a60a8bda5160d49e789dd73d1e650661208e6a504f3136cd38",
+      "snapshot_table_differences": [
+        "environment_records",
+        "evidence_links",
+        "evidence_records",
+        "generated_origins",
+        "generation_bindings",
+        "generation_occurrences",
+        "generator_manifests",
+        "generator_operation_results",
+        "legacy_occurrence_binding_projections",
+        "legacy_source_binding_projections"
+      ],
+      "snapshots_differ": true,
+      "status": "SUPPORTED",
+      "transform_reference_differences": []
+    },
+    {
+      "actual_execution_difference": false,
+      "binding_semantics_equal": true,
+      "candidate_native_both_valid": true,
+      "changed_complete_facts": [
+        "GeneratedOrigin identity",
+        "GeneratedOrigin profile-external payload",
+        "producer operation result"
+      ],
+      "first_snapshot_id": "snap3_f22f68aff59a43a097d3500f67e516e2d9d02db95a622f3a225a343f61827d8a",
+      "id": "generated_origin_bridge_difference",
+      "normalized_prov_dm_equal": true,
+      "occurrence_payload_differences": [],
+      "ordinary_output_equal": true,
+      "ordinary_output_sha256": "afdaa5db999968e223d4a9e8c6e88e8f8086791e0bea9a94792eb3ee11328b1d",
+      "prov_record_sha256": "6a95edc65b2dc4d6df159aefe59479c97beb7e8d7052da585d7b1b077f038e28",
+      "provn_bytes_equal": true,
+      "provo_normalized_equal": true,
+      "second_snapshot_id": "snap3_f0c8c5fccdfb7a4002b5eaefffdde6acfaf17f98bf8cc551808edb1b44beedc6",
+      "snapshot_table_differences": [
+        "evidence_links",
+        "evidence_records",
+        "generated_origins",
+        "generation_bindings",
+        "generator_operation_results",
+        "legacy_occurrence_binding_projections"
+      ],
+      "snapshots_differ": true,
+      "status": "SUPPORTED",
+      "transform_reference_differences": []
+    },
+    {
+      "actual_execution_difference": true,
+      "binding_semantics_equal": true,
+      "candidate_native_both_valid": true,
+      "changed_complete_facts": [
+        "GenerationOccurrence.transform_reference",
+        "GenerationOccurrence.occurrence_payload.actual_transform_context",
+        "executed transformation branch",
+        "intermediate-state digest",
+        "transformation-plan digest",
+        "GeneratorOperationResult execution-derived identity"
+      ],
+      "first_snapshot_id": "snap3_f22f68aff59a43a097d3500f67e516e2d9d02db95a622f3a225a343f61827d8a",
+      "id": "actual_transform_context_difference",
+      "normalized_prov_dm_equal": true,
+      "occurrence_payload_differences": [
+        {
+          "first": {
+            "diagnostic_context": {
+              "actual_transform_context": {
+                "evaluation_order": [
+                  "x+y",
+                  "intermediate+z"
+                ],
+                "executed_branch_id": "integer-sum-left-associative",
+                "executed_function_or_code_path": "generator._execute_left_associative",
+                "input_values": {
+                  "x": 5,
+                  "y": 6,
+                  "z": 0
+                },
+                "intermediate_state_sha256": "143dd1217781de7ba7cc817a318157cd431cf5459188579b54e0f94f2036172e",
+                "intermediate_values": [
+                  11,
+                  11
+                ],
+                "output_value": 11
+              },
+              "format_order": [
+                "json",
+                "text"
+              ],
+              "variant_neutral": true
+            },
+            "operation_type": "render-json-and-text"
+          },
+          "second": {
+            "diagnostic_context": {
+              "actual_transform_context": {
+                "evaluation_order": [
+                  "y+z",
+                  "x+intermediate"
+                ],
+                "executed_branch_id": "integer-sum-right-associative",
+                "executed_function_or_code_path": "generator._execute_right_associative",
+                "input_values": {
+                  "x": 5,
+                  "y": 6,
+                  "z": 0
+                },
+                "intermediate_state_sha256": "ebcba1c674fe3d4bbe6c5187de05defba2af5eba21451d0208ed1118c472dbad",
+                "intermediate_values": [
+                  6,
+                  11
+                ],
+                "output_value": 11
+              },
+              "format_order": [
+                "json",
+                "text"
+              ],
+              "variant_neutral": true
+            },
+            "operation_type": "render-json-and-text"
+          },
+          "stable_instance_key": "fixture/render"
+        }
+      ],
+      "ordinary_output_equal": true,
+      "ordinary_output_sha256": "afdaa5db999968e223d4a9e8c6e88e8f8086791e0bea9a94792eb3ee11328b1d",
+      "prov_record_sha256": "6a95edc65b2dc4d6df159aefe59479c97beb7e8d7052da585d7b1b077f038e28",
+      "provn_bytes_equal": true,
+      "provo_normalized_equal": true,
+      "second_snapshot_id": "snap3_66f058dd33c958d138e56164db6c049a7ec6806bbe0a50d778ac8ff3c030343e",
+      "snapshot_table_differences": [
+        "evidence_links",
+        "evidence_records",
+        "generation_bindings",
+        "generation_occurrences",
+        "generator_operation_results",
+        "legacy_occurrence_binding_projections"
+      ],
+      "snapshots_differ": true,
+      "status": "SUPPORTED",
+      "transform_reference_differences": [
+        {
+          "first": {
+            "operation_type": "render-json-and-text",
+            "transform_variant": "left_associative",
+            "transformation_plan_sha256": "34aa3fb2d7aea8185db358e509e225ef5ff7491c7bff2a30f202ba241ba31c3b"
+          },
+          "second": {
+            "operation_type": "render-json-and-text",
+            "transform_variant": "right_associative",
+            "transformation_plan_sha256": "95037cdcc0814b204c0184abaed563f6cff972fcac044cce76258b4d892d2ab4"
+          },
+          "stable_instance_key": "fixture/render"
+        }
+      ]
+    }
+  ],
+  "minimum_required": 4,
+  "requested_group_count": 4,
+  "status": "SUPPORTED",
+  "valid_group_count": 4
+}

@@ -1,0 +1,12 @@
+{
+  "canonicalization": "RFC8785-compatible sorted compact JSON with repository Core numeric guards",
+  "cross_run_edges_allowed": false,
+  "global_transitive_closure_materialized": false,
+  "graph_profile_id": "executable-generation-fact-graph-profile-v2",
+  "graph_schema_version": "executable-generation-fact-graph-v2",
+  "incidence_relation_type": "realizes_fact",
+  "node_kinds": [
+    "generation_fact",
+    "generation_occurrence"
+  ]
+}

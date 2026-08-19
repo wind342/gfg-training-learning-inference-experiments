@@ -1,0 +1,30 @@
+{
+  "contract_id": "sidecar-canonical-json-v3",
+  "schema_version": "3.0.0",
+  "vectors": [
+    {
+      "canonical_utf8_hex": "7b2276616c7565223a307d",
+      "input": {"value": 0},
+      "name": "negative_zero_normalizes_to_integer_zero",
+      "sha256": "23d7b286bd429460b92a2a1c21b6afc34110446c5034c17363fda363aa0a7c5d"
+    },
+    {
+      "canonical_utf8_hex": "7b2276616c7565223a22e6ba90e28692e58f91e7949fe28692e694afe68c81227d",
+      "input": {"value": "源→发生→支持"},
+      "name": "unicode_scalar_utf8",
+      "sha256": "3c8c4b8060ec7e48c7e4cdc05ba936f577da20814c931f26bb5978cd810fbcd6"
+    },
+    {
+      "canonical_utf8_hex": "7b2261223a322c227a223a317d",
+      "input": {"a": 2, "z": 1},
+      "name": "object_key_order",
+      "sha256": "c2985c5ba6f7d2a55e768f92490ca09388e95bc4cccb9fdf11b15f4d42f93e73"
+    },
+    {
+      "canonical_utf8_hex": "5b7b2276223a317d2c7b2276223a327d5d",
+      "input": [{"v": 1}, {"v": 2}],
+      "name": "canonical_set_order",
+      "sha256": "bb94d43208edc19de47620e0399c4c014665b7882a55875cd79a710a706d13e3"
+    }
+  ]
+}

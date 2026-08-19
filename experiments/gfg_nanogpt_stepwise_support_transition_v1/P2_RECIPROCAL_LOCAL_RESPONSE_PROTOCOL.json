@@ -1,0 +1,99 @@
+{
+  "schema": "nanogpt-p2-reciprocal-local-response-protocol-v1",
+  "protocol_id": "P2-exact-boundary-reciprocal-local-response-state-adjudication-v1",
+  "status": "FROZEN_BEFORE_RESPONSE_EXECUTION_AND_BEFORE_NATIVE_TARGET_ACCESS",
+  "scientific_question": "Do two compactly near capability-support prestates have different local functional responses to the same two exact native parameter updates?",
+  "epsilon": 0.125,
+  "receiver_state_kind": "formal_native_prestate",
+  "donor_update_kind": "exact_formed_native_named_parameter_update",
+  "branches_per_receiver": [
+    "baseline",
+    "update_P2a_minus_0.125",
+    "update_P2a_plus_0.125",
+    "update_P2b_minus_0.125",
+    "update_P2b_plus_0.125"
+  ],
+  "expected_receiver_count": 2,
+  "expected_state_count": 10,
+  "expected_probe_forward_count_per_state": 12,
+  "expected_total_probe_forward_count": 120,
+  "receivers": [
+    {
+      "label": "P2a",
+      "one_step_sample_id": "one-step-3b5305b9eaca9bf37ecc86f3be9aba11",
+      "entry_id": "entry-7a22f51938059541de98",
+      "window_id": "phase-v3-window-57fbfeeb7e1bd47e5fca7805",
+      "source_bundle_id": "36ae10991f5e9475511197c1b2b4c72127660aee3964aaa1c234a6bffcf4415d",
+      "optimizer_step": 8286,
+      "prestate": {
+        "state_id": "state-786595b7848bbc27b2148b9444bb77e1",
+        "state_sha256": "6576a5cec921b998efde4b9d902536d282d4b78a14bdbc0f23e024ccd7e79ac9",
+        "source_object_id": "obj_2b1182043001d772e1d825cd155c21e7080dc1ab5036051c68a686ee8beb355f",
+        "state_record_file_sha256": "e4b9a343dcf5e55414ef22f60ab93a72883f2b9c30ba6796ed4409b9a4c856dd",
+        "state_record_result_sha256": "cffa2b687e15802889bf579b2c328dd948a0e16be74dc13690a887d9f03a509d"
+      },
+      "native_update": {
+        "raw_tensor_sha256": "d63d4a65966acd1c8fac268185dd23490a11285612b73ef2b285bebb506e3b9f",
+        "file_sha256": "f5a4a1bdae375ad4371af7ced83d9a9401d91220e5b580f6fba295a508acaa07",
+        "element_count": 100352
+      },
+      "sealed_native_target": {
+        "state_id": "state-613745ba0a12d2414f38f5ca5572b850",
+        "probe_observation_id": "probe-66e97a175a1c9137a3eb344f97fa861e"
+      }
+    },
+    {
+      "label": "P2b",
+      "one_step_sample_id": "one-step-be51d0cc98b6dafa3b2ba5720b141c6c",
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "window_id": "phase-v3-window-2528f19752ceaaf931f7ef8b",
+      "source_bundle_id": "3d6fe31429006c28d02add45e59fea43bb484d8b2b30adf491161b17c7cd0768",
+      "optimizer_step": 3232,
+      "prestate": {
+        "state_id": "state-d41c5650dcbe459fb479aae9904d9974",
+        "state_sha256": "e146d5f04d1913ff340f10bd0ebb9548b25d741c10cff61e9a126f9aff834cf6",
+        "source_object_id": "obj_638da598fc5c71b8acd6d2be2c534fe7ef1cb6fabf05ca5c299c293ddede8417",
+        "state_record_file_sha256": "d98a88f2fa3fe1c5cd8bf54256dd67a8b83913e8cf2e10d138304ea9b83aa3d6",
+        "state_record_result_sha256": "c7d021555bd9349c22177eac962bb6a397133e6d9f19f52eb2a5320714a9d45e"
+      },
+      "native_update": {
+        "raw_tensor_sha256": "39aec3a4c9e8710e1a381019a42b86c3e0aef99c050f9621d6c9da6af29e8156",
+        "file_sha256": "78c0c0ee0366d39739e732f568a158a15e11ded72373e00f93735d24fe255940",
+        "element_count": 100352
+      },
+      "sealed_native_target": {
+        "state_id": "state-6fb08f28b3dec028c133198037d13ce7",
+        "probe_observation_id": "probe-16a148f862540ca7459348bc6dfc0a56"
+      }
+    }
+  ],
+  "execution_order": [
+    "load_and_verify_formal_prestates",
+    "load_and_verify_exact_native_updates",
+    "construct_baseline_and_signed_parameter_states_with_optimizer_unchanged",
+    "execute_csrg_4c_v1_probe_on_all_ten_states",
+    "derive_central_J_and_K_response_objects",
+    "seal_all_pretarget_results",
+    "only_after_seal_open_native_target_probe_results_for_adjudication"
+  ],
+  "future_leakage_boundary": {
+    "native_target_state_or_probe_content_before_pretarget_seal": false,
+    "future_batch_or_gradient": false,
+    "training_continuation": false,
+    "backward_pass": false,
+    "optimizer_step": false,
+    "receiver_adam_state_changed_in_signed_branches": false
+  },
+  "primary_target": "complete CSRG-4C-v1 numeric and categorical support response",
+  "secondary_unscored_target": "capability output response",
+  "response_definitions": {
+    "J_receiver_donor": "(probe(theta_receiver + epsilon * update_donor) - probe(theta_receiver - epsilon * update_donor)) / (2 * epsilon)",
+    "K_receiver_donor": "(probe(theta_receiver + epsilon * update_donor) + probe(theta_receiver - epsilon * update_donor) - 2 * probe(theta_receiver)) / epsilon^2"
+  },
+  "prohibited_claims": [
+    "This package alone resolves the 405 long-horizon challenge pairs.",
+    "A local response object is already a complete stability transition law.",
+    "Capability outputs are part of the primary CSRG state score.",
+    "A native target was used to select epsilon, branches, response definitions or probe coordinates."
+  ]
+}

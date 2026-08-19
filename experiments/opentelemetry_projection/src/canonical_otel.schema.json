@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/source-information-continuity/canonical-otel-projection-v1.schema.json",
+  "title": "Canonical OpenTelemetry occurrence projection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "trace_semantic_key", "spans"],
+  "properties": {
+    "schema_version": {"const": "otel-projection-v1"},
+    "trace_semantic_key": {"type": "string", "minLength": 1},
+    "spans": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/span"}
+    }
+  },
+  "$defs": {
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "span_semantic_key",
+        "name",
+        "parent_semantic_key",
+        "linked_semantic_keys",
+        "status",
+        "attributes",
+        "events"
+      ],
+      "properties": {
+        "span_semantic_key": {"type": "string", "minLength": 1},
+        "name": {"type": "string", "minLength": 1},
+        "parent_semantic_key": {
+          "oneOf": [
+            {"type": "string", "minLength": 1},
+            {"type": "null"}
+          ]
+        },
+        "linked_semantic_keys": {
+          "type": "array",
+          "items": {"type": "string", "minLength": 1}
+        },
+        "status": {"enum": ["UNSET", "OK", "ERROR"]},
+        "attributes": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["logical.order", "span.kind"],
+          "properties": {
+            "logical.order": {"type": "integer", "minimum": 0},
+            "span.kind": {"enum": ["query_root", "occurrence"]},
+            "execution.kind": {"const": "deterministic_relational_query"},
+            "execution.run_id": {"type": "string", "minLength": 1},
+            "operation.type": {"type": "string", "minLength": 1},
+            "operation.stage": {"type": "string", "minLength": 1},
+            "occurrence.type": {"type": "string", "minLength": 1},
+            "occurrence.stable_instance_key": {"type": "string", "minLength": 1},
+            "occurrence.index": {"type": "integer", "minimum": 0},
+            "outcome.kind": {"enum": ["support", "disposition"]},
+            "transform.operator_type": {"type": "string", "minLength": 1},
+            "transform.stage": {"type": "string", "minLength": 1},
+            "occurrence.cardinality": {"type": "integer", "minimum": 1}
+          }
+        },
+        "events": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/event"}
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "attributes"],
+      "properties": {
+        "name": {
+          "enum": ["query.execution", "generation.occurrence"]
+        },
+        "attributes": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "execution.run_id": {"type": "string", "minLength": 1},
+            "occurrence.index": {"type": "integer", "minimum": 0},
+            "outcome.kind": {"enum": ["support", "disposition"]}
+          }
+        }
+      }
+    }
+  }
+}

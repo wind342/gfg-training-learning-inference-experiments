@@ -1,0 +1,186 @@
+{
+  "authority": {
+    "icdt_2001": {
+      "minimal_witness_basis": "Definition 7, paper page 10",
+      "sha256": "6c244258ab44a229957a1a16605787f1b9ade11bee0ef6eac8086eb6905e1087",
+      "witness_basis": "Section 5 and Definition 6, paper pages 8-9"
+    },
+    "pods_2007": {
+      "commutative_semiring_definition": "Definition 3.2 and Proposition 3.4, proceedings page 33",
+      "flat_powerset_calculation": "Section 4 and Figure 5, proceedings page 34",
+      "homomorphism_condition": "Proposition 3.5, proceedings page 34",
+      "nx_universal_property": "Definition 4.1, Proposition 4.2, and Theorem 4.3, proceedings page 34",
+      "sha256": "74e092702db58518afeaf909e1d3380848165b2cb9ae75dc6822b04f66aa5be0"
+    }
+  },
+  "flat_view_findings": {
+    "complete_semiring_homomorphism_supported": false,
+    "former_name_why_powerset_accurate": false,
+    "multiplicative_zero_annihilation": false,
+    "observed_only_on_nonzero_output_support": true,
+    "replacement_name": "flat_source_support_view",
+    "zero_equals_one": true
+  },
+  "formal_algebraic_target_count": 3,
+  "formal_algebraic_target_ids": [
+    "bag_naturals",
+    "boolean",
+    "positive_boolean_lineage"
+  ],
+  "not_evaluated": [
+    {
+      "classification": "NOT_EVALUATED",
+      "reason": "not formally defined in the frozen PODS 2007 authority",
+      "target": "Which(X)"
+    },
+    {
+      "classification": "NOT_EVALUATED",
+      "reason": "not formally defined in the frozen PODS 2007 authority",
+      "target": "Trio(X)"
+    },
+    {
+      "classification": "NOT_EVALUATED",
+      "reason": "the current flat view does not preserve the set of alternative witnesses",
+      "target": "witness-basis Why provenance"
+    },
+    {
+      "classification": "NON_SEMIRING_TASK_PROJECTION",
+      "reason": "tuple-level source-set result connected separately through Vars(N[X])",
+      "target": "existing Database which-lineage"
+    }
+  ],
+  "schema_version": "formal-target-semantics-audit-v1",
+  "status": "FORMAL_TARGET_SEMANTICS_CLASSIFIED",
+  "targets": [
+    {
+      "addition": "natural addition",
+      "authority": "Green-Karvounarakis-Tannen PODS 2007, proceedings pages 33-34",
+      "axiom_check_scope": "executable generating sample set plus frozen authority definition",
+      "axiom_checks": {
+        "addition_associative": true,
+        "addition_commutative": true,
+        "addition_idempotent": false,
+        "addition_identity": true,
+        "lattice_absorption": false,
+        "left_distributive": true,
+        "multiplication_associative": true,
+        "multiplication_commutative": true,
+        "multiplication_idempotent": false,
+        "multiplication_identity": true,
+        "multiplicative_zero_annihilation": true,
+        "right_distributive": true,
+        "zero_and_one_distinct": true
+      },
+      "carrier": "natural numbers",
+      "classification": "COMMUTATIVE_SEMIRING_TARGET",
+      "counted_as_formal_algebraic_target": true,
+      "domain_id": "bag_naturals",
+      "multiplication": "natural multiplication",
+      "one": 1,
+      "required_commutative_semiring_axioms_pass": true,
+      "target": "N",
+      "whole_carrier_semiring_homomorphism_claimed": true,
+      "zero": 0
+    },
+    {
+      "addition": "logical OR",
+      "authority": "Green-Karvounarakis-Tannen PODS 2007, proceedings pages 33-34",
+      "axiom_check_scope": "executable generating sample set plus frozen authority definition",
+      "axiom_checks": {
+        "addition_associative": true,
+        "addition_commutative": true,
+        "addition_idempotent": true,
+        "addition_identity": true,
+        "lattice_absorption": true,
+        "left_distributive": true,
+        "multiplication_associative": true,
+        "multiplication_commutative": true,
+        "multiplication_idempotent": true,
+        "multiplication_identity": true,
+        "multiplicative_zero_annihilation": true,
+        "right_distributive": true,
+        "zero_and_one_distinct": true
+      },
+      "carrier": "false and true",
+      "classification": "COMMUTATIVE_SEMIRING_TARGET",
+      "counted_as_formal_algebraic_target": true,
+      "domain_id": "boolean",
+      "multiplication": "logical AND",
+      "one": true,
+      "required_commutative_semiring_axioms_pass": true,
+      "target": "B",
+      "whole_carrier_semiring_homomorphism_claimed": true,
+      "zero": false
+    },
+    {
+      "addition": "OR with canonical absorption",
+      "authority": "Green-Karvounarakis-Tannen PODS 2007, proceedings pages 33-34",
+      "axiom_check_scope": "executable generating sample set plus frozen authority definition",
+      "axiom_checks": {
+        "addition_associative": true,
+        "addition_commutative": true,
+        "addition_idempotent": true,
+        "addition_identity": true,
+        "lattice_absorption": true,
+        "left_distributive": true,
+        "multiplication_associative": true,
+        "multiplication_commutative": true,
+        "multiplication_idempotent": true,
+        "multiplication_identity": true,
+        "multiplicative_zero_annihilation": true,
+        "right_distributive": true,
+        "zero_and_one_distinct": true
+      },
+      "carrier": "positive Boolean expressions modulo Boolean-function equivalence",
+      "classification": "SEMIRING_QUOTIENT_OR_HOMOMORPHIC_IMAGE",
+      "counted_as_formal_algebraic_target": true,
+      "domain_id": "positive_boolean_lineage",
+      "multiplication": "AND with canonical absorption",
+      "one": {
+        "terms": [
+          []
+        ]
+      },
+      "required_commutative_semiring_axioms_pass": true,
+      "target": "PosBool(X)",
+      "whole_carrier_semiring_homomorphism_claimed": true,
+      "zero": {
+        "terms": []
+      }
+    },
+    {
+      "addition": "set union",
+      "authority": "Green-Karvounarakis-Tannen PODS 2007, proceedings pages 33-34",
+      "axiom_check_scope": "executable generating sample set plus frozen authority definition",
+      "axiom_checks": {
+        "addition_associative": true,
+        "addition_commutative": true,
+        "addition_idempotent": true,
+        "addition_identity": true,
+        "lattice_absorption": false,
+        "left_distributive": true,
+        "multiplication_associative": true,
+        "multiplication_commutative": true,
+        "multiplication_idempotent": true,
+        "multiplication_identity": true,
+        "multiplicative_zero_annihilation": false,
+        "right_distributive": true,
+        "zero_and_one_distinct": false
+      },
+      "carrier": "finite source-variable sets",
+      "classification": "PARTIAL_NONZERO_SUPPORT_VIEW",
+      "counted_as_formal_algebraic_target": false,
+      "domain_id": "flat_source_support_view",
+      "multiplication": "set union",
+      "one": {
+        "variables": []
+      },
+      "required_commutative_semiring_axioms_pass": false,
+      "target": "Vars(N[X])",
+      "whole_carrier_semiring_homomorphism_claimed": false,
+      "zero": {
+        "variables": []
+      }
+    }
+  ]
+}

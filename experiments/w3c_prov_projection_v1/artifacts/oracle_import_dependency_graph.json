@@ -1,0 +1,585 @@
+{
+  "called_imported_symbols": {
+    "candidate": [
+      "record_model.sorted_records",
+      "record_model.validate_normalized_records"
+    ],
+    "native": [
+      "record_model.sorted_records"
+    ],
+    "shared": [
+      "record_model.sorted_records"
+    ]
+  },
+  "candidate_imports_native": false,
+  "candidate_module_closure": [
+    "candidate_projection",
+    "provn",
+    "record_model"
+  ],
+  "candidate_uses_provo_normalizer": false,
+  "edges": [
+    {
+      "from": "audit_process",
+      "to": "candidate_projection"
+    },
+    {
+      "from": "audit_process",
+      "to": "core_capture"
+    },
+    {
+      "from": "audit_process",
+      "to": "generator"
+    },
+    {
+      "from": "audit_process",
+      "to": "native_reference"
+    },
+    {
+      "from": "audit_process",
+      "to": "provn"
+    },
+    {
+      "from": "audit_process",
+      "to": "provo_normalizer"
+    },
+    {
+      "from": "audit_process",
+      "to": "record_model"
+    },
+    {
+      "from": "candidate_projection",
+      "to": "record_model"
+    },
+    {
+      "from": "core_capture",
+      "to": "events"
+    },
+    {
+      "from": "experiment",
+      "to": "authority_store_audit"
+    },
+    {
+      "from": "experiment",
+      "to": "negative_controls"
+    },
+    {
+      "from": "experiment",
+      "to": "official_tests"
+    },
+    {
+      "from": "experiment",
+      "to": "oracle_isolation_audit"
+    },
+    {
+      "from": "experiment",
+      "to": "record_model"
+    },
+    {
+      "from": "experiment",
+      "to": "science_runs"
+    },
+    {
+      "from": "experiment",
+      "to": "validation"
+    },
+    {
+      "from": "generator",
+      "to": "events"
+    },
+    {
+      "from": "native_reference",
+      "to": "events"
+    },
+    {
+      "from": "native_reference",
+      "to": "record_model"
+    },
+    {
+      "from": "negative_controls",
+      "to": "candidate_projection"
+    },
+    {
+      "from": "negative_controls",
+      "to": "provn"
+    },
+    {
+      "from": "negative_controls",
+      "to": "provo_normalizer"
+    },
+    {
+      "from": "negative_controls",
+      "to": "record_model"
+    },
+    {
+      "from": "negative_controls",
+      "to": "science_runs"
+    },
+    {
+      "from": "negative_controls",
+      "to": "validation"
+    },
+    {
+      "from": "provn",
+      "to": "record_model"
+    },
+    {
+      "from": "provo_normalizer",
+      "to": "record_model"
+    },
+    {
+      "from": "science_runs",
+      "to": "candidate_projection"
+    },
+    {
+      "from": "science_runs",
+      "to": "core_capture"
+    },
+    {
+      "from": "science_runs",
+      "to": "events"
+    },
+    {
+      "from": "science_runs",
+      "to": "generator"
+    },
+    {
+      "from": "science_runs",
+      "to": "native_reference"
+    },
+    {
+      "from": "science_runs",
+      "to": "provn"
+    },
+    {
+      "from": "science_runs",
+      "to": "provo_normalizer"
+    },
+    {
+      "from": "science_runs",
+      "to": "record_model"
+    },
+    {
+      "from": "validation",
+      "to": "provn"
+    },
+    {
+      "from": "validation",
+      "to": "provo_normalizer"
+    },
+    {
+      "from": "validation",
+      "to": "record_model"
+    }
+  ],
+  "modules": [
+    {
+      "called_imported_symbols": [
+        "candidate_projection.project_snapshot",
+        "core_capture.CoreCaptureCollector",
+        "generator.run_generator",
+        "native_reference.NativeProvCollector",
+        "provn.parse_provn",
+        "provn.serialize_provn",
+        "provo_normalizer.normalize_provo",
+        "record_model.canonical_json_bytes"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "experiments.w3c_prov_projection_v1.src.candidate_projection",
+        "experiments.w3c_prov_projection_v1.src.core_capture",
+        "experiments.w3c_prov_projection_v1.src.generator",
+        "experiments.w3c_prov_projection_v1.src.native_reference",
+        "experiments.w3c_prov_projection_v1.src.provn",
+        "experiments.w3c_prov_projection_v1.src.provo_normalizer",
+        "experiments.w3c_prov_projection_v1.src.record_model",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "local_edges": [
+        "candidate_projection",
+        "core_capture",
+        "generator",
+        "native_reference",
+        "provn",
+        "provo_normalizer",
+        "record_model"
+      ],
+      "module": "audit_process"
+    },
+    {
+      "called_imported_symbols": [],
+      "imports": [
+        "__future__",
+        "ast",
+        "collections",
+        "fnmatch",
+        "json",
+        "pathlib",
+        "subprocess",
+        "tempfile",
+        "typing"
+      ],
+      "local_edges": [],
+      "module": "authority_store_audit"
+    },
+    {
+      "called_imported_symbols": [],
+      "imports": [
+        "__future__",
+        "argparse",
+        "hashlib",
+        "json",
+        "pathlib",
+        "urllib.request"
+      ],
+      "local_edges": [],
+      "module": "bootstrap_references"
+    },
+    {
+      "called_imported_symbols": [
+        "record_model.sorted_records",
+        "record_model.validate_normalized_records"
+      ],
+      "imports": [
+        "__future__",
+        "generation_relation_core.snapshots",
+        "hashlib",
+        "json",
+        "re",
+        "record_model",
+        "typing"
+      ],
+      "local_edges": [
+        "record_model"
+      ],
+      "module": "candidate_projection"
+    },
+    {
+      "called_imported_symbols": [
+        "events.GeneratorVariant"
+      ],
+      "imports": [
+        "__future__",
+        "compat.v2.projections",
+        "events",
+        "generation_relation_core.canonical",
+        "generation_relation_core.entities",
+        "generation_relation_core.predicate_registry",
+        "generation_relation_core.snapshots",
+        "hashlib",
+        "platform",
+        "typing"
+      ],
+      "local_edges": [
+        "events"
+      ],
+      "module": "core_capture"
+    },
+    {
+      "called_imported_symbols": [],
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "hashlib",
+        "typing"
+      ],
+      "local_edges": [],
+      "module": "events"
+    },
+    {
+      "called_imported_symbols": [
+        "authority_store_audit.build_runtime_authority_trace",
+        "authority_store_audit.compute_second_authority_audit",
+        "authority_store_audit.load_policy",
+        "authority_store_audit.run_authority_negative_controls",
+        "authority_store_audit.scan_repository",
+        "negative_controls.run_negative_controls",
+        "official_tests.run_official_tests",
+        "oracle_isolation_audit.analyze_import_graph",
+        "oracle_isolation_audit.build_oracle_isolation",
+        "oracle_isolation_audit.load_policy",
+        "oracle_isolation_audit.run_oracle_negative_controls",
+        "oracle_isolation_audit.run_oracle_process_audit",
+        "record_model.canonical_json_bytes",
+        "science_runs.actual_transform_context_counterexample",
+        "science_runs.output_modes",
+        "science_runs.run_full",
+        "science_runs.run_transform_counterexample_negative_controls",
+        "science_runs.strict_projection_counterexamples",
+        "validation.exact_comparison",
+        "validation.relation_multiplicity",
+        "validation.validate_profile_documents"
+      ],
+      "imports": [
+        "__future__",
+        "argparse",
+        "authority_store_audit",
+        "collections",
+        "hashlib",
+        "json",
+        "negative_controls",
+        "official_tests",
+        "oracle_isolation_audit",
+        "pathlib",
+        "platform",
+        "pyparsing",
+        "rdflib",
+        "re",
+        "record_model",
+        "science_runs",
+        "subprocess",
+        "typing",
+        "validation",
+        "xml.etree.ElementTree"
+      ],
+      "local_edges": [
+        "authority_store_audit",
+        "negative_controls",
+        "official_tests",
+        "oracle_isolation_audit",
+        "record_model",
+        "science_runs",
+        "validation"
+      ],
+      "module": "experiment"
+    },
+    {
+      "called_imported_symbols": [
+        "events.ActivityEvent",
+        "events.AgentEvent",
+        "events.BindingEvent",
+        "events.BridgeEvent",
+        "events.GeneratedOutput",
+        "events.GeneratorVariant",
+        "events.OutcomeEvent",
+        "events.SourceEvent",
+        "events.TransformExecutionReceipt"
+      ],
+      "imports": [
+        "__future__",
+        "collections.abc",
+        "csv",
+        "events",
+        "hashlib",
+        "io",
+        "json",
+        "pathlib"
+      ],
+      "local_edges": [
+        "events"
+      ],
+      "module": "generator"
+    },
+    {
+      "called_imported_symbols": [
+        "record_model.sorted_records"
+      ],
+      "imports": [
+        "__future__",
+        "events",
+        "hashlib",
+        "json",
+        "re",
+        "record_model",
+        "typing"
+      ],
+      "local_edges": [
+        "events",
+        "record_model"
+      ],
+      "module": "native_reference"
+    },
+    {
+      "called_imported_symbols": [
+        "candidate_projection.project_snapshot",
+        "provn.parse_provn",
+        "provo_normalizer.normalize_provo",
+        "record_model.canonical_json_bytes",
+        "record_model.validate_normalized_records",
+        "science_runs.run_full",
+        "validation.exact_comparison"
+      ],
+      "imports": [
+        "__future__",
+        "ast",
+        "candidate_projection",
+        "copy",
+        "pathlib",
+        "provn",
+        "provo_normalizer",
+        "re",
+        "record_model",
+        "science_runs",
+        "typing",
+        "validation"
+      ],
+      "local_edges": [
+        "candidate_projection",
+        "provn",
+        "provo_normalizer",
+        "record_model",
+        "science_runs",
+        "validation"
+      ],
+      "module": "negative_controls"
+    },
+    {
+      "called_imported_symbols": [],
+      "imports": [
+        "__future__",
+        "collections",
+        "hashlib",
+        "pathlib",
+        "re",
+        "typing"
+      ],
+      "local_edges": [],
+      "module": "official_tests"
+    },
+    {
+      "called_imported_symbols": [],
+      "imports": [
+        "__future__",
+        "ast",
+        "collections",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "typing"
+      ],
+      "local_edges": [],
+      "module": "oracle_isolation_audit"
+    },
+    {
+      "called_imported_symbols": [
+        "record_model.sorted_records"
+      ],
+      "imports": [
+        "__future__",
+        "json",
+        "re",
+        "record_model",
+        "typing"
+      ],
+      "local_edges": [
+        "record_model"
+      ],
+      "module": "provn"
+    },
+    {
+      "called_imported_symbols": [
+        "record_model.sorted_records"
+      ],
+      "imports": [
+        "__future__",
+        "rdflib",
+        "record_model",
+        "typing"
+      ],
+      "local_edges": [
+        "record_model"
+      ],
+      "module": "provo_normalizer"
+    },
+    {
+      "called_imported_symbols": [],
+      "imports": [
+        "__future__",
+        "collections",
+        "json",
+        "typing"
+      ],
+      "local_edges": [],
+      "module": "record_model"
+    },
+    {
+      "called_imported_symbols": [
+        "candidate_projection.project_snapshot",
+        "core_capture.CoreCaptureCollector",
+        "events.GeneratorVariant",
+        "generator.run_generator",
+        "native_reference.NativeProvCollector",
+        "provn.parse_provn",
+        "provn.serialize_provn",
+        "provo_normalizer.normalize_provo",
+        "record_model.canonical_json_bytes"
+      ],
+      "imports": [
+        "__future__",
+        "candidate_projection",
+        "core_capture",
+        "dataclasses",
+        "events",
+        "generation_relation_core.snapshots",
+        "generator",
+        "hashlib",
+        "native_reference",
+        "provn",
+        "provo_normalizer",
+        "record_model",
+        "typing"
+      ],
+      "local_edges": [
+        "candidate_projection",
+        "core_capture",
+        "events",
+        "generator",
+        "native_reference",
+        "provn",
+        "provo_normalizer",
+        "record_model"
+      ],
+      "module": "science_runs"
+    },
+    {
+      "called_imported_symbols": [
+        "provn.parse_provn",
+        "provo_normalizer.normalize_provo",
+        "record_model.canonical_json_bytes",
+        "record_model.validate_normalized_records"
+      ],
+      "imports": [
+        "__future__",
+        "collections",
+        "json",
+        "provn",
+        "provo_normalizer",
+        "re",
+        "record_model",
+        "typing"
+      ],
+      "local_edges": [
+        "provn",
+        "provo_normalizer",
+        "record_model"
+      ],
+      "module": "validation"
+    }
+  ],
+  "native_imports_candidate": false,
+  "native_imports_core": false,
+  "native_module_closure": [
+    "events",
+    "native_reference",
+    "provo_normalizer",
+    "record_model"
+  ],
+  "native_uses_provn_parser": false,
+  "policy_id": "oracle-isolation-policy-v2",
+  "shared_mapping_helper_count": 0,
+  "shared_mapping_helper_details": [],
+  "shared_neutral_module_count": 1,
+  "shared_neutral_modules": [
+    "record_model"
+  ],
+  "status": "PASS"
+}

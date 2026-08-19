@@ -1,0 +1,15 @@
+{
+  "schema": "gfg-rl-feedback-closure-formal-freeze-v1",
+  "status": "FROZEN_BEFORE_FORMAL_EXECUTION",
+  "experiment_contract_sha256": "3a6675a67156edabeddffb7f3793d8a0a31fd267f72c106d8e4caac20f922bc6",
+  "protocol_sha256": "d4d0fbe04265a3003a9164f8a15248ffecbddf06400076bb0dadc64c2357a567",
+  "development_aggregate_sha256": "5b8798dc5dd62f0b4e0f291e931e1b268a6d1cca124712a39b0a70c2c28b3540",
+  "formal_seeds_opened": false,
+  "formal_retries": 0,
+  "source_hashes": {
+    "evidence.py": "742852744d500e3f909681228b49a0c1d7d494dabaf8fb6bf863eaeea58536bc",
+    "independent_checker.py": "5e65314533fb7a62411d7f5452acbc133501f53ba2da40e7688887d574fda798",
+    "runner.py": "54528f6d522dfcb4711f78e1edebe8935713937441d7ec71a173fedb43f82b4a",
+    "runtime.py": "7e8d5f3f2cd3d39f5c6f1f7f288319181f25acadcb2ae9f5cfe28a31aa90928f"
+  }
+}

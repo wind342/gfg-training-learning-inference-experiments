@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gfg-capability-state-v1",
+  "title": "CapabilityFormationMechanism prefix state",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "cut_step",
+    "observed_evaluations",
+    "rule_logit",
+    "stable_rule_logit",
+    "recovery_active_at_cut",
+    "memorization_strength",
+    "gradient_burst_steps",
+    "gradient_burst_peak_norms",
+    "last_burst_step",
+    "estimated_next_period",
+    "decay_progress",
+    "positive_weight_decay",
+    "learning_rate",
+    "historical_transition_step",
+    "formation_threshold",
+    "rule_logit_gain_per_burst"
+  ],
+  "properties": {
+    "schema": {"const": "gfg-capability-state-v1"},
+    "cut_step": {"type": "integer", "minimum": 1, "maximum": 10000},
+    "observed_evaluations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["optimizer_step", "train_accuracy", "validation_accuracy", "loss"],
+        "properties": {
+          "optimizer_step": {"type": "integer", "minimum": 1, "maximum": 10000},
+          "train_accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+          "validation_accuracy": {"type": "number", "minimum": 0, "maximum": 1},
+          "loss": {"type": "number"}
+        }
+      }
+    },
+    "rule_logit": {"type": "number"},
+    "stable_rule_logit": {"type": "number"},
+    "recovery_active_at_cut": {"type": "boolean"},
+    "memorization_strength": {"type": "number", "minimum": 0, "maximum": 1},
+    "gradient_burst_steps": {"type": "array", "items": {"type": "integer", "minimum": 0, "maximum": 10000}},
+    "gradient_burst_peak_norms": {"type": "array", "items": {"type": "number", "minimum": 1}},
+    "last_burst_step": {"type": "integer", "minimum": 0, "maximum": 10000},
+    "estimated_next_period": {"type": "number", "exclusiveMinimum": 0},
+    "decay_progress": {"type": "number", "minimum": 0, "maximum": 1.5},
+    "positive_weight_decay": {"type": "number", "exclusiveMinimum": 0},
+    "learning_rate": {"type": "number", "minimum": 0},
+    "historical_transition_step": {"type": ["integer", "null"], "minimum": 1, "maximum": 10000},
+    "formation_threshold": {"type": "number", "minimum": 0, "maximum": 1},
+    "rule_logit_gain_per_burst": {"type": "number"}
+  }
+}

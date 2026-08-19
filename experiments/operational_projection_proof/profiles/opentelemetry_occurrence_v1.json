@@ -1,0 +1,16 @@
+{
+  "profile_id": "opentelemetry-occurrence-v1",
+  "domain": "opentelemetry_trace",
+  "evaluation_status": "NOT_EVALUATED",
+  "claim_scope": "Span semantic identities, names, parent edges, links, status, selected attributes, selected events, and multiplicity.",
+  "prerequisite": "The OpenTelemetry experiment is still untracked and lacks a completed frozen workload, tests, machine artifacts, and reviewed official-SDK reference result on the selected base commit.",
+  "sections": {
+    "spans": ["span_semantic_key"],
+    "parent_edges": ["parent_semantic_key", "child_semantic_key"],
+    "links": ["source_semantic_key", "target_semantic_key", "link_ordinal"],
+    "attributes": ["span_semantic_key", "attribute_name"],
+    "events": ["span_semantic_key", "event_ordinal"],
+    "multiplicity": ["trace_semantic_key"]
+  },
+  "multiplicity_fields": ["link_ordinal", "event_ordinal", "span_count", "edge_count", "link_count", "event_count"]
+}

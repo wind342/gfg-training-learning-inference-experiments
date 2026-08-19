@@ -1,0 +1,10 @@
+{
+  "expected_artifact_tree_id": "7e60b4fc4a3ad58bd91279f07eff15208c1729a2",
+  "expected_tree_id": "88f98c574821bfb7c61d94b11301118d7cbe866a",
+  "not_evaluated_statuses_preserved": true,
+  "observed_artifact_tree_id": "7e60b4fc4a3ad58bd91279f07eff15208c1729a2",
+  "observed_tree_id": "88f98c574821bfb7c61d94b11301118d7cbe866a",
+  "path": "experiments/operational_projection_proof",
+  "status": "PASS",
+  "working_or_committed_differences": []
+}

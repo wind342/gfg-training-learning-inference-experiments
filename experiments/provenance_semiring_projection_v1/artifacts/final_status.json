@@ -1,0 +1,154 @@
+{
+  "all_changed_paths_within_experiment": true,
+  "blocking_reasons": [],
+  "changed_path_count": 85,
+  "claim_prefix": "Within the frozen positive relational-algebra profile",
+  "gate_count": 18,
+  "gates": [
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/v1_result_preservation.json",
+      "gate": "v1_p1_exact_preserved",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/v1_result_preservation.json",
+      "gate": "v1_p2_strictness_preserved",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/native_candidate_nx_exact_comparison_v2.json",
+      "gate": "independent_native_candidate_nx_exact",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/native_candidate_algebra_independence.json",
+      "gate": "shared_algebra_helper_zero",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/native_candidate_algebra_independence.json",
+      "gate": "shared_variable_helper_zero",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/formal_target_semantics_audit.json; artifacts/hierarchical_projection_exact_comparison.json",
+      "gate": "three_formal_algebraic_targets_exact",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/flat_support_view_exact_comparison.json; artifacts/flat_support_view_formal_classification.json",
+      "gate": "flat_support_view_classified_and_exact",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/nx_to_existing_which_lineage.json",
+      "gate": "existing_which_hierarchy_exact",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/lower_projection_strictness_constructions.json",
+      "gate": "lower_semantics_strictness",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/joint_lower_projection_strictness.json",
+      "gate": "joint_lower_strictness",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/formal_target_semantics_audit.json",
+      "gate": "formal_names_and_authority_verified",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/report_artifact_consistency.json",
+      "gate": "report_statistics_exact",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/negative_controls.json",
+      "gate": "original_45_negative_controls",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/negative_controls.json",
+      "gate": "hardening_20_plus_negative_controls",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/formal_semantics_hardening_determinism.json",
+      "gate": "two_complete_hardening_runs_identical",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "git tree comparison; artifacts/authority_isolation.json",
+      "gate": "protected_core_and_existing_experiments_unchanged",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/artifact_manifest.json",
+      "gate": "all_artifacts_rehash",
+      "passed": true
+    },
+    {
+      "blocking_reason": null,
+      "evidence": "artifacts/hardening_runs/run_1/test_results.json",
+      "gate": "all_tests_pass",
+      "passed": true
+    }
+  ],
+  "passed_gate_count": 18,
+  "protected_tree_checks": {
+    "compat/v2": {
+      "base_tree": "7bbb49d18daf7ea99d7633b40c6df5bc002824ca",
+      "current_tree": "7bbb49d18daf7ea99d7633b40c6df5bc002824ca",
+      "exact": true,
+      "expected_tree": "7bbb49d18daf7ea99d7633b40c6df5bc002824ca"
+    },
+    "experiments/database_lineage": {
+      "base_tree": "64b5365d9a828a645c99b536254a07a2519f0cc0",
+      "current_tree": "64b5365d9a828a645c99b536254a07a2519f0cc0",
+      "exact": true,
+      "expected_tree": "64b5365d9a828a645c99b536254a07a2519f0cc0"
+    },
+    "protocol/core_v3": {
+      "base_tree": "0b4a2608864e771ebca7cdbfad95aabaed2d0723",
+      "current_tree": "0b4a2608864e771ebca7cdbfad95aabaed2d0723",
+      "exact": true,
+      "expected_tree": "0b4a2608864e771ebca7cdbfad95aabaed2d0723"
+    },
+    "src/generation_relation_core": {
+      "base_tree": "03fbdce13249f84abe9d8fb605da31cdc36eda27",
+      "current_tree": "03fbdce13249f84abe9d8fb605da31cdc36eda27",
+      "exact": true,
+      "expected_tree": "03fbdce13249f84abe9d8fb605da31cdc36eda27"
+    },
+    "tests/core": {
+      "base_tree": "280cb44d592ae48d986719638980c11e57aab1f9",
+      "current_tree": "280cb44d592ae48d986719638980c11e57aab1f9",
+      "exact": true,
+      "expected_tree": "280cb44d592ae48d986719638980c11e57aab1f9"
+    }
+  },
+  "schema_version": "provenance-semiring-formal-semantics-hardening-final-status-v1",
+  "scope_exclusions_preserved": true,
+  "status": "PROVENANCE_SEMIRING_STRICT_HIERARCHY_FORMAL_SEMANTICS_HARDENING_SUPPORTED",
+  "w3c_relation_status": "NOT_EVALUATED"
+}

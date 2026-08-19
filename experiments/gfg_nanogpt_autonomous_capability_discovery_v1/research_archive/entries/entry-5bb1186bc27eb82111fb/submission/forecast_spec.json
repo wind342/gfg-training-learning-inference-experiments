@@ -1,0 +1,34 @@
+{
+  "schema": "capability-forecast-spec-v1",
+  "version": "1.0.0",
+  "prediction_endpoint": 10000,
+  "curve_grid": "the evaluation interval inferred from the prefix; observed prefix points are retained and all future grid points through step 10000 are forecast",
+  "required_fields": [
+    "will_transition",
+    "transition_step_low_200",
+    "transition_step_high_200",
+    "transition_step_low_500",
+    "transition_step_high_500",
+    "predicted_validation_curve",
+    "mechanism_state",
+    "post_formation_stability",
+    "predicted_instability_intervals"
+  ],
+  "transition_intervals": {
+    "transition_step_low_200_to_transition_step_high_200": {"maximum_width": 200, "role": "high-precision diagnostic"},
+    "transition_step_low_500_to_transition_step_high_500": {"maximum_width": 500, "role": "primary containment interval"}
+  },
+  "predicted_validation_curve_item": {
+    "optimizer_step": "integer",
+    "validation_accuracy": "number in [0,1]"
+  },
+  "mechanism_state_item": {
+    "optimizer_step": "integer",
+    "phase": "RULE_FORMING, RULE_FORMED, TRANSIENT_DEGRADED, or RULE_RECOVERED",
+    "rule_completion_fraction": "number in [0,1]",
+    "adaptive_risk": "LOW, HIGH, or EXCURSION"
+  },
+  "post_formation_stability": "TRANSIENT_DEGRADATION_RECOVERY",
+  "instability_interval_semantics": "inclusive optimizer-step bounds containing a predicted evaluation-grid degradation and its immediate recovery boundary",
+  "no_transition_value": "NO_TRANSITION"
+}

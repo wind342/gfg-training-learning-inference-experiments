@@ -1,0 +1,65 @@
+{
+  "audit_date": "2026-07-27",
+  "branch": "research/executable-generation-fact-graph-v2",
+  "branch_point": "cc3a4cd19846e7ebb811afa8a8b4602628397779",
+  "candidate_authority": {
+    "admitted_inputs": [
+      "ValidatedSnapshot",
+      "validated primitive relation store",
+      "validated occurrence endpoint catalog",
+      "measured capture audit",
+      "frozen contracts"
+    ],
+    "forbidden_inputs": [
+      "raw query answers",
+      "reference outputs",
+      "source reports",
+      "hidden fact tables",
+      "hidden occurrence tables",
+      "hidden relation tables",
+      "undelivered generator variables"
+    ]
+  },
+  "frozen_heads": {
+    "inter_fact_hardening_scale": "bd5354bc7a91327839b53600349490c621b6804c",
+    "order_refund_freeze": "bc672bc8ce53d9947195ce8eb35f42720b18977a",
+    "signal": "5694f19d5884cb3572f944db10de2812db86b6b8",
+    "signed_generation_algebra": "f06f53cb36859d7012f043f8be326ffbf9efc67f",
+    "v1_final": "cc3a4cd19846e7ebb811afa8a8b4602628397779"
+  },
+  "frozen_trees": {
+    "claim_atlas": "85203984d514bf6647f41acd8848fced47bb8bff",
+    "claims": "f6b95d5ae0d8fdb77da13f9dbd48ecaed8af27ff",
+    "core": "03fbdce13249f84abe9d8fb605da31cdc36eda27",
+    "inter_fact_base": "fccb595dfc0a8c7272f3e6e2af6937a57f8168b7",
+    "inter_fact_hardening_scale": "587ae72e94102fe4249eb1c38fa5b54ba9e78633",
+    "manuscript": "3652bd5aef4cfc14f1bf5f1ea08e0f42cd523d47",
+    "order_refund_freeze": "68f8db905678f47b5ddc02637b175b7270556e33",
+    "protocol_core_v3": "0b4a2608864e771ebca7cdbfad95aabaed2d0723",
+    "signal": "9871b14722548d503324762b6dc3a222828168d0",
+    "signed_generation_algebra": "8cfc18a206bde2ceecca5ccee29a18f74d7b2ea1",
+    "tests_core": "280cb44d592ae48d986719638980c11e57aab1f9",
+    "v1_final": "891ab228e7337c5030c3f5691a6ec3d74092027b"
+  },
+  "merge_base_signed_order": "1b31256a50481265f824d92392c45e1db4f986d6",
+  "schema_version": "executable-generation-fact-graph-v2-preimplementation-audit",
+  "v1_falsification": {
+    "ambiguous_scale_relation_count": 15900,
+    "fact_to_fact_relation_count": 23,
+    "legally_mappable_order_relation_count": 28,
+    "occurrence_to_occurrence_relation_count": 60,
+    "order_fact_count": 27,
+    "primitive_order_relation_count": 83,
+    "prohibited_action_counts": {
+      "cartesian_expanded_edge_count": 0,
+      "discarded_relation_count": 0,
+      "fabricated_fact_node_count": 0,
+      "reattached_relation_count": 0
+    },
+    "reason": "PURE_FACT_VERTEX_MODEL_CANNOT_PRESERVE_ALL_NATIVE_PRIMITIVE_RELATION_ENDPOINTS",
+    "status": "EXECUTABLE_GENERATION_FACT_GRAPH_V1_NOT_SUPPORTED",
+    "unmappable_order_relation_count": 55
+  },
+  "v2_atomic_fact_definition_changed": false,
+  "v2_requires_heterogeneous_nodes": true
+}

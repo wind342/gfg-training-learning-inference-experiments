@@ -1,0 +1,216 @@
+{
+  "claim": "Each evaluated lower projection forgets distinctions retained by N[X]",
+  "pair_count": 3,
+  "pairs": [
+    {
+      "gamma_snapshot_ids_different": true,
+      "left_nx": [
+        {
+          "logical_output_key": "LS_COEFFICIENT:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_91fdea99ab6d71c91b4960f06d2d3bb6b3b0f277504bf9b500e9c0634185d47d"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_f287ae8c2248a4bce0d88614fc360ea1889b6d42e603215630517a9e7f01cf3c"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "value": "same"
+          }
+        }
+      ],
+      "left_variant": "single",
+      "native_candidate_exact_both_sides": true,
+      "nx_different": true,
+      "ordinary_rows_equal": false,
+      "pair_id": "lower-coefficient",
+      "real_execution_count": 2,
+      "right_nx": [
+        {
+          "logical_output_key": "LS_COEFFICIENT:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_91fdea99ab6d71c91b4960f06d2d3bb6b3b0f277504bf9b500e9c0634185d47d"
+                  },
+                  {
+                    "exponent": 1,
+                    "variable": "x_f287ae8c2248a4bce0d88614fc360ea1889b6d42e603215630517a9e7f01cf3c"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "value": "same"
+          }
+        }
+      ],
+      "right_variant": "double",
+      "same_lower_domains": [
+        "boolean",
+        "flat_source_support_view",
+        "positive_boolean_lineage"
+      ],
+      "supported": true,
+      "workload_id": "LS_COEFFICIENT"
+    },
+    {
+      "gamma_snapshot_ids_different": true,
+      "left_nx": [
+        {
+          "logical_output_key": "LS_BALANCED_BAG:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_0b49631eaad11f7c6d7cc623181d2f1af9bf49001b01e750f12e0a777fa0ffdd"
+                  }
+                ]
+              },
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_61c6b24bf6959e74ae07f2dade9a7dd50599af902c1246978cde5f16409f0350"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "value": "same"
+          }
+        }
+      ],
+      "left_variant": "two_sources",
+      "native_candidate_exact_both_sides": true,
+      "nx_different": true,
+      "ordinary_rows_equal": true,
+      "pair_id": "lower-balanced-bag",
+      "real_execution_count": 2,
+      "right_nx": [
+        {
+          "logical_output_key": "LS_BALANCED_BAG:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 2,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_61c6b24bf6959e74ae07f2dade9a7dd50599af902c1246978cde5f16409f0350"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "value": "same"
+          }
+        }
+      ],
+      "right_variant": "one_source_twice",
+      "same_lower_domains": [
+        "bag_naturals",
+        "boolean"
+      ],
+      "supported": true,
+      "workload_id": "LS_BALANCED_BAG"
+    },
+    {
+      "gamma_snapshot_ids_different": true,
+      "left_nx": [
+        {
+          "logical_output_key": "LS_EXPONENT:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 1,
+                    "variable": "x_8ff61fd424d36b1a94028391b6594fba831d2d7f9b5d320bb406a5672ad52708"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "value": "same"
+          }
+        }
+      ],
+      "left_variant": "single_use",
+      "native_candidate_exact_both_sides": true,
+      "nx_different": true,
+      "ordinary_rows_equal": true,
+      "pair_id": "lower-exponent",
+      "real_execution_count": 2,
+      "right_nx": [
+        {
+          "logical_output_key": "LS_EXPONENT:value:51cf5cd5964b9806fe92bce2b6aafdca55d829ac27f8da83c597143df595f9a1",
+          "polynomial": {
+            "schema_version": "nx-polynomial-v1",
+            "terms": [
+              {
+                "coefficient": 1,
+                "monomial": [
+                  {
+                    "exponent": 2,
+                    "variable": "x_8ff61fd424d36b1a94028391b6594fba831d2d7f9b5d320bb406a5672ad52708"
+                  }
+                ]
+              }
+            ]
+          },
+          "values": {
+            "value": "same"
+          }
+        }
+      ],
+      "right_variant": "self_join",
+      "same_lower_domains": [
+        "bag_naturals",
+        "boolean",
+        "flat_source_support_view",
+        "positive_boolean_lineage"
+      ],
+      "supported": true,
+      "workload_id": "LS_EXPONENT"
+    }
+  ],
+  "real_execution_count": 6,
+  "requirements": {
+    "same_bag_naturals": true,
+    "same_boolean": true,
+    "same_flat_source_support_view": true,
+    "same_positive_boolean_lineage": true,
+    "same_which_vars": true
+  },
+  "schema_version": "lower-projection-strictness-constructions-v1",
+  "status": "LOWER_PROJECTION_STRICTNESS_SUPPORTED"
+}

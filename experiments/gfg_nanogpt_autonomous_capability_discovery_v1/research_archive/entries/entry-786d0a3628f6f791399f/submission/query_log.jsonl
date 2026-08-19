@@ -1,0 +1,28 @@
+{"arguments":{"tables":["chunks","evaluations","graph_blocks","metadata"]},"count":4,"operation":"direct_sql_schema"}
+{"arguments":{"aggregate":["blocks","objects","occurrences","facts","explicit_edges"],"max_step":null},"count":1,"operation":"direct_sql_summary"}
+{"arguments":{"max_step":10000,"order_by":"optimizer_step"},"count":101,"operation":"evaluations"}
+{"arguments":{"aggregate":["block_count","object_count","occurrence_count","fact_count","explicit_edge_count","min_step","max_step"],"group_by":"stage"},"count":30,"operation":"direct_sql_stage_profiles"}
+{"arguments":{"keys":"all"},"count":5,"operation":"direct_sql_metadata"}
+{"arguments":{"optimizer_step":1500,"order_by":"block_ordinal"},"count":24,"operation":"direct_sql_block_headers"}
+{"arguments":{"group_by":["stage","name","role","dtype","shape","materialized"],"max_step":10000},"count":243,"operation":"expanded_object_profiles"}
+{"arguments":{"group_by":["stage","occurrence_type","occurrence_stage","transform_reference"],"max_step":10000},"count":60,"operation":"expanded_occurrence_profiles"}
+{"arguments":{"group_by":["stage","relation_role","outcome_role","relation_type"],"max_step":10000},"count":113,"operation":"expanded_relation_profiles"}
+{"arguments":{"materialized":true,"name":"gradient_total_norm","stage":"after_gradient_clip"},"count":10000,"operation":"objects_and_tensor_scalars"}
+{"arguments":{"materialized":true,"name":"training_loss","stage":"after_forward"},"count":100,"operation":"objects_and_tensor_scalars"}
+{"arguments":{"merge_gap_steps":50,"threshold":1.0},"count":25,"operation":"derived_clipped_burst_intervals"}
+{"arguments":{"limit":100,"order_by":"gradient_total_norm descending"},"count":100,"operation":"derived_gradient_norm_peaks"}
+{"arguments":{"roles":["validation_logits","evaluation_validation_targets"],"steps":"evaluation_grid"},"count":202,"operation":"objects_and_materialized_tensors"}
+{"arguments":{"quantiles":[0.1,0.25,0.5],"source":"exact correct-class versus best-competitor margins"},"count":101,"operation":"derived_validation_margin_series"}
+{"arguments":{"roles":["parameter_version","optimizer_state"],"steps":"100 through 10000 by 100"},"count":6000,"operation":"objects_and_materialized_tensors"}
+{"arguments":{"statistics":["parameter_l2","first_moment_l2","second_moment_rms"],"steps":"100 through 10000 by 100"},"count":100,"operation":"derived_optimizer_state_series"}
+{"arguments":{"optimizer_steps":[1400,1500,1600,1700,2600,2700,2800,5400,5500,5600,7800,7900,8000,8100,8300,8400,8500],"stage":"evaluation"},"count":17,"operation":"fact_blocks_and_occurrences"}
+{"arguments":{"optimizer_steps":[1429,2694,5497,7873,8395],"stage":"after_gradient_clip"},"count":5,"operation":"fact_blocks_and_occurrences"}
+{"arguments":{"optimizer_steps":[1430,2695],"relation_type":"GeneratedOrigin","stage":"after_optimizer_step"},"count":2,"operation":"edges"}
+{"arguments":{"optimizer_step":1429,"stages":["before_batch","after_forward","after_backward","after_gradient_clip"]},"count":4,"operation":"forward_exact_dependency_chain"}
+{"arguments":{"optimizer_step":1430,"stage":"after_optimizer_step","parameter_name":"transformer.wte.weight"},"count":1,"operation":"optimizer_exact_dependency_chain"}
+{"arguments":{"cuts":[500,800,1000,1100,1200,1300,1400],"future_access_during_forecast":false,"horizon":10000},"count":7,"operation":"prefix_only_replay"}
+{"arguments":{"cuts":[500,800,1000,1100,1200,1300,1400],"metric":"suffix_validation_curve_rmse"},"count":7,"operation":"prefix_replay_score"}
+{"arguments":{"cuts":[500,800,1000,1100,1200,1300,1400],"model":"300-step recent validation linear extrapolation"},"count":7,"operation":"alternative_mechanism_falsification"}
+{"arguments":{"matched_cases":[[500,5500],[1000,8400]],"compressed_state":"validation_accuracy"},"count":2,"operation":"matched_state_divergent_future_search"}
+{"arguments":{"perturbations":["rule_margin_q10 below -7 at cut 1100","burst_period_delta zero at cut 800","optimizer_tension zero versus two"]},"count":3,"operation":"executable_use_audit"}
+{"arguments":{"pause_updates":800,"states":["gradients","learning_rate","parameters","weight_decay","Adam first moment","Adam second moment","Adam step","RNG","data order"]},"count":9,"operation":"intervention_state_audit"}

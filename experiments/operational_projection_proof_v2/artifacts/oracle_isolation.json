@@ -1,0 +1,48 @@
+{
+  "domains": {
+    "database": {
+      "candidate_after_reference_deleted_equal": true,
+      "candidate_files": [
+        "database_projection.py"
+      ],
+      "native_domain_result_read_count": 0,
+      "native_domain_result_read_findings": [],
+      "oracle_leakage_count": 0,
+      "oracle_leakage_findings": [],
+      "oracle_runtime_trap_passed": true,
+      "status": "SUPPORTED"
+    },
+    "opentelemetry": {
+      "candidate_after_native_record_deletion_equal": true,
+      "candidate_runtime_import_trap_passed": true,
+      "database_to_otel_runtime_core_native_trap_passed": true,
+      "native_runtime_projection_import_trap_passed": true,
+      "native_trace_existed_before_deletion": true,
+      "oracle_leakage_count": 0,
+      "otel_specific_core_field_count": 0,
+      "second_authority_store_count": 0,
+      "static_import_audit": {
+        "allowed_shared_helpers": [
+          "canonical trace schema",
+          "canonicalizer",
+          "semantic-key formatting",
+          "ProjectionError"
+        ],
+        "direct_hierarchical_shared_extraction_helper_count": 0,
+        "static_import_violations": [],
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "source_map": {
+      "core_collector_map_decoder_import_count": 0,
+      "core_projection_native_or_receipt_import_count": 0,
+      "frozen_oracle_output_exact": true,
+      "frozen_oracle_record_exact": true,
+      "second_authority_mapping_store_count": 0,
+      "status": "PASS",
+      "tested_transformer_oracle_import_count": 0
+    }
+  },
+  "status": "PASS"
+}

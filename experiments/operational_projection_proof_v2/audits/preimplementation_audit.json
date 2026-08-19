@@ -1,0 +1,233 @@
+{
+  "audit_id": "unified-operational-projection-proof-v2-preimplementation",
+  "audit_scope": "Authority, isolation, ancestry, and preservation audit performed before any v2 proof implementation.",
+  "implementation_started": false,
+  "source_heads": {
+    "database": {
+      "branch": "experiment/database-lineage-core-v3-native-v1",
+      "expected": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+      "observed": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+      "exact": true
+    },
+    "opentelemetry": {
+      "branch": "experiment/opentelemetry-projection-v1",
+      "expected": "25a9d2a614d2d34d36c38f7c560b818cdbc4b179",
+      "observed": "25a9d2a614d2d34d36c38f7c560b818cdbc4b179",
+      "exact": true
+    },
+    "source_map": {
+      "branch": "experiment/source-map-projection-v1",
+      "expected": "7dba987713da345453781e4b95130f1deb5f04d4",
+      "observed": "7dba987713da345453781e4b95130f1deb5f04d4",
+      "exact": true
+    },
+    "operational_projection_proof_v1": {
+      "branch": "theory/operational-projection-proof-v1",
+      "expected": "bc0bca1eae513f72c4ba578a285dbb56c742eae6",
+      "observed": "bc0bca1eae513f72c4ba578a285dbb56c742eae6",
+      "exact": true
+    },
+    "original_common_main_baseline": {
+      "expected": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+      "exists": true
+    }
+  },
+  "integration_history": {
+    "branch": "integration/unified-operational-projection-proof-v2",
+    "created_from": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+    "merge_commits_in_required_order": [
+      {
+        "commit": "652113055be4fb401106b53b9f8a8fa43470ef1c",
+        "parents": [
+          "03caa31b8a6abfe6e112a0544071618c689bb11f",
+          "25a9d2a614d2d34d36c38f7c560b818cdbc4b179"
+        ]
+      },
+      {
+        "commit": "672999026ca88ba5e5968f9ca48affd6cfbe5c72",
+        "parents": [
+          "652113055be4fb401106b53b9f8a8fa43470ef1c",
+          "7dba987713da345453781e4b95130f1deb5f04d4"
+        ]
+      },
+      {
+        "commit": "448170807967c70ee512877b26b01074d1433b61",
+        "parents": [
+          "672999026ca88ba5e5968f9ca48affd6cfbe5c72",
+          "bc0bca1eae513f72c4ba578a285dbb56c742eae6"
+        ]
+      }
+    ],
+    "all_source_commits_are_ancestors": true,
+    "history_rewrite_detected": false
+  },
+  "v1_preservation": {
+    "path": "experiments/operational_projection_proof",
+    "source_tree_id": "88f98c574821bfb7c61d94b11301118d7cbe866a",
+    "integrated_tree_id": "88f98c574821bfb7c61d94b11301118d7cbe866a",
+    "artifact_source_tree_id": "7e60b4fc4a3ad58bd91279f07eff15208c1729a2",
+    "artifact_integrated_tree_id": "7e60b4fc4a3ad58bd91279f07eff15208c1729a2",
+    "byte_preserved": true,
+    "not_evaluated_statuses_preserved": true
+  },
+  "reading_passes": {
+    "scientific_structure": {
+      "completed": true,
+      "areas": [
+        "src/generation_relation_core",
+        "protocol/core_v3",
+        "experiments/database_lineage",
+        "experiments/opentelemetry_projection",
+        "experiments/source_map_projection",
+        "experiments/operational_projection_proof",
+        "GeneratedOrigin recursion",
+        "relation evidence and successful operation closure",
+        "Snapshot validation and output orthogonality"
+      ]
+    },
+    "authority_audit": {
+      "completed": true,
+      "questions_checked": [
+        "fact establishment time",
+        "candidate inputs",
+        "native/reference inputs",
+        "answer leakage",
+        "secondary authority storage",
+        "self-comparison",
+        "direct versus hierarchical helper sharing",
+        "canonicalization-only helpers",
+        "negative-control execution depth",
+        "Source Map counterexample Snapshot construction",
+        "OTel GeneratedOrigin link derivation",
+        "normal-output control-plane contamination"
+      ]
+    }
+  },
+  "authority_boundaries": {
+    "core": {
+      "authority": "ValidatedSnapshot authoritative Core tables",
+      "validation": "Schema/entity uniqueness, payload digests, referential closure, relation material, exactly one primary evidence, evidence authority, and exactly one successful operation closure are checked without fallback.",
+      "resolver_indexes": "Function-local, rebuildable indexes derived from the authoritative Snapshot tables; not persisted and not authoritative.",
+      "fallback_count": 0
+    },
+    "database": {
+      "fact_establishment": "Actual relational operator callbacks synchronously call CoreAdapter capture_output or capture_disposition.",
+      "candidate_reads": [
+        "ValidatedSnapshot",
+        "SnapshotValidation",
+        "declared projection profile"
+      ],
+      "reference_reads": [
+        "frozen workload",
+        "hand-authored synthetic Oracle constants"
+      ],
+      "candidate_filesystem_reads": 0,
+      "candidate_oracle_imports": 0,
+      "self_comparison": false,
+      "secondary_authority_store_count": 0,
+      "output_control_plane_dependency": false
+    },
+    "opentelemetry": {
+      "fact_establishment": "The execution capture contract synchronously dispatches the same actual relational operator callback to CoreAdapter and the official OpenTelemetry SDK capture.",
+      "candidate_reads": [
+        "ValidatedSnapshot",
+        "exact SnapshotValidation"
+      ],
+      "native_reference_reads": [
+        "actual RelationTuple callback inputs and outputs",
+        "official OpenTelemetry Python SDK finished spans"
+      ],
+      "direct_hierarchical_shared_helpers": [
+        "canonical trace schema",
+        "canonicalizer",
+        "semantic-key formatting",
+        "ProjectionError type"
+      ],
+      "direct_hierarchical_prohibited_shared_extraction_helpers": [],
+      "database_to_otel_snapshot_access": false,
+      "causal_link_rule": "Candidate causal links are emitted only for generated_origin bindings by resolving origin_payload.prior_support_id to the unique producing occurrence.",
+      "native_projection_dependency": false,
+      "candidate_native_dependency": false,
+      "self_comparison": false,
+      "secondary_authority_store_count": 0,
+      "output_control_plane_dependency": false
+    },
+    "source_map": {
+      "fact_establishment": "The tested Emitter creates synchronous transformation receipts at each actual emit or disposition; the native generator and Core collector consume separate executions with receipt identity checked.",
+      "candidate_reads": [
+        "ValidatedSnapshot",
+        "predicate registry for validation",
+        "declared stage id"
+      ],
+      "native_reference_reads": [
+        "synchronous transformation receipts",
+        "official source-map 0.8.0 SourceMapGenerator/SourceMapConsumer"
+      ],
+      "candidate_receipt_reads": 0,
+      "candidate_native_map_reads": 0,
+      "collector_source_map_parser_imports": 0,
+      "transformer_oracle_imports": 0,
+      "self_comparison": false,
+      "secondary_authority_store_count": 0,
+      "output_control_plane_dependency": false,
+      "strict_counterexample_source_status": "The source code constructs and compares two real Snapshot documents for each of three cases, but the committed v1 report omits required per-table semantic hashes and set differences; v2 must rerun and report them."
+    }
+  },
+  "core_change_lineage_precheck": {
+    "original_main_base": "e00144b6b47504287c2d16f20b064da81e43f1cc",
+    "database_head": "03caa31b8a6abfe6e112a0544071618c689bb11f",
+    "inherited_core_changes_main_to_database": [
+      "src/generation_relation_core/relation_evidence.py"
+    ],
+    "inherited_core_schema_change_count": 0,
+    "new_core_changes_database_to_preimplementation_head": [],
+    "new_core_schema_change_count": 0,
+    "new_domain_specific_core_field_count": 0
+  },
+  "source_map_existing_negative_control_classification": [
+    {"control_id": "1", "reason_code": "MAPPING_REQUIRED_MISSING", "category": "VALIDATOR_UNIT"},
+    {"control_id": "2", "reason_code": "MAPPING_FABRICATED", "category": "VALIDATOR_UNIT"},
+    {"control_id": "3", "reason_code": "GENERATED_LINE_MISMATCH", "category": "VALIDATOR_UNIT"},
+    {"control_id": "4", "reason_code": "GENERATED_COLUMN_MISMATCH", "category": "VALIDATOR_UNIT"},
+    {"control_id": "5", "reason_code": "ORIGINAL_SOURCE_MISMATCH", "category": "VALIDATOR_UNIT"},
+    {"control_id": "6", "reason_code": "ORIGINAL_LINE_MISMATCH", "category": "VALIDATOR_UNIT"},
+    {"control_id": "7", "reason_code": "ORIGINAL_COLUMN_MISMATCH", "category": "VALIDATOR_UNIT"},
+    {"control_id": "8", "reason_code": "NAME_MISMATCH", "category": "VALIDATOR_UNIT"},
+    {"control_id": "9", "reason_code": "MAPPED_TO_UNMAPPED", "category": "VALIDATOR_UNIT"},
+    {"control_id": "10", "reason_code": "UNMAPPED_TO_MAPPED", "category": "VALIDATOR_UNIT"},
+    {"control_id": "11", "reason_code": "DUPLICATE_GENERATED_ANCHOR", "category": "VALIDATOR_UNIT"},
+    {"control_id": "12", "reason_code": "CONFLICTING_ORIGINAL_MAPPING", "category": "VALIDATOR_UNIT"},
+    {"control_id": "13", "reason_code": "MAPPINGS_ORDER_INVALID", "category": "VALIDATOR_UNIT"},
+    {"control_id": "14", "reason_code": "SOURCE_INDEX_OUT_OF_RANGE", "category": "VALIDATOR_UNIT"},
+    {"control_id": "15", "reason_code": "NAME_INDEX_OUT_OF_RANGE", "category": "VALIDATOR_UNIT"},
+    {"control_id": "16", "reason_code": "VLQ_INVALID", "category": "VALIDATOR_UNIT"},
+    {"control_id": "17", "reason_code": "UNICODE_COLUMN_OFF_BY_ONE", "category": "VALIDATOR_UNIT"},
+    {"control_id": "18", "reason_code": "LINE_ENDING_INTERPRETATION_MISMATCH", "category": "VALIDATOR_UNIT"},
+    {"control_id": "19", "reason_code": "SOURCE_ROOT_RESOLUTION_MISMATCH", "category": "VALIDATOR_UNIT"},
+    {"control_id": "20", "reason_code": "SOURCE_INFORMATION_MISSING", "category": "VALIDATOR_UNIT"},
+    {"control_id": "21", "reason_code": "SUPPORT_MISSING", "category": "VALIDATOR_UNIT"},
+    {"control_id": "22", "reason_code": "OCCURRENCE_MISMATCH", "category": "VALIDATOR_UNIT"},
+    {"control_id": "23", "reason_code": "DISPOSITION_MISSING", "category": "VALIDATOR_UNIT"},
+    {"control_id": "24", "reason_code": "GENERATED_ORIGIN_BRIDGE_BYPASSED", "category": "VALIDATOR_UNIT"},
+    {"control_id": "25", "reason_code": "COMPOSITION_CYCLE", "category": "VALIDATOR_UNIT"},
+    {"control_id": "26", "reason_code": "NATIVE_MAP_ACCESS_PROHIBITED", "category": "ISOLATION"},
+    {"control_id": "27", "reason_code": "CORE_COLLECTOR_MAP_PARSE_PROHIBITED", "category": "ISOLATION"},
+    {"control_id": "28", "reason_code": "ORACLE_ACCESS_PROHIBITED", "category": "ISOLATION"},
+    {"control_id": "29", "reason_code": "SOURCE_MAP_CORE_FIELD_PROHIBITED", "category": "ISOLATION"},
+    {"control_id": "30", "reason_code": "OUTPUT_ORTHOGONALITY_VIOLATION", "category": "ISOLATION"}
+  ],
+  "answer_leakage_findings": [],
+  "forbidden_persisted_secondary_relation_stores": [],
+  "required_v2_actions": [
+    "Rerun every P1/P2/P3 path on the integrated branch instead of copying committed reports.",
+    "Produce detailed Database P2 Snapshot, binding, occurrence, transform, environment, and output comparisons.",
+    "Enrich OTel P2 with source set differences and complete Snapshot semantic hashes.",
+    "Rerun Source Map P2 and preserve detailed Snapshot/table set differences for all three real pairs.",
+    "Classify every negative control by actual execution depth and reserve END_TO_END for complete-path replays.",
+    "Use isolated v2 run directories so no source experiment or v1 formal artifact is rewritten.",
+    "Rerun frozen small/formal workloads and fail closed on any metric drift.",
+    "Recheck source heads, ancestry, v1 tree identity, second authority, and Core change lineage in the final entrypoint."
+  ],
+  "blocking_findings": [],
+  "status": "READY_FOR_V2_IMPLEMENTATION"
+}

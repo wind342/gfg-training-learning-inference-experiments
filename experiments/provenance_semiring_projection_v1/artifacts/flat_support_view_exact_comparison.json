@@ -1,0 +1,89 @@
+{
+  "case_count": 13,
+  "cases": [
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W1"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W10"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "plan_a",
+      "workload_id": "W11"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "plan_b",
+      "workload_id": "W11"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W12"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W2"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W3"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W4"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W5"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W6"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W7"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W8"
+    },
+    {
+      "domain_id": "flat_source_support_view",
+      "exact": true,
+      "variant": "default",
+      "workload_id": "W9"
+    }
+  ],
+  "derived_operation": "Vars(N[X])",
+  "direct_path_computes_nx_first": false,
+  "mismatch_count": 0,
+  "schema_version": "flat-support-view-exact-comparison-v1",
+  "scope": "frozen nonzero output support",
+  "status": "FLAT_SOURCE_SUPPORT_VIEW_EXACT_PROJECTION_SUPPORTED"
+}

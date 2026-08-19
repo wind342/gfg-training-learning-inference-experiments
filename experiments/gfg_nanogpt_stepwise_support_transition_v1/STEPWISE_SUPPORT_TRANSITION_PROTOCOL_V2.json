@@ -1,0 +1,120 @@
+{
+  "schema": "nanogpt-stepwise-support-transition-protocol-v2",
+  "protocol_id": "STEPWISE-SUPPORT-TRANSITION-PHASE-v2",
+  "status": "FROZEN_BEFORE_FORMAL_V2_RESULT_GENERATION",
+  "supersedes_protocol_id": "STEPWISE-SUPPORT-TRANSITION-v1",
+  "supersession_reason": "The v1 scientific windows began at the evaluation checkpoint and therefore could not establish pre-cut support evolution. V2 preserves v1 pair selection while adding real prehistory and finite-difference evidence.",
+  "direct_recipient": "external_controller_codex",
+  "persistent_ai_role": "READ_ONLY_DISCOVERY_AFTER_EXTERNAL_VALIDATION_ONLY",
+  "source_runs": 13,
+  "source_training_steps_per_run": 10000,
+  "scientific_question": "Whether capability stability requires a phase state, acceleration/history, or a piecewise transition law rather than a static first-order support state.",
+  "window_policy": {
+    "parent_selection": "Reuse the frozen v1 decline, matched-stable and recovery scientific windows without outcome-dependent reselection.",
+    "scientific_window_length": 100,
+    "lookback_scales": [1, 2, 5, 10],
+    "captured_prehistory_steps": 10,
+    "restore_checkpoint_policy": "Restore the immediately preceding legal 100-step checkpoint and reexecute to the capture start. The uncaptured warm-up is committed in the receipt but is not represented as observed support state.",
+    "capture_window": "[scientific_start-10, scientific_end]",
+    "matching_and_labels": "V1 pairing and recovery labels are inherited unchanged and are not recomputed from formal-v2 results."
+  },
+  "finite_difference_contract": {
+    "discrete_not_continuous": true,
+    "left_rate": "V_minus(k,m)=(S_k-S_(k-m))/m for m in {1,2,5,10}",
+    "left_acceleration": "A_minus(k)=V_minus(k,1)-V_minus(k-1,1)",
+    "right_rate": "V_plus(k)=S_(k+1)-S_k",
+    "law_break": "J_k=V_plus(k)-V_minus(k,1)",
+    "raw_identity_aligned_families": [
+      "component_target_group_response",
+      "component_necessity",
+      "pair_backup_and_synergy",
+      "single_failure_slack",
+      "double_failure_slack",
+      "support_edge_strength",
+      "support_allocation",
+      "support_concentration",
+      "logits",
+      "margins",
+      "predictions"
+    ],
+    "identity_alignment_required": [
+      "component_registry_id",
+      "component_ids",
+      "target_group_identity",
+      "probe_contract_id",
+      "gate_plan_identity",
+      "observed_state_identity",
+      "result_shape",
+      "result_dtype"
+    ],
+    "categorical_rule": "Predictions are compared by identity-aligned equality/change masks; categorical values are never numerically subtracted.",
+    "undefined_rule": "A missing legal predecessor or successor produces an ExplicitDisposition, never an invented zero difference."
+  },
+  "candidate_model_tiers": {
+    "M0": "S_k",
+    "M1": "S_k plus V_minus(k)",
+    "M2": "S_k plus V_minus(k) plus A_minus(k)",
+    "M3": "phase state plus a discovered discrete local mode q_k",
+    "M4": "other minimal state discovered from the complete stepwise GFG",
+    "hybrid_mode_rule": "Mode count, meaning and switch conditions are discoverable candidates and are not predeclared as truth."
+  },
+  "breakpoint_adjudication": {
+    "classes": [
+      "support_state_jump",
+      "transition_law_switch",
+      "capability_readout_crossing",
+      "combined_mechanism"
+    ],
+    "required_temporal_order_report": [
+      "optimizer_or_update_change",
+      "left_evolution_rate_change",
+      "support_state_change",
+      "candidate_mode_switch",
+      "margin_change",
+      "capability_decline_or_recovery"
+    ],
+    "mode_is_candidate_not_observation": true
+  },
+  "causal_difference_contract": {
+    "trajectory_left_difference": "S_k-S_(k-1)",
+    "trajectory_right_difference": "S_(k+1)-S_k",
+    "actual_update_causal_difference": "D_U S_k=S_(k+1)^full-S_(k+1)^skip",
+    "four_branches": ["full_step", "skip_step", "parameter_only", "optimizer_state_only"],
+    "causal_and_trajectory_differences_must_not_be_conflated": true
+  },
+  "future_leakage_gate": {
+    "prediction_cut_inputs": ["S_k", "V_minus_k", "A_minus_k", "training_facts_formed_at_or_before_k"],
+    "target_or_adjudication_only": ["V_plus_k", "S_k_plus_1", "J_k", "future_mode", "future_capability"],
+    "forbidden_uses": ["feature_selection", "threshold_selection", "window_matching_distance", "candidate_input_at_k"],
+    "enforcement": "Every derived object carries temporal_role=input_available_at_cut or target_only_after_cut; the validator rejects a target-only origin entering a predictor input."
+  },
+  "state_sufficiency_adjudication": {
+    "comparison_order": ["M0", "M1", "M2", "M3", "M4"],
+    "required_checks": [
+      "strict_leave_one_run_out",
+      "future_leakage_audit",
+      "state_ablation",
+      "near_state_different_future_counterexamples"
+    ],
+    "acceptance_rule": "Evolution direction is admitted only if it improves cross-run pre-decline prediction, resolves counterexamples net of complexity and passes derivative ablation.",
+    "fail_closed_rule": "If V and A do not distinguish future outcomes, report missing state; do not claim a derivative theory."
+  },
+  "runtime_boundary": {
+    "model_commit": "3adf61e154c3fe3fca428ad6bc3818b27a3b8291",
+    "device": "cuda",
+    "dropout": 0.0,
+    "training_batch_policy": "Load the content-addressed batch for each exact optimizer opportunity.",
+    "historical_rng_boundary": "Historical RNG payloads were not materialized; deterministic current-runtime reexecution is reported honestly and never relabeled as historical restoration.",
+    "historical_exactness": "Endpoint identity is claimed only on exact parameter and Adam hash equality; no tolerance repair."
+  },
+  "probe_layer": {
+    "component_registry_file": "component_registry_csrg_4c_v1.json",
+    "probe_contract_file": "probe_contract_csrg_4c_v1.json",
+    "restorable_state_required": true,
+    "append_only_probe_observations": true,
+    "contract_driven_not_hardcoded": true
+  },
+  "atomic_generation_fact": "f=(u,tau,omega_bar,z;rho)",
+  "new_core_coordinates": false,
+  "vm_policy": "The persistent VM and original persistent AI session remain running and unchanged; the AI is not resumed before all formal-v2 evidence and GFG validation pass."
+}

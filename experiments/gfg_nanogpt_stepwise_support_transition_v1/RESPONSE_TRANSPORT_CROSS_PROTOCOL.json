@@ -1,0 +1,15 @@
+{
+  "schema": "nanogpt-response-transport-cross-protocol-v1",
+  "protocol_id": "RESPONSE-TRANSPORT-CROSS-v1",
+  "purpose": "Compose the already frozen A/B skip-state and native-full local-response experiments into a cross-transition response-state transport test.",
+  "inherited_adjudication": true,
+  "input_graph_schema": "nanogpt-local-response-jk-gfg-v1",
+  "output_graph_schema": "nanogpt-response-transport-cross-gfg-v1",
+  "transformation": "For each donor update, receiver and numeric CSRG role, compute D_U R = J_native_full - J_skip and compare J_skip and J_native_full against their exact own-state plus-one outcomes.",
+  "strict_support": "Every nonzero numeric response changes, J_native_full is strictly closer to the native-full exact plus-one outcome, and J_skip is strictly closer to the skip-state exact plus-one outcome in all four donor-receiver contexts.",
+  "falsification": "The response objects remain byte-identical across the actual native transition, or endpoint registration provides no residual improvement.",
+  "mixed": "The response changes and endpoint registration has some predictive value, but the strict all-role transport criterion is not satisfied.",
+  "categorical_rule": "Categorical values are never subtracted or averaged; only raw outcomes and transition masks are compared.",
+  "scope": "One actual native transition at each of two matched receiver states under two exact realized donor updates; h=1 only.",
+  "future_information_used": false
+}

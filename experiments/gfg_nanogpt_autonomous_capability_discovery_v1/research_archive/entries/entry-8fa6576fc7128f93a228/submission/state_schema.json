@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "capability-formation-state-v1",
+  "title": "Capability formation executable state",
+  "type": "object",
+  "required": [
+    "schema",
+    "cut_step",
+    "evaluation_interval",
+    "observed_curve",
+    "observed_train_accuracy_last_three",
+    "rule_margins",
+    "final_layer_norm_gain",
+    "final_layer_norm_rate",
+    "circuit_norm",
+    "adam_pressure",
+    "margin_gain_per_final_norm",
+    "circuit_decay_per_step",
+    "burst_onsets",
+    "cycle_period"
+  ],
+  "properties": {
+    "schema": {"const": "capability-formation-state-v1"},
+    "cut_step": {"type": "integer", "minimum": 1, "maximum": 10000},
+    "evaluation_interval": {"const": 100},
+    "observed_curve": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/curve_point"},
+      "minItems": 1
+    },
+    "observed_train_accuracy_last_three": {
+      "type": "array",
+      "items": {"type": "number", "minimum": 0, "maximum": 1},
+      "minItems": 1,
+      "maxItems": 3
+    },
+    "rule_margins": {
+      "type": "array",
+      "items": {"type": "number"},
+      "minItems": 1
+    },
+    "final_layer_norm_gain": {"type": "number", "exclusiveMinimum": 0},
+    "final_layer_norm_rate": {"type": "number", "minimum": 0.003, "maximum": 0.015},
+    "circuit_norm": {"type": "number", "exclusiveMinimum": 0},
+    "adam_pressure": {"type": "number", "minimum": 0},
+    "margin_gain_per_final_norm": {"type": "number", "exclusiveMinimum": 0},
+    "circuit_decay_per_step": {"type": "number", "minimum": 0},
+    "burst_onsets": {
+      "type": "array",
+      "items": {"type": "integer", "minimum": 0},
+      "maxItems": 4
+    },
+    "cycle_period": {"type": "number", "minimum": 250, "maximum": 380}
+  },
+  "$defs": {
+    "curve_point": {
+      "type": "object",
+      "required": ["optimizer_step", "validation_accuracy"],
+      "properties": {
+        "optimizer_step": {"type": "integer", "minimum": 1, "maximum": 10000},
+        "validation_accuracy": {"type": "number", "minimum": 0, "maximum": 1}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

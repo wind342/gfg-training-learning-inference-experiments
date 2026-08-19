@@ -1,0 +1,28 @@
+{
+  "schema": "training-intervention-spec-v1",
+  "name": "pause_effective_adam_updates",
+  "version": "1.0.0",
+  "direction": "DELAY",
+  "predicted_direction": "DELAY",
+  "hook": "before_optimizer_step",
+  "allowed_mutation": "current gradients",
+  "implementation": "Set every current parameter gradient to None for exactly 800 optimizer-step hook calls. AdamW therefore skips parameter, moment, step-counter, and decoupled-weight-decay updates for those parameters; no native object is serialized.",
+  "pause_updates": 800,
+  "predicted_transition_step_shift": {
+    "step_low": 700,
+    "step_high": 900,
+    "sign_convention": "positive values are DELAY"
+  },
+  "predicted_shift_interval": {
+    "step_low": 700,
+    "step_high": 900
+  },
+  "minimum_effective_shift_optimizer_steps": 600,
+  "mechanism_state_change": {
+    "variable": "effective_optimizer_updates",
+    "effect": "lags declared optimizer step by 800 while rule_completion_fraction remains at its prefix value, then resumes the same formation path"
+  },
+  "predicted_stability_effect": "NO_CHANGE",
+  "stability_effect_rationale": "The intervention time-translates parameter-changing Adam generations without advancing per-parameter moments. It delays both rule formation and the relaxation oscillator, but does not alter the oscillator's formed-state mode or recovery mechanism.",
+  "forbidden_inputs_used": []
+}

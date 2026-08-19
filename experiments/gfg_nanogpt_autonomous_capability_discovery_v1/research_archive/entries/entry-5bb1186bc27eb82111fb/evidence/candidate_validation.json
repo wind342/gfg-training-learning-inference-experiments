@@ -1,0 +1,1 @@
+{"deterministic_replay":false,"failures":["INTERVENTION_SHIFT_INTERVAL_MISSING"],"finite_canonical_state":false,"forecast_gates":{},"forecast_sha256":null,"schema":"candidate-interface-validation-v1","state_sha256":null,"status":"FAIL","submission_bytes":33034,"validation_sha256":"700014926f9ea03c2ed63ecf942c0c2985e78ee3de66470b1e9f0d4f5cf5a698"}

@@ -1,0 +1,28 @@
+{
+  "dataset": "MIT-BIH Arrhythmia Database",
+  "dataset_version": "1.0.0",
+  "doi": "https://doi.org/10.13026/C2F305",
+  "license": "Open Data Commons Attribution License v1.0",
+  "license_url": "https://physionet.org/content/mitdb/1.0.0/",
+  "record": "100",
+  "channel": "MLII",
+  "sample_rate_hz": 360,
+  "window_start": 0,
+  "window_length": 512,
+  "files": [
+    {
+      "name": "100.hea",
+      "url": "https://physionet.org/files/mitdb/1.0.0/100.hea",
+      "sha256": "60ebc904c7bf3e04d142638d3fd5c903e8dc9f10f1ea3264e07926aa089ee75e",
+      "size": 143
+    },
+    {
+      "name": "100.dat",
+      "url": "https://physionet.org/files/mitdb/1.0.0/100.dat",
+      "sha256": "b2ea3c250e56e48f4b7b90697832b8ecd1afa1e0bb31f2dcfea4ed6e1075a639",
+      "size": 1950000
+    }
+  ],
+  "citation": "Moody GB, Mark RG. The impact of the MIT-BIH Arrhythmia Database. IEEE Engineering in Medicine and Biology Magazine 20(3):45-50, 2001."
+}
+

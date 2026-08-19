@@ -1,0 +1,134 @@
+You may read one complete, real, validated participant-safe
+nanoGPT training generation-fact graph mounted at /evidence. This graph is
+your only scientific input.
+
+This executable mechanism-discovery task family is new. The five-minute
+orientation manual defines its workflow. The sealed executable mechanism is
+the scientific claim; discovery_report.md is supporting explanation. Every
+variable described as causally necessary for a required prediction must be
+represented in executable state or update code, unless a recorded
+falsification test shows that it can be safely eliminated. Test state closure
+on multiple prefix-only replays before sealing, and audit every state that can
+continue to evolve under the proposed intervention.
+
+Before sealing, perform an executable-use audit. Merely reading, serializing
+or reporting a proposed state variable does not make it part of the operative
+mechanism. For each variable claimed to control a required result, identify
+and test the exact code path through which it can change that result. Reject
+an executable that reduces a rich state explanation to an unsupported
+single-run clock regularity when the GFG exposes prefix state capable of
+conditioning the future.
+
+Autonomously discover one unified executable finite-state theory containing
+two explicit submodels: `FormationDynamics`, which explains how this training
+execution changed from training-sample memorization to rule-level
+generalization, and `StabilityDynamics`, which explains the subsequent
+retention, degradation and recovery of that capability. You are not being
+asked to optimize source code or merely describe an accuracy curve.
+
+In addition to capability formation, determine whether the formed capability
+is dynamically stable. Test, rather than assume, whether the graph supports
+stable generalization, transient degradation followed by recovery, persistent
+degradation, or an undetermined result. If instability is supported, identify
+its observable preconditions and recovery mechanism from generation facts.
+Treat this as an independent state-closure problem, not as an auxiliary label
+or diagnostic appended after the formation forecast. At multiple historical
+cuts, actively search for comparable compressed stability states with
+different subsequent behavior. Such a counterexample means that the proposed
+state is insufficient: retain additional future-distinguishing state and make
+it operational in the executable update law before sealing. A fixed time
+difference, growth rate, state increment, threshold, cycle number or cycle
+parity from one discovery execution cannot by itself carry a cross-run
+stability claim unless multiple prefix-only tests support its prospective use.
+Derive the predicted intervention stability effect from the same closed state
+and update law. The stability submodel must recursively predict the complete
+future horizon, including the location, duration, amplitude and recovery of
+all degradation it predicts. Predicting only the next instability event,
+returning only an interval list, or replaying a precomputed cycle calendar is
+not a complete stability model. These requirements reveal no target variable,
+event time, threshold or answer.
+
+Your sealed mechanism must initialize from a previously unseen run's complete
+GFG prefix and forecast, before the future occurs:
+1. whether a capability transition will occur by step 10000;
+2. two independently frozen transition intervals: a high-precision interval
+   no wider than 200 optimizer steps and a primary success interval no wider
+   than 500 optimizer steps;
+3. predicted_formation_curve on the 100-step evaluation grid, with rows
+   `{"step": integer, "capability": number}`;
+4. predicted_stability_degradation_curve on the same grid, with rows
+   `{"step": integer, "degradation": nonnegative number}`;
+5. predicted_validation_curve on the same grid, with each accuracy exactly
+   equal to clamp(capability - degradation, 0, 1);
+6. mechanism_state containing formation_state, stability_state and a
+   state_trajectory row for every forecast step; each trajectory row must
+   contain step, formation_state and stability_state;
+7. post_formation_stability, using exactly STABLE,
+   TRANSIENT_DEGRADATION_RECOVERY, PERSISTENT_DEGRADATION or UNDETERMINED; and
+8. predicted_instability_intervals as a list of zero or more inclusive
+   optimizer-step intervals, each with integer step_low and step_high.
+
+`mechanism.py` must define `FormationDynamics`, `StabilityDynamics` and
+`CapabilityDynamicsMechanism`. Each submodel must define initialize, step and
+output methods. The unified mechanism must define initialize and forecast,
+must return initial formation_state and stability_state, and must actually
+execute both submodels to produce the component curves and state trajectory.
+After formation, do not encode a predicted degradation by lowering only the
+formation curve: every predicted deficit below 0.90 must be caused by a
+positive stability-degradation output.
+
+Submit one executable intervention that acts only through the frozen training
+hook API and predicts ADVANCE or DELAY, a transition-step shift interval, and
+the corresponding change in your mechanism state. Also declare the predicted
+post-formation stability effect as IMPROVE, WORSEN or NO_CHANGE and explain
+which mechanism variable should change. The same sealed candidate
+will be evaluated on an unseen task, token map, split, initialization and data
+order. It must not identify runs or dates and must not contain a trajectory
+answer table.
+
+Use the complete graph freely: sources, batch membership, tensors, layer
+activations, logits, gradients, clipping, optimizer states, parameter
+versions, exact occurrence identities, roles, reads_from, GeneratedOrigin,
+program_order and realizes_fact. You may derive matrices and temporary files.
+The helper gfg_client.py is optional; direct read-only SQLite access is also
+allowed. Do not use the network, another AI, external literature, or hidden
+material.
+
+Use transition_step_low_200 and transition_step_high_200 for the 200-step
+high-precision interval. Use transition_step_low_500 and
+transition_step_high_500 for the 500-step primary interval. The 200-step
+interval is reported as an additional precision diagnostic; the 500-step
+interval is the interval-containment gate for forecast success. Both are
+sealed before the unseen future is generated.
+
+After the external runner releases /evidence, the formal-work budget is
+exactly 120 minutes. Stop expanding analysis by formal-work minute 110 and
+use the final ten minutes only to complete and check every required file in
+submission/. You may submit earlier as soon as the required work is ready.
+The runner does not provide an interactive last-minute message.
+
+The sealed mechanism and intervention are replayed in a restricted runtime.
+They may import ordinary numerical modules and gfg_client, but must not
+import filesystem, process, dynamic-import, system or network modules; call
+open; retain an absolute evidence path in serialized state; or perform
+run-identity, date or wall-clock lookup. Temporary analysis scripts used
+before submission are not subject to this executable-candidate restriction.
+
+Before submitting, propose and attempt to falsify at least three mechanisms,
+including the selected mechanism and at least two rejected alternatives.
+Record the GFG evidence for each in discovery_report.md. At least one tested
+hypothesis must concern post-formation stability. Do not assume that a
+transient degradation exists merely because this task asks you to test for it.
+
+Write exactly the required candidate files under submission/ as specified by
+candidate_interface.json and intervention_api.json. Do not modify /evidence.
+After all candidate files have been completely written and checked, create
+`submission/FINAL_SUBMISSION_READY.json` last with the exact JSON object
+`{"status":"READY"}`. The external runner may then terminate an otherwise
+idle Codex process and preserve the completed submission; this marker is not
+part of the scientific answer.
+
+Before creating the READY marker, run
+`python DUAL_DYNAMICS_SUBMISSION_CHECKER.py submission /evidence`. It checks
+only the frozen executable interface and curve composition, supplies no
+scientific answer, and must report PASS.

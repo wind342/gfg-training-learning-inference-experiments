@@ -1,0 +1,17 @@
+{
+  "profile_id": "ecma426-ordinary-source-map-v1",
+  "source_branch": "experiment/source-map-projection-v1",
+  "source_commit": "7dba987713da345453781e4b95130f1deb5f04d4",
+  "declared_input_scope": "Ordinary non-indexed version-3 external JavaScript Source Maps with zero-based lines, UTF-16 columns, LF/CRLF, mapped/unmapped segments, names, sourceRoot, and sourcesContent.",
+  "selected_facts": ["complete ordinary Source Map document", "generated line", "generated UTF-16 column", "mapped state", "original source", "original line", "original UTF-16 column", "optional name", "sourceRoot", "sourcesContent", "generated-to-original queries", "original-to-generated queries"],
+  "excluded_facts": ["indexed maps and sections", "WebAssembly", "CSS", "stack-trace deobfuscation", "DevTools UI", "remote source retrieval", "sourceMappingURL parsing", "proposal fields", "arbitrary compilers and languages"],
+  "candidate_path": "actual transformation receipts -> Core v3 facts -> ValidatedSnapshot -> project_stage -> ordinary Source Map",
+  "reference_path": "same actual transformation receipts -> official source-map 0.8.0 SourceMapGenerator and SourceMapConsumer",
+  "exact_comparison_fields": ["version", "file", "sourceRoot", "sources", "names", "mappings", "sourcesContent", "generated_file", "generated_line", "generated_column", "mapped", "original_source", "original_line", "original_column", "original_name", "bidirectional query answers"],
+  "multiplicity_semantics": "Every generated anchor is retained in strict generated-position order; duplicate or conflicting anchors fail closed rather than overwrite.",
+  "canonicalization_rules": "Source Map documents use deterministic source/name first-occurrence order and canonical VLQ encoding; normalized records retain every mapped and unmapped segment.",
+  "output_orthogonality_rules": "Generated JavaScript bytes must be identical in output-only, native-map, Core-only, and dual modes and contain no Core or Source Map control-plane token.",
+  "authority_rules": "Native generator does not read Core; Core collector does not parse maps; candidate reads only ValidatedSnapshot; transformer does not read Oracle; native maps and receipts are never candidate answer inputs.",
+  "accepted_limitations": ["ordinary non-indexed profile only", "JavaScript UTF-16 coordinates", "published ECMA-426 1.0 HTML bytes unavailable and not substituted"],
+  "mandatory_status_conditions": ["mapping_segments=685", "bidirectional_queries=1385", "query_mismatches=0", "medium_mappings=660", "official_applicable=80/80", "indexed_exclusions=19", "Core-specific changes=0", "secondary authority mapping stores=0", "three detailed strict counterexamples", "ordinary profile P1=SUPPORTED", "full standard surface=PARTIAL"]
+}

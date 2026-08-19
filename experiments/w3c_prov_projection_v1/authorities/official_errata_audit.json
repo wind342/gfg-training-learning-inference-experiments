@@ -1,0 +1,45 @@
+{
+  "access_date": "2026-07-21",
+  "errata_identity": {
+    "sha256": "88dc4c9ce06c589f2d91e5462c34c5f4f1377e408892ea07868930ae5787691a",
+    "url": "https://www.w3.org/2011/prov/errata.html"
+  },
+  "applicable_entries": [
+    {
+      "id": "o-1",
+      "resolution": "Use http://www.w3.org/2001/XMLSchema#.",
+      "status": "APPLIED"
+    },
+    {
+      "id": "o-5",
+      "resolution": "Do not use prov:generatedAtTime or prov:invalidatedAtTime; this profile excludes temporal fields.",
+      "status": "APPLIED"
+    },
+    {
+      "id": "dm-1",
+      "resolution": "Use http://www.w3.org/2001/XMLSchema#.",
+      "status": "APPLIED"
+    },
+    {
+      "id": "n-1",
+      "resolution": "Use http://www.w3.org/2001/XMLSchema#.",
+      "status": "APPLIED"
+    }
+  ],
+  "reviewed_non_applicable_entries": [
+    {
+      "id": "o-2",
+      "reason": "Example typo only."
+    },
+    {
+      "id": "o-3",
+      "reason": "Document link correction only."
+    },
+    {
+      "id": "o-4",
+      "reason": "prov:hadMember and Collection are excluded from this profile."
+    }
+  ],
+  "unresolved_profile_impact_count": 0,
+  "version": 1
+}

@@ -1,0 +1,19 @@
+{
+  "expected_exact_transition_count": 50331648,
+  "gates": {
+    "artifact_manifest_exact": true,
+    "dependency_dag_supplied_status_disclosed": true,
+    "every_transition_has_stochastic_source_facts": true,
+    "exact_transition_accounting_exact": true,
+    "executable_source_hashes_exact": true,
+    "independent_conditional_factorization_exact": true,
+    "independent_formation_ancestry_exact": true,
+    "per_episode_hash_exact": true,
+    "reported_status_pass": true,
+    "terminal_has_no_direct_early_action_or_random_source": true
+  },
+  "independent_max_abs_factorized_credit_error": 4.996003610813204e-16,
+  "sample_count": 3,
+  "schema_version": "gfg-temporal-credit-stochastic-independent-check-v1",
+  "status": "PASS"
+}

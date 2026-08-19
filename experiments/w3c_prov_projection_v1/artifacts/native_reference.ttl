@@ -1,0 +1,188 @@
+@prefix ex: <https://example.org/w3c-prov-projection-v1#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:e_30c8f72ed88ee8da92d95f35fcb184e303e1d075119e6c1193716c5bcfb20487 a prov:Entity, ex:DispositionRecord ;
+  ex:dispositionCategory "non_rendered" ;
+  ex:reasonCode "NO_MATCHING_LEFT_KEY" .
+
+ex:e_3872f8594bf649a8b2be30b5b95e61cacf8e3ed0f5eb5f3eb1e58df9aca3ce0d a prov:Entity, ex:SourceInformation ;
+  ex:domainType "left-table-row" ;
+  ex:sourceGranularity "csv-row" ;
+  ex:sourceIdentity "left-row-B" ;
+  ex:stableDomainIdentity "left/B" .
+
+ex:e_463111c3eaf5ff7be0af84acb78d50ae91c10166cbc527bf6f0e44f67d620404 a prov:Entity, ex:GeneratedSupport ;
+  ex:resultCategory "selection-manifest" ;
+  ex:resultIdentity "selected/K1" .
+
+ex:e_540a12733eafd494a6e73ec06528f67386ba1c167aa66cd137a59deabe3671ad a prov:Entity, ex:GeneratedSupport ;
+  ex:resultCategory "intermediate-row" ;
+  ex:resultIdentity "intermediate/beta" .
+
+ex:e_87fb0a6116473afa5d9bc561d847afdc5e74bfcf4c158cea079285165dd604f5 a prov:Entity, ex:GeneratedSupport ;
+  ex:resultCategory "final-result" ;
+  ex:resultIdentity "final/result-set" .
+
+ex:e_8daa5b7e82bad900f4c97d24e24ef5577b15b8c9d7919634ab7da88a4e92530c a prov:Entity, ex:SourceInformation ;
+  ex:domainType "right-table-row" ;
+  ex:sourceGranularity "csv-row" ;
+  ex:sourceIdentity "right-row-2" ;
+  ex:stableDomainIdentity "right/2" .
+
+ex:e_94366fe48d7969797ac80c48c8712a169c2ac7ee90d6dcf4b7587e9c3d33c216 a prov:Entity, ex:SourceInformation ;
+  ex:domainType "left-table-row" ;
+  ex:sourceGranularity "csv-row" ;
+  ex:sourceIdentity "left-row-A" ;
+  ex:stableDomainIdentity "left/A" .
+
+ex:e_c59fbe29325011fc87fc24d4256690a1f7e3612f5948b164f46dfb637bf9bbac a prov:Entity, ex:SourceInformation ;
+  ex:domainType "right-table-row" ;
+  ex:sourceGranularity "csv-row" ;
+  ex:sourceIdentity "right-row-1" ;
+  ex:stableDomainIdentity "right/1" .
+
+ex:e_ca2dddfa51bc48d5875d65b1585a19a40332deb2daaa99dbe3688d7c7f03ae13 a prov:Entity, ex:GeneratedSupport ;
+  ex:resultCategory "final-summary" ;
+  ex:resultIdentity "final/summary" .
+
+ex:e_e0dc224771506640773b417c0e66c62472dcbe54b7cfdaa30ecc7799b0cb0f18 a prov:Entity, ex:GeneratedSupport ;
+  ex:resultCategory "intermediate-row" ;
+  ex:resultIdentity "intermediate/alpha" .
+
+ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd a prov:Activity, ex:GenerationOccurrence ;
+  ex:occurrenceIndex 2 ;
+  ex:occurrenceStage "stage-2" ;
+  ex:occurrenceType "deterministic-render" ;
+  ex:operationType "render-json-and-text" ;
+  ex:stableInstanceKey "fixture/render" .
+
+ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c a prov:Activity, ex:GenerationOccurrence ;
+  ex:occurrenceIndex 0 ;
+  ex:occurrenceStage "stage-1" ;
+  ex:occurrenceType "deterministic-selection" ;
+  ex:operationType "select-matching-key" ;
+  ex:stableInstanceKey "fixture/select" .
+
+ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 a prov:Activity, ex:GenerationOccurrence ;
+  ex:occurrenceIndex 1 ;
+  ex:occurrenceStage "stage-1" ;
+  ex:occurrenceType "deterministic-join" ;
+  ex:operationType "join-and-derived-field" ;
+  ex:stableInstanceKey "fixture/join" .
+
+ex:ag_647e051aff9752e4dcf70f260688b9e8d7a5db70762908645ea39c1cc74066f0 a prov:Agent, prov:SoftwareAgent ;
+  ex:codeIdentity "ec2e1126e7c74878e5a4ae2d9ba010bd4ad20b5df08db3dd09d1091a41b13a01" ;
+  ex:generatorName "deterministic-tabular-generator" ;
+  ex:generatorVersion "1.0.0" .
+
+ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c prov:qualifiedUsage ex:u_0ec74c272c0c3c1f0a14ddb1347cc0051c7b178a577aac6e294f1d3b89ac69ec .
+ex:u_0ec74c272c0c3c1f0a14ddb1347cc0051c7b178a577aac6e294f1d3b89ac69ec a prov:Usage ; prov:entity ex:e_8daa5b7e82bad900f4c97d24e24ef5577b15b8c9d7919634ab7da88a4e92530c ; prov:hadRole ex:unmatched_input ; ex:relationOrdinal 0 .
+
+ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 prov:qualifiedUsage ex:u_29ea30f81f0262cfbe292ecaca2a54bd7b3da83cf4466fba06540d26e1388c80 .
+ex:u_29ea30f81f0262cfbe292ecaca2a54bd7b3da83cf4466fba06540d26e1388c80 a prov:Usage ; prov:entity ex:e_94366fe48d7969797ac80c48c8712a169c2ac7ee90d6dcf4b7587e9c3d33c216 ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 0 .
+
+ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd prov:qualifiedUsage ex:u_2aeb9df7608c766c4fccca8cf4bc70372754c1e5ce4d10ae7c5b63d54fad568b .
+ex:u_2aeb9df7608c766c4fccca8cf4bc70372754c1e5ce4d10ae7c5b63d54fad568b a prov:Usage ; prov:entity ex:e_540a12733eafd494a6e73ec06528f67386ba1c167aa66cd137a59deabe3671ad ; prov:hadRole ex:stage2_input ; ex:relationOrdinal 0 .
+
+ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c prov:qualifiedUsage ex:u_302ab0d50ac861f77dcf86e0b4854101503cc2be138b97ee4f4f4c90729ccedb .
+ex:u_302ab0d50ac861f77dcf86e0b4854101503cc2be138b97ee4f4f4c90729ccedb a prov:Usage ; prov:entity ex:e_c59fbe29325011fc87fc24d4256690a1f7e3612f5948b164f46dfb637bf9bbac ; prov:hadRole ex:selected_input ; ex:relationOrdinal 0 .
+
+ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 prov:qualifiedUsage ex:u_4ecf06a14d11debf2235caefed6a4e7fb59af52f132f7f9dbd535985e18f2f43 .
+ex:u_4ecf06a14d11debf2235caefed6a4e7fb59af52f132f7f9dbd535985e18f2f43 a prov:Usage ; prov:entity ex:e_94366fe48d7969797ac80c48c8712a169c2ac7ee90d6dcf4b7587e9c3d33c216 ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 1 .
+
+ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd prov:qualifiedUsage ex:u_849e0ca669edf9c634566b5693c6e92b6a0340a99de5b5695298580394d9cbd5 .
+ex:u_849e0ca669edf9c634566b5693c6e92b6a0340a99de5b5695298580394d9cbd5 a prov:Usage ; prov:entity ex:e_e0dc224771506640773b417c0e66c62472dcbe54b7cfdaa30ecc7799b0cb0f18 ; prov:hadRole ex:stage2_input ; ex:relationOrdinal 0 .
+
+ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd prov:qualifiedUsage ex:u_8acb894ea888d38cf91876aebf2b259a0acc16de4286a0bcf1ada04e01f67583 .
+ex:u_8acb894ea888d38cf91876aebf2b259a0acc16de4286a0bcf1ada04e01f67583 a prov:Usage ; prov:entity ex:e_e0dc224771506640773b417c0e66c62472dcbe54b7cfdaa30ecc7799b0cb0f18 ; prov:hadRole ex:stage2_input ; ex:relationOrdinal 1 .
+
+ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c prov:qualifiedUsage ex:u_8e28782011d0f162a59808bcc8e273f9be05617f8982c0c3c2a0acbc52d9fcf3 .
+ex:u_8e28782011d0f162a59808bcc8e273f9be05617f8982c0c3c2a0acbc52d9fcf3 a prov:Usage ; prov:entity ex:e_3872f8594bf649a8b2be30b5b95e61cacf8e3ed0f5eb5f3eb1e58df9aca3ce0d ; prov:hadRole ex:selected_input ; ex:relationOrdinal 0 .
+
+ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd prov:qualifiedUsage ex:u_a1b55a814e6bc5c4bb8336ef0e6e77675b62a5f30b1871428239fbc59f5e6d40 .
+ex:u_a1b55a814e6bc5c4bb8336ef0e6e77675b62a5f30b1871428239fbc59f5e6d40 a prov:Usage ; prov:entity ex:e_540a12733eafd494a6e73ec06528f67386ba1c167aa66cd137a59deabe3671ad ; prov:hadRole ex:stage2_input ; ex:relationOrdinal 1 .
+
+ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 prov:qualifiedUsage ex:u_a9f9b0def63764a67ada7a3ab25c9da5d0950cdab9f66989e2273b6a4ca9d550 .
+ex:u_a9f9b0def63764a67ada7a3ab25c9da5d0950cdab9f66989e2273b6a4ca9d550 a prov:Usage ; prov:entity ex:e_3872f8594bf649a8b2be30b5b95e61cacf8e3ed0f5eb5f3eb1e58df9aca3ce0d ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 0 .
+
+ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 prov:qualifiedUsage ex:u_afcbece3983ef98b528939cad13255dac66cef7f3ce5b6937a9618940911ae2a .
+ex:u_afcbece3983ef98b528939cad13255dac66cef7f3ce5b6937a9618940911ae2a a prov:Usage ; prov:entity ex:e_c59fbe29325011fc87fc24d4256690a1f7e3612f5948b164f46dfb637bf9bbac ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 1 .
+
+ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c prov:qualifiedUsage ex:u_bd0f19fb1a1089090037c8e6e8b84aaead4f3c104dd7298d02f34066a9a0549d .
+ex:u_bd0f19fb1a1089090037c8e6e8b84aaead4f3c104dd7298d02f34066a9a0549d a prov:Usage ; prov:entity ex:e_94366fe48d7969797ac80c48c8712a169c2ac7ee90d6dcf4b7587e9c3d33c216 ; prov:hadRole ex:selected_input ; ex:relationOrdinal 0 .
+
+ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 prov:qualifiedUsage ex:u_e529755bb9cd61627fa854f3b41a7889ed05984c1b6bbd9dce7184dd482c22ba .
+ex:u_e529755bb9cd61627fa854f3b41a7889ed05984c1b6bbd9dce7184dd482c22ba a prov:Usage ; prov:entity ex:e_3872f8594bf649a8b2be30b5b95e61cacf8e3ed0f5eb5f3eb1e58df9aca3ce0d ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 1 .
+
+ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 prov:qualifiedUsage ex:u_e918e2a43313f7043e117627d360cec5b97c58a6547b7c40f8a1ad92262d8a45 .
+ex:u_e918e2a43313f7043e117627d360cec5b97c58a6547b7c40f8a1ad92262d8a45 a prov:Usage ; prov:entity ex:e_c59fbe29325011fc87fc24d4256690a1f7e3612f5948b164f46dfb637bf9bbac ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 0 .
+
+ex:e_87fb0a6116473afa5d9bc561d847afdc5e74bfcf4c158cea079285165dd604f5 prov:qualifiedGeneration ex:g_1ec8dce801ae56ef568e434c7d8a921058d0e9f8cab51f7b60c5fa72480b6765 .
+ex:g_1ec8dce801ae56ef568e434c7d8a921058d0e9f8cab51f7b60c5fa72480b6765 a prov:Generation ; prov:activity ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd .
+
+ex:e_540a12733eafd494a6e73ec06528f67386ba1c167aa66cd137a59deabe3671ad prov:qualifiedGeneration ex:g_2089b746cd10c0fd2d3bf4a250350bb90d2b1e9ae75ff222bf5f6b719c6f492e .
+ex:g_2089b746cd10c0fd2d3bf4a250350bb90d2b1e9ae75ff222bf5f6b719c6f492e a prov:Generation ; prov:activity ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 .
+
+ex:e_ca2dddfa51bc48d5875d65b1585a19a40332deb2daaa99dbe3688d7c7f03ae13 prov:qualifiedGeneration ex:g_563f9eee2590cbc54baff3e0ab626d7b52a229a5ca22028c021d6298ae2f535b .
+ex:g_563f9eee2590cbc54baff3e0ab626d7b52a229a5ca22028c021d6298ae2f535b a prov:Generation ; prov:activity ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd .
+
+ex:e_30c8f72ed88ee8da92d95f35fcb184e303e1d075119e6c1193716c5bcfb20487 prov:qualifiedGeneration ex:g_6fa04446bfff8e3157c59f262eff4639c85ea8e87a7fe83d94e3cda349792b61 .
+ex:g_6fa04446bfff8e3157c59f262eff4639c85ea8e87a7fe83d94e3cda349792b61 a prov:Generation ; prov:activity ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c .
+
+ex:e_463111c3eaf5ff7be0af84acb78d50ae91c10166cbc527bf6f0e44f67d620404 prov:qualifiedGeneration ex:g_735cd57f9835f77f539ca3827430db379fd7f46d2da861a902524289f8b8e5ae .
+ex:g_735cd57f9835f77f539ca3827430db379fd7f46d2da861a902524289f8b8e5ae a prov:Generation ; prov:activity ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c .
+
+ex:e_e0dc224771506640773b417c0e66c62472dcbe54b7cfdaa30ecc7799b0cb0f18 prov:qualifiedGeneration ex:g_7ab1f9964e5d8ce5fedf777c7c0d03f31db54bfa3bf5db55fc943386bfd84d5e .
+ex:g_7ab1f9964e5d8ce5fedf777c7c0d03f31db54bfa3bf5db55fc943386bfd84d5e a prov:Generation ; prov:activity ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 .
+
+ex:e_e0dc224771506640773b417c0e66c62472dcbe54b7cfdaa30ecc7799b0cb0f18 prov:qualifiedDerivation ex:d_5312c2af009801e02781066d09338d607cdb975bfc75cc998697edc7a040a768 .
+ex:d_5312c2af009801e02781066d09338d607cdb975bfc75cc998697edc7a040a768 a prov:Derivation ; prov:entity ex:e_3872f8594bf649a8b2be30b5b95e61cacf8e3ed0f5eb5f3eb1e58df9aca3ce0d ; prov:hadActivity ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 ; prov:hadGeneration ex:g_7ab1f9964e5d8ce5fedf777c7c0d03f31db54bfa3bf5db55fc943386bfd84d5e ; prov:hadUsage ex:u_a9f9b0def63764a67ada7a3ab25c9da5d0950cdab9f66989e2273b6a4ca9d550 ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 0 .
+
+ex:e_463111c3eaf5ff7be0af84acb78d50ae91c10166cbc527bf6f0e44f67d620404 prov:qualifiedDerivation ex:d_550db5fcfc922d1bafbbd646dc48d7a1c4a4ecb00947d8889341044460e9fdce .
+ex:d_550db5fcfc922d1bafbbd646dc48d7a1c4a4ecb00947d8889341044460e9fdce a prov:Derivation ; prov:entity ex:e_c59fbe29325011fc87fc24d4256690a1f7e3612f5948b164f46dfb637bf9bbac ; prov:hadActivity ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c ; prov:hadGeneration ex:g_735cd57f9835f77f539ca3827430db379fd7f46d2da861a902524289f8b8e5ae ; prov:hadUsage ex:u_302ab0d50ac861f77dcf86e0b4854101503cc2be138b97ee4f4f4c90729ccedb ; prov:hadRole ex:selected_input ; ex:relationOrdinal 0 .
+
+ex:e_463111c3eaf5ff7be0af84acb78d50ae91c10166cbc527bf6f0e44f67d620404 prov:qualifiedDerivation ex:d_75b81470366cf704d22a3e81c46b65dcb5035c7179325afdf407924a77bbb59a .
+ex:d_75b81470366cf704d22a3e81c46b65dcb5035c7179325afdf407924a77bbb59a a prov:Derivation ; prov:entity ex:e_3872f8594bf649a8b2be30b5b95e61cacf8e3ed0f5eb5f3eb1e58df9aca3ce0d ; prov:hadActivity ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c ; prov:hadGeneration ex:g_735cd57f9835f77f539ca3827430db379fd7f46d2da861a902524289f8b8e5ae ; prov:hadUsage ex:u_8e28782011d0f162a59808bcc8e273f9be05617f8982c0c3c2a0acbc52d9fcf3 ; prov:hadRole ex:selected_input ; ex:relationOrdinal 0 .
+
+ex:e_540a12733eafd494a6e73ec06528f67386ba1c167aa66cd137a59deabe3671ad prov:qualifiedDerivation ex:d_83ade0063e2b281ca0e978df1db413fa883f165d434b52d56edff2143f9132c1 .
+ex:d_83ade0063e2b281ca0e978df1db413fa883f165d434b52d56edff2143f9132c1 a prov:Derivation ; prov:entity ex:e_3872f8594bf649a8b2be30b5b95e61cacf8e3ed0f5eb5f3eb1e58df9aca3ce0d ; prov:hadActivity ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 ; prov:hadGeneration ex:g_2089b746cd10c0fd2d3bf4a250350bb90d2b1e9ae75ff222bf5f6b719c6f492e ; prov:hadUsage ex:u_e529755bb9cd61627fa854f3b41a7889ed05984c1b6bbd9dce7184dd482c22ba ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 1 .
+
+ex:e_463111c3eaf5ff7be0af84acb78d50ae91c10166cbc527bf6f0e44f67d620404 prov:qualifiedDerivation ex:d_90efce7dca71aefff88dd15370450de4e27546850fbc5f3cefdfe8bf32113d3c .
+ex:d_90efce7dca71aefff88dd15370450de4e27546850fbc5f3cefdfe8bf32113d3c a prov:Derivation ; prov:entity ex:e_94366fe48d7969797ac80c48c8712a169c2ac7ee90d6dcf4b7587e9c3d33c216 ; prov:hadActivity ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c ; prov:hadGeneration ex:g_735cd57f9835f77f539ca3827430db379fd7f46d2da861a902524289f8b8e5ae ; prov:hadUsage ex:u_bd0f19fb1a1089090037c8e6e8b84aaead4f3c104dd7298d02f34066a9a0549d ; prov:hadRole ex:selected_input ; ex:relationOrdinal 0 .
+
+ex:e_87fb0a6116473afa5d9bc561d847afdc5e74bfcf4c158cea079285165dd604f5 prov:qualifiedDerivation ex:d_9b7a69f0f8c56e1a6b5a8efc8104dc5c8654f533970cf90a20701fa48c4e46a9 .
+ex:d_9b7a69f0f8c56e1a6b5a8efc8104dc5c8654f533970cf90a20701fa48c4e46a9 a prov:Derivation ; prov:entity ex:e_e0dc224771506640773b417c0e66c62472dcbe54b7cfdaa30ecc7799b0cb0f18 ; prov:hadActivity ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd ; prov:hadGeneration ex:g_1ec8dce801ae56ef568e434c7d8a921058d0e9f8cab51f7b60c5fa72480b6765 ; prov:hadUsage ex:u_849e0ca669edf9c634566b5693c6e92b6a0340a99de5b5695298580394d9cbd5 ; prov:hadRole ex:stage2_input ; ex:relationOrdinal 0 .
+
+ex:e_ca2dddfa51bc48d5875d65b1585a19a40332deb2daaa99dbe3688d7c7f03ae13 prov:qualifiedDerivation ex:d_a9c695b45a83a2d1e2787ec5f014b8caef88a0561b86b3133d1a4a7edb0a1b5b .
+ex:d_a9c695b45a83a2d1e2787ec5f014b8caef88a0561b86b3133d1a4a7edb0a1b5b a prov:Derivation ; prov:entity ex:e_e0dc224771506640773b417c0e66c62472dcbe54b7cfdaa30ecc7799b0cb0f18 ; prov:hadActivity ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd ; prov:hadGeneration ex:g_563f9eee2590cbc54baff3e0ab626d7b52a229a5ca22028c021d6298ae2f535b ; prov:hadUsage ex:u_8acb894ea888d38cf91876aebf2b259a0acc16de4286a0bcf1ada04e01f67583 ; prov:hadRole ex:stage2_input ; ex:relationOrdinal 1 .
+
+ex:e_87fb0a6116473afa5d9bc561d847afdc5e74bfcf4c158cea079285165dd604f5 prov:qualifiedDerivation ex:d_b1ae2d8ff1d9041096dd79eb27e56b74f8acdfa10f9adef9ce0e29d1b530a80e .
+ex:d_b1ae2d8ff1d9041096dd79eb27e56b74f8acdfa10f9adef9ce0e29d1b530a80e a prov:Derivation ; prov:entity ex:e_540a12733eafd494a6e73ec06528f67386ba1c167aa66cd137a59deabe3671ad ; prov:hadActivity ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd ; prov:hadGeneration ex:g_1ec8dce801ae56ef568e434c7d8a921058d0e9f8cab51f7b60c5fa72480b6765 ; prov:hadUsage ex:u_2aeb9df7608c766c4fccca8cf4bc70372754c1e5ce4d10ae7c5b63d54fad568b ; prov:hadRole ex:stage2_input ; ex:relationOrdinal 0 .
+
+ex:e_e0dc224771506640773b417c0e66c62472dcbe54b7cfdaa30ecc7799b0cb0f18 prov:qualifiedDerivation ex:d_b1eec9064c20abef3bb8688ea23564fc8d494ace8b4df6420231ce28e0dfbc86 .
+ex:d_b1eec9064c20abef3bb8688ea23564fc8d494ace8b4df6420231ce28e0dfbc86 a prov:Derivation ; prov:entity ex:e_c59fbe29325011fc87fc24d4256690a1f7e3612f5948b164f46dfb637bf9bbac ; prov:hadActivity ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 ; prov:hadGeneration ex:g_7ab1f9964e5d8ce5fedf777c7c0d03f31db54bfa3bf5db55fc943386bfd84d5e ; prov:hadUsage ex:u_e918e2a43313f7043e117627d360cec5b97c58a6547b7c40f8a1ad92262d8a45 ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 0 .
+
+ex:e_ca2dddfa51bc48d5875d65b1585a19a40332deb2daaa99dbe3688d7c7f03ae13 prov:qualifiedDerivation ex:d_c680f8b409dd84c3ab61ee594dde4b1932a3aa01ea67ef353d7d3072fc110e94 .
+ex:d_c680f8b409dd84c3ab61ee594dde4b1932a3aa01ea67ef353d7d3072fc110e94 a prov:Derivation ; prov:entity ex:e_540a12733eafd494a6e73ec06528f67386ba1c167aa66cd137a59deabe3671ad ; prov:hadActivity ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd ; prov:hadGeneration ex:g_563f9eee2590cbc54baff3e0ab626d7b52a229a5ca22028c021d6298ae2f535b ; prov:hadUsage ex:u_a1b55a814e6bc5c4bb8336ef0e6e77675b62a5f30b1871428239fbc59f5e6d40 ; prov:hadRole ex:stage2_input ; ex:relationOrdinal 1 .
+
+ex:e_e0dc224771506640773b417c0e66c62472dcbe54b7cfdaa30ecc7799b0cb0f18 prov:qualifiedDerivation ex:d_d72ba8b0e7fb044d2a83c830f6241bcb7870215824d79404db8995eb0c1927d2 .
+ex:d_d72ba8b0e7fb044d2a83c830f6241bcb7870215824d79404db8995eb0c1927d2 a prov:Derivation ; prov:entity ex:e_94366fe48d7969797ac80c48c8712a169c2ac7ee90d6dcf4b7587e9c3d33c216 ; prov:hadActivity ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 ; prov:hadGeneration ex:g_7ab1f9964e5d8ce5fedf777c7c0d03f31db54bfa3bf5db55fc943386bfd84d5e ; prov:hadUsage ex:u_29ea30f81f0262cfbe292ecaca2a54bd7b3da83cf4466fba06540d26e1388c80 ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 0 .
+
+ex:e_540a12733eafd494a6e73ec06528f67386ba1c167aa66cd137a59deabe3671ad prov:qualifiedDerivation ex:d_e019eb08d7015f596696e5ae4312ad9915d4f55ca6de18f1107e6539b58a35e3 .
+ex:d_e019eb08d7015f596696e5ae4312ad9915d4f55ca6de18f1107e6539b58a35e3 a prov:Derivation ; prov:entity ex:e_c59fbe29325011fc87fc24d4256690a1f7e3612f5948b164f46dfb637bf9bbac ; prov:hadActivity ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 ; prov:hadGeneration ex:g_2089b746cd10c0fd2d3bf4a250350bb90d2b1e9ae75ff222bf5f6b719c6f492e ; prov:hadUsage ex:u_afcbece3983ef98b528939cad13255dac66cef7f3ce5b6937a9618940911ae2a ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 1 .
+
+ex:e_540a12733eafd494a6e73ec06528f67386ba1c167aa66cd137a59deabe3671ad prov:qualifiedDerivation ex:d_e2ff3dc506c97a82866e53bcabbf29e4a7a8c79a7afeb684689747018a06bf18 .
+ex:d_e2ff3dc506c97a82866e53bcabbf29e4a7a8c79a7afeb684689747018a06bf18 a prov:Derivation ; prov:entity ex:e_94366fe48d7969797ac80c48c8712a169c2ac7ee90d6dcf4b7587e9c3d33c216 ; prov:hadActivity ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 ; prov:hadGeneration ex:g_2089b746cd10c0fd2d3bf4a250350bb90d2b1e9ae75ff222bf5f6b719c6f492e ; prov:hadUsage ex:u_4ecf06a14d11debf2235caefed6a4e7fb59af52f132f7f9dbd535985e18f2f43 ; prov:hadRole ex:join_contributor ; ex:relationOrdinal 1 .
+
+ex:e_30c8f72ed88ee8da92d95f35fcb184e303e1d075119e6c1193716c5bcfb20487 prov:qualifiedDerivation ex:d_f015ee4d0d6e3237f595b0c6ef87a171f30af7933dbaf97bc7568277645cce68 .
+ex:d_f015ee4d0d6e3237f595b0c6ef87a171f30af7933dbaf97bc7568277645cce68 a prov:Derivation ; prov:entity ex:e_8daa5b7e82bad900f4c97d24e24ef5577b15b8c9d7919634ab7da88a4e92530c ; prov:hadActivity ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c ; prov:hadGeneration ex:g_6fa04446bfff8e3157c59f262eff4639c85ea8e87a7fe83d94e3cda349792b61 ; prov:hadUsage ex:u_0ec74c272c0c3c1f0a14ddb1347cc0051c7b178a577aac6e294f1d3b89ac69ec ; prov:hadRole ex:unmatched_input ; ex:relationOrdinal 0 .
+
+ex:a_c2f9bd17e69e336487cf6a8d2331fbc03c64c8b7d085c2333e43d5b4ed7f6875 prov:qualifiedAssociation ex:as_9375565703cfa735cee81953adaa6a47cdd92b9da2f62a606e885314e8f151a5 .
+ex:as_9375565703cfa735cee81953adaa6a47cdd92b9da2f62a606e885314e8f151a5 a prov:Association ; prov:agent ex:ag_647e051aff9752e4dcf70f260688b9e8d7a5db70762908645ea39c1cc74066f0 ; prov:hadRole ex:generator ; ex:relationOrdinal 0 .
+
+ex:a_80d0d9e3496d094fe4cffc67f1e6da626c9f0b1c9bb69b46352c64a5e5403ddd prov:qualifiedAssociation ex:as_a788e39860088d75ec37b83306bc69d8c21e49ae59955092561e8f8f05dce9c0 .
+ex:as_a788e39860088d75ec37b83306bc69d8c21e49ae59955092561e8f8f05dce9c0 a prov:Association ; prov:agent ex:ag_647e051aff9752e4dcf70f260688b9e8d7a5db70762908645ea39c1cc74066f0 ; prov:hadRole ex:generator ; ex:relationOrdinal 0 .
+
+ex:a_9dd1fe32d9eded4053ac0fba9a0c7c4fa695aa69d86c83fdfb3b0613075bd76c prov:qualifiedAssociation ex:as_cef6e57b01f2f61ef1588291ad3a7ba1e12ad9129b21026be88b7e502d444970 .
+ex:as_cef6e57b01f2f61ef1588291ad3a7ba1e12ad9129b21026be88b7e502d444970 a prov:Association ; prov:agent ex:ag_647e051aff9752e4dcf70f260688b9e8d7a5db70762908645ea39c1cc74066f0 ; prov:hadRole ex:generator ; ex:relationOrdinal 0 .

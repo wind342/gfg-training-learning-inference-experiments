@@ -1,0 +1,11 @@
+{
+  "allowed_shared_helpers": [
+    "canonical trace schema",
+    "canonicalizer",
+    "semantic-key formatting",
+    "ProjectionError"
+  ],
+  "direct_hierarchical_shared_extraction_helper_count": 0,
+  "static_import_violations": [],
+  "status": "PASS"
+}

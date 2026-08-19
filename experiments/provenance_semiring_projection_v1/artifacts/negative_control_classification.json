@@ -1,0 +1,46 @@
+{
+  "all_execution_counts_one": true,
+  "all_fingerprints_unique": true,
+  "depth_counts": {
+    "algebra_independence": 6,
+    "authority_boundary": 1,
+    "boundary_coverage": 1,
+    "candidate_snapshot": 1,
+    "canonicalizer": 3,
+    "comparison_integration": 1,
+    "control_harness": 1,
+    "determinism_validator": 1,
+    "direct_lower_independence": 2,
+    "final_gate_integration": 1,
+    "formal_semantics": 8,
+    "hierarchy_integration": 1,
+    "homomorphism_integration": 2,
+    "identity_policy": 1,
+    "manifest_validator": 2,
+    "profile_integration": 1,
+    "report_consistency": 4,
+    "runtime_orthogonality": 1,
+    "semantic_disposition": 2,
+    "semantic_grouping": 2,
+    "semantic_identity": 2,
+    "semantic_polynomial": 12,
+    "semantic_recursion": 2,
+    "static_isolation": 9,
+    "strictness_validator": 2,
+    "validator_meta_control": 1
+  },
+  "hardening_controls": {
+    "actual": 25,
+    "passed": 25,
+    "required": 25
+  },
+  "original_controls": {
+    "actual": 45,
+    "passed": 45,
+    "required": 45
+  },
+  "schema_version": "negative-control-classification-v2",
+  "semantic_or_integration_control_count": 66,
+  "status": "ALL_NEGATIVE_CONTROLS_FAILED_CLOSED",
+  "unit_level_control_count": 5
+}

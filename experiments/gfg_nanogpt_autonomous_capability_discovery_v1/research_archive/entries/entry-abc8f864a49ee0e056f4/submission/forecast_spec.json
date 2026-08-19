@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "schema": "cyclic-composition-forecast-spec-v1",
+  "call": "CapabilityFormationMechanism.forecast(state)",
+  "required_fields": [
+    "will_transition",
+    "transition_step_low",
+    "transition_step_high",
+    "predicted_validation_curve",
+    "mechanism_state"
+  ],
+  "transition_interval_semantics": "Inclusive interval for the first evaluation point of the predicted first sustained three-point capability window.",
+  "no_transition_value": "NO_TRANSITION",
+  "predicted_validation_curve": {
+    "domain": "Every future evaluation-grid optimizer step after forecast_cut_step through step 10000.",
+    "entry_schema": {
+      "optimizer_step": "integer",
+      "validation_accuracy": "number in [0,1]"
+    }
+  },
+  "mechanism_state": {
+    "current": "The finite canonical initialize state.",
+    "trajectory": "Predicted phase and formation_progress on the same future evaluation grid."
+  },
+  "future_gfg_reads": 0,
+  "additional_ai_calls": 0,
+  "trajectory_is_algorithmically_generated": true
+}

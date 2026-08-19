@@ -1,0 +1,1 @@
+{"canonicalization":"root_ordered_paths_and_shared_alias_closure_v1","identity_inputs":["Node.name()","ordered root-relative paths","ordered outgoing slots and output_nr","incoming signatures","shared alias closure"],"prohibited_identity_inputs":["C++ pointers","Python object addresses","expected graph","random internal IDs","unstable repr"]}

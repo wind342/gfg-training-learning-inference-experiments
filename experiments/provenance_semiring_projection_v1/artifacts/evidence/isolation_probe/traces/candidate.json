@@ -1,0 +1,291 @@
+{
+  "called_symbols": [
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/candidate_nx_path.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/candidate_nx_path.py",
+      "symbol": "_validated_snapshot"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/scripts/candidate_nx_path.py",
+      "symbol": "main"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/__init__.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/candidate_nx.py",
+      "symbol": "<genexpr>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/candidate_nx.py",
+      "symbol": "<lambda>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/candidate_nx.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/candidate_nx.py",
+      "symbol": "CandidateProjectionError"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/candidate_nx.py",
+      "symbol": "origin_polynomial"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/candidate_nx.py",
+      "symbol": "project_snapshot_to_nx"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/candidate_nx.py",
+      "symbol": "support_polynomial"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "NXPolynomial"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "_canonical_monomial"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "from_mapping"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "one"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "plus"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "product"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "sum"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "times"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "to_document"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "variable"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/nx_polynomial.py",
+      "symbol": "zero"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/profile_runtime.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/profile_runtime.py",
+      "symbol": "load_profile"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/structural.py",
+      "symbol": "<module>"
+    },
+    {
+      "file": "experiments/provenance_semiring_projection_v1/src/structural.py",
+      "symbol": "variable_for_source"
+    }
+  ],
+  "events": [
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/scripts/__pycache__/candidate_nx_path.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/__init__.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/candidate_nx.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/nx_polynomial.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/structural.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/__pycache__/profile_runtime.cpython-312.pyc"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/core.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/src/profile_runtime.py"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity status --porcelain=v1 --untracked-files=all -- src/generation_relation_core/__init__.py src/generation_relation_core/errors.py src/generation_relation_core/canonical.py src/generation_relation_core/schema_registry.py src/generation_relation_core/entities.py src/generation_relation_core/predicate_registry.py src/generation_relation_core/relation_evidence.py src/generation_relation_core/snapshots.py src/generation_relation_core/query_engine.py src/generation_relation_core/implementation_identity.py protocol/core_v3/core_v3_entities.schema.json protocol/core_v3/core_v3_protocol.json protocol/core_v3/canonical_serialization_v3.json protocol/core_v3/test_vectors/canonical_positive.json protocol/core_v3/test_vectors/canonical_negative.json",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity ls-files --stage -- src/generation_relation_core/__init__.py src/generation_relation_core/errors.py src/generation_relation_core/canonical.py src/generation_relation_core/schema_registry.py src/generation_relation_core/entities.py src/generation_relation_core/predicate_registry.py src/generation_relation_core/relation_evidence.py src/generation_relation_core/snapshots.py src/generation_relation_core/query_engine.py src/generation_relation_core/implementation_identity.py protocol/core_v3/core_v3_entities.schema.json protocol/core_v3/core_v3_protocol.json protocol/core_v3/canonical_serialization_v3.json protocol/core_v3/test_vectors/canonical_positive.json protocol/core_v3/test_vectors/canonical_negative.json",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob 674efb69c7beeb65ad5b11d840c9ea64dff2bf64",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob f29b5fe5dd166a57cc1c2e1db5907669afc72fac",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob 32a71cbea427c0a0bfb91db0c8e9cdf0eb8f39c0",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob 3b9ee800c248ae727cc384711df815c505f797d4",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob 4db5ee9fdf369d0c1edf77614c6fb151350de5be",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob 58298d7e379d7074864f0d40efc377c958904389",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob b43a77936d3e47f63456d85aef9af091a1516e37",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob 1f0b100cb37742b6cb98151ba106d88dbb20fee1",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob ee3fc6480fc3d60ebf7f5865c333765a2b17e74a",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob e63db33aeed7bf8175b7cdab031172c4b62f30c3",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob 35e3cc02459ede59694c36477322f8b68a8716ce",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob e71fa2a4cd8c411e039f5866a590d130cd3ef904",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob cedaca7730d6eb986cd9aba6f4edbabc77672f75",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob 19954297ab5a31e1265223c69d81ce8d52fd65bf",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "argv": [],
+      "command_line": "git -C D:\\codex\\source-information-continuity cat-file blob fdf3a58976c92aa684f0afd27868b26a5346636c",
+      "detail": "subprocess.Popen",
+      "event": "subprocess",
+      "executable": "None"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/profiles/provenance_semiring_nx_profile_v1.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "r",
+      "path": "experiments/provenance_semiring_projection_v1/profiles/core_to_nx_crosswalk_v1.json"
+    },
+    {
+      "event": "file_open",
+      "mode": "w",
+      "path": "experiments/provenance_semiring_projection_v1/artifacts/evidence/isolation_probe/candidate.json"
+    }
+  ],
+  "module": "experiments.provenance_semiring_projection_v1.scripts.candidate_nx_path",
+  "return_code": 0,
+  "schema_version": "isolated-entrypoint-trace-v1"
+}

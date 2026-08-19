@@ -1,0 +1,7 @@
+{
+  "changed_core_files": [],
+  "core_schema_modification_count": 0,
+  "database_projection_storage_class": "immutable_ephemeral_query_result",
+  "otel_specific_core_field_count": 0,
+  "second_authority_store_count": 0
+}
