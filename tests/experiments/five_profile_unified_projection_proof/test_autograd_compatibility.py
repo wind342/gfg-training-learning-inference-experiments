@@ -2,7 +2,10 @@ from __future__ import annotations
 
 import ast
 import inspect
+import subprocess
 from pathlib import Path
+
+import pytest
 
 from experiments.pytorch_autograd_training_lineage_v1 import core_compatibility
 from experiments.pytorch_autograd_training_lineage_v1.science import _protected_scope
@@ -10,6 +13,15 @@ from experiments.five_profile_unified_projection_proof.src.mechanism_entry impor
 
 
 REPO = Path(__file__).resolve().parents[3]
+
+
+def _has_core_history() -> bool:
+    return subprocess.run(
+        ["git", "cat-file", "-e", f"{CORE_COMMIT}^{{commit}}"],
+        cwd=REPO,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    ).returncode == 0
 
 
 def test_compatibility_shim_is_audit_only_and_targets_adopted_core():
@@ -25,6 +37,8 @@ def test_compatibility_shim_is_audit_only_and_targets_adopted_core():
 
 
 def test_compatibility_shim_observes_zero_current_core_changes():
+    if not _has_core_history():
+        pytest.skip("frozen Core source-history object is not part of the companion clone")
     scope = _protected_scope()
     assert scope["core_zero_change"]
     assert scope["compatibility"]["changed_protected_paths"] == []

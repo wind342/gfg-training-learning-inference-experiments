@@ -74,6 +74,8 @@ Core v3 schemas are retained under `src/` and `protocol/core_v3/`.
 
 Environment-dependent and source-history-dependent checks are identified in
 [REPRODUCIBILITY_NOTES.md](REPRODUCIBILITY_NOTES.md).
+The final pre-publication experiment-by-experiment audit is recorded in
+[FULL_REPRODUCTION_AUDIT.md](FULL_REPRODUCTION_AUDIT.md).
 
 This repository has no open-source license. See
 [PROPRIETARY_NOTICE.md](PROPRIETARY_NOTICE.md).
@@ -82,4 +84,3 @@ Two third-party provenance papers used as frozen audit authorities in GF-P02
 are intentionally not redistributed in this public snapshot. Their citations,
 DOIs and audited file hashes are preserved in
 [THIRD_PARTY_AUTHORITIES.md](THIRD_PARTY_AUTHORITIES.md).
-

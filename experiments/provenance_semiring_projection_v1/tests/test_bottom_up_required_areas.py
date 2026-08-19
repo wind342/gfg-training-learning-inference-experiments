@@ -23,6 +23,17 @@ REPO_ROOT = Path(__file__).resolve().parents[3]
 FROZEN_BASE = "7320fe8a2d690fc87da77d0739b432ea1812d63b"
 
 
+def _require_frozen_history() -> None:
+    available = subprocess.run(
+        ["git", "cat-file", "-e", f"{FROZEN_BASE}^{{commit}}"],
+        cwd=REPO_ROOT,
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    ).returncode == 0
+    if not available:
+        pytest.skip("GF-P02 frozen source-history object is not part of the companion clone")
+
+
 def test_native_selection_excludes_disposed_source_variable_from_outputs() -> None:
     result = evaluate_native_nx(workload_by_id("W1"))
     all_variables = {item["variable"] for item in result["source_variables"]}
@@ -74,6 +85,7 @@ def test_positive_ra_profile_keeps_negation_out_of_scope() -> None:
 
 
 def test_protected_core_protocol_compat_and_core_tests_match_frozen_base() -> None:
+    _require_frozen_history()
     completed = subprocess.run(
         ["git", "diff", "--quiet", FROZEN_BASE, "--", "src/generation_relation_core", "protocol", "compat", "tests/core"],
         cwd=REPO_ROOT,
@@ -83,6 +95,7 @@ def test_protected_core_protocol_compat_and_core_tests_match_frozen_base() -> No
 
 
 def test_existing_database_experiment_tree_matches_frozen_base() -> None:
+    _require_frozen_history()
     current = subprocess.check_output(["git", "rev-parse", "HEAD:experiments/database_lineage"], cwd=REPO_ROOT, text=True).strip()
     frozen = subprocess.check_output(["git", "rev-parse", f"{FROZEN_BASE}:experiments/database_lineage"], cwd=REPO_ROOT, text=True).strip()
     assert current == frozen == "64b5365d9a828a645c99b536254a07a2519f0cc0"
