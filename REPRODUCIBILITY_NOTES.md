@@ -11,10 +11,12 @@ checks in GF-P01 read frozen objects from the history of
 access to that repository's Git objects in addition to this companion checkout.
 They are preservation checks, not scientific computation paths.
 
-In a normal companion-only clone these six checks are reported as explicit
-`SKIPPED` history-authority checks rather than test failures. They pass when run
-in a checkout whose Git object database contains the source commits identified
-in `SOURCE_MANIFEST.md`.
+In a normal companion-only clone, the three GF-P01 checks are reported as
+explicit `SKIPPED` history-authority checks. The frozen GF-P02 experiment and
+test tree is preserved without modification; its three source-history authority
+checks are therefore excluded explicitly when only the companion clone is
+available. All six checks pass when run in a checkout whose Git object database
+contains the source commits identified in `SOURCE_MANIFEST.md`.
 
 The 47 history-independent GF-P02 tests can also be selected directly with:
 
