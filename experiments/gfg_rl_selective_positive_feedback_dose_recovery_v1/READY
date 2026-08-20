@@ -1,0 +1,5 @@
+RL-E06 READY
+Formal status: SUPPORTED
+Formal seeds: 12/12 retained
+Independent full native replay: PASS (12/12 seeds)
+Frozen implementation: CONTRACT_FREEZE.json

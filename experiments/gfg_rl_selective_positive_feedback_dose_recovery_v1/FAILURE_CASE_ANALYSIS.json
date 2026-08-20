@@ -1,0 +1,32 @@
+{
+  "schema": "rl-e06-failure-case-analysis-v1",
+  "scientific_status": "SUPPORTED_WITH_RETAINED_VARIATION",
+  "formal_seeds_retained": 12,
+  "failed_frozen_decision_gates": [],
+  "observed_nonuniformity": {
+    "rebalance_recovery": {
+      "final_unreinforced_accuracy_mean": 0.9947916666666666,
+      "seeds_below_exact_recovery": [20260902, 20260905, 20260910],
+      "accuracy_in_those_seeds": 0.9791666666666666,
+      "target0_accuracy_all_seeds": 1.0
+    },
+    "repair_recovery": {
+      "final_unreinforced_accuracy_mean": 0.9982638888888888,
+      "seeds_below_exact_recovery": [20260902],
+      "accuracy_in_that_seed": 0.9791666666666666,
+      "target0_accuracy_by_seed": [0.9375, 0.9375, 0.875, 0.875, 0.9375, 1.0, 0.875, 0.9375, 0.875, 0.75, 0.875, 0.8125]
+    }
+  },
+  "interpretation": [
+    "Recovery is strong but not numerically exact in every target and seed.",
+    "Balanced recovery preserves the formerly reinforced capability better than repair-only recovery.",
+    "Repair-only recovery reveals the reverse trade-off rather than a free restoration of every capability.",
+    "No difficult seed was removed and no formal threshold was changed after observing the results."
+  ],
+  "claims_not_supported": [
+    "functional support is a conserved physical resource",
+    "every reinforcement-learning system must exhibit the measured trade-off",
+    "all capabilities can always be simultaneously restored without a control mechanism",
+    "the observed update scale is universal"
+  ]
+}

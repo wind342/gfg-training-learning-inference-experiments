@@ -95,3 +95,43 @@ Formation ancestry is treated only as candidate evidence throughout the
 sequence. Causal credit is established separately by matched replay and
 coalition intervention.
 
+## Additional feedback-dynamics extensions
+
+RL-E05 and RL-E06 ask what happens after the feedback closure is established
+and repeatedly directed toward a narrow subset of an already learned shared
+policy. They are extensions of the feedback mechanism rather than additional
+steps in the original temporal-credit discovery sequence.
+
+### RL-E05 — selective feedback and support concentration
+
+RL-E05 compared correct selective positive feedback with balanced feedback and
+frozen exposure after four skills had reached exact mastery. Its frozen
+composite status was `NOT_SUPPORTED` because a preregistered large temporal
+support event preceded behavioural loss in only 2/12 seeds. The narrower
+mechanism nevertheless passed its behavioural, support, control and exhaustive
+component-version rollback tests: the reinforced skill remained at 100%, the
+other skills fell to 73.26%, and directional rollback reversed the trade-off in
+12/12 seeds.
+
+- [Frozen protocol](experiments/gfg_rl_selective_positive_feedback_support_concentration_v1/PROTOCOL_FREEZE.md)
+- [Formal results](experiments/gfg_rl_selective_positive_feedback_support_concentration_v1/RESULTS.md)
+- [Scientific assessment](experiments/gfg_rl_selective_positive_feedback_support_concentration_v1/SCIENTIFIC_ASSESSMENT.md)
+
+### RL-E06 — dose, duration and recovery
+
+RL-E06 replaced the failed large-event timing rule with continuous boundary
+margin, multiple preregistered feedback doses, a 3,200-update duration series
+and two recovery forks from the exact exclusive update-800 state. Support share
+increased with dose and other-skill margin decreased with dose in 12/12 formal
+seeds. Exclusive feedback produced a 39.06-percentage-point other-skill accuracy
+deficit and a 9.67-point reinforced-skill support-share excess relative to
+balanced feedback. Rebalancing restored 38.54 points while retaining the
+reinforced skill at 100%; other-skills-only repair restored the others but
+weakened the formerly reinforced skill. A separate full native replay of all 12
+seeds passed.
+
+- [Frozen protocol](experiments/gfg_rl_selective_positive_feedback_dose_recovery_v1/PROTOCOL_FREEZE.md)
+- [Formal results](experiments/gfg_rl_selective_positive_feedback_dose_recovery_v1/RESULTS.md)
+- [Scientific assessment](experiments/gfg_rl_selective_positive_feedback_dose_recovery_v1/SCIENTIFIC_ASSESSMENT.md)
+- [Independent checker](experiments/gfg_rl_selective_positive_feedback_dose_recovery_v1/independent_checker.py)
+

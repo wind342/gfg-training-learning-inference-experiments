@@ -52,6 +52,13 @@ pre-learning rollback/restoration while keeping persistent learned state frozen.
 The cumulative relation among TL-G01, TL-G02 and INF-G01 is summarized in
 [CROSS_SYSTEM_EVIDENCE_CHAIN.md](CROSS_SYSTEM_EVIDENCE_CHAIN.md).
 
+Two later feedback-dynamics experiments test a bounded consequence of the
+training--learning--inference loop in a shared policy. RL-E05 studies selective
+positive feedback and support concentration; RL-E06 freezes feedback dose,
+duration and recovery forks and independently re-executes all 12 formal seeds.
+They are indexed as extensions rather than revisions to the sealed sixteen
+manuscript entries. See [RL_EVIDENCE_CHAIN.md](RL_EVIDENCE_CHAIN.md).
+
 Four reusable instruments developed for the training--learning experiments are
 exposed through [EXPERIMENTAL_INSTRUMENTS.md](EXPERIMENTAL_INSTRUMENTS.md):
 CSRG-4C, realized-update causal forks, finite-amplitude update paths and the

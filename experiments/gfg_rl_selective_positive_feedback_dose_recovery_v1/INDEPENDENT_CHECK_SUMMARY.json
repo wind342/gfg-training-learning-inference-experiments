@@ -1,0 +1,27 @@
+{
+  "schema": "rl-e06-independent-check-summary-v1",
+  "status": "PASS",
+  "formal_seed_count": 12,
+  "full_native_replays": 12,
+  "formal_result_sha256": "da9139daa0f56edcef8b6ebfef255b0e6a7f2c8db0859f904414977994ff686b",
+  "independent_check_sha256": "8a6582749370e6f1d31281d470aa63158db736dce26dc3142cf973567e535cfe",
+  "independent_recalculation": {
+    "strict_support_dose_order_count": 12,
+    "strict_unreinforced_margin_dose_order_count": 12,
+    "support_reversal_count": 12,
+    "mean_exclusive_accuracy_deficit": 0.390625,
+    "mean_exclusive_support_excess": 0.09667916595935822,
+    "mean_rebalance_accuracy_gain": 0.38541666666666663,
+    "minimum_rebalance_target0_accuracy": 1.0,
+    "all_independently_recomputed_gates_pass": true
+  },
+  "verified_per_seed": {
+    "feedback_receipts_per_dose_condition": 3200,
+    "trajectory_rows_per_dose_condition": 3201,
+    "support_checkpoints_per_dose_condition": 112,
+    "feedback_receipts_per_recovery_condition": 2400,
+    "trajectory_rows_per_recovery_condition": 2401,
+    "support_checkpoints_per_recovery_condition": 19,
+    "gfg_fact_count": 21399
+  }
+}

@@ -41,6 +41,16 @@ Together, RL-E01–RL-E04 form the cumulative experimental chain summarized in
 | TL-G02 | DDPM-style U-Net/CIFAR-10/AdamW generalization | Changes the task to generative diffusion residual prediction and the target identity to an image--timestep--noise occurrence, then retests receiving-state conditioning, finite-amplitude nonlinearity, distributed-support reallocation, residual-error boundaries and held-out F1/F3/F5 transport. | [diffusion generalization experiment](experiments/gfg_ddpm_cifar_training_learning_generalization_v1/) |
 | INF-G01 | Cross-system frozen-inference projection | Retests exact learned-version use, causal component recruitment, query-conditioned distributed support, non-additive combination and exact rollback dependence in both TL-G01 and TL-G02. | [cross-system inference experiment](experiments/gfg_cross_system_frozen_inference_projection_v1/) |
 
+## Additional reinforcement-feedback dynamics experiments
+
+These later experiments extend the feedback-loop analysis without changing the
+sealed sixteen-entry manuscript index.
+
+| ID | Experiment | Main scientific role | Code, protocol and evidence |
+|---|---|---|---|
+| RL-E05 | Selective positive feedback and support concentration | Tests whether prolonged exact positive feedback for one skill concentrates its relative functional support, crowds other mastered skills and creates a component-version trade-off under selective, balanced and frozen controls. | [support-concentration experiment](experiments/gfg_rl_selective_positive_feedback_support_concentration_v1/) |
+| RL-E06 | Positive-feedback dose, duration and recovery | Tests feedback concentration as a dose and duration coordinate, distinguishes continuous margin erosion from discrete boundary loss, and causally tests balanced and other-skills-only recovery from the exact same exclusive-feedback state. | [dose--duration--recovery experiment](experiments/gfg_rl_selective_positive_feedback_dose_recovery_v1/) |
+
 ## Projection dependencies retained for GF-P01
 
 The five native reference paths are retained at:

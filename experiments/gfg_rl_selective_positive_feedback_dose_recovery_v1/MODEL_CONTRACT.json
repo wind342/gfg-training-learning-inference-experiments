@@ -1,0 +1,88 @@
+{
+  "schema": "gfg-rl-selective-positive-feedback-dose-recovery-contract-v1",
+  "status": "FROZEN_BEFORE_FORMAL_EXECUTION",
+  "experiment_id": "RL-E06",
+  "claim": "the concentration and duration of exact positive feedback causally control shared functional-support allocation and unreinforced capability loss, and feedback redistribution can reverse the trade-off",
+  "development_seeds": [20260881, 20260882],
+  "formal_seeds": [20260901, 20260902, 20260903, 20260904, 20260905, 20260906, 20260907, 20260908, 20260909, 20260910, 20260911, 20260912],
+  "model": {
+    "architecture": "attention-free shared multi-skill GRU policy",
+    "hidden_size": 12,
+    "component_count": 4,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001
+  },
+  "formation": {
+    "skill_count": 4,
+    "cue_count": 16,
+    "decision_stages": 2,
+    "pretrain_max_steps": 3000,
+    "pretrain_min_steps": 100,
+    "pretrain_minimum_margin": 0.5,
+    "required_chain_accuracy": 1.0
+  },
+  "feedback": {
+    "updates": 3200,
+    "batch_size": 60,
+    "reinforced_skill": 0,
+    "terminal_consequence": "1 for a correct complete two-action chain; 0 otherwise",
+    "dose_conditions": {
+      "balanced": [15, 15, 15, 15],
+      "mild": [30, 10, 10, 10],
+      "high": [45, 5, 5, 5],
+      "exclusive": [60, 0, 0, 0],
+      "frozen": [60, 0, 0, 0]
+    },
+    "dose_levels": {
+      "balanced": 0.25,
+      "mild": 0.5,
+      "high": 0.75,
+      "exclusive": 1.0
+    },
+    "support_checkpoints": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 125, 150, 200, 300, 400, 600, 800, 1200, 1600, 2400, 3200],
+    "negative_reward_allowed": false,
+    "proxy_reward_allowed": false,
+    "entropy_bonus": 0.0
+  },
+  "recovery": {
+    "fork_update": 800,
+    "updates": 2400,
+    "conditions": {
+      "rebalance_recovery": [15, 15, 15, 15],
+      "repair_recovery": [0, 20, 20, 20]
+    },
+    "support_checkpoints": [0, 1, 2, 3, 4, 5, 10, 20, 30, 40, 50, 75, 100, 200, 400, 800, 1200, 1600, 2400]
+  },
+  "support": {
+    "coalition_count": 16,
+    "functional_readout": "identity-aligned correct-action margin",
+    "estimator": "exact four-component Shapley value from real coalition gates",
+    "positive_support": "mean(max(shapley, 0)) over cues and decision stages",
+    "cross_task_concentration": "HHI over task positive-support mass",
+    "shapley_efficiency_tolerance": 1e-5
+  },
+  "decision_gates": {
+    "minimum_balanced_final_accuracy_each_skill": 0.95,
+    "minimum_seeds_with_positive_support_dose_association": 9,
+    "minimum_seeds_with_negative_unreinforced_margin_dose_association": 9,
+    "minimum_mean_exclusive_unreinforced_accuracy_deficit_vs_balanced": 0.15,
+    "minimum_mean_exclusive_task0_support_share_excess_vs_balanced": 0.04,
+    "minimum_seeds_with_rebalance_accuracy_recovery": 8,
+    "minimum_per_seed_rebalance_unreinforced_accuracy_gain_vs_exclusive": 0.10,
+    "minimum_mean_rebalance_unreinforced_accuracy_gain_vs_exclusive": 0.15,
+    "minimum_rebalance_target0_final_accuracy": 0.95,
+    "minimum_seeds_with_recovery_support_reversal": 8
+  },
+  "forbidden_shortcuts": [
+    "proxy or learned reward model",
+    "negative feedback during the dose or recovery phases",
+    "post-hoc formal-seed deletion",
+    "post-hoc capability or component deletion",
+    "weight magnitude used as functional support",
+    "independent classifier used to infer support",
+    "formal threshold changes after reading formal results",
+    "future branch results used to form an earlier training action",
+    "requiring a large global support-share threshold before a target boundary transition"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "rl-e06-formal-result-summary-v1",
+  "experiment_id": "RL-E06",
+  "scientific_status": "SUPPORTED",
+  "formal_seed_count": 12,
+  "all_formal_seeds_retained": true,
+  "freeze_sha256": "2b34641ee01b6e9f8815c887dc18ae47298aa3c19b92a143db2913022679f44c",
+  "formal_result_sha256": "da9139daa0f56edcef8b6ebfef255b0e6a7f2c8db0859f904414977994ff686b",
+  "counts": {
+    "positive_support_dose_association": 12,
+    "negative_unreinforced_margin_dose_association": 12,
+    "rebalance_support_reversal": 12,
+    "repair_support_reversal": 12
+  },
+  "means": {
+    "support_dose_spearman": 1.0,
+    "unreinforced_margin_dose_spearman": -1.0,
+    "exclusive_task0_support_share_excess_vs_balanced": 0.09667916595935822,
+    "exclusive_unreinforced_accuracy_deficit_vs_balanced": 0.390625,
+    "rebalance_unreinforced_accuracy_gain_vs_exclusive": 0.38541666666666663,
+    "rebalance_target0_final_accuracy": 1.0,
+    "repair_unreinforced_accuracy_gain_vs_exclusive": 0.3888888888888889,
+    "repair_target0_final_accuracy": 0.890625
+  },
+  "decision_gates": {
+    "all_formal_seeds_retained": true,
+    "initial_mastery_every_seed": true,
+    "frozen_state_exact_every_seed": true,
+    "balanced_capability_preserved": true,
+    "positive_support_dose_association": true,
+    "negative_unreinforced_margin_dose_association": true,
+    "exclusive_accuracy_deficit": true,
+    "exclusive_support_excess": true,
+    "rebalance_accuracy_recovery": true,
+    "mean_rebalance_accuracy_recovery": true,
+    "rebalance_target0_retained": true,
+    "recovery_support_reversal": true
+  },
+  "execution_counts": {
+    "optimizer_updates_per_formal_seed": 17600,
+    "optimizer_updates_all_formal_seeds": 211200,
+    "generation_facts_per_seed": 21399,
+    "generation_facts_all_formal_seeds": 256788
+  }
+}
