@@ -38,6 +38,12 @@ ResNet-18/CIFAR-100/SGD momentum and retests the primary training--learning
 relations under a frozen protocol. It is an extension of the evidence base,
 not a rewrite of the sealed sixteen manuscript entries.
 
+The separate **TL-G02** experiment moves the same falsification programme to a
+generative diffusion objective: a time-conditioned U-Net predicts identified
+noise occurrences on CIFAR-10 under AdamW. It retests receiving-state
+conditioning, nonlinear response, distributed support and held-out coordinate
+transport with a non-classification readout boundary.
+
 Four reusable instruments developed for the training--learning experiments are
 exposed through [EXPERIMENTAL_INSTRUMENTS.md](EXPERIMENTAL_INSTRUMENTS.md):
 CSRG-4C, realized-update causal forks, finite-amplitude update paths and the

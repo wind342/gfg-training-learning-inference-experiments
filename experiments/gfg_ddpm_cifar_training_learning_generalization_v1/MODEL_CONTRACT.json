@@ -1,0 +1,57 @@
+{
+  "schema": "gfg-ddpm-cifar-model-contract-v1",
+  "frozen_before_formal_execution": true,
+  "system": {
+    "architecture": "time-conditioned compact U-Net",
+    "training_objective": "epsilon prediction diffusion loss",
+    "dataset": "CIFAR-10 train/test",
+    "optimizer": "AdamW",
+    "diffusion_steps": 100,
+    "beta_schedule": [0.0001, 0.02],
+    "candidate_count": 7,
+    "candidate_scale": 0.018042195912175804
+  },
+  "optimizer": {
+    "learning_rate": 0.0002,
+    "betas": [0.9, 0.999],
+    "epsilon": 1e-8,
+    "weight_decay": 0.0001,
+    "foreach": false,
+    "fused": false
+  },
+  "formal": {
+    "seeds": [20260830, 20260831, 20260832],
+    "epochs": 20,
+    "batch_size": 128,
+    "registered_epochs": [1, 2, 4, 8, 12, 16, 20],
+    "anchor_count": 128,
+    "target_count": 24
+  },
+  "smoke": {
+    "seeds": [20260830],
+    "epochs": 2,
+    "batch_size": 64,
+    "registered_epochs": [1, 2],
+    "anchor_count": 128,
+    "target_count": 16,
+    "train_subset": 1024,
+    "test_subset": 128
+  },
+  "response_amplitudes": [0.0, 0.125, 0.25, 0.5, 0.75, 1.0],
+  "components": ["high_resolution_skip", "low_resolution_skip", "bottleneck", "decoder_refinement"],
+  "storage_cap_gib": 25,
+  "preformal_smoke_amendment": {
+    "reason": "the initial distance 0.5 produced a degenerate all-correct boundary under 3072-dimensional concentration",
+    "replacement_rule": "candidate scale = 1/sqrt(3*32*32); boundary screening uses the complete first 128-example test batch",
+    "formal_results_seen_before_amendment": false
+  },
+  "forbidden_predictor_inputs": [
+    "post-update predicted residual",
+    "post-update target margin",
+    "post-update correctness",
+    "alpha greater than zero response",
+    "future optimizer state",
+    "run identity",
+    "absolute training step"
+  ]
+}
