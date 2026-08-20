@@ -26,6 +26,11 @@ The corrected publication-evidence release contains:
 - `inf_g01_cross_system_inference_evidence_v1.zip` — the formal ResNet and
   diffusion frozen-inference interventions, validated GFG and cross-bundle
   checkpoint authority ledger;
+- `rl_e05_selective_feedback_evidence_v1.zip` — the complete 12-seed selective
+  feedback/support-concentration experiment, including its retained negative
+  temporal-precedence verdict;
+- `rl_e06_dose_recovery_evidence_v1.zip` — the complete 12-seed dose, duration
+  and recovery experiment with the corrected fork-versus-endpoint comparison;
 - `ARCHIVE_MANIFEST.json` — byte sizes and SHA-256 identities for every
   top-level payload; and
 - `PUBLIC_EVIDENCE_MATRIX.md` — the public verification boundary for every
@@ -36,3 +41,7 @@ previous version DOIs, Git tags and commits remain part of the audit history.
 The cross-system release carries forward every bundle from the preceding
 publication-evidence version and adds TL-G01, TL-G02 and INF-G01 as the
 cumulative evidence chain described in `CROSS_SYSTEM_EVIDENCE_CHAIN.md`.
+The final extension release carries that complete archive forward once and
+adds RL-E05 and RL-E06; it is verified by
+`tools/verify_final_extension_evidence.py` before publication and again after
+public download.

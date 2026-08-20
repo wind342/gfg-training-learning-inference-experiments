@@ -26,6 +26,8 @@ checkpoint or tensor payload is represented as a fresh native rerun.
 | TL-G01 | Fresh native three-seed ResNet-18/CIFAR-100/SGD-momentum execution, followed by independent manifest and aggregate recomputation | PASS; all three formal seeds satisfy the frozen training-learning criteria and the aggregate verdict is `CROSS_SYSTEM_GENERALIZATION_SUPPORTED` |
 | TL-G02 | Fresh native three-seed time-conditioned U-Net/CIFAR-10/AdamW execution, followed by independent record, manifest and aggregate recomputation | PASS; 504 occurrence-level responses are checked and the aggregate verdict is `CROSS_SYSTEM_GENERALIZATION_SUPPORTED` |
 | INF-G01 | Fresh native frozen-inference interventions over all six TL-G01/TL-G02 checkpoints, repeated execution and independent GFG/mechanism check | PASS; 3/3 ResNet seeds and 3/3 diffusion seeds pass all nine frozen criteria, the two formal executions are byte-identical and the verdict is `CROSS_SYSTEM_FROZEN_PROJECTION_SUPPORTED` |
+| RL-E05 | Independent recomputation over the complete 12-seed formal artifact | PASS as an evidence-integrity audit; 29,352 generation facts were checked and the frozen scientific status remains `NOT_SUPPORTED` because the preregistered temporal-precedence gate is false |
+| RL-E06 | Fresh native independent re-execution of all 12 formal seeds, followed by checkpoint, ledger, GFG, aggregate-gate and recovery-reference recomputation | PASS; the dose-dependent trade-off and recovery gates reproduce, while recovery is reported from the common update-800 fork (`29.17` percentage points for rebalance) and separately from the continued-exclusive endpoint (`38.54` percentage points) |
 
 Additional integrity checks:
 
@@ -41,6 +43,10 @@ Additional integrity checks:
 - the cross-system archive verifier independently checks the three new bundle
   manifests, recomputes TL-G01 and TL-G02, re-adjudicates INF-G01 and resolves
   all six checkpoint authorities across bundles by byte length and SHA-256.
+- the final extension verifier carries those checks forward, independently
+  checks RL-E05 without changing its negative temporal-precedence verdict, and
+  recomputes the complete RL-E06 formal authority and corrected comparison
+  baselines from the archived machine records.
 
 The audit found no contradiction in a manuscript-level numerical result. It
 did find publication-packaging defects, corrected in the final release:

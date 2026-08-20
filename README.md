@@ -103,6 +103,10 @@ Environment-dependent and source-history-dependent checks are identified in
 [REPRODUCIBILITY_NOTES.md](REPRODUCIBILITY_NOTES.md).
 The final pre-publication experiment-by-experiment audit is recorded in
 [FULL_REPRODUCTION_AUDIT.md](FULL_REPRODUCTION_AUDIT.md).
+The single cumulative cross-system and feedback-dynamics freeze is described in
+[FINAL_EXTENSION_RELEASE_AUDIT.md](FINAL_EXTENSION_RELEASE_AUDIT.md); its public
+archive entry point is `python tools/verify_final_extension_evidence.py
+<download-directory>`.
 
 This repository has no open-source license. See
 [PROPRIETARY_NOTICE.md](PROPRIETARY_NOTICE.md).

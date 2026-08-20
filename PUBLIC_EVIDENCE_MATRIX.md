@@ -24,6 +24,8 @@ published version has its own immutable version DOI and top-level manifest.
 | TL-G01 | `tl_g01_resnet_cross_system_evidence_v1.zip` plus the Git checker | All three formal ResNet-18/CIFAR-100/SGD-momentum runs, realized-event ledgers, compact GFGs, checkpoint identities and the cross-run aggregate result are independently recomputed | Fresh training requires the documented PyTorch environment and the standard CIFAR-100 dataset, which is not redistributed |
 | TL-G02 | `tl_g02_diffusion_cross_system_evidence_v1.zip` plus the Git checker | All three formal time-conditioned U-Net/CIFAR-10/AdamW runs, occurrence-level response records, compact GFGs, checkpoint identities and the cross-run aggregate result are independently recomputed | Fresh training requires the documented PyTorch environment and the standard CIFAR-10 dataset, which is not redistributed |
 | INF-G01 | `inf_g01_cross_system_inference_evidence_v1.zip` plus the TL-G01 and TL-G02 checkpoint bundles | The formal ResNet and diffusion results, validated GFG, all six seed-level nine-criterion decisions and all six exact checkpoint authorities are independently checked | The checkpoints are stored once in their training-learning bundles and resolved by byte length and SHA-256 rather than duplicated in the inference bundle |
+| RL-E05 | `rl_e05_selective_feedback_evidence_v1.zip` plus the Git checker | All 12 formal seeds, frozen-state identities, 29,352 generation facts, feedback ledgers, support profiles and every preregistered decision gate are independently checked | The strict temporal-precedence hypothesis remains `NOT_SUPPORTED`; the preserved evidence supports only the narrower co-occurring support-concentration and capability-trade-off relations |
+| RL-E06 | `rl_e06_dose_recovery_evidence_v1.zip` plus the Git checker | All 12 formal dose/recovery seeds, 84 condition executions, checkpoints, ledgers, GFGs, dose associations, recovery forks and the corrected recovery-reference arithmetic are independently checked | Full native re-execution is computationally larger than static public recomputation and writes a separate audit root; the public bundle contains the complete formal authority once, without duplicating the fresh audit payload |
 
 ## Public verification entry points
 
@@ -34,6 +36,8 @@ published version has its own immutable version DOI and top-level manifest.
 - TL-G02: `python -m experiments.gfg_ddpm_cifar_training_learning_generalization_v1.INDEPENDENT_CHECKER <extracted-bundle-root>/runtime`
 - INF-G01: `python -m experiments.gfg_cross_system_frozen_inference_projection_v1.INDEPENDENT_CHECKER --results <extracted-bundle-root>/FORMAL_RESULTS.json --gfg <extracted-bundle-root>/FORMAL_GFG.json`
 - Cross-system archive release: `python tools/verify_cross_system_evidence_v4.py <download-directory>`
+- RL-E05: `python -m experiments.gfg_rl_selective_positive_feedback_support_concentration_v1.independent_checker --artifact-root <extracted-bundle-root>/formal --device cpu`
+- Final cross-system and feedback-dynamics release: `python tools/verify_final_extension_evidence.py <download-directory>`
 
 Absolute filesystem strings retained inside frozen source manifests are
 provenance labels from the native execution.  They are not required input paths
