@@ -2,7 +2,7 @@
 
 ## Frozen verdict
 
-The preregistered composite hypothesis is **NOT_SUPPORTED**.  Nine of ten
+The preregistered composite hypothesis is **NOT_SUPPORTED**.  Ten of eleven
 decision gates passed.  The failed gate required a 0.03 increase in the
 reinforced capability's positive-support share to occur before or at the first
 accuracy loss of an unreinforced capability in at least 9 of 12 seeds.  This

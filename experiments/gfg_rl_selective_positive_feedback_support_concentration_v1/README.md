@@ -18,8 +18,8 @@ The frozen protocol and thresholds are in `PROTOCOL_FREEZE.md` and
 
 ## Outcome
 
-The formal run retained all 12 seeds and the independent check passed.  Nine of
-ten preregistered gates passed; the composite status is `NOT_SUPPORTED` because
+The formal run retained all 12 seeds and the independent check passed.  Ten of
+eleven preregistered gates passed; the composite status is `NOT_SUPPORTED` because
 the frozen 0.03 temporal-precedence gate passed in only 2/12 seeds.  The narrower
 concentration/crowding mechanism passed its behavioural, support, control and
 component-version intervention tests.  See `RESULTS.md` and
