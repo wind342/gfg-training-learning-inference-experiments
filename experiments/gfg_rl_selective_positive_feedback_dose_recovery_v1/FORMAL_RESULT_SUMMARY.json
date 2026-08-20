@@ -22,6 +22,16 @@
     "repair_unreinforced_accuracy_gain_vs_exclusive": 0.3888888888888889,
     "repair_target0_final_accuracy": 0.890625
   },
+  "recovery_reference_points": {
+    "common_exclusive_update_800_fork_unreinforced_accuracy": 0.703125,
+    "continued_exclusive_update_3200_endpoint_unreinforced_accuracy": 0.609375,
+    "rebalance_endpoint_unreinforced_accuracy": 0.9947916666666666,
+    "repair_endpoint_unreinforced_accuracy": 0.9982638888888888,
+    "rebalance_gain_from_common_fork": 0.29166666666666663,
+    "repair_gain_from_common_fork": 0.29513888888888884,
+    "rebalance_advantage_over_continued_exclusive_endpoint": 0.38541666666666663,
+    "repair_advantage_over_continued_exclusive_endpoint": 0.38888888888888884
+  },
   "decision_gates": {
     "all_formal_seeds_retained": true,
     "initial_mastery_every_seed": true,

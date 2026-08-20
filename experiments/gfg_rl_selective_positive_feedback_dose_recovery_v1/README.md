@@ -29,8 +29,10 @@ skill support share and a strictly negative association with the other skills'
 mean margin in 12/12 seeds. Exclusive feedback increased the reinforced skill's
 support share by 9.67 percentage points relative to balanced feedback and
 reduced the other skills' mean accuracy by 39.06 percentage points. Balanced
-recovery restored 38.54 percentage points while retaining the reinforced skill
-at 100% accuracy. The independent checker fully re-executed all 12 formal seeds
+recovery raised other-skill accuracy by 29.17 percentage points from its common
+update-800 fork and ended 38.54 points above the matched branch that continued
+exclusive feedback to update 3,200, while retaining the reinforced skill at
+100% accuracy. The independent checker fully re-executed all 12 formal seeds
 and passed.
 
 Run and independently check with:

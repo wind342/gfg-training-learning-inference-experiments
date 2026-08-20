@@ -75,6 +75,10 @@ def compile_results(formal_root: Path, independent_summary: Path | None) -> dict
         for update in (0, 100, 400, 800, 1600, 2400):
             points = [compact_point(checkpoint(seed["recovery_conditions"][name], update), "recovery_update") for seed in seeds]
             recovery[name].append(mean_points(points, "recovery_update"))
+    common_fork = recovery["rebalance_recovery"][0]["unreinforced_accuracy"]
+    continued_exclusive = endpoint["exclusive"]["unreinforced_accuracy"]
+    rebalance_endpoint = recovery["rebalance_recovery"][-1]["unreinforced_accuracy"]
+    repair_endpoint = recovery["repair_recovery"][-1]["unreinforced_accuracy"]
     output = {
         "schema": "rl-e06-compiled-results-v1",
         "formal_result_sha256": sha256(formal_root / "FORMAL_RESULT.json"),
@@ -86,6 +90,14 @@ def compile_results(formal_root: Path, independent_summary: Path | None) -> dict
         "dose_endpoint_means": endpoint,
         "exclusive_duration_means": exclusive_duration,
         "recovery_means": recovery,
+        "recovery_comparisons": {
+            "common_exclusive_update_800_fork_unreinforced_accuracy": common_fork,
+            "continued_exclusive_update_3200_endpoint_unreinforced_accuracy": continued_exclusive,
+            "rebalance_gain_from_common_fork": rebalance_endpoint - common_fork,
+            "repair_gain_from_common_fork": repair_endpoint - common_fork,
+            "rebalance_advantage_over_continued_exclusive_endpoint": rebalance_endpoint - continued_exclusive,
+            "repair_advantage_over_continued_exclusive_endpoint": repair_endpoint - continued_exclusive,
+        },
     }
     if independent_summary is not None:
         independent = read_json(independent_summary)

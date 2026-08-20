@@ -125,10 +125,12 @@ and two recovery forks from the exact exclusive update-800 state. Support share
 increased with dose and other-skill margin decreased with dose in 12/12 formal
 seeds. Exclusive feedback produced a 39.06-percentage-point other-skill accuracy
 deficit and a 9.67-point reinforced-skill support-share excess relative to
-balanced feedback. Rebalancing restored 38.54 points while retaining the
-reinforced skill at 100%; other-skills-only repair restored the others but
-weakened the formerly reinforced skill. A separate full native replay of all 12
-seeds passed.
+balanced feedback. From the common exclusive update-800 fork, rebalancing raised
+other-skill accuracy by 29.17 points while retaining the reinforced skill at
+100%; its endpoint was 38.54 points above the matched branch that continued
+exclusive feedback to update 3,200. Other-skills-only repair restored the others
+but weakened the formerly reinforced skill. A separate full native replay of
+all 12 seeds passed.
 
 - [Frozen protocol](experiments/gfg_rl_selective_positive_feedback_dose_recovery_v1/PROTOCOL_FREEZE.md)
 - [Formal results](experiments/gfg_rl_selective_positive_feedback_dose_recovery_v1/RESULTS.md)

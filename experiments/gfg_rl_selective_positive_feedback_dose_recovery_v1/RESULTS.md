@@ -50,7 +50,8 @@ where the other skills averaged 70.31% accuracy.
 | --- | ---: | ---: |
 | Added updates | 2,400 | 2,400 |
 | Final other-skill accuracy | 99.48% | 99.83% |
-| Gain relative to exclusive fork | 38.54 percentage points | 38.89 percentage points |
+| Gain from the common update-800 fork (70.31%) | 29.17 percentage points | 29.51 percentage points |
+| Advantage over continued-exclusive update-3,200 endpoint (60.94%) | 38.54 percentage points | 38.89 percentage points |
 | Final formerly reinforced-skill accuracy | 100.00% | 89.06% |
 | Seeds with support movement back toward balanced | 12/12 | 12/12 |
 
@@ -60,6 +61,12 @@ skill at 100% in every seed. Training only the other three skills restored them
 slightly more completely but reduced the formerly reinforced skill to 89.06%
 on average. This symmetric trade-off is stronger evidence for feedback-directed
 support reorganization than an irreversible-damage explanation.
+
+The two gain values answer different causal questions. The 29.17- and
+29.51-point changes are the observed improvements along the recovery branches
+from their common update-800 fork. The 38.54- and 38.89-point values compare
+those recovery endpoints with the matched counterfactual branch that continued
+exclusive feedback through update 3,200.
 
 ## Evidence integrity
 

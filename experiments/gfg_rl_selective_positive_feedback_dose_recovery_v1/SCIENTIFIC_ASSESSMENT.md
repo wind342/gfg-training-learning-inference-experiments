@@ -30,10 +30,13 @@ duration increased.
 ## Is the effect reversible?
 
 Largely. Rebalancing feedback after the exact exclusive update-800 state
-restored 38.54 percentage points of other-skill accuracy and retained the
-reinforced skill at 100% in every seed. The support profile moved toward the
-balanced reference in 12/12 seeds. This contradicts an explanation based only
-on permanent damage or unlucky initialization.
+raised other-skill accuracy from 70.31% to 99.48%, an observed recovery of
+29.17 percentage points, and retained the reinforced skill at 100% in every
+seed. Its endpoint was 38.54 points above the matched branch that continued
+exclusive feedback from update 800 to update 3,200 and ended at 60.94%. The
+support profile moved toward the balanced reference in 12/12 seeds. This
+contradicts an explanation based only on permanent damage or unlucky
+initialization.
 
 The other-skills-only repair is informative in the opposite direction: it
 restored the other skills to 99.83% but reduced the formerly reinforced skill

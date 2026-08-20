@@ -52,3 +52,5 @@ def test_recovery_exposes_the_bidirectional_tradeoff() -> None:
     assert rebalance[-1]["task0_accuracy"] == 1.0
     assert repair[-1]["unreinforced_accuracy"] > repair[0]["unreinforced_accuracy"]
     assert repair[-1]["task0_accuracy"] < repair[0]["task0_accuracy"]
+    assert abs((rebalance[-1]["unreinforced_accuracy"] - rebalance[0]["unreinforced_accuracy"]) - 0.291667) < 1e-6
+    assert abs((repair[-1]["unreinforced_accuracy"] - repair[0]["unreinforced_accuracy"]) - 0.295139) < 1e-6
