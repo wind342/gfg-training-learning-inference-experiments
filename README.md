@@ -44,6 +44,12 @@ noise occurrences on CIFAR-10 under AdamW. It retests receiving-state
 conditioning, nonlinear response, distributed support and held-out coordinate
 transport with a non-classification readout boundary.
 
+The separate **INF-G01** experiment then retests the frozen-inference projection
+relation in both cross-system models. Across three ResNet seeds and three
+diffusion seeds, it checks exact training-version identity, causal component
+recruitment, query-conditioned non-additive support combination and exact
+pre-learning rollback/restoration while keeping persistent learned state frozen.
+
 Four reusable instruments developed for the training--learning experiments are
 exposed through [EXPERIMENTAL_INSTRUMENTS.md](EXPERIMENTAL_INSTRUMENTS.md):
 CSRG-4C, realized-update causal forks, finite-amplitude update paths and the

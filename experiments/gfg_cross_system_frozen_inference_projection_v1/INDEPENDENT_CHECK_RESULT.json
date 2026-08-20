@@ -1,0 +1,110 @@
+{
+  "errors": [],
+  "formal_verdict": "CROSS_SYSTEM_FROZEN_PROJECTION_SUPPORTED",
+  "run_checks": [
+    {
+      "matches_recorded_tests": true,
+      "pass": true,
+      "recomputed_tests": {
+        "components_called": true,
+        "exact_restoration": true,
+        "gate_changes_output": true,
+        "learned_version_dependence": true,
+        "nonadditive_combination": true,
+        "persistent_state_frozen": true,
+        "query_conditioned_support": true,
+        "repeat_inference_exact": true,
+        "source_version_identity": true
+      },
+      "seed": 20260820,
+      "system": "resnet"
+    },
+    {
+      "matches_recorded_tests": true,
+      "pass": true,
+      "recomputed_tests": {
+        "components_called": true,
+        "exact_restoration": true,
+        "gate_changes_output": true,
+        "learned_version_dependence": true,
+        "nonadditive_combination": true,
+        "persistent_state_frozen": true,
+        "query_conditioned_support": true,
+        "repeat_inference_exact": true,
+        "source_version_identity": true
+      },
+      "seed": 20260821,
+      "system": "resnet"
+    },
+    {
+      "matches_recorded_tests": true,
+      "pass": true,
+      "recomputed_tests": {
+        "components_called": true,
+        "exact_restoration": true,
+        "gate_changes_output": true,
+        "learned_version_dependence": true,
+        "nonadditive_combination": true,
+        "persistent_state_frozen": true,
+        "query_conditioned_support": true,
+        "repeat_inference_exact": true,
+        "source_version_identity": true
+      },
+      "seed": 20260822,
+      "system": "resnet"
+    },
+    {
+      "matches_recorded_tests": true,
+      "pass": true,
+      "recomputed_tests": {
+        "components_called": true,
+        "exact_restoration": true,
+        "gate_changes_output": true,
+        "learned_version_dependence": true,
+        "nonadditive_combination": true,
+        "persistent_state_frozen": true,
+        "query_conditioned_support": true,
+        "repeat_inference_exact": true,
+        "source_version_identity": true
+      },
+      "seed": 20260830,
+      "system": "diffusion"
+    },
+    {
+      "matches_recorded_tests": true,
+      "pass": true,
+      "recomputed_tests": {
+        "components_called": true,
+        "exact_restoration": true,
+        "gate_changes_output": true,
+        "learned_version_dependence": true,
+        "nonadditive_combination": true,
+        "persistent_state_frozen": true,
+        "query_conditioned_support": true,
+        "repeat_inference_exact": true,
+        "source_version_identity": true
+      },
+      "seed": 20260831,
+      "system": "diffusion"
+    },
+    {
+      "matches_recorded_tests": true,
+      "pass": true,
+      "recomputed_tests": {
+        "components_called": true,
+        "exact_restoration": true,
+        "gate_changes_output": true,
+        "learned_version_dependence": true,
+        "nonadditive_combination": true,
+        "persistent_state_frozen": true,
+        "query_conditioned_support": true,
+        "repeat_inference_exact": true,
+        "source_version_identity": true
+      },
+      "seed": 20260832,
+      "system": "diffusion"
+    }
+  ],
+  "schema": "gfg-cross-system-frozen-inference-independent-check-v1",
+  "status": "PASS"
+}

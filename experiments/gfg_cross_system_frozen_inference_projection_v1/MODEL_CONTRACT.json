@@ -1,0 +1,54 @@
+{
+  "schema": "gfg-cross-system-frozen-inference-projection-contract-v1",
+  "status": "FROZEN_BEFORE_FORMAL_EXECUTION",
+  "claim": "inference is a frozen projection of training-learning formation",
+  "systems": {
+    "resnet": {
+      "source_experiment": "TL-G01",
+      "architecture": "CIFAR ResNet-18",
+      "dataset": "CIFAR-100",
+      "optimizer": "SGD momentum",
+      "seeds": [20260820, 20260821, 20260822],
+      "query_count": 128,
+      "components": ["layer1", "layer2", "layer3", "layer4"],
+      "checkpoint_root": "runtime/gfg_resnet_cifar_generalization_v1_formal"
+    },
+    "diffusion": {
+      "source_experiment": "TL-G02",
+      "architecture": "time-conditioned compact U-Net",
+      "dataset": "CIFAR-10",
+      "optimizer": "AdamW",
+      "seeds": [20260830, 20260831, 20260832],
+      "query_count": 64,
+      "sample_count": 4,
+      "components": [
+        "high_resolution_skip",
+        "low_resolution_skip",
+        "bottleneck",
+        "decoder_refinement"
+      ],
+      "checkpoint_root": "runtime/gfg_ddpm_cifar_generalization_v1/formal"
+    }
+  },
+  "tests": {
+    "exact_training_version_identity": true,
+    "persistent_model_state_tolerance": 0.0,
+    "persistent_optimizer_state_tolerance": 0.0,
+    "repeat_output_tolerance": 0.0,
+    "component_output_rms_minimum": 1e-12,
+    "gate_effect_minimum": 1e-8,
+    "query_profile_l1_minimum": 0.05,
+    "resnet_interaction_minimum": 1e-6,
+    "diffusion_interaction_minimum": 1e-8,
+    "rollback_effect_minimum": 1e-8,
+    "restoration_tolerance": 0.0
+  },
+  "forbidden_shortcuts": [
+    "training during inference",
+    "optimizer step during inference",
+    "post-hoc query selection by intervention effect",
+    "dropping failed seeds or components",
+    "treating diffusion sample state as persistent learned state",
+    "using a separately trained classifier to adjudicate support"
+  ]
+}
