@@ -33,6 +33,12 @@ Together, RL-E01–RL-E04 form the cumulative experimental chain summarized in
 |---|---|---|---|
 | GF-S01 | Four-stage real-signal formation | Demonstrates that the five-coordinate fact structure and GFG organization remain fixed while concrete domain semantics change across FIR filtering, downsampling, sliding FFT and SVG rendering; a final SVG-space query is traced through the complete path to the participating raw ECG samples. | [multistage signal experiment](experiments/signal_multistage_generated_origin_v1/) |
 
+## Cross-system training--learning falsification
+
+| ID | Experiment | Main scientific role | Code, protocol and evidence |
+|---|---|---|---|
+| TL-G01 | ResNet/CIFAR-100/SGD-momentum generalization | Changes architecture, modality, task and optimizer together, then retests receiving-state conditioning, finite-amplitude nonlinearity, distributed-support reallocation, target boundaries and held-out F1/F3/F5 transport under a frozen protocol. | [cross-system generalization experiment](experiments/gfg_resnet_cifar_training_learning_generalization_v1/) |
+
 ## Projection dependencies retained for GF-P01
 
 The five native reference paths are retained at:
@@ -46,4 +52,3 @@ The five native reference paths are retained at:
 GF-P01 invokes these paths separately and compares their independently formed
 native/reference views with the projected views. They are not five additional
 entries in the 16-experiment manuscript index.
-

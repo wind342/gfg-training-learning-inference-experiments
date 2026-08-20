@@ -32,6 +32,12 @@ that the generation-fact and GFG structures remain fixed while their concrete
 domain semantics change across filtering, downsampling, Fourier analysis and
 SVG rendering.
 
+The separate **TL-G01** cross-system falsification experiment changes
+architecture, modality, task and optimizer from nanoGPT/text/Adam to
+ResNet-18/CIFAR-100/SGD momentum and retests the primary training--learning
+relations under a frozen protocol. It is an extension of the evidence base,
+not a rewrite of the sealed sixteen manuscript entries.
+
 Four reusable instruments developed for the training--learning experiments are
 exposed through [EXPERIMENTAL_INSTRUMENTS.md](EXPERIMENTAL_INSTRUMENTS.md):
 CSRG-4C, realized-update causal forks, finite-amplitude update paths and the
