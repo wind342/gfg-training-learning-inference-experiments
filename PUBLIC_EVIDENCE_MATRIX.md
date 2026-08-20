@@ -21,12 +21,19 @@ published version has its own immutable version DOI and top-level manifest.
 | RL-E01 | Protocol, implementation, results and compact causal-fork records in Git | Binding/credit fork decisions and reported seed summary | Fresh training requires the documented Python environment |
 | RL-E02 | `rl_e02_temporal_credit_formal_evidence_v1.zip` plus Git validators | Formal GFG ledgers, candidate/credit ledgers, checkpoints, policy evaluations and independent checks | The frozen archive preserves the original absolute path labels; validators rebase the runtime root |
 | RL-E03–RL-E04 | Code, frozen contracts, committed machine results, validators and tests in Git | Long-chain, exact-credit optimization, stochastic controls and policy-transfer results | Fresh stochastic/training runs require the documented environment |
+| TL-G01 | `tl_g01_resnet_cross_system_evidence_v1.zip` plus the Git checker | All three formal ResNet-18/CIFAR-100/SGD-momentum runs, realized-event ledgers, compact GFGs, checkpoint identities and the cross-run aggregate result are independently recomputed | Fresh training requires the documented PyTorch environment and the standard CIFAR-100 dataset, which is not redistributed |
+| TL-G02 | `tl_g02_diffusion_cross_system_evidence_v1.zip` plus the Git checker | All three formal time-conditioned U-Net/CIFAR-10/AdamW runs, occurrence-level response records, compact GFGs, checkpoint identities and the cross-run aggregate result are independently recomputed | Fresh training requires the documented PyTorch environment and the standard CIFAR-10 dataset, which is not redistributed |
+| INF-G01 | `inf_g01_cross_system_inference_evidence_v1.zip` plus the TL-G01 and TL-G02 checkpoint bundles | The formal ResNet and diffusion results, validated GFG, all six seed-level nine-criterion decisions and all six exact checkpoint authorities are independently checked | The checkpoints are stored once in their training-learning bundles and resolved by byte length and SHA-256 rather than duplicated in the inference bundle |
 
 ## Public verification entry points
 
 - TL-P01: `python -m experiments.gfg_nanogpt_actual_update_boundary_v1.INDEPENDENT_CHECKER <extracted-bundle-root>`
 - INF-E01: `python -m experiments.gfg_nanogpt_training_learning_inference_projection_v1.PUBLIC_EVIDENCE_CHECKER <extracted-bundle-root>`
 - Top-level Zenodo archive: `python tools/verify_publication_evidence_v3.py <download-directory>`
+- TL-G01: `python -m experiments.gfg_resnet_cifar_training_learning_generalization_v1.INDEPENDENT_CHECKER <extracted-bundle-root>/runtime`
+- TL-G02: `python -m experiments.gfg_ddpm_cifar_training_learning_generalization_v1.INDEPENDENT_CHECKER <extracted-bundle-root>/runtime`
+- INF-G01: `python -m experiments.gfg_cross_system_frozen_inference_projection_v1.INDEPENDENT_CHECKER --results <extracted-bundle-root>/FORMAL_RESULTS.json --gfg <extracted-bundle-root>/FORMAL_GFG.json`
+- Cross-system archive release: `python tools/verify_cross_system_evidence_v4.py <download-directory>`
 
 Absolute filesystem strings retained inside frozen source manifests are
 provenance labels from the native execution.  They are not required input paths

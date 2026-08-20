@@ -32,6 +32,26 @@ that the generation-fact and GFG structures remain fixed while their concrete
 domain semantics change across filtering, downsampling, Fourier analysis and
 SVG rendering.
 
+The separate **TL-G01** cross-system falsification experiment changes
+architecture, modality, task and optimizer from nanoGPT/text/Adam to
+ResNet-18/CIFAR-100/SGD momentum and retests the primary training--learning
+relations under a frozen protocol. It is an extension of the evidence base,
+not a rewrite of the sealed sixteen manuscript entries.
+
+The separate **TL-G02** experiment moves the same falsification programme to a
+generative diffusion objective: a time-conditioned U-Net predicts identified
+noise occurrences on CIFAR-10 under AdamW. It retests receiving-state
+conditioning, nonlinear response, distributed support and held-out coordinate
+transport with a non-classification readout boundary.
+
+The separate **INF-G01** experiment then retests the frozen-inference projection
+relation in both cross-system models. Across three ResNet seeds and three
+diffusion seeds, it checks exact training-version identity, causal component
+recruitment, query-conditioned non-additive support combination and exact
+pre-learning rollback/restoration while keeping persistent learned state frozen.
+The cumulative relation among TL-G01, TL-G02 and INF-G01 is summarized in
+[CROSS_SYSTEM_EVIDENCE_CHAIN.md](CROSS_SYSTEM_EVIDENCE_CHAIN.md).
+
 Four reusable instruments developed for the training--learning experiments are
 exposed through [EXPERIMENTAL_INSTRUMENTS.md](EXPERIMENTAL_INSTRUMENTS.md):
 CSRG-4C, realized-update causal forks, finite-amplitude update paths and the

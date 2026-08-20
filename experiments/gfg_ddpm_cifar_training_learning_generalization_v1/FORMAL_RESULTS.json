@@ -1,0 +1,102 @@
+{
+  "schema": "gfg-ddpm-cifar-generalization-formal-summary-v1",
+  "verdict": "CROSS_SYSTEM_GENERALIZATION_SUPPORTED",
+  "system": {
+    "architecture": "time-conditioned compact U-Net",
+    "dataset": "CIFAR-10",
+    "modality": "images",
+    "task": "diffusion epsilon prediction",
+    "optimizer": "AdamW",
+    "target_identity": "image--timestep--noise occurrence"
+  },
+  "runs": {
+    "seeds": [20260830, 20260831, 20260832],
+    "final_test_epsilon_mse": [
+      0.10009890028635661,
+      0.09994610548019409,
+      0.09960653128623963
+    ],
+    "registered_events_per_run": 7,
+    "receiving_state_exchanges_per_run": 6,
+    "target_update_records": 504
+  },
+  "frozen_tests": {
+    "integrity": true,
+    "receiving_parameter_state": true,
+    "receiving_optimizer_memory": true,
+    "finite_amplitude_nonlinearity": true,
+    "distributed_support_reorganization": true,
+    "held_out_coordinate_prediction": true,
+    "negative_controls": true
+  },
+  "integrity": {
+    "all_gfg_valid": true,
+    "max_adamw_formula_error": 1.4901161193847656e-08,
+    "max_alpha0_error": 0.0,
+    "max_alpha1_error": 0.0,
+    "max_repeat_error": 0.0,
+    "independent_checker": "PASS"
+  },
+  "mechanism": {
+    "nonlinear_count": 97,
+    "nonlinear_fraction": 0.19246031746031747,
+    "morphology_counts": {
+      "NEAR_LINEAR": 407,
+      "SATURATING": 38,
+      "ACCELERATING": 34,
+      "TURNBACK": 9,
+      "SIGN_REVERSAL": 16
+    },
+    "distributed_support_fraction": 0.7658730158730159,
+    "support_reallocation_gt_0_01_fraction": 0.9702380952380952,
+    "primary_support_switch_fraction": 0.08134920634920635,
+    "receiving_parameter_state_exchanges_above_threshold": "18/18",
+    "receiving_optimizer_memory_exchanges_above_threshold": "18/18"
+  },
+  "direct_target_boundary_prediction": {
+    "unchanged": {
+      "accuracy": 0.8988095238095238,
+      "four_way_macro_recall": 0.5
+    },
+    "linear": {
+      "accuracy": 0.9940476190476191,
+      "four_way_macro_recall": 0.9895569620253164
+    },
+    "quadratic": {
+      "accuracy": 0.996031746031746,
+      "four_way_macro_recall": 0.9797619047619047,
+      "transition_recall": {
+        "MAINTAIN_CORRECT": 1.0,
+        "CORRECT_TO_WRONG": 0.9523809523809523,
+        "MAINTAIN_WRONG": 1.0,
+        "WRONG_TO_CORRECT": 0.9666666666666667
+      }
+    }
+  },
+  "held_out_run_isolated_knn": {
+    "F1": {
+      "accuracy": 0.8968253968253969,
+      "four_way_macro_recall": 0.5280590717299578
+    },
+    "F1_F3": {
+      "accuracy": 0.9484126984126984,
+      "four_way_macro_recall": 0.7547949735449735
+    },
+    "F1_F5": {
+      "accuracy": 0.8888888888888888,
+      "four_way_macro_recall": 0.5091801453352086
+    },
+    "F1_F3_F5": {
+      "accuracy": 0.9226190476190477,
+      "four_way_macro_recall": 0.6358829783671556
+    }
+  },
+  "negative_controls_four_way_macro_recall": {
+    "true_F1_F3_F5": 0.6358829783671556,
+    "target_outcome_permutation": 0.568432707119416,
+    "F3_update_geometry_permutation": 0.5102349976558838,
+    "F5_adamw_state_permutation": 0.6083664021164021
+  },
+  "formal_runtime_bytes": 36789331,
+  "storage_cap_bytes": 26843545600
+}
