@@ -24,7 +24,7 @@ checkpoint or tensor payload is represented as a fresh native rerun.
 | RL-E03 | Fresh native formal execution and independent check | PASS; scientific values and transition counts reproduced exactly; end-to-end wall-clock speedup was `2.28x` versus `2.38x` in the frozen run |
 | RL-E04 | Fresh native formal stochastic execution and independent check | PASS; scientific values reproduced within frozen tolerances |
 | TL-G01 | Fresh native three-seed ResNet-18/CIFAR-100/SGD-momentum execution, followed by independent manifest and aggregate recomputation | PASS; all three formal seeds satisfy the frozen training-learning criteria and the aggregate verdict is `CROSS_SYSTEM_GENERALIZATION_SUPPORTED` |
-| TL-G02 | Fresh native three-seed time-conditioned U-Net/CIFAR-10/AdamW execution, followed by independent record, manifest and aggregate recomputation | PASS; 504 occurrence-level responses are checked and the aggregate verdict is `DIFFUSION_CROSS_SYSTEM_GENERALIZATION_SUPPORTED` |
+| TL-G02 | Fresh native three-seed time-conditioned U-Net/CIFAR-10/AdamW execution, followed by independent record, manifest and aggregate recomputation | PASS; 504 occurrence-level responses are checked and the aggregate verdict is `CROSS_SYSTEM_GENERALIZATION_SUPPORTED` |
 | INF-G01 | Fresh native frozen-inference interventions over all six TL-G01/TL-G02 checkpoints, repeated execution and independent GFG/mechanism check | PASS; 3/3 ResNet seeds and 3/3 diffusion seeds pass all nine frozen criteria, the two formal executions are byte-identical and the verdict is `CROSS_SYSTEM_FROZEN_PROJECTION_SUPPORTED` |
 
 Additional integrity checks:

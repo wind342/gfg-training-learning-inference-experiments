@@ -22,7 +22,7 @@ prediction with a compact U-Net on CIFAR-10 under AdamW. Target identity is an
 image--timestep--noise occurrence and the readout boundary is defined from
 residual error rather than class correctness. Three formal seeds retest the
 same mechanism relations and produce the frozen aggregate verdict
-`DIFFUSION_CROSS_SYSTEM_GENERALIZATION_SUPPORTED`.
+`CROSS_SYSTEM_GENERALIZATION_SUPPORTED`.
 
 ## INF-G01 — frozen projection in both learned systems
 
