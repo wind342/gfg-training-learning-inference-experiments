@@ -17,6 +17,15 @@ The corrected publication-evidence release contains:
   52 checkpoint phases and the frozen strict logit-level result;
 - `rl_e02_temporal_credit_formal_evidence_v1.zip` — the formal temporal-credit
   discovery execution bundle;
+- `tl_g01_resnet_cross_system_evidence_v1.zip` — three formal
+  ResNet-18/CIFAR-100/SGD-momentum training-learning runs and their exact
+  trained checkpoints;
+- `tl_g02_diffusion_cross_system_evidence_v1.zip` — three formal
+  time-conditioned U-Net/CIFAR-10/AdamW diffusion training-learning runs and
+  their exact trained checkpoints;
+- `inf_g01_cross_system_inference_evidence_v1.zip` — the formal ResNet and
+  diffusion frozen-inference interventions, validated GFG and cross-bundle
+  checkpoint authority ledger;
 - `ARCHIVE_MANIFEST.json` — byte sizes and SHA-256 identities for every
   top-level payload; and
 - `PUBLIC_EVIDENCE_MATRIX.md` — the public verification boundary for every
@@ -24,3 +33,6 @@ The corrected publication-evidence release contains:
 
 Every Zenodo version is immutable.  Corrections are issued as a new version;
 previous version DOIs, Git tags and commits remain part of the audit history.
+The cross-system release carries forward every bundle from the preceding
+publication-evidence version and adds TL-G01, TL-G02 and INF-G01 as the
+cumulative evidence chain described in `CROSS_SYSTEM_EVIDENCE_CHAIN.md`.

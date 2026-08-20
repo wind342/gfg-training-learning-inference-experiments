@@ -49,6 +49,8 @@ relation in both cross-system models. Across three ResNet seeds and three
 diffusion seeds, it checks exact training-version identity, causal component
 recruitment, query-conditioned non-additive support combination and exact
 pre-learning rollback/restoration while keeping persistent learned state frozen.
+The cumulative relation among TL-G01, TL-G02 and INF-G01 is summarized in
+[CROSS_SYSTEM_EVIDENCE_CHAIN.md](CROSS_SYSTEM_EVIDENCE_CHAIN.md).
 
 Four reusable instruments developed for the training--learning experiments are
 exposed through [EXPERIMENTAL_INSTRUMENTS.md](EXPERIMENTAL_INSTRUMENTS.md):
