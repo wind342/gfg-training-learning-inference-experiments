@@ -1,0 +1,11 @@
+{
+  "files": {
+    "MODEL_CONTRACT.json": "28daa6787237ffd5b958653dd5a1e8de73a3fbac2159c777027ee8c2d3a94739",
+    "PROTOCOL_FREEZE.md": "79da5a0d7cf30e09f7765744560ce4d97585b78e29ef874de81fd09f0535e6d8",
+    "independent_checker.py": "8b91556da94f9cdc358236542018dd5e22422922966aa77202e6b78898479b9c",
+    "runner.py": "1fdc772dc7e0765ece307beba3c8991b386bb5b031f076e9be6498dfbb886143",
+    "runtime.py": "dcd3917347d68b6275cf7e7d29e823bb856d409c4153b2c7c1035e7481c036a2"
+  },
+  "frozen_at_utc": "2026-08-20T19:33:08.592025+00:00",
+  "schema": "rl-e05-formal-contract-freeze-v1"
+}

@@ -1,0 +1,86 @@
+{
+  "schema": "gfg-rl-selective-positive-feedback-support-concentration-contract-v1",
+  "status": "FROZEN_BEFORE_FORMAL_EXECUTION",
+  "experiment_id": "RL-E05",
+  "claim": "correct selective positive feedback can concentrate shared distributed functional support and crowd other already formed capabilities",
+  "development_seeds": [20260851, 20260852],
+  "formal_seeds": [
+    20260861,
+    20260862,
+    20260863,
+    20260864,
+    20260865,
+    20260866,
+    20260867,
+    20260868,
+    20260869,
+    20260870,
+    20260871,
+    20260872
+  ],
+  "model": {
+    "architecture": "attention-free shared multi-skill GRU policy",
+    "hidden_size": 12,
+    "component_count": 4,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001
+  },
+  "formation": {
+    "skill_count": 4,
+    "cue_count": 16,
+    "decision_stages": 2,
+    "pretrain_max_steps": 3000,
+    "pretrain_min_steps": 100,
+    "pretrain_minimum_margin": 0.5,
+    "required_chain_accuracy": 1.0
+  },
+  "feedback": {
+    "updates": 800,
+    "batch_size": 64,
+    "checkpoints": [0, 10, 25, 50, 75, 100, 200, 400, 800],
+    "reinforced_skill": 0,
+    "terminal_consequence": "1 for a correct complete two-action chain; 0 otherwise",
+    "conditions": ["selective", "balanced", "frozen"],
+    "negative_reward_allowed": false,
+    "proxy_reward_allowed": false,
+    "entropy_bonus": 0.0
+  },
+  "support": {
+    "coalition_count": 16,
+    "functional_readout": "identity-aligned correct-action margin",
+    "estimator": "exact four-component Shapley value from real coalition gates",
+    "positive_support": "mean(max(shapley, 0)) over cues and decision stages",
+    "cross_task_concentration": "HHI over task positive-support mass",
+    "shapley_efficiency_tolerance": 1e-5
+  },
+  "causal_rollback": {
+    "subset_masks": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    "baseline_version_source": "sealed pre-feedback model state",
+    "directional_tolerance": 1e-6,
+    "directional_criterion": "reinforced mean margin decreases and either unreinforced mean margin or unreinforced mean chain accuracy increases relative to selective final"
+  },
+  "decision_gates": {
+    "all_formal_seeds_retained": true,
+    "initial_mastery_required_every_seed": true,
+    "frozen_state_exact_every_seed": true,
+    "balanced_final_minimum_chain_accuracy_each_skill": 0.95,
+    "selective_final_minimum_reinforced_chain_accuracy": 0.95,
+    "mean_selective_unreinforced_accuracy_deficit_vs_balanced": 0.10,
+    "mean_selective_reinforced_support_share_increase": 0.03,
+    "mean_selective_support_share_excess_vs_balanced": 0.03,
+    "minimum_seeds_with_new_component_capture": 9,
+    "minimum_seeds_with_support_change_before_or_at_first_unreinforced_drop": 9,
+    "minimum_seeds_with_directional_rollback_evidence": 8
+  },
+  "forbidden_shortcuts": [
+    "proxy or learned reward model",
+    "negative feedback during the selective phase",
+    "post-hoc seed deletion",
+    "post-hoc component deletion",
+    "weight magnitude used as functional support",
+    "independent classifier used to infer support",
+    "formal threshold changes after reading formal results",
+    "future branch results used to form an earlier training action"
+  ]
+}

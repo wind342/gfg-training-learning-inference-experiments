@@ -1,0 +1,26 @@
+{
+  "classification": "DIAGNOSTIC_ONLY_NOT_A_REPLACEMENT_DECISION_GATE",
+  "counts": {
+    "any_positive_support_before_or_at_drop": 12,
+    "simultaneous_at_first_observed_checkpoint": 1,
+    "strictly_before_drop": 11
+  },
+  "frozen_scientific_status": "NOT_SUPPORTED",
+  "interpretation": "At the available checkpoint resolution, a small positive support-share change was already present before or at every first behavioural drop, but the preregistered 0.03 event threshold was usually reached later. This diagnoses threshold/timescale mismatch; it does not convert the frozen NOT_SUPPORTED verdict to PASS.",
+  "means": {
+    "best_rollback_reinforced_margin_cost": -2.5247428814570108,
+    "best_rollback_unreinforced_accuracy_gain": 0.2482638888888889,
+    "directional_proper_subset_count_out_of_14": 13.833333333333334,
+    "pooled_support_share_vs_unreinforced_accuracy_pearson": -0.881958903577158,
+    "reinforced_positive_support_mass_increase_vs_baseline": 2.6634312868118286,
+    "selective_hhi_excess_vs_balanced": 0.0077118997772534685,
+    "selective_hhi_increase_vs_baseline": 0.007286424438158671,
+    "support_share_delta_at_first_drop": 0.016848314553499222,
+    "unreinforced_positive_support_mass_change_vs_baseline": 0.28129598829481334,
+    "unreinforced_positive_support_mass_deficit_vs_balanced": 2.1580689218309193,
+    "within_seed_support_share_vs_unreinforced_accuracy_pearson": -0.9490906525725652
+  },
+  "reason_for_diagnostic": "the preregistered 0.03 support-share event threshold passed in only 2/12 seeds before or at the first accuracy drop",
+  "schema": "rl-e05-posthoc-temporal-diagnostic-v1",
+  "seed_count": 12
+}
