@@ -15,9 +15,9 @@ The repository has **16 primary experiment entries**:
   stochastic long-chain credit.
 
 The primary entries are indexed in [EXPERIMENT_INDEX.md](EXPERIMENT_INDEX.md).
-The final manuscript claims, figures and tables are connected to their frozen
-experimental authorities in
-[MANUSCRIPT_EVIDENCE_MAP.md](MANUSCRIPT_EVIDENCE_MAP.md).
+The current manuscript-section-to-evidence navigation is maintained in
+[MANUSCRIPT_EVIDENCE_MAP.md](MANUSCRIPT_EVIDENCE_MAP.md) as a documentation
+layer over the unchanged frozen experimental release.
 The exact public verification boundary for every manuscript experiment is
 recorded in [PUBLIC_EVIDENCE_MATRIX.md](PUBLIC_EVIDENCE_MATRIX.md), and the
 Git/Zenodo division is documented in [PUBLIC_ARCHIVE.md](PUBLIC_ARCHIVE.md).

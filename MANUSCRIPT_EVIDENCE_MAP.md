@@ -5,6 +5,13 @@ manuscript structure to their frozen experimental protocols, executable
 implementations, machine-readable results and independent checks. The
 manuscript itself is not stored in this repository.
 
+This documentation-only revision updates the mapping to the current manuscript
+structure. All experimental evidence, validators, archive hashes and executable
+authorities remain frozen at tag
+`paper-experiments-cross-system-feedback-release`, commit
+`36dab5ce347dbbdac157ef23205f556606d18294`, and Zenodo record
+[`10.5281/zenodo.22032772`](https://doi.org/10.5281/zenodo.22032772).
+
 ## Generation facts and structural projections
 
 | Manuscript location | Claim or result | Evidence authority |
@@ -45,14 +52,16 @@ The second-order predictor is an endpoint boundary predictor derived from the
 three coordinates. It is not presented as a fixed quadratic law for the whole
 finite-amplitude response curve falsified by TL-E04.
 
-## Frozen inference and the unified loop
+## Frozen inference, feedback dynamics and cross-system validation
 
 | Manuscript location | Claim or result | Evidence authority |
 |---|---|---|
 | Section 6 | Across thirteen training histories and 52 checkpoints, frozen inference used exact training-formed versions, recruited target- and query-conditioned support, combined support non-additively and changed under component-version rollback. | **INF-E01:** [frozen protocol](experiments/gfg_nanogpt_training_learning_inference_projection_v1/PROTOCOL_FREEZE.md), [analysis](experiments/gfg_nanogpt_training_learning_inference_projection_v1/analysis.py), [independent checker](experiments/gfg_nanogpt_training_learning_inference_projection_v1/independent.py), [strict audit](experiments/gfg_nanogpt_training_learning_inference_projection_v1/strict_audit.py) |
 | Sections 6.2–6.3 | The scale and attention passages are mechanism-level deductions from the established frozen-projection relation, connected to their cited literature; they are not separate experiment IDs or additional benchmark comparisons. | **INF-E01** plus the manuscript references cited in those passages. |
-| Section 7 | Reinforcement learning supplies the established path by which an inference-produced environmental consequence can participate in a subsequent training update. | The reinforcement-learning reference cited in Section 7. **RL-E01** is retained as supplementary causal evidence in Methods, not as the sole basis of this conceptual connection. |
-| Section 8 and Conclusion | The training–learning–inference–environment–training loop is a synthesis of the Section 4 training–learning results, Section 6 frozen-inference result and the Section 7 reinforcement-learning connection. | **TL-E01–TL-E08**, **TL-P01**, **INF-E01** and the cited reinforcement-learning relation. |
+| Section 6.4 | Selective positive feedback concentrated support around the reinforced behaviour and was accompanied by reduced performance in other skills; rebalanced feedback largely recovered those skills while preserving the reinforced skill. The stronger preregistered temporal-precedence claim in RL-E05 was not supported. | **RL-E05:** [protocol](experiments/gfg_rl_selective_positive_feedback_support_concentration_v1/PROTOCOL_FREEZE.md), [results](experiments/gfg_rl_selective_positive_feedback_support_concentration_v1/RESULTS.md), [scientific assessment](experiments/gfg_rl_selective_positive_feedback_support_concentration_v1/SCIENTIFIC_ASSESSMENT.md). **RL-E06:** [protocol](experiments/gfg_rl_selective_positive_feedback_dose_recovery_v1/PROTOCOL_FREEZE.md), [results](experiments/gfg_rl_selective_positive_feedback_dose_recovery_v1/RESULTS.md), [independent checker](experiments/gfg_rl_selective_positive_feedback_dose_recovery_v1/independent_checker.py). |
+| Section 7.1 | Receiving-state-conditioned functional response and persistent support reorganization were independently reproduced in ResNet-18/CIFAR-100 with SGD momentum and in a diffusion U-Net/CIFAR-10 system with AdamW. | **TL-G01:** [protocol](experiments/gfg_resnet_cifar_training_learning_generalization_v1/PROTOCOL_FREEZE.md), [results](experiments/gfg_resnet_cifar_training_learning_generalization_v1/RESULTS.md), [independent checker](experiments/gfg_resnet_cifar_training_learning_generalization_v1/INDEPENDENT_CHECKER.py). **TL-G02:** [protocol](experiments/gfg_ddpm_cifar_training_learning_generalization_v1/PROTOCOL_FREEZE.md), [results](experiments/gfg_ddpm_cifar_training_learning_generalization_v1/RESULTS.md), [independent checker](experiments/gfg_ddpm_cifar_training_learning_generalization_v1/INDEPENDENT_CHECKER.py). |
+| Section 7.2 | Frozen inference in all three ResNet seeds and all three diffusion seeds preserved exact learned state, recruited query-conditioned support, combined support non-additively and depended on training-formed component versions. | **INF-G01:** [protocol](experiments/gfg_cross_system_frozen_inference_projection_v1/PROTOCOL_FREEZE.md), [results](experiments/gfg_cross_system_frozen_inference_projection_v1/RESULTS.md), [independent checker](experiments/gfg_cross_system_frozen_inference_projection_v1/INDEPENDENT_CHECKER.py). |
+| Section 8 | The conclusion synthesizes the nanoGPT training–learning results, prospective prediction, frozen-inference evidence, bounded feedback result and cross-system validation. | **TL-E01–TL-E08**, **TL-P01**, **INF-E01**, **RL-E05–RL-E06**, **TL-G01–TL-G02** and **INF-G01**. |
 
 ## Foundational test of the recursive scientific process
 
@@ -76,8 +85,8 @@ replay or coalition intervention.
 - **Figure 2** summarizes the response morphologies established by TL-E04.
 - **Table 1** is generated from TL-P01's frozen confirmation results.
 - **Table 2** is generated from INF-E01's frozen inference comparisons.
-- **Figure 3** summarizes the relations established or connected in Sections
-  4, 6 and 7; it is not an additional experiment.
+- **Table 3** is generated from RL-E06's frozen dose, endpoint trade-off,
+  rebalancing-recovery and fresh-reproduction results.
 
 ## Artifact availability boundary
 
