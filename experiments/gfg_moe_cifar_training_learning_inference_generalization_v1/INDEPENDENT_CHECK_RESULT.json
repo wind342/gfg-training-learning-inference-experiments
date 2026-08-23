@@ -1,0 +1,12 @@
+{
+  "errors": [],
+  "formal_seeds": [
+    20260910,
+    20260911,
+    20260912
+  ],
+  "joint_verdict": "MOE_UNIFIED_DYNAMICS_SUPPORTED",
+  "recomputed_joint_verdict": "MOE_UNIFIED_DYNAMICS_SUPPORTED",
+  "schema": "gfg-moe-independent-check-v1",
+  "status": "PASS"
+}
