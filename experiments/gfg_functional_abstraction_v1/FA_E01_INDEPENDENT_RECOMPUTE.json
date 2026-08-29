@@ -1,0 +1,11 @@
+{
+  "checked_phase_null_replicates": 10000,
+  "checked_raw_fingerprint_arrays": 52,
+  "checked_run_phase_null_distributions": 52,
+  "eligible_run_count": 13,
+  "fingerprints_sha256": "284948aab0817eaacd62294b1bfec5542abf6827b44441a1501a401f00b0ab73",
+  "results_sha256": "715840b086b30f7d9ca6ad16b65ade93ada373eda1c173c873fddb801f53c250",
+  "schema": "fa-e01-independent-recompute-v1",
+  "status": "PASS",
+  "verdict": "INCONCLUSIVE"
+}

@@ -1,0 +1,59 @@
+{
+  "schema": "fa-e01-public-evidence-manifest-v1",
+  "repository_base": "36dab5ce347dbbdac157ef23205f556606d18294",
+  "protocol_commit": "88b10b2",
+  "verdict": "INCONCLUSIVE",
+  "eligible_run_count": 13,
+  "files": [
+    {
+      "name": "EXISTING_NANOGPT_AUDIT.md",
+      "bytes": 10217,
+      "sha256": "64c0388b07c231e38417d3b6bad06fc960bcfcf835b7deea8bbeeaeff990d972"
+    },
+    {
+      "name": "FA_E01_PROTOCOL_FREEZE.md",
+      "bytes": 14426,
+      "sha256": "20723f447ccb5a6598632d309bda370bb45641f47907ba826f5090b60097596b"
+    },
+    {
+      "name": "FA_E01_ANALYSIS.py",
+      "bytes": 35196,
+      "sha256": "8d767e48e334bf3956456f8e94b09b4bff4f27507f512af06473c3e10dae8df3"
+    },
+    {
+      "name": "FA_E01_RESULTS.json",
+      "bytes": 10607931,
+      "sha256": "715840b086b30f7d9ca6ad16b65ade93ada373eda1c173c873fddb801f53c250"
+    },
+    {
+      "name": "FA_E01_FINGERPRINTS.npz",
+      "bytes": 4052517,
+      "sha256": "284948aab0817eaacd62294b1bfec5542abf6827b44441a1501a401f00b0ab73"
+    },
+    {
+      "name": "FA_E01_INDEPENDENT_RECOMPUTE.py",
+      "bytes": 27085,
+      "sha256": "3549907fbf2a0d4ca0b71ee40aee89c91cdad91ae8ddd0c38653159d924f995e"
+    },
+    {
+      "name": "FA_E01_INDEPENDENT_RECOMPUTE.json",
+      "bytes": 436,
+      "sha256": "01b88fd9e0d86c53396bd2268aaca043fd3b35ce6018e2a7a47be47fabfaad28"
+    },
+    {
+      "name": "FA_E01_REPORT.md",
+      "bytes": 7259,
+      "sha256": "a1d93b8503fa59a5463d3b9cbf0f4b5b221502486b6cf25f78e2348bdccaa99a"
+    },
+    {
+      "name": "FA_E01_PUBLIC_EVIDENCE.md",
+      "bytes": 2971,
+      "sha256": "d480ad2978d38e5858ab8804f868c959c75c8e6f461826b7be41aa30eb827911"
+    },
+    {
+      "name": "FA_E01_PUBLIC_EVIDENCE_CHECKER.py",
+      "bytes": 3224,
+      "sha256": "1f13dc2266cc44ec58cf5514819eef0938268e6ec976578782dbc3eb1fec8441"
+    }
+  ]
+}
