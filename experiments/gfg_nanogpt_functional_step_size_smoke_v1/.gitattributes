@@ -1,0 +1,2 @@
+# The seal receipt is hashed byte-for-byte; preserve its original line endings.
+*.sha256 -text

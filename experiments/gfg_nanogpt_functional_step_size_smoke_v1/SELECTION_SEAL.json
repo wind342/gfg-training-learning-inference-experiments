@@ -1,0 +1,63 @@
+{
+  "code_hashes": {
+    "PROTOCOL_FREEZE.md": "e75df8a0a0426593ebce3dc9b3795cae771c43cd86127a06eed4de464096e150",
+    "adjudicate.py": "10c7461170a1ac0dca9a322f1fbe418e3473e888fd4f6f4024d5bf38e4b14f2d",
+    "common.py": "0d1689f253ce66bf05488855532cfa24c4a8affbc0e36e8ba601100ced05aaad",
+    "independent_checker.py": "cfadb98d3a0bf207940fd4d6f2e894dc71bc107a4942c188095f3fc734d0617e",
+    "runner.py": "b1c10a9c03490adbb23400d6aa63ae6562372da3cc99ae44b1e13f511ed88517",
+    "selector.py": "97aeab9c5708bbdab8a82eaada499ac7c8abd2297c98e68de56eafa1151cbf12",
+    "test_smoke.py": "96af4b9c51857f5e79f8404af6116206c95568e162f7333dec4fb58a58a43d55"
+  },
+  "created_utc": "2026-09-17T01:19:40.635833+00:00",
+  "evidence_files_opened_by_stage_a": [
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\competitor_handoff_outcome_v1\\COMPETITOR_COORDINATES.npz",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\competitor_handoff_outcome_v1\\COORDINATE_IDENTITY_LEDGER.jsonl.gz",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\competitor_handoff_outcome_v1\\FINAL_MANIFEST.json",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\competitor_handoff_outcome_v1\\SOURCE_SECTION_LEDGER.jsonl.gz",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\joint_rotation_branch_v1\\COORDINATE_IDENTITY_LEDGER.jsonl.gz",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\joint_rotation_branch_v1\\DERIVATIVE_AUDIT.json",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\joint_rotation_branch_v1\\FINAL_MANIFEST.json",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\joint_rotation_branch_v1\\JOINT_ROTATION_COORDINATES.npz",
+    "E:\\gfg-evidence\\nanogpt-adjacent-response-transport-v1\\submission\\IDENTITY_MATERIAL.json",
+    "E:\\gfg-evidence\\nanogpt-adjacent-response-transport-v1\\submission\\RESOLVED_INVENTORY.json"
+  ],
+  "frozen_commit": "36dab5ce347dbbdac157ef23205f556606d18294",
+  "frozen_tag": "paper-experiments-cross-system-feedback-release",
+  "ledger_sha256": "59b3d8faa7cade0cbaee17996667643aebe92ddcb5e9287bfccaaca31e27d655",
+  "positive_alpha_outcome_access": false,
+  "pre_source_hashes": {
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\competitor_handoff_outcome_v1\\COMPETITOR_COORDINATES.npz": "85fd3457ddbdab0555feb3146080deac902bfea7bb5571399dc9aa8c1fe356ec",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\competitor_handoff_outcome_v1\\COORDINATE_IDENTITY_LEDGER.jsonl.gz": "27a39f155e595338749215eb1c7bad723a82520589fcbaa80c318f1edc40c59b",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\competitor_handoff_outcome_v1\\FINAL_MANIFEST.json": "3b16d2ef3d092f2780385d646aa135b714286c8d22c849871cfb8e6565bee5dd",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\competitor_handoff_outcome_v1\\SOURCE_SECTION_LEDGER.jsonl.gz": "2b26da262ba60b7555a40ec4366e76cbf33a9f1f26bfd685f88bfa85795582c9",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\joint_rotation_branch_v1\\COORDINATE_IDENTITY_LEDGER.jsonl.gz": "8630c8fcb4f8599333ea8feff862f6bcfcd51b36f83743ee878f74b9f3116c5d",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\joint_rotation_branch_v1\\DERIVATIVE_AUDIT.json": "0b9df6882e49b8f78f5405f994efc4868261349350d1e9289d5ae1b65aab96b4",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\joint_rotation_branch_v1\\FINAL_MANIFEST.json": "755ef926b6c1e02cbc073e717d8c718b698acefbe31a6c0e82182349130dcb14",
+    "D:\\codex\\source-information-continuity-gfg-end-to-end-prediction-v1\\experiments\\gfg_nanogpt_cumulative_scientist_v1\\reports\\joint_rotation_branch_v1\\JOINT_ROTATION_COORDINATES.npz": "fe00fe146e463a396d3905cd2a536c2e95ee6ed0de06846d93677134cc569a75",
+    "E:\\gfg-evidence\\nanogpt-adjacent-response-transport-v1\\submission\\IDENTITY_MATERIAL.json": "7df00d5f49be9206a50950354778aac0601ef9eccf140d30deb6d89540a52c8c",
+    "E:\\gfg-evidence\\nanogpt-adjacent-response-transport-v1\\submission\\RESOLVED_INVENTORY.json": "8785e7749d7ca472c70d841f3ee3e868f1583cf346f24fd1bea624b1d725c2fd"
+  },
+  "record_count": 15264,
+  "rule": {
+    "alphas": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "correctness": "all_competitor_gaps_strictly_positive",
+    "formula": "((g0+a*first_gap)+a*a*joint_rotation)+a*a*hidden_curvature",
+    "score": [
+      "predicted_correct_count",
+      "median_predicted_minimum_margin",
+      "-abs(alpha-1)"
+    ],
+    "unit": "section",
+    "version": "functional-step-size-smoke-v1"
+  },
+  "rule_sha256": "a88ac3d0b8450c43e3925aee33184c87ae80f2e089ed0daf35dc408e74c9821e",
+  "run_count": 12,
+  "schema": "functional-step-size-selection-seal-v1",
+  "section_count": 72,
+  "status": "SEALED_BEFORE_OUTCOME_ACCESS"
+}

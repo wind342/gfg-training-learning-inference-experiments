@@ -1,0 +1,20 @@
+{
+  "checks": [
+    "Stage A source-read allowlist",
+    "sealed code/rule/ledger/source hashes",
+    "independently recomputed selections",
+    "native raw parameter/update/input identities",
+    "all source outcomes and target identities",
+    "all section/pooled/run/split metrics",
+    "fixed-alpha controls and shared-section oracle",
+    "archived TL-P01 equivalence"
+  ],
+  "frozen_commit": "36dab5ce347dbbdac157ef23205f556606d18294",
+  "frozen_tag_object": "5a3d12c3de6fce0d9b5f69aa07d009c61e5c189e",
+  "manifest_sha256": "14960f012e48a081bc70a72582aaba28a63c6ab1a08836e2221c357b2358acd3",
+  "record_count": 15264,
+  "run_count": 12,
+  "section_count": 72,
+  "selection_ledger_sha256": "59b3d8faa7cade0cbaee17996667643aebe92ddcb5e9287bfccaaca31e27d655",
+  "status": "PASS"
+}
