@@ -1,0 +1,948 @@
+{
+  "checks": [
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-481b86f81d58d496a687",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "44e5efe7abc1048c110023a324d75ce38d1ee029cd3c6d15cd85faac0cd6d716",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "68e6902b32983539ea5d35c20fe41c9c40f5c00963b1f11b98278b3a49e081af"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-481b86f81d58d496a687",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "0a5dfe61ad4805ea2b2eaf0ff3e74bb9a4e17b838159eca36c09b31e632d2f38",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "8ec90205b2bdea5f58cbf1beddddd1417ce4ca9c6dd5675fed8d4ef14c036f12"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-481b86f81d58d496a687",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "c2ae65e557f4ca5777cdf307ee649bbd96463ac246fdfe146f025ee4209b707f",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "fd95ceb1e02d1601039292db9ced809081a3fb68bbcfbec903fba23d9fc8a309"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3551
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "dfb003e67771b219691c357aabf57d1f1f4c901d8e7302d36c27bec63393308c",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "26ced8caf41b285f05de057b4269bc5e13a4592c723d220b62f1344fd7c14b0f"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "84f2b626ec93d2714997d28ee4cb0651be447ce8b01f51e6e2743d72221671dd",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "ade4e0438587427906325b8b60080893c0fbfcf79af87dadf90312f95746a859"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "b5ac61448eb09fed723314f9966d41ab45a2528752bede3cad2882dade2d4508",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "3058ddb7780141c3cd446c5e2bee4dec3e326e2378733442784630948ab1aeb2"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3565
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "561ce93e63404647295758412f5b0674cbf5f6aba4b766bcae1ee8890ba5d317",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "51edf206221e51cd254ff2aa7f2db208db06e5ed48a6d599d6c59d31cf432307"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "1dcec6ed56867c3de97af53b92079e304c422c5e1fdcc7bcd4188c90c2dc9127",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "5139fcd6b09037ad89d9d9c4ff7fbdbfce1518ed81e6f9066aa0cc1b1b86c561"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "a640cf16a170d53c8adaf6202d90f9f2f7fe1aeb5bed8fb76fa9e622ebea6a80",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "4dd4cfb7ed7b330eb197f7a6fc04e280d5ab91cc0ab78088804321dc88d1b625"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3643
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "39c435cef36f2b51757dbc4f60f855a899e8624caba92b424ba493255ff36e72",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "f988d995a61a77829ba9acd88f0ab517fbf02358e6daca6f2628609e4275592c"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "8b4adc64676b5148a3bca4b8dd1f5874f70e7bb02807194a7f68c4541b3aea93",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "d116bd2738cf985de726fca99bcaa7d06bafc77c07fd260bdfcfd0b3c594d3ec"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "d4c10740be43165e908495ee3c3619d5c14dd07ab57fda816326e4907daa2e53",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "61d4331999f313226d3e4a98120fedadccaa885e58d0785727ca9becea6aefd1"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3582
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 3207,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2243,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 600,
+          "relations": 4886
+        },
+        "database_sha256": "58a6a8f885cd5ca6d475f3bc79a0e7809c3a66aa687f7f38495e86e8621ff7da",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "054acc913355f7c7609b278e0e8c52fe8a8f256abfdd0ccb028b1368d48d18af"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 3207,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2243,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 600,
+          "relations": 4886
+        },
+        "database_sha256": "9bf10045505e4448dda0c76e17be57ef29cb819e8846b211844c5ae74ded2fab",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "ea5559549fe944c4c71e746bab19440a19e39bee8f4456f25f2b062d14b22950"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 3207,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2243,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 600,
+          "relations": 4886
+        },
+        "database_sha256": "242922e5282c78a8aa33a4e4344302f5a13d43d57709c4c5729ac485389a4346",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "a82a568b9d3903d08aba4a2c1582cf4d506343e8d34b8750346ee172751ab509"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3567
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-7a22f51938059541de98",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "09cb3911a67ff9184c26df3fe534db6f0fef1702b4f6cbffd5617fd7269e31a7",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "c451b5c3d13680ca6283ed1e30349fc1efe6cef2a414f06f5f6009323db9e62d"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-7a22f51938059541de98",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "083635e83a19387e6a6711da5f0916c378d075108e6252e81b8034c40d929b6e",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "0599d3246db59d2142706510cc3631fa4d346afafa3346443acd642283d6444b"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-7a22f51938059541de98",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "7fe9dc5cd58123cf5cf6abcdfeb8033cf40e0ea64bb4c243f20db51f892016f8",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "bf4c09f2bc3387d8a21ddbdf50df4ea67ad8a2f28d53d720b70e6b5c42eaefca"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3556
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 3207,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2243,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 600,
+          "relations": 4886
+        },
+        "database_sha256": "ec9fef0e97629247126ed5e8e4555c29be99e02f364dd2168178d0fd5be72782",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "680a7a2c6357cd2485648a87eeda8d3f90cdc3e197a1c7b10933e6c62775528c"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 3207,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2243,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 600,
+          "relations": 4886
+        },
+        "database_sha256": "f86a722e3058cc2c9e71a3a07f8f12be92fc85ff0b0ad8bbde157b9fe1c75a02",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "2e7e1ca20e7dded610a0f4782d0e86835ba7c075b633fe18eb488c80caa6d664"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 3207,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2243,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 600,
+          "relations": 4886
+        },
+        "database_sha256": "7e4b827117939b836a858455956b25e1b52d899b51f342ff1f145c3795021eaa",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "7e0122b5e7471a72a51f0361632a2361edc1d9456969eaf1024685958e96a9c7"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3643
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 3207,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2243,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 600,
+          "relations": 4886
+        },
+        "database_sha256": "439bcaccb9791c707f04abafd0e257e913e3199b7e0fb2946315f0e157eee3e6",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "ab1558a5e20132d17e68bf4d653c08db8e71e01e3786b45f2c11bcd43419b70a"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 3207,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2243,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 600,
+          "relations": 4886
+        },
+        "database_sha256": "f1283ea1635680d00556a6b5fd70c2ef10e541dcd1eb20e8de02891a2b61c4c5",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "2f4495787148e68e311a714730dd82db35150db16cf76bc06dc08e95c7e8f359"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 3207,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2243,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 600,
+          "relations": 4886
+        },
+        "database_sha256": "56e3d60fff76645644cf0512b40e42120d33d1415e14840644e2491b29c19d63",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "474d18db0e3db3efda486b278c1a12a8049afe4dd4c11adce43732ea98e35de6"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3584
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "7b6bb70dac8df3efbc10254d06ecff8ac93935ff0754078fce330e0f5f1374e0",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "c17a2b71d25e82507f2a746dfecbcc75faa4f451ed1c1e9bd2c5185e8e5cc422"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "8096d2f4a11ffe90d7d231478dc2ce5f1e33cd9528171b37c2171b4a42e26788",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "c6ba375cdd32c0919c3ede8ac4fd08f3b3765fb3a60434a8a0baf85ec9cc3501"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "25f26636bdeb04d90eb3d6ce7317251c54b5aba251dc01836fd9e6fd8f0a3ed0",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "13ad6dcb88407234407aa05cfb576cae41c994be98655f990fcb5de849abff95"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3592
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "92a20dd9402c613d6e65daec07bc7df22c6629acf91d5a990e4b431d7cf8064d",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "97acad57dcfb25c253199532a61bf75deb177d634ee980cf71aa06ff7a04b989"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "0120bb7b432881ca67eb9c32dc0e8d0edd7afdb7046acbdb0424c6bb05441c03",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "3c554cfa71c48a008780ab9c2e617e58139c21b34243f652eb0aa2d51ae1add8"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "ec306f2ec25e0658ed9c30114c7811cfbf5257e289cc4435bfe9cd6768ffd7fb",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "78b646947eec0a0ec4dd497d58e77085d9538767c3b166667bfb21186569027e"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3590
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "1a58f87e86a5bc035945fa76814258bfade338bfbde3357f550adb0be77e4caf",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "5d1d23d8f14a2870c14fea35b5d3a438dc7c8a1af6a9241818958f5e46cc72bb"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "190b4a66d7d7253b2e36d3e24599f36115e7ccda6ec1df610c8c65a9e1113db7",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "0ae211a62985362722e0768ceac1d0854e0852940757a18c60cdf7e19c3604b5"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "f2a5f94d5840f5fa95e2f74c56efb84fdd09f71388ffae0ca700cb281e3a4438",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "ba03ba90dc2101009dc031dec8e658693baa08aace1e268b2e340f57b43c502b"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3614
+    },
+    {
+      "branch": "native",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "c7a17e65b4bafc5cff47d3d34a19d8b03933d1c8e855dec54e531fd19ac99e92",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "efca1370020d48afc513bb99352d094d45c4d37f2c5bdc1a37f4a5ff8a8b38e7"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1649
+    },
+    {
+      "branch": "fixed",
+      "controller_coordinates_reexecuted": 0,
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "42011695a76df069faff7ee69004c4ff08e0a5aa638ecb66643ab3cd04e38471",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "53a4bb48f6eee2302673bfc15a878a7223586ed38f40cec7abe3239672965bd2"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 1849
+    },
+    {
+      "branch": "controller",
+      "controller_coordinates_reexecuted": 200,
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "full_gradient_proposal_optimizer_and_applied_state_reexecution": true,
+      "graph": {
+        "checks": 2607,
+        "counts": {
+          "blocks": 201,
+          "checkpoints": 0,
+          "facts": 2043,
+          "objects": 1024,
+          "occurrences": 622,
+          "origins": 400,
+          "relations": 4486
+        },
+        "database_sha256": "8359d8b0077fd6b92a181f980b8f10e76074a0e8d00ffb499817df051a82fb3d",
+        "schema": "nanogpt-support-redundancy-gfg-validation-v1",
+        "status": "PASS",
+        "validation_sha256": "8c1f3a277dbbe0e15794f05d7e43f03a0c37c874e8398205d829fad5bb4a26a2"
+      },
+      "native_trainer_byte_exact": true,
+      "replayed_steps": 200,
+      "status": "PASS",
+      "validated_tensor_references": 3557
+    }
+  ],
+  "controller_selection_and_coordinate_recomputations": 2400,
+  "elapsed_seconds": 1035.5538778000046,
+  "formal_steps": 7200,
+  "native_equivalence_steps": 2400,
+  "outcome_leakage_assurance": "Frozen source audit + pure selector input boundary + denied external evidence reads + durable per-step stage seals + complete replay; not an adversarial OS isolation proof.",
+  "protocol_sha256": "2163977ffc2e0ea90dd93d5cbf035b1d308c8618437c38492545fc2abe464c20",
+  "status": "PASS",
+  "verdict": "ONLINE_FUNCTIONAL_CONTROLLER_NOT_SUPPORTED"
+}

@@ -1,0 +1,12 @@
+{
+  "cuda_runtime": "12.8",
+  "dependency_added_before_freeze": "scipy==1.16.3, no dependency upgrades",
+  "numpy": "2.5.2",
+  "optimizer_sources": {
+    "D:\\codex\\envs\\gfg-resnet-generalization-v1\\Lib\\site-packages\\torch\\optim\\adam.py": "396feda9fae397a6ffbfcd109a8a885c9a31f96c8fc79335e474ab62a69302dc",
+    "D:\\codex\\envs\\gfg-resnet-generalization-v1\\Lib\\site-packages\\torch\\optim\\adamw.py": "b54164da70821c47d1e4753907d375eb252773bd034863b7804a943fbdfa837a"
+  },
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "scipy": "1.16.3",
+  "torch": "2.11.0+cu128"
+}

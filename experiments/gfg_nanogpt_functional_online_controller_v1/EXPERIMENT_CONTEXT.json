@@ -1,0 +1,25 @@
+{
+  "available_output_bytes": 39924662272,
+  "branches": [
+    "native",
+    "fixed",
+    "controller"
+  ],
+  "cadence": 10,
+  "control_and_evaluation_targets_are_same": true,
+  "created_utc": "2026-09-17T02:21:42.356397+00:00",
+  "formal_outcomes_accessed": false,
+  "frozen_research_commit": "36dab5ce347dbbdac157ef23205f556606d18294",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "horizon": 200,
+  "initial_rng_seed_reconstruction_matches_all_saved_hashes": true,
+  "numpy": "2.5.2",
+  "output_root": "E:\\gfg-evidence\\nanogpt-functional-online-controller-v1",
+  "parent_commit": "2ee3d7fbff4bd33a200654d733c9f8e1850a589f",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "D:\\codex\\envs\\gfg-resnet-generalization-v1\\Scripts\\python.exe",
+  "schema": "gfg-functional-online-controller-v1",
+  "targets_per_run": 212,
+  "torch": "2.11.0+cu128",
+  "trainer_model_sha256": "63d46bccd28157de4ae3d4e714f3945370be708852d2f411e0d017a7da5f8d39"
+}

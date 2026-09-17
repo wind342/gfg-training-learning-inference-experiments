@@ -1,0 +1,261 @@
+{
+  "checks": [
+    {
+      "branch": "native",
+      "entry_id": "entry-481b86f81d58d496a687",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-481b86f81d58d496a687",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-481b86f81d58d496a687",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4150
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4164
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4242
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4181
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4166
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-7a22f51938059541de98",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-7a22f51938059541de98",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-7a22f51938059541de98",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4155
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4242
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4183
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4191
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4189
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4213
+    },
+    {
+      "branch": "native",
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2248
+    },
+    {
+      "branch": "fixed",
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 2448
+    },
+    {
+      "branch": "controller",
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "rng_payloads_bound": 200,
+      "states_rebuilt": 401,
+      "tensor_references_checked": 4156
+    }
+  ],
+  "elapsed_seconds": 1022.3920627000043,
+  "protocol_sha256": "2163977ffc2e0ea90dd93d5cbf035b1d308c8618437c38492545fc2abe464c20",
+  "scientific_code_protocol_and_results_unchanged": true,
+  "scope": "All GFG tensor payload references, full restorable state commitments and RNG payload-to-commitment binding using frozen repository loaders.",
+  "status": "PASS"
+}

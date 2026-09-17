@@ -1,0 +1,16 @@
+{
+  "all_current_model_parameters_substituted_by_pre_state": true,
+  "alpha_one_native_bytes_exact": true,
+  "coordinate_seconds": [
+    0.45587659999728203,
+    0.0565982999978587,
+    0.06589560001157224,
+    0.06035790001624264
+  ],
+  "estimated_2400_coordinate_seconds": 144.85896003898233,
+  "formal_checkpoint_or_outcome_access": false,
+  "no_moment_scaling": true,
+  "selector_arithmetic": "same imported smoke rule, independent recomputation agrees",
+  "status": "PASS",
+  "synthetic_native_replay_steps": 4
+}
