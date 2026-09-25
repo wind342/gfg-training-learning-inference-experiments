@@ -1,0 +1,22 @@
+{
+  "lr_rule": "0.125 * previous minimum",
+  "no_original_source_changes": true,
+  "purpose": "Instrumented decomposition only; not selection or capability evidence",
+  "scales": [
+    "70",
+    "160"
+  ],
+  "seed": 701,
+  "sha256": "e98bc278d42e7c955b5bb3c87c90d28a925d400a5e829639cdf9202044898e63",
+  "source": "profile_diagnostic.py",
+  "updates": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "warmup": [
+    1,
+    2
+  ]
+}

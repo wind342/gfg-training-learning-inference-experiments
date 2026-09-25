@@ -1,0 +1,116 @@
+{
+  "160": {
+    "formal": {
+      "safe": {
+        "dynamic": {
+          "memory": 4156073472,
+          "reach": 3,
+          "restricted_steps": 100.66666666666667,
+          "wall": 31.520283166668378
+        },
+        "fixed": {
+          "memory": 4045401088,
+          "reach": 2,
+          "restricted_steps": 193,
+          "wall": 49.75937103336522
+        },
+        "native": {
+          "memory": 2736335872,
+          "reach": 3,
+          "restricted_steps": 92.33333333333333,
+          "wall": 11.509908100008033
+        },
+        "tuned_native": {
+          "memory": 2736335872,
+          "reach": 3,
+          "restricted_steps": 82.66666666666667,
+          "wall": 10.15213770000264
+        }
+      }
+    },
+    "selection": {
+      "exact_gate": true,
+      "near": null,
+      "rates": [
+        3.125e-06,
+        6.25e-06,
+        1.25e-05,
+        2.5e-05,
+        5e-05
+      ],
+      "safe": 0,
+      "severe": null,
+      "tuned_native_index": 1
+    }
+  },
+  "70": {
+    "formal": {
+      "near": {
+        "dynamic": {
+          "memory": 1892453888,
+          "reach": 3,
+          "restricted_steps": 171.66666666666666,
+          "wall": 27.29576383329307
+        },
+        "fixed": {
+          "memory": 1817678336,
+          "reach": 3,
+          "restricted_steps": 125,
+          "wall": 15.327436066620672
+        },
+        "native": {
+          "memory": 1249126912,
+          "reach": 3,
+          "restricted_steps": 185,
+          "wall": 11.71227163328634
+        },
+        "tuned_native": {
+          "memory": 1249126912,
+          "reach": 3,
+          "restricted_steps": 112,
+          "wall": 7.168448000020969
+        }
+      },
+      "safe": {
+        "dynamic": {
+          "memory": 1892453888,
+          "reach": 3,
+          "restricted_steps": 151.33333333333334,
+          "wall": 23.974488099998172
+        },
+        "fixed": {
+          "memory": 1817678336,
+          "reach": 0,
+          "restricted_steps": 201,
+          "wall": 24.246532766652916
+        },
+        "native": {
+          "memory": 1249126912,
+          "reach": 3,
+          "restricted_steps": 129,
+          "wall": 8.142990433378145
+        },
+        "tuned_native": {
+          "memory": 1249126912,
+          "reach": 3,
+          "restricted_steps": 112,
+          "wall": 7.123027800000273
+        }
+      }
+    },
+    "selection": {
+      "exact_gate": true,
+      "near": 4,
+      "rates": [
+        3.7688918072220455e-06,
+        7.537783614444091e-06,
+        1.5075567228888182e-05,
+        3.0151134457776364e-05,
+        6.030226891555273e-05
+      ],
+      "safe": 0,
+      "severe": null,
+      "tuned_native_index": 1
+    }
+  }
+}

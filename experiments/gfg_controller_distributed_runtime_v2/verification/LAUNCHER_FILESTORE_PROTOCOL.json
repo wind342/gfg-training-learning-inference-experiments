@@ -1,0 +1,132 @@
+{
+  "commands": [
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-runtime-0.001",
+        "--rdzv_id=gfg-v2-runtime-0.001",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_train",
+        "--factory",
+        "experiments.gfg_controller_distributed_runtime_v2.launch_fixture:factory"
+      ],
+      "kind": "runtime",
+      "lr": 0.001
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-runtime-0.003",
+        "--rdzv_id=gfg-v2-runtime-0.003",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_train",
+        "--factory",
+        "experiments.gfg_controller_distributed_runtime_v2.launch_fixture:factory"
+      ],
+      "kind": "runtime",
+      "lr": 0.003
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-runtime-0.01",
+        "--rdzv_id=gfg-v2-runtime-0.01",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_train",
+        "--factory",
+        "experiments.gfg_controller_distributed_runtime_v2.launch_fixture:factory"
+      ],
+      "kind": "runtime",
+      "lr": 0.01
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-oracle-0.001",
+        "--rdzv_id=gfg-v2-oracle-0.001",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_gate",
+        "--lr",
+        "0.001"
+      ],
+      "kind": "oracle",
+      "lr": 0.001
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-oracle-0.003",
+        "--rdzv_id=gfg-v2-oracle-0.003",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_gate",
+        "--lr",
+        "0.003"
+      ],
+      "kind": "oracle",
+      "lr": 0.003
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-oracle-0.01",
+        "--rdzv_id=gfg-v2-oracle-0.01",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_gate",
+        "--lr",
+        "0.01"
+      ],
+      "kind": "oracle",
+      "lr": 0.01
+    }
+  ],
+  "environment": {
+    "TORCH_DISABLE_SHARE_RDZV_TCP_STORE": "1",
+    "USE_LIBUV": "0"
+  },
+  "reason": "Installed c10d/static TCPStore constructors omit use_libuv; explicit rendezvous option was ignored. FileStore plus disabled store sharing avoids those constructors.",
+  "source_sha256": "08c99c3a73827219b1540b778a7596b77486cc71ce0a9b4ef80c21f8d3fb792b",
+  "timeout_seconds_per_case": 180,
+  "world_size": 1
+}

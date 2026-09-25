@@ -1,0 +1,97 @@
+{
+  "communication_seconds": "NOT_APPLICABLE_SINGLE_GPU",
+  "directional_workspace_isolated": "NOT_MEASURED",
+  "kind": "synchronizing_diagnostic_not_production_benchmark",
+  "memory_bytes": {
+    "candidate": 285621248,
+    "delta": 285621248,
+    "gradients": 285621248,
+    "optimizer": 571242796,
+    "parameters": 285621248
+  },
+  "note": "Nested timers overlap; optimizer is inside proposal. Do not sum all rows.",
+  "rows": [
+    {
+      "accuracy": 0.056782334384858045,
+      "alpha": 0.5,
+      "decision": false,
+      "evaluation_wall": 0.029352899990044534,
+      "instrumented_update_wall": 0.11456290003843606,
+      "peak_allocated": 1815863296,
+      "peak_reserved": 2120220672,
+      "seconds": {
+        "evaluation/forward": 0.02100619999691844,
+        "update/backward": 0.018593200016766787,
+        "update/commit": 0.005017400020733476,
+        "update/forward": 0.009074899950064719,
+        "update/global_clip": 0.00469680002424866,
+        "update/optimizer_step": 0.008422599988989532,
+        "update/proposal_including_optimizer": 0.07485820003785193
+      },
+      "step": 3
+    },
+    {
+      "accuracy": 0.04416403785488959,
+      "alpha": 0.5,
+      "decision": false,
+      "evaluation_wall": 0.021530300029553473,
+      "instrumented_update_wall": 0.137399600003846,
+      "peak_allocated": 1815863296,
+      "peak_reserved": 2120220672,
+      "seconds": {
+        "evaluation/forward": 0.020711899967864156,
+        "update/backward": 0.01917330001015216,
+        "update/commit": 0.005253400071524084,
+        "update/forward": 0.008900800021365285,
+        "update/global_clip": 0.0046039000153541565,
+        "update/optimizer_step": 0.008610200020484626,
+        "update/proposal_including_optimizer": 0.09781940001994371
+      },
+      "step": 4
+    },
+    {
+      "accuracy": 0.050473186119873815,
+      "alpha": 0.5,
+      "decision": false,
+      "evaluation_wall": 0.021298400009982288,
+      "instrumented_update_wall": 0.095687200082466,
+      "peak_allocated": 1815863296,
+      "peak_reserved": 2120220672,
+      "seconds": {
+        "evaluation/forward": 0.02058849995955825,
+        "update/backward": 0.018866300000809133,
+        "update/commit": 0.005019899923354387,
+        "update/forward": 0.00873420003335923,
+        "update/global_clip": 0.004567399970255792,
+        "update/optimizer_step": 0.008755400078371167,
+        "update/proposal_including_optimizer": 0.05680290004238486
+      },
+      "step": 5
+    },
+    {
+      "accuracy": 0.0473186119873817,
+      "alpha": 1.0,
+      "decision": true,
+      "evaluation_wall": 0.02130710007622838,
+      "instrumented_update_wall": 0.29080119996797293,
+      "peak_allocated": 1890885120,
+      "peak_reserved": 2120220672,
+      "seconds": {
+        "evaluation/forward": 0.020623199990950525,
+        "update/backward": 0.01907569996546954,
+        "update/boundary_including_selector": 0.007981600007042289,
+        "update/commit": 0.0027054999954998493,
+        "update/directional_including_materialization": 0.1829589999979362,
+        "update/forward": 0.008694899966940284,
+        "update/global_clip": 0.0053943999810144305,
+        "update/optimizer_step": 0.008447900065220892,
+        "update/proposal_including_optimizer": 0.06152710004244
+      },
+      "step": 6
+    }
+  ],
+  "scale": "70",
+  "seed": 701,
+  "source_sha256": "e98bc278d42e7c955b5bb3c87c90d28a925d400a5e829639cdf9202044898e63",
+  "world_size": 1
+}

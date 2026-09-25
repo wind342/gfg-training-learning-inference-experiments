@@ -1,0 +1,13 @@
+{
+  "diagnosis": "Supplemental oracle call incorrectly passed learning rate as cached_alpha. At step1 the oracle recalculated alpha; at steps2-5 it reused the supplied LR. Runtime and main sealed gates/scale runs are unchanged. Fix the oracle argument to the prior alpha; preserve all original mismatch receipts.",
+  "original_source_sha256": "99c47eacb0cd2fa59feac24906be2bfaaf4389c3fc4a10d5f9cf62aa7c0a618b",
+  "output": "distributed-oracle-gate-v2",
+  "rates": [
+    0.001,
+    0.003,
+    0.01
+  ],
+  "sha256": "11c48317870393aa25a480ce39d475c061d6bb9681eb610e2ca8c0a0e369e6b3",
+  "source": "distributed_gate.py",
+  "world_size": 1
+}

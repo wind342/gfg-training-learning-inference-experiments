@@ -1,0 +1,1660 @@
+{
+  "cases": [
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 270468,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 36,
+              "hidden_chunk": 1024,
+              "measured_peak_increment": 21850624,
+              "predicted_workspace": 48220324,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 57476,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 36,
+              "hidden_chunk": 1024,
+              "measured_peak_increment": 21637632,
+              "predicted_workspace": 48220324,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 4.163336342344337e-17,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 36,
+              "hidden_chunk": 1024,
+              "measured_peak_increment": 1895424,
+              "predicted_workspace": 48220324,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 57476,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 7735808,
+              "predicted_workspace": 21896612,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 1024,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 270468,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 36,
+              "hidden_chunk": 1024,
+              "measured_peak_increment": 21850624,
+              "predicted_workspace": 48220324,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 57476,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 36,
+              "hidden_chunk": 1024,
+              "measured_peak_increment": 21637632,
+              "predicted_workspace": 48220324,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 4.163336342344337e-17,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 36,
+              "hidden_chunk": 1024,
+              "measured_peak_increment": 1895424,
+              "predicted_workspace": 48220324,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 57476,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 7735808,
+              "predicted_workspace": 21896612,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 1024,
+      "seed": 222
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 540804,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 2048,
+              "measured_peak_increment": 23428096,
+              "predicted_workspace": 50501284,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 114820,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 2048,
+              "measured_peak_increment": 23002112,
+              "predicted_workspace": 50501284,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 6.938893903907228e-17,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 2048,
+              "measured_peak_increment": 3787776,
+              "predicted_workspace": 50501284,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 114820,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 10340864,
+              "predicted_workspace": 29113764,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 2048,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 540804,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 2048,
+              "measured_peak_increment": 23428096,
+              "predicted_workspace": 50501284,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 114820,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 2048,
+              "measured_peak_increment": 23002112,
+              "predicted_workspace": 50501284,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 1.1102230246251565e-16,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 2048,
+              "measured_peak_increment": 3787776,
+              "predicted_workspace": 50501284,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 114820,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 10340864,
+              "predicted_workspace": 29113764,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 2048,
+      "seed": 222
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1081476,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 4096,
+              "measured_peak_increment": 23976960,
+              "predicted_workspace": 52012196,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 0.75,
+          "scores_exact": true,
+          "selected_alpha": 0.75,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 229508,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 4096,
+              "measured_peak_increment": 23010304,
+              "predicted_workspace": 52012196,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 0.75,
+          "scores_exact": true,
+          "selected_alpha": 0.75,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 2.914335439641036e-16,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 4096,
+              "measured_peak_increment": 7687168,
+              "predicted_workspace": 52012196,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 0.75,
+          "scores_exact": true,
+          "selected_alpha": 0.75,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 229508,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 15665664,
+              "predicted_workspace": 43548068,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 0.75,
+          "scores_exact": true,
+          "selected_alpha": 0.75,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 4096,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1081476,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 4096,
+              "measured_peak_increment": 23976960,
+              "predicted_workspace": 52012196,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 229508,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 4096,
+              "measured_peak_increment": 23010304,
+              "predicted_workspace": 52012196,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 1.8041124150158794e-16,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 18,
+              "hidden_chunk": 4096,
+              "measured_peak_increment": 7801856,
+              "predicted_workspace": 52012196,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 229508,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 15780352,
+              "predicted_workspace": 43548068,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 4096,
+      "seed": 222
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 135300,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 512,
+              "measured_peak_increment": 21330944,
+              "predicted_workspace": 47889828,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 28804,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 512,
+              "measured_peak_increment": 21224448,
+              "predicted_workspace": 47889828,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 2.7755575615628914e-17,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 512,
+              "measured_peak_increment": 1242624,
+              "predicted_workspace": 47889828,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 28804,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 6433280,
+              "predicted_workspace": 18288036,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 512,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 135300,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 512,
+              "measured_peak_increment": 21330944,
+              "predicted_workspace": 47889828,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 28804,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 512,
+              "measured_peak_increment": 21224448,
+              "predicted_workspace": 47889828,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 1.3877787807814457e-17,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 512,
+              "measured_peak_increment": 1242624,
+              "predicted_workspace": 47889828,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 28804,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 6433280,
+              "predicted_workspace": 18288036,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 512,
+      "seed": 222
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 17028,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 64,
+              "measured_peak_increment": 2830336,
+              "predicted_workspace": 10196900,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 3716,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 64,
+              "measured_peak_increment": 2817024,
+              "predicted_workspace": 10196900,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 1.3877787807814457e-17,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 64,
+              "measured_peak_increment": 364544,
+              "predicted_workspace": 10196900,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 3716,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 64,
+              "measured_peak_increment": 2826752,
+              "predicted_workspace": 10196900,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 64,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 17028,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 64,
+              "measured_peak_increment": 2830336,
+              "predicted_workspace": 10196900,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 3716,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 64,
+              "measured_peak_increment": 2817024,
+              "predicted_workspace": 10196900,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 1.3877787807814457e-17,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 64,
+              "measured_peak_increment": 364544,
+              "predicted_workspace": 10196900,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 3716,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 64,
+              "measured_peak_increment": 2826752,
+              "predicted_workspace": 10196900,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 64,
+      "seed": 222
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 2162820,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 9,
+              "hidden_chunk": 8192,
+              "measured_peak_increment": 27555328,
+              "predicted_workspace": 57250980,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 458884,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 9,
+              "hidden_chunk": 8192,
+              "measured_peak_increment": 25851392,
+              "predicted_workspace": 57250980,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 4.440892098500626e-16,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 9,
+              "hidden_chunk": 8192,
+              "measured_peak_increment": 15731712,
+              "predicted_workspace": 57250980,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 458884,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 36,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 19192832,
+              "predicted_workspace": 47704228,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 8192,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": false,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 2162820,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 9,
+              "hidden_chunk": 8192,
+              "measured_peak_increment": 27555328,
+              "predicted_workspace": 57250980,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "exact",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 458884,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 9,
+              "hidden_chunk": 8192,
+              "measured_peak_increment": 25851392,
+              "predicted_workspace": 57250980,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "exact",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 4.440892098500626e-16,
+          "coordinates_exact": false,
+          "dedup": true,
+          "metadata": {
+            "backend": "scalarized",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 1188,
+              "target_collectives": 0,
+              "target_elements": 33,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 9,
+              "hidden_chunk": 8192,
+              "measured_peak_increment": 15731712,
+              "predicted_workspace": 57250980,
+              "target_tile": 16
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "scalarized",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        },
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 458884,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 36,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 19516416,
+              "predicted_workspace": 47704228,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 8192,
+      "seed": 222
+    }
+  ]
+}

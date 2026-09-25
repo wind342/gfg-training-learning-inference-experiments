@@ -1,0 +1,12 @@
+{
+  "purpose": "Portable multi-GPU oracle gate, same 6 updates and 3 LRs, no scientific changes",
+  "rates": [
+    0.001,
+    0.003,
+    0.01
+  ],
+  "real_multi_gpu_status": "NOT_TESTED",
+  "sha256": "99c47eacb0cd2fa59feac24906be2bfaaf4389c3fc4a10d5f9cf62aa7c0a618b",
+  "source": "distributed_gate.py",
+  "world1_check": "pending portable rendezvous workaround"
+}

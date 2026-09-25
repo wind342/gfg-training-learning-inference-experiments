@@ -1,0 +1,66 @@
+{
+  "commands": [
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-oracle-v2-0.001",
+        "--rdzv_id=gfg-v2-oracle-corrected-0.001",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_gate",
+        "--lr",
+        "0.001"
+      ],
+      "kind": "oracle",
+      "lr": 0.001
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-oracle-v2-0.003",
+        "--rdzv_id=gfg-v2-oracle-corrected-0.003",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_gate",
+        "--lr",
+        "0.003"
+      ],
+      "kind": "oracle",
+      "lr": 0.003
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-oracle-v2-0.01",
+        "--rdzv_id=gfg-v2-oracle-corrected-0.01",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_gate",
+        "--lr",
+        "0.01"
+      ],
+      "kind": "oracle",
+      "lr": 0.01
+    }
+  ],
+  "source_seal_sha256": "8dd4f8ed26708d3365303d0e128e99405d4188f8a6c5255646679bbe92d1ad07",
+  "world_size": 1
+}

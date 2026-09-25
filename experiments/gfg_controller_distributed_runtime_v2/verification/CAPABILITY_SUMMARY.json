@@ -1,0 +1,1487 @@
+{
+  "generalization_note": "317 controller-disjoint evaluation queries are included in the training distribution.",
+  "groups": [
+    {
+      "alpha_histogram": {
+        "0.25": 94
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 1.25e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.21089364995714277,
+      "observed_wall_mean": 24.105197199969552,
+      "peak_allocated": 4045401088,
+      "peak_reserved": 4148166656,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 94,
+      "runs": 1,
+      "scale": "160",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        94
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        36096
+      ],
+      "wall_to99_each": [
+        24.105188900022767
+      ],
+      "wall_to99_mean_successful_only": 24.105188900022767
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 84
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 2.5e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.2190696499310434,
+      "observed_wall_mean": 21.9485559000168,
+      "peak_allocated": 4045401088,
+      "peak_reserved": 4148166656,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 84,
+      "runs": 1,
+      "scale": "160",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        84
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        32256
+      ],
+      "wall_to99_each": [
+        21.948546399944462
+      ],
+      "wall_to99_mean_successful_only": 21.948546399944462
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 194
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 3.125e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.21287834999384359,
+      "observed_wall_mean": 49.63471840007696,
+      "peak_allocated": 4045401088,
+      "peak_reserved": 4148166656,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 194,
+      "runs": 1,
+      "scale": "160",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        194
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        74496
+      ],
+      "wall_to99_each": [
+        49.63463710003998
+      ],
+      "wall_to99_mean_successful_only": 49.63463710003998
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 92
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 5e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.21547754999483004,
+      "observed_wall_mean": 23.723040700075217,
+      "peak_allocated": 4045401088,
+      "peak_reserved": 4148166656,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 92,
+      "runs": 1,
+      "scale": "160",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        92
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        35328
+      ],
+      "wall_to99_each": [
+        23.72302820009645
+      ],
+      "wall_to99_mean_successful_only": 23.72302820009645
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 126
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 6.25e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.21187860000645742,
+      "observed_wall_mean": 32.11767430009786,
+      "peak_allocated": 4045401088,
+      "peak_reserved": 4148166656,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 126,
+      "runs": 1,
+      "scale": "160",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        126
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        48384
+      ],
+      "wall_to99_each": [
+        32.117665600031614
+      ],
+      "wall_to99_mean_successful_only": 32.117665600031614
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 92
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 1.25e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.08136910002212971,
+      "observed_wall_mean": 11.429161200067028,
+      "peak_allocated": 2736335872,
+      "peak_reserved": 2839543808,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 92,
+      "runs": 1,
+      "scale": "160",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        92
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        35328
+      ],
+      "wall_to99_each": [
+        11.429151899996214
+      ],
+      "wall_to99_mean_successful_only": 11.429151899996214
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 130
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 2.5e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.08125854993704706,
+      "observed_wall_mean": 16.210915600066073,
+      "peak_allocated": 2736335872,
+      "peak_reserved": 2839543808,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 130,
+      "runs": 1,
+      "scale": "160",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        130
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        49920
+      ],
+      "wall_to99_each": [
+        16.210906899999827
+      ],
+      "wall_to99_mean_successful_only": 16.210906899999827
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 94
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 3.125e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.08058649994200096,
+      "observed_wall_mean": 11.613513899967074,
+      "peak_allocated": 2736335872,
+      "peak_reserved": 2839543808,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 94,
+      "runs": 1,
+      "scale": "160",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        94
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        36096
+      ],
+      "wall_to99_each": [
+        11.61350490001496
+      ],
+      "wall_to99_mean_successful_only": 11.61350490001496
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 169
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 5e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.0814831000752747,
+      "observed_wall_mean": 21.062990900012664,
+      "peak_allocated": 2736335872,
+      "peak_reserved": 2839543808,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 169,
+      "runs": 1,
+      "scale": "160",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        169
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        64896
+      ],
+      "wall_to99_each": [
+        21.062981999944896
+      ],
+      "wall_to99_mean_successful_only": 21.062981999944896
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 84
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 6.25e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.08187519997591153,
+      "observed_wall_mean": 10.530325500061736,
+      "peak_allocated": 2736335872,
+      "peak_reserved": 2839543808,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 84,
+      "runs": 1,
+      "scale": "160",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        84
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        32256
+      ],
+      "wall_to99_each": [
+        10.530315400101244
+      ],
+      "wall_to99_mean_successful_only": 10.530315400101244
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 40,
+        "0.5": 38,
+        "0.75": 85,
+        "1.0": 139
+      },
+      "arm": "dynamic",
+      "cadence": 5,
+      "intervention_rate": 0.5397350993377483,
+      "lr": 3.125e-06,
+      "median_update_seconds_decision": 0.495184600003995,
+      "median_update_seconds_nondecision": 0.21273259993176907,
+      "observed_wall_mean": 31.520283166668378,
+      "peak_allocated": 4156073472,
+      "peak_reserved": 4253024256,
+      "phase": "formal-safe",
+      "probes": 212,
+      "reach99": 3,
+      "restricted_steps_mean": 100.66666666666667,
+      "runs": 3,
+      "scale": "160",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        104,
+        95,
+        103
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        39936,
+        36480,
+        39552
+      ],
+      "wall_to99_each": [
+        33.187661400064826,
+        29.439158200053498,
+        31.93400330003351
+      ],
+      "wall_to99_mean_successful_only": 31.520274300050612
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 578
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 3.125e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.21378814993659034,
+      "observed_wall_mean": 49.75937103336522,
+      "peak_allocated": 4045401088,
+      "peak_reserved": 4148166656,
+      "phase": "formal-safe",
+      "probes": 212,
+      "reach99": 2,
+      "restricted_steps_mean": 193,
+      "runs": 3,
+      "scale": "160",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        184,
+        194,
+        null
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        70656,
+        74496,
+        null
+      ],
+      "wall_to99_each": [
+        46.87016620009672,
+        50.94013450003695,
+        null
+      ],
+      "wall_to99_mean_successful_only": 48.90515035006683
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 277
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 3.125e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.08124359999783337,
+      "observed_wall_mean": 11.509908100008033,
+      "peak_allocated": 2736335872,
+      "peak_reserved": 2839543808,
+      "phase": "formal-safe",
+      "probes": 212,
+      "reach99": 3,
+      "restricted_steps_mean": 92.33333333333333,
+      "runs": 3,
+      "scale": "160",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        99,
+        92,
+        86
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        38016,
+        35328,
+        33024
+      ],
+      "wall_to99_each": [
+        12.419716499978676,
+        11.478584100026637,
+        10.631396200042218
+      ],
+      "wall_to99_mean_successful_only": 11.509898933349177
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 248
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 6.25e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.08029344998067245,
+      "observed_wall_mean": 10.15213770000264,
+      "peak_allocated": 2736335872,
+      "peak_reserved": 2839543808,
+      "phase": "formal-safe-tuned",
+      "probes": 212,
+      "reach99": 3,
+      "restricted_steps_mean": 82.66666666666667,
+      "runs": 3,
+      "scale": "160",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        92,
+        80,
+        76
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        35328,
+        30720,
+        29184
+      ],
+      "wall_to99_each": [
+        11.32180120004341,
+        9.824433300062083,
+        9.310149299912155
+      ],
+      "wall_to99_mean_successful_only": 10.152127933339216
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 127
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 1.5075567228888182e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.09551960008684546,
+      "observed_wall_mean": 15.194635199964978,
+      "peak_allocated": 1817678336,
+      "peak_reserved": 2017460224,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 127,
+      "runs": 1,
+      "scale": "70",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        127
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        48768
+      ],
+      "wall_to99_each": [
+        15.194627399905585
+      ],
+      "wall_to99_mean_successful_only": 15.194627399905585
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 124
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 3.0151134457776364e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.09686884994152933,
+      "observed_wall_mean": 14.987512600026093,
+      "peak_allocated": 1817678336,
+      "peak_reserved": 2017460224,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 124,
+      "runs": 1,
+      "scale": "70",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        124
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        47616
+      ],
+      "wall_to99_each": [
+        14.987503600073978
+      ],
+      "wall_to99_mean_successful_only": 14.987503600073978
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 200
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 3.7688918072220455e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.09919755003647879,
+      "observed_wall_mean": 24.48589210002683,
+      "peak_allocated": 1817678336,
+      "peak_reserved": 2017460224,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 0,
+      "restricted_steps_mean": 201,
+      "runs": 1,
+      "scale": "70",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        null
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        null
+      ],
+      "wall_to99_each": [
+        null
+      ],
+      "wall_to99_mean_successful_only": null
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 134
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 6.030226891555273e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.09963885002071038,
+      "observed_wall_mean": 16.449599799932912,
+      "peak_allocated": 1817678336,
+      "peak_reserved": 2017460224,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 134,
+      "runs": 1,
+      "scale": "70",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        134
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        51456
+      ],
+      "wall_to99_each": [
+        16.44959089998156
+      ],
+      "wall_to99_mean_successful_only": 16.44959089998156
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 190
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 7.537783614444091e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.09717304998775944,
+      "observed_wall_mean": 23.03015680005774,
+      "peak_allocated": 1817678336,
+      "peak_reserved": 2017460224,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 190,
+      "runs": 1,
+      "scale": "70",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        190
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        72960
+      ],
+      "wall_to99_each": [
+        23.03014659998007
+      ],
+      "wall_to99_mean_successful_only": 23.03014659998007
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 134
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 1.5075567228888182e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.04150335001759231,
+      "observed_wall_mean": 8.530591799994,
+      "peak_allocated": 1249126912,
+      "peak_reserved": 1430257664,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 134,
+      "runs": 1,
+      "scale": "70",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        134
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        51456
+      ],
+      "wall_to99_each": [
+        8.530584699939936
+      ],
+      "wall_to99_mean_successful_only": 8.530584699939936
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 186
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 3.0151134457776364e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.04149884998332709,
+      "observed_wall_mean": 11.843143100035377,
+      "peak_allocated": 1249126912,
+      "peak_reserved": 1430257664,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 186,
+      "runs": 1,
+      "scale": "70",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        186
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        71424
+      ],
+      "wall_to99_each": [
+        11.84313439996913
+      ],
+      "wall_to99_mean_successful_only": 11.84313439996913
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 127
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 3.7688918072220455e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.04141280008479953,
+      "observed_wall_mean": 8.086525499937125,
+      "peak_allocated": 1249126912,
+      "peak_reserved": 1430257664,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 127,
+      "runs": 1,
+      "scale": "70",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        127
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        48768
+      ],
+      "wall_to99_each": [
+        8.086517099989578
+      ],
+      "wall_to99_mean_successful_only": 8.086517099989578
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 200
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 6.030226891555273e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.04124855005647987,
+      "observed_wall_mean": 12.693060199962929,
+      "peak_allocated": 1249126912,
+      "peak_reserved": 1430257664,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 0,
+      "restricted_steps_mean": 201,
+      "runs": 1,
+      "scale": "70",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        null
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        null
+      ],
+      "wall_to99_each": [
+        null
+      ],
+      "wall_to99_mean_successful_only": null
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 124
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 7.537783614444091e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.041484749992378056,
+      "observed_wall_mean": 7.922548899892718,
+      "peak_allocated": 1249126912,
+      "peak_reserved": 1430257664,
+      "phase": "calibration",
+      "probes": 212,
+      "reach99": 1,
+      "restricted_steps_mean": 124,
+      "runs": 1,
+      "scale": "70",
+      "seeds": [
+        101
+      ],
+      "statuses": {
+        "COMPLETED": 1
+      },
+      "steps_each": [
+        124
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        47616
+      ],
+      "wall_to99_each": [
+        7.922541199950501
+      ],
+      "wall_to99_mean_successful_only": 7.922541199950501
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 168,
+        "0.5": 148,
+        "0.75": 100,
+        "1.0": 99
+      },
+      "arm": "dynamic",
+      "cadence": 5,
+      "intervention_rate": 0.8077669902912621,
+      "lr": 6.030226891555273e-05,
+      "median_update_seconds_decision": 0.2805435999762267,
+      "median_update_seconds_nondecision": 0.09880520007573068,
+      "observed_wall_mean": 27.29576383329307,
+      "peak_allocated": 1892453888,
+      "peak_reserved": 2111832064,
+      "phase": "formal-near",
+      "probes": 212,
+      "reach99": 3,
+      "restricted_steps_mean": 171.66666666666666,
+      "runs": 3,
+      "scale": "70",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        158,
+        189,
+        168
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        60672,
+        72576,
+        64512
+      ],
+      "wall_to99_each": [
+        24.993510099942796,
+        30.08487849996891,
+        26.80887690000236
+      ],
+      "wall_to99_mean_successful_only": 27.29575516663802
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 375
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 6.030226891555273e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.09811460005585104,
+      "observed_wall_mean": 15.327436066620672,
+      "peak_allocated": 1817678336,
+      "peak_reserved": 2017460224,
+      "phase": "formal-near",
+      "probes": 212,
+      "reach99": 3,
+      "restricted_steps_mean": 125,
+      "runs": 3,
+      "scale": "70",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        118,
+        139,
+        118
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        45312,
+        53376,
+        45312
+      ],
+      "wall_to99_each": [
+        14.556070999940857,
+        16.98822790000122,
+        14.437982400064357
+      ],
+      "wall_to99_mean_successful_only": 15.327427100002145
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 555
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 6.030226891555273e-05,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.041189400013536215,
+      "observed_wall_mean": 11.71227163328634,
+      "peak_allocated": 1249126912,
+      "peak_reserved": 1430257664,
+      "phase": "formal-near",
+      "probes": 212,
+      "reach99": 3,
+      "restricted_steps_mean": 185,
+      "runs": 3,
+      "scale": "70",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        174,
+        199,
+        182
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        66816,
+        76416,
+        69888
+      ],
+      "wall_to99_each": [
+        11.001527299988084,
+        12.642354000010528,
+        11.492909400025383
+      ],
+      "wall_to99_mean_successful_only": 11.712263566674665
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 336
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 7.537783614444091e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.04156630003126338,
+      "observed_wall_mean": 7.168448000020969,
+      "peak_allocated": 1249126912,
+      "peak_reserved": 1430257664,
+      "phase": "formal-near-tuned",
+      "probes": 212,
+      "reach99": 3,
+      "restricted_steps_mean": 112,
+      "runs": 3,
+      "scale": "70",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        106,
+        125,
+        105
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        40704,
+        48000,
+        40320
+      ],
+      "wall_to99_each": [
+        6.8155727999983355,
+        8.049375600065105,
+        6.6403673000168055
+      ],
+      "wall_to99_mean_successful_only": 7.168438566693415
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 125,
+        "0.5": 35,
+        "0.75": 108,
+        "1.0": 186
+      },
+      "arm": "dynamic",
+      "cadence": 5,
+      "intervention_rate": 0.5903083700440529,
+      "lr": 3.7688918072220455e-06,
+      "median_update_seconds_decision": 0.2809979999437928,
+      "median_update_seconds_nondecision": 0.096499000035692,
+      "observed_wall_mean": 23.974488099998172,
+      "peak_allocated": 1892453888,
+      "peak_reserved": 2111832064,
+      "phase": "formal-safe",
+      "probes": 212,
+      "reach99": 3,
+      "restricted_steps_mean": 151.33333333333334,
+      "runs": 3,
+      "scale": "70",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        143,
+        181,
+        130
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        54912,
+        69504,
+        49920
+      ],
+      "wall_to99_each": [
+        22.674684899975546,
+        28.864598100073636,
+        20.38415359996725
+      ],
+      "wall_to99_mean_successful_only": 23.974478866672143
+    },
+    {
+      "alpha_histogram": {
+        "0.25": 600
+      },
+      "arm": "fixed",
+      "cadence": 5,
+      "intervention_rate": 1,
+      "lr": 3.7688918072220455e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.09743935003643855,
+      "observed_wall_mean": 24.246532766652916,
+      "peak_allocated": 1817678336,
+      "peak_reserved": 2017460224,
+      "phase": "formal-safe",
+      "probes": 212,
+      "reach99": 0,
+      "restricted_steps_mean": 201,
+      "runs": 3,
+      "scale": "70",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        null,
+        null,
+        null
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        null,
+        null,
+        null
+      ],
+      "wall_to99_each": [
+        null,
+        null,
+        null
+      ],
+      "wall_to99_mean_successful_only": null
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 387
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 3.7688918072220455e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.041109099984169006,
+      "observed_wall_mean": 8.142990433378145,
+      "peak_allocated": 1249126912,
+      "peak_reserved": 1430257664,
+      "phase": "formal-safe",
+      "probes": 212,
+      "reach99": 3,
+      "restricted_steps_mean": 129,
+      "runs": 3,
+      "scale": "70",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        121,
+        144,
+        122
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        46464,
+        55296,
+        46848
+      ],
+      "wall_to99_each": [
+        7.648079400067218,
+        9.079597800038755,
+        7.701270699966699
+      ],
+      "wall_to99_mean_successful_only": 8.142982633357557
+    },
+    {
+      "alpha_histogram": {
+        "1.0": 336
+      },
+      "arm": "native",
+      "cadence": 5,
+      "intervention_rate": 0,
+      "lr": 7.537783614444091e-06,
+      "median_update_seconds_decision": null,
+      "median_update_seconds_nondecision": 0.04132555000251159,
+      "observed_wall_mean": 7.123027800000273,
+      "peak_allocated": 1249126912,
+      "peak_reserved": 1430257664,
+      "phase": "formal-safe-tuned",
+      "probes": 212,
+      "reach99": 3,
+      "restricted_steps_mean": 112,
+      "runs": 3,
+      "scale": "70",
+      "seeds": [
+        201,
+        202,
+        203
+      ],
+      "statuses": {
+        "COMPLETED": 3
+      },
+      "steps_each": [
+        106,
+        125,
+        105
+      ],
+      "subset_seed": 11,
+      "tokens_to99_each": [
+        40704,
+        48000,
+        40320
+      ],
+      "wall_to99_each": [
+        6.777583800023422,
+        7.951929200091399,
+        6.639546300051734
+      ],
+      "wall_to99_mean_successful_only": 7.123019766722185
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "dynamic_against": "native",
+      "pairs": [
+        {
+          "baseline_steps": 121,
+          "dynamic_steps": 143,
+          "seed": 201,
+          "step_verdict": "loss",
+          "wall_difference_when_both_reach": 15.026605499908328
+        },
+        {
+          "baseline_steps": 144,
+          "dynamic_steps": 181,
+          "seed": 202,
+          "step_verdict": "loss",
+          "wall_difference_when_both_reach": 19.78500030003488
+        },
+        {
+          "baseline_steps": 122,
+          "dynamic_steps": 130,
+          "seed": 203,
+          "step_verdict": "loss",
+          "wall_difference_when_both_reach": 12.68288290000055
+        }
+      ],
+      "phase": "formal-safe",
+      "scale": "70",
+      "step_wins_losses_ties": {
+        "loss": 3
+      }
+    },
+    {
+      "dynamic_against": "fixed",
+      "pairs": [
+        {
+          "baseline_steps": null,
+          "dynamic_steps": 143,
+          "seed": 201,
+          "step_verdict": "win",
+          "wall_difference_when_both_reach": null
+        },
+        {
+          "baseline_steps": null,
+          "dynamic_steps": 181,
+          "seed": 202,
+          "step_verdict": "win",
+          "wall_difference_when_both_reach": null
+        },
+        {
+          "baseline_steps": null,
+          "dynamic_steps": 130,
+          "seed": 203,
+          "step_verdict": "win",
+          "wall_difference_when_both_reach": null
+        }
+      ],
+      "phase": "formal-safe",
+      "scale": "70",
+      "step_wins_losses_ties": {
+        "win": 3
+      }
+    },
+    {
+      "dynamic_against": "native",
+      "pairs": [
+        {
+          "baseline_steps": 174,
+          "dynamic_steps": 158,
+          "seed": 201,
+          "step_verdict": "win",
+          "wall_difference_when_both_reach": 13.991982799954712
+        },
+        {
+          "baseline_steps": 199,
+          "dynamic_steps": 189,
+          "seed": 202,
+          "step_verdict": "win",
+          "wall_difference_when_both_reach": 17.44252449995838
+        },
+        {
+          "baseline_steps": 182,
+          "dynamic_steps": 168,
+          "seed": 203,
+          "step_verdict": "win",
+          "wall_difference_when_both_reach": 15.315967499976978
+        }
+      ],
+      "phase": "formal-near",
+      "scale": "70",
+      "step_wins_losses_ties": {
+        "win": 3
+      }
+    },
+    {
+      "dynamic_against": "fixed",
+      "pairs": [
+        {
+          "baseline_steps": 118,
+          "dynamic_steps": 158,
+          "seed": 201,
+          "step_verdict": "loss",
+          "wall_difference_when_both_reach": 10.437439100001939
+        },
+        {
+          "baseline_steps": 139,
+          "dynamic_steps": 189,
+          "seed": 202,
+          "step_verdict": "loss",
+          "wall_difference_when_both_reach": 13.096650599967688
+        },
+        {
+          "baseline_steps": 118,
+          "dynamic_steps": 168,
+          "seed": 203,
+          "step_verdict": "loss",
+          "wall_difference_when_both_reach": 12.370894499938004
+        }
+      ],
+      "phase": "formal-near",
+      "scale": "70",
+      "step_wins_losses_ties": {
+        "loss": 3
+      }
+    },
+    {
+      "dynamic_against": "native",
+      "pairs": [
+        {
+          "baseline_steps": 99,
+          "dynamic_steps": 104,
+          "seed": 201,
+          "step_verdict": "loss",
+          "wall_difference_when_both_reach": 20.76794490008615
+        },
+        {
+          "baseline_steps": 92,
+          "dynamic_steps": 95,
+          "seed": 202,
+          "step_verdict": "loss",
+          "wall_difference_when_both_reach": 17.96057410002686
+        },
+        {
+          "baseline_steps": 86,
+          "dynamic_steps": 103,
+          "seed": 203,
+          "step_verdict": "loss",
+          "wall_difference_when_both_reach": 21.30260709999129
+        }
+      ],
+      "phase": "formal-safe",
+      "scale": "160",
+      "step_wins_losses_ties": {
+        "loss": 3
+      }
+    },
+    {
+      "dynamic_against": "fixed",
+      "pairs": [
+        {
+          "baseline_steps": 184,
+          "dynamic_steps": 104,
+          "seed": 201,
+          "step_verdict": "win",
+          "wall_difference_when_both_reach": -13.682504800031893
+        },
+        {
+          "baseline_steps": 194,
+          "dynamic_steps": 95,
+          "seed": 202,
+          "step_verdict": "win",
+          "wall_difference_when_both_reach": -21.50097629998345
+        },
+        {
+          "baseline_steps": null,
+          "dynamic_steps": 103,
+          "seed": 203,
+          "step_verdict": "win",
+          "wall_difference_when_both_reach": null
+        }
+      ],
+      "phase": "formal-safe",
+      "scale": "160",
+      "step_wins_losses_ties": {
+        "win": 3
+      }
+    }
+  ],
+  "restricted_failure_value": 201,
+  "threshold": 0.99,
+  "timing_note": "Decision/nondecision medians are descriptive, not a causal isolated overhead estimate.",
+  "tokens_per_update": 384,
+  "wall_note": "Successful-only wall means must not be compared without reach counts. RESOURCE_LIMITED is censored; not a completed-200 failure."
+}

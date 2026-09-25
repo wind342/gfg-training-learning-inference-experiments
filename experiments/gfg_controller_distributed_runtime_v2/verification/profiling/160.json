@@ -1,0 +1,97 @@
+{
+  "communication_seconds": "NOT_APPLICABLE_SINGLE_GPU",
+  "directional_workspace_isolated": "NOT_MEASURED",
+  "kind": "synchronizing_diagnostic_not_production_benchmark",
+  "memory_bytes": {
+    "candidate": 654532608,
+    "delta": 654532608,
+    "gradients": 654532608,
+    "optimizer": 1309065540,
+    "parameters": 654532608
+  },
+  "note": "Nested timers overlap; optimizer is inside proposal. Do not sum all rows.",
+  "rows": [
+    {
+      "accuracy": 0.07570977917981073,
+      "alpha": 1.0,
+      "decision": false,
+      "evaluation_wall": 0.04802950005978346,
+      "instrumented_update_wall": 0.2106856000609696,
+      "peak_allocated": 4043854848,
+      "peak_reserved": 4232052736,
+      "seconds": {
+        "evaluation/forward": 0.03963299992028624,
+        "update/backward": 0.0339867000002414,
+        "update/commit": 0.005920300027355552,
+        "update/forward": 0.015586000052280724,
+        "update/global_clip": 0.008885699906386435,
+        "update/optimizer_step": 0.018743399996310472,
+        "update/proposal_including_optimizer": 0.14457030000630766
+      },
+      "step": 3
+    },
+    {
+      "accuracy": 0.050473186119873815,
+      "alpha": 1.0,
+      "decision": false,
+      "evaluation_wall": 0.04068759991787374,
+      "instrumented_update_wall": 0.22337110002990812,
+      "peak_allocated": 4043854848,
+      "peak_reserved": 4232052736,
+      "seconds": {
+        "evaluation/forward": 0.039913900080136955,
+        "update/backward": 0.03423830005340278,
+        "update/commit": 0.005898899980820715,
+        "update/forward": 0.01556730002630502,
+        "update/global_clip": 0.00913549994584173,
+        "update/optimizer_step": 0.018672000034712255,
+        "update/proposal_including_optimizer": 0.15681640000548214
+      },
+      "step": 4
+    },
+    {
+      "accuracy": 0.04100946372239748,
+      "alpha": 1.0,
+      "decision": false,
+      "evaluation_wall": 0.040208399994298816,
+      "instrumented_update_wall": 0.2048814999870956,
+      "peak_allocated": 4043854848,
+      "peak_reserved": 4232052736,
+      "seconds": {
+        "evaluation/forward": 0.03938850003760308,
+        "update/backward": 0.03541359992232174,
+        "update/commit": 0.005892100045457482,
+        "update/forward": 0.016073400038294494,
+        "update/global_clip": 0.009492099983617663,
+        "update/optimizer_step": 0.01896170002873987,
+        "update/proposal_including_optimizer": 0.13633290003053844
+      },
+      "step": 5
+    },
+    {
+      "accuracy": 0.05362776025236593,
+      "alpha": 0.75,
+      "decision": true,
+      "evaluation_wall": 0.04121109994594008,
+      "instrumented_update_wall": 0.49249360000249,
+      "peak_allocated": 4155612672,
+      "peak_reserved": 4232052736,
+      "seconds": {
+        "evaluation/forward": 0.040446799946948886,
+        "update/backward": 0.03422080003656447,
+        "update/boundary_including_selector": 0.007852400070987642,
+        "update/commit": 0.010865200078114867,
+        "update/directional_including_materialization": 0.2683499000268057,
+        "update/forward": 0.015574200078845024,
+        "update/global_clip": 0.009006000007502735,
+        "update/optimizer_step": 0.01892439997754991,
+        "update/proposal_including_optimizer": 0.14391169999726117
+      },
+      "step": 6
+    }
+  ],
+  "scale": "160",
+  "seed": 701,
+  "source_sha256": "e98bc278d42e7c955b5bb3c87c90d28a925d400a5e829639cdf9202044898e63",
+  "world_size": 1
+}

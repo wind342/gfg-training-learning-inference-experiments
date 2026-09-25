@@ -1,0 +1,1465 @@
+{
+  "cases": [
+    {
+      "case": "fsdp1-exact-0.001",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": [
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 6912,
+          "local_packed_bytes": 6912,
+          "names": [
+            "transformer.wte.weight",
+            "transformer.wpe.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 6912,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.0.ln_1.weight",
+            "transformer.h.0.attn.c_attn.weight",
+            "transformer.h.0.attn.c_proj.weight",
+            "transformer.h.0.ln_2.weight",
+            "transformer.h.0.mlp.c_fc.weight",
+            "transformer.h.0.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.1.ln_1.weight",
+            "transformer.h.1.attn.c_attn.weight",
+            "transformer.h.1.attn.c_proj.weight",
+            "transformer.h.1.ln_2.weight",
+            "transformer.h.1.mlp.c_fc.weight",
+            "transformer.h.1.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 256,
+          "local_packed_bytes": 256,
+          "names": [
+            "transformer.ln_f.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 256,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 6912,
+          "local_packed_bytes": 6912,
+          "names": [
+            "transformer.wte.weight",
+            "transformer.wpe.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 6912,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.0.ln_1.weight",
+            "transformer.h.0.attn.c_attn.weight",
+            "transformer.h.0.attn.c_proj.weight",
+            "transformer.h.0.ln_2.weight",
+            "transformer.h.0.mlp.c_fc.weight",
+            "transformer.h.0.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.1.ln_1.weight",
+            "transformer.h.1.attn.c_attn.weight",
+            "transformer.h.1.attn.c_proj.weight",
+            "transformer.h.1.ln_2.weight",
+            "transformer.h.1.mlp.c_fc.weight",
+            "transformer.h.1.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 256,
+          "local_packed_bytes": 256,
+          "names": [
+            "transformer.ln_f.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 256,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        }
+      ]
+    },
+    {
+      "case": "fsdp1-exact-0.003",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": [
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 6912,
+          "local_packed_bytes": 6912,
+          "names": [
+            "transformer.wte.weight",
+            "transformer.wpe.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 6912,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.0.ln_1.weight",
+            "transformer.h.0.attn.c_attn.weight",
+            "transformer.h.0.attn.c_proj.weight",
+            "transformer.h.0.ln_2.weight",
+            "transformer.h.0.mlp.c_fc.weight",
+            "transformer.h.0.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.1.ln_1.weight",
+            "transformer.h.1.attn.c_attn.weight",
+            "transformer.h.1.attn.c_proj.weight",
+            "transformer.h.1.ln_2.weight",
+            "transformer.h.1.mlp.c_fc.weight",
+            "transformer.h.1.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 256,
+          "local_packed_bytes": 256,
+          "names": [
+            "transformer.ln_f.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 256,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 6912,
+          "local_packed_bytes": 6912,
+          "names": [
+            "transformer.wte.weight",
+            "transformer.wpe.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 6912,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.0.ln_1.weight",
+            "transformer.h.0.attn.c_attn.weight",
+            "transformer.h.0.attn.c_proj.weight",
+            "transformer.h.0.ln_2.weight",
+            "transformer.h.0.mlp.c_fc.weight",
+            "transformer.h.0.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.1.ln_1.weight",
+            "transformer.h.1.attn.c_attn.weight",
+            "transformer.h.1.attn.c_proj.weight",
+            "transformer.h.1.ln_2.weight",
+            "transformer.h.1.mlp.c_fc.weight",
+            "transformer.h.1.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 256,
+          "local_packed_bytes": 256,
+          "names": [
+            "transformer.ln_f.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 256,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        }
+      ]
+    },
+    {
+      "case": "fsdp1-exact-0.01",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 7168,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": [
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 6912,
+          "local_packed_bytes": 6912,
+          "names": [
+            "transformer.wte.weight",
+            "transformer.wpe.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 6912,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.0.ln_1.weight",
+            "transformer.h.0.attn.c_attn.weight",
+            "transformer.h.0.attn.c_proj.weight",
+            "transformer.h.0.ln_2.weight",
+            "transformer.h.0.mlp.c_fc.weight",
+            "transformer.h.0.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.1.ln_1.weight",
+            "transformer.h.1.attn.c_attn.weight",
+            "transformer.h.1.attn.c_proj.weight",
+            "transformer.h.1.ln_2.weight",
+            "transformer.h.1.mlp.c_fc.weight",
+            "transformer.h.1.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 256,
+          "local_packed_bytes": 256,
+          "names": [
+            "transformer.ln_f.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 256,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 6912,
+          "local_packed_bytes": 6912,
+          "names": [
+            "transformer.wte.weight",
+            "transformer.wpe.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 6912,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.0.ln_1.weight",
+            "transformer.h.0.attn.c_attn.weight",
+            "transformer.h.0.attn.c_proj.weight",
+            "transformer.h.0.ln_2.weight",
+            "transformer.h.0.mlp.c_fc.weight",
+            "transformer.h.0.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 197120,
+          "local_packed_bytes": 197120,
+          "names": [
+            "transformer.h.1.ln_1.weight",
+            "transformer.h.1.attn.c_attn.weight",
+            "transformer.h.1.attn.c_proj.weight",
+            "transformer.h.1.ln_2.weight",
+            "transformer.h.1.mlp.c_fc.weight",
+            "transformer.h.1.mlp.c_proj.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 197120,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        },
+        {
+          "data_collectives": 0,
+          "gather_output_bytes": 256,
+          "local_packed_bytes": 256,
+          "names": [
+            "transformer.ln_f.weight"
+          ],
+          "padding_elements_per_rank": [
+            0
+          ],
+          "unpack_views_share_storage": true,
+          "unpacked_bytes": 256,
+          "wire_bytes": "NOT_MEASURED",
+          "world_size": 1
+        }
+      ]
+    },
+    {
+      "case": "single-exact-0.001",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": []
+    },
+    {
+      "case": "single-exact-0.003",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": []
+    },
+    {
+      "case": "single-exact-0.01",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": []
+    },
+    {
+      "case": "single-scalarized-0.001",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": []
+    },
+    {
+      "case": "single-scalarized-0.003",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": []
+    },
+    {
+      "case": "single-scalarized-0.01",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": []
+    },
+    {
+      "case": "single-streaming-0.001",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": []
+    },
+    {
+      "case": "single-streaming-0.003",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": []
+    },
+    {
+      "case": "single-streaming-0.01",
+      "lifetime": [
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 6912,
+          "full_unit_parameter_bytes": 6912,
+          "stage": "embedding"
+        },
+        {
+          "action": "exit",
+          "stage": "embedding"
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.0."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 197120,
+          "full_unit_parameter_bytes": 197120,
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.h.1."
+        },
+        {
+          "action": "enter",
+          "delta_bytes": 256,
+          "full_unit_parameter_bytes": 256,
+          "stage": "transformer.ln_f."
+        },
+        {
+          "action": "exit",
+          "stage": "transformer.ln_f."
+        }
+      ],
+      "packed": []
+    }
+  ]
+}

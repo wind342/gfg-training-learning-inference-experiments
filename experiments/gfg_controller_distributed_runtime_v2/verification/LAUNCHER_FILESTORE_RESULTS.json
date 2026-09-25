@@ -1,0 +1,143 @@
+{
+  "calls": [
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-runtime-0.001",
+        "--rdzv_id=gfg-v2-runtime-0.001",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_train",
+        "--factory",
+        "experiments.gfg_controller_distributed_runtime_v2.launch_fixture:factory"
+      ],
+      "kind": "runtime",
+      "lr": 0.001,
+      "returncode": 0,
+      "stderr": "W0926 01:52:10.158000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGHUP\nW0926 01:52:10.158000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:52:10.158000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:52:10.158000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:52:10.158000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:52:10.158000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGHUP'\nW0926 01:52:11.673000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGQUIT\nW0926 01:52:11.673000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:52:11.673000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:52:11.673000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:52:11.673000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:52:11.673000 14184 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGQUIT'\n[W926 01:52:13.000000000 socket.cpp:764] [c10d] The client socket has failed to connect to [DESKTOP-86NR7CR]:56068 (system error: 10049 - \u5728\u5176\u4e0a\u4e0b\u6587\u4e2d\uff0c\u8be5\u8bf7\u6c42\u7684\u5730\u5740\u65e0\u6548\u3002).\n",
+      "stdout": "number of parameters: 0.10M\nnum decayed parameter tensors: 10, with 100,032 parameters\nnum non-decayed parameter tensors: 5, with 320 parameters\nusing fused AdamW: True\n"
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-runtime-0.003",
+        "--rdzv_id=gfg-v2-runtime-0.003",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_train",
+        "--factory",
+        "experiments.gfg_controller_distributed_runtime_v2.launch_fixture:factory"
+      ],
+      "kind": "runtime",
+      "lr": 0.003,
+      "returncode": 0,
+      "stderr": "W0926 01:52:20.791000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGHUP\nW0926 01:52:20.791000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:52:20.791000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:52:20.791000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:52:20.791000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:52:20.791000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGHUP'\nW0926 01:52:22.305000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGQUIT\nW0926 01:52:22.305000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:52:22.305000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:52:22.305000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:52:22.305000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:52:22.305000 22708 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGQUIT'\n[W926 01:52:24.000000000 socket.cpp:764] [c10d] The client socket has failed to connect to [DESKTOP-86NR7CR]:55696 (system error: 10049 - \u5728\u5176\u4e0a\u4e0b\u6587\u4e2d\uff0c\u8be5\u8bf7\u6c42\u7684\u5730\u5740\u65e0\u6548\u3002).\n",
+      "stdout": "number of parameters: 0.10M\nnum decayed parameter tensors: 10, with 100,032 parameters\nnum non-decayed parameter tensors: 5, with 320 parameters\nusing fused AdamW: True\n"
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-runtime-0.01",
+        "--rdzv_id=gfg-v2-runtime-0.01",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_train",
+        "--factory",
+        "experiments.gfg_controller_distributed_runtime_v2.launch_fixture:factory"
+      ],
+      "kind": "runtime",
+      "lr": 0.01,
+      "returncode": 0,
+      "stderr": "W0926 01:52:31.439000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGHUP\nW0926 01:52:31.439000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:52:31.439000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:52:31.439000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:52:31.439000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:52:31.439000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGHUP'\nW0926 01:52:33.062000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGQUIT\nW0926 01:52:33.062000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:52:33.062000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:52:33.062000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:52:33.062000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:52:33.062000 5248 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGQUIT'\n[W926 01:52:35.000000000 socket.cpp:764] [c10d] The client socket has failed to connect to [DESKTOP-86NR7CR]:52423 (system error: 10049 - \u5728\u5176\u4e0a\u4e0b\u6587\u4e2d\uff0c\u8be5\u8bf7\u6c42\u7684\u5730\u5740\u65e0\u6548\u3002).\n",
+      "stdout": "number of parameters: 0.10M\nnum decayed parameter tensors: 10, with 100,032 parameters\nnum non-decayed parameter tensors: 5, with 320 parameters\nusing fused AdamW: True\n"
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-oracle-0.001",
+        "--rdzv_id=gfg-v2-oracle-0.001",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_gate",
+        "--lr",
+        "0.001"
+      ],
+      "kind": "oracle",
+      "lr": 0.001,
+      "returncode": 0,
+      "stderr": "W0926 01:52:42.172000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGHUP\nW0926 01:52:42.172000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:52:42.172000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:52:42.172000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:52:42.172000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:52:42.172000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGHUP'\nW0926 01:52:43.681000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGQUIT\nW0926 01:52:43.681000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:52:43.681000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:52:43.681000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:52:43.681000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:52:43.681000 34068 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGQUIT'\n[W926 01:52:48.000000000 socket.cpp:764] [c10d] The client socket has failed to connect to [DESKTOP-86NR7CR]:53465 (system error: 10049 - \u5728\u5176\u4e0a\u4e0b\u6587\u4e2d\uff0c\u8be5\u8bf7\u6c42\u7684\u5730\u5740\u65e0\u6548\u3002).\n",
+      "stdout": "number of parameters: 0.10M\nnum decayed parameter tensors: 10, with 100,032 parameters\nnum non-decayed parameter tensors: 5, with 320 parameters\nusing fused AdamW: True\n"
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-oracle-0.003",
+        "--rdzv_id=gfg-v2-oracle-0.003",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_gate",
+        "--lr",
+        "0.003"
+      ],
+      "kind": "oracle",
+      "lr": 0.003,
+      "returncode": 0,
+      "stderr": "W0926 01:52:54.292000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGHUP\nW0926 01:52:54.292000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:52:54.292000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:52:54.292000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:52:54.292000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:52:54.292000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGHUP'\nW0926 01:52:55.827000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGQUIT\nW0926 01:52:55.827000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:52:55.827000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:52:55.827000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:52:55.827000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:52:55.827000 18336 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGQUIT'\n[W926 01:53:00.000000000 socket.cpp:764] [c10d] The client socket has failed to connect to [DESKTOP-86NR7CR]:62029 (system error: 10049 - \u5728\u5176\u4e0a\u4e0b\u6587\u4e2d\uff0c\u8be5\u8bf7\u6c42\u7684\u5730\u5740\u65e0\u6548\u3002).\n",
+      "stdout": "number of parameters: 0.10M\nnum decayed parameter tensors: 10, with 100,032 parameters\nnum non-decayed parameter tensors: 5, with 320 parameters\nusing fused AdamW: True\n"
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--nnodes=1",
+        "--nproc_per_node=1",
+        "--rdzv_backend=c10d",
+        "--rdzv_endpoint=E:/gfg-evidence/controller-distributed-runtime-v2/attempt-2/file-store-oracle-0.01",
+        "--rdzv_id=gfg-v2-oracle-0.01",
+        "--rdzv_conf=store_type=file",
+        "--local_addr=127.0.0.1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_gate",
+        "--lr",
+        "0.01"
+      ],
+      "kind": "oracle",
+      "lr": 0.01,
+      "returncode": 0,
+      "stderr": "W0926 01:53:06.552000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGHUP\nW0926 01:53:06.552000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:53:06.552000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:53:06.552000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:53:06.552000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:53:06.552000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGHUP'\nW0926 01:53:08.065000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Failed to register signal handler for SIGQUIT\nW0926 01:53:08.065000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] Traceback (most recent call last):\nW0926 01:53:08.065000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]   File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py\", line 545, in start\nW0926 01:53:08.065000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]     sig = getattr(signal, sig_name.strip())\nW0926 01:53:08.065000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nW0926 01:53:08.065000 16464 Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\api.py:549] AttributeError: module 'signal' has no attribute 'SIGQUIT'\n[W926 01:53:12.000000000 socket.cpp:764] [c10d] The client socket has failed to connect to [DESKTOP-86NR7CR]:49196 (system error: 10049 - \u5728\u5176\u4e0a\u4e0b\u6587\u4e2d\uff0c\u8be5\u8bf7\u6c42\u7684\u5730\u5740\u65e0\u6548\u3002).\n",
+      "stdout": "number of parameters: 0.10M\nnum decayed parameter tensors: 10, with 100,032 parameters\nnum non-decayed parameter tensors: 5, with 320 parameters\nusing fused AdamW: True\n"
+    }
+  ],
+  "real_multigpu": "NOT_TESTED"
+}

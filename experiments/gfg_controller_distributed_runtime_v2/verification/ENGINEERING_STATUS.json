@@ -1,0 +1,89 @@
+{
+  "160M_TRANSPORT": "NOT_ESTABLISHED",
+  "70M_TRANSPORT": "MIXED",
+  "CANONICAL_PARAMETER_IDENTITY": "PASS",
+  "ENGINEERING_STATUS": "DISTRIBUTED_RESEARCH_PROTOTYPE",
+  "EXACT_DISTRIBUTED_BOUNDARY": "EMULATED_ONLY",
+  "FLASH_BOUNDARY": "CANDIDATE",
+  "GLOBAL_DISTRIBUTED_CLIPPING": "EMULATED_ONLY",
+  "REAL_MULTIGPU": "NOT_TESTED",
+  "SCALARIZED_BOUNDARY": "CANDIDATE",
+  "SCIENTIFIC_REFERENCE": "PASS",
+  "SPARSE_CONTROL": "NOT_RUN",
+  "STAGE_PACKED_FSDP": "WORLD_SIZE1_ONLY",
+  "boundary_peak_increment_bytes_N33_V73": {
+    "4096": {
+      "exact": 23010304,
+      "scalarized": 7801856,
+      "streaming": 15780352
+    },
+    "8192": {
+      "exact": 25851392,
+      "scalarized": 15731712,
+      "streaming": 19516416
+    }
+  },
+  "communication": {
+    "boundary_data_collectives_world_gt1": 4,
+    "delta_data_collectives_per_stage_world_gt1": 1,
+    "exact_target_bytes": "4*N+8*U*H",
+    "full_vocab_gather": false,
+    "measured_network_bytes_world1": 0,
+    "min_and_valid_payload_bytes": "32*N+4",
+    "native_fsdp_traffic": "additional, NOT_MEASURED",
+    "real_multigpu_wire_bytes": "NOT_MEASURED",
+    "scalarized_target_bytes": "36*N"
+  },
+  "cpu_collective_world_size": 2,
+  "dynamic_vs_fixed": "70 SAFE:3/3 vs0/3; 70 NEAR:3/3 both but dynamic slower in every seed; 160 SAFE:3/3 vs2/3.",
+  "hardware": {
+    "cuda": "13.0",
+    "dtensor": true,
+    "fsdp2": true,
+    "gloo": true,
+    "gpu_count": 1,
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 4060 Ti",
+        "vram": 8585216000
+      }
+    ],
+    "nccl": false,
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "torch": "2.13.0+cu130",
+    "torch_compile_api": true,
+    "triton": false
+  },
+  "largest_cuda_world_size": 1,
+  "largest_model_parameters": 163633152,
+  "profile_source_sha256": "e98bc278d42e7c955b5bb3c87c90d28a925d400a5e829639cdf9202044898e63",
+  "resource_limits": [
+    "Only one CUDA GPU; NCCL unavailable",
+    "No real CUDA world2 end-to-end gate",
+    "No Triton fused kernel; pure PyTorch streaming candidate only",
+    "160M NEAR/SEVERE and70M SEVERE not established",
+    "No qualifying NEAR benefit, so no Phase3/Pareto/preset recommendation",
+    "Directional workspace isolated and multi-GPU wire timing not measured",
+    "Only nanoGPT model-specific adapter and pure one-dimensional FSDP ownership tested",
+    "Per-stage telemetry lists accumulate; long-run production bounding is not certified"
+  ],
+  "single_gpu_persistent_bytes": {
+    "160": {
+      "candidate": 654532608,
+      "delta": 654532608,
+      "gradients": 654532608,
+      "optimizer": 1309065540,
+      "parameters": 654532608
+    },
+    "70": {
+      "candidate": 285621248,
+      "delta": 285621248,
+      "gradients": 285621248,
+      "optimizer": 571242796,
+      "parameters": 285621248
+    }
+  },
+  "time_to_capability": "Dynamic did not beat native/tuned-native in any tested formal regime.",
+  "transport_scope": "Both model sizes ran and dynamic reached99 in every tested formal seed. Labels concern the near-boundary advantage, not mere ability to execute."
+}

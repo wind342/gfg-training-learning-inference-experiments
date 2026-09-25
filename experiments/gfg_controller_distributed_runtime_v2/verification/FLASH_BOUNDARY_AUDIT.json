@@ -1,0 +1,728 @@
+{
+  "note": "Streaming chunks write bounded intermediates to HBM; no fused Triton kernel certification",
+  "status": "CANDIDATE",
+  "synthetic_cases": [
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 57476,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 7735808,
+              "predicted_workspace": 21896612,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 1024,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 57476,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 7735808,
+              "predicted_workspace": 21896612,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 1024,
+      "seed": 222
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 114820,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 10340864,
+              "predicted_workspace": 29113764,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 2048,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 114820,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 10340864,
+              "predicted_workspace": 29113764,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 2048,
+      "seed": 222
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 229508,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 15665664,
+              "predicted_workspace": 43548068,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 0.75,
+          "scores_exact": true,
+          "selected_alpha": 0.75,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 4096,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 229508,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 15780352,
+              "predicted_workspace": 43548068,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 4096,
+      "seed": 222
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 28804,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 6433280,
+              "predicted_workspace": 18288036,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 512,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 28804,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 6433280,
+              "predicted_workspace": 18288036,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 512,
+      "seed": 222
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 3716,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 64,
+              "measured_peak_increment": 2826752,
+              "predicted_workspace": 10196900,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 64,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 3716,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 73,
+              "hidden_chunk": 64,
+              "measured_peak_increment": 2826752,
+              "predicted_workspace": 10196900,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 64,
+      "seed": 222
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 458884,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 36,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 19192832,
+              "predicted_workspace": 47704228,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 1.0,
+          "scores_exact": true,
+          "selected_alpha": 1.0,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 8192,
+      "seed": 111
+    },
+    {
+      "cases": [
+        {
+          "alpha_exact": true,
+          "coordinate_max_abs": 0.0,
+          "coordinates_exact": true,
+          "dedup": true,
+          "metadata": {
+            "backend": "streaming",
+            "communication": {
+              "full_vocab_gather": false,
+              "min_collectives": 0,
+              "min_payload_bytes": 1056,
+              "target_bytes": 458884,
+              "target_collectives": 0,
+              "target_elements": 7,
+              "wire_bytes": "NOT_MEASURED"
+            },
+            "workspace": {
+              "budget": 67108864,
+              "competitor_tile": 36,
+              "hidden_chunk": 128,
+              "measured_peak_increment": 19516416,
+              "predicted_workspace": 47704228,
+              "target_tile": 33
+            }
+          },
+          "minima_exact": true,
+          "minima_max_abs": 0.0,
+          "mode": "streaming",
+          "reference_alpha": 0.25,
+          "scores_exact": true,
+          "selected_alpha": 0.25,
+          "within_workspace_budget": true
+        }
+      ],
+      "h": 8192,
+      "seed": 222
+    }
+  ],
+  "trajectory_cases": [
+    {
+      "all_exact": true,
+      "alpha_exact": true,
+      "backend": "streaming",
+      "fsdp_world_size": null,
+      "label": "single-streaming-0.001",
+      "records": [
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "h0": true,
+          "h1": true,
+          "h2": true,
+          "logits": true,
+          "minima": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "h0": true,
+          "h1": true,
+          "h2": true,
+          "logits": true,
+          "minima": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        }
+      ],
+      "trajectory_exact": true
+    },
+    {
+      "all_exact": true,
+      "alpha_exact": true,
+      "backend": "streaming",
+      "fsdp_world_size": null,
+      "label": "single-streaming-0.003",
+      "records": [
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "h0": true,
+          "h1": true,
+          "h2": true,
+          "logits": true,
+          "minima": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "h0": true,
+          "h1": true,
+          "h2": true,
+          "logits": true,
+          "minima": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        }
+      ],
+      "trajectory_exact": true
+    },
+    {
+      "all_exact": true,
+      "alpha_exact": true,
+      "backend": "streaming",
+      "fsdp_world_size": null,
+      "label": "single-streaming-0.01",
+      "records": [
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "h0": true,
+          "h1": true,
+          "h2": true,
+          "logits": true,
+          "minima": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "logits": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        },
+        {
+          "alpha": true,
+          "candidate": true,
+          "delta": true,
+          "gradients": true,
+          "h0": true,
+          "h1": true,
+          "h2": true,
+          "logits": true,
+          "minima": true,
+          "moments": true,
+          "norm": true,
+          "parameters": true,
+          "scores": true
+        }
+      ],
+      "trajectory_exact": true
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "calls": [
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--rdzv_conf=use_libuv=0",
+        "--nproc_per_node=1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_train",
+        "--factory",
+        "experiments.gfg_controller_distributed_runtime_v2.launch_fixture:factory"
+      ],
+      "lr": 0.001,
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\c10d_rendezvous_backend.py\", line 156, in _create_tcp_store\n    store = TCPStore(\n            ^^^^^^^^^\ntorch.distributed.DistStoreError: use_libuv was requested but PyTorch was built without libuv support, run with USE_LIBUV=0 to disable it.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\run.py\", line 1032, in <module>\n    main()\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\errors\\__init__.py\", line 367, in wrapper\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\run.py\", line 1028, in main\n    run(args)\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\run.py\", line 1019, in run\n    elastic_launch(\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\launcher\\api.py\", line 194, in __call__\n    return launch_agent(\n           ^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\launcher\\api.py\", line 343, in launch_agent\n    rdzv_handler=rdzv_registry.get_rendezvous_handler(rdzv_parameters),\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\registry.py\", line 96, in get_rendezvous_handler\n    return handler_registry.create_handler(params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\api.py\", line 377, in create_handler\n    handler = creator(params)\n              ^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\registry.py\", line 46, in _create_c10d_handler\n    backend, store = create_backend(params)\n                     ^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\c10d_rendezvous_backend.py\", line 254, in create_backend\n    store = _create_tcp_store(params)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\c10d_rendezvous_backend.py\", line 180, in _create_tcp_store\n    raise RendezvousConnectionError(\ntorch.distributed.elastic.rendezvous.api.RendezvousConnectionError: The connection to the C10d store has failed. See inner exception for details.\n",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--rdzv_conf=use_libuv=0",
+        "--nproc_per_node=1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_train",
+        "--factory",
+        "experiments.gfg_controller_distributed_runtime_v2.launch_fixture:factory"
+      ],
+      "lr": 0.003,
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\c10d_rendezvous_backend.py\", line 156, in _create_tcp_store\n    store = TCPStore(\n            ^^^^^^^^^\ntorch.distributed.DistStoreError: use_libuv was requested but PyTorch was built without libuv support, run with USE_LIBUV=0 to disable it.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\run.py\", line 1032, in <module>\n    main()\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\errors\\__init__.py\", line 367, in wrapper\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\run.py\", line 1028, in main\n    run(args)\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\run.py\", line 1019, in run\n    elastic_launch(\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\launcher\\api.py\", line 194, in __call__\n    return launch_agent(\n           ^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\launcher\\api.py\", line 343, in launch_agent\n    rdzv_handler=rdzv_registry.get_rendezvous_handler(rdzv_parameters),\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\registry.py\", line 96, in get_rendezvous_handler\n    return handler_registry.create_handler(params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\api.py\", line 377, in create_handler\n    handler = creator(params)\n              ^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\registry.py\", line 46, in _create_c10d_handler\n    backend, store = create_backend(params)\n                     ^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\c10d_rendezvous_backend.py\", line 254, in create_backend\n    store = _create_tcp_store(params)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\c10d_rendezvous_backend.py\", line 180, in _create_tcp_store\n    raise RendezvousConnectionError(\ntorch.distributed.elastic.rendezvous.api.RendezvousConnectionError: The connection to the C10d store has failed. See inner exception for details.\n",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "E:\\gfg-python\\torch-cu130\\Scripts\\python.exe",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--rdzv_conf=use_libuv=0",
+        "--nproc_per_node=1",
+        "-m",
+        "experiments.gfg_controller_distributed_runtime_v2.distributed_train",
+        "--factory",
+        "experiments.gfg_controller_distributed_runtime_v2.launch_fixture:factory"
+      ],
+      "lr": 0.01,
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\c10d_rendezvous_backend.py\", line 156, in _create_tcp_store\n    store = TCPStore(\n            ^^^^^^^^^\ntorch.distributed.DistStoreError: use_libuv was requested but PyTorch was built without libuv support, run with USE_LIBUV=0 to disable it.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\run.py\", line 1032, in <module>\n    main()\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\multiprocessing\\errors\\__init__.py\", line 367, in wrapper\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\run.py\", line 1028, in main\n    run(args)\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\run.py\", line 1019, in run\n    elastic_launch(\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\launcher\\api.py\", line 194, in __call__\n    return launch_agent(\n           ^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\launcher\\api.py\", line 343, in launch_agent\n    rdzv_handler=rdzv_registry.get_rendezvous_handler(rdzv_parameters),\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\registry.py\", line 96, in get_rendezvous_handler\n    return handler_registry.create_handler(params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\api.py\", line 377, in create_handler\n    handler = creator(params)\n              ^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\registry.py\", line 46, in _create_c10d_handler\n    backend, store = create_backend(params)\n                     ^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\c10d_rendezvous_backend.py\", line 254, in create_backend\n    store = _create_tcp_store(params)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\distributed\\elastic\\rendezvous\\c10d_rendezvous_backend.py\", line 180, in _create_tcp_store\n    raise RendezvousConnectionError(\ntorch.distributed.elastic.rendezvous.api.RendezvousConnectionError: The connection to the C10d store has failed. See inner exception for details.\n",
+      "stdout": ""
+    }
+  ],
+  "real_multigpu": "NOT_TESTED"
+}

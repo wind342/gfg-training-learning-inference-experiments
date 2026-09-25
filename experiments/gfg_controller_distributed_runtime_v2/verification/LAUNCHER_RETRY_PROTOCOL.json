@@ -1,0 +1,10 @@
+{
+  "purpose": "Infrastructure-only retry before any retry outcomes",
+  "observed_failure": "torchrun standalone C10d rendezvous explicitly defaulted to libuv despite USE_LIBUV=0; installed PyTorch lacks libuv",
+  "only_change": "Pass --rdzv_conf=use_libuv=0 to torch.distributed.run",
+  "unchanged": ["all sealed source files", "model", "optimizer", "controller", "seeds", "three learning rates", "six updates", "scientific thresholds"],
+  "world_size": 1,
+  "learning_rates": [0.001, 0.003, 0.01],
+  "previous_failed_receipt": "REAL_MULTIGPU_AUDIT.json",
+  "new_receipt": "LAUNCHER_RETRY_RESULTS.json"
+}
