@@ -1,0 +1,46 @@
+{
+  "base_commit": "77333c8aa890aa1b406ff62086fb555d16eba16b",
+  "files": {
+    "PROTOCOL.md": "74cfd4c76a6cd434935f1519c5a66eb2cc42bac8523ea7973e7432f680f36088",
+    "kernel.py": "9268e8b4729c1ad1fd9081265c05bca77a332ed5a06bc8d1de2a20e9d2b13ebd",
+    "nanogpt_adapter.py": "e02803124a1078471417da2428a1e50ea15097b3a80c51596dc74defca75d806",
+    "run.py": "a45febec0c5889d5bf766594b2a8c0d1f206bbeeba7d091d5fa04df79d2df392"
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "numpy": "2.4.4",
+  "prior_freeze_sha256": "b100be8dddea1a86d4f316b43d519d89be1027a4f0295172fdf1534dbb61e957",
+  "shape_tests": [
+    {
+      "classes": 2,
+      "exact": true,
+      "targets": 1,
+      "width": 3
+    },
+    {
+      "classes": 5,
+      "exact": true,
+      "targets": 7,
+      "width": 17
+    },
+    {
+      "classes": 11,
+      "exact": true,
+      "targets": 53,
+      "width": 32
+    },
+    {
+      "classes": 24,
+      "exact": true,
+      "targets": 212,
+      "width": 64
+    },
+    {
+      "classes": 37,
+      "exact": true,
+      "targets": 257,
+      "width": 19
+    }
+  ],
+  "torch": "2.13.0+cu130",
+  "utc": "2026-09-25T13:03:04.964139+00:00"
+}

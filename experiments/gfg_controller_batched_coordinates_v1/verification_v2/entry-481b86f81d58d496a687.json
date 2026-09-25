@@ -1,0 +1,3670 @@
+{
+  "config": 2,
+  "entry": "entry-481b86f81d58d496a687",
+  "micro": {
+    "seconds": {
+      "batch": [
+        0.0029719099996145817,
+        0.0030493420001585034,
+        0.002825503000058234,
+        0.002914460999891162,
+        0.0028263359994161875,
+        0.0029378449998330326,
+        0.0027835419995244593,
+        0.002980769999558106,
+        0.00296669099945575
+      ],
+      "loop": [
+        0.0041282980004325506,
+        0.0040392670000437645,
+        0.004028453999198973,
+        0.004091050999704748,
+        0.004087780000409111,
+        0.004039374999701977,
+        0.004119579000398516,
+        0.0041188400005921725,
+        0.004068081000586972
+      ]
+    },
+    "speedup": 1.3914212630827811
+  },
+  "runs": [
+    {
+      "checked_wall_seconds": 1.4609967999858782,
+      "compute_seconds": 1.2568455995060503,
+      "exact": true,
+      "final_state_sha256": "b9901b08d4adbe8ef8842b546a27f634f6f16919557424f3ae22b5e5af0bb9a5",
+      "first99_steps": 50,
+      "optimized": false,
+      "repeat": 0,
+      "steps": [
+        {
+          "accuracy": 0.37735849056603776,
+          "alpha": 0.25,
+          "parameters_sha256": "01fbeddce40ad0ccfd5c79d2b1543e273a1d7e5be7f0e81616772c82cfae25be",
+          "step": 1,
+          "update_seconds": 0.08463890000712126
+        },
+        {
+          "accuracy": 0.4386792452830189,
+          "alpha": 0.25,
+          "parameters_sha256": "c7f8ebf1dbc4616ea4e36765d3d94383b639ca0c13b22110a6db710b4b5cfb62",
+          "step": 2,
+          "update_seconds": 0.028299600002355874
+        },
+        {
+          "accuracy": 0.4716981132075472,
+          "alpha": 0.25,
+          "parameters_sha256": "6545edec8f41a51fba49dcb2be6a0b8adc6d9e0ae17b21e349f41a3577b847c9",
+          "step": 3,
+          "update_seconds": 0.03266509994864464
+        },
+        {
+          "accuracy": 0.4811320754716981,
+          "alpha": 0.25,
+          "parameters_sha256": "215f5f1e82c100727e8cccad52122b6926cabd04639d5486dde61b2d5a24d048",
+          "step": 4,
+          "update_seconds": 0.02791649999562651
+        },
+        {
+          "accuracy": 0.4669811320754717,
+          "alpha": 0.25,
+          "parameters_sha256": "a5bc65be745596bd40d4246bc56ea44806013a2661520d6d72940c608b463a71",
+          "step": 5,
+          "update_seconds": 0.022872600005939603
+        },
+        {
+          "accuracy": 0.49528301886792453,
+          "alpha": 0.25,
+          "parameters_sha256": "affb50f18e6e613d7949eabd61684b8a3f90fae2765bbff6db469f2580c8b7db",
+          "step": 6,
+          "update_seconds": 0.06982060009613633
+        },
+        {
+          "accuracy": 0.49056603773584906,
+          "alpha": 0.25,
+          "parameters_sha256": "cfffcbb331990802742fa228af2561e2fa60ba7a8598fe95e36fa70791443c8f",
+          "step": 7,
+          "update_seconds": 0.02306140004657209
+        },
+        {
+          "accuracy": 0.5047169811320755,
+          "alpha": 0.25,
+          "parameters_sha256": "9ba2997d7023aa7eed1f3bcde8d462b4e713d7a4a0a3c817e3dd8277119d0891",
+          "step": 8,
+          "update_seconds": 0.028170799952931702
+        },
+        {
+          "accuracy": 0.5377358490566038,
+          "alpha": 0.25,
+          "parameters_sha256": "ffb94016b2af89ad59ca3536d38d3c69fd57d92d86bd79fbe9700e799a7a241d",
+          "step": 9,
+          "update_seconds": 0.02551479998510331
+        },
+        {
+          "accuracy": 0.5518867924528302,
+          "alpha": 0.25,
+          "parameters_sha256": "dc49129999fe2a2b66e9cf71827c3475ab6ec601a46f23dc1b4678e2ee7c558e",
+          "step": 10,
+          "update_seconds": 0.015506499912589788
+        },
+        {
+          "accuracy": 0.5613207547169812,
+          "alpha": 0.25,
+          "parameters_sha256": "cef0b74389320c14997c46ac17688dad15d37e51d58119bf1e6341dfa2dc174a",
+          "step": 11,
+          "update_seconds": 0.060242799925617874
+        },
+        {
+          "accuracy": 0.5754716981132075,
+          "alpha": 0.25,
+          "parameters_sha256": "de066d4719cd5542cbd4d8bb1299541a744865ea3001e8e82431286b4569bb67",
+          "step": 12,
+          "update_seconds": 0.013614200055599213
+        },
+        {
+          "accuracy": 0.5990566037735849,
+          "alpha": 0.25,
+          "parameters_sha256": "8e8172b41b571904291bd42c8c4af01d8e59135625506d67c5616b3969b0a207",
+          "step": 13,
+          "update_seconds": 0.014923200011253357
+        },
+        {
+          "accuracy": 0.6226415094339622,
+          "alpha": 0.25,
+          "parameters_sha256": "6d0633ed08381fe35cf4efe1af0b6aacb6a2c149c436ef378d79cfcede52a172",
+          "step": 14,
+          "update_seconds": 0.01423690002411604
+        },
+        {
+          "accuracy": 0.660377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "2c5ea344b02cc978e91144ce118fc7e718cfc28789acb324a25a911255037ce2",
+          "step": 15,
+          "update_seconds": 0.015275800018571317
+        },
+        {
+          "accuracy": 0.7216981132075472,
+          "alpha": 0.5,
+          "parameters_sha256": "c878d9da8d9ed1c36d625f97f5420d056ce566119468fc0c8bccf1bf5ed8a147",
+          "step": 16,
+          "update_seconds": 0.06198839994613081
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "99f37d1eb2def20964e72d215d653c4fb53828e0658f3a79ebe8b6d15e7d17fa",
+          "step": 17,
+          "update_seconds": 0.01935249997768551
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "1b25212bc59c326584c90f46754a13712ca70471a8fb66b9a65c063bba2f2253",
+          "step": 18,
+          "update_seconds": 0.013981499942019582
+        },
+        {
+          "accuracy": 0.8113207547169812,
+          "alpha": 0.5,
+          "parameters_sha256": "858bd2cee8f1eaa60c1588e2f356aef604d09639eef39462b3fa3574906272cf",
+          "step": 19,
+          "update_seconds": 0.014756400021724403
+        },
+        {
+          "accuracy": 0.8066037735849056,
+          "alpha": 0.5,
+          "parameters_sha256": "f31c23e9a6e3233c6e9b49b62734c086546d9ff030527db045d922886de50463",
+          "step": 20,
+          "update_seconds": 0.012017500004731119
+        },
+        {
+          "accuracy": 0.8443396226415094,
+          "alpha": 0.25,
+          "parameters_sha256": "40252353652b27098823aa183033ad3a2fc0965d9f6c8458ac7442778fdffa8d",
+          "step": 21,
+          "update_seconds": 0.05944769992493093
+        },
+        {
+          "accuracy": 0.8632075471698113,
+          "alpha": 0.25,
+          "parameters_sha256": "7b4ece95b38364b2d64093b920c0631750e9e8091b2e97528595accdeb31c131",
+          "step": 22,
+          "update_seconds": 0.012111900025047362
+        },
+        {
+          "accuracy": 0.8773584905660378,
+          "alpha": 0.25,
+          "parameters_sha256": "1f53eccdc990552d272d4d5c8c2fdced7d2d5b0f2af1cd5a2cbb55427aac464c",
+          "step": 23,
+          "update_seconds": 0.012816999922506511
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "0f95973e523310b9713b6ff498db62c4e7c5ec580cde606102411e54c4158b21",
+          "step": 24,
+          "update_seconds": 0.01231499994173646
+        },
+        {
+          "accuracy": 0.9292452830188679,
+          "alpha": 0.25,
+          "parameters_sha256": "90cd6af7f79c04540549c16e453ff8cfa37381c06411fc11db9cca44b6deaba2",
+          "step": 25,
+          "update_seconds": 0.014809799962677062
+        },
+        {
+          "accuracy": 0.9198113207547169,
+          "alpha": 0.5,
+          "parameters_sha256": "29168fd560a55efc4a50a90fc6e0773ed35afb38d6b233d65beb13206adf2fb6",
+          "step": 26,
+          "update_seconds": 0.06996730004902929
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "8d27878bec086a215074f04bb963697f52a92f57dca815593fd35e7cd71d1bcf",
+          "step": 27,
+          "update_seconds": 0.012117700069211423
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "0ce30cd21ca580665db432cc69ccfcc52b30e1f6ff1ea94fc9f47eded48d5b58",
+          "step": 28,
+          "update_seconds": 0.012761899968609214
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "5bd3bac0980361d95937bcf63248194907250380c22f272463b88dcf004f02b6",
+          "step": 29,
+          "update_seconds": 0.012139700003899634
+        },
+        {
+          "accuracy": 0.9339622641509434,
+          "alpha": 0.5,
+          "parameters_sha256": "219f514fc5a2a2f088aa6f03305c5cde31c2c99cf1bb1e849bd1ab8b89cc9c3a",
+          "step": 30,
+          "update_seconds": 0.01282019994687289
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "5569db690df52709484fea24f7863bce925aa06dd005a511651ef2b08d6ae3fa",
+          "step": 31,
+          "update_seconds": 0.06858169997576624
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "b8feb5bc50d256048b71fe6826431b8c784ad917f7e62a5c0cc0afa2ae6333f5",
+          "step": 32,
+          "update_seconds": 0.011233899975195527
+        },
+        {
+          "accuracy": 0.9150943396226415,
+          "alpha": 1.0,
+          "parameters_sha256": "9aa0c981ecc7af93bf223185cca994a0a9b311ab0b17bd7e05c49ecfbd6cba64",
+          "step": 33,
+          "update_seconds": 0.011324699968099594
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "cc136722775cd1dc82e9217ab31683e30f21bf2db7f92d7a468768e38b2b47c7",
+          "step": 34,
+          "update_seconds": 0.011129199992865324
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 1.0,
+          "parameters_sha256": "9cdf5da040b6c74e20db1d6fba749019783c686b68f070b41b2fc0b07eb24fb9",
+          "step": 35,
+          "update_seconds": 0.01148969994392246
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "9e50c497ac16c789cb42bb5bbe0fe59056c57abe38ffd6e383951bee5370d000",
+          "step": 36,
+          "update_seconds": 0.05634140002075583
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "641130ace0425f0b7c6fa430627da1e62d44d5465722b2a689aa74b8047d0afc",
+          "step": 37,
+          "update_seconds": 0.012214999995194376
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "604acc319bcfd29969f6a8fee3150a27a8b51bb8c4a01f84957f031cfe40a79a",
+          "step": 38,
+          "update_seconds": 0.011931399931199849
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "576dd0c1be45ddf12d4ae16374987e3dd8299ec61899141608a58c7c98dca0ff",
+          "step": 39,
+          "update_seconds": 0.010465499944984913
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "37b2a03a3460aa8c4278dfbbdc535af1e69f573b5c8c0c2ff3318caf28f4bcda",
+          "step": 40,
+          "update_seconds": 0.010844300035387278
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "5e6febc10c5ded24175b8a1a15cbeefe292f80f7cff5fac937da40b6fe2f361f",
+          "step": 41,
+          "update_seconds": 0.05839420005213469
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "a6396637ffc45b6a8458fac71d5967307336f7b91f152f06b5c67dbc4a090b12",
+          "step": 42,
+          "update_seconds": 0.011224900023080409
+        },
+        {
+          "accuracy": 0.9575471698113207,
+          "alpha": 1.0,
+          "parameters_sha256": "c6b9a5ef6411ab0db398e75f54122b0ffe8406c5bfe97296c43837f21160891d",
+          "step": 43,
+          "update_seconds": 0.010971899959258735
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "2742a03928950aa1200357788a4e1730756badde2c9813ecf22310fe9f22b060",
+          "step": 44,
+          "update_seconds": 0.010238999966531992
+        },
+        {
+          "accuracy": 0.9669811320754716,
+          "alpha": 1.0,
+          "parameters_sha256": "6d3e682f7c1b17779c50a1a1071ec1eeb26a95eff806b5030e6838fe1e3ea1ac",
+          "step": 45,
+          "update_seconds": 0.01104100001975894
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "bf8d6ebf89194a7912c647831d789ca3278fda8e4fcc8cc21b705e15157cf910",
+          "step": 46,
+          "update_seconds": 0.059084400068968534
+        },
+        {
+          "accuracy": 0.9811320754716981,
+          "alpha": 0.5,
+          "parameters_sha256": "98b9bf3400336293af2fdd63fd52b35e1f0f9173c6b588c018b974c1b0be7c2f",
+          "step": 47,
+          "update_seconds": 0.011987599893473089
+        },
+        {
+          "accuracy": 0.9858490566037735,
+          "alpha": 0.5,
+          "parameters_sha256": "2fbf41a8d7289b0879a7eec3dacdaee5e9b40a7bb88f825001c4cbe421c38e96",
+          "step": 48,
+          "update_seconds": 0.012545300065539777
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "9a94de37419918a9da3e928e943559cef43930cef50a07d70293f4c6419bc1b8",
+          "step": 49,
+          "update_seconds": 0.013083399971947074
+        },
+        {
+          "accuracy": 0.9905660377358491,
+          "alpha": 0.5,
+          "parameters_sha256": "127ff818b7f454abefbc1d5b341db12ac9d332266676a9d1b4a8cc10e56876ba",
+          "step": 50,
+          "update_seconds": 0.012476200005039573
+        }
+      ]
+    },
+    {
+      "checked_wall_seconds": 1.231279999949038,
+      "compute_seconds": 1.060328399995342,
+      "exact": true,
+      "final_state_sha256": "b9901b08d4adbe8ef8842b546a27f634f6f16919557424f3ae22b5e5af0bb9a5",
+      "first99_steps": 50,
+      "optimized": true,
+      "repeat": 0,
+      "steps": [
+        {
+          "accuracy": 0.37735849056603776,
+          "alpha": 0.25,
+          "parameters_sha256": "01fbeddce40ad0ccfd5c79d2b1543e273a1d7e5be7f0e81616772c82cfae25be",
+          "step": 1,
+          "update_seconds": 0.06311380001716316
+        },
+        {
+          "accuracy": 0.4386792452830189,
+          "alpha": 0.25,
+          "parameters_sha256": "c7f8ebf1dbc4616ea4e36765d3d94383b639ca0c13b22110a6db710b4b5cfb62",
+          "step": 2,
+          "update_seconds": 0.012252899934537709
+        },
+        {
+          "accuracy": 0.4716981132075472,
+          "alpha": 0.25,
+          "parameters_sha256": "6545edec8f41a51fba49dcb2be6a0b8adc6d9e0ae17b21e349f41a3577b847c9",
+          "step": 3,
+          "update_seconds": 0.011506199953146279
+        },
+        {
+          "accuracy": 0.4811320754716981,
+          "alpha": 0.25,
+          "parameters_sha256": "215f5f1e82c100727e8cccad52122b6926cabd04639d5486dde61b2d5a24d048",
+          "step": 4,
+          "update_seconds": 0.011410800041630864
+        },
+        {
+          "accuracy": 0.4669811320754717,
+          "alpha": 0.25,
+          "parameters_sha256": "a5bc65be745596bd40d4246bc56ea44806013a2661520d6d72940c608b463a71",
+          "step": 5,
+          "update_seconds": 0.011137500056065619
+        },
+        {
+          "accuracy": 0.49528301886792453,
+          "alpha": 0.25,
+          "parameters_sha256": "affb50f18e6e613d7949eabd61684b8a3f90fae2765bbff6db469f2580c8b7db",
+          "step": 6,
+          "update_seconds": 0.0576492000836879
+        },
+        {
+          "accuracy": 0.49056603773584906,
+          "alpha": 0.25,
+          "parameters_sha256": "cfffcbb331990802742fa228af2561e2fa60ba7a8598fe95e36fa70791443c8f",
+          "step": 7,
+          "update_seconds": 0.013081799959763885
+        },
+        {
+          "accuracy": 0.5047169811320755,
+          "alpha": 0.25,
+          "parameters_sha256": "9ba2997d7023aa7eed1f3bcde8d462b4e713d7a4a0a3c817e3dd8277119d0891",
+          "step": 8,
+          "update_seconds": 0.013303800020366907
+        },
+        {
+          "accuracy": 0.5377358490566038,
+          "alpha": 0.25,
+          "parameters_sha256": "ffb94016b2af89ad59ca3536d38d3c69fd57d92d86bd79fbe9700e799a7a241d",
+          "step": 9,
+          "update_seconds": 0.012796399998478591
+        },
+        {
+          "accuracy": 0.5518867924528302,
+          "alpha": 0.25,
+          "parameters_sha256": "dc49129999fe2a2b66e9cf71827c3475ab6ec601a46f23dc1b4678e2ee7c558e",
+          "step": 10,
+          "update_seconds": 0.013144499971531332
+        },
+        {
+          "accuracy": 0.5613207547169812,
+          "alpha": 0.25,
+          "parameters_sha256": "cef0b74389320c14997c46ac17688dad15d37e51d58119bf1e6341dfa2dc174a",
+          "step": 11,
+          "update_seconds": 0.057460600044578314
+        },
+        {
+          "accuracy": 0.5754716981132075,
+          "alpha": 0.25,
+          "parameters_sha256": "de066d4719cd5542cbd4d8bb1299541a744865ea3001e8e82431286b4569bb67",
+          "step": 12,
+          "update_seconds": 0.010848300065845251
+        },
+        {
+          "accuracy": 0.5990566037735849,
+          "alpha": 0.25,
+          "parameters_sha256": "8e8172b41b571904291bd42c8c4af01d8e59135625506d67c5616b3969b0a207",
+          "step": 13,
+          "update_seconds": 0.012279000016860664
+        },
+        {
+          "accuracy": 0.6226415094339622,
+          "alpha": 0.25,
+          "parameters_sha256": "6d0633ed08381fe35cf4efe1af0b6aacb6a2c149c436ef378d79cfcede52a172",
+          "step": 14,
+          "update_seconds": 0.01125730003695935
+        },
+        {
+          "accuracy": 0.660377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "2c5ea344b02cc978e91144ce118fc7e718cfc28789acb324a25a911255037ce2",
+          "step": 15,
+          "update_seconds": 0.011598000070080161
+        },
+        {
+          "accuracy": 0.7216981132075472,
+          "alpha": 0.5,
+          "parameters_sha256": "c878d9da8d9ed1c36d625f97f5420d056ce566119468fc0c8bccf1bf5ed8a147",
+          "step": 16,
+          "update_seconds": 0.06296899996232241
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "99f37d1eb2def20964e72d215d653c4fb53828e0658f3a79ebe8b6d15e7d17fa",
+          "step": 17,
+          "update_seconds": 0.01273999991826713
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "1b25212bc59c326584c90f46754a13712ca70471a8fb66b9a65c063bba2f2253",
+          "step": 18,
+          "update_seconds": 0.013974800007417798
+        },
+        {
+          "accuracy": 0.8113207547169812,
+          "alpha": 0.5,
+          "parameters_sha256": "858bd2cee8f1eaa60c1588e2f356aef604d09639eef39462b3fa3574906272cf",
+          "step": 19,
+          "update_seconds": 0.014564499957486987
+        },
+        {
+          "accuracy": 0.8066037735849056,
+          "alpha": 0.5,
+          "parameters_sha256": "f31c23e9a6e3233c6e9b49b62734c086546d9ff030527db045d922886de50463",
+          "step": 20,
+          "update_seconds": 0.012460399884730577
+        },
+        {
+          "accuracy": 0.8443396226415094,
+          "alpha": 0.25,
+          "parameters_sha256": "40252353652b27098823aa183033ad3a2fc0965d9f6c8458ac7442778fdffa8d",
+          "step": 21,
+          "update_seconds": 0.057038199971430004
+        },
+        {
+          "accuracy": 0.8632075471698113,
+          "alpha": 0.25,
+          "parameters_sha256": "7b4ece95b38364b2d64093b920c0631750e9e8091b2e97528595accdeb31c131",
+          "step": 22,
+          "update_seconds": 0.013034499948844314
+        },
+        {
+          "accuracy": 0.8773584905660378,
+          "alpha": 0.25,
+          "parameters_sha256": "1f53eccdc990552d272d4d5c8c2fdced7d2d5b0f2af1cd5a2cbb55427aac464c",
+          "step": 23,
+          "update_seconds": 0.012268100050278008
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "0f95973e523310b9713b6ff498db62c4e7c5ec580cde606102411e54c4158b21",
+          "step": 24,
+          "update_seconds": 0.011772700003348291
+        },
+        {
+          "accuracy": 0.9292452830188679,
+          "alpha": 0.25,
+          "parameters_sha256": "90cd6af7f79c04540549c16e453ff8cfa37381c06411fc11db9cca44b6deaba2",
+          "step": 25,
+          "update_seconds": 0.014448100002482533
+        },
+        {
+          "accuracy": 0.9198113207547169,
+          "alpha": 0.5,
+          "parameters_sha256": "29168fd560a55efc4a50a90fc6e0773ed35afb38d6b233d65beb13206adf2fb6",
+          "step": 26,
+          "update_seconds": 0.06156649999320507
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "8d27878bec086a215074f04bb963697f52a92f57dca815593fd35e7cd71d1bcf",
+          "step": 27,
+          "update_seconds": 0.012636400060728192
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "0ce30cd21ca580665db432cc69ccfcc52b30e1f6ff1ea94fc9f47eded48d5b58",
+          "step": 28,
+          "update_seconds": 0.012458599987439811
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "5bd3bac0980361d95937bcf63248194907250380c22f272463b88dcf004f02b6",
+          "step": 29,
+          "update_seconds": 0.013212800025939941
+        },
+        {
+          "accuracy": 0.9339622641509434,
+          "alpha": 0.5,
+          "parameters_sha256": "219f514fc5a2a2f088aa6f03305c5cde31c2c99cf1bb1e849bd1ab8b89cc9c3a",
+          "step": 30,
+          "update_seconds": 0.012400500010699034
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "5569db690df52709484fea24f7863bce925aa06dd005a511651ef2b08d6ae3fa",
+          "step": 31,
+          "update_seconds": 0.05884029995650053
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "b8feb5bc50d256048b71fe6826431b8c784ad917f7e62a5c0cc0afa2ae6333f5",
+          "step": 32,
+          "update_seconds": 0.011758800013922155
+        },
+        {
+          "accuracy": 0.9150943396226415,
+          "alpha": 1.0,
+          "parameters_sha256": "9aa0c981ecc7af93bf223185cca994a0a9b311ab0b17bd7e05c49ecfbd6cba64",
+          "step": 33,
+          "update_seconds": 0.01028369995765388
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "cc136722775cd1dc82e9217ab31683e30f21bf2db7f92d7a468768e38b2b47c7",
+          "step": 34,
+          "update_seconds": 0.010272599989548326
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 1.0,
+          "parameters_sha256": "9cdf5da040b6c74e20db1d6fba749019783c686b68f070b41b2fc0b07eb24fb9",
+          "step": 35,
+          "update_seconds": 0.010579800000414252
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "9e50c497ac16c789cb42bb5bbe0fe59056c57abe38ffd6e383951bee5370d000",
+          "step": 36,
+          "update_seconds": 0.05741390003822744
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "641130ace0425f0b7c6fa430627da1e62d44d5465722b2a689aa74b8047d0afc",
+          "step": 37,
+          "update_seconds": 0.01213569997344166
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "604acc319bcfd29969f6a8fee3150a27a8b51bb8c4a01f84957f031cfe40a79a",
+          "step": 38,
+          "update_seconds": 0.011235999991185963
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "576dd0c1be45ddf12d4ae16374987e3dd8299ec61899141608a58c7c98dca0ff",
+          "step": 39,
+          "update_seconds": 0.009730799938552082
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "37b2a03a3460aa8c4278dfbbdc535af1e69f573b5c8c0c2ff3318caf28f4bcda",
+          "step": 40,
+          "update_seconds": 0.010120299994014204
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "5e6febc10c5ded24175b8a1a15cbeefe292f80f7cff5fac937da40b6fe2f361f",
+          "step": 41,
+          "update_seconds": 0.05332890001591295
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "a6396637ffc45b6a8458fac71d5967307336f7b91f152f06b5c67dbc4a090b12",
+          "step": 42,
+          "update_seconds": 0.01059199997689575
+        },
+        {
+          "accuracy": 0.9575471698113207,
+          "alpha": 1.0,
+          "parameters_sha256": "c6b9a5ef6411ab0db398e75f54122b0ffe8406c5bfe97296c43837f21160891d",
+          "step": 43,
+          "update_seconds": 0.010645700036548078
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "2742a03928950aa1200357788a4e1730756badde2c9813ecf22310fe9f22b060",
+          "step": 44,
+          "update_seconds": 0.009890099987387657
+        },
+        {
+          "accuracy": 0.9669811320754716,
+          "alpha": 1.0,
+          "parameters_sha256": "6d3e682f7c1b17779c50a1a1071ec1eeb26a95eff806b5030e6838fe1e3ea1ac",
+          "step": 45,
+          "update_seconds": 0.010322599904611707
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "bf8d6ebf89194a7912c647831d789ca3278fda8e4fcc8cc21b705e15157cf910",
+          "step": 46,
+          "update_seconds": 0.056404100032523274
+        },
+        {
+          "accuracy": 0.9811320754716981,
+          "alpha": 0.5,
+          "parameters_sha256": "98b9bf3400336293af2fdd63fd52b35e1f0f9173c6b588c018b974c1b0be7c2f",
+          "step": 47,
+          "update_seconds": 0.011115900008007884
+        },
+        {
+          "accuracy": 0.9858490566037735,
+          "alpha": 0.5,
+          "parameters_sha256": "2fbf41a8d7289b0879a7eec3dacdaee5e9b40a7bb88f825001c4cbe421c38e96",
+          "step": 48,
+          "update_seconds": 0.011348500032909214
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "9a94de37419918a9da3e928e943559cef43930cef50a07d70293f4c6419bc1b8",
+          "step": 49,
+          "update_seconds": 0.011272300034761429
+        },
+        {
+          "accuracy": 0.9905660377358491,
+          "alpha": 0.5,
+          "parameters_sha256": "127ff818b7f454abefbc1d5b341db12ac9d332266676a9d1b4a8cc10e56876ba",
+          "step": 50,
+          "update_seconds": 0.012579200090840459
+        }
+      ]
+    },
+    {
+      "checked_wall_seconds": 1.1931484000524506,
+      "compute_seconds": 1.0312382999109104,
+      "exact": true,
+      "final_state_sha256": "b9901b08d4adbe8ef8842b546a27f634f6f16919557424f3ae22b5e5af0bb9a5",
+      "first99_steps": 50,
+      "optimized": true,
+      "repeat": 1,
+      "steps": [
+        {
+          "accuracy": 0.37735849056603776,
+          "alpha": 0.25,
+          "parameters_sha256": "01fbeddce40ad0ccfd5c79d2b1543e273a1d7e5be7f0e81616772c82cfae25be",
+          "step": 1,
+          "update_seconds": 0.05372000008355826
+        },
+        {
+          "accuracy": 0.4386792452830189,
+          "alpha": 0.25,
+          "parameters_sha256": "c7f8ebf1dbc4616ea4e36765d3d94383b639ca0c13b22110a6db710b4b5cfb62",
+          "step": 2,
+          "update_seconds": 0.01372099993750453
+        },
+        {
+          "accuracy": 0.4716981132075472,
+          "alpha": 0.25,
+          "parameters_sha256": "6545edec8f41a51fba49dcb2be6a0b8adc6d9e0ae17b21e349f41a3577b847c9",
+          "step": 3,
+          "update_seconds": 0.011617699987255037
+        },
+        {
+          "accuracy": 0.4811320754716981,
+          "alpha": 0.25,
+          "parameters_sha256": "215f5f1e82c100727e8cccad52122b6926cabd04639d5486dde61b2d5a24d048",
+          "step": 4,
+          "update_seconds": 0.01236990001052618
+        },
+        {
+          "accuracy": 0.4669811320754717,
+          "alpha": 0.25,
+          "parameters_sha256": "a5bc65be745596bd40d4246bc56ea44806013a2661520d6d72940c608b463a71",
+          "step": 5,
+          "update_seconds": 0.013203200069256127
+        },
+        {
+          "accuracy": 0.49528301886792453,
+          "alpha": 0.25,
+          "parameters_sha256": "affb50f18e6e613d7949eabd61684b8a3f90fae2765bbff6db469f2580c8b7db",
+          "step": 6,
+          "update_seconds": 0.06437230005394667
+        },
+        {
+          "accuracy": 0.49056603773584906,
+          "alpha": 0.25,
+          "parameters_sha256": "cfffcbb331990802742fa228af2561e2fa60ba7a8598fe95e36fa70791443c8f",
+          "step": 7,
+          "update_seconds": 0.012517099967226386
+        },
+        {
+          "accuracy": 0.5047169811320755,
+          "alpha": 0.25,
+          "parameters_sha256": "9ba2997d7023aa7eed1f3bcde8d462b4e713d7a4a0a3c817e3dd8277119d0891",
+          "step": 8,
+          "update_seconds": 0.011189100099727511
+        },
+        {
+          "accuracy": 0.5377358490566038,
+          "alpha": 0.25,
+          "parameters_sha256": "ffb94016b2af89ad59ca3536d38d3c69fd57d92d86bd79fbe9700e799a7a241d",
+          "step": 9,
+          "update_seconds": 0.01109440007712692
+        },
+        {
+          "accuracy": 0.5518867924528302,
+          "alpha": 0.25,
+          "parameters_sha256": "dc49129999fe2a2b66e9cf71827c3475ab6ec601a46f23dc1b4678e2ee7c558e",
+          "step": 10,
+          "update_seconds": 0.013146599987521768
+        },
+        {
+          "accuracy": 0.5613207547169812,
+          "alpha": 0.25,
+          "parameters_sha256": "cef0b74389320c14997c46ac17688dad15d37e51d58119bf1e6341dfa2dc174a",
+          "step": 11,
+          "update_seconds": 0.05980909999925643
+        },
+        {
+          "accuracy": 0.5754716981132075,
+          "alpha": 0.25,
+          "parameters_sha256": "de066d4719cd5542cbd4d8bb1299541a744865ea3001e8e82431286b4569bb67",
+          "step": 12,
+          "update_seconds": 0.011799299973063171
+        },
+        {
+          "accuracy": 0.5990566037735849,
+          "alpha": 0.25,
+          "parameters_sha256": "8e8172b41b571904291bd42c8c4af01d8e59135625506d67c5616b3969b0a207",
+          "step": 13,
+          "update_seconds": 0.011180699919350445
+        },
+        {
+          "accuracy": 0.6226415094339622,
+          "alpha": 0.25,
+          "parameters_sha256": "6d0633ed08381fe35cf4efe1af0b6aacb6a2c149c436ef378d79cfcede52a172",
+          "step": 14,
+          "update_seconds": 0.013487400021404028
+        },
+        {
+          "accuracy": 0.660377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "2c5ea344b02cc978e91144ce118fc7e718cfc28789acb324a25a911255037ce2",
+          "step": 15,
+          "update_seconds": 0.012153199990279973
+        },
+        {
+          "accuracy": 0.7216981132075472,
+          "alpha": 0.5,
+          "parameters_sha256": "c878d9da8d9ed1c36d625f97f5420d056ce566119468fc0c8bccf1bf5ed8a147",
+          "step": 16,
+          "update_seconds": 0.05411399994045496
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "99f37d1eb2def20964e72d215d653c4fb53828e0658f3a79ebe8b6d15e7d17fa",
+          "step": 17,
+          "update_seconds": 0.011697600013576448
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "1b25212bc59c326584c90f46754a13712ca70471a8fb66b9a65c063bba2f2253",
+          "step": 18,
+          "update_seconds": 0.013744799885898829
+        },
+        {
+          "accuracy": 0.8113207547169812,
+          "alpha": 0.5,
+          "parameters_sha256": "858bd2cee8f1eaa60c1588e2f356aef604d09639eef39462b3fa3574906272cf",
+          "step": 19,
+          "update_seconds": 0.012178000062704086
+        },
+        {
+          "accuracy": 0.8066037735849056,
+          "alpha": 0.5,
+          "parameters_sha256": "f31c23e9a6e3233c6e9b49b62734c086546d9ff030527db045d922886de50463",
+          "step": 20,
+          "update_seconds": 0.011114199995063245
+        },
+        {
+          "accuracy": 0.8443396226415094,
+          "alpha": 0.25,
+          "parameters_sha256": "40252353652b27098823aa183033ad3a2fc0965d9f6c8458ac7442778fdffa8d",
+          "step": 21,
+          "update_seconds": 0.05936159996781498
+        },
+        {
+          "accuracy": 0.8632075471698113,
+          "alpha": 0.25,
+          "parameters_sha256": "7b4ece95b38364b2d64093b920c0631750e9e8091b2e97528595accdeb31c131",
+          "step": 22,
+          "update_seconds": 0.012429700000211596
+        },
+        {
+          "accuracy": 0.8773584905660378,
+          "alpha": 0.25,
+          "parameters_sha256": "1f53eccdc990552d272d4d5c8c2fdced7d2d5b0f2af1cd5a2cbb55427aac464c",
+          "step": 23,
+          "update_seconds": 0.011998999980278313
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "0f95973e523310b9713b6ff498db62c4e7c5ec580cde606102411e54c4158b21",
+          "step": 24,
+          "update_seconds": 0.011954299989156425
+        },
+        {
+          "accuracy": 0.9292452830188679,
+          "alpha": 0.25,
+          "parameters_sha256": "90cd6af7f79c04540549c16e453ff8cfa37381c06411fc11db9cca44b6deaba2",
+          "step": 25,
+          "update_seconds": 0.01202609995380044
+        },
+        {
+          "accuracy": 0.9198113207547169,
+          "alpha": 0.5,
+          "parameters_sha256": "29168fd560a55efc4a50a90fc6e0773ed35afb38d6b233d65beb13206adf2fb6",
+          "step": 26,
+          "update_seconds": 0.05662129994016141
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "8d27878bec086a215074f04bb963697f52a92f57dca815593fd35e7cd71d1bcf",
+          "step": 27,
+          "update_seconds": 0.013534000026993454
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "0ce30cd21ca580665db432cc69ccfcc52b30e1f6ff1ea94fc9f47eded48d5b58",
+          "step": 28,
+          "update_seconds": 0.011026700027287006
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "5bd3bac0980361d95937bcf63248194907250380c22f272463b88dcf004f02b6",
+          "step": 29,
+          "update_seconds": 0.011552899959497154
+        },
+        {
+          "accuracy": 0.9339622641509434,
+          "alpha": 0.5,
+          "parameters_sha256": "219f514fc5a2a2f088aa6f03305c5cde31c2c99cf1bb1e849bd1ab8b89cc9c3a",
+          "step": 30,
+          "update_seconds": 0.01287069998215884
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "5569db690df52709484fea24f7863bce925aa06dd005a511651ef2b08d6ae3fa",
+          "step": 31,
+          "update_seconds": 0.052974099991843104
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "b8feb5bc50d256048b71fe6826431b8c784ad917f7e62a5c0cc0afa2ae6333f5",
+          "step": 32,
+          "update_seconds": 0.011152600054629147
+        },
+        {
+          "accuracy": 0.9150943396226415,
+          "alpha": 1.0,
+          "parameters_sha256": "9aa0c981ecc7af93bf223185cca994a0a9b311ab0b17bd7e05c49ecfbd6cba64",
+          "step": 33,
+          "update_seconds": 0.010778199997730553
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "cc136722775cd1dc82e9217ab31683e30f21bf2db7f92d7a468768e38b2b47c7",
+          "step": 34,
+          "update_seconds": 0.009828599984757602
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 1.0,
+          "parameters_sha256": "9cdf5da040b6c74e20db1d6fba749019783c686b68f070b41b2fc0b07eb24fb9",
+          "step": 35,
+          "update_seconds": 0.012023500050418079
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "9e50c497ac16c789cb42bb5bbe0fe59056c57abe38ffd6e383951bee5370d000",
+          "step": 36,
+          "update_seconds": 0.05919259996153414
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "641130ace0425f0b7c6fa430627da1e62d44d5465722b2a689aa74b8047d0afc",
+          "step": 37,
+          "update_seconds": 0.010581200011074543
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "604acc319bcfd29969f6a8fee3150a27a8b51bb8c4a01f84957f031cfe40a79a",
+          "step": 38,
+          "update_seconds": 0.009162599919363856
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "576dd0c1be45ddf12d4ae16374987e3dd8299ec61899141608a58c7c98dca0ff",
+          "step": 39,
+          "update_seconds": 0.010830999934114516
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "37b2a03a3460aa8c4278dfbbdc535af1e69f573b5c8c0c2ff3318caf28f4bcda",
+          "step": 40,
+          "update_seconds": 0.007865999941714108
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "5e6febc10c5ded24175b8a1a15cbeefe292f80f7cff5fac937da40b6fe2f361f",
+          "step": 41,
+          "update_seconds": 0.05181330000050366
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "a6396637ffc45b6a8458fac71d5967307336f7b91f152f06b5c67dbc4a090b12",
+          "step": 42,
+          "update_seconds": 0.00889389996882528
+        },
+        {
+          "accuracy": 0.9575471698113207,
+          "alpha": 1.0,
+          "parameters_sha256": "c6b9a5ef6411ab0db398e75f54122b0ffe8406c5bfe97296c43837f21160891d",
+          "step": 43,
+          "update_seconds": 0.008753900066949427
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "2742a03928950aa1200357788a4e1730756badde2c9813ecf22310fe9f22b060",
+          "step": 44,
+          "update_seconds": 0.008885600022040308
+        },
+        {
+          "accuracy": 0.9669811320754716,
+          "alpha": 1.0,
+          "parameters_sha256": "6d3e682f7c1b17779c50a1a1071ec1eeb26a95eff806b5030e6838fe1e3ea1ac",
+          "step": 45,
+          "update_seconds": 0.008185400045476854
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "bf8d6ebf89194a7912c647831d789ca3278fda8e4fcc8cc21b705e15157cf910",
+          "step": 46,
+          "update_seconds": 0.06814890005625784
+        },
+        {
+          "accuracy": 0.9811320754716981,
+          "alpha": 0.5,
+          "parameters_sha256": "98b9bf3400336293af2fdd63fd52b35e1f0f9173c6b588c018b974c1b0be7c2f",
+          "step": 47,
+          "update_seconds": 0.010949800023809075
+        },
+        {
+          "accuracy": 0.9858490566037735,
+          "alpha": 0.5,
+          "parameters_sha256": "2fbf41a8d7289b0879a7eec3dacdaee5e9b40a7bb88f825001c4cbe421c38e96",
+          "step": 48,
+          "update_seconds": 0.009823299944400787
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "9a94de37419918a9da3e928e943559cef43930cef50a07d70293f4c6419bc1b8",
+          "step": 49,
+          "update_seconds": 0.011088200029917061
+        },
+        {
+          "accuracy": 0.9905660377358491,
+          "alpha": 0.5,
+          "parameters_sha256": "127ff818b7f454abefbc1d5b341db12ac9d332266676a9d1b4a8cc10e56876ba",
+          "step": 50,
+          "update_seconds": 0.008618099964223802
+        }
+      ]
+    },
+    {
+      "checked_wall_seconds": 1.1263176000211388,
+      "compute_seconds": 0.9807323004351929,
+      "exact": true,
+      "final_state_sha256": "b9901b08d4adbe8ef8842b546a27f634f6f16919557424f3ae22b5e5af0bb9a5",
+      "first99_steps": 50,
+      "optimized": false,
+      "repeat": 1,
+      "steps": [
+        {
+          "accuracy": 0.37735849056603776,
+          "alpha": 0.25,
+          "parameters_sha256": "01fbeddce40ad0ccfd5c79d2b1543e273a1d7e5be7f0e81616772c82cfae25be",
+          "step": 1,
+          "update_seconds": 0.054569600033573806
+        },
+        {
+          "accuracy": 0.4386792452830189,
+          "alpha": 0.25,
+          "parameters_sha256": "c7f8ebf1dbc4616ea4e36765d3d94383b639ca0c13b22110a6db710b4b5cfb62",
+          "step": 2,
+          "update_seconds": 0.01017999998293817
+        },
+        {
+          "accuracy": 0.4716981132075472,
+          "alpha": 0.25,
+          "parameters_sha256": "6545edec8f41a51fba49dcb2be6a0b8adc6d9e0ae17b21e349f41a3577b847c9",
+          "step": 3,
+          "update_seconds": 0.01228570006787777
+        },
+        {
+          "accuracy": 0.4811320754716981,
+          "alpha": 0.25,
+          "parameters_sha256": "215f5f1e82c100727e8cccad52122b6926cabd04639d5486dde61b2d5a24d048",
+          "step": 4,
+          "update_seconds": 0.012890300014987588
+        },
+        {
+          "accuracy": 0.4669811320754717,
+          "alpha": 0.25,
+          "parameters_sha256": "a5bc65be745596bd40d4246bc56ea44806013a2661520d6d72940c608b463a71",
+          "step": 5,
+          "update_seconds": 0.012236799928359687
+        },
+        {
+          "accuracy": 0.49528301886792453,
+          "alpha": 0.25,
+          "parameters_sha256": "affb50f18e6e613d7949eabd61684b8a3f90fae2765bbff6db469f2580c8b7db",
+          "step": 6,
+          "update_seconds": 0.06068529991898686
+        },
+        {
+          "accuracy": 0.49056603773584906,
+          "alpha": 0.25,
+          "parameters_sha256": "cfffcbb331990802742fa228af2561e2fa60ba7a8598fe95e36fa70791443c8f",
+          "step": 7,
+          "update_seconds": 0.011258400045335293
+        },
+        {
+          "accuracy": 0.5047169811320755,
+          "alpha": 0.25,
+          "parameters_sha256": "9ba2997d7023aa7eed1f3bcde8d462b4e713d7a4a0a3c817e3dd8277119d0891",
+          "step": 8,
+          "update_seconds": 0.010731500107795
+        },
+        {
+          "accuracy": 0.5377358490566038,
+          "alpha": 0.25,
+          "parameters_sha256": "ffb94016b2af89ad59ca3536d38d3c69fd57d92d86bd79fbe9700e799a7a241d",
+          "step": 9,
+          "update_seconds": 0.010172000038437545
+        },
+        {
+          "accuracy": 0.5518867924528302,
+          "alpha": 0.25,
+          "parameters_sha256": "dc49129999fe2a2b66e9cf71827c3475ab6ec601a46f23dc1b4678e2ee7c558e",
+          "step": 10,
+          "update_seconds": 0.011335700051859021
+        },
+        {
+          "accuracy": 0.5613207547169812,
+          "alpha": 0.25,
+          "parameters_sha256": "cef0b74389320c14997c46ac17688dad15d37e51d58119bf1e6341dfa2dc174a",
+          "step": 11,
+          "update_seconds": 0.062284199986606836
+        },
+        {
+          "accuracy": 0.5754716981132075,
+          "alpha": 0.25,
+          "parameters_sha256": "de066d4719cd5542cbd4d8bb1299541a744865ea3001e8e82431286b4569bb67",
+          "step": 12,
+          "update_seconds": 0.0114676000084728
+        },
+        {
+          "accuracy": 0.5990566037735849,
+          "alpha": 0.25,
+          "parameters_sha256": "8e8172b41b571904291bd42c8c4af01d8e59135625506d67c5616b3969b0a207",
+          "step": 13,
+          "update_seconds": 0.009307799977250397
+        },
+        {
+          "accuracy": 0.6226415094339622,
+          "alpha": 0.25,
+          "parameters_sha256": "6d0633ed08381fe35cf4efe1af0b6aacb6a2c149c436ef378d79cfcede52a172",
+          "step": 14,
+          "update_seconds": 0.00931480003055185
+        },
+        {
+          "accuracy": 0.660377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "2c5ea344b02cc978e91144ce118fc7e718cfc28789acb324a25a911255037ce2",
+          "step": 15,
+          "update_seconds": 0.012016599997878075
+        },
+        {
+          "accuracy": 0.7216981132075472,
+          "alpha": 0.5,
+          "parameters_sha256": "c878d9da8d9ed1c36d625f97f5420d056ce566119468fc0c8bccf1bf5ed8a147",
+          "step": 16,
+          "update_seconds": 0.06325910007581115
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "99f37d1eb2def20964e72d215d653c4fb53828e0658f3a79ebe8b6d15e7d17fa",
+          "step": 17,
+          "update_seconds": 0.01239080005325377
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "1b25212bc59c326584c90f46754a13712ca70471a8fb66b9a65c063bba2f2253",
+          "step": 18,
+          "update_seconds": 0.012047399999573827
+        },
+        {
+          "accuracy": 0.8113207547169812,
+          "alpha": 0.5,
+          "parameters_sha256": "858bd2cee8f1eaa60c1588e2f356aef604d09639eef39462b3fa3574906272cf",
+          "step": 19,
+          "update_seconds": 0.011317600030452013
+        },
+        {
+          "accuracy": 0.8066037735849056,
+          "alpha": 0.5,
+          "parameters_sha256": "f31c23e9a6e3233c6e9b49b62734c086546d9ff030527db045d922886de50463",
+          "step": 20,
+          "update_seconds": 0.00842559989541769
+        },
+        {
+          "accuracy": 0.8443396226415094,
+          "alpha": 0.25,
+          "parameters_sha256": "40252353652b27098823aa183033ad3a2fc0965d9f6c8458ac7442778fdffa8d",
+          "step": 21,
+          "update_seconds": 0.057356499950401485
+        },
+        {
+          "accuracy": 0.8632075471698113,
+          "alpha": 0.25,
+          "parameters_sha256": "7b4ece95b38364b2d64093b920c0631750e9e8091b2e97528595accdeb31c131",
+          "step": 22,
+          "update_seconds": 0.010721400030888617
+        },
+        {
+          "accuracy": 0.8773584905660378,
+          "alpha": 0.25,
+          "parameters_sha256": "1f53eccdc990552d272d4d5c8c2fdced7d2d5b0f2af1cd5a2cbb55427aac464c",
+          "step": 23,
+          "update_seconds": 0.010990899987518787
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "0f95973e523310b9713b6ff498db62c4e7c5ec580cde606102411e54c4158b21",
+          "step": 24,
+          "update_seconds": 0.008969600079581141
+        },
+        {
+          "accuracy": 0.9292452830188679,
+          "alpha": 0.25,
+          "parameters_sha256": "90cd6af7f79c04540549c16e453ff8cfa37381c06411fc11db9cca44b6deaba2",
+          "step": 25,
+          "update_seconds": 0.009929799940437078
+        },
+        {
+          "accuracy": 0.9198113207547169,
+          "alpha": 0.5,
+          "parameters_sha256": "29168fd560a55efc4a50a90fc6e0773ed35afb38d6b233d65beb13206adf2fb6",
+          "step": 26,
+          "update_seconds": 0.05728609999641776
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "8d27878bec086a215074f04bb963697f52a92f57dca815593fd35e7cd71d1bcf",
+          "step": 27,
+          "update_seconds": 0.009580299956724048
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "0ce30cd21ca580665db432cc69ccfcc52b30e1f6ff1ea94fc9f47eded48d5b58",
+          "step": 28,
+          "update_seconds": 0.00953999999910593
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "5bd3bac0980361d95937bcf63248194907250380c22f272463b88dcf004f02b6",
+          "step": 29,
+          "update_seconds": 0.010771799948997796
+        },
+        {
+          "accuracy": 0.9339622641509434,
+          "alpha": 0.5,
+          "parameters_sha256": "219f514fc5a2a2f088aa6f03305c5cde31c2c99cf1bb1e849bd1ab8b89cc9c3a",
+          "step": 30,
+          "update_seconds": 0.009094199980609119
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "5569db690df52709484fea24f7863bce925aa06dd005a511651ef2b08d6ae3fa",
+          "step": 31,
+          "update_seconds": 0.0650763000594452
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "b8feb5bc50d256048b71fe6826431b8c784ad917f7e62a5c0cc0afa2ae6333f5",
+          "step": 32,
+          "update_seconds": 0.007608900079503655
+        },
+        {
+          "accuracy": 0.9150943396226415,
+          "alpha": 1.0,
+          "parameters_sha256": "9aa0c981ecc7af93bf223185cca994a0a9b311ab0b17bd7e05c49ecfbd6cba64",
+          "step": 33,
+          "update_seconds": 0.008351600030437112
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "cc136722775cd1dc82e9217ab31683e30f21bf2db7f92d7a468768e38b2b47c7",
+          "step": 34,
+          "update_seconds": 0.009000800084322691
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 1.0,
+          "parameters_sha256": "9cdf5da040b6c74e20db1d6fba749019783c686b68f070b41b2fc0b07eb24fb9",
+          "step": 35,
+          "update_seconds": 0.008534400025382638
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "9e50c497ac16c789cb42bb5bbe0fe59056c57abe38ffd6e383951bee5370d000",
+          "step": 36,
+          "update_seconds": 0.053173299995251
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "641130ace0425f0b7c6fa430627da1e62d44d5465722b2a689aa74b8047d0afc",
+          "step": 37,
+          "update_seconds": 0.007927399943582714
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "604acc319bcfd29969f6a8fee3150a27a8b51bb8c4a01f84957f031cfe40a79a",
+          "step": 38,
+          "update_seconds": 0.008213100023567677
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "576dd0c1be45ddf12d4ae16374987e3dd8299ec61899141608a58c7c98dca0ff",
+          "step": 39,
+          "update_seconds": 0.008035100065171719
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "37b2a03a3460aa8c4278dfbbdc535af1e69f573b5c8c0c2ff3318caf28f4bcda",
+          "step": 40,
+          "update_seconds": 0.008037000079639256
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "5e6febc10c5ded24175b8a1a15cbeefe292f80f7cff5fac937da40b6fe2f361f",
+          "step": 41,
+          "update_seconds": 0.054827499901875854
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "a6396637ffc45b6a8458fac71d5967307336f7b91f152f06b5c67dbc4a090b12",
+          "step": 42,
+          "update_seconds": 0.009368799976073205
+        },
+        {
+          "accuracy": 0.9575471698113207,
+          "alpha": 1.0,
+          "parameters_sha256": "c6b9a5ef6411ab0db398e75f54122b0ffe8406c5bfe97296c43837f21160891d",
+          "step": 43,
+          "update_seconds": 0.00861389993224293
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "2742a03928950aa1200357788a4e1730756badde2c9813ecf22310fe9f22b060",
+          "step": 44,
+          "update_seconds": 0.007759400061331689
+        },
+        {
+          "accuracy": 0.9669811320754716,
+          "alpha": 1.0,
+          "parameters_sha256": "6d3e682f7c1b17779c50a1a1071ec1eeb26a95eff806b5030e6838fe1e3ea1ac",
+          "step": 45,
+          "update_seconds": 0.0077624000841751695
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "bf8d6ebf89194a7912c647831d789ca3278fda8e4fcc8cc21b705e15157cf910",
+          "step": 46,
+          "update_seconds": 0.05298799998126924
+        },
+        {
+          "accuracy": 0.9811320754716981,
+          "alpha": 0.5,
+          "parameters_sha256": "98b9bf3400336293af2fdd63fd52b35e1f0f9173c6b588c018b974c1b0be7c2f",
+          "step": 47,
+          "update_seconds": 0.011201999965123832
+        },
+        {
+          "accuracy": 0.9858490566037735,
+          "alpha": 0.5,
+          "parameters_sha256": "2fbf41a8d7289b0879a7eec3dacdaee5e9b40a7bb88f825001c4cbe421c38e96",
+          "step": 48,
+          "update_seconds": 0.010774399968795478
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "9a94de37419918a9da3e928e943559cef43930cef50a07d70293f4c6419bc1b8",
+          "step": 49,
+          "update_seconds": 0.011797599960118532
+        },
+        {
+          "accuracy": 0.9905660377358491,
+          "alpha": 0.5,
+          "parameters_sha256": "127ff818b7f454abefbc1d5b341db12ac9d332266676a9d1b4a8cc10e56876ba",
+          "step": 50,
+          "update_seconds": 0.009168800082989037
+        }
+      ]
+    },
+    {
+      "checked_wall_seconds": 1.1781228999607265,
+      "compute_seconds": 1.0225784002104774,
+      "exact": true,
+      "final_state_sha256": "b9901b08d4adbe8ef8842b546a27f634f6f16919557424f3ae22b5e5af0bb9a5",
+      "first99_steps": 50,
+      "optimized": false,
+      "repeat": 2,
+      "steps": [
+        {
+          "accuracy": 0.37735849056603776,
+          "alpha": 0.25,
+          "parameters_sha256": "01fbeddce40ad0ccfd5c79d2b1543e273a1d7e5be7f0e81616772c82cfae25be",
+          "step": 1,
+          "update_seconds": 0.05270370002835989
+        },
+        {
+          "accuracy": 0.4386792452830189,
+          "alpha": 0.25,
+          "parameters_sha256": "c7f8ebf1dbc4616ea4e36765d3d94383b639ca0c13b22110a6db710b4b5cfb62",
+          "step": 2,
+          "update_seconds": 0.013786799972876906
+        },
+        {
+          "accuracy": 0.4716981132075472,
+          "alpha": 0.25,
+          "parameters_sha256": "6545edec8f41a51fba49dcb2be6a0b8adc6d9e0ae17b21e349f41a3577b847c9",
+          "step": 3,
+          "update_seconds": 0.009079399984329939
+        },
+        {
+          "accuracy": 0.4811320754716981,
+          "alpha": 0.25,
+          "parameters_sha256": "215f5f1e82c100727e8cccad52122b6926cabd04639d5486dde61b2d5a24d048",
+          "step": 4,
+          "update_seconds": 0.008781100041233003
+        },
+        {
+          "accuracy": 0.4669811320754717,
+          "alpha": 0.25,
+          "parameters_sha256": "a5bc65be745596bd40d4246bc56ea44806013a2661520d6d72940c608b463a71",
+          "step": 5,
+          "update_seconds": 0.009577900054864585
+        },
+        {
+          "accuracy": 0.49528301886792453,
+          "alpha": 0.25,
+          "parameters_sha256": "affb50f18e6e613d7949eabd61684b8a3f90fae2765bbff6db469f2580c8b7db",
+          "step": 6,
+          "update_seconds": 0.0541504001012072
+        },
+        {
+          "accuracy": 0.49056603773584906,
+          "alpha": 0.25,
+          "parameters_sha256": "cfffcbb331990802742fa228af2561e2fa60ba7a8598fe95e36fa70791443c8f",
+          "step": 7,
+          "update_seconds": 0.0122735999757424
+        },
+        {
+          "accuracy": 0.5047169811320755,
+          "alpha": 0.25,
+          "parameters_sha256": "9ba2997d7023aa7eed1f3bcde8d462b4e713d7a4a0a3c817e3dd8277119d0891",
+          "step": 8,
+          "update_seconds": 0.01233310007955879
+        },
+        {
+          "accuracy": 0.5377358490566038,
+          "alpha": 0.25,
+          "parameters_sha256": "ffb94016b2af89ad59ca3536d38d3c69fd57d92d86bd79fbe9700e799a7a241d",
+          "step": 9,
+          "update_seconds": 0.014262899989262223
+        },
+        {
+          "accuracy": 0.5518867924528302,
+          "alpha": 0.25,
+          "parameters_sha256": "dc49129999fe2a2b66e9cf71827c3475ab6ec601a46f23dc1b4678e2ee7c558e",
+          "step": 10,
+          "update_seconds": 0.01079769991338253
+        },
+        {
+          "accuracy": 0.5613207547169812,
+          "alpha": 0.25,
+          "parameters_sha256": "cef0b74389320c14997c46ac17688dad15d37e51d58119bf1e6341dfa2dc174a",
+          "step": 11,
+          "update_seconds": 0.06460840010549873
+        },
+        {
+          "accuracy": 0.5754716981132075,
+          "alpha": 0.25,
+          "parameters_sha256": "de066d4719cd5542cbd4d8bb1299541a744865ea3001e8e82431286b4569bb67",
+          "step": 12,
+          "update_seconds": 0.01009270001668483
+        },
+        {
+          "accuracy": 0.5990566037735849,
+          "alpha": 0.25,
+          "parameters_sha256": "8e8172b41b571904291bd42c8c4af01d8e59135625506d67c5616b3969b0a207",
+          "step": 13,
+          "update_seconds": 0.011642699944786727
+        },
+        {
+          "accuracy": 0.6226415094339622,
+          "alpha": 0.25,
+          "parameters_sha256": "6d0633ed08381fe35cf4efe1af0b6aacb6a2c149c436ef378d79cfcede52a172",
+          "step": 14,
+          "update_seconds": 0.011239300016313791
+        },
+        {
+          "accuracy": 0.660377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "2c5ea344b02cc978e91144ce118fc7e718cfc28789acb324a25a911255037ce2",
+          "step": 15,
+          "update_seconds": 0.00857710000127554
+        },
+        {
+          "accuracy": 0.7216981132075472,
+          "alpha": 0.5,
+          "parameters_sha256": "c878d9da8d9ed1c36d625f97f5420d056ce566119468fc0c8bccf1bf5ed8a147",
+          "step": 16,
+          "update_seconds": 0.06169540004339069
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "99f37d1eb2def20964e72d215d653c4fb53828e0658f3a79ebe8b6d15e7d17fa",
+          "step": 17,
+          "update_seconds": 0.012546999962069094
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "1b25212bc59c326584c90f46754a13712ca70471a8fb66b9a65c063bba2f2253",
+          "step": 18,
+          "update_seconds": 0.011775200022384524
+        },
+        {
+          "accuracy": 0.8113207547169812,
+          "alpha": 0.5,
+          "parameters_sha256": "858bd2cee8f1eaa60c1588e2f356aef604d09639eef39462b3fa3574906272cf",
+          "step": 19,
+          "update_seconds": 0.011157299974001944
+        },
+        {
+          "accuracy": 0.8066037735849056,
+          "alpha": 0.5,
+          "parameters_sha256": "f31c23e9a6e3233c6e9b49b62734c086546d9ff030527db045d922886de50463",
+          "step": 20,
+          "update_seconds": 0.011251799995079637
+        },
+        {
+          "accuracy": 0.8443396226415094,
+          "alpha": 0.25,
+          "parameters_sha256": "40252353652b27098823aa183033ad3a2fc0965d9f6c8458ac7442778fdffa8d",
+          "step": 21,
+          "update_seconds": 0.06344189995434135
+        },
+        {
+          "accuracy": 0.8632075471698113,
+          "alpha": 0.25,
+          "parameters_sha256": "7b4ece95b38364b2d64093b920c0631750e9e8091b2e97528595accdeb31c131",
+          "step": 22,
+          "update_seconds": 0.01108379999641329
+        },
+        {
+          "accuracy": 0.8773584905660378,
+          "alpha": 0.25,
+          "parameters_sha256": "1f53eccdc990552d272d4d5c8c2fdced7d2d5b0f2af1cd5a2cbb55427aac464c",
+          "step": 23,
+          "update_seconds": 0.012556200032122433
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "0f95973e523310b9713b6ff498db62c4e7c5ec580cde606102411e54c4158b21",
+          "step": 24,
+          "update_seconds": 0.01278470002580434
+        },
+        {
+          "accuracy": 0.9292452830188679,
+          "alpha": 0.25,
+          "parameters_sha256": "90cd6af7f79c04540549c16e453ff8cfa37381c06411fc11db9cca44b6deaba2",
+          "step": 25,
+          "update_seconds": 0.012125000008381903
+        },
+        {
+          "accuracy": 0.9198113207547169,
+          "alpha": 0.5,
+          "parameters_sha256": "29168fd560a55efc4a50a90fc6e0773ed35afb38d6b233d65beb13206adf2fb6",
+          "step": 26,
+          "update_seconds": 0.05836729996372014
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "8d27878bec086a215074f04bb963697f52a92f57dca815593fd35e7cd71d1bcf",
+          "step": 27,
+          "update_seconds": 0.011628799955360591
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "0ce30cd21ca580665db432cc69ccfcc52b30e1f6ff1ea94fc9f47eded48d5b58",
+          "step": 28,
+          "update_seconds": 0.011908100103028119
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "5bd3bac0980361d95937bcf63248194907250380c22f272463b88dcf004f02b6",
+          "step": 29,
+          "update_seconds": 0.012516799964942038
+        },
+        {
+          "accuracy": 0.9339622641509434,
+          "alpha": 0.5,
+          "parameters_sha256": "219f514fc5a2a2f088aa6f03305c5cde31c2c99cf1bb1e849bd1ab8b89cc9c3a",
+          "step": 30,
+          "update_seconds": 0.012186700012534857
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "5569db690df52709484fea24f7863bce925aa06dd005a511651ef2b08d6ae3fa",
+          "step": 31,
+          "update_seconds": 0.05550399993080646
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "b8feb5bc50d256048b71fe6826431b8c784ad917f7e62a5c0cc0afa2ae6333f5",
+          "step": 32,
+          "update_seconds": 0.011843299958854914
+        },
+        {
+          "accuracy": 0.9150943396226415,
+          "alpha": 1.0,
+          "parameters_sha256": "9aa0c981ecc7af93bf223185cca994a0a9b311ab0b17bd7e05c49ecfbd6cba64",
+          "step": 33,
+          "update_seconds": 0.010602300055325031
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "cc136722775cd1dc82e9217ab31683e30f21bf2db7f92d7a468768e38b2b47c7",
+          "step": 34,
+          "update_seconds": 0.010650399955920875
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 1.0,
+          "parameters_sha256": "9cdf5da040b6c74e20db1d6fba749019783c686b68f070b41b2fc0b07eb24fb9",
+          "step": 35,
+          "update_seconds": 0.010805499972775578
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "9e50c497ac16c789cb42bb5bbe0fe59056c57abe38ffd6e383951bee5370d000",
+          "step": 36,
+          "update_seconds": 0.05542079999577254
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "641130ace0425f0b7c6fa430627da1e62d44d5465722b2a689aa74b8047d0afc",
+          "step": 37,
+          "update_seconds": 0.010696000070311129
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "604acc319bcfd29969f6a8fee3150a27a8b51bb8c4a01f84957f031cfe40a79a",
+          "step": 38,
+          "update_seconds": 0.010165599989704788
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "576dd0c1be45ddf12d4ae16374987e3dd8299ec61899141608a58c7c98dca0ff",
+          "step": 39,
+          "update_seconds": 0.010735000018030405
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "37b2a03a3460aa8c4278dfbbdc535af1e69f573b5c8c0c2ff3318caf28f4bcda",
+          "step": 40,
+          "update_seconds": 0.010217700037173927
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "5e6febc10c5ded24175b8a1a15cbeefe292f80f7cff5fac937da40b6fe2f361f",
+          "step": 41,
+          "update_seconds": 0.053386300103738904
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "a6396637ffc45b6a8458fac71d5967307336f7b91f152f06b5c67dbc4a090b12",
+          "step": 42,
+          "update_seconds": 0.010290400008670986
+        },
+        {
+          "accuracy": 0.9575471698113207,
+          "alpha": 1.0,
+          "parameters_sha256": "c6b9a5ef6411ab0db398e75f54122b0ffe8406c5bfe97296c43837f21160891d",
+          "step": 43,
+          "update_seconds": 0.009991099941544235
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "2742a03928950aa1200357788a4e1730756badde2c9813ecf22310fe9f22b060",
+          "step": 44,
+          "update_seconds": 0.010669899987988174
+        },
+        {
+          "accuracy": 0.9669811320754716,
+          "alpha": 1.0,
+          "parameters_sha256": "6d3e682f7c1b17779c50a1a1071ec1eeb26a95eff806b5030e6838fe1e3ea1ac",
+          "step": 45,
+          "update_seconds": 0.009918899973854423
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "bf8d6ebf89194a7912c647831d789ca3278fda8e4fcc8cc21b705e15157cf910",
+          "step": 46,
+          "update_seconds": 0.054670499986968935
+        },
+        {
+          "accuracy": 0.9811320754716981,
+          "alpha": 0.5,
+          "parameters_sha256": "98b9bf3400336293af2fdd63fd52b35e1f0f9173c6b588c018b974c1b0be7c2f",
+          "step": 47,
+          "update_seconds": 0.011352399946190417
+        },
+        {
+          "accuracy": 0.9858490566037735,
+          "alpha": 0.5,
+          "parameters_sha256": "2fbf41a8d7289b0879a7eec3dacdaee5e9b40a7bb88f825001c4cbe421c38e96",
+          "step": 48,
+          "update_seconds": 0.010733800008893013
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "9a94de37419918a9da3e928e943559cef43930cef50a07d70293f4c6419bc1b8",
+          "step": 49,
+          "update_seconds": 0.011388599989004433
+        },
+        {
+          "accuracy": 0.9905660377358491,
+          "alpha": 0.5,
+          "parameters_sha256": "127ff818b7f454abefbc1d5b341db12ac9d332266676a9d1b4a8cc10e56876ba",
+          "step": 50,
+          "update_seconds": 0.012523200013674796
+        }
+      ]
+    },
+    {
+      "checked_wall_seconds": 1.2179512000875548,
+      "compute_seconds": 1.0551749997539446,
+      "exact": true,
+      "final_state_sha256": "b9901b08d4adbe8ef8842b546a27f634f6f16919557424f3ae22b5e5af0bb9a5",
+      "first99_steps": 50,
+      "optimized": true,
+      "repeat": 2,
+      "steps": [
+        {
+          "accuracy": 0.37735849056603776,
+          "alpha": 0.25,
+          "parameters_sha256": "01fbeddce40ad0ccfd5c79d2b1543e273a1d7e5be7f0e81616772c82cfae25be",
+          "step": 1,
+          "update_seconds": 0.062337399926036596
+        },
+        {
+          "accuracy": 0.4386792452830189,
+          "alpha": 0.25,
+          "parameters_sha256": "c7f8ebf1dbc4616ea4e36765d3d94383b639ca0c13b22110a6db710b4b5cfb62",
+          "step": 2,
+          "update_seconds": 0.013557399972341955
+        },
+        {
+          "accuracy": 0.4716981132075472,
+          "alpha": 0.25,
+          "parameters_sha256": "6545edec8f41a51fba49dcb2be6a0b8adc6d9e0ae17b21e349f41a3577b847c9",
+          "step": 3,
+          "update_seconds": 0.012625100091099739
+        },
+        {
+          "accuracy": 0.4811320754716981,
+          "alpha": 0.25,
+          "parameters_sha256": "215f5f1e82c100727e8cccad52122b6926cabd04639d5486dde61b2d5a24d048",
+          "step": 4,
+          "update_seconds": 0.012442199978977442
+        },
+        {
+          "accuracy": 0.4669811320754717,
+          "alpha": 0.25,
+          "parameters_sha256": "a5bc65be745596bd40d4246bc56ea44806013a2661520d6d72940c608b463a71",
+          "step": 5,
+          "update_seconds": 0.011211100034415722
+        },
+        {
+          "accuracy": 0.49528301886792453,
+          "alpha": 0.25,
+          "parameters_sha256": "affb50f18e6e613d7949eabd61684b8a3f90fae2765bbff6db469f2580c8b7db",
+          "step": 6,
+          "update_seconds": 0.06412019999697804
+        },
+        {
+          "accuracy": 0.49056603773584906,
+          "alpha": 0.25,
+          "parameters_sha256": "cfffcbb331990802742fa228af2561e2fa60ba7a8598fe95e36fa70791443c8f",
+          "step": 7,
+          "update_seconds": 0.011198299936950207
+        },
+        {
+          "accuracy": 0.5047169811320755,
+          "alpha": 0.25,
+          "parameters_sha256": "9ba2997d7023aa7eed1f3bcde8d462b4e713d7a4a0a3c817e3dd8277119d0891",
+          "step": 8,
+          "update_seconds": 0.012350999983027577
+        },
+        {
+          "accuracy": 0.5377358490566038,
+          "alpha": 0.25,
+          "parameters_sha256": "ffb94016b2af89ad59ca3536d38d3c69fd57d92d86bd79fbe9700e799a7a241d",
+          "step": 9,
+          "update_seconds": 0.011562799918465316
+        },
+        {
+          "accuracy": 0.5518867924528302,
+          "alpha": 0.25,
+          "parameters_sha256": "dc49129999fe2a2b66e9cf71827c3475ab6ec601a46f23dc1b4678e2ee7c558e",
+          "step": 10,
+          "update_seconds": 0.011913500027731061
+        },
+        {
+          "accuracy": 0.5613207547169812,
+          "alpha": 0.25,
+          "parameters_sha256": "cef0b74389320c14997c46ac17688dad15d37e51d58119bf1e6341dfa2dc174a",
+          "step": 11,
+          "update_seconds": 0.05908899998757988
+        },
+        {
+          "accuracy": 0.5754716981132075,
+          "alpha": 0.25,
+          "parameters_sha256": "de066d4719cd5542cbd4d8bb1299541a744865ea3001e8e82431286b4569bb67",
+          "step": 12,
+          "update_seconds": 0.012966000009328127
+        },
+        {
+          "accuracy": 0.5990566037735849,
+          "alpha": 0.25,
+          "parameters_sha256": "8e8172b41b571904291bd42c8c4af01d8e59135625506d67c5616b3969b0a207",
+          "step": 13,
+          "update_seconds": 0.012417800026014447
+        },
+        {
+          "accuracy": 0.6226415094339622,
+          "alpha": 0.25,
+          "parameters_sha256": "6d0633ed08381fe35cf4efe1af0b6aacb6a2c149c436ef378d79cfcede52a172",
+          "step": 14,
+          "update_seconds": 0.013439000002108514
+        },
+        {
+          "accuracy": 0.660377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "2c5ea344b02cc978e91144ce118fc7e718cfc28789acb324a25a911255037ce2",
+          "step": 15,
+          "update_seconds": 0.012219199910759926
+        },
+        {
+          "accuracy": 0.7216981132075472,
+          "alpha": 0.5,
+          "parameters_sha256": "c878d9da8d9ed1c36d625f97f5420d056ce566119468fc0c8bccf1bf5ed8a147",
+          "step": 16,
+          "update_seconds": 0.06538009992800653
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "99f37d1eb2def20964e72d215d653c4fb53828e0658f3a79ebe8b6d15e7d17fa",
+          "step": 17,
+          "update_seconds": 0.01174320001155138
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "1b25212bc59c326584c90f46754a13712ca70471a8fb66b9a65c063bba2f2253",
+          "step": 18,
+          "update_seconds": 0.010643200017511845
+        },
+        {
+          "accuracy": 0.8113207547169812,
+          "alpha": 0.5,
+          "parameters_sha256": "858bd2cee8f1eaa60c1588e2f356aef604d09639eef39462b3fa3574906272cf",
+          "step": 19,
+          "update_seconds": 0.010647900053299963
+        },
+        {
+          "accuracy": 0.8066037735849056,
+          "alpha": 0.5,
+          "parameters_sha256": "f31c23e9a6e3233c6e9b49b62734c086546d9ff030527db045d922886de50463",
+          "step": 20,
+          "update_seconds": 0.011610399931669235
+        },
+        {
+          "accuracy": 0.8443396226415094,
+          "alpha": 0.25,
+          "parameters_sha256": "40252353652b27098823aa183033ad3a2fc0965d9f6c8458ac7442778fdffa8d",
+          "step": 21,
+          "update_seconds": 0.06524639995768666
+        },
+        {
+          "accuracy": 0.8632075471698113,
+          "alpha": 0.25,
+          "parameters_sha256": "7b4ece95b38364b2d64093b920c0631750e9e8091b2e97528595accdeb31c131",
+          "step": 22,
+          "update_seconds": 0.010715599986724555
+        },
+        {
+          "accuracy": 0.8773584905660378,
+          "alpha": 0.25,
+          "parameters_sha256": "1f53eccdc990552d272d4d5c8c2fdced7d2d5b0f2af1cd5a2cbb55427aac464c",
+          "step": 23,
+          "update_seconds": 0.01108550000935793
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "0f95973e523310b9713b6ff498db62c4e7c5ec580cde606102411e54c4158b21",
+          "step": 24,
+          "update_seconds": 0.012085999944247305
+        },
+        {
+          "accuracy": 0.9292452830188679,
+          "alpha": 0.25,
+          "parameters_sha256": "90cd6af7f79c04540549c16e453ff8cfa37381c06411fc11db9cca44b6deaba2",
+          "step": 25,
+          "update_seconds": 0.013700899900868535
+        },
+        {
+          "accuracy": 0.9198113207547169,
+          "alpha": 0.5,
+          "parameters_sha256": "29168fd560a55efc4a50a90fc6e0773ed35afb38d6b233d65beb13206adf2fb6",
+          "step": 26,
+          "update_seconds": 0.05615399999078363
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "8d27878bec086a215074f04bb963697f52a92f57dca815593fd35e7cd71d1bcf",
+          "step": 27,
+          "update_seconds": 0.011853999923914671
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "0ce30cd21ca580665db432cc69ccfcc52b30e1f6ff1ea94fc9f47eded48d5b58",
+          "step": 28,
+          "update_seconds": 0.012741000042296946
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "5bd3bac0980361d95937bcf63248194907250380c22f272463b88dcf004f02b6",
+          "step": 29,
+          "update_seconds": 0.01202449994161725
+        },
+        {
+          "accuracy": 0.9339622641509434,
+          "alpha": 0.5,
+          "parameters_sha256": "219f514fc5a2a2f088aa6f03305c5cde31c2c99cf1bb1e849bd1ab8b89cc9c3a",
+          "step": 30,
+          "update_seconds": 0.010709800058975816
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "5569db690df52709484fea24f7863bce925aa06dd005a511651ef2b08d6ae3fa",
+          "step": 31,
+          "update_seconds": 0.055892699980176985
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "b8feb5bc50d256048b71fe6826431b8c784ad917f7e62a5c0cc0afa2ae6333f5",
+          "step": 32,
+          "update_seconds": 0.009853299940004945
+        },
+        {
+          "accuracy": 0.9150943396226415,
+          "alpha": 1.0,
+          "parameters_sha256": "9aa0c981ecc7af93bf223185cca994a0a9b311ab0b17bd7e05c49ecfbd6cba64",
+          "step": 33,
+          "update_seconds": 0.010708800051361322
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "cc136722775cd1dc82e9217ab31683e30f21bf2db7f92d7a468768e38b2b47c7",
+          "step": 34,
+          "update_seconds": 0.010499100084416568
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 1.0,
+          "parameters_sha256": "9cdf5da040b6c74e20db1d6fba749019783c686b68f070b41b2fc0b07eb24fb9",
+          "step": 35,
+          "update_seconds": 0.010258800000883639
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "9e50c497ac16c789cb42bb5bbe0fe59056c57abe38ffd6e383951bee5370d000",
+          "step": 36,
+          "update_seconds": 0.05517669999971986
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "641130ace0425f0b7c6fa430627da1e62d44d5465722b2a689aa74b8047d0afc",
+          "step": 37,
+          "update_seconds": 0.01199380005709827
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "604acc319bcfd29969f6a8fee3150a27a8b51bb8c4a01f84957f031cfe40a79a",
+          "step": 38,
+          "update_seconds": 0.012286499957554042
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "576dd0c1be45ddf12d4ae16374987e3dd8299ec61899141608a58c7c98dca0ff",
+          "step": 39,
+          "update_seconds": 0.010887800017371774
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "37b2a03a3460aa8c4278dfbbdc535af1e69f573b5c8c0c2ff3318caf28f4bcda",
+          "step": 40,
+          "update_seconds": 0.012458099983632565
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "5e6febc10c5ded24175b8a1a15cbeefe292f80f7cff5fac937da40b6fe2f361f",
+          "step": 41,
+          "update_seconds": 0.05479000008199364
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "a6396637ffc45b6a8458fac71d5967307336f7b91f152f06b5c67dbc4a090b12",
+          "step": 42,
+          "update_seconds": 0.010529499966651201
+        },
+        {
+          "accuracy": 0.9575471698113207,
+          "alpha": 1.0,
+          "parameters_sha256": "c6b9a5ef6411ab0db398e75f54122b0ffe8406c5bfe97296c43837f21160891d",
+          "step": 43,
+          "update_seconds": 0.009545100037939847
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "2742a03928950aa1200357788a4e1730756badde2c9813ecf22310fe9f22b060",
+          "step": 44,
+          "update_seconds": 0.009614299982786179
+        },
+        {
+          "accuracy": 0.9669811320754716,
+          "alpha": 1.0,
+          "parameters_sha256": "6d3e682f7c1b17779c50a1a1071ec1eeb26a95eff806b5030e6838fe1e3ea1ac",
+          "step": 45,
+          "update_seconds": 0.009802500018849969
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "bf8d6ebf89194a7912c647831d789ca3278fda8e4fcc8cc21b705e15157cf910",
+          "step": 46,
+          "update_seconds": 0.05380309990141541
+        },
+        {
+          "accuracy": 0.9811320754716981,
+          "alpha": 0.5,
+          "parameters_sha256": "98b9bf3400336293af2fdd63fd52b35e1f0f9173c6b588c018b974c1b0be7c2f",
+          "step": 47,
+          "update_seconds": 0.011292500072158873
+        },
+        {
+          "accuracy": 0.9858490566037735,
+          "alpha": 0.5,
+          "parameters_sha256": "2fbf41a8d7289b0879a7eec3dacdaee5e9b40a7bb88f825001c4cbe421c38e96",
+          "step": 48,
+          "update_seconds": 0.011188800097443163
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "9a94de37419918a9da3e928e943559cef43930cef50a07d70293f4c6419bc1b8",
+          "step": 49,
+          "update_seconds": 0.011110600084066391
+        },
+        {
+          "accuracy": 0.9905660377358491,
+          "alpha": 0.5,
+          "parameters_sha256": "127ff818b7f454abefbc1d5b341db12ac9d332266676a9d1b4a8cc10e56876ba",
+          "step": 50,
+          "update_seconds": 0.013615299947559834
+        }
+      ]
+    },
+    {
+      "checked_wall_seconds": 1.2257781999651343,
+      "compute_seconds": 1.0552783000748605,
+      "exact": true,
+      "final_state_sha256": "b9901b08d4adbe8ef8842b546a27f634f6f16919557424f3ae22b5e5af0bb9a5",
+      "first99_steps": 50,
+      "optimized": true,
+      "repeat": 3,
+      "steps": [
+        {
+          "accuracy": 0.37735849056603776,
+          "alpha": 0.25,
+          "parameters_sha256": "01fbeddce40ad0ccfd5c79d2b1543e273a1d7e5be7f0e81616772c82cfae25be",
+          "step": 1,
+          "update_seconds": 0.05872309999540448
+        },
+        {
+          "accuracy": 0.4386792452830189,
+          "alpha": 0.25,
+          "parameters_sha256": "c7f8ebf1dbc4616ea4e36765d3d94383b639ca0c13b22110a6db710b4b5cfb62",
+          "step": 2,
+          "update_seconds": 0.012191499932669103
+        },
+        {
+          "accuracy": 0.4716981132075472,
+          "alpha": 0.25,
+          "parameters_sha256": "6545edec8f41a51fba49dcb2be6a0b8adc6d9e0ae17b21e349f41a3577b847c9",
+          "step": 3,
+          "update_seconds": 0.012564899981953204
+        },
+        {
+          "accuracy": 0.4811320754716981,
+          "alpha": 0.25,
+          "parameters_sha256": "215f5f1e82c100727e8cccad52122b6926cabd04639d5486dde61b2d5a24d048",
+          "step": 4,
+          "update_seconds": 0.012297899927943945
+        },
+        {
+          "accuracy": 0.4669811320754717,
+          "alpha": 0.25,
+          "parameters_sha256": "a5bc65be745596bd40d4246bc56ea44806013a2661520d6d72940c608b463a71",
+          "step": 5,
+          "update_seconds": 0.012094800011254847
+        },
+        {
+          "accuracy": 0.49528301886792453,
+          "alpha": 0.25,
+          "parameters_sha256": "affb50f18e6e613d7949eabd61684b8a3f90fae2765bbff6db469f2580c8b7db",
+          "step": 6,
+          "update_seconds": 0.058639600058086216
+        },
+        {
+          "accuracy": 0.49056603773584906,
+          "alpha": 0.25,
+          "parameters_sha256": "cfffcbb331990802742fa228af2561e2fa60ba7a8598fe95e36fa70791443c8f",
+          "step": 7,
+          "update_seconds": 0.013622800004668534
+        },
+        {
+          "accuracy": 0.5047169811320755,
+          "alpha": 0.25,
+          "parameters_sha256": "9ba2997d7023aa7eed1f3bcde8d462b4e713d7a4a0a3c817e3dd8277119d0891",
+          "step": 8,
+          "update_seconds": 0.011823299922980368
+        },
+        {
+          "accuracy": 0.5377358490566038,
+          "alpha": 0.25,
+          "parameters_sha256": "ffb94016b2af89ad59ca3536d38d3c69fd57d92d86bd79fbe9700e799a7a241d",
+          "step": 9,
+          "update_seconds": 0.011148600024171174
+        },
+        {
+          "accuracy": 0.5518867924528302,
+          "alpha": 0.25,
+          "parameters_sha256": "dc49129999fe2a2b66e9cf71827c3475ab6ec601a46f23dc1b4678e2ee7c558e",
+          "step": 10,
+          "update_seconds": 0.013857400044798851
+        },
+        {
+          "accuracy": 0.5613207547169812,
+          "alpha": 0.25,
+          "parameters_sha256": "cef0b74389320c14997c46ac17688dad15d37e51d58119bf1e6341dfa2dc174a",
+          "step": 11,
+          "update_seconds": 0.06409700005315244
+        },
+        {
+          "accuracy": 0.5754716981132075,
+          "alpha": 0.25,
+          "parameters_sha256": "de066d4719cd5542cbd4d8bb1299541a744865ea3001e8e82431286b4569bb67",
+          "step": 12,
+          "update_seconds": 0.013944400008767843
+        },
+        {
+          "accuracy": 0.5990566037735849,
+          "alpha": 0.25,
+          "parameters_sha256": "8e8172b41b571904291bd42c8c4af01d8e59135625506d67c5616b3969b0a207",
+          "step": 13,
+          "update_seconds": 0.012384200002998114
+        },
+        {
+          "accuracy": 0.6226415094339622,
+          "alpha": 0.25,
+          "parameters_sha256": "6d0633ed08381fe35cf4efe1af0b6aacb6a2c149c436ef378d79cfcede52a172",
+          "step": 14,
+          "update_seconds": 0.013393000001087785
+        },
+        {
+          "accuracy": 0.660377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "2c5ea344b02cc978e91144ce118fc7e718cfc28789acb324a25a911255037ce2",
+          "step": 15,
+          "update_seconds": 0.013862899970263243
+        },
+        {
+          "accuracy": 0.7216981132075472,
+          "alpha": 0.5,
+          "parameters_sha256": "c878d9da8d9ed1c36d625f97f5420d056ce566119468fc0c8bccf1bf5ed8a147",
+          "step": 16,
+          "update_seconds": 0.05745360010769218
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "99f37d1eb2def20964e72d215d653c4fb53828e0658f3a79ebe8b6d15e7d17fa",
+          "step": 17,
+          "update_seconds": 0.012466000043787062
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "1b25212bc59c326584c90f46754a13712ca70471a8fb66b9a65c063bba2f2253",
+          "step": 18,
+          "update_seconds": 0.011314400006085634
+        },
+        {
+          "accuracy": 0.8113207547169812,
+          "alpha": 0.5,
+          "parameters_sha256": "858bd2cee8f1eaa60c1588e2f356aef604d09639eef39462b3fa3574906272cf",
+          "step": 19,
+          "update_seconds": 0.012281899922527373
+        },
+        {
+          "accuracy": 0.8066037735849056,
+          "alpha": 0.5,
+          "parameters_sha256": "f31c23e9a6e3233c6e9b49b62734c086546d9ff030527db045d922886de50463",
+          "step": 20,
+          "update_seconds": 0.011021099984645844
+        },
+        {
+          "accuracy": 0.8443396226415094,
+          "alpha": 0.25,
+          "parameters_sha256": "40252353652b27098823aa183033ad3a2fc0965d9f6c8458ac7442778fdffa8d",
+          "step": 21,
+          "update_seconds": 0.061660900013521314
+        },
+        {
+          "accuracy": 0.8632075471698113,
+          "alpha": 0.25,
+          "parameters_sha256": "7b4ece95b38364b2d64093b920c0631750e9e8091b2e97528595accdeb31c131",
+          "step": 22,
+          "update_seconds": 0.012669299961999059
+        },
+        {
+          "accuracy": 0.8773584905660378,
+          "alpha": 0.25,
+          "parameters_sha256": "1f53eccdc990552d272d4d5c8c2fdced7d2d5b0f2af1cd5a2cbb55427aac464c",
+          "step": 23,
+          "update_seconds": 0.011783399968408048
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "0f95973e523310b9713b6ff498db62c4e7c5ec580cde606102411e54c4158b21",
+          "step": 24,
+          "update_seconds": 0.010905600036494434
+        },
+        {
+          "accuracy": 0.9292452830188679,
+          "alpha": 0.25,
+          "parameters_sha256": "90cd6af7f79c04540549c16e453ff8cfa37381c06411fc11db9cca44b6deaba2",
+          "step": 25,
+          "update_seconds": 0.010715299984440207
+        },
+        {
+          "accuracy": 0.9198113207547169,
+          "alpha": 0.5,
+          "parameters_sha256": "29168fd560a55efc4a50a90fc6e0773ed35afb38d6b233d65beb13206adf2fb6",
+          "step": 26,
+          "update_seconds": 0.05675990006420761
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "8d27878bec086a215074f04bb963697f52a92f57dca815593fd35e7cd71d1bcf",
+          "step": 27,
+          "update_seconds": 0.012204499915242195
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "0ce30cd21ca580665db432cc69ccfcc52b30e1f6ff1ea94fc9f47eded48d5b58",
+          "step": 28,
+          "update_seconds": 0.01146770000923425
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "5bd3bac0980361d95937bcf63248194907250380c22f272463b88dcf004f02b6",
+          "step": 29,
+          "update_seconds": 0.010874800034798682
+        },
+        {
+          "accuracy": 0.9339622641509434,
+          "alpha": 0.5,
+          "parameters_sha256": "219f514fc5a2a2f088aa6f03305c5cde31c2c99cf1bb1e849bd1ab8b89cc9c3a",
+          "step": 30,
+          "update_seconds": 0.013390899985097349
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "5569db690df52709484fea24f7863bce925aa06dd005a511651ef2b08d6ae3fa",
+          "step": 31,
+          "update_seconds": 0.0541896999347955
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "b8feb5bc50d256048b71fe6826431b8c784ad917f7e62a5c0cc0afa2ae6333f5",
+          "step": 32,
+          "update_seconds": 0.010445800027810037
+        },
+        {
+          "accuracy": 0.9150943396226415,
+          "alpha": 1.0,
+          "parameters_sha256": "9aa0c981ecc7af93bf223185cca994a0a9b311ab0b17bd7e05c49ecfbd6cba64",
+          "step": 33,
+          "update_seconds": 0.010483600082807243
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "cc136722775cd1dc82e9217ab31683e30f21bf2db7f92d7a468768e38b2b47c7",
+          "step": 34,
+          "update_seconds": 0.010146600077860057
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 1.0,
+          "parameters_sha256": "9cdf5da040b6c74e20db1d6fba749019783c686b68f070b41b2fc0b07eb24fb9",
+          "step": 35,
+          "update_seconds": 0.010192399960942566
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "9e50c497ac16c789cb42bb5bbe0fe59056c57abe38ffd6e383951bee5370d000",
+          "step": 36,
+          "update_seconds": 0.05700949998572469
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "641130ace0425f0b7c6fa430627da1e62d44d5465722b2a689aa74b8047d0afc",
+          "step": 37,
+          "update_seconds": 0.010392399970442057
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "604acc319bcfd29969f6a8fee3150a27a8b51bb8c4a01f84957f031cfe40a79a",
+          "step": 38,
+          "update_seconds": 0.009575500036589801
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "576dd0c1be45ddf12d4ae16374987e3dd8299ec61899141608a58c7c98dca0ff",
+          "step": 39,
+          "update_seconds": 0.01078460004646331
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "37b2a03a3460aa8c4278dfbbdc535af1e69f573b5c8c0c2ff3318caf28f4bcda",
+          "step": 40,
+          "update_seconds": 0.009994800086133182
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "5e6febc10c5ded24175b8a1a15cbeefe292f80f7cff5fac937da40b6fe2f361f",
+          "step": 41,
+          "update_seconds": 0.0574555000057444
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "a6396637ffc45b6a8458fac71d5967307336f7b91f152f06b5c67dbc4a090b12",
+          "step": 42,
+          "update_seconds": 0.010715399985201657
+        },
+        {
+          "accuracy": 0.9575471698113207,
+          "alpha": 1.0,
+          "parameters_sha256": "c6b9a5ef6411ab0db398e75f54122b0ffe8406c5bfe97296c43837f21160891d",
+          "step": 43,
+          "update_seconds": 0.010666699963621795
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "2742a03928950aa1200357788a4e1730756badde2c9813ecf22310fe9f22b060",
+          "step": 44,
+          "update_seconds": 0.011115799890831113
+        },
+        {
+          "accuracy": 0.9669811320754716,
+          "alpha": 1.0,
+          "parameters_sha256": "6d3e682f7c1b17779c50a1a1071ec1eeb26a95eff806b5030e6838fe1e3ea1ac",
+          "step": 45,
+          "update_seconds": 0.010204900056123734
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "bf8d6ebf89194a7912c647831d789ca3278fda8e4fcc8cc21b705e15157cf910",
+          "step": 46,
+          "update_seconds": 0.05797319998964667
+        },
+        {
+          "accuracy": 0.9811320754716981,
+          "alpha": 0.5,
+          "parameters_sha256": "98b9bf3400336293af2fdd63fd52b35e1f0f9173c6b588c018b974c1b0be7c2f",
+          "step": 47,
+          "update_seconds": 0.014266800018958747
+        },
+        {
+          "accuracy": 0.9858490566037735,
+          "alpha": 0.5,
+          "parameters_sha256": "2fbf41a8d7289b0879a7eec3dacdaee5e9b40a7bb88f825001c4cbe421c38e96",
+          "step": 48,
+          "update_seconds": 0.012543599936179817
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "9a94de37419918a9da3e928e943559cef43930cef50a07d70293f4c6419bc1b8",
+          "step": 49,
+          "update_seconds": 0.012166300090029836
+        },
+        {
+          "accuracy": 0.9905660377358491,
+          "alpha": 0.5,
+          "parameters_sha256": "127ff818b7f454abefbc1d5b341db12ac9d332266676a9d1b4a8cc10e56876ba",
+          "step": 50,
+          "update_seconds": 0.013267399976029992
+        }
+      ]
+    },
+    {
+      "checked_wall_seconds": 1.1543492999626324,
+      "compute_seconds": 0.9953315996099263,
+      "exact": true,
+      "final_state_sha256": "b9901b08d4adbe8ef8842b546a27f634f6f16919557424f3ae22b5e5af0bb9a5",
+      "first99_steps": 50,
+      "optimized": false,
+      "repeat": 3,
+      "steps": [
+        {
+          "accuracy": 0.37735849056603776,
+          "alpha": 0.25,
+          "parameters_sha256": "01fbeddce40ad0ccfd5c79d2b1543e273a1d7e5be7f0e81616772c82cfae25be",
+          "step": 1,
+          "update_seconds": 0.06868030002806336
+        },
+        {
+          "accuracy": 0.4386792452830189,
+          "alpha": 0.25,
+          "parameters_sha256": "c7f8ebf1dbc4616ea4e36765d3d94383b639ca0c13b22110a6db710b4b5cfb62",
+          "step": 2,
+          "update_seconds": 0.011835400015115738
+        },
+        {
+          "accuracy": 0.4716981132075472,
+          "alpha": 0.25,
+          "parameters_sha256": "6545edec8f41a51fba49dcb2be6a0b8adc6d9e0ae17b21e349f41a3577b847c9",
+          "step": 3,
+          "update_seconds": 0.013937099953182042
+        },
+        {
+          "accuracy": 0.4811320754716981,
+          "alpha": 0.25,
+          "parameters_sha256": "215f5f1e82c100727e8cccad52122b6926cabd04639d5486dde61b2d5a24d048",
+          "step": 4,
+          "update_seconds": 0.012399900006130338
+        },
+        {
+          "accuracy": 0.4669811320754717,
+          "alpha": 0.25,
+          "parameters_sha256": "a5bc65be745596bd40d4246bc56ea44806013a2661520d6d72940c608b463a71",
+          "step": 5,
+          "update_seconds": 0.011753500089980662
+        },
+        {
+          "accuracy": 0.49528301886792453,
+          "alpha": 0.25,
+          "parameters_sha256": "affb50f18e6e613d7949eabd61684b8a3f90fae2765bbff6db469f2580c8b7db",
+          "step": 6,
+          "update_seconds": 0.06069109996315092
+        },
+        {
+          "accuracy": 0.49056603773584906,
+          "alpha": 0.25,
+          "parameters_sha256": "cfffcbb331990802742fa228af2561e2fa60ba7a8598fe95e36fa70791443c8f",
+          "step": 7,
+          "update_seconds": 0.011713499901816249
+        },
+        {
+          "accuracy": 0.5047169811320755,
+          "alpha": 0.25,
+          "parameters_sha256": "9ba2997d7023aa7eed1f3bcde8d462b4e713d7a4a0a3c817e3dd8277119d0891",
+          "step": 8,
+          "update_seconds": 0.01114760001655668
+        },
+        {
+          "accuracy": 0.5377358490566038,
+          "alpha": 0.25,
+          "parameters_sha256": "ffb94016b2af89ad59ca3536d38d3c69fd57d92d86bd79fbe9700e799a7a241d",
+          "step": 9,
+          "update_seconds": 0.012988299946300685
+        },
+        {
+          "accuracy": 0.5518867924528302,
+          "alpha": 0.25,
+          "parameters_sha256": "dc49129999fe2a2b66e9cf71827c3475ab6ec601a46f23dc1b4678e2ee7c558e",
+          "step": 10,
+          "update_seconds": 0.010763300000689924
+        },
+        {
+          "accuracy": 0.5613207547169812,
+          "alpha": 0.25,
+          "parameters_sha256": "cef0b74389320c14997c46ac17688dad15d37e51d58119bf1e6341dfa2dc174a",
+          "step": 11,
+          "update_seconds": 0.06431719998363405
+        },
+        {
+          "accuracy": 0.5754716981132075,
+          "alpha": 0.25,
+          "parameters_sha256": "de066d4719cd5542cbd4d8bb1299541a744865ea3001e8e82431286b4569bb67",
+          "step": 12,
+          "update_seconds": 0.01248829998075962
+        },
+        {
+          "accuracy": 0.5990566037735849,
+          "alpha": 0.25,
+          "parameters_sha256": "8e8172b41b571904291bd42c8c4af01d8e59135625506d67c5616b3969b0a207",
+          "step": 13,
+          "update_seconds": 0.011726500000804663
+        },
+        {
+          "accuracy": 0.6226415094339622,
+          "alpha": 0.25,
+          "parameters_sha256": "6d0633ed08381fe35cf4efe1af0b6aacb6a2c149c436ef378d79cfcede52a172",
+          "step": 14,
+          "update_seconds": 0.011798699968494475
+        },
+        {
+          "accuracy": 0.660377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "2c5ea344b02cc978e91144ce118fc7e718cfc28789acb324a25a911255037ce2",
+          "step": 15,
+          "update_seconds": 0.011898099910467863
+        },
+        {
+          "accuracy": 0.7216981132075472,
+          "alpha": 0.5,
+          "parameters_sha256": "c878d9da8d9ed1c36d625f97f5420d056ce566119468fc0c8bccf1bf5ed8a147",
+          "step": 16,
+          "update_seconds": 0.05891620006877929
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "99f37d1eb2def20964e72d215d653c4fb53828e0658f3a79ebe8b6d15e7d17fa",
+          "step": 17,
+          "update_seconds": 0.01043339993339032
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "1b25212bc59c326584c90f46754a13712ca70471a8fb66b9a65c063bba2f2253",
+          "step": 18,
+          "update_seconds": 0.01243799994699657
+        },
+        {
+          "accuracy": 0.8113207547169812,
+          "alpha": 0.5,
+          "parameters_sha256": "858bd2cee8f1eaa60c1588e2f356aef604d09639eef39462b3fa3574906272cf",
+          "step": 19,
+          "update_seconds": 0.012333699967712164
+        },
+        {
+          "accuracy": 0.8066037735849056,
+          "alpha": 0.5,
+          "parameters_sha256": "f31c23e9a6e3233c6e9b49b62734c086546d9ff030527db045d922886de50463",
+          "step": 20,
+          "update_seconds": 0.01212700002361089
+        },
+        {
+          "accuracy": 0.8443396226415094,
+          "alpha": 0.25,
+          "parameters_sha256": "40252353652b27098823aa183033ad3a2fc0965d9f6c8458ac7442778fdffa8d",
+          "step": 21,
+          "update_seconds": 0.05502570001408458
+        },
+        {
+          "accuracy": 0.8632075471698113,
+          "alpha": 0.25,
+          "parameters_sha256": "7b4ece95b38364b2d64093b920c0631750e9e8091b2e97528595accdeb31c131",
+          "step": 22,
+          "update_seconds": 0.010106300003826618
+        },
+        {
+          "accuracy": 0.8773584905660378,
+          "alpha": 0.25,
+          "parameters_sha256": "1f53eccdc990552d272d4d5c8c2fdced7d2d5b0f2af1cd5a2cbb55427aac464c",
+          "step": 23,
+          "update_seconds": 0.008914400008507073
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "0f95973e523310b9713b6ff498db62c4e7c5ec580cde606102411e54c4158b21",
+          "step": 24,
+          "update_seconds": 0.00852540007326752
+        },
+        {
+          "accuracy": 0.9292452830188679,
+          "alpha": 0.25,
+          "parameters_sha256": "90cd6af7f79c04540549c16e453ff8cfa37381c06411fc11db9cca44b6deaba2",
+          "step": 25,
+          "update_seconds": 0.008176099974662066
+        },
+        {
+          "accuracy": 0.9198113207547169,
+          "alpha": 0.5,
+          "parameters_sha256": "29168fd560a55efc4a50a90fc6e0773ed35afb38d6b233d65beb13206adf2fb6",
+          "step": 26,
+          "update_seconds": 0.052562299999408424
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "8d27878bec086a215074f04bb963697f52a92f57dca815593fd35e7cd71d1bcf",
+          "step": 27,
+          "update_seconds": 0.012158499914221466
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "0ce30cd21ca580665db432cc69ccfcc52b30e1f6ff1ea94fc9f47eded48d5b58",
+          "step": 28,
+          "update_seconds": 0.010071000084280968
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "5bd3bac0980361d95937bcf63248194907250380c22f272463b88dcf004f02b6",
+          "step": 29,
+          "update_seconds": 0.009768799995072186
+        },
+        {
+          "accuracy": 0.9339622641509434,
+          "alpha": 0.5,
+          "parameters_sha256": "219f514fc5a2a2f088aa6f03305c5cde31c2c99cf1bb1e849bd1ab8b89cc9c3a",
+          "step": 30,
+          "update_seconds": 0.010617899941280484
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "5569db690df52709484fea24f7863bce925aa06dd005a511651ef2b08d6ae3fa",
+          "step": 31,
+          "update_seconds": 0.0551698999479413
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "b8feb5bc50d256048b71fe6826431b8c784ad917f7e62a5c0cc0afa2ae6333f5",
+          "step": 32,
+          "update_seconds": 0.009905300103127956
+        },
+        {
+          "accuracy": 0.9150943396226415,
+          "alpha": 1.0,
+          "parameters_sha256": "9aa0c981ecc7af93bf223185cca994a0a9b311ab0b17bd7e05c49ecfbd6cba64",
+          "step": 33,
+          "update_seconds": 0.01093129999935627
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "cc136722775cd1dc82e9217ab31683e30f21bf2db7f92d7a468768e38b2b47c7",
+          "step": 34,
+          "update_seconds": 0.007927799946628511
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 1.0,
+          "parameters_sha256": "9cdf5da040b6c74e20db1d6fba749019783c686b68f070b41b2fc0b07eb24fb9",
+          "step": 35,
+          "update_seconds": 0.00797699997201562
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "9e50c497ac16c789cb42bb5bbe0fe59056c57abe38ffd6e383951bee5370d000",
+          "step": 36,
+          "update_seconds": 0.052861099946312606
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "641130ace0425f0b7c6fa430627da1e62d44d5465722b2a689aa74b8047d0afc",
+          "step": 37,
+          "update_seconds": 0.009025300038047135
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "604acc319bcfd29969f6a8fee3150a27a8b51bb8c4a01f84957f031cfe40a79a",
+          "step": 38,
+          "update_seconds": 0.009662299999035895
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "576dd0c1be45ddf12d4ae16374987e3dd8299ec61899141608a58c7c98dca0ff",
+          "step": 39,
+          "update_seconds": 0.00987039995379746
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "37b2a03a3460aa8c4278dfbbdc535af1e69f573b5c8c0c2ff3318caf28f4bcda",
+          "step": 40,
+          "update_seconds": 0.008708099951036274
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "5e6febc10c5ded24175b8a1a15cbeefe292f80f7cff5fac937da40b6fe2f361f",
+          "step": 41,
+          "update_seconds": 0.054412500001490116
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "a6396637ffc45b6a8458fac71d5967307336f7b91f152f06b5c67dbc4a090b12",
+          "step": 42,
+          "update_seconds": 0.009862300008535385
+        },
+        {
+          "accuracy": 0.9575471698113207,
+          "alpha": 1.0,
+          "parameters_sha256": "c6b9a5ef6411ab0db398e75f54122b0ffe8406c5bfe97296c43837f21160891d",
+          "step": 43,
+          "update_seconds": 0.009312100009992719
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "2742a03928950aa1200357788a4e1730756badde2c9813ecf22310fe9f22b060",
+          "step": 44,
+          "update_seconds": 0.009416499990038574
+        },
+        {
+          "accuracy": 0.9669811320754716,
+          "alpha": 1.0,
+          "parameters_sha256": "6d3e682f7c1b17779c50a1a1071ec1eeb26a95eff806b5030e6838fe1e3ea1ac",
+          "step": 45,
+          "update_seconds": 0.010629699914716184
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "bf8d6ebf89194a7912c647831d789ca3278fda8e4fcc8cc21b705e15157cf910",
+          "step": 46,
+          "update_seconds": 0.05112880002707243
+        },
+        {
+          "accuracy": 0.9811320754716981,
+          "alpha": 0.5,
+          "parameters_sha256": "98b9bf3400336293af2fdd63fd52b35e1f0f9173c6b588c018b974c1b0be7c2f",
+          "step": 47,
+          "update_seconds": 0.010404800064861774
+        },
+        {
+          "accuracy": 0.9858490566037735,
+          "alpha": 0.5,
+          "parameters_sha256": "2fbf41a8d7289b0879a7eec3dacdaee5e9b40a7bb88f825001c4cbe421c38e96",
+          "step": 48,
+          "update_seconds": 0.009958300041034818
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "9a94de37419918a9da3e928e943559cef43930cef50a07d70293f4c6419bc1b8",
+          "step": 49,
+          "update_seconds": 0.00845089997164905
+        },
+        {
+          "accuracy": 0.9905660377358491,
+          "alpha": 0.5,
+          "parameters_sha256": "127ff818b7f454abefbc1d5b341db12ac9d332266676a9d1b4a8cc10e56876ba",
+          "step": 50,
+          "update_seconds": 0.00932960002683103
+        }
+      ]
+    },
+    {
+      "checked_wall_seconds": 1.097704700077884,
+      "compute_seconds": 0.9574813006911427,
+      "exact": true,
+      "final_state_sha256": "b9901b08d4adbe8ef8842b546a27f634f6f16919557424f3ae22b5e5af0bb9a5",
+      "first99_steps": 50,
+      "optimized": false,
+      "repeat": 4,
+      "steps": [
+        {
+          "accuracy": 0.37735849056603776,
+          "alpha": 0.25,
+          "parameters_sha256": "01fbeddce40ad0ccfd5c79d2b1543e273a1d7e5be7f0e81616772c82cfae25be",
+          "step": 1,
+          "update_seconds": 0.05245790001936257
+        },
+        {
+          "accuracy": 0.4386792452830189,
+          "alpha": 0.25,
+          "parameters_sha256": "c7f8ebf1dbc4616ea4e36765d3d94383b639ca0c13b22110a6db710b4b5cfb62",
+          "step": 2,
+          "update_seconds": 0.00997280003502965
+        },
+        {
+          "accuracy": 0.4716981132075472,
+          "alpha": 0.25,
+          "parameters_sha256": "6545edec8f41a51fba49dcb2be6a0b8adc6d9e0ae17b21e349f41a3577b847c9",
+          "step": 3,
+          "update_seconds": 0.009898400050587952
+        },
+        {
+          "accuracy": 0.4811320754716981,
+          "alpha": 0.25,
+          "parameters_sha256": "215f5f1e82c100727e8cccad52122b6926cabd04639d5486dde61b2d5a24d048",
+          "step": 4,
+          "update_seconds": 0.009148999932222068
+        },
+        {
+          "accuracy": 0.4669811320754717,
+          "alpha": 0.25,
+          "parameters_sha256": "a5bc65be745596bd40d4246bc56ea44806013a2661520d6d72940c608b463a71",
+          "step": 5,
+          "update_seconds": 0.010420800070278347
+        },
+        {
+          "accuracy": 0.49528301886792453,
+          "alpha": 0.25,
+          "parameters_sha256": "affb50f18e6e613d7949eabd61684b8a3f90fae2765bbff6db469f2580c8b7db",
+          "step": 6,
+          "update_seconds": 0.05250210000667721
+        },
+        {
+          "accuracy": 0.49056603773584906,
+          "alpha": 0.25,
+          "parameters_sha256": "cfffcbb331990802742fa228af2561e2fa60ba7a8598fe95e36fa70791443c8f",
+          "step": 7,
+          "update_seconds": 0.009771500015631318
+        },
+        {
+          "accuracy": 0.5047169811320755,
+          "alpha": 0.25,
+          "parameters_sha256": "9ba2997d7023aa7eed1f3bcde8d462b4e713d7a4a0a3c817e3dd8277119d0891",
+          "step": 8,
+          "update_seconds": 0.009101900039240718
+        },
+        {
+          "accuracy": 0.5377358490566038,
+          "alpha": 0.25,
+          "parameters_sha256": "ffb94016b2af89ad59ca3536d38d3c69fd57d92d86bd79fbe9700e799a7a241d",
+          "step": 9,
+          "update_seconds": 0.011011800030246377
+        },
+        {
+          "accuracy": 0.5518867924528302,
+          "alpha": 0.25,
+          "parameters_sha256": "dc49129999fe2a2b66e9cf71827c3475ab6ec601a46f23dc1b4678e2ee7c558e",
+          "step": 10,
+          "update_seconds": 0.012004500022158027
+        },
+        {
+          "accuracy": 0.5613207547169812,
+          "alpha": 0.25,
+          "parameters_sha256": "cef0b74389320c14997c46ac17688dad15d37e51d58119bf1e6341dfa2dc174a",
+          "step": 11,
+          "update_seconds": 0.06314010010100901
+        },
+        {
+          "accuracy": 0.5754716981132075,
+          "alpha": 0.25,
+          "parameters_sha256": "de066d4719cd5542cbd4d8bb1299541a744865ea3001e8e82431286b4569bb67",
+          "step": 12,
+          "update_seconds": 0.009158500004559755
+        },
+        {
+          "accuracy": 0.5990566037735849,
+          "alpha": 0.25,
+          "parameters_sha256": "8e8172b41b571904291bd42c8c4af01d8e59135625506d67c5616b3969b0a207",
+          "step": 13,
+          "update_seconds": 0.009875699994154274
+        },
+        {
+          "accuracy": 0.6226415094339622,
+          "alpha": 0.25,
+          "parameters_sha256": "6d0633ed08381fe35cf4efe1af0b6aacb6a2c149c436ef378d79cfcede52a172",
+          "step": 14,
+          "update_seconds": 0.009279699996113777
+        },
+        {
+          "accuracy": 0.660377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "2c5ea344b02cc978e91144ce118fc7e718cfc28789acb324a25a911255037ce2",
+          "step": 15,
+          "update_seconds": 0.009538500104099512
+        },
+        {
+          "accuracy": 0.7216981132075472,
+          "alpha": 0.5,
+          "parameters_sha256": "c878d9da8d9ed1c36d625f97f5420d056ce566119468fc0c8bccf1bf5ed8a147",
+          "step": 16,
+          "update_seconds": 0.061853399965912104
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "99f37d1eb2def20964e72d215d653c4fb53828e0658f3a79ebe8b6d15e7d17fa",
+          "step": 17,
+          "update_seconds": 0.012720099999569356
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "1b25212bc59c326584c90f46754a13712ca70471a8fb66b9a65c063bba2f2253",
+          "step": 18,
+          "update_seconds": 0.008936499943956733
+        },
+        {
+          "accuracy": 0.8113207547169812,
+          "alpha": 0.5,
+          "parameters_sha256": "858bd2cee8f1eaa60c1588e2f356aef604d09639eef39462b3fa3574906272cf",
+          "step": 19,
+          "update_seconds": 0.008783999946899712
+        },
+        {
+          "accuracy": 0.8066037735849056,
+          "alpha": 0.5,
+          "parameters_sha256": "f31c23e9a6e3233c6e9b49b62734c086546d9ff030527db045d922886de50463",
+          "step": 20,
+          "update_seconds": 0.008335200021974742
+        },
+        {
+          "accuracy": 0.8443396226415094,
+          "alpha": 0.25,
+          "parameters_sha256": "40252353652b27098823aa183033ad3a2fc0965d9f6c8458ac7442778fdffa8d",
+          "step": 21,
+          "update_seconds": 0.05360330000985414
+        },
+        {
+          "accuracy": 0.8632075471698113,
+          "alpha": 0.25,
+          "parameters_sha256": "7b4ece95b38364b2d64093b920c0631750e9e8091b2e97528595accdeb31c131",
+          "step": 22,
+          "update_seconds": 0.012056399951688945
+        },
+        {
+          "accuracy": 0.8773584905660378,
+          "alpha": 0.25,
+          "parameters_sha256": "1f53eccdc990552d272d4d5c8c2fdced7d2d5b0f2af1cd5a2cbb55427aac464c",
+          "step": 23,
+          "update_seconds": 0.010099199949763715
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "0f95973e523310b9713b6ff498db62c4e7c5ec580cde606102411e54c4158b21",
+          "step": 24,
+          "update_seconds": 0.008301800000481308
+        },
+        {
+          "accuracy": 0.9292452830188679,
+          "alpha": 0.25,
+          "parameters_sha256": "90cd6af7f79c04540549c16e453ff8cfa37381c06411fc11db9cca44b6deaba2",
+          "step": 25,
+          "update_seconds": 0.010704300017096102
+        },
+        {
+          "accuracy": 0.9198113207547169,
+          "alpha": 0.5,
+          "parameters_sha256": "29168fd560a55efc4a50a90fc6e0773ed35afb38d6b233d65beb13206adf2fb6",
+          "step": 26,
+          "update_seconds": 0.0533605000237003
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "8d27878bec086a215074f04bb963697f52a92f57dca815593fd35e7cd71d1bcf",
+          "step": 27,
+          "update_seconds": 0.010798300034366548
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "0ce30cd21ca580665db432cc69ccfcc52b30e1f6ff1ea94fc9f47eded48d5b58",
+          "step": 28,
+          "update_seconds": 0.010991699993610382
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "5bd3bac0980361d95937bcf63248194907250380c22f272463b88dcf004f02b6",
+          "step": 29,
+          "update_seconds": 0.009330500033684075
+        },
+        {
+          "accuracy": 0.9339622641509434,
+          "alpha": 0.5,
+          "parameters_sha256": "219f514fc5a2a2f088aa6f03305c5cde31c2c99cf1bb1e849bd1ab8b89cc9c3a",
+          "step": 30,
+          "update_seconds": 0.008266599965281785
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "5569db690df52709484fea24f7863bce925aa06dd005a511651ef2b08d6ae3fa",
+          "step": 31,
+          "update_seconds": 0.051639099954627454
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "b8feb5bc50d256048b71fe6826431b8c784ad917f7e62a5c0cc0afa2ae6333f5",
+          "step": 32,
+          "update_seconds": 0.008423699997365475
+        },
+        {
+          "accuracy": 0.9150943396226415,
+          "alpha": 1.0,
+          "parameters_sha256": "9aa0c981ecc7af93bf223185cca994a0a9b311ab0b17bd7e05c49ecfbd6cba64",
+          "step": 33,
+          "update_seconds": 0.00812959996983409
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "cc136722775cd1dc82e9217ab31683e30f21bf2db7f92d7a468768e38b2b47c7",
+          "step": 34,
+          "update_seconds": 0.007930499967187643
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 1.0,
+          "parameters_sha256": "9cdf5da040b6c74e20db1d6fba749019783c686b68f070b41b2fc0b07eb24fb9",
+          "step": 35,
+          "update_seconds": 0.007774300058372319
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "9e50c497ac16c789cb42bb5bbe0fe59056c57abe38ffd6e383951bee5370d000",
+          "step": 36,
+          "update_seconds": 0.05454280006233603
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "641130ace0425f0b7c6fa430627da1e62d44d5465722b2a689aa74b8047d0afc",
+          "step": 37,
+          "update_seconds": 0.008792000007815659
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "604acc319bcfd29969f6a8fee3150a27a8b51bb8c4a01f84957f031cfe40a79a",
+          "step": 38,
+          "update_seconds": 0.007666499936021864
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "576dd0c1be45ddf12d4ae16374987e3dd8299ec61899141608a58c7c98dca0ff",
+          "step": 39,
+          "update_seconds": 0.010326300049200654
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "37b2a03a3460aa8c4278dfbbdc535af1e69f573b5c8c0c2ff3318caf28f4bcda",
+          "step": 40,
+          "update_seconds": 0.008562900009565055
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "5e6febc10c5ded24175b8a1a15cbeefe292f80f7cff5fac937da40b6fe2f361f",
+          "step": 41,
+          "update_seconds": 0.06729350006207824
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "a6396637ffc45b6a8458fac71d5967307336f7b91f152f06b5c67dbc4a090b12",
+          "step": 42,
+          "update_seconds": 0.008366100024431944
+        },
+        {
+          "accuracy": 0.9575471698113207,
+          "alpha": 1.0,
+          "parameters_sha256": "c6b9a5ef6411ab0db398e75f54122b0ffe8406c5bfe97296c43837f21160891d",
+          "step": 43,
+          "update_seconds": 0.00905870005954057
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "2742a03928950aa1200357788a4e1730756badde2c9813ecf22310fe9f22b060",
+          "step": 44,
+          "update_seconds": 0.0081430000718683
+        },
+        {
+          "accuracy": 0.9669811320754716,
+          "alpha": 1.0,
+          "parameters_sha256": "6d3e682f7c1b17779c50a1a1071ec1eeb26a95eff806b5030e6838fe1e3ea1ac",
+          "step": 45,
+          "update_seconds": 0.010397100006230175
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "bf8d6ebf89194a7912c647831d789ca3278fda8e4fcc8cc21b705e15157cf910",
+          "step": 46,
+          "update_seconds": 0.06560789991635829
+        },
+        {
+          "accuracy": 0.9811320754716981,
+          "alpha": 0.5,
+          "parameters_sha256": "98b9bf3400336293af2fdd63fd52b35e1f0f9173c6b588c018b974c1b0be7c2f",
+          "step": 47,
+          "update_seconds": 0.009540800005197525
+        },
+        {
+          "accuracy": 0.9858490566037735,
+          "alpha": 0.5,
+          "parameters_sha256": "2fbf41a8d7289b0879a7eec3dacdaee5e9b40a7bb88f825001c4cbe421c38e96",
+          "step": 48,
+          "update_seconds": 0.009275200078263879
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "9a94de37419918a9da3e928e943559cef43930cef50a07d70293f4c6419bc1b8",
+          "step": 49,
+          "update_seconds": 0.010922700050286949
+        },
+        {
+          "accuracy": 0.9905660377358491,
+          "alpha": 0.5,
+          "parameters_sha256": "127ff818b7f454abefbc1d5b341db12ac9d332266676a9d1b4a8cc10e56876ba",
+          "step": 50,
+          "update_seconds": 0.009585800115019083
+        }
+      ]
+    },
+    {
+      "checked_wall_seconds": 1.216692499932833,
+      "compute_seconds": 1.046967200236395,
+      "exact": true,
+      "final_state_sha256": "b9901b08d4adbe8ef8842b546a27f634f6f16919557424f3ae22b5e5af0bb9a5",
+      "first99_steps": 50,
+      "optimized": true,
+      "repeat": 4,
+      "steps": [
+        {
+          "accuracy": 0.37735849056603776,
+          "alpha": 0.25,
+          "parameters_sha256": "01fbeddce40ad0ccfd5c79d2b1543e273a1d7e5be7f0e81616772c82cfae25be",
+          "step": 1,
+          "update_seconds": 0.057838099892251194
+        },
+        {
+          "accuracy": 0.4386792452830189,
+          "alpha": 0.25,
+          "parameters_sha256": "c7f8ebf1dbc4616ea4e36765d3d94383b639ca0c13b22110a6db710b4b5cfb62",
+          "step": 2,
+          "update_seconds": 0.010342900059185922
+        },
+        {
+          "accuracy": 0.4716981132075472,
+          "alpha": 0.25,
+          "parameters_sha256": "6545edec8f41a51fba49dcb2be6a0b8adc6d9e0ae17b21e349f41a3577b847c9",
+          "step": 3,
+          "update_seconds": 0.009895900031551719
+        },
+        {
+          "accuracy": 0.4811320754716981,
+          "alpha": 0.25,
+          "parameters_sha256": "215f5f1e82c100727e8cccad52122b6926cabd04639d5486dde61b2d5a24d048",
+          "step": 4,
+          "update_seconds": 0.012060800101608038
+        },
+        {
+          "accuracy": 0.4669811320754717,
+          "alpha": 0.25,
+          "parameters_sha256": "a5bc65be745596bd40d4246bc56ea44806013a2661520d6d72940c608b463a71",
+          "step": 5,
+          "update_seconds": 0.011124999960884452
+        },
+        {
+          "accuracy": 0.49528301886792453,
+          "alpha": 0.25,
+          "parameters_sha256": "affb50f18e6e613d7949eabd61684b8a3f90fae2765bbff6db469f2580c8b7db",
+          "step": 6,
+          "update_seconds": 0.06486319995019585
+        },
+        {
+          "accuracy": 0.49056603773584906,
+          "alpha": 0.25,
+          "parameters_sha256": "cfffcbb331990802742fa228af2561e2fa60ba7a8598fe95e36fa70791443c8f",
+          "step": 7,
+          "update_seconds": 0.011336299940012395
+        },
+        {
+          "accuracy": 0.5047169811320755,
+          "alpha": 0.25,
+          "parameters_sha256": "9ba2997d7023aa7eed1f3bcde8d462b4e713d7a4a0a3c817e3dd8277119d0891",
+          "step": 8,
+          "update_seconds": 0.011499000014737248
+        },
+        {
+          "accuracy": 0.5377358490566038,
+          "alpha": 0.25,
+          "parameters_sha256": "ffb94016b2af89ad59ca3536d38d3c69fd57d92d86bd79fbe9700e799a7a241d",
+          "step": 9,
+          "update_seconds": 0.011803000001236796
+        },
+        {
+          "accuracy": 0.5518867924528302,
+          "alpha": 0.25,
+          "parameters_sha256": "dc49129999fe2a2b66e9cf71827c3475ab6ec601a46f23dc1b4678e2ee7c558e",
+          "step": 10,
+          "update_seconds": 0.011011600028723478
+        },
+        {
+          "accuracy": 0.5613207547169812,
+          "alpha": 0.25,
+          "parameters_sha256": "cef0b74389320c14997c46ac17688dad15d37e51d58119bf1e6341dfa2dc174a",
+          "step": 11,
+          "update_seconds": 0.05762390000745654
+        },
+        {
+          "accuracy": 0.5754716981132075,
+          "alpha": 0.25,
+          "parameters_sha256": "de066d4719cd5542cbd4d8bb1299541a744865ea3001e8e82431286b4569bb67",
+          "step": 12,
+          "update_seconds": 0.012119200080633163
+        },
+        {
+          "accuracy": 0.5990566037735849,
+          "alpha": 0.25,
+          "parameters_sha256": "8e8172b41b571904291bd42c8c4af01d8e59135625506d67c5616b3969b0a207",
+          "step": 13,
+          "update_seconds": 0.010135799995623529
+        },
+        {
+          "accuracy": 0.6226415094339622,
+          "alpha": 0.25,
+          "parameters_sha256": "6d0633ed08381fe35cf4efe1af0b6aacb6a2c149c436ef378d79cfcede52a172",
+          "step": 14,
+          "update_seconds": 0.010841600014828146
+        },
+        {
+          "accuracy": 0.660377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "2c5ea344b02cc978e91144ce118fc7e718cfc28789acb324a25a911255037ce2",
+          "step": 15,
+          "update_seconds": 0.01091640000231564
+        },
+        {
+          "accuracy": 0.7216981132075472,
+          "alpha": 0.5,
+          "parameters_sha256": "c878d9da8d9ed1c36d625f97f5420d056ce566119468fc0c8bccf1bf5ed8a147",
+          "step": 16,
+          "update_seconds": 0.05559260002337396
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "99f37d1eb2def20964e72d215d653c4fb53828e0658f3a79ebe8b6d15e7d17fa",
+          "step": 17,
+          "update_seconds": 0.011454100022092462
+        },
+        {
+          "accuracy": 0.7783018867924528,
+          "alpha": 0.5,
+          "parameters_sha256": "1b25212bc59c326584c90f46754a13712ca70471a8fb66b9a65c063bba2f2253",
+          "step": 18,
+          "update_seconds": 0.013101999997161329
+        },
+        {
+          "accuracy": 0.8113207547169812,
+          "alpha": 0.5,
+          "parameters_sha256": "858bd2cee8f1eaa60c1588e2f356aef604d09639eef39462b3fa3574906272cf",
+          "step": 19,
+          "update_seconds": 0.012500699958764017
+        },
+        {
+          "accuracy": 0.8066037735849056,
+          "alpha": 0.5,
+          "parameters_sha256": "f31c23e9a6e3233c6e9b49b62734c086546d9ff030527db045d922886de50463",
+          "step": 20,
+          "update_seconds": 0.01243060000706464
+        },
+        {
+          "accuracy": 0.8443396226415094,
+          "alpha": 0.25,
+          "parameters_sha256": "40252353652b27098823aa183033ad3a2fc0965d9f6c8458ac7442778fdffa8d",
+          "step": 21,
+          "update_seconds": 0.05639260006137192
+        },
+        {
+          "accuracy": 0.8632075471698113,
+          "alpha": 0.25,
+          "parameters_sha256": "7b4ece95b38364b2d64093b920c0631750e9e8091b2e97528595accdeb31c131",
+          "step": 22,
+          "update_seconds": 0.011123600066639483
+        },
+        {
+          "accuracy": 0.8773584905660378,
+          "alpha": 0.25,
+          "parameters_sha256": "1f53eccdc990552d272d4d5c8c2fdced7d2d5b0f2af1cd5a2cbb55427aac464c",
+          "step": 23,
+          "update_seconds": 0.012036400032229722
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 0.25,
+          "parameters_sha256": "0f95973e523310b9713b6ff498db62c4e7c5ec580cde606102411e54c4158b21",
+          "step": 24,
+          "update_seconds": 0.012331100064329803
+        },
+        {
+          "accuracy": 0.9292452830188679,
+          "alpha": 0.25,
+          "parameters_sha256": "90cd6af7f79c04540549c16e453ff8cfa37381c06411fc11db9cca44b6deaba2",
+          "step": 25,
+          "update_seconds": 0.01564300002064556
+        },
+        {
+          "accuracy": 0.9198113207547169,
+          "alpha": 0.5,
+          "parameters_sha256": "29168fd560a55efc4a50a90fc6e0773ed35afb38d6b233d65beb13206adf2fb6",
+          "step": 26,
+          "update_seconds": 0.060338999959640205
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "8d27878bec086a215074f04bb963697f52a92f57dca815593fd35e7cd71d1bcf",
+          "step": 27,
+          "update_seconds": 0.012942800065502524
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "0ce30cd21ca580665db432cc69ccfcc52b30e1f6ff1ea94fc9f47eded48d5b58",
+          "step": 28,
+          "update_seconds": 0.011857599951326847
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 0.5,
+          "parameters_sha256": "5bd3bac0980361d95937bcf63248194907250380c22f272463b88dcf004f02b6",
+          "step": 29,
+          "update_seconds": 0.011590099893510342
+        },
+        {
+          "accuracy": 0.9339622641509434,
+          "alpha": 0.5,
+          "parameters_sha256": "219f514fc5a2a2f088aa6f03305c5cde31c2c99cf1bb1e849bd1ab8b89cc9c3a",
+          "step": 30,
+          "update_seconds": 0.014250900014303625
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "5569db690df52709484fea24f7863bce925aa06dd005a511651ef2b08d6ae3fa",
+          "step": 31,
+          "update_seconds": 0.06348859996069223
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "b8feb5bc50d256048b71fe6826431b8c784ad917f7e62a5c0cc0afa2ae6333f5",
+          "step": 32,
+          "update_seconds": 0.010694000055082142
+        },
+        {
+          "accuracy": 0.9150943396226415,
+          "alpha": 1.0,
+          "parameters_sha256": "9aa0c981ecc7af93bf223185cca994a0a9b311ab0b17bd7e05c49ecfbd6cba64",
+          "step": 33,
+          "update_seconds": 0.009874599985778332
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "cc136722775cd1dc82e9217ab31683e30f21bf2db7f92d7a468768e38b2b47c7",
+          "step": 34,
+          "update_seconds": 0.010209999978542328
+        },
+        {
+          "accuracy": 0.910377358490566,
+          "alpha": 1.0,
+          "parameters_sha256": "9cdf5da040b6c74e20db1d6fba749019783c686b68f070b41b2fc0b07eb24fb9",
+          "step": 35,
+          "update_seconds": 0.010542100062593818
+        },
+        {
+          "accuracy": 0.9245283018867925,
+          "alpha": 1.0,
+          "parameters_sha256": "9e50c497ac16c789cb42bb5bbe0fe59056c57abe38ffd6e383951bee5370d000",
+          "step": 36,
+          "update_seconds": 0.059272499987855554
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "641130ace0425f0b7c6fa430627da1e62d44d5465722b2a689aa74b8047d0afc",
+          "step": 37,
+          "update_seconds": 0.010266699944622815
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "604acc319bcfd29969f6a8fee3150a27a8b51bb8c4a01f84957f031cfe40a79a",
+          "step": 38,
+          "update_seconds": 0.010768799926154315
+        },
+        {
+          "accuracy": 0.9528301886792453,
+          "alpha": 1.0,
+          "parameters_sha256": "576dd0c1be45ddf12d4ae16374987e3dd8299ec61899141608a58c7c98dca0ff",
+          "step": 39,
+          "update_seconds": 0.01127810007892549
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "37b2a03a3460aa8c4278dfbbdc535af1e69f573b5c8c0c2ff3318caf28f4bcda",
+          "step": 40,
+          "update_seconds": 0.010220799944363534
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "5e6febc10c5ded24175b8a1a15cbeefe292f80f7cff5fac937da40b6fe2f361f",
+          "step": 41,
+          "update_seconds": 0.055351999937556684
+        },
+        {
+          "accuracy": 0.9433962264150944,
+          "alpha": 1.0,
+          "parameters_sha256": "a6396637ffc45b6a8458fac71d5967307336f7b91f152f06b5c67dbc4a090b12",
+          "step": 42,
+          "update_seconds": 0.010062600020319223
+        },
+        {
+          "accuracy": 0.9575471698113207,
+          "alpha": 1.0,
+          "parameters_sha256": "c6b9a5ef6411ab0db398e75f54122b0ffe8406c5bfe97296c43837f21160891d",
+          "step": 43,
+          "update_seconds": 0.011001799954101443
+        },
+        {
+          "accuracy": 0.9716981132075472,
+          "alpha": 1.0,
+          "parameters_sha256": "2742a03928950aa1200357788a4e1730756badde2c9813ecf22310fe9f22b060",
+          "step": 44,
+          "update_seconds": 0.009207400027662516
+        },
+        {
+          "accuracy": 0.9669811320754716,
+          "alpha": 1.0,
+          "parameters_sha256": "6d3e682f7c1b17779c50a1a1071ec1eeb26a95eff806b5030e6838fe1e3ea1ac",
+          "step": 45,
+          "update_seconds": 0.009521399973891675
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "bf8d6ebf89194a7912c647831d789ca3278fda8e4fcc8cc21b705e15157cf910",
+          "step": 46,
+          "update_seconds": 0.05714729998726398
+        },
+        {
+          "accuracy": 0.9811320754716981,
+          "alpha": 0.5,
+          "parameters_sha256": "98b9bf3400336293af2fdd63fd52b35e1f0f9173c6b588c018b974c1b0be7c2f",
+          "step": 47,
+          "update_seconds": 0.013253000099211931
+        },
+        {
+          "accuracy": 0.9858490566037735,
+          "alpha": 0.5,
+          "parameters_sha256": "2fbf41a8d7289b0879a7eec3dacdaee5e9b40a7bb88f825001c4cbe421c38e96",
+          "step": 48,
+          "update_seconds": 0.013707300066016614
+        },
+        {
+          "accuracy": 0.9764150943396226,
+          "alpha": 0.5,
+          "parameters_sha256": "9a94de37419918a9da3e928e943559cef43930cef50a07d70293f4c6419bc1b8",
+          "step": 49,
+          "update_seconds": 0.012814200017601252
+        },
+        {
+          "accuracy": 0.9905660377358491,
+          "alpha": 0.5,
+          "parameters_sha256": "127ff818b7f454abefbc1d5b341db12ac9d332266676a9d1b4a8cc10e56876ba",
+          "step": 50,
+          "update_seconds": 0.011177500011399388
+        }
+      ]
+    }
+  ],
+  "source_ledger_sha256": "1bf9b0228fee9ed1a977063c36ef0d7c224fd26aeb4acc34a600e344fcf91c9e",
+  "summary": {
+    "checked_wall_seconds": {
+      "batched_median": 1.2179512000875548,
+      "paired_speedups": [
+        1.1865674745357253,
+        0.9439878559713327,
+        0.9672989360132285,
+        0.9417277122365746,
+        0.9022038848258556
+      ],
+      "reduction_percent": -5.509762090814396,
+      "reference_median": 1.1543492999626324
+    },
+    "compute_seconds": {
+      "batched_median": 1.0551749997539446,
+      "paired_speedups": [
+        1.1853361652027539,
+        0.9510239296968694,
+        0.9691078735270753,
+        0.9431934680541791,
+        0.9145284594158755
+      ],
+      "reduction_percent": -6.012408343859588,
+      "reference_median": 0.9953315996099263
+    }
+  }
+}

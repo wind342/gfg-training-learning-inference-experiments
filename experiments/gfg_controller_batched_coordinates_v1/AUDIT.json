@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "timed_trajectories": 20,
+  "timed_updates": 1050,
+  "frozen_tag_commit": "36dab5ce347dbbdac157ef23205f556606d18294",
+  "old_tracked_files_unchanged": true,
+  "run_seal_verified": true,
+  "historical_ledgers_reconciled": true,
+  "files": {
+    "ATTEMPT_01.md": "e447efd7de13fc5189a13e77b2c962b9cb9f27054adf728a78670ff6e22a2269",
+    "ATTEMPT_02.md": "1d9aa0d8cc3232817cc75614392239c591b2329adb61cc3687445795084ef69f",
+    "audit.py": "41a9ecbcbceceef7d8cdd7366c2af4f7ce9ed1dd696387fc17cd86fb3db5d3fc",
+    "kernel.py": "9268e8b4729c1ad1fd9081265c05bca77a332ed5a06bc8d1de2a20e9d2b13ebd",
+    "nanogpt_adapter.py": "e02803124a1078471417da2428a1e50ea15097b3a80c51596dc74defca75d806",
+    "PROTOCOL.md": "64e9ad830ac80cba3b95a836ab3d8e281c2ae4ca43557efe65d41c5d1c1872ca",
+    "README.md": "030612964bec16edbe998dde8c3bf32750cd7ae720a3b5537632a8e669c61c9f",
+    "run.py": "5ab0989c8188076d4d46ab6b6d6d83b09e586f3a9be9e901864a172900e9b696",
+    "RUN_SEAL.json": "a92dd055014306eaea53f9ff30add8e393bc1e0496927e8f4a325f1889fb536d",
+    "verification/RUN_SEAL.json": "6613cec6ee64a6df6d1c97e0cfa4ce08c1868c3f107315e126d9003f4c72e2bb",
+    "verification_v2/entry-481b86f81d58d496a687.json": "e635841e61f7562ac59872d93e72b2da19bf5454f2d7083d552735d9548ab7c5",
+    "verification_v2/entry-786d0a3628f6f791399f.json": "db37210866d3245d50758e346d77dcb996651809d301877de5ab21432f581b3f",
+    "verification_v2/RESULTS.json": "5ef079ed66c52aa5e001e7430a6e4c5c0b2584f2ec24263fa7e6c784c2142fa8",
+    "verification_v2/RUN_SEAL.json": "3fa07e277985a5bf2fb43c35d9adeb88c65c5737df37d219ceafa45d4a992e63"
+  }
+}
