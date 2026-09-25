@@ -1,0 +1,10 @@
+{
+  "cadences": [
+    1,
+    2,
+    5
+  ],
+  "formal_data_read": false,
+  "status": "PASS",
+  "synthetic_steps": 6
+}

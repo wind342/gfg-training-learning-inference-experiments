@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-09-25T09:37:52.035350+00:00",
+  "files": {
+    "PROTOCOL_FREEZE.md": "bf7eb724bf2a5061c8a495163435738683f9a35005529d38500363feb9587d9a",
+    "SELF_TEST.json": "ebc8d5522f359d1d0449b132f813591eccd06a08dff10e1ff3e3d73214885704",
+    "analysis.py": "ac0f90116baeaf61f1001009e0403852e63a8d153d75e3dc7a09ea815a2a65a7",
+    "experiment.py": "29f37d33b21ff72bad19dfabbee6fb321e6b4e2273d87d5cefd146a010b5212a"
+  },
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "numpy": "2.5.2",
+  "python": "3.12.10",
+  "source_assignment_sha256": "2e3064035dee8eab717a52844f493be95b33218a1c40f377ce2803af46a7497a",
+  "source_code_manifest_sha256": "40eca540d07af10d0d7c7feb27c40fc582e3f87ac6f9488e2f64ada908dd6d55",
+  "source_commit": "706795db4a838fd1487d6ce278dec93b57b5f2e2",
+  "source_rng_protocol_sha256": "2163977ffc2e0ea90dd93d5cbf035b1d308c8618437c38492545fc2abe464c20",
+  "torch": "2.11.0+cu128"
+}

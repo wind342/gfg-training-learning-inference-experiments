@@ -1,0 +1,429 @@
+{
+  "branches": [
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-481b86f81d58d496a687",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-481b86f81d58d496a687",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-481b86f81d58d496a687",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-481b86f81d58d496a687",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-481b86f81d58d496a687",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-4ed462761347d6b87e61",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-54ba9566f731754a0e3f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-5bb1186bc27eb82111fb",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-786d0a3628f6f791399f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-7a22f51938059541de98",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-7a22f51938059541de98",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-7a22f51938059541de98",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-7a22f51938059541de98",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-7a22f51938059541de98",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-7c1a3094f8acf9cf4bb0",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-8fa6576fc7128f93a228",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-abc8f864a49ee0e056f4",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-d5b80ca9b9cd18fa343f",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-d8b1bf9cd00ddf314725",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "fixed",
+      "coordinate_replays": 0,
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_1",
+      "coordinate_replays": 200,
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_2",
+      "coordinate_replays": 100,
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "controller_5",
+      "coordinate_replays": 40,
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "status": "PASS",
+      "steps": 200
+    },
+    {
+      "arm": "native",
+      "coordinate_replays": 0,
+      "entry_id": "entry-f34e7e61444c90976b36",
+      "status": "PASS",
+      "steps": 200
+    }
+  ],
+  "created_utc": "2026-09-25T10:07:54.434407+00:00",
+  "old_control_native_step_matches": 7200,
+  "status": "PASS",
+  "total_coordinate_replays": 4080,
+  "total_native_steps": 12000
+}
