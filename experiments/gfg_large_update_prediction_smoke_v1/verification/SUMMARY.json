@@ -1,0 +1,130 @@
+{
+  "all_six_predicted_choices_match_actual_best_control": true,
+  "initial_cases": 3,
+  "integrity": "PASS",
+  "low_baseline_cases": 4,
+  "low_baseline_mean_accuracy": 0.33372641509433965,
+  "low_baseline_selected_mean_accuracy": 0.38443396226415094,
+  "low_baseline_table": [
+    {
+      "actual_accuracy": 0.33372641509433965,
+      "agreement": 1.0,
+      "alpha": 0,
+      "balanced_recall_observed_classes": 1.0,
+      "predicted_accuracy": 0.33372641509433965
+    },
+    {
+      "actual_accuracy": 0.35495283018867924,
+      "agreement": 0.9941037735849056,
+      "alpha": 0.25,
+      "balanced_recall_observed_classes": 0.9935199535063929,
+      "predicted_accuracy": 0.35141509433962265
+    },
+    {
+      "actual_accuracy": 0.3761792452830189,
+      "agreement": 0.9858490566037736,
+      "alpha": 0.5,
+      "balanced_recall_observed_classes": 0.9840665465576839,
+      "predicted_accuracy": 0.3714622641509434
+    },
+    {
+      "actual_accuracy": 0.32311320754716977,
+      "agreement": 0.9268867924528301,
+      "alpha": 1,
+      "balanced_recall_observed_classes": 0.901528758831748,
+      "predicted_accuracy": 0.2971698113207547
+    },
+    {
+      "actual_accuracy": 0.22405660377358488,
+      "agreement": 0.8643867924528301,
+      "alpha": 2,
+      "balanced_recall_observed_classes": 0.7329010264692825,
+      "predicted_accuracy": 0.16863207547169812
+    },
+    {
+      "actual_accuracy": 0.1320754716981132,
+      "agreement": 0.8820754716981132,
+      "alpha": 4,
+      "balanced_recall_observed_classes": 0.6043945638332093,
+      "predicted_accuracy": 0.06367924528301887
+    },
+    {
+      "actual_accuracy": 0.06367924528301887,
+      "agreement": 0.9363207547169812,
+      "alpha": 8,
+      "balanced_recall_observed_classes": 0.5448768329564401,
+      "predicted_accuracy": 0.014150943396226414
+    },
+    {
+      "actual_accuracy": 0.05070754716981132,
+      "agreement": 0.946933962264151,
+      "alpha": 16,
+      "balanced_recall_observed_classes": 0.5175288793277524,
+      "predicted_accuracy": 0.007075471698113208
+    }
+  ],
+  "raw_artifacts": [
+    {
+      "bytes": 338561,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\attempt-3\\entry-481b86f81d58d496a687\\PREDICTIONS.npz",
+      "sha256": "7d5949cbadf0c5988c541e9132edb979ef1376fc3b1a1407908a673febf53082"
+    },
+    {
+      "bytes": 372912,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\attempt-3\\entry-481b86f81d58d496a687\\ACTUAL.npz",
+      "sha256": "1447f3605999a5ca63d3f4a4a34b8505c52768bbedf0357a8f999beffc9b159d"
+    },
+    {
+      "bytes": 343042,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\attempt-3\\entry-4ed462761347d6b87e61\\PREDICTIONS.npz",
+      "sha256": "5e3a6b322578fb9202bbe2e1327718ff18c6834373ef05b309025a9be211c89c"
+    },
+    {
+      "bytes": 378909,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\attempt-3\\entry-4ed462761347d6b87e61\\ACTUAL.npz",
+      "sha256": "90a0133c5dcb8c96a905d3871b700128d836e2eddbe114b4db350755f1287743"
+    },
+    {
+      "bytes": 341086,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\attempt-3\\entry-54ba9566f731754a0e3f\\PREDICTIONS.npz",
+      "sha256": "1d2c8980e268706a84de50fe967f020183079e8b89295fb8028586e6fa72b6ba"
+    },
+    {
+      "bytes": 377468,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\attempt-3\\entry-54ba9566f731754a0e3f\\ACTUAL.npz",
+      "sha256": "589afd7384444eb6fc2f666af37a3b9e9d11fd9f46d7a4cae4c5cff909573b16"
+    },
+    {
+      "bytes": 340771,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\supplement-low-baseline\\entry-8fa6576fc7128f93a228\\PREDICTIONS.npz",
+      "sha256": "6c853086cade7053ce9c02eccfd870f18328784e8ed640effa8e482c5b4b5130"
+    },
+    {
+      "bytes": 375781,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\supplement-low-baseline\\entry-8fa6576fc7128f93a228\\ACTUAL.npz",
+      "sha256": "ab4219677e5c560a3103d691f337c1031807c27b12c32994e6395552dd7a7b9a"
+    },
+    {
+      "bytes": 340555,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\supplement-low-baseline\\entry-f34e7e61444c90976b36\\PREDICTIONS.npz",
+      "sha256": "ce20f3186f2d2f58d3cd563c293fde93327dd0203c0d4cce6e93864a2fc87029"
+    },
+    {
+      "bytes": 376639,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\supplement-low-baseline\\entry-f34e7e61444c90976b36\\ACTUAL.npz",
+      "sha256": "d47b1a2e53c4d6aebdd54d740296dbdfeac8c62b118fa0a1b8e418c4872fedd0"
+    },
+    {
+      "bytes": 341561,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\supplement-low-baseline\\entry-786d0a3628f6f791399f\\PREDICTIONS.npz",
+      "sha256": "17203197a1c0a45f9c4df246d96ad28489f30f66f1c5b3290876c020ebbdaa18"
+    },
+    {
+      "bytes": 376123,
+      "path": "E:\\gfg-evidence\\large-update-prediction-smoke-v1\\supplement-low-baseline\\entry-786d0a3628f6f791399f\\ACTUAL.npz",
+      "sha256": "081a3d41dc68e243cd7664e21e56d6523f54b74b20401a040caacd63ecc9b3d1"
+    }
+  ],
+  "scope": "100352-parameter historical model; one-step fixed-direction forks; no full training speed claim",
+  "supplementary_cases": 3
+}
