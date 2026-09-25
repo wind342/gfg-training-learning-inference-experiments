@@ -1,0 +1,34 @@
+{
+  "160": {
+    "regimes": "NOT_ESTABLISHED",
+    "selection": {
+      "near": null,
+      "rates": [
+        2.5e-05,
+        7.5e-05,
+        0.00025,
+        0.00075
+      ],
+      "safe": null,
+      "severe": null
+    },
+    "smoke": "PASS",
+    "transport": "NOT_ASSESSED"
+  },
+  "70": {
+    "regimes": "NOT_ESTABLISHED",
+    "selection": {
+      "near": null,
+      "rates": [
+        3.0151134457776364e-05,
+        9.045340337332908e-05,
+        0.00030151134457776364,
+        0.0009045340337332909
+      ],
+      "safe": null,
+      "severe": null
+    },
+    "smoke": "PASS",
+    "transport": "NOT_ASSESSED"
+  }
+}

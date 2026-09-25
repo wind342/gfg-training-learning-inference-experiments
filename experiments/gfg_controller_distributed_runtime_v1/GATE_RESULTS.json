@@ -1,0 +1,50 @@
+{
+  "all_exact": true,
+  "cases": [
+    {
+      "exact": true,
+      "name": "w1-lr0.001",
+      "world_size": 1
+    },
+    {
+      "exact": true,
+      "name": "w1-lr0.003",
+      "world_size": 1
+    },
+    {
+      "exact": true,
+      "name": "w1-lr0.01",
+      "world_size": 1
+    },
+    {
+      "exact": true,
+      "name": "w2-lr0.001",
+      "world_size": 2
+    },
+    {
+      "exact": true,
+      "name": "w2-lr0.003",
+      "world_size": 2
+    },
+    {
+      "exact": true,
+      "name": "w2-lr0.01",
+      "world_size": 2
+    },
+    {
+      "exact": true,
+      "name": "w3-lr0.001",
+      "world_size": 3
+    },
+    {
+      "exact": true,
+      "name": "w3-lr0.003",
+      "world_size": 3
+    },
+    {
+      "exact": true,
+      "name": "w3-lr0.01",
+      "world_size": 3
+    }
+  ]
+}

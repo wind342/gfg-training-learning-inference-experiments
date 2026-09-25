@@ -1,0 +1,21 @@
+{
+  "backend": "gloo",
+  "events": [
+    {
+      "action": "materialize",
+      "block": "first",
+      "bytes": 2176,
+      "delta_full_tensor_calls": 2
+    },
+    {
+      "action": "release",
+      "block": "first",
+      "bytes": 2176
+    }
+  ],
+  "local_buffer_bytes": 2720,
+  "multi_gpu": "NOT_TESTED",
+  "stage": "block_materialize",
+  "status": "PASS_WORLD_SIZE_1_ONLY",
+  "world_size": 1
+}

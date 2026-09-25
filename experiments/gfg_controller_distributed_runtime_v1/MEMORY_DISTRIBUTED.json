@@ -1,0 +1,284 @@
+{
+  "cases": [
+    {
+      "case": "w1-lr0.001",
+      "controller_bytes_per_virtual_rank": [
+        802816
+      ],
+      "parameter_bytes_per_virtual_rank": [
+        401408
+      ],
+      "peak_block_materialization": 394240,
+      "physical_peak_allocated": 104254976,
+      "physical_peak_reserved": 111149056,
+      "rank_candidate_bytes": [
+        401408
+      ],
+      "rank_delta_bytes": [
+        401408
+      ],
+      "rank_gradient_bytes": [
+        401408
+      ],
+      "rank_optimizer_state_bytes": [
+        802876
+      ],
+      "scope": "single physical GPU including audit oracle; NOT runtime-only or per-rank peak"
+    },
+    {
+      "case": "w1-lr0.003",
+      "controller_bytes_per_virtual_rank": [
+        802816
+      ],
+      "parameter_bytes_per_virtual_rank": [
+        401408
+      ],
+      "peak_block_materialization": 394240,
+      "physical_peak_allocated": 104254976,
+      "physical_peak_reserved": 111149056,
+      "rank_candidate_bytes": [
+        401408
+      ],
+      "rank_delta_bytes": [
+        401408
+      ],
+      "rank_gradient_bytes": [
+        401408
+      ],
+      "rank_optimizer_state_bytes": [
+        802876
+      ],
+      "scope": "single physical GPU including audit oracle; NOT runtime-only or per-rank peak"
+    },
+    {
+      "case": "w1-lr0.01",
+      "controller_bytes_per_virtual_rank": [
+        802816
+      ],
+      "parameter_bytes_per_virtual_rank": [
+        401408
+      ],
+      "peak_block_materialization": 394240,
+      "physical_peak_allocated": 104254976,
+      "physical_peak_reserved": 111149056,
+      "rank_candidate_bytes": [
+        401408
+      ],
+      "rank_delta_bytes": [
+        401408
+      ],
+      "rank_gradient_bytes": [
+        401408
+      ],
+      "rank_optimizer_state_bytes": [
+        802876
+      ],
+      "scope": "single physical GPU including audit oracle; NOT runtime-only or per-rank peak"
+    },
+    {
+      "case": "w2-lr0.001",
+      "controller_bytes_per_virtual_rank": [
+        401408,
+        401408
+      ],
+      "parameter_bytes_per_virtual_rank": [
+        200704,
+        200704
+      ],
+      "peak_block_materialization": 394240,
+      "physical_peak_allocated": 104272896,
+      "physical_peak_reserved": 111149056,
+      "rank_candidate_bytes": [
+        200704,
+        200704
+      ],
+      "rank_delta_bytes": [
+        200704,
+        200704
+      ],
+      "rank_gradient_bytes": [
+        200704,
+        200704
+      ],
+      "rank_optimizer_state_bytes": [
+        401468,
+        401468
+      ],
+      "scope": "single physical GPU including audit oracle; NOT runtime-only or per-rank peak"
+    },
+    {
+      "case": "w2-lr0.003",
+      "controller_bytes_per_virtual_rank": [
+        401408,
+        401408
+      ],
+      "parameter_bytes_per_virtual_rank": [
+        200704,
+        200704
+      ],
+      "peak_block_materialization": 394240,
+      "physical_peak_allocated": 104272896,
+      "physical_peak_reserved": 111149056,
+      "rank_candidate_bytes": [
+        200704,
+        200704
+      ],
+      "rank_delta_bytes": [
+        200704,
+        200704
+      ],
+      "rank_gradient_bytes": [
+        200704,
+        200704
+      ],
+      "rank_optimizer_state_bytes": [
+        401468,
+        401468
+      ],
+      "scope": "single physical GPU including audit oracle; NOT runtime-only or per-rank peak"
+    },
+    {
+      "case": "w2-lr0.01",
+      "controller_bytes_per_virtual_rank": [
+        401408,
+        401408
+      ],
+      "parameter_bytes_per_virtual_rank": [
+        200704,
+        200704
+      ],
+      "peak_block_materialization": 394240,
+      "physical_peak_allocated": 104272896,
+      "physical_peak_reserved": 111149056,
+      "rank_candidate_bytes": [
+        200704,
+        200704
+      ],
+      "rank_delta_bytes": [
+        200704,
+        200704
+      ],
+      "rank_gradient_bytes": [
+        200704,
+        200704
+      ],
+      "rank_optimizer_state_bytes": [
+        401468,
+        401468
+      ],
+      "scope": "single physical GPU including audit oracle; NOT runtime-only or per-rank peak"
+    },
+    {
+      "case": "w3-lr0.001",
+      "controller_bytes_per_virtual_rank": [
+        267576,
+        267576,
+        267664
+      ],
+      "parameter_bytes_per_virtual_rank": [
+        133788,
+        133788,
+        133832
+      ],
+      "peak_block_materialization": 394240,
+      "physical_peak_allocated": 104305152,
+      "physical_peak_reserved": 111149056,
+      "rank_candidate_bytes": [
+        133788,
+        133788,
+        133832
+      ],
+      "rank_delta_bytes": [
+        133788,
+        133788,
+        133832
+      ],
+      "rank_gradient_bytes": [
+        133788,
+        133788,
+        133832
+      ],
+      "rank_optimizer_state_bytes": [
+        267636,
+        267636,
+        267724
+      ],
+      "scope": "single physical GPU including audit oracle; NOT runtime-only or per-rank peak"
+    },
+    {
+      "case": "w3-lr0.003",
+      "controller_bytes_per_virtual_rank": [
+        267576,
+        267576,
+        267664
+      ],
+      "parameter_bytes_per_virtual_rank": [
+        133788,
+        133788,
+        133832
+      ],
+      "peak_block_materialization": 394240,
+      "physical_peak_allocated": 104305152,
+      "physical_peak_reserved": 111149056,
+      "rank_candidate_bytes": [
+        133788,
+        133788,
+        133832
+      ],
+      "rank_delta_bytes": [
+        133788,
+        133788,
+        133832
+      ],
+      "rank_gradient_bytes": [
+        133788,
+        133788,
+        133832
+      ],
+      "rank_optimizer_state_bytes": [
+        267636,
+        267636,
+        267724
+      ],
+      "scope": "single physical GPU including audit oracle; NOT runtime-only or per-rank peak"
+    },
+    {
+      "case": "w3-lr0.01",
+      "controller_bytes_per_virtual_rank": [
+        267576,
+        267576,
+        267664
+      ],
+      "parameter_bytes_per_virtual_rank": [
+        133788,
+        133788,
+        133832
+      ],
+      "peak_block_materialization": 394240,
+      "physical_peak_allocated": 104305152,
+      "physical_peak_reserved": 111149056,
+      "rank_candidate_bytes": [
+        133788,
+        133788,
+        133832
+      ],
+      "rank_delta_bytes": [
+        133788,
+        133788,
+        133832
+      ],
+      "rank_gradient_bytes": [
+        133788,
+        133788,
+        133832
+      ],
+      "rank_optimizer_state_bytes": [
+        267636,
+        267636,
+        267724
+      ],
+      "scope": "single physical GPU including audit oracle; NOT runtime-only or per-rank peak"
+    }
+  ],
+  "scope": "emulated audit gates; physical peak includes oracle"
+}

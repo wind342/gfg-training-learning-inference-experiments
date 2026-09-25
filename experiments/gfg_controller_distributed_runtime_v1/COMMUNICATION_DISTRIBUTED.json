@@ -1,0 +1,122 @@
+{
+  "cases": [
+    {
+      "actual_collectives": 0,
+      "actual_network_bytes": 0,
+      "case": "w1-lr0.001",
+      "emulated_stage_materializations": 8,
+      "full_vocabulary_all_gather": false,
+      "kind": "EMULATED_PAYLOAD_NOT_WIRE_TRAFFIC",
+      "min_input_bytes_per_rank": 6784,
+      "target_payload_broadcast_recipients": 0,
+      "target_row_update_score_payload_bytes": 109392
+    },
+    {
+      "actual_collectives": 0,
+      "actual_network_bytes": 0,
+      "case": "w1-lr0.003",
+      "emulated_stage_materializations": 8,
+      "full_vocabulary_all_gather": false,
+      "kind": "EMULATED_PAYLOAD_NOT_WIRE_TRAFFIC",
+      "min_input_bytes_per_rank": 6784,
+      "target_payload_broadcast_recipients": 0,
+      "target_row_update_score_payload_bytes": 109392
+    },
+    {
+      "actual_collectives": 0,
+      "actual_network_bytes": 0,
+      "case": "w1-lr0.01",
+      "emulated_stage_materializations": 8,
+      "full_vocabulary_all_gather": false,
+      "kind": "EMULATED_PAYLOAD_NOT_WIRE_TRAFFIC",
+      "min_input_bytes_per_rank": 6784,
+      "target_payload_broadcast_recipients": 0,
+      "target_row_update_score_payload_bytes": 109392
+    },
+    {
+      "actual_collectives": 0,
+      "actual_network_bytes": 0,
+      "case": "w2-lr0.001",
+      "emulated_stage_materializations": 8,
+      "full_vocabulary_all_gather": false,
+      "kind": "EMULATED_PAYLOAD_NOT_WIRE_TRAFFIC",
+      "min_input_bytes_per_rank": 6784,
+      "target_payload_broadcast_recipients": 1,
+      "target_row_update_score_payload_bytes": 109392
+    },
+    {
+      "actual_collectives": 0,
+      "actual_network_bytes": 0,
+      "case": "w2-lr0.003",
+      "emulated_stage_materializations": 8,
+      "full_vocabulary_all_gather": false,
+      "kind": "EMULATED_PAYLOAD_NOT_WIRE_TRAFFIC",
+      "min_input_bytes_per_rank": 6784,
+      "target_payload_broadcast_recipients": 1,
+      "target_row_update_score_payload_bytes": 109392
+    },
+    {
+      "actual_collectives": 0,
+      "actual_network_bytes": 0,
+      "case": "w2-lr0.01",
+      "emulated_stage_materializations": 8,
+      "full_vocabulary_all_gather": false,
+      "kind": "EMULATED_PAYLOAD_NOT_WIRE_TRAFFIC",
+      "min_input_bytes_per_rank": 6784,
+      "target_payload_broadcast_recipients": 1,
+      "target_row_update_score_payload_bytes": 109392
+    },
+    {
+      "actual_collectives": 0,
+      "actual_network_bytes": 0,
+      "case": "w3-lr0.001",
+      "emulated_stage_materializations": 8,
+      "full_vocabulary_all_gather": false,
+      "kind": "EMULATED_PAYLOAD_NOT_WIRE_TRAFFIC",
+      "min_input_bytes_per_rank": 6784,
+      "target_payload_broadcast_recipients": 2,
+      "target_row_update_score_payload_bytes": 109392
+    },
+    {
+      "actual_collectives": 0,
+      "actual_network_bytes": 0,
+      "case": "w3-lr0.003",
+      "emulated_stage_materializations": 8,
+      "full_vocabulary_all_gather": false,
+      "kind": "EMULATED_PAYLOAD_NOT_WIRE_TRAFFIC",
+      "min_input_bytes_per_rank": 6784,
+      "target_payload_broadcast_recipients": 2,
+      "target_row_update_score_payload_bytes": 109392
+    },
+    {
+      "actual_collectives": 0,
+      "actual_network_bytes": 0,
+      "case": "w3-lr0.01",
+      "emulated_stage_materializations": 8,
+      "full_vocabulary_all_gather": false,
+      "kind": "EMULATED_PAYLOAD_NOT_WIRE_TRAFFIC",
+      "min_input_bytes_per_rank": 6784,
+      "target_payload_broadcast_recipients": 2,
+      "target_row_update_score_payload_bytes": 109392
+    }
+  ],
+  "cpu_gloo": [
+    {
+      "backend": "CPU_GLOO",
+      "cuda": false,
+      "exact": true,
+      "payload_bytes": 6784,
+      "rank": 0,
+      "world_size": 2
+    },
+    {
+      "backend": "CPU_GLOO",
+      "cuda": false,
+      "exact": true,
+      "payload_bytes": 6784,
+      "rank": 1,
+      "world_size": 2
+    }
+  ],
+  "cuda_wire_traffic": "NOT_MEASURED"
+}
