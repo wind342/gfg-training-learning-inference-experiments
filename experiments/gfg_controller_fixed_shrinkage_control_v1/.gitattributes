@@ -1,0 +1,2 @@
+# Preserve the originally sealed auditor byte-for-byte on Windows checkouts.
+*.snapshot -text

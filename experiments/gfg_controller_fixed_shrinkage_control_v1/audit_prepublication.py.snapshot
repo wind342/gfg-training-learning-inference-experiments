@@ -1,0 +1,183 @@
+"""Independent artifact audit, not a trust check of the runner's result summary."""
+from collections import Counter, defaultdict
+import math
+import statistics as st
+import numpy as np
+import torch
+from . import run
+from experiments.gfg_nanogpt_functional_online_controller_v1.independent_checker import independently_choose
+
+b=run.b; HERE=run.HERE; OUT=run.OUT
+
+
+def main():
+    seal=b.read(HERE/'RUN_SEAL.json')
+    for group in ('sources','baseline_python'):
+        for name,digest in seal[group].items():assert b.sha(run.REPO/name)==digest,name
+    assert run.git('rev-parse',run.TAG)==seal['frozen_tag_object']
+    assert run.git('rev-parse',run.TAG+'^{}')==run.FROZEN
+    assert not run.git('diff',run.BASE,'--name-only'), 'OLD_TRACKED_FILES_CHANGED'
+    assert b.sha(b.old.HERE/'RUN_ASSIGNMENT.json')==seal['assignment_sha256']
+    rows=b.read(b.old.HERE/'RUN_ASSIGNMENT.json')['runs']; rows_by_id={r['entry_id']:r for r in rows}
+    choices=b.read(HERE/'SELECTION.json'); result=b.read(HERE/'RESULTS.json')
+    records={}; crossings={};manifest={};updates=0;tuning=defaultdict(lambda:defaultdict(float))
+    for path in sorted(OUT.rglob('TRAJECTORY.json')):
+        policy,mode,entry,config,rep,_=path.relative_to(OUT).parts
+        ci=int(config.split('-')[-1]);rep=int(rep)
+        assert policy in run.POLICIES and mode in ('search','timing') and entry in rows_by_id and ci in (0,1,2)
+        r=b.read(path);key=(policy,mode,entry,ci,rep);assert key not in records
+        assert r['entry_id']==entry and r['config']==ci and r['method']=='controller'
+        records[key]=r;manifest[str(path.relative_to(OUT))]=b.sha(path)
+        for name,digest in r['artifacts'].items():
+            assert b.sha(path.parent/name)==digest
+            manifest[str((path.parent/name).relative_to(OUT))]=digest
+        with np.load(path.parent/'OUTPUTS.npz',allow_pickle=False) as f:
+            logits=f['logits'];targets=f['target']
+        assert logits.dtype==np.float32 and len(targets)==212 and logits.shape[0]==len(r['steps'])+1
+        comp=logits.copy();comp[:,np.arange(len(targets)),targets]=-np.inf
+        gaps=logits[:,np.arange(len(targets)),targets].astype(np.float64)-comp.max(2).astype(np.float64)
+        assert np.isfinite(gaps).all()
+        accuracy=(gaps>0).mean(1)
+        assert r['initial_accuracy']==float(accuracy[0]) and r['initial_logits_sha256']==b.tensor_sha256(logits[0])
+        crossings[key]={}
+        for th in (.99,.95):
+            idx=np.flatnonzero(accuracy>=th)
+            crossings[key][th]=int(idx[0]) if len(idx) else None
+        assert (len(r['steps'])==0 if accuracy[0]>=.99 else (np.all(accuracy[:-1]<.99) and (accuracy[-1]>=.99 or len(r['steps'])==200)))
+        cp=run.location(policy,'search',entry,ci).parent/'COORDINATES.npz'
+        coordinates=np.load(cp,allow_pickle=False) if cp.exists() else None
+        previous=None;alpha=1.;skipped=0;coordkeys=set()
+        try:
+            for i,s in enumerate(r['steps'],1):
+                assert s['t']==i and s['accuracy']==float(accuracy[i])
+                assert s['seed']==b.old.seed_for(rows_by_id[entry],i-1,seal['source_rng_protocol_sha256'])
+                assert s['lr']==run.RATES[ci]*(.1+.9*.5*(1+math.cos(math.pi*(i-1)/199)))
+                assert s['logits_sha256']==b.tensor_sha256(logits[i])
+                if policy=='dynamic':
+                    if (i-1)%5==0:
+                        c={k:coordinates[f'{i}_{k}'] for k in b.KEYS}
+                        coordkeys.update(f'{i}_{k}' for k in b.KEYS)
+                        assert s['coordinates_sha256']==b.identity({k:b.tensor_sha256(torch.from_numpy(c[k])) for k in b.KEYS})
+                        alpha,scores=independently_choose(c)
+                        assert scores==s['details']['scores']
+                    else:
+                        assert s['coordinates_sha256'] is None and 'scores' not in s['details']
+                        skipped+=alpha==1.
+                    assert s['details']['alpha']==alpha
+                else:
+                    assert s['details']['alpha']==run.FIXED[policy]
+                    assert s['coordinates_sha256'] is None and 'scores' not in s['details'] and coordinates is None
+                fact={k:v for k,v in s.items() if k not in ('sha256','update_seconds','cumulative_compute_seconds','cumulative_checked_wall_seconds')}
+                assert fact['previous_sha256']==previous
+                previous=b.identity(fact);assert previous==s['sha256']
+                for field in ('update_seconds','cumulative_compute_seconds','cumulative_checked_wall_seconds'):
+                    assert s[field]>=0 and math.isfinite(s[field])
+            assert skipped==r['skipped_identity_steps']
+            if coordinates is not None: assert set(coordinates.files)==coordkeys
+        finally:
+            if coordinates is not None:coordinates.close()
+        if mode=='search':
+            assert rep==0 and not r['exact_replay']
+            tuning[policy]['updates']+=len(r['steps'])
+            for k in ('compute_seconds','checked_wall_seconds'):tuning[policy][k]+=r[k]
+        updates+=len(r['steps'])
+    searchkeys={k for k in records if k[1]=='search'}
+    expected={(p,'search',row['entry_id'],ci,0) for p in run.POLICIES for row in rows for ci in range(3)}
+    assert searchkeys==expected and len(searchkeys)==180
+    expectedtiming=set()
+    for row in rows:
+        entry=row['entry_id']
+        for ci in range(3):
+            ranking=[]
+            for p,a in run.FIXED.items():
+                values=[]
+                for th in (.99,.95):
+                    hs=[crossings[(p,'search',o['entry_id'],ci,0)][th] for o in rows if o['entry_id']!=entry]
+                    values.append(st.mean(200 if h is None else h for h in hs if h!=0))
+                ranking.append([*values,-a,p])
+            selected=min(ranking)[-1]
+            assert choices[entry][str(ci)]=={'policy':selected,'ranks':ranking}
+            for p,reps in [('fixed1',range(3)),('dynamic',range(3)),(selected,range(3,6))]:
+                for rep in reps:expectedtiming.add((p,'timing',entry,ci,rep))
+    assert {k for k in records if k[1]=='timing'}==expectedtiming and len(expectedtiming)==324
+    for p,mode,e,ci,rep in expectedtiming:
+        r=records[(p,mode,e,ci,rep)];ref=records[(p,'search',e,ci,0)]
+        assert r['exact_replay'] and r['final_state_sha256']==ref['final_state_sha256']
+        assert r['initial_logits_sha256']==ref['initial_logits_sha256']
+        assert [s['sha256'] for s in r['steps']]==[s['sha256'] for s in ref['steps']]
+        assert crossings[(p,mode,e,ci,rep)]==crossings[(p,'search',e,ci,0)]
+    # Independently check baseline bridge, not merely its receipt.
+    for row in rows:
+        for ci in range(3):
+            for p,oldname in [('fixed1','adamw'),('dynamic','controller')]:
+                r=records[(p,'search',row['entry_id'],ci,0)]
+                old=b.read(run.native.OUT/'search'/row['entry_id']/f'{oldname}-{ci+1}'/'0/TRAJECTORY.json')
+                assert r['final_state_sha256']==old['final_state_sha256'] and r['initial_logits_sha256']==old['initial_logits_sha256']
+                assert len(r['steps'])==len(old['steps'])
+                for a,z in zip(r['steps'],old['steps']):
+                    for field in ('t','lr','seed','accuracy','post_parameters_sha256','logits_sha256','coordinates_sha256'):
+                        assert a[field]==z[field]
+                    details=dict(a['details'])
+                    if p=='fixed1':assert details.pop('alpha')==1.
+                    assert details==z['details']
+    support=[];fixed_dom=[];native_dom=[];any_strict=False
+    for ci,lr in enumerate(run.RATES):
+        regime=result['regimes'][str(lr)]
+        for th in (.99,.95):
+            table=regime['thresholds'][str(th)];rebuilt={}
+            for arm in run.ARMS:
+                entries=[]
+                for row in rows:
+                    e=row['entry_id'];p='fixed1' if arm=='native' else 'dynamic' if arm=='dynamic' else choices[e][str(ci)]['policy']
+                    h=crossings[(p,'search',e,ci,0)][th]
+                    if h==0:continue
+                    rr=[records[(p,'timing',e,ci,j)] for j in (range(3,6) if arm=='loo_fixed' else range(3))]
+                    times={}
+                    for k in ('compute_seconds','checked_wall_seconds'):
+                        times[k]=st.median(r[k] if h is None else r['steps'][h-1]['cumulative_'+k] for r in rr)
+                    entries.append({'entry':e,'policy':p,'hit':h,'restricted_steps':200 if h is None else h,**times})
+                rebuilt[arm]={'eligible':len(entries),'reached':sum(e['hit'] is not None for e in entries),
+                    **{k+'_mean':st.mean(e[k] for e in entries) for k in ('restricted_steps','compute_seconds','checked_wall_seconds')},'entries':entries}
+                assert rebuilt[arm]==table[arm]
+            ff=rebuilt['loo_fixed']['entries'];dd=rebuilt['dynamic']['entries']
+            gains=[f['restricted_steps']-d['restricted_steps'] for f,d in zip(ff,dd)]
+            assert table['paired']=={'wins':sum(v>0 for v in gains),'losses':sum(v<0 for v in gains),'ties':gains.count(0),'gains':gains}
+            if th==.99:
+                reachdiff=[int(d['hit'] is not None)-int(f['hit'] is not None) for f,d in zip(ff,dd)]
+                delete=[sum(gains)-g>0 and sum(reachdiff)-r>=0 for g,r in zip(gains,reachdiff)]
+                good=sum(gains)>0 and sum(reachdiff)>=0 and sum(v>0 for v in gains)>=2 and all(delete)
+                assert regime['extra_value_supported']==good and regime['delete_one_history_checks']==delete
+                support.append(good)
+                d=table['dynamic']
+                for name,arr in [('native',native_dom),('loo_fixed',fixed_dom)]:
+                    f=table[name];arr.append(f['reached']>=d['reached'] and f['restricted_steps_mean']<=d['restricted_steps_mean'])
+                    any_strict |= f['reached']>d['reached'] or f['restricted_steps_mean']<d['restricted_steps_mean']
+        counts=Counter();decisions=Counter();behavior=[]
+        for row in rows:
+            e=row['entry_id'];r=records[('dynamic','search',e,ci,0)]
+            aa=[s['details']['alpha'] for s in r['steps']];da=aa[::5]
+            counts.update(map(str,aa));decisions.update(map(str,da))
+            behavior.append({'entry':e,'alphas':aa,'decision_alphas':da,
+                'intervention_rate':sum(a<1 for a in aa)/len(aa) if aa else None,'mean_alpha':st.mean(aa) if aa else None})
+        assert regime['behavior']==behavior and regime['alpha_counts']==dict(counts) and regime['decision_alpha_counts']==dict(decisions)
+        assert regime['intervention_rate']==sum(v for a,v in counts.items() if float(a)<1)/sum(counts.values())
+        assert regime['selected_fixed_distribution']==dict(Counter(choices[r['entry_id']][str(ci)]['policy'] for r in rows))
+        assert regime['selected_fixed_eligible99_distribution']==dict(Counter(e['policy'] for e in regime['thresholds']['0.99']['loo_fixed']['entries']))
+        assert regime['all_fixed_first99']=={r['entry_id']:{p:crossings[(p,'search',r['entry_id'],ci,0)][.99] for p in run.POLICIES} for r in rows}
+    if any(support[1:]):label='ADAPTIVE VALUE SUPPORTED IN AGGRESSIVE REGIME'
+    elif all(fixed_dom) and all(native_dom) and any_strict:label='NO BENEFIT'
+    elif all(fixed_dom[1:]):label='FIXED SHRINKAGE EXPLAINS MOST/ALL BENEFIT'
+    else:label='MIXED / HISTORY-DEPENDENT'
+    assert result['verdict']=={'label':label,'aggressive_specific_role_consistent':any(support[1:]) and not support[0]}
+    report={'status':'PASS','search_records':180,'timing_records':324,'total_updates':updates,
+        'raw_logits_coordinates_selection_statistics_verdict_recomputed':True,'baseline_bridge_trajectories':72,
+        'three_exact_native_replays_per_comparison_arm':True,'old_tracked_files_unchanged':True,
+        'frozen_tag_commit':run.FROZEN,'frozen_tag_object':seal['frozen_tag_object'],
+        'tuning_costs':dict(tuning),'artifact_bytes':sum((OUT/p).stat().st_size for p in manifest),
+        'result_sha256':b.sha(HERE/'RESULTS.json'),'selection_sha256':b.sha(HERE/'SELECTION.json'),
+        'run_seal_sha256':b.sha(HERE/'RUN_SEAL.json'),'files':manifest}
+    b.write(HERE/'AUDIT.json',report)
+    print({k:v for k,v in report.items() if k!='files'},flush=True)
+
+
+if __name__=='__main__':main()

@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-25T14:34:11.3739506Z",
+  "scope": "Post-run software-only Git boundary and append-only audit receipt repair; no scientific changes",
+  "run_seal_sha256": "214f02cb35f44a21ada16508afb0d083cbea16309afe0f87441a3f67dbe88251",
+  "original_auditor_sha256": "e76f9334efd473e0595e51bace1ef2d082a93d84528a56c9a7e2507cb7b85710",
+  "revised_auditor_sha256": "1bffd598aa1faa5aefa7e85f5aa25961de26e9f22344ceedfdb49f097fe72a18"
+}

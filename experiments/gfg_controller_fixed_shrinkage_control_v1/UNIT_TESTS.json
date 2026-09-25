@@ -1,0 +1,18 @@
+[
+  {
+    "alpha": 1.0,
+    "three_steps_exact": true
+  },
+  {
+    "alpha": 0.75,
+    "three_steps_exact": true
+  },
+  {
+    "alpha": 0.5,
+    "three_steps_exact": true
+  },
+  {
+    "alpha": 0.25,
+    "three_steps_exact": true
+  }
+]
