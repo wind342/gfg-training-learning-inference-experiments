@@ -1,0 +1,1507 @@
+{
+  "all_alpha_exact": true,
+  "all_coordinates_exact": true,
+  "cases": [
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-0.npz",
+      "artifact_sha256": "883d5a08bab7a5f3a12b503913affb6d946184728478266e43b6215b414c4e56",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        1,
+        2,
+        3
+      ],
+      "tile": [
+        32,
+        8
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-1.npz",
+      "artifact_sha256": "883d5a08bab7a5f3a12b503913affb6d946184728478266e43b6215b414c4e56",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        1,
+        2,
+        3
+      ],
+      "tile": [
+        64,
+        64
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-2.npz",
+      "artifact_sha256": "883d5a08bab7a5f3a12b503913affb6d946184728478266e43b6215b414c4e56",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        1,
+        2,
+        3
+      ],
+      "tile": [
+        256,
+        128
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-3.npz",
+      "artifact_sha256": "4761d2cba05d60d64317f39a609474ff7d048109097bb7f9a3911e5eb8c49394",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        7,
+        5,
+        17
+      ],
+      "tile": [
+        32,
+        8
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-4.npz",
+      "artifact_sha256": "4761d2cba05d60d64317f39a609474ff7d048109097bb7f9a3911e5eb8c49394",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        7,
+        5,
+        17
+      ],
+      "tile": [
+        64,
+        64
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-5.npz",
+      "artifact_sha256": "4761d2cba05d60d64317f39a609474ff7d048109097bb7f9a3911e5eb8c49394",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        7,
+        5,
+        17
+      ],
+      "tile": [
+        256,
+        128
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-6.npz",
+      "artifact_sha256": "cd26779acdbe65eeb462ce9be42a38e26820d1bf4a37c756d99281b294811b5f",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        53,
+        11,
+        32
+      ],
+      "tile": [
+        32,
+        8
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-7.npz",
+      "artifact_sha256": "cd26779acdbe65eeb462ce9be42a38e26820d1bf4a37c756d99281b294811b5f",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        53,
+        11,
+        32
+      ],
+      "tile": [
+        64,
+        64
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-8.npz",
+      "artifact_sha256": "cd26779acdbe65eeb462ce9be42a38e26820d1bf4a37c756d99281b294811b5f",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        53,
+        11,
+        32
+      ],
+      "tile": [
+        256,
+        128
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-9.npz",
+      "artifact_sha256": "102d1b5cea60a35b31a6deb58f7d69c9a1cfa0849e7469c10f76246a6e94f61f",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 1.0,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 1.0,
+      "scores_exact": true,
+      "shape": [
+        212,
+        24,
+        64
+      ],
+      "tile": [
+        32,
+        8
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-10.npz",
+      "artifact_sha256": "102d1b5cea60a35b31a6deb58f7d69c9a1cfa0849e7469c10f76246a6e94f61f",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 1.0,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 1.0,
+      "scores_exact": true,
+      "shape": [
+        212,
+        24,
+        64
+      ],
+      "tile": [
+        64,
+        64
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-11.npz",
+      "artifact_sha256": "102d1b5cea60a35b31a6deb58f7d69c9a1cfa0849e7469c10f76246a6e94f61f",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 1.0,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 1.0,
+      "scores_exact": true,
+      "shape": [
+        212,
+        24,
+        64
+      ],
+      "tile": [
+        256,
+        128
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-12.npz",
+      "artifact_sha256": "d1b3a04fd66ff99bbb5c1357cc765441b56107f71b924ba746f258e7ebd1c38c",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        7,
+        4097,
+        65
+      ],
+      "tile": [
+        32,
+        8
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-13.npz",
+      "artifact_sha256": "d1b3a04fd66ff99bbb5c1357cc765441b56107f71b924ba746f258e7ebd1c38c",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        7,
+        4097,
+        65
+      ],
+      "tile": [
+        64,
+        64
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-14.npz",
+      "artifact_sha256": "d1b3a04fd66ff99bbb5c1357cc765441b56107f71b924ba746f258e7ebd1c38c",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float32'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        7,
+        4097,
+        65
+      ],
+      "tile": [
+        256,
+        128
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-15.npz",
+      "artifact_sha256": "cf0372b300b3d932fb3d48c2f9b753bfcce1a2c4497326dec5164e27559088c4",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.5,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.5,
+      "scores_exact": true,
+      "shape": [
+        1,
+        2,
+        3
+      ],
+      "tile": [
+        32,
+        8
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-16.npz",
+      "artifact_sha256": "cf0372b300b3d932fb3d48c2f9b753bfcce1a2c4497326dec5164e27559088c4",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.5,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.5,
+      "scores_exact": true,
+      "shape": [
+        1,
+        2,
+        3
+      ],
+      "tile": [
+        64,
+        64
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-17.npz",
+      "artifact_sha256": "cf0372b300b3d932fb3d48c2f9b753bfcce1a2c4497326dec5164e27559088c4",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.5,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.5,
+      "scores_exact": true,
+      "shape": [
+        1,
+        2,
+        3
+      ],
+      "tile": [
+        256,
+        128
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-18.npz",
+      "artifact_sha256": "593be44b90152e878b063db34a881fa0361f21d7fb840d61ee0588f6a1037128",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 1.0,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 1.0,
+      "scores_exact": true,
+      "shape": [
+        7,
+        5,
+        17
+      ],
+      "tile": [
+        32,
+        8
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-19.npz",
+      "artifact_sha256": "593be44b90152e878b063db34a881fa0361f21d7fb840d61ee0588f6a1037128",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 1.0,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 1.0,
+      "scores_exact": true,
+      "shape": [
+        7,
+        5,
+        17
+      ],
+      "tile": [
+        64,
+        64
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-20.npz",
+      "artifact_sha256": "593be44b90152e878b063db34a881fa0361f21d7fb840d61ee0588f6a1037128",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 1.0,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 1.0,
+      "scores_exact": true,
+      "shape": [
+        7,
+        5,
+        17
+      ],
+      "tile": [
+        256,
+        128
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-21.npz",
+      "artifact_sha256": "287de089ac4544a92ed6ccadb3b05de10045e31ae7fc30a79a69d668242b4fb2",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.75,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.75,
+      "scores_exact": true,
+      "shape": [
+        53,
+        11,
+        32
+      ],
+      "tile": [
+        32,
+        8
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-22.npz",
+      "artifact_sha256": "287de089ac4544a92ed6ccadb3b05de10045e31ae7fc30a79a69d668242b4fb2",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.75,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.75,
+      "scores_exact": true,
+      "shape": [
+        53,
+        11,
+        32
+      ],
+      "tile": [
+        64,
+        64
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-23.npz",
+      "artifact_sha256": "287de089ac4544a92ed6ccadb3b05de10045e31ae7fc30a79a69d668242b4fb2",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.75,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.75,
+      "scores_exact": true,
+      "shape": [
+        53,
+        11,
+        32
+      ],
+      "tile": [
+        256,
+        128
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-24.npz",
+      "artifact_sha256": "be23b6bddf8a8561d5d1f928e27a131556d2f42165462332dbe3addafe5cbcde",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.75,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.75,
+      "scores_exact": true,
+      "shape": [
+        212,
+        24,
+        64
+      ],
+      "tile": [
+        32,
+        8
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-25.npz",
+      "artifact_sha256": "be23b6bddf8a8561d5d1f928e27a131556d2f42165462332dbe3addafe5cbcde",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.75,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.75,
+      "scores_exact": true,
+      "shape": [
+        212,
+        24,
+        64
+      ],
+      "tile": [
+        64,
+        64
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-26.npz",
+      "artifact_sha256": "be23b6bddf8a8561d5d1f928e27a131556d2f42165462332dbe3addafe5cbcde",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.75,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.75,
+      "scores_exact": true,
+      "shape": [
+        212,
+        24,
+        64
+      ],
+      "tile": [
+        256,
+        128
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-27.npz",
+      "artifact_sha256": "0e07b77d7be3dc1306b675b67254ddbdba58d8e3c70356e4d8575a09e937a093",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        7,
+        4097,
+        65
+      ],
+      "tile": [
+        32,
+        8
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-28.npz",
+      "artifact_sha256": "0e07b77d7be3dc1306b675b67254ddbdba58d8e3c70356e4d8575a09e937a093",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        7,
+        4097,
+        65
+      ],
+      "tile": [
+        64,
+        64
+      ]
+    },
+    {
+      "alpha_exact": true,
+      "artifact": "synthetic-29.npz",
+      "artifact_sha256": "0e07b77d7be3dc1306b675b67254ddbdba58d8e3c70356e4d8575a09e937a093",
+      "coordinates": {
+        "first_gap": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "g0": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "hidden_curvature": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        },
+        "joint_rotation": {
+          "close": true,
+          "different": 0,
+          "exact": true,
+          "max_abs": 0.0
+        }
+      },
+      "dtype": "<class 'numpy.float64'>",
+      "gpu_alpha": 0.25,
+      "minima": {
+        "close": true,
+        "different": 0,
+        "exact": true,
+        "max_abs": 0.0
+      },
+      "reference_alpha": 0.25,
+      "scores_exact": true,
+      "shape": [
+        7,
+        4097,
+        65
+      ],
+      "tile": [
+        256,
+        128
+      ]
+    }
+  ],
+  "zero_tie": "PASS"
+}

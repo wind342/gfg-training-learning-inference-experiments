@@ -1,0 +1,9 @@
+{
+  "audit_sha256": "76615b2b22bc46e76abdbc37cf2076d4aeecc8b56c6ae6d6da3c191dfba8befa",
+  "config": 1,
+  "entry": "entry-481b86f81d58d496a687",
+  "entry_sha256": "4053872fff2217a0758bd3f6702b7e78cfaa4fe2f983b650fffe74057759f553",
+  "rule": "forbid snapshot_model/params/phash; every explicit Tensor.cpu transfer <=9 elements",
+  "runtime_sha256": "41cea3c35d154cfb2e35bb9c3d6a625427c1ec33c82b073121f4749f15465299",
+  "source_sha256": "fb552258b5bdc12cfe9bbefed988ef773d209cec6855e86154a7893a9449bae0"
+}

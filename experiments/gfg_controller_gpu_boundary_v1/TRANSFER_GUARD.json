@@ -1,0 +1,70 @@
+{
+  "boundary_bytes": 720,
+  "explicit_tensor_cpu_calls": [
+    {
+      "bytes": 72,
+      "shape": [
+        9
+      ]
+    },
+    {
+      "bytes": 72,
+      "shape": [
+        9
+      ]
+    },
+    {
+      "bytes": 72,
+      "shape": [
+        9
+      ]
+    },
+    {
+      "bytes": 72,
+      "shape": [
+        9
+      ]
+    },
+    {
+      "bytes": 72,
+      "shape": [
+        9
+      ]
+    },
+    {
+      "bytes": 72,
+      "shape": [
+        9
+      ]
+    },
+    {
+      "bytes": 72,
+      "shape": [
+        9
+      ]
+    },
+    {
+      "bytes": 72,
+      "shape": [
+        9
+      ]
+    },
+    {
+      "bytes": 72,
+      "shape": [
+        9
+      ]
+    },
+    {
+      "bytes": 72,
+      "shape": [
+        9
+      ]
+    }
+  ],
+  "model_hash_snapshot_helpers_called": false,
+  "scope": "Tensor.cpu calls and named hash/snapshot helpers guarded; scalar loss and accuracy synchronization still occurs.",
+  "seal_sha256": "f585e9b77fd8fc4f4cdf4c0e1f1fc589882497b4d943bc227adfa9cd8ec8c2c5",
+  "status": "PASS",
+  "updates": 49
+}

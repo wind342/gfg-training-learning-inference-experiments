@@ -1,0 +1,601 @@
+{
+  "checked": [
+    {
+      "config": 0,
+      "entry": "entry-481b86f81d58d496a687",
+      "trajectory_exact": true,
+      "updates": 61
+    },
+    {
+      "config": 1,
+      "entry": "entry-481b86f81d58d496a687",
+      "trajectory_exact": true,
+      "updates": 49
+    },
+    {
+      "config": 2,
+      "entry": "entry-481b86f81d58d496a687",
+      "trajectory_exact": true,
+      "updates": 30
+    },
+    {
+      "config": 0,
+      "entry": "entry-4ed462761347d6b87e61",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 1,
+      "entry": "entry-4ed462761347d6b87e61",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 2,
+      "entry": "entry-4ed462761347d6b87e61",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 0,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 1,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 2,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 0,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 1,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 2,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 0,
+      "entry": "entry-786d0a3628f6f791399f",
+      "trajectory_exact": true,
+      "updates": 67
+    },
+    {
+      "config": 1,
+      "entry": "entry-786d0a3628f6f791399f",
+      "trajectory_exact": true,
+      "updates": 47
+    },
+    {
+      "config": 2,
+      "entry": "entry-786d0a3628f6f791399f",
+      "trajectory_exact": true,
+      "updates": 63
+    },
+    {
+      "config": 0,
+      "entry": "entry-7a22f51938059541de98",
+      "trajectory_exact": true,
+      "updates": 44
+    },
+    {
+      "config": 1,
+      "entry": "entry-7a22f51938059541de98",
+      "trajectory_exact": true,
+      "updates": 20
+    },
+    {
+      "config": 2,
+      "entry": "entry-7a22f51938059541de98",
+      "trajectory_exact": true,
+      "updates": 200
+    },
+    {
+      "config": 0,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 1,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 2,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 0,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "trajectory_exact": true,
+      "updates": 30
+    },
+    {
+      "config": 1,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "trajectory_exact": true,
+      "updates": 22
+    },
+    {
+      "config": 2,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "trajectory_exact": true,
+      "updates": 47
+    },
+    {
+      "config": 0,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 1,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 2,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 0,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "trajectory_exact": true,
+      "updates": 200
+    },
+    {
+      "config": 1,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "trajectory_exact": true,
+      "updates": 200
+    },
+    {
+      "config": 2,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "trajectory_exact": true,
+      "updates": 200
+    },
+    {
+      "config": 0,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "trajectory_exact": true,
+      "updates": 16
+    },
+    {
+      "config": 1,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "trajectory_exact": true,
+      "updates": 26
+    },
+    {
+      "config": 2,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "trajectory_exact": true,
+      "updates": 200
+    },
+    {
+      "config": 0,
+      "entry": "entry-f34e7e61444c90976b36",
+      "trajectory_exact": true,
+      "updates": 101
+    },
+    {
+      "config": 1,
+      "entry": "entry-f34e7e61444c90976b36",
+      "trajectory_exact": true,
+      "updates": 43
+    },
+    {
+      "config": 2,
+      "entry": "entry-f34e7e61444c90976b36",
+      "trajectory_exact": true,
+      "updates": 64
+    }
+  ],
+  "entry": [
+    {
+      "config": 0,
+      "entry": "entry-481b86f81d58d496a687",
+      "trajectory_exact": true,
+      "updates": 61
+    },
+    {
+      "config": 1,
+      "entry": "entry-481b86f81d58d496a687",
+      "trajectory_exact": true,
+      "updates": 49
+    },
+    {
+      "config": 2,
+      "entry": "entry-481b86f81d58d496a687",
+      "trajectory_exact": true,
+      "updates": 30
+    },
+    {
+      "config": 0,
+      "entry": "entry-4ed462761347d6b87e61",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 1,
+      "entry": "entry-4ed462761347d6b87e61",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 2,
+      "entry": "entry-4ed462761347d6b87e61",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 0,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 1,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 2,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 0,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 1,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 2,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 0,
+      "entry": "entry-786d0a3628f6f791399f",
+      "trajectory_exact": true,
+      "updates": 67
+    },
+    {
+      "config": 1,
+      "entry": "entry-786d0a3628f6f791399f",
+      "trajectory_exact": true,
+      "updates": 47
+    },
+    {
+      "config": 2,
+      "entry": "entry-786d0a3628f6f791399f",
+      "trajectory_exact": true,
+      "updates": 63
+    },
+    {
+      "config": 0,
+      "entry": "entry-7a22f51938059541de98",
+      "trajectory_exact": true,
+      "updates": 44
+    },
+    {
+      "config": 1,
+      "entry": "entry-7a22f51938059541de98",
+      "trajectory_exact": true,
+      "updates": 20
+    },
+    {
+      "config": 2,
+      "entry": "entry-7a22f51938059541de98",
+      "trajectory_exact": true,
+      "updates": 200
+    },
+    {
+      "config": 0,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 1,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 2,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 0,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "trajectory_exact": true,
+      "updates": 30
+    },
+    {
+      "config": 1,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "trajectory_exact": true,
+      "updates": 22
+    },
+    {
+      "config": 2,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "trajectory_exact": true,
+      "updates": 47
+    },
+    {
+      "config": 0,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 1,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 2,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "trajectory_exact": true,
+      "updates": 0
+    },
+    {
+      "config": 0,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "trajectory_exact": true,
+      "updates": 200
+    },
+    {
+      "config": 1,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "trajectory_exact": true,
+      "updates": 200
+    },
+    {
+      "config": 2,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "trajectory_exact": true,
+      "updates": 200
+    },
+    {
+      "config": 0,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "trajectory_exact": true,
+      "updates": 16
+    },
+    {
+      "config": 1,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "trajectory_exact": true,
+      "updates": 26
+    },
+    {
+      "config": 2,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "trajectory_exact": true,
+      "updates": 200
+    },
+    {
+      "config": 0,
+      "entry": "entry-f34e7e61444c90976b36",
+      "trajectory_exact": true,
+      "updates": 101
+    },
+    {
+      "config": 1,
+      "entry": "entry-f34e7e61444c90976b36",
+      "trajectory_exact": true,
+      "updates": 43
+    },
+    {
+      "config": 2,
+      "entry": "entry-f34e7e61444c90976b36",
+      "trajectory_exact": true,
+      "updates": 64
+    }
+  ],
+  "scale_training": "NOT_STARTED",
+  "timing": [
+    {
+      "backend": "cpu",
+      "exact": true,
+      "rep": 0,
+      "tile": [
+        32,
+        8
+      ],
+      "wall": 0.8259138000430539
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 0,
+      "tile": [
+        32,
+        8
+      ],
+      "wall": 1.113754199934192
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 0,
+      "tile": [
+        64,
+        64
+      ],
+      "wall": 0.8613079000497237
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 0,
+      "tile": [
+        256,
+        128
+      ],
+      "wall": 0.8021358998958021
+    },
+    {
+      "backend": "cpu",
+      "exact": true,
+      "rep": 1,
+      "tile": [
+        32,
+        8
+      ],
+      "wall": 0.9300024999538437
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 1,
+      "tile": [
+        32,
+        8
+      ],
+      "wall": 1.126060799928382
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 1,
+      "tile": [
+        64,
+        64
+      ],
+      "wall": 0.8836272000335157
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 1,
+      "tile": [
+        256,
+        128
+      ],
+      "wall": 0.7772687000688165
+    },
+    {
+      "backend": "cpu",
+      "exact": true,
+      "rep": 2,
+      "tile": [
+        32,
+        8
+      ],
+      "wall": 0.8457835000008345
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 2,
+      "tile": [
+        32,
+        8
+      ],
+      "wall": 1.1098437000764534
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 2,
+      "tile": [
+        64,
+        64
+      ],
+      "wall": 0.8927199000027031
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 2,
+      "tile": [
+        256,
+        128
+      ],
+      "wall": 0.7789561999961734
+    },
+    {
+      "backend": "cpu",
+      "exact": true,
+      "rep": 3,
+      "tile": [
+        32,
+        8
+      ],
+      "wall": 0.8110779999988154
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 3,
+      "tile": [
+        32,
+        8
+      ],
+      "wall": 1.1093611000105739
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 3,
+      "tile": [
+        64,
+        64
+      ],
+      "wall": 0.8231162000447512
+    },
+    {
+      "backend": "gpu",
+      "exact": true,
+      "rep": 3,
+      "tile": [
+        256,
+        128
+      ],
+      "wall": 0.8075802000239491
+    }
+  ]
+}

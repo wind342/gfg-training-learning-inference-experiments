@@ -1,0 +1,26 @@
+{
+  "frozen_commit": "36dab5ce347dbbdac157ef23205f556606d18294",
+  "manifest": {
+    "AUDIT.json": "76615b2b22bc46e76abdbc37cf2076d4aeecc8b56c6ae6d6da3c191dfba8befa",
+    "PROTOCOL.md": "7a2f9690c7355805e831066ab8a3fa4f27a0671978f5b44ef6d420619853268d",
+    "README.md": "5d6b5582f0af9ea9c28667a406c3a1da56bcf1274842a865dbb8a05ec3c36e03",
+    "RESULTS.json": "56b5828c1eca5add3b7b880e15104bc68affc239ec6d218f8eea0db58e2f324d",
+    "SEAL.json": "83b07d6b529734f5007c584be6c6f114a5631d291f8c0cb2403605fd715b6d13",
+    "SYNTHETIC.json": "2953d0247d11c7416adeaa88a002513ded9b0b58f34ed735551a4019befe528a",
+    "TRANSFER_GUARD.json": "c10c8e77890aef1cafc805f2700eb5858d95876204029951172c00181f077f5b",
+    "TRANSFER_GUARD_SEAL.json": "f585e9b77fd8fc4f4cdf4c0e1f1fc589882497b4d943bc227adfa9cd8ec8c2c5",
+    "audit.py": "0457528b9fcc8719fe0c73fa5d94c79c8dc1fcadcfcba1953fdf95fe08e01d69",
+    "entry.py": "4053872fff2217a0758bd3f6702b7e78cfaa4fe2f983b650fffe74057759f553",
+    "final_audit.py": "0ec967715edbce7e70dea246ed46be7c0ee07e28d55159b80c3510dbccd39569",
+    "runtime.py": "41cea3c35d154cfb2e35bb9c3d6a625427c1ec33c82b073121f4749f15465299",
+    "transfer_guard.py": "fb552258b5bdc12cfe9bbefed988ef773d209cec6855e86154a7893a9449bae0",
+    "validate.py": "fe4f88fddc8915ac2bbd61b5aa59284dd2b778a57de2fd01240e632098f6880e"
+  },
+  "observed_byte_equivalence": "PASS",
+  "old_files_unchanged": true,
+  "scale_training": "NOT_STARTED",
+  "single_case_wall_reduction_fraction": 0.07901230043456176,
+  "standalone_entry": "PASS",
+  "status": "PASS",
+  "transfer_guard": "PASS"
+}
