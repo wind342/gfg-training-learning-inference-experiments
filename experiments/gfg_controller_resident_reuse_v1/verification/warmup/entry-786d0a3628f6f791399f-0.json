@@ -1,0 +1,454 @@
+{
+  "checked_wall_seconds": 1.3146927000489086,
+  "compute_seconds": 1.143372199847363,
+  "exact": true,
+  "final_state_sha256": "023e730cdf8c57996e6a6d71e7585ff00116fe39e9d5290cff3bca651932f4d7",
+  "first99_steps": 55,
+  "optimized": false,
+  "peak_allocated_bytes": 100298240,
+  "peak_reserved_bytes": 109051904,
+  "records": [
+    {
+      "accuracy": 0.37735849056603776,
+      "alpha": 0.25,
+      "coordinates_sha256": "9a262820c92866bfdc3522c366eafa2411c195e686d7eb07d898e2b724b94344",
+      "post_parameters_sha256": "51f834b39d2619f1f596d6bda4a183266990ac398a7ee749d4524e2a074ea04c",
+      "step": 1,
+      "update_seconds": 0.05724069999996573
+    },
+    {
+      "accuracy": 0.49528301886792453,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "c47e2d29639f98a3a1936691c5c4869bd18813f62423b017cd29ea8ee053a715",
+      "step": 2,
+      "update_seconds": 0.010244299890473485
+    },
+    {
+      "accuracy": 0.589622641509434,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "f46d3c3b7b5ea6148f51ee301694d47968538bce3306d095cb599f8107515182",
+      "step": 3,
+      "update_seconds": 0.009385399986058474
+    },
+    {
+      "accuracy": 0.6320754716981132,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "cb35485fb95aff27c98494eae641449bf764f0da24e6e3be7abbdd6973623632",
+      "step": 4,
+      "update_seconds": 0.008501700009219348
+    },
+    {
+      "accuracy": 0.7547169811320755,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "8e13aaca7815f29c5335f7e7ea22eaf65a95e3e421188be22f0518d15c53e915",
+      "step": 5,
+      "update_seconds": 0.010945099988020957
+    },
+    {
+      "accuracy": 0.8490566037735849,
+      "alpha": 0.5,
+      "coordinates_sha256": "420e12a7907bd274b27f013c7eebdeecd15f19ddd4a420d3739b7cc68ee14575",
+      "post_parameters_sha256": "0f893cbe6eef848d0e03e209ec0fc6d95749bf5f5199827d34eb6e4a6207d122",
+      "step": 6,
+      "update_seconds": 0.06335569999646395
+    },
+    {
+      "accuracy": 0.9056603773584906,
+      "alpha": 0.5,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "7d732bc2d91c13750e2edf42fcec6d4d7bf91cce7351692378823c6fcfbaf238",
+      "step": 7,
+      "update_seconds": 0.009303699946030974
+    },
+    {
+      "accuracy": 0.9433962264150944,
+      "alpha": 0.5,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "2d08c930979898f9eba5869ab7fa98222e56c1a2c28ec51354c2a2740be43d24",
+      "step": 8,
+      "update_seconds": 0.011334999930113554
+    },
+    {
+      "accuracy": 0.9292452830188679,
+      "alpha": 0.5,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "f1db999d8e791e9fe6028df7d94488ef1b5718e5b3e3e142e6b90ce46a87cf0c",
+      "step": 9,
+      "update_seconds": 0.011622600024566054
+    },
+    {
+      "accuracy": 0.9150943396226415,
+      "alpha": 0.5,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "472bfc8c6d2883820048ad49c9f7a9ebb1ebead3bfe4d4129ac9b32955476b15",
+      "step": 10,
+      "update_seconds": 0.00929720001295209
+    },
+    {
+      "accuracy": 0.9433962264150944,
+      "alpha": 0.75,
+      "coordinates_sha256": "42072079e50dba00d5735293879639ead5a41134a6edefee81de76cb10bcae28",
+      "post_parameters_sha256": "e6290d3bd4509ea2eae08bd93f96110ee8be39e02cff0c38114f9f2b7b666265",
+      "step": 11,
+      "update_seconds": 0.05286950001027435
+    },
+    {
+      "accuracy": 0.9339622641509434,
+      "alpha": 0.75,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "e6313ca60d16b234a585f40dbd22984f27673f0ffe42f3c832579b7e075437cc",
+      "step": 12,
+      "update_seconds": 0.011985799996182323
+    },
+    {
+      "accuracy": 0.9339622641509434,
+      "alpha": 0.75,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "859770645f712392b4947d9e20c24f8a997981fc5628782ab132e965b8353301",
+      "step": 13,
+      "update_seconds": 0.012446500011719763
+    },
+    {
+      "accuracy": 0.9481132075471698,
+      "alpha": 0.75,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "f38f383ba64aaa96e9c3103872e5af1c312323f55bff20b1febbd14acf3e7c01",
+      "step": 14,
+      "update_seconds": 0.012222700053825974
+    },
+    {
+      "accuracy": 0.9386792452830188,
+      "alpha": 0.75,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "8b689a27b4c522acf6028d63043633952f4a46d855aad539d2ca67d69c364e2e",
+      "step": 15,
+      "update_seconds": 0.013951300061307847
+    },
+    {
+      "accuracy": 0.9433962264150944,
+      "alpha": 0.25,
+      "coordinates_sha256": "94fe92306e91ae64fa6be9c6ff9826cbdfd38c981664bc70c032a6a0c3a2c4e0",
+      "post_parameters_sha256": "70dcdfa4a165f781c7ed9fb43d2ca5d6e2fd85f4ea75bcfbda76d35eee647075",
+      "step": 16,
+      "update_seconds": 0.06836230005137622
+    },
+    {
+      "accuracy": 0.9433962264150944,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "5a23c5a7232edf681608a59d298598f73278b2f0a80de3be2b268250ccadff7c",
+      "step": 17,
+      "update_seconds": 0.011896200012415648
+    },
+    {
+      "accuracy": 0.9528301886792453,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "0f4fdda838ae603161c2ae55f6280248b442e25c96c4abe1f3381b5629999a9c",
+      "step": 18,
+      "update_seconds": 0.01254040002822876
+    },
+    {
+      "accuracy": 0.9481132075471698,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "c31ca57f243fa78dbca95ba6548d983beae8b4c31b5692705541a70960772eb3",
+      "step": 19,
+      "update_seconds": 0.012115799938328564
+    },
+    {
+      "accuracy": 0.9575471698113207,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "cc3a8a6c340e8497e14ccfc07a98422d62b04dc3202dcfb47e4aba5b72b155b6",
+      "step": 20,
+      "update_seconds": 0.011016299948096275
+    },
+    {
+      "accuracy": 0.9669811320754716,
+      "alpha": 1.0,
+      "coordinates_sha256": "768f74ba0d13b5c9dfca55393705605f9cdf5ff5fccec990e6b4f42d43f75b3e",
+      "post_parameters_sha256": "87d66379d34f57fc8fa31caebdcff5afcef4c9836e767955cce8dc750af12c36",
+      "step": 21,
+      "update_seconds": 0.057488300022669137
+    },
+    {
+      "accuracy": 0.9716981132075472,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "14195148659a02315c7130c14267dc981ee6d08b3db3d74601b49b78d10e0dde",
+      "step": 22,
+      "update_seconds": 0.011268000002019107
+    },
+    {
+      "accuracy": 0.9716981132075472,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "93cc1763f0143363cb9e00329b02fea1c8489f71e8c2192c2a21bad55f3f0666",
+      "step": 23,
+      "update_seconds": 0.01064700004644692
+    },
+    {
+      "accuracy": 0.9669811320754716,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "782e01c87861e2296d371c1ec5342cb39f49def21b6b47aeb47685bf66b77e1e",
+      "step": 24,
+      "update_seconds": 0.010744199971668422
+    },
+    {
+      "accuracy": 0.9528301886792453,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "b7f34170c3535fc283be78b00f15511840648530a43dbc7b0835c069b9349ca1",
+      "step": 25,
+      "update_seconds": 0.011214500060305
+    },
+    {
+      "accuracy": 0.9528301886792453,
+      "alpha": 0.25,
+      "coordinates_sha256": "8ffe94e45dcb33ec6decae6741abe5676cb38e7d6ccd16de70d1d163bc3d672c",
+      "post_parameters_sha256": "3f8f87598f05650292b0a00e719c3f292815401f0f2ac2d5d632a4dc37451320",
+      "step": 26,
+      "update_seconds": 0.07138219999615103
+    },
+    {
+      "accuracy": 0.9528301886792453,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "330ec2bc81c03ffc2e4ce016d1e17a75dbfcaa82b423af99ac7aea8bb82ae814",
+      "step": 27,
+      "update_seconds": 0.011728000012226403
+    },
+    {
+      "accuracy": 0.9575471698113207,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "9971f21a1fbfc944feaa77a6d61a3b3b390aa9df3b0ebc4bc10671a7b2a04776",
+      "step": 28,
+      "update_seconds": 0.011761799920350313
+    },
+    {
+      "accuracy": 0.9716981132075472,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "ce8756cf355a8ec90cc3c809dfd9478d47bb3c6354bcb0633103165f279afa90",
+      "step": 29,
+      "update_seconds": 0.01137129997368902
+    },
+    {
+      "accuracy": 0.9716981132075472,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "2981d9533e3442ccc15105bd01d783d0e927d0a67eb8407523e882529ed493e6",
+      "step": 30,
+      "update_seconds": 0.012530199950560927
+    },
+    {
+      "accuracy": 0.9716981132075472,
+      "alpha": 0.25,
+      "coordinates_sha256": "43f03ad79d6e25fa82c2bd6cc01d2caadeac4752c687cc27323597f1fef554d5",
+      "post_parameters_sha256": "542ddec21447372dab4c23b72b32a30d5a682e7ad49e88beac14d423f6a600b9",
+      "step": 31,
+      "update_seconds": 0.0549336998956278
+    },
+    {
+      "accuracy": 0.9622641509433962,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "d8208c50cf520c71efdc1cfa8b083915e4c13be0890fe0ef8d4dec545ab8af43",
+      "step": 32,
+      "update_seconds": 0.010966700036078691
+    },
+    {
+      "accuracy": 0.9622641509433962,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "2e128f483f70f33e306f3842a66f5c912d6f91cb8c82b827394d41c1f3c052f6",
+      "step": 33,
+      "update_seconds": 0.010775199974887073
+    },
+    {
+      "accuracy": 0.9622641509433962,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "048a56897f4387fcdb230ef988e182c89cc0767583140eab60ce084fa105eb99",
+      "step": 34,
+      "update_seconds": 0.010819599963724613
+    },
+    {
+      "accuracy": 0.9622641509433962,
+      "alpha": 0.25,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "d00c8d35b9b51390a7dc96506d18d6b4b1da88a66de576a89479e0b27d25c1b9",
+      "step": 35,
+      "update_seconds": 0.01163650001399219
+    },
+    {
+      "accuracy": 0.9716981132075472,
+      "alpha": 1.0,
+      "coordinates_sha256": "cea9dccefb8211c69a297864feec5f050835b26de3ced9b60814984692e63b16",
+      "post_parameters_sha256": "b58ca8340ae454d2017a2c29dc4140a6f031495c520789a55aab8cbc5116da5c",
+      "step": 36,
+      "update_seconds": 0.054544599959626794
+    },
+    {
+      "accuracy": 0.9716981132075472,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "36878496789178e9d2dc5575e99dc7eefc105587405f3ca410abcb6dd4da7004",
+      "step": 37,
+      "update_seconds": 0.010663100052624941
+    },
+    {
+      "accuracy": 0.9764150943396226,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "49c11ca98c12a7d95d6ec33b01bf063c6eed2f23a42accdbd202290c2f291475",
+      "step": 38,
+      "update_seconds": 0.009571700007654727
+    },
+    {
+      "accuracy": 0.9669811320754716,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "55c8f8b300b9a2695a51a555a89ef2b0c7f7c5d259971daa1e107379967d76ca",
+      "step": 39,
+      "update_seconds": 0.010168000007979572
+    },
+    {
+      "accuracy": 0.9622641509433962,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "db9ec98687dc8ed42e526cf9863b3ea32557a702a83f9c0199c076544d325af6",
+      "step": 40,
+      "update_seconds": 0.009462499991059303
+    },
+    {
+      "accuracy": 0.9622641509433962,
+      "alpha": 0.5,
+      "coordinates_sha256": "4a72db248a496c8cb3bf31a2298e238147a006b3e6bb1aaf937a54db4069bf6c",
+      "post_parameters_sha256": "8c251827f9d4d2d526b8d517450e66ec6361cb3cdd073e9bd4db0bd58f5294bc",
+      "step": 41,
+      "update_seconds": 0.05556740006431937
+    },
+    {
+      "accuracy": 0.9622641509433962,
+      "alpha": 0.5,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "5fe8759ea8d18d47f9d7652c94e3798790f9b82c8668fdaae4301e41663170c0",
+      "step": 42,
+      "update_seconds": 0.011515299906022847
+    },
+    {
+      "accuracy": 0.9622641509433962,
+      "alpha": 0.5,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "c46f9cbb263a6a4424ebf7db3aa585fe40e0d53cdc56d8d9d415e2b092ee26d5",
+      "step": 43,
+      "update_seconds": 0.01110470003914088
+    },
+    {
+      "accuracy": 0.9622641509433962,
+      "alpha": 0.5,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "3f810dd9948606cc85e63f5452d08b07ec21394fdc5762e658c960322784941b",
+      "step": 44,
+      "update_seconds": 0.012080700020305812
+    },
+    {
+      "accuracy": 0.9622641509433962,
+      "alpha": 0.5,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "4bfe91fce58a2ad2530b74fd7018f685925e0618c812ceb222328146f6248497",
+      "step": 45,
+      "update_seconds": 0.012228599982336164
+    },
+    {
+      "accuracy": 0.9669811320754716,
+      "alpha": 1.0,
+      "coordinates_sha256": "262a160aa789ce78c4c7ac4e567a2cf8589fc5c127a94078c9d6c9c7642e49bb",
+      "post_parameters_sha256": "78a3c56e3e49ef03ed8b6bf8b14498a216aeac859bce383427374de4f4ca3201",
+      "step": 46,
+      "update_seconds": 0.05433900002390146
+    },
+    {
+      "accuracy": 0.9716981132075472,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "477fa51dff108b1661c85f6f963bba55d3b547706cfb615eb3c49f70a9eb7b2b",
+      "step": 47,
+      "update_seconds": 0.011391300009563565
+    },
+    {
+      "accuracy": 0.9764150943396226,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "fb287db16b3b627d2961f728b81a5231d65a7694e0152dbf20831093994bb551",
+      "step": 48,
+      "update_seconds": 0.010154000017791986
+    },
+    {
+      "accuracy": 0.9764150943396226,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "8e7a13d8795a33d1bb773ba75c99ae045fd3662c9f143576dec7d16f752e7c2d",
+      "step": 49,
+      "update_seconds": 0.009671999956481159
+    },
+    {
+      "accuracy": 0.9811320754716981,
+      "alpha": 1.0,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "c5dfa2d51d9adda70a281eb72db46cc27220ee1ba2f12efd686f5c8aac5bd732",
+      "step": 50,
+      "update_seconds": 0.0105725999455899
+    },
+    {
+      "accuracy": 0.9858490566037735,
+      "alpha": 0.75,
+      "coordinates_sha256": "68f5f1673028a8e2bc379360d8cd848ec19a5d92ff425b3a3cfe87f14030f2d4",
+      "post_parameters_sha256": "6b9346373f5b0046a73d70a92ae74aef75b5f5793448e7dca542194845b1988f",
+      "step": 51,
+      "update_seconds": 0.05876100005116314
+    },
+    {
+      "accuracy": 0.9858490566037735,
+      "alpha": 0.75,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "57973b52e8e07a89384183921cb0cc3b008c9cfc358644e9b7a75a5aa27fd149",
+      "step": 52,
+      "update_seconds": 0.01611560001038015
+    },
+    {
+      "accuracy": 0.9858490566037735,
+      "alpha": 0.75,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "1317ed1b4b677edd1a50d0c48d7bf2b5dd2530bf707d53ccad26d27a8442364d",
+      "step": 53,
+      "update_seconds": 0.011669400031678379
+    },
+    {
+      "accuracy": 0.9858490566037735,
+      "alpha": 0.75,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "51f56809423b4cb85af9b5dd2086d401a8228fad9876913d3e4343c8b40a3a9f",
+      "step": 54,
+      "update_seconds": 0.011605300009250641
+    },
+    {
+      "accuracy": 0.9905660377358491,
+      "alpha": 0.75,
+      "coordinates_sha256": null,
+      "post_parameters_sha256": "48b7867660ca0b4a99bb9cb8d74acd4aa986d6dce429370bd5c91528f0e3cdd0",
+      "step": 55,
+      "update_seconds": 0.012205999926663935
+    }
+  ],
+  "reused_post_snapshots": 0,
+  "setup_seconds": 7.400009781122208e-05
+}

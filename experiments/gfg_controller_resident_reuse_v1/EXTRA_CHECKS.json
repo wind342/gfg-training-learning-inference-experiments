@@ -1,0 +1,6 @@
+{
+  "deliberate_parameter_mutation_detected": true,
+  "negative_control_scope": "one in-memory historical step; no old artifacts written",
+  "packed_snapshot_independence": true,
+  "status": "PASS"
+}

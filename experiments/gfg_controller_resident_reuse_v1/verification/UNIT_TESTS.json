@@ -1,0 +1,32 @@
+[
+  {
+    "buffers_and_derivatives_exact": true,
+    "device": "cpu",
+    "width": 3
+  },
+  {
+    "buffers_and_derivatives_exact": true,
+    "device": "cpu",
+    "width": 17
+  },
+  {
+    "buffers_and_derivatives_exact": true,
+    "device": "cpu",
+    "width": 64
+  },
+  {
+    "buffers_and_derivatives_exact": true,
+    "device": "cuda",
+    "width": 3
+  },
+  {
+    "buffers_and_derivatives_exact": true,
+    "device": "cuda",
+    "width": 17
+  },
+  {
+    "buffers_and_derivatives_exact": true,
+    "device": "cuda",
+    "width": 64
+  }
+]
