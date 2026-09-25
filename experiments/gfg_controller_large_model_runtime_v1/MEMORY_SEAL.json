@@ -1,0 +1,16 @@
+{
+  "blockwise_audit_sha256": "725233aea7a4b015848420f01a24a9bbe20af2a375472c9f6ac8b1206638603a",
+  "entry": "entry-481b86f81d58d496a687",
+  "lr": 0.003,
+  "modes": [
+    "native",
+    "old",
+    "global",
+    "blockwise"
+  ],
+  "purpose": "one-refresh allocation diagnostic; not steady-state or large-model peak",
+  "repetitions": 3,
+  "seed": 34797899,
+  "source_sha256": "a4aa59aa20a827921cfb0011fbd50998dc291c13ba758c7177cc91b7fe43eae6",
+  "step": 1
+}

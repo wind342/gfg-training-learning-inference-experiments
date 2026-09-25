@@ -1,0 +1,189 @@
+{
+  "buffer_formula": {
+    "new_bytes_per_parameter": 8,
+    "old_bytes_per_parameter": 20,
+    "reduction_fraction": 0.6
+  },
+  "exclusions": "Large model activations, JVP workspace, allocator reserve and framework overhead are not included in estimates.",
+  "lower_bound_estimates_not_measurements": {
+    "160000000": {
+      "control_buffers_bytes": 1280000000,
+      "new_fp32_state_plus_buffers_bytes": 3840000000,
+      "old_fp32_state_plus_buffers_bytes": 5760000000
+    },
+    "70000000": {
+      "control_buffers_bytes": 560000000,
+      "new_fp32_state_plus_buffers_bytes": 1680000000,
+      "old_fp32_state_plus_buffers_bytes": 2520000000
+    }
+  },
+  "median_by_mode": {
+    "blockwise": {
+      "peak_allocated": 100295168,
+      "peak_reserved": 109051904,
+      "update_seconds_diagnostic": 0.04617860005237162
+    },
+    "global": {
+      "peak_allocated": 100295168,
+      "peak_reserved": 109051904,
+      "update_seconds_diagnostic": 0.0516899999929592
+    },
+    "native": {
+      "peak_allocated": 99492352,
+      "peak_reserved": 102760448,
+      "update_seconds_diagnostic": 0.009757200023159385
+    },
+    "old": {
+      "peak_allocated": 101499392,
+      "peak_reserved": 109051904,
+      "update_seconds_diagnostic": 0.05359709996264428
+    }
+  },
+  "memory_seal_sha256": "328498249bc12923e9b05e8f6ea39e84253e77053c465414865d41de198a6134",
+  "records": [
+    {
+      "after_constructor_allocated": 4314112,
+      "alpha": 1.0,
+      "baseline_allocated": 4314112,
+      "mode": "native",
+      "parameter_count": 100352,
+      "peak_allocated": 99492352,
+      "peak_reserved": 102760448,
+      "post_parameters_sha256": "eb06d52b341b5998b108d67dfd69a16bdecc57d9a715d097d0aa8ebd293f262c",
+      "rep": 0,
+      "update_seconds_diagnostic": 0.22199580003507435
+    },
+    {
+      "after_constructor_allocated": 73430016,
+      "alpha": 0.25,
+      "baseline_allocated": 71422976,
+      "mode": "old",
+      "parameter_count": 100352,
+      "peak_allocated": 101499392,
+      "peak_reserved": 109051904,
+      "post_parameters_sha256": "7a36b4eb002fc93294def5e8d658212b5d36f01d5b715f68b09be8c4eaed3270",
+      "rep": 0,
+      "update_seconds_diagnostic": 0.2524159000022337
+    },
+    {
+      "after_constructor_allocated": 72225792,
+      "alpha": 0.25,
+      "baseline_allocated": 71422976,
+      "mode": "global",
+      "parameter_count": 100352,
+      "peak_allocated": 100295168,
+      "peak_reserved": 109051904,
+      "post_parameters_sha256": "7a36b4eb002fc93294def5e8d658212b5d36f01d5b715f68b09be8c4eaed3270",
+      "rep": 0,
+      "update_seconds_diagnostic": 0.05615720001515001
+    },
+    {
+      "after_constructor_allocated": 72225792,
+      "alpha": 0.25,
+      "baseline_allocated": 71422976,
+      "mode": "blockwise",
+      "parameter_count": 100352,
+      "peak_allocated": 100295168,
+      "peak_reserved": 109051904,
+      "post_parameters_sha256": "7a36b4eb002fc93294def5e8d658212b5d36f01d5b715f68b09be8c4eaed3270",
+      "rep": 0,
+      "update_seconds_diagnostic": 0.04310899996198714
+    },
+    {
+      "after_constructor_allocated": 71422976,
+      "alpha": 1.0,
+      "baseline_allocated": 71422976,
+      "mode": "native",
+      "parameter_count": 100352,
+      "peak_allocated": 99492352,
+      "peak_reserved": 102760448,
+      "post_parameters_sha256": "eb06d52b341b5998b108d67dfd69a16bdecc57d9a715d097d0aa8ebd293f262c",
+      "rep": 1,
+      "update_seconds_diagnostic": 0.009757200023159385
+    },
+    {
+      "after_constructor_allocated": 73430016,
+      "alpha": 0.25,
+      "baseline_allocated": 71422976,
+      "mode": "old",
+      "parameter_count": 100352,
+      "peak_allocated": 101499392,
+      "peak_reserved": 109051904,
+      "post_parameters_sha256": "7a36b4eb002fc93294def5e8d658212b5d36f01d5b715f68b09be8c4eaed3270",
+      "rep": 1,
+      "update_seconds_diagnostic": 0.045259500038810074
+    },
+    {
+      "after_constructor_allocated": 72225792,
+      "alpha": 0.25,
+      "baseline_allocated": 71422976,
+      "mode": "global",
+      "parameter_count": 100352,
+      "peak_allocated": 100295168,
+      "peak_reserved": 109051904,
+      "post_parameters_sha256": "7a36b4eb002fc93294def5e8d658212b5d36f01d5b715f68b09be8c4eaed3270",
+      "rep": 1,
+      "update_seconds_diagnostic": 0.04486619995441288
+    },
+    {
+      "after_constructor_allocated": 72225792,
+      "alpha": 0.25,
+      "baseline_allocated": 71422976,
+      "mode": "blockwise",
+      "parameter_count": 100352,
+      "peak_allocated": 100295168,
+      "peak_reserved": 109051904,
+      "post_parameters_sha256": "7a36b4eb002fc93294def5e8d658212b5d36f01d5b715f68b09be8c4eaed3270",
+      "rep": 1,
+      "update_seconds_diagnostic": 0.048610700061544776
+    },
+    {
+      "after_constructor_allocated": 71422976,
+      "alpha": 1.0,
+      "baseline_allocated": 71422976,
+      "mode": "native",
+      "parameter_count": 100352,
+      "peak_allocated": 99492352,
+      "peak_reserved": 102760448,
+      "post_parameters_sha256": "eb06d52b341b5998b108d67dfd69a16bdecc57d9a715d097d0aa8ebd293f262c",
+      "rep": 2,
+      "update_seconds_diagnostic": 0.008217199938371778
+    },
+    {
+      "after_constructor_allocated": 73430016,
+      "alpha": 0.25,
+      "baseline_allocated": 71422976,
+      "mode": "old",
+      "parameter_count": 100352,
+      "peak_allocated": 101499392,
+      "peak_reserved": 109051904,
+      "post_parameters_sha256": "7a36b4eb002fc93294def5e8d658212b5d36f01d5b715f68b09be8c4eaed3270",
+      "rep": 2,
+      "update_seconds_diagnostic": 0.05359709996264428
+    },
+    {
+      "after_constructor_allocated": 72225792,
+      "alpha": 0.25,
+      "baseline_allocated": 71422976,
+      "mode": "global",
+      "parameter_count": 100352,
+      "peak_allocated": 100295168,
+      "peak_reserved": 109051904,
+      "post_parameters_sha256": "7a36b4eb002fc93294def5e8d658212b5d36f01d5b715f68b09be8c4eaed3270",
+      "rep": 2,
+      "update_seconds_diagnostic": 0.0516899999929592
+    },
+    {
+      "after_constructor_allocated": 72225792,
+      "alpha": 0.25,
+      "baseline_allocated": 71422976,
+      "mode": "blockwise",
+      "parameter_count": 100352,
+      "peak_allocated": 100295168,
+      "peak_reserved": 109051904,
+      "post_parameters_sha256": "7a36b4eb002fc93294def5e8d658212b5d36f01d5b715f68b09be8c4eaed3270",
+      "rep": 2,
+      "update_seconds_diagnostic": 0.04617860005237162
+    }
+  ]
+}

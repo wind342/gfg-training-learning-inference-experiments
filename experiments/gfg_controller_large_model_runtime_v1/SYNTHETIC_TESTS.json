@@ -1,0 +1,62 @@
+[
+  {
+    "exact": true,
+    "shape": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "exact": true,
+    "shape": [
+      7,
+      5,
+      17
+    ]
+  },
+  {
+    "exact": true,
+    "shape": [
+      53,
+      11,
+      32
+    ]
+  },
+  {
+    "exact": true,
+    "shape": [
+      212,
+      24,
+      64
+    ]
+  },
+  {
+    "exact": true,
+    "shape": [
+      7,
+      4097,
+      65
+    ]
+  },
+  {
+    "control_bytes": 720,
+    "proposal_alpha": 0.25,
+    "three_steps_exact": true
+  },
+  {
+    "control_bytes": 720,
+    "proposal_alpha": 0.5,
+    "three_steps_exact": true
+  },
+  {
+    "control_bytes": 720,
+    "proposal_alpha": 0.75,
+    "three_steps_exact": true
+  },
+  {
+    "control_bytes": 720,
+    "proposal_alpha": 1.0,
+    "three_steps_exact": true
+  }
+]

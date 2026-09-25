@@ -1,0 +1,857 @@
+{
+  "audited_decisions": 353,
+  "blockwise_component": "PASS",
+  "blockwise_failures": [],
+  "blockwise_max_abs": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "crossings": [
+    {
+      "config": 0,
+      "entry": "entry-481b86f81d58d496a687",
+      "first_hits": {
+        "0.95": 41,
+        "0.99": 61
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-481b86f81d58d496a687",
+      "first_hits": {
+        "0.95": 31,
+        "0.99": 49
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-481b86f81d58d496a687",
+      "first_hits": {
+        "0.95": 25,
+        "0.99": 30
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-4ed462761347d6b87e61",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-4ed462761347d6b87e61",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-4ed462761347d6b87e61",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-786d0a3628f6f791399f",
+      "first_hits": {
+        "0.95": 19,
+        "0.99": 67
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-786d0a3628f6f791399f",
+      "first_hits": {
+        "0.95": 18,
+        "0.99": 47
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-786d0a3628f6f791399f",
+      "first_hits": {
+        "0.95": 18,
+        "0.99": 63
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-7a22f51938059541de98",
+      "first_hits": {
+        "0.95": 22,
+        "0.99": 44
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-7a22f51938059541de98",
+      "first_hits": {
+        "0.95": 11,
+        "0.99": 20
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-7a22f51938059541de98",
+      "first_hits": {
+        "0.95": 22,
+        "0.99": null
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "first_hits": {
+        "0.95": 11,
+        "0.99": 30
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "first_hits": {
+        "0.95": 11,
+        "0.99": 22
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "first_hits": {
+        "0.95": 12,
+        "0.99": 47
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "first_hits": {
+        "0.95": 2,
+        "0.99": null
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "first_hits": {
+        "0.95": 11,
+        "0.99": null
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "first_hits": {
+        "0.95": 29,
+        "0.99": null
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 16
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 26
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": null
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-f34e7e61444c90976b36",
+      "first_hits": {
+        "0.95": 20,
+        "0.99": 101
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 1,
+      "entry": "entry-f34e7e61444c90976b36",
+      "first_hits": {
+        "0.95": 27,
+        "0.99": 43
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 2,
+      "entry": "entry-f34e7e61444c90976b36",
+      "first_hits": {
+        "0.95": 27,
+        "0.99": 64
+      },
+      "mode": "audit"
+    },
+    {
+      "config": 0,
+      "entry": "entry-481b86f81d58d496a687",
+      "first_hits": {
+        "0.95": 41,
+        "0.99": 61
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-481b86f81d58d496a687",
+      "first_hits": {
+        "0.95": 31,
+        "0.99": 49
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-481b86f81d58d496a687",
+      "first_hits": {
+        "0.95": 25,
+        "0.99": 30
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-4ed462761347d6b87e61",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-4ed462761347d6b87e61",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-4ed462761347d6b87e61",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-54ba9566f731754a0e3f",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-5bb1186bc27eb82111fb",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-786d0a3628f6f791399f",
+      "first_hits": {
+        "0.95": 19,
+        "0.99": 67
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-786d0a3628f6f791399f",
+      "first_hits": {
+        "0.95": 18,
+        "0.99": 47
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-786d0a3628f6f791399f",
+      "first_hits": {
+        "0.95": 18,
+        "0.99": 63
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-7a22f51938059541de98",
+      "first_hits": {
+        "0.95": 22,
+        "0.99": 44
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-7a22f51938059541de98",
+      "first_hits": {
+        "0.95": 11,
+        "0.99": 20
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-7a22f51938059541de98",
+      "first_hits": {
+        "0.95": 22,
+        "0.99": null
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-7c1a3094f8acf9cf4bb0",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "first_hits": {
+        "0.95": 11,
+        "0.99": 30
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "first_hits": {
+        "0.95": 11,
+        "0.99": 22
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-8fa6576fc7128f93a228",
+      "first_hits": {
+        "0.95": 12,
+        "0.99": 47
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-abc8f864a49ee0e056f4",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 0
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "first_hits": {
+        "0.95": 2,
+        "0.99": null
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "first_hits": {
+        "0.95": 11,
+        "0.99": null
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-d5b80ca9b9cd18fa343f",
+      "first_hits": {
+        "0.95": 29,
+        "0.99": null
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 16
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": 26
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-d8b1bf9cd00ddf314725",
+      "first_hits": {
+        "0.95": 0,
+        "0.99": null
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 0,
+      "entry": "entry-f34e7e61444c90976b36",
+      "first_hits": {
+        "0.95": 20,
+        "0.99": 101
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 1,
+      "entry": "entry-f34e7e61444c90976b36",
+      "first_hits": {
+        "0.95": 27,
+        "0.99": 43
+      },
+      "mode": "runtime"
+    },
+    {
+      "config": 2,
+      "entry": "entry-f34e7e61444c90976b36",
+      "first_hits": {
+        "0.95": 27,
+        "0.99": 64
+      },
+      "mode": "runtime"
+    }
+  ],
+  "new_controller_updates": 3460,
+  "paired_oracle_updates": 1730,
+  "raw_manifest": {
+    "audit\\entry-481b86f81d58d496a687\\0\\COORDINATES.npz": "c508a39746d2dad5436ff65cb95897a23a6843c739a787e07d8e4707c54b28fd",
+    "audit\\entry-481b86f81d58d496a687\\0\\HIDDEN.npz": "03ff262fcdfa63a1fb67db45b22ecdfdf3c86b848327e5b06e7bb5f7ff6db6fc",
+    "audit\\entry-481b86f81d58d496a687\\0\\OUTPUTS.npz": "c965d422f108487c912285e879fc7be3d84dc3abbca6001b49af21e20115b842",
+    "audit\\entry-481b86f81d58d496a687\\0\\TRAJECTORY.json": "a3f53ec1cf21c41d56614f47b2d7c646a8d162c943cebd614c51c1dbeab72efd",
+    "audit\\entry-481b86f81d58d496a687\\1\\COORDINATES.npz": "35d0f7470a83297db68b8c5165c231b59b7216b36c85c9d2d0df64346c1b9464",
+    "audit\\entry-481b86f81d58d496a687\\1\\HIDDEN.npz": "159890803545fc827e925114a1338e459e1fd9100e6273eaf41f9829973e07a0",
+    "audit\\entry-481b86f81d58d496a687\\1\\OUTPUTS.npz": "f2a728a7773427eb30c35575404a4fe19146d7d8d37a4e7c666172aabd0333aa",
+    "audit\\entry-481b86f81d58d496a687\\1\\TRAJECTORY.json": "af56c869626473505b88a8cfaf860e881cb5a91f49c804dcc1a702330aa4f98b",
+    "audit\\entry-481b86f81d58d496a687\\2\\COORDINATES.npz": "67894dbfa87bb2f1bce264ac42f50fe48bf1140a6ecc3e39e3823308997a09cc",
+    "audit\\entry-481b86f81d58d496a687\\2\\HIDDEN.npz": "67459d4bd8e1c4da90a544c310191358528287161746480de370c6253c20c15c",
+    "audit\\entry-481b86f81d58d496a687\\2\\OUTPUTS.npz": "87995d0216b5c700d43985844172397d803c69ac65d152b6fc729be6c5e28489",
+    "audit\\entry-481b86f81d58d496a687\\2\\TRAJECTORY.json": "1871f3c50a77c0183a05cb9baf4ea57f0e26141849c30ddd682bde3035eab045",
+    "audit\\entry-4ed462761347d6b87e61\\0\\OUTPUTS.npz": "9c99c19fa544b0a14c91a10cb61ee00da4142f5a15468208bbcc197b9059b1db",
+    "audit\\entry-4ed462761347d6b87e61\\0\\TRAJECTORY.json": "e4c474bfa4e6353e240aeae6da9b358be652c28fd30bb5780c31eb651abdaaf0",
+    "audit\\entry-4ed462761347d6b87e61\\1\\OUTPUTS.npz": "9c99c19fa544b0a14c91a10cb61ee00da4142f5a15468208bbcc197b9059b1db",
+    "audit\\entry-4ed462761347d6b87e61\\1\\TRAJECTORY.json": "75f2dfe7ee26c0b19efb0b92d45ba0a325fd4d0ffbcc49cc026c11019c8929f5",
+    "audit\\entry-4ed462761347d6b87e61\\2\\OUTPUTS.npz": "9c99c19fa544b0a14c91a10cb61ee00da4142f5a15468208bbcc197b9059b1db",
+    "audit\\entry-4ed462761347d6b87e61\\2\\TRAJECTORY.json": "a7333b2338608cbd380698626e263097ae6fcba53ec7c5cdf713912c203009b9",
+    "audit\\entry-54ba9566f731754a0e3f\\0\\OUTPUTS.npz": "600ca14e3ea111d460a030673bb6746bd2f6d8c3b9637f79f640f5d0359a6df9",
+    "audit\\entry-54ba9566f731754a0e3f\\0\\TRAJECTORY.json": "2267b1c23153a53066fe739231b3dd4e921547c3f390f06663d512f837c563e7",
+    "audit\\entry-54ba9566f731754a0e3f\\1\\OUTPUTS.npz": "600ca14e3ea111d460a030673bb6746bd2f6d8c3b9637f79f640f5d0359a6df9",
+    "audit\\entry-54ba9566f731754a0e3f\\1\\TRAJECTORY.json": "01afe821dd2eb17567e4adbedebad0d4250560bf903d815c3cb9ad8e749805a5",
+    "audit\\entry-54ba9566f731754a0e3f\\2\\OUTPUTS.npz": "600ca14e3ea111d460a030673bb6746bd2f6d8c3b9637f79f640f5d0359a6df9",
+    "audit\\entry-54ba9566f731754a0e3f\\2\\TRAJECTORY.json": "1db82bc00ac0c1bf8a1518059d535cbc0366d6a1765e38d8d861b812737bea30",
+    "audit\\entry-5bb1186bc27eb82111fb\\0\\OUTPUTS.npz": "80f98e27fdaed3404a423d12783357a8cc8c4073075f703e786dc7bdbbd416ab",
+    "audit\\entry-5bb1186bc27eb82111fb\\0\\TRAJECTORY.json": "1214906d6b0c84a916c48545382f262e00420f9000e312fa4d6eb11d631216b5",
+    "audit\\entry-5bb1186bc27eb82111fb\\1\\OUTPUTS.npz": "80f98e27fdaed3404a423d12783357a8cc8c4073075f703e786dc7bdbbd416ab",
+    "audit\\entry-5bb1186bc27eb82111fb\\1\\TRAJECTORY.json": "af9cdfec3ade320ff32013743cd40a8b53ccdb6f35cf9ae9b1476502b0a3e98b",
+    "audit\\entry-5bb1186bc27eb82111fb\\2\\OUTPUTS.npz": "80f98e27fdaed3404a423d12783357a8cc8c4073075f703e786dc7bdbbd416ab",
+    "audit\\entry-5bb1186bc27eb82111fb\\2\\TRAJECTORY.json": "2fe28b03f4e15c41ab44746ec338d6ee93f26b3f1a2ae6ab0942684b921d14f2",
+    "audit\\entry-786d0a3628f6f791399f\\0\\COORDINATES.npz": "e4e7b6f65e718ff953c7a2c0b36fc4f9b8d3d11f3a9c5b4fd2b0065c42a56a71",
+    "audit\\entry-786d0a3628f6f791399f\\0\\HIDDEN.npz": "3440c67ca9aa23980b18727df6f8dc54140866840047031534094aada8d94ab0",
+    "audit\\entry-786d0a3628f6f791399f\\0\\OUTPUTS.npz": "306a8aa165c47787bdf2bda33623e451543154f876147353e6e13e2171798230",
+    "audit\\entry-786d0a3628f6f791399f\\0\\TRAJECTORY.json": "282874b573fb364ff71557cc777d033a04f0fe36103002154f3c1c69f42b98c1",
+    "audit\\entry-786d0a3628f6f791399f\\1\\COORDINATES.npz": "8e3b5f70572e5214c365b363a06841a378957c2e26901037c16199c7a4680ba5",
+    "audit\\entry-786d0a3628f6f791399f\\1\\HIDDEN.npz": "83f4d9e8fa360449b80f65207b852e7435c968e638af1cb5196f9fbe6714465a",
+    "audit\\entry-786d0a3628f6f791399f\\1\\OUTPUTS.npz": "27c7d52a32d2bd0cec4682ccf396010e8b018328f9fe1aa00b4d74c80deffba3",
+    "audit\\entry-786d0a3628f6f791399f\\1\\TRAJECTORY.json": "fba1648ee3c0870ca3abcb895d93fc3230f73c31b76eecc9038c77c5f433ead7",
+    "audit\\entry-786d0a3628f6f791399f\\2\\COORDINATES.npz": "a464f7f86c21440a956cdbc499b2a12516fa61cba15df4dd010748106ae38dcf",
+    "audit\\entry-786d0a3628f6f791399f\\2\\HIDDEN.npz": "a1cda4739cbc876716f4ad071dc087d231d7ee938fa6eeba350950cb33ea853b",
+    "audit\\entry-786d0a3628f6f791399f\\2\\OUTPUTS.npz": "5d7f2e33436b4d3503fc962ccca73eef5709f09bcd206faeacaffa0380d9067d",
+    "audit\\entry-786d0a3628f6f791399f\\2\\TRAJECTORY.json": "72d348ff6e0c85a4053c5f7444e9678f82a3debb3d6326147beb18929ef10518",
+    "audit\\entry-7a22f51938059541de98\\0\\COORDINATES.npz": "cd37f32d546ffbad8e70dc6019fc47e278097a5cbc8da3ea94b7bb304824f20c",
+    "audit\\entry-7a22f51938059541de98\\0\\HIDDEN.npz": "8329ac7fa856a273190985c491ff016af15bbcbfb1ec9c7e0dd3dc0a367b388f",
+    "audit\\entry-7a22f51938059541de98\\0\\OUTPUTS.npz": "bb31f9e60d6aa24ca31bfe1fb8b692c71aab75ac1a329b1fff1aa9ad68383bd2",
+    "audit\\entry-7a22f51938059541de98\\0\\TRAJECTORY.json": "ced19318a75cd1c87a42444f95a732ee603bb69383cd186fceebdb9762b0edab",
+    "audit\\entry-7a22f51938059541de98\\1\\COORDINATES.npz": "a7a62b86787212126ed0038309462e12b29e7370d78d85e12bc8023c729796fa",
+    "audit\\entry-7a22f51938059541de98\\1\\HIDDEN.npz": "c52b3600c5903fc8e175793c42d1be5d27da05e6dc73ae2cf0f8c78bc84bb1c2",
+    "audit\\entry-7a22f51938059541de98\\1\\OUTPUTS.npz": "8cd76ce7877a1ba59a4df2d634050dd6da3b8fecedec66425d475da9d7deb6b7",
+    "audit\\entry-7a22f51938059541de98\\1\\TRAJECTORY.json": "1b4469c72a65fa6466d658afd0148272c619921b1f00114a21c52b1ea298843f",
+    "audit\\entry-7a22f51938059541de98\\2\\COORDINATES.npz": "881a9ce0e8ca10d8a6be6c01ef714a5b3b0ad56b08ee588c5c221b9bb1067525",
+    "audit\\entry-7a22f51938059541de98\\2\\HIDDEN.npz": "0473ede4f6b21822f0ae9eaac0ec6da5338ca9a1f56d088ae4b34ec6034019b6",
+    "audit\\entry-7a22f51938059541de98\\2\\OUTPUTS.npz": "15df176107e11b5b3ce9e22e8f566ef4cbecb9ab174c0cd08b962609a1951c02",
+    "audit\\entry-7a22f51938059541de98\\2\\TRAJECTORY.json": "6da16baa198746b0629eb502957fcb3c187c1ee912c8a4ace51c8b9b49b12f08",
+    "audit\\entry-7c1a3094f8acf9cf4bb0\\0\\OUTPUTS.npz": "d2b8b2d17f52f5b74db8476f77502d10fbef680d436b5accb64045eba44d9646",
+    "audit\\entry-7c1a3094f8acf9cf4bb0\\0\\TRAJECTORY.json": "831389d4f15e4a3a68aae7faa36eeb65dc4c5ca9c1bdb103691a1e76cfe0cda7",
+    "audit\\entry-7c1a3094f8acf9cf4bb0\\1\\OUTPUTS.npz": "d2b8b2d17f52f5b74db8476f77502d10fbef680d436b5accb64045eba44d9646",
+    "audit\\entry-7c1a3094f8acf9cf4bb0\\1\\TRAJECTORY.json": "2f19b295a5f75f8ad5af557d15bfeedc3997df3e2fadc4fb806dafdf29859092",
+    "audit\\entry-7c1a3094f8acf9cf4bb0\\2\\OUTPUTS.npz": "d2b8b2d17f52f5b74db8476f77502d10fbef680d436b5accb64045eba44d9646",
+    "audit\\entry-7c1a3094f8acf9cf4bb0\\2\\TRAJECTORY.json": "631e3b6752bc020f6e15ebc3b793dec87a855ed8d0ba05ac304610efe764d1e6",
+    "audit\\entry-8fa6576fc7128f93a228\\0\\COORDINATES.npz": "3c7143eeef00f6c93bb4d291255d414d28d98c2fe925efe8c3c28b28c353b6f2",
+    "audit\\entry-8fa6576fc7128f93a228\\0\\HIDDEN.npz": "f253a0e6bc926526c105811709789bb9f89fd8aae3d2192c2eb4d3a024b23676",
+    "audit\\entry-8fa6576fc7128f93a228\\0\\OUTPUTS.npz": "d643ada9724702cbc95fe7ec7e0ea9aad96b781d4650b40f5f05875ba4f4b188",
+    "audit\\entry-8fa6576fc7128f93a228\\0\\TRAJECTORY.json": "5ba300b22506b9c7fb83364a91bb6a4dd54122f7cdab438b5fd592380b5c5aa6",
+    "audit\\entry-8fa6576fc7128f93a228\\1\\COORDINATES.npz": "7e24c280479c6198510bec988d0ffb80e08af9917ab0884ea3529978262a4db3",
+    "audit\\entry-8fa6576fc7128f93a228\\1\\HIDDEN.npz": "86991d06f0e972fe9ee684a165d2be33091393d26b5606d62272dcdeb99785a6",
+    "audit\\entry-8fa6576fc7128f93a228\\1\\OUTPUTS.npz": "edacc511e36bced492dcaac1bef8ef4563683c191d301532ae190f8b06dd45c6",
+    "audit\\entry-8fa6576fc7128f93a228\\1\\TRAJECTORY.json": "94020a85f1b9be648f6964c422a88922294fb97c4a3aaf7eb3b4114f1a10ddb0",
+    "audit\\entry-8fa6576fc7128f93a228\\2\\COORDINATES.npz": "d53da4d2d79e98bfcf0c67850e4e9abcd06e8928a5f6c0c211e4dbdec10e84c0",
+    "audit\\entry-8fa6576fc7128f93a228\\2\\HIDDEN.npz": "3fef20608b56fddcb31a70fd8740b5e211c5295f3857093c3c802ddb2eb9fc7e",
+    "audit\\entry-8fa6576fc7128f93a228\\2\\OUTPUTS.npz": "adec91d7168966b09b7ebf907d9d3845da7f24ce8ffb23f9093f048d15a26f4a",
+    "audit\\entry-8fa6576fc7128f93a228\\2\\TRAJECTORY.json": "9af81442b570b4cd0c65b7d0b0b0a49ee004f7acce69f1cd76fc48e8e233afec",
+    "audit\\entry-abc8f864a49ee0e056f4\\0\\OUTPUTS.npz": "35b4cf704ec4a70f6bb491f03289d777d396be1a4336a0ef69e522fc3f5a116e",
+    "audit\\entry-abc8f864a49ee0e056f4\\0\\TRAJECTORY.json": "d0defb04aa409833c30a56977ea4a16904772164fcc0c489382c9c09bca47c6e",
+    "audit\\entry-abc8f864a49ee0e056f4\\1\\OUTPUTS.npz": "35b4cf704ec4a70f6bb491f03289d777d396be1a4336a0ef69e522fc3f5a116e",
+    "audit\\entry-abc8f864a49ee0e056f4\\1\\TRAJECTORY.json": "db04841f4fd12401b0c6d59da9f256d735176588a106faa77f3bac6d7a814882",
+    "audit\\entry-abc8f864a49ee0e056f4\\2\\OUTPUTS.npz": "35b4cf704ec4a70f6bb491f03289d777d396be1a4336a0ef69e522fc3f5a116e",
+    "audit\\entry-abc8f864a49ee0e056f4\\2\\TRAJECTORY.json": "b494aa3864ef4665f4945b29872625bd74708dab89516645a055b3f517d8c4f8",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\0\\COORDINATES.npz": "797519d705d42b60e1a24af67f4e508830f18695f45871de5712d61f7ced50ac",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\0\\HIDDEN.npz": "92a57b3b64bae326ea6975c372d69e80e171c89c6a797e6abb0ca0fbf9eb1cf0",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\0\\OUTPUTS.npz": "800b1e6f5729308abf618aaa6ebc48d84ce980deb77a7ee0d5b5dc390ff70d87",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\0\\TRAJECTORY.json": "3f0dccd437c4bcd6cac4c101e830dba36b03c72d220235356de84cde4d09059f",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\1\\COORDINATES.npz": "be5ab674e293d053bcebdc63c7038d73a339e949841d26daf6bb96fe0344af8f",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\1\\HIDDEN.npz": "f02b18f57a969f732ae5c85cfbd3883fac9ef03c8de0fafc551b0b3ae0f341bf",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\1\\OUTPUTS.npz": "6b9650c94d46e7035093d85de6ec966eaa5a7b659970bf1a5247ea7ebec498c2",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\1\\TRAJECTORY.json": "a8f810c50ddf76a80b6996d69773924d7b74897b9d9fc718f2ac50f6ed0eaa4f",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\2\\COORDINATES.npz": "74c3264f9da31eecbc05e8a8e3029d393327f52aa986abf9a0d857f5585b63c4",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\2\\HIDDEN.npz": "db3730c2f6d66792d34b8d2a3d78bea9b9bb1f254553ee2e6f2667fe18722156",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\2\\OUTPUTS.npz": "5bb3dee1768047706916033ca7cba513321fa7bafffa29c4659cb5abcf6620ca",
+    "audit\\entry-d5b80ca9b9cd18fa343f\\2\\TRAJECTORY.json": "ba1cc0e002e9f3361cf3656018b1c941bb2a28977692692fcdd469b17f06c153",
+    "audit\\entry-d8b1bf9cd00ddf314725\\0\\COORDINATES.npz": "3fa1df163fd98470f2ea16b263ff5ee2058d9f047c77908b8908944afab83d02",
+    "audit\\entry-d8b1bf9cd00ddf314725\\0\\HIDDEN.npz": "a39fbf64e9abb9e7da44c0e2925296ac265939d0865dd83c5884b778abf86b70",
+    "audit\\entry-d8b1bf9cd00ddf314725\\0\\OUTPUTS.npz": "b033de754d71bab26e3ffb7124e1c1482e015054487ade09abc6974e3fb2fd4c",
+    "audit\\entry-d8b1bf9cd00ddf314725\\0\\TRAJECTORY.json": "5e7263be3819bae79b7fd10981eb08c09bb4a3315f443df13feefc81d65c036f",
+    "audit\\entry-d8b1bf9cd00ddf314725\\1\\COORDINATES.npz": "a5638886ca27420e63dd7be66e8407cafa69c5249e252477ced3709986c7b958",
+    "audit\\entry-d8b1bf9cd00ddf314725\\1\\HIDDEN.npz": "cdd5384c4e4e26d7b3703b06831399becd8b51732c582f1886090f1f21c5e5e2",
+    "audit\\entry-d8b1bf9cd00ddf314725\\1\\OUTPUTS.npz": "47326240a768ba41996907bbb9ec2796148a7331488a0cb606e5ca17384385b5",
+    "audit\\entry-d8b1bf9cd00ddf314725\\1\\TRAJECTORY.json": "383161ae828b0dcf965aaaf36680964626e887a14da13671b3fa0a3247a9400c",
+    "audit\\entry-d8b1bf9cd00ddf314725\\2\\COORDINATES.npz": "5d74fdba5735fcbb397648f1aba109f2fe216a2ed160d3a8dba455b876ffd640",
+    "audit\\entry-d8b1bf9cd00ddf314725\\2\\HIDDEN.npz": "3710f9123193f5a075f7f5424993373489a3ec29a7fadfdbc4ccbba05d6ad035",
+    "audit\\entry-d8b1bf9cd00ddf314725\\2\\OUTPUTS.npz": "938249e5dcd1fc4e90422fd980acc596a33f5f1be1a19621967fd265cca177af",
+    "audit\\entry-d8b1bf9cd00ddf314725\\2\\TRAJECTORY.json": "df163117879f933e03631216d48e70a0b61c37ad9728f4008dc7b6139801e2d9",
+    "audit\\entry-f34e7e61444c90976b36\\0\\COORDINATES.npz": "debe1b1a2907b2f3758a73eb9744a60a50dcec1c966d2022504e56efab11008c",
+    "audit\\entry-f34e7e61444c90976b36\\0\\HIDDEN.npz": "d413cfda07170e236c4f47edfe860d3b2d79b6530b3da0a75d74c055a4b7f173",
+    "audit\\entry-f34e7e61444c90976b36\\0\\OUTPUTS.npz": "757e4c0afa8729bcb315622df6f9941ce47015b8b579cd9bdd5ced6c0db2c9a7",
+    "audit\\entry-f34e7e61444c90976b36\\0\\TRAJECTORY.json": "6127f846b77247d9cce8e3737a93a40c66f22c9b7263b4529d7c13eb66e506ad",
+    "audit\\entry-f34e7e61444c90976b36\\1\\COORDINATES.npz": "c279231ba0bfa5dfca82be1261077d5db5e3fab7665bc8364ff2649bd708984a",
+    "audit\\entry-f34e7e61444c90976b36\\1\\HIDDEN.npz": "18ea6fa81c9e38fa0ffe03a2d66d7ee387c6762a246df5cac3497e6afee39e6c",
+    "audit\\entry-f34e7e61444c90976b36\\1\\OUTPUTS.npz": "97cd2aeacf5daa19ac841790243b3212c1a2013e1da52f0fe1ccf1f78c890533",
+    "audit\\entry-f34e7e61444c90976b36\\1\\TRAJECTORY.json": "7605bd1898e1c72de4076fe84d6f2a7bda7f551021e59225e79b6c5402205a92",
+    "audit\\entry-f34e7e61444c90976b36\\2\\COORDINATES.npz": "a44f98770cca75cf0e9449a5bcaad4bbb1bc3a7bea66f0d6977822ce02f27a2c",
+    "audit\\entry-f34e7e61444c90976b36\\2\\HIDDEN.npz": "cf8a04f8516232b7f2edb48b9c9b14c4707c9e93ff3add44788ed4680243b037",
+    "audit\\entry-f34e7e61444c90976b36\\2\\OUTPUTS.npz": "b61f69c5f7b3dbb65add4c420ec57eb15a5185389e0dcff50db0ccc9bab35024",
+    "audit\\entry-f34e7e61444c90976b36\\2\\TRAJECTORY.json": "dd5c26a7c00502e48fbdbd9f1b2fda8c0d0bc0c0566232926ba90e1706fba650",
+    "runtime\\entry-481b86f81d58d496a687\\0\\OUTPUTS.npz": "c965d422f108487c912285e879fc7be3d84dc3abbca6001b49af21e20115b842",
+    "runtime\\entry-481b86f81d58d496a687\\0\\TRAJECTORY.json": "7db3c5b015ad2633af53c365ca9cde20232dea5f0fe6ff647753afd19523440f",
+    "runtime\\entry-481b86f81d58d496a687\\1\\OUTPUTS.npz": "f2a728a7773427eb30c35575404a4fe19146d7d8d37a4e7c666172aabd0333aa",
+    "runtime\\entry-481b86f81d58d496a687\\1\\TRAJECTORY.json": "bf180c68dcf79a0dc87d3168b3075c2e9751cf3f7f6631ea213150915407d471",
+    "runtime\\entry-481b86f81d58d496a687\\2\\OUTPUTS.npz": "87995d0216b5c700d43985844172397d803c69ac65d152b6fc729be6c5e28489",
+    "runtime\\entry-481b86f81d58d496a687\\2\\TRAJECTORY.json": "5bd8a29caf5c4b95ca35e49263d22096382c343a746b7c0803b785d665e2f6ee",
+    "runtime\\entry-4ed462761347d6b87e61\\0\\OUTPUTS.npz": "9c99c19fa544b0a14c91a10cb61ee00da4142f5a15468208bbcc197b9059b1db",
+    "runtime\\entry-4ed462761347d6b87e61\\0\\TRAJECTORY.json": "9c55f152c6592051f8bcd2283485437fd6a3bb376feca35bf82d6372c50d27f3",
+    "runtime\\entry-4ed462761347d6b87e61\\1\\OUTPUTS.npz": "9c99c19fa544b0a14c91a10cb61ee00da4142f5a15468208bbcc197b9059b1db",
+    "runtime\\entry-4ed462761347d6b87e61\\1\\TRAJECTORY.json": "e33bff77ef6ea2695a643bb50d19642151c6e3d3952154b600004eb14e61f1cc",
+    "runtime\\entry-4ed462761347d6b87e61\\2\\OUTPUTS.npz": "9c99c19fa544b0a14c91a10cb61ee00da4142f5a15468208bbcc197b9059b1db",
+    "runtime\\entry-4ed462761347d6b87e61\\2\\TRAJECTORY.json": "2909fffab27f3c3dce81abe6ce89aca89e16540b1f4ee244d2905aaf7f72d3dd",
+    "runtime\\entry-54ba9566f731754a0e3f\\0\\OUTPUTS.npz": "600ca14e3ea111d460a030673bb6746bd2f6d8c3b9637f79f640f5d0359a6df9",
+    "runtime\\entry-54ba9566f731754a0e3f\\0\\TRAJECTORY.json": "ea99c537b6ab1010803813698d18b1041c4e16de01f1ab2a9220f26d6c0ec3ad",
+    "runtime\\entry-54ba9566f731754a0e3f\\1\\OUTPUTS.npz": "600ca14e3ea111d460a030673bb6746bd2f6d8c3b9637f79f640f5d0359a6df9",
+    "runtime\\entry-54ba9566f731754a0e3f\\1\\TRAJECTORY.json": "2ccd6cd92be4a19663df6c4360b9dedb51d38134f12f9028b724784e3c8a08ed",
+    "runtime\\entry-54ba9566f731754a0e3f\\2\\OUTPUTS.npz": "600ca14e3ea111d460a030673bb6746bd2f6d8c3b9637f79f640f5d0359a6df9",
+    "runtime\\entry-54ba9566f731754a0e3f\\2\\TRAJECTORY.json": "eddbfdb02a286fddad0f922850a3fc9976f69ee42f54bee6a3ff807964d13325",
+    "runtime\\entry-5bb1186bc27eb82111fb\\0\\OUTPUTS.npz": "80f98e27fdaed3404a423d12783357a8cc8c4073075f703e786dc7bdbbd416ab",
+    "runtime\\entry-5bb1186bc27eb82111fb\\0\\TRAJECTORY.json": "47d683eddce468b1e8600d8e2f67fa326d73bf6ad459fe6f45c1ff26705b4c42",
+    "runtime\\entry-5bb1186bc27eb82111fb\\1\\OUTPUTS.npz": "80f98e27fdaed3404a423d12783357a8cc8c4073075f703e786dc7bdbbd416ab",
+    "runtime\\entry-5bb1186bc27eb82111fb\\1\\TRAJECTORY.json": "04d7b918e6d3c596ae8eeb064c5946515552818a9a220feaefdc962bb64c2c51",
+    "runtime\\entry-5bb1186bc27eb82111fb\\2\\OUTPUTS.npz": "80f98e27fdaed3404a423d12783357a8cc8c4073075f703e786dc7bdbbd416ab",
+    "runtime\\entry-5bb1186bc27eb82111fb\\2\\TRAJECTORY.json": "b95acce9e865796776cbb4838c03c0ab614786e68a4afa9a2dd713d1862f1397",
+    "runtime\\entry-786d0a3628f6f791399f\\0\\OUTPUTS.npz": "306a8aa165c47787bdf2bda33623e451543154f876147353e6e13e2171798230",
+    "runtime\\entry-786d0a3628f6f791399f\\0\\TRAJECTORY.json": "f8d638339f7f69b87e24813af7f09d9e7c55b737dbfbbdbfb4524546a345e0b4",
+    "runtime\\entry-786d0a3628f6f791399f\\1\\OUTPUTS.npz": "27c7d52a32d2bd0cec4682ccf396010e8b018328f9fe1aa00b4d74c80deffba3",
+    "runtime\\entry-786d0a3628f6f791399f\\1\\TRAJECTORY.json": "8407601b56235e7d15084f3d85f107ae58398cbe6d8769f133c73cb0d90e7afb",
+    "runtime\\entry-786d0a3628f6f791399f\\2\\OUTPUTS.npz": "5d7f2e33436b4d3503fc962ccca73eef5709f09bcd206faeacaffa0380d9067d",
+    "runtime\\entry-786d0a3628f6f791399f\\2\\TRAJECTORY.json": "15bd2bab8df9498ee3d95c8d7aa20d504a83bae9ef8c93f09f471048ca244a4f",
+    "runtime\\entry-7a22f51938059541de98\\0\\OUTPUTS.npz": "bb31f9e60d6aa24ca31bfe1fb8b692c71aab75ac1a329b1fff1aa9ad68383bd2",
+    "runtime\\entry-7a22f51938059541de98\\0\\TRAJECTORY.json": "1ccadf69fe68f8a702653821ef244deb43e059ff1b6dfe3b61d49345cd9bc251",
+    "runtime\\entry-7a22f51938059541de98\\1\\OUTPUTS.npz": "8cd76ce7877a1ba59a4df2d634050dd6da3b8fecedec66425d475da9d7deb6b7",
+    "runtime\\entry-7a22f51938059541de98\\1\\TRAJECTORY.json": "894e3f8282d890b6f2ac33d9c9497cc3c1e06682f6b9ba46e54aae7acdd1c032",
+    "runtime\\entry-7a22f51938059541de98\\2\\OUTPUTS.npz": "15df176107e11b5b3ce9e22e8f566ef4cbecb9ab174c0cd08b962609a1951c02",
+    "runtime\\entry-7a22f51938059541de98\\2\\TRAJECTORY.json": "e79fac0874f0eb3f308b4a194d69b455f9b2c352a2579f812a1a3b336ec18373",
+    "runtime\\entry-7c1a3094f8acf9cf4bb0\\0\\OUTPUTS.npz": "d2b8b2d17f52f5b74db8476f77502d10fbef680d436b5accb64045eba44d9646",
+    "runtime\\entry-7c1a3094f8acf9cf4bb0\\0\\TRAJECTORY.json": "0e5de35f06c92689eeb844b80bb9a83ca0d2c478d5a1df8dca634a62ecee025c",
+    "runtime\\entry-7c1a3094f8acf9cf4bb0\\1\\OUTPUTS.npz": "d2b8b2d17f52f5b74db8476f77502d10fbef680d436b5accb64045eba44d9646",
+    "runtime\\entry-7c1a3094f8acf9cf4bb0\\1\\TRAJECTORY.json": "36e93cc4f6dbf7c9ea2a0e21e1d5f73f2cbe48ede7ed9d17fcef4aa3fa8fb2cd",
+    "runtime\\entry-7c1a3094f8acf9cf4bb0\\2\\OUTPUTS.npz": "d2b8b2d17f52f5b74db8476f77502d10fbef680d436b5accb64045eba44d9646",
+    "runtime\\entry-7c1a3094f8acf9cf4bb0\\2\\TRAJECTORY.json": "9aa8fb0dcba9921483eae0c03a17953cf12928f99e789e44ffbc030831663e67",
+    "runtime\\entry-8fa6576fc7128f93a228\\0\\OUTPUTS.npz": "d643ada9724702cbc95fe7ec7e0ea9aad96b781d4650b40f5f05875ba4f4b188",
+    "runtime\\entry-8fa6576fc7128f93a228\\0\\TRAJECTORY.json": "fe9f5d14a40e84ad313dfdbbfc68ce20e806d849a0d611e4ab6f9df928fb5ba2",
+    "runtime\\entry-8fa6576fc7128f93a228\\1\\OUTPUTS.npz": "edacc511e36bced492dcaac1bef8ef4563683c191d301532ae190f8b06dd45c6",
+    "runtime\\entry-8fa6576fc7128f93a228\\1\\TRAJECTORY.json": "622fbeee47ac100ba1b2c89879fcf93645a77ac9213a1f54fd76d6e5dca0dfe2",
+    "runtime\\entry-8fa6576fc7128f93a228\\2\\OUTPUTS.npz": "adec91d7168966b09b7ebf907d9d3845da7f24ce8ffb23f9093f048d15a26f4a",
+    "runtime\\entry-8fa6576fc7128f93a228\\2\\TRAJECTORY.json": "32136b098c2406968dbafaa22e1b71ba2a8edc1d8f1b633545deba0b6be58ab6",
+    "runtime\\entry-abc8f864a49ee0e056f4\\0\\OUTPUTS.npz": "35b4cf704ec4a70f6bb491f03289d777d396be1a4336a0ef69e522fc3f5a116e",
+    "runtime\\entry-abc8f864a49ee0e056f4\\0\\TRAJECTORY.json": "ae4ff521293d5900a268faf34fa217e0aae3b4e5f1ea6cc057413f2bc9c15870",
+    "runtime\\entry-abc8f864a49ee0e056f4\\1\\OUTPUTS.npz": "35b4cf704ec4a70f6bb491f03289d777d396be1a4336a0ef69e522fc3f5a116e",
+    "runtime\\entry-abc8f864a49ee0e056f4\\1\\TRAJECTORY.json": "6411e34c1b1a19dc70965dbd246db83425c4d7b8759075923ef3d2d95bd855f8",
+    "runtime\\entry-abc8f864a49ee0e056f4\\2\\OUTPUTS.npz": "35b4cf704ec4a70f6bb491f03289d777d396be1a4336a0ef69e522fc3f5a116e",
+    "runtime\\entry-abc8f864a49ee0e056f4\\2\\TRAJECTORY.json": "f7f415a74da47bf8b8707ca8f78ad1f616a52e769879676e4325caaf5b757b8b",
+    "runtime\\entry-d5b80ca9b9cd18fa343f\\0\\OUTPUTS.npz": "800b1e6f5729308abf618aaa6ebc48d84ce980deb77a7ee0d5b5dc390ff70d87",
+    "runtime\\entry-d5b80ca9b9cd18fa343f\\0\\TRAJECTORY.json": "9aa88e79be4d57a28aa5a69517125092cffa2dbbbb9217b81eb71adf065338ff",
+    "runtime\\entry-d5b80ca9b9cd18fa343f\\1\\OUTPUTS.npz": "6b9650c94d46e7035093d85de6ec966eaa5a7b659970bf1a5247ea7ebec498c2",
+    "runtime\\entry-d5b80ca9b9cd18fa343f\\1\\TRAJECTORY.json": "9895368f7c642048bd01d02b08e6adb25d64b65b5c415bede74d6bf54ed8f009",
+    "runtime\\entry-d5b80ca9b9cd18fa343f\\2\\OUTPUTS.npz": "5bb3dee1768047706916033ca7cba513321fa7bafffa29c4659cb5abcf6620ca",
+    "runtime\\entry-d5b80ca9b9cd18fa343f\\2\\TRAJECTORY.json": "cf1c3c6cda39290f6fd2d17a5d4a9c4910dfee29243fb866c23421001bed26e3",
+    "runtime\\entry-d8b1bf9cd00ddf314725\\0\\OUTPUTS.npz": "b033de754d71bab26e3ffb7124e1c1482e015054487ade09abc6974e3fb2fd4c",
+    "runtime\\entry-d8b1bf9cd00ddf314725\\0\\TRAJECTORY.json": "9f753fa4d09340e2b51ea5fcae19346608587925e2db746e8bf1942240bca78a",
+    "runtime\\entry-d8b1bf9cd00ddf314725\\1\\OUTPUTS.npz": "47326240a768ba41996907bbb9ec2796148a7331488a0cb606e5ca17384385b5",
+    "runtime\\entry-d8b1bf9cd00ddf314725\\1\\TRAJECTORY.json": "91b30a2009a8704a3b66519ca01d6df41fa78dbe710fcf378f745c6a8854b1d9",
+    "runtime\\entry-d8b1bf9cd00ddf314725\\2\\OUTPUTS.npz": "938249e5dcd1fc4e90422fd980acc596a33f5f1be1a19621967fd265cca177af",
+    "runtime\\entry-d8b1bf9cd00ddf314725\\2\\TRAJECTORY.json": "1fe9d6432bb245c15d6fb2f8647de817f611d7a066733a4b7726761a74bf2493",
+    "runtime\\entry-f34e7e61444c90976b36\\0\\OUTPUTS.npz": "757e4c0afa8729bcb315622df6f9941ce47015b8b579cd9bdd5ced6c0db2c9a7",
+    "runtime\\entry-f34e7e61444c90976b36\\0\\TRAJECTORY.json": "063e9c6b29346274156b7e38fc99eb0fdb05a97169263af06be5dd90250cee48",
+    "runtime\\entry-f34e7e61444c90976b36\\1\\OUTPUTS.npz": "97cd2aeacf5daa19ac841790243b3212c1a2013e1da52f0fe1ccf1f78c890533",
+    "runtime\\entry-f34e7e61444c90976b36\\1\\TRAJECTORY.json": "1769757d1dbba52fd9a2890137064440e6cef437c01987e6beab125c8ab6bdaf",
+    "runtime\\entry-f34e7e61444c90976b36\\2\\OUTPUTS.npz": "b61f69c5f7b3dbb65add4c420ec57eb15a5185389e0dcff50db0ccc9bab35024",
+    "runtime\\entry-f34e7e61444c90976b36\\2\\TRAJECTORY.json": "e71cfbd21432e19429213e7978dcf1f21a39af0bf8b3ade0f4bfc3c1ef5b697a"
+  },
+  "results_sha256": "ade6059d1dcd48f9e2c523649eafd37e4b0edd9c46361e506b9cfe5c85dd27a4",
+  "runtime_equivalence": "PASS",
+  "scope": "Offline checks reopen logits/coordinates. Native paired runner checks parameter, proposal, hidden and optimizer identity; hashes are receipts, not reconstructed states.",
+  "seal_sha256": "6aeae01de70ed7a2ee6a3766662a3b5f62095754174bd35b3b35e691d147517e",
+  "status": "PASS",
+  "synthetic_sha256": "6600af8fb72ffe9b6116049d30588a13da4e92bc09f5e2bbf74192be208bf291",
+  "trajectories": 72
+}
