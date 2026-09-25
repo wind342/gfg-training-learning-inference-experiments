@@ -1,0 +1,22 @@
+{
+  "adamw": {
+    "eleven_steps_exact_replay": true,
+    "final_sha256": "6fd68cb6929e7e8e6e6fd6cc9a8a55056b92e072e2acbd8959fecca668c816d4"
+  },
+  "controller": {
+    "eleven_steps_exact_replay": true,
+    "final_sha256": "21d161be6d54c5df8cbf81e7dfabd9b883b8a960e24351a75cba4eade92a87b2"
+  },
+  "shampoo": {
+    "eleven_steps_exact_replay": true,
+    "final_sha256": "d180842a480c2c4205d5df718cc2a3f5147e48d200efaa5d6ca07ba589570a08"
+  },
+  "sls": {
+    "eleven_steps_exact_replay": true,
+    "final_sha256": "2c070a1842dd03ed7c123a904dca7fc035cf40649034b59a3c9c3bd61b41892c"
+  },
+  "sophia": {
+    "eleven_steps_exact_replay": true,
+    "final_sha256": "1a65bc1c02d4857270480beddd651d4a1f752bb42682f728588d3d6c4625a7f3"
+  }
+}

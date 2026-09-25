@@ -1,0 +1,43 @@
+{
+  "search_cost_by_method": {
+    "adamw": {
+      "configuration_history_runs": 48,
+      "updates": 4141,
+      "compute_seconds": 35.47819610044826,
+      "wall_seconds": 65.30015300016385
+    },
+    "sophia": {
+      "configuration_history_runs": 48,
+      "updates": 4258,
+      "compute_seconds": 46.79441170580685,
+      "wall_seconds": 76.69821630069055
+    },
+    "shampoo": {
+      "configuration_history_runs": 48,
+      "updates": 4603,
+      "compute_seconds": 332.1000329995295,
+      "wall_seconds": 370.7377052002121
+    },
+    "sls": {
+      "configuration_history_runs": 48,
+      "updates": 4811,
+      "compute_seconds": 200.70592760189902,
+      "wall_seconds": 237.22100509959273
+    },
+    "controller": {
+      "configuration_history_runs": 48,
+      "updates": 2731,
+      "compute_seconds": 63.97950879891869,
+      "wall_seconds": 91.50584630086087
+    }
+  },
+  "mean_restricted_end_to_end_evidence_wall99_seconds": {
+    "adamw": 1.3314156714228116,
+    "sophia": 3.244364042866177,
+    "shampoo": 13.836962200036007,
+    "sls": 9.166747885706302,
+    "controller": 2.1975041714363863
+  },
+  "scope": "Wall includes evidence hashes, per-step JSON, final checkpoint and evaluation, but excludes source loading and synthetic warmup. Compute-only timings are in RESULTS.json. Tuning cost is not silently amortized into a single selected run.",
+  "no_energy_measurement": true
+}

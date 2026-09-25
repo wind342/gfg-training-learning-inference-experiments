@@ -1,0 +1,2 @@
+# Preserve exact sealed source/report bytes on checkout on every platform.
+* -text
