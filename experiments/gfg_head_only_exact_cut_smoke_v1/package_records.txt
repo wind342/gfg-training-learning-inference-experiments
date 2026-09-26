@@ -1,0 +1,47 @@
+# Post-run public artifact packaging, not imported by frozen experiment code.
+import gzip
+import hashlib
+import json
+from pathlib import Path
+import shutil
+import numpy as np
+
+here=Path(__file__).resolve().parent
+root=Path('E:/gfg-evidence/head-only-exact-cut-smoke-v1')
+arm='head_only_exact_cut';loc=root/arm
+def sha(p):
+    h=hashlib.sha256()
+    with p.open('rb') as f:
+        for b in iter(lambda:f.read(4*1024*1024),b''):h.update(b)
+    return h.hexdigest()
+def write(p,o):
+    with p.open('x',encoding='utf8') as f:json.dump(o,f,indent=2,allow_nan=False)
+ck=json.loads((root/'CHECKS.json').read_text());assert ck['status']=='PASS'
+r=json.loads((loc/'TRAIN_RESULT.json').read_text());ev=json.loads((root/'EVALUATION.json').read_text())
+rows=[json.loads(s) for s in (loc/'STEPS.jsonl').read_text().splitlines()]
+active=[r for r in rows if r['report']['native_violating']];accepted=[r for r in active if not r['report']['skip']]
+def gs(rr,key):
+    return {k:dict(min=float(np.min(v)),mean=float(np.mean(v)),median=float(np.median(v)),max=float(np.max(v)))
+        for k in ('norm_ratio','cosine','removed_norm_fraction') if (v:=[r['report'][key][k] for r in rr if r['report'][key][k] is not None])}
+report=dict(status='COMPLETED',checks='PASS',baseline=ev['baseline']['test']['primary'],baseline_train16=ev['baseline']['training']['accuracy_16class'],
+    exact_cut=ev['result']['test']['primary'],train16=ev['result']['training']['accuracy16'],final_controls=r['final_controls'],
+    counts={k:r[k] for k in ('projected_steps','first_pass_safe_steps','second_pass_steps','skipped_steps')},
+    native_violating_occurrences=sum(len(v['report']['native_violating']) for v in rows),
+    actual_old_correct_to_wrong=ck['old_correct_to_wrong_executed'],accepted_projected_steps=len(accepted),
+    geometry_all_executed=gs(rows,'executed_geometry'),geometry_attempted_cut=gs(active,'cut_geometry'),geometry_accepted_cut=gs(accepted,'cut_geometry'),
+    gain_sums={group:{k:sum(v['report']['new_gains'][k] for v in rr) for k in ('native','cut','executed')} for group,rr in [('all_steps',rows),('triggered_steps',active),('accepted_cut_steps',accepted)]},
+    timing={k:r[k] for k in ('training_wall','total_wall','projection_seconds','recheck_seconds','filter_seconds','peak_allocated','peak_reserved')},
+    local_audit=dict(path=str(loc/'AUDIT.pt'),sha256=sha(loc/'AUDIT.pt'),bytes=(loc/'AUDIT.pt').stat().st_size),
+    interpretation_boundary='One fixed seed. Native/cut gains are exact cached-control counterfactuals at this trajectory, not independent native training. Skips retain advanced AdamW moments.')
+(here/'results').mkdir(exist_ok=False);(here/'records').mkdir(exist_ok=False);manifest=[]
+def copy(src,dst):
+    shutil.copyfile(src,dst);manifest.append(dict(path=dst.relative_to(here).as_posix(),sha256=sha(dst),bytes=dst.stat().st_size))
+for n in ('PREFLIGHT.json','EVALUATION.json','CHECKS.json','EXECUTION.json'):copy(root/n,here/'results'/n)
+for n in ('CONFIG.json','TRAIN_RESULT.json'):copy(loc/n,here/'records'/n)
+raw=(loc/'STEPS.jsonl').read_bytes();p=here/'records'/'STEPS.jsonl.gz'
+with p.open('xb') as f:f.write(gzip.compress(raw,mtime=0))
+assert gzip.decompress(p.read_bytes())==raw
+manifest.append(dict(path='records/STEPS.jsonl.gz',sha256=sha(p),bytes=p.stat().st_size,uncompressed_sha256=hashlib.sha256(raw).hexdigest()))
+p=here/'results'/'RESULTS.json';write(p,report);manifest.append(dict(path='results/RESULTS.json',sha256=sha(p),bytes=p.stat().st_size))
+write(here/'results'/'PUBLIC_RECORDS_MANIFEST.json',dict(status='PASS',files=manifest,local_only='Learned head weights, control feature tensors, optimizer states; original data/token arrays not published.'))
+print(json.dumps(report,indent=2))

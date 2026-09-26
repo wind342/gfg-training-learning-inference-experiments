@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "name": "train",
+      "returncode": 0,
+      "log_sha256": "1e18d284f6e2ea39b9fbd715cb74f29e9d069018ed0b117ac638739b2898495a"
+    },
+    {
+      "name": "evaluate",
+      "returncode": 0,
+      "log_sha256": "db9ad487661ff5849912e812d16dcb26be59691428ea9d069fec5e8007e40649"
+    },
+    {
+      "name": "check",
+      "returncode": 0,
+      "log_sha256": "986e0b39b211902d4807b7f256939847e8dcbede3cfb28f7ed3a3dbf802954fc"
+    }
+  ]
+}

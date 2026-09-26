@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "results/PREFLIGHT.json",
+      "sha256": "0a5ccef2bd3a191be694e37a8e9b7520f062928d8a0c30e37bc5f47a4ce7a8e9",
+      "bytes": 302574
+    },
+    {
+      "path": "results/EVALUATION.json",
+      "sha256": "48992cee0554baaac62a635934de60c079a4ef0071e555db28ecad6413177825",
+      "bytes": 497767
+    },
+    {
+      "path": "results/CHECKS.json",
+      "sha256": "3e6111e5873953cd4acdda6a4b6ce4e32f8b73feb03661c447e2ffa76330bd13",
+      "bytes": 138209
+    },
+    {
+      "path": "results/EXECUTION.json",
+      "sha256": "4c69ee67ff2eb9001d1c274f2f56fae04ea6fc34fbf9d36844b09144a3eb1789",
+      "bytes": 498
+    },
+    {
+      "path": "records/CONFIG.json",
+      "sha256": "b2c13b3b023b443ca810840677eb10cbb2ab77cc46a27b7ff2ed41769821cd31",
+      "bytes": 138004
+    },
+    {
+      "path": "records/TRAIN_RESULT.json",
+      "sha256": "afa6dc1b9fe61d74e2b19aa571c050e53bcf2d065d5b429c5d1ad3c934ae6844",
+      "bytes": 1641
+    },
+    {
+      "path": "records/STEPS.jsonl.gz",
+      "sha256": "37f86e0473837743c2d63ff01686facd954d28c5651a0432e5b313c0774d157f",
+      "bytes": 669646,
+      "uncompressed_sha256": "781caa10f66db36d9f43d3d909481c320e3cf8368e31e1623a24b93041b801e2"
+    },
+    {
+      "path": "results/RESULTS.json",
+      "sha256": "f8ebdc7829118ab12b913d7338d127b7bd9c62da4ea2c887e93311654a4ae472",
+      "bytes": 4941
+    }
+  ],
+  "local_only": "Learned head weights, control feature tensors, optimizer states; original data/token arrays not published."
+}
