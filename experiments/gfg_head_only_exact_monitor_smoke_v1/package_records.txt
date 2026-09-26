@@ -1,0 +1,52 @@
+# Post-run artifact packaging only; not imported by training or the frozen checker.
+import gzip
+import hashlib
+import json
+from pathlib import Path
+import shutil
+
+here=Path(__file__).resolve().parent
+root=Path('E:/gfg-evidence/head-only-exact-monitor-smoke-v1')
+arms=('head_only','head_only_exact_monitor')
+def sha(p):
+    h=hashlib.sha256()
+    with p.open('rb') as f:
+        for block in iter(lambda:f.read(4*1024*1024),b''):h.update(block)
+    return h.hexdigest()
+def write(p,o):
+    with p.open('x',encoding='utf8') as f:json.dump(o,f,indent=2,allow_nan=False)
+checks=json.loads((root/'CHECKS.json').read_text());assert checks['status']=='PASS'
+(here/'results').mkdir(exist_ok=False);(here/'records').mkdir(exist_ok=False)
+manifest=[]
+for name in ('PREFLIGHT.json','CHECKS.json','EXECUTION.json'):
+    dest=here/'results'/name;shutil.copyfile(root/name,dest)
+    manifest.append(dict(path=dest.relative_to(here).as_posix(),sha256=sha(dest),bytes=dest.stat().st_size))
+rr={}
+for arm in arms:
+    (here/'records'/arm).mkdir();source=root/arm;dest=here/'records'/arm
+    for name in ('CONFIG.json','RESULT.json'):
+        shutil.copyfile(source/name,dest/name);manifest.append(dict(path=(dest/name).relative_to(here).as_posix(),sha256=sha(dest/name),bytes=(dest/name).stat().st_size))
+    data=(source/'STEPS.jsonl').read_bytes();p=dest/'STEPS.jsonl.gz'
+    with p.open('xb') as f:f.write(gzip.compress(data,mtime=0))
+    assert gzip.decompress(p.read_bytes())==data
+    manifest.append(dict(path=p.relative_to(here).as_posix(),sha256=sha(p),bytes=p.stat().st_size,uncompressed_sha256=hashlib.sha256(data).hexdigest()))
+    rr[arm]=json.loads((source/'RESULT.json').read_text())
+old=here.parent/'gfg_update_direction_isolation_smoke_v1'/'records'/'native'/'RESULT.json'
+reference=json.loads(old.read_text())
+summary=dict(status='COMPLETED',checks='PASS',base='e84014c2417e631025e9a8dc1b9a69d23997856c',
+    external_reference=dict(path=old.relative_to(here.parents[1]).as_posix(),sha256=sha(old),primary=reference['metrics']['primary'],rerun=False),
+    arms={a:{k:r[k] for k in ('metrics','training_wall','compute_update_seconds','inclusive_update_seconds','monitor_seconds','timing','json_io_seconds',
+         'setup_seconds','cache_seconds','cache_bytes','cache_shape','evaluation_seconds','wall','peak','process_peak')} for a,r in rr.items()},
+    performance=checks['performance'],safety=checks['stats'],native_final_prediction_matches=checks['native_final_prediction_matches'],
+    local_only_artifacts=[dict(path=str(root/a/'AUDIT.pt'),sha256=sha(root/a/'AUDIT.pt'),bytes=(root/a/'AUDIT.pt').stat().st_size) for a in arms],
+    limitations=['One seed and fixed LR5e-6/210 updates; no LR optimization.',
+       'Cached fixed-representation affine endpoints are exact on controls, not unseen-generalization guarantees.',
+       'The full-FT comparison changes dropout and training trajectory as well as trainable scope.',
+       'No intervention, replay or protection was performed; cannot claim a successful protective controller.',
+       'Initial development tests accidentally used the monitor no_grad helper for test training; corrected before preflight and formal source freeze.'])
+write(here/'results'/'RESULTS.json',summary)
+manifest.append(dict(path='results/RESULTS.json',sha256=sha(here/'results'/'RESULTS.json'),bytes=(here/'results'/'RESULTS.json').stat().st_size))
+write(here/'results'/'PUBLIC_RECORDS_MANIFEST.json',dict(status='PASS',files=manifest,
+    omitted='Original data/tokens, learned head snapshots, cached control features and optimizer state stay local. No full BERT checkpoint duplicated.'))
+print(json.dumps(dict(performance=checks['performance'],stats=checks['stats'],
+    arms={a:dict(primary=r['metrics']['primary'],timing=r['timing'],peak=r['peak'],initial={s:r['initial'][s]['old_test_macro'] for s in ('8','16')}) for a,r in rr.items()}),indent=2))

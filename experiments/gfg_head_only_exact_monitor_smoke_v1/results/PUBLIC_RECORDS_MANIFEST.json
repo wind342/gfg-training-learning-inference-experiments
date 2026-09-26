@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "results/PREFLIGHT.json",
+      "sha256": "8b8ce170ccfc2855e7e5f3d067a9b1ef94bbacdba211ee9064bbd7cf19cc8acb",
+      "bytes": 300048
+    },
+    {
+      "path": "results/CHECKS.json",
+      "sha256": "70cd0381eb3e305bbb7e361e02db4bbad44e8fca22a7adcb37b746065b884016",
+      "bytes": 137104
+    },
+    {
+      "path": "results/EXECUTION.json",
+      "sha256": "a095922393d4ed52aed04ffee7f08e02895c378cc167957f3985fd55a3c4f410",
+      "bytes": 1150
+    },
+    {
+      "path": "records/head_only/CONFIG.json",
+      "sha256": "777157998df405450e3d3da00c5860d9184689ebc2aea87037bc098e04635dcf",
+      "bytes": 136479
+    },
+    {
+      "path": "records/head_only/RESULT.json",
+      "sha256": "70a093fcf854328071187ec26755af8723654279d467114809479a201b4fc6d8",
+      "bytes": 130655
+    },
+    {
+      "path": "records/head_only/STEPS.jsonl.gz",
+      "sha256": "55cd42a861ee86ddca562ead99278e5c914c9ad57666f11fa0f2628e6a5af18a",
+      "bytes": 56857,
+      "uncompressed_sha256": "8a9d9dd688296694cf6384665686fe6ba5768a9ad72b4fe082159046ebf4edef"
+    },
+    {
+      "path": "records/head_only_exact_monitor/CONFIG.json",
+      "sha256": "b4bb0f0105af6e644298d373ffb38d90b05cd3bf3c1e40c9f80ce8c905d48d55",
+      "bytes": 136493
+    },
+    {
+      "path": "records/head_only_exact_monitor/RESULT.json",
+      "sha256": "0388f803da337ebcdf24e48595fa834f2ebc2ba2b3133fa823c5246375416eee",
+      "bytes": 130795
+    },
+    {
+      "path": "records/head_only_exact_monitor/STEPS.jsonl.gz",
+      "sha256": "e3deea104d781de5650b82c5bc68bc08f2b21d3122a4a65385da50a5e67c4457",
+      "bytes": 433164,
+      "uncompressed_sha256": "0ce3118c390e5a92528a157c4b5f930a1beecfec2d94735c382f69a9d02dd56e"
+    },
+    {
+      "path": "results/RESULTS.json",
+      "sha256": "419b6ff6acaa66fc88a0d1de11339dba34225cb6421626442ad9d454f7f933d9",
+      "bytes": 148695
+    }
+  ],
+  "omitted": "Original data/tokens, learned head snapshots, cached control features and optimizer state stay local. No full BERT checkpoint duplicated."
+}

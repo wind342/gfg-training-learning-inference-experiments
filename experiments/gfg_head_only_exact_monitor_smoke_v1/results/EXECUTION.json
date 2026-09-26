@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "name": "head_only",
+      "command": [
+        "E:\\gfg-python\\governor-v4-bench\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "experiments.gfg_head_only_exact_monitor_smoke_v1.run",
+        "head_only"
+      ],
+      "returncode": 0,
+      "log_sha256": "fa96d7a2bf3a15fa64ef1b43d76ffee87c996af308fa54e1e0167029b6cf96d2"
+    },
+    {
+      "name": "head_only_exact_monitor",
+      "command": [
+        "E:\\gfg-python\\governor-v4-bench\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "experiments.gfg_head_only_exact_monitor_smoke_v1.run",
+        "head_only_exact_monitor"
+      ],
+      "returncode": 0,
+      "log_sha256": "ff26b4aa058709570c9ebe369da414e9e00c5cddacdf80e5b329dc848980ba8f"
+    },
+    {
+      "name": "check",
+      "command": [
+        "E:\\gfg-python\\governor-v4-bench\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "experiments.gfg_head_only_exact_monitor_smoke_v1.check"
+      ],
+      "returncode": 0,
+      "log_sha256": "8882105c5da391ded57f9fdcbbe66f49016d12cb40ff15106cafc104dce9888d"
+    }
+  ]
+}
