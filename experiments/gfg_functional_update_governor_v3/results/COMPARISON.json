@@ -1,0 +1,168 @@
+{
+  "near": {
+    "alpha_histogram": {
+      "0.125": 2,
+      "0.25": 1,
+      "0.5": 4,
+      "1.0": 174,
+      "2.0": 1
+    },
+    "decision_alpha_histogram": {
+      "0.125": 2,
+      "0.25": 1,
+      "0.5": 4,
+      "1.0": 4,
+      "2.0": 1
+    },
+    "final_accuracy": 0.9968454258675079,
+    "full_call_change_vs_v2": -51,
+    "historical_references": {
+      "governor_v1": {
+        "instrument_calls": 32,
+        "source": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_functional_update_governor_v1\\results\\near-RESULT.json",
+        "source_sha256": "e6f135186baa43c2055df56cb1573f2dc4a22bcdf32236908bdcacf80696babf",
+        "steps_to99": 191,
+        "wall_to99": 19.952118700020947
+      },
+      "governor_v2": {
+        "final_accuracy": 0.9337539432176656,
+        "instrument_calls": 63,
+        "source": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_functional_update_governor_v2\\results\\near-RESULT.json",
+        "source_sha256": "b3340f70b02fe586804f6fba94b96b918af9fa015a75c2e60c8669bfaca7e090",
+        "steps_to99": null,
+        "wall": 29.703446500003338
+      },
+      "native": {
+        "lr": 6.030226891555273e-05,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-near\\native-s201-lr6.030226891555273e-05-k5-n212-u11\\RESULT.json",
+        "source_sha256": "bf7ce778bf91cf0d6530903cdb2fcfa8d76fa5f76b8b3ea3f84f1e391556512b",
+        "steps_to99": 174,
+        "wall_to99": 11.001527299988084
+      },
+      "tuned_native": {
+        "lr": 7.537783614444091e-06,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-near-tuned\\native-s201-lr7.537783614444091e-06-k5-n212-u11\\RESULT.json",
+        "source_sha256": "aa8b32f09958e4d69c089378c06536a4ffb76aefba1c1a08621d84214f671f0b",
+        "steps_to99": 106,
+        "wall_to99": 6.8155727999983355
+      },
+      "v2_dynamic": {
+        "lr": 6.030226891555273e-05,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-near\\dynamic-s201-lr6.030226891555273e-05-k5-n212-u11\\RESULT.json",
+        "source_sha256": "3940b1abccc133a4c4b37aee13ca8186c315816130eed67a25d65d59e9cc5d28",
+        "steps_to99": 158,
+        "wall_to99": 24.993510099942796
+      }
+    },
+    "instrument_calls": 12,
+    "instrument_fraction": 0.06593406593406594,
+    "intervention_histogram": {
+      "AMPLIFY_FORMATION": 1,
+      "FORMATION_PROGRESS": 2,
+      "NATIVE_SAFE": 4,
+      "SHRINK_PROTECTED_GROUP": 5
+    },
+    "micro_calls": 179,
+    "peak_allocated": 1892453888,
+    "steps_to99": 182,
+    "timing_scope": "Historical baselines, not contemporaneously rerun; v3 uses the v2 segment timing path.",
+    "timing_totals": {
+      "commit": 0.05320610001217574,
+      "governor": 0.08535540010780096,
+      "instrument": 2.3141990997828543,
+      "micro_forward": 1.210119099356234,
+      "native_optimizer": 1.4594212010269985,
+      "proposal": 0.7924186000600457,
+      "sentinel": 0.03474529937375337,
+      "training": 6.059762800228782
+    },
+    "total_steps": 182,
+    "trigger_histogram": {
+      "FIRST_STEP": 1,
+      "MAX_INTERVAL": 2,
+      "PROTECTED_GROUP_DEGRADATION": 9
+    },
+    "wall": 16.05092089995742,
+    "wall_to99": 16.05088120000437
+  },
+  "safe": {
+    "alpha_histogram": {
+      "0.125": 1,
+      "0.5": 1,
+      "1.0": 120,
+      "2.0": 1
+    },
+    "decision_alpha_histogram": {
+      "0.125": 1,
+      "0.5": 1,
+      "2.0": 1
+    },
+    "final_accuracy": 0.9905362776025236,
+    "full_call_change_vs_v2": -23,
+    "historical_references": {
+      "governor_v1": {
+        "instrument_calls": 29,
+        "source": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_functional_update_governor_v1\\results\\safe-RESULT.json",
+        "source_sha256": "16cc75b0bed27032df28e93927ac144c5ddf9aff64530bec10f78c127f4473a5",
+        "steps_to99": 119,
+        "wall_to99": 14.95743810001295
+      },
+      "governor_v2": {
+        "final_accuracy": 0.9905362776025236,
+        "instrument_calls": 26,
+        "source": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_functional_update_governor_v2\\results\\safe-RESULT.json",
+        "source_sha256": "dc34de6f383c95f945d0a0d2348db170cb67e54cb09190a12763161ab27c28e5",
+        "steps_to99": 131,
+        "wall": 15.625293500022963
+      },
+      "native": {
+        "lr": 3.7688918072220455e-06,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-safe\\native-s201-lr3.7688918072220455e-06-k5-n212-u11\\RESULT.json",
+        "source_sha256": "054e4fdddbd7ab2053b7c5eb9503404dc231b005e86db9f9952af6541d795831",
+        "steps_to99": 121,
+        "wall_to99": 7.648079400067218
+      },
+      "tuned_native": {
+        "lr": 7.537783614444091e-06,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-safe-tuned\\native-s201-lr7.537783614444091e-06-k5-n212-u11\\RESULT.json",
+        "source_sha256": "5d109867a4c049c96d8b38e253bf3809d85cd457755d63e1979a6cc73f6a373c",
+        "steps_to99": 106,
+        "wall_to99": 6.777583800023422
+      },
+      "v2_dynamic": {
+        "lr": 3.7688918072220455e-06,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-safe\\dynamic-s201-lr3.7688918072220455e-06-k5-n212-u11\\RESULT.json",
+        "source_sha256": "6221a335ea29120a2870d8a18ffe4fe3ba69c77f183ee1b9cd5df945ac7ed99d",
+        "steps_to99": 143,
+        "wall_to99": 22.674684899975546
+      }
+    },
+    "instrument_calls": 3,
+    "instrument_fraction": 0.024390243902439025,
+    "intervention_histogram": {
+      "AMPLIFY_FORMATION": 1,
+      "FORMATION_PROGRESS": 2
+    },
+    "micro_calls": 120,
+    "peak_allocated": 1892453888,
+    "steps_to99": 123,
+    "timing_scope": "Historical baselines, not contemporaneously rerun; v3 uses the v2 segment timing path.",
+    "timing_totals": {
+      "commit": 0.015620200079865754,
+      "governor": 0.020969499950297177,
+      "instrument": 0.6082584999967366,
+      "micro_forward": 0.8551098997704685,
+      "native_optimizer": 1.031570898834616,
+      "proposal": 0.19148679997306317,
+      "sentinel": 0.02272629935760051,
+      "training": 4.1373287996975705
+    },
+    "total_steps": 123,
+    "trigger_histogram": {
+      "FIRST_STEP": 1,
+      "MAX_INTERVAL": 2
+    },
+    "wall": 9.659264200017788,
+    "wall_to99": 9.659224899951369
+  }
+}
