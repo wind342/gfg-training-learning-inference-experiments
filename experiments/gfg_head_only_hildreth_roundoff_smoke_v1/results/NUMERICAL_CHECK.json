@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "rule": "u=2^-24; k=augmented_dimension+2; gamma=k*u/(1-k*u); per-logit gamma*abs(H)@max(abs(receiving),abs(native)).T; pair sums",
+  "selection": "first, middle, last failed historical solver call; no test inputs, no training, no coefficient fitting",
+  "cases": [
+    {
+      "historical_step": 5,
+      "old_hildreth_skip": true,
+      "new_sweeps": 1,
+      "new_skip": false,
+      "new_actual_min_margin": 0.0018264055252075195,
+      "error_estimate_covers_observed_pairs": true,
+      "max_observed_abs_pair_error": 3.412767435762021e-06,
+      "min_pair_padding": 0.0016188903646897341,
+      "max_pair_padding": 0.0019702321397450573,
+      "max_error_to_padding_ratio": 0.001800507917002874,
+      "source_before_sha256": "63ff2dd62cab5662fe1fdfb5a8779c7f70cf1f3323ad1e1c4535b18db035e0ca",
+      "source_native_sha256": "71d3cbcdd1970400785c076783b739a56c0d3fc29add3c73c5161e98a9597c82",
+      "roundoff_budget_sha256": "c4acc59105fbe27741986d167dbe7290096680a165dd301551e20b9125beaf96"
+    },
+    {
+      "historical_step": 120,
+      "old_hildreth_skip": true,
+      "new_sweeps": 1,
+      "new_skip": false,
+      "new_actual_min_margin": 0.0018034577369689941,
+      "error_estimate_covers_observed_pairs": true,
+      "max_observed_abs_pair_error": 3.1401996452018466e-06,
+      "min_pair_padding": 0.0015955731805049433,
+      "max_pair_padding": 0.0019501461807645097,
+      "max_error_to_padding_ratio": 0.0018466684872921585,
+      "source_before_sha256": "32b4f1fcfff8a407e000e7d49372404bca7ed74317597ce4317bbaeee768c0ae",
+      "source_native_sha256": "40f7936039a612efbd77616a3d54bcae0533b013aec90ed687829bfd9c129167",
+      "roundoff_budget_sha256": "c6d197af84064f1effbac6593ab3d42286793cc68e3fdcb6d5bb413c57c396de"
+    },
+    {
+      "historical_step": 209,
+      "old_hildreth_skip": true,
+      "new_sweeps": 1,
+      "new_skip": false,
+      "new_actual_min_margin": 0.0017963647842407227,
+      "error_estimate_covers_observed_pairs": true,
+      "max_observed_abs_pair_error": 3.2772892977206425e-06,
+      "min_pair_padding": 0.0015945148369912612,
+      "max_pair_padding": 0.0019477573875302402,
+      "max_error_to_padding_ratio": 0.001753428014473666,
+      "source_before_sha256": "f09840de3fec1a3579c938b28273a7659f9b3115a16ccf73475cb9eff6eee405",
+      "source_native_sha256": "92afc4ebb8f42f2c0c331911a58118bf129d8e0e6b6f1da10b939dfec4979c1c",
+      "roundoff_budget_sha256": "5587d3ad59095aec327917509f8dc6a6d6433b89483c9e7792d4beb2f5e55ae9"
+    }
+  ],
+  "universal_error_bound_claim": false
+}

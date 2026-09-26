@@ -1,0 +1,46 @@
+{
+  "base": "405702d51b0fff8f281e59c65b8fb2fbd273ce7c",
+  "files": {
+    "records/CONFIG.json": {
+      "sha256": "192f5d29fc479f9d48af57990ccd9185735f604d43fbdaa0355f1c3162734426",
+      "bytes": 140222
+    },
+    "records/STEPS.jsonl.gz": {
+      "sha256": "1fdea15875c5d2df159bdcc52e60d9b79b31b377e588b3f78656ebab23541f13",
+      "bytes": 5186143
+    },
+    "records/TRAIN_RESULT.json": {
+      "sha256": "13176adec3b303532c9da1611be5a68ff83587e9e15c0ea23962aafa492db3f0",
+      "bytes": 5797
+    },
+    "results/CHECKS.json": {
+      "sha256": "4db5a93f4b9b1a78b997b387be6822c0061bd2cecd67e1266a0897f00981ed50",
+      "bytes": 139823
+    },
+    "results/EVALUATION.json": {
+      "sha256": "c47f41f7c475a1a5db582c8a10886aef7cc8c7a5a71f9184788f7eb5e9b385d0",
+      "bytes": 156680
+    },
+    "results/NUMERICAL_CHECK.json": {
+      "sha256": "82f4bbb5b82828449c030fd3a5bb690767dcba8f99d07737eee96a65ded95972",
+      "bytes": 2610
+    },
+    "results/PREFLIGHT.json": {
+      "sha256": "de8d3e0db149037f1559b51c737872a4b5ab2c07d31efaf90ac2407ba27d41a7",
+      "bytes": 307916
+    },
+    "results/RESULTS.json": {
+      "sha256": "26c2bfa8c6ac56a735c8a0ac7bf35c209d21513d42f994512ad989eb51c6f7f7",
+      "bytes": 11600
+    },
+    "results/TRAINING_COMPLETE.json": {
+      "sha256": "c9d9b6840cba14d835b881da60241b4f718925f2ec5f38feb6d4c85722f8b82b",
+      "bytes": 163
+    }
+  },
+  "local_only": [
+    "140_controls_hildreth_roundoff/AUDIT.pt"
+  ],
+  "reused_cache": "E:\\gfg-evidence\\head-only-coverage-cut-smoke-v1\\CACHE.pt",
+  "original_data_published": false
+}
