@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETED",
+  "finished_unix": 1790444471.9998305,
+  "train_result_hashes": {
+    "A_140_current": "faa2327ab08dbbe4aac330da66bdb0fb57dc8325bc52f1a86f0964e287fa2abd",
+    "B_10_tight": "005c7ff940c22642928738fa48cbc577b01f0b0c6e4f1c37d2fda9ed79cd958b",
+    "C_140_tight": "65c4edcc58c589cd6c4b498b60f96072edcfe83a99c4d171030c0a4966147115"
+  },
+  "cache_sha256": "556820c3a390a01921a31cfdbcbf5c9e67ceb1282884ec735ece38618274e28d"
+}

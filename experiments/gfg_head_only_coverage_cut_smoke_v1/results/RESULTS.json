@@ -1,0 +1,102 @@
+{
+  "status": "COMPLETED",
+  "checks": "PASS",
+  "arms": {
+    "existing_10_current": {
+      "test": {
+        "old": 0.7660714285714285,
+        "new": 0.8919578622816033,
+        "all": 0.8290146454265159
+      },
+      "old_protected_correct": 78,
+      "old_protected_total": 80,
+      "projection_steps": 174,
+      "violating_occurrences": 1246,
+      "executed_old_correct_to_wrong": 0,
+      "skips": 0,
+      "attempted_cut_geometry": {
+        "norm_ratio": 0.9214685533936348,
+        "cosine": 0.8869630306012289,
+        "removed_norm_fraction": 0.44826373480615933
+      },
+      "executed_geometry": {
+        "norm_ratio": 0.9214685533936348,
+        "cosine": 0.8869630306012289,
+        "removed_norm_fraction": 0.44826373480615933
+      },
+      "training_wall": 25.173230799962766
+    },
+    "A_140_current": {
+      "test": {
+        "old": 0.9482142857142858,
+        "new": 0.7365878725590955,
+        "all": 0.8424010791366907
+      },
+      "old_protected_correct": 1092,
+      "old_protected_total": 1120,
+      "projection_steps": 207,
+      "violating_occurrences": 2298,
+      "executed_old_correct_to_wrong": 0,
+      "skips": 112,
+      "attempted_cut_geometry": {
+        "norm_ratio": 0.8881239414263319,
+        "cosine": 0.8215529539494769,
+        "removed_norm_fraction": 0.5404105633553042
+      },
+      "executed_geometry": {
+        "norm_ratio": 0.41926490305265074,
+        "cosine": 0.8563482622822879,
+        "removed_norm_fraction": 0.7528111058006365
+      },
+      "training_wall": 79.02846529998351
+    },
+    "B_10_tight": {
+      "test": {
+        "old": 0.7651785714285714,
+        "new": 0.8919578622816033,
+        "all": 0.8285682168550874
+      },
+      "old_protected_correct": 78,
+      "old_protected_total": 80,
+      "projection_steps": 174,
+      "violating_occurrences": 1691,
+      "executed_old_correct_to_wrong": 0,
+      "skips": 0,
+      "attempted_cut_geometry": {
+        "norm_ratio": 0.9052927224592284,
+        "cosine": 0.9051282690600803,
+        "removed_norm_fraction": 0.4138569043609472
+      },
+      "executed_geometry": {
+        "norm_ratio": 0.9052927224592284,
+        "cosine": 0.9051282690600803,
+        "removed_norm_fraction": 0.4138569043609472
+      },
+      "training_wall": 24.880576299969107
+    },
+    "C_140_tight": {
+      "test": {
+        "old": 0.9508928571428572,
+        "new": 0.6901400308324769,
+        "all": 0.8205164439876671
+      },
+      "old_protected_correct": 1090,
+      "old_protected_total": 1120,
+      "projection_steps": 207,
+      "violating_occurrences": 4712,
+      "executed_old_correct_to_wrong": 0,
+      "skips": 137,
+      "attempted_cut_geometry": {
+        "norm_ratio": 0.844796104936233,
+        "cosine": 0.8503296888431379,
+        "removed_norm_fraction": 0.49949788413840746
+      },
+      "executed_geometry": {
+        "norm_ratio": 0.3099680415426485,
+        "cosine": 0.9164528251134199,
+        "removed_norm_fraction": 0.7794555038679436
+      },
+      "training_wall": 73.99324860004708
+    }
+  }
+}

@@ -1,0 +1,2 @@
+/records/** -text whitespace=cr-at-eol
+/results/** -text whitespace=cr-at-eol
