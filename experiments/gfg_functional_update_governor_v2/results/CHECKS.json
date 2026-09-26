@@ -1,0 +1,39 @@
+{
+  "base": "25ef6dbdde7ad6b31a2807e6323c785a29190dc1",
+  "errors": 0,
+  "existing_tracked_files": 2339,
+  "failures": 0,
+  "imported_source_sha256": {
+    "experiments\\gfg_controller_distributed_runtime_v2\\adapters.py": "c32a4b07a4dce7795cbf77f6088b251a90e1a59db0e80e002efa383f085d7e69",
+    "experiments\\gfg_controller_distributed_runtime_v2\\boundary.py": "2fcfaa0310276c0511002df3fcfa7ebcb36076c617c7f1eb4262b3ec468080e7",
+    "experiments\\gfg_controller_distributed_runtime_v2\\clipping.py": "3822e9f2382c1dacc203a6d30adffbdb9b912faed0016cbf9d984cd1996b4ed8",
+    "experiments\\gfg_controller_distributed_runtime_v2\\evidence.py": "4f876b8307ffa11e06b2301b4aa6538943fd8a2877209a0865063a97a78d0bde",
+    "experiments\\gfg_controller_distributed_runtime_v2\\identity.py": "8b0bd42878bd63cc9baeb9d06a01c880fcb8f0351bed9a5455eddcd839031cfb",
+    "experiments\\gfg_controller_distributed_runtime_v2\\ownership.py": "237f76b93ab1cf076a30665dbf31a84cdda820c25289b379caf72c153ab645ab",
+    "experiments\\gfg_controller_distributed_runtime_v2\\scientific.py": "d86586d243cc0d90676c8488fedf5ca9a2e41d39bd4f1cfb2a6a1b552ec36de5",
+    "experiments\\gfg_functional_update_governor_v1\\governor.py": "5c9b185068a8e64ac7b1bb2d51a2df94df260a60fbb5bf1432d6a77d9c67d60b",
+    "experiments\\gfg_functional_update_governor_v1\\instrument.py": "7c3117b18265acba2d9c36c154181cbf79d529191f7d4542c8ae5ffa1028c2b0",
+    "experiments\\gfg_functional_update_governor_v1\\runtime.py": "2538564bd21600398f67e4ebd73a861d72044f0395b3d45b15177196cce99d52",
+    "experiments\\gfg_functional_update_governor_v1\\smoke.py": "85b7299dade6dc56ecf1abb93f174374c4bac2c306d2bd1258d3d0f9bfab2899"
+  },
+  "previous_tracked_files_unchanged": true,
+  "runs": {
+    "near": {
+      "copied_v1_report_sha256": "e6f135186baa43c2055df56cb1573f2dc4a22bcdf32236908bdcacf80696babf",
+      "final_accuracy": 0.9337539432176656,
+      "raw_sha256": "d533634f411ee9c82f63ba0a35cd6e48dc9cef2e367279ac37f6e589fe3be582",
+      "steps_to99": null
+    },
+    "safe": {
+      "copied_v1_report_sha256": "16cc75b0bed27032df28e93927ac144c5ddf9aff64530bec10f78c127f4473a5",
+      "final_accuracy": 0.9905362776025236,
+      "raw_sha256": "5b59023a346cbd9014a923e61ca8e8885269ae467f233fcc1abe5408600e1f21",
+      "steps_to99": 131
+    }
+  },
+  "status": "PASS",
+  "tag_commit": "36dab5ce347dbbdac157ef23205f556606d18294",
+  "tag_object": "5a3d12c3de6fce0d9b5f69aa07d009c61e5c189e",
+  "test_output": "test_bad_values_fail (experiments.gfg_functional_update_governor_v1.tests.BoundaryTests.test_bad_values_fail) ... ok\ntest_candidate_count_not_fixed (experiments.gfg_functional_update_governor_v1.tests.BoundaryTests.test_candidate_count_not_fixed) ... ok\ntest_five_actions_three_backends_and_baseline (experiments.gfg_functional_update_governor_v1.tests.BoundaryTests.test_five_actions_three_backends_and_baseline) ... ok\ntest_all_formed_never_amplifies_closest_safe (experiments.gfg_functional_update_governor_v2.tests.GovernorTests.test_all_formed_never_amplifies_closest_safe) ... ok\ntest_bad_measurements (experiments.gfg_functional_update_governor_v2.tests.GovernorTests.test_bad_measurements) ... ok\ntest_damage_unchanged_gain_improved (experiments.gfg_functional_update_governor_v2.tests.GovernorTests.test_damage_unchanged_gain_improved) ... ok\ntest_native_safe_and_margin_only_stays_native (experiments.gfg_functional_update_governor_v2.tests.GovernorTests.test_native_safe_and_margin_only_stays_native) ... ok\ntest_no_formed_can_gain (experiments.gfg_functional_update_governor_v2.tests.GovernorTests.test_no_formed_can_gain) ... ok\ntest_preservation_is_explicit_priority (experiments.gfg_functional_update_governor_v2.tests.GovernorTests.test_preservation_is_explicit_priority) ... ok\ntest_preservation_shrink (experiments.gfg_functional_update_governor_v2.tests.GovernorTests.test_preservation_shrink) ... ok\ntest_safe_amplification (experiments.gfg_functional_update_governor_v2.tests.GovernorTests.test_safe_amplification) ... ok\ntest_actual_cuda_adapter_micro_is_derivative_free (experiments.gfg_functional_update_governor_v2.tests.RuntimeTests.test_actual_cuda_adapter_micro_is_derivative_free) ... number of parameters: 0.03M\nok\ntest_exact_native_fast_and_micro_paths_after_scaled_update (experiments.gfg_functional_update_governor_v2.tests.RuntimeTests.test_exact_native_fast_and_micro_paths_after_scaled_update) ... ok\ntest_failed_measurement_no_commit (experiments.gfg_functional_update_governor_v2.tests.RuntimeTests.test_failed_measurement_no_commit) ... ok\ntest_micro_forward_preserves_state_rng_gradients_modes (experiments.gfg_functional_update_governor_v2.tests.RuntimeTests.test_micro_forward_preserves_state_rng_gradients_modes) ... ok\ntest_nan_loss_no_optimizer_step (experiments.gfg_functional_update_governor_v2.tests.RuntimeTests.test_nan_loss_no_optimizer_step) ... ok\ntest_nan_micro_no_proposal (experiments.gfg_functional_update_governor_v2.tests.RuntimeTests.test_nan_micro_no_proposal) ... ok\ntest_nonfinite_micro_forward (experiments.gfg_functional_update_governor_v2.tests.RuntimeTests.test_nonfinite_micro_forward) ... ok\ntest_smoke_harness_injects_v2_constructor (experiments.gfg_functional_update_governor_v2.tests.RuntimeTests.test_smoke_harness_injects_v2_constructor) ... ok\ntest_world_size_guard_including_default_group (experiments.gfg_functional_update_governor_v2.tests.RuntimeTests.test_world_size_guard_including_default_group) ... ok\ntest_cadence_identity_and_bad_values (experiments.gfg_functional_update_governor_v2.tests.SentinelTests.test_cadence_identity_and_bad_values) ... ok\ntest_erosion_latch_refresh_escalation_and_rearm (experiments.gfg_functional_update_governor_v2.tests.SentinelTests.test_erosion_latch_refresh_escalation_and_rearm) ... ok\ntest_floor_and_hard_crossing (experiments.gfg_functional_update_governor_v2.tests.SentinelTests.test_floor_and_hard_crossing) ... ok\ntest_full_refresh_detects_unobserved_failure (experiments.gfg_functional_update_governor_v2.tests.SentinelTests.test_full_refresh_detects_unobserved_failure) ... ok\ntest_independent_targets_not_globally_suppressed (experiments.gfg_functional_update_governor_v2.tests.SentinelTests.test_independent_targets_not_globally_suppressed) ... ok\ntest_new_formation_is_remembered (experiments.gfg_functional_update_governor_v2.tests.SentinelTests.test_new_formation_is_remembered) ... ok\ntest_round_robin_tail_and_maximum (experiments.gfg_functional_update_governor_v2.tests.SentinelTests.test_round_robin_tail_and_maximum) ... ok\n\n----------------------------------------------------------------------\nRan 27 tests in 0.742s\n\nOK\n",
+  "tests_run": 27
+}

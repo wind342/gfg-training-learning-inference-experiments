@@ -1,0 +1,154 @@
+{
+  "near": {
+    "alpha_histogram": {
+      "0.125": 43,
+      "0.25": 9,
+      "0.5": 5,
+      "1.0": 142,
+      "2.0": 1
+    },
+    "decision_alpha_histogram": {
+      "0.125": 43,
+      "0.25": 9,
+      "0.5": 5,
+      "1.0": 5,
+      "2.0": 1
+    },
+    "final_accuracy": 0.9337539432176656,
+    "full_call_reduction_vs_v1": -0.96875,
+    "historical_references": {
+      "governor_v1": {
+        "instrument_calls": 32,
+        "source": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_functional_update_governor_v1\\results\\near-RESULT.json",
+        "source_sha256": "e6f135186baa43c2055df56cb1573f2dc4a22bcdf32236908bdcacf80696babf",
+        "steps_to99": 191,
+        "wall_to99": 19.952118700020947
+      },
+      "native": {
+        "lr": 6.030226891555273e-05,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-near\\native-s201-lr6.030226891555273e-05-k5-n212-u11\\RESULT.json",
+        "source_sha256": "bf7ce778bf91cf0d6530903cdb2fcfa8d76fa5f76b8b3ea3f84f1e391556512b",
+        "steps_to99": 174,
+        "wall_to99": 11.001527299988084
+      },
+      "tuned_native": {
+        "lr": 7.537783614444091e-06,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-near-tuned\\native-s201-lr7.537783614444091e-06-k5-n212-u11\\RESULT.json",
+        "source_sha256": "aa8b32f09958e4d69c089378c06536a4ffb76aefba1c1a08621d84214f671f0b",
+        "steps_to99": 106,
+        "wall_to99": 6.8155727999983355
+      },
+      "v2_dynamic": {
+        "lr": 6.030226891555273e-05,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-near\\dynamic-s201-lr6.030226891555273e-05-k5-n212-u11\\RESULT.json",
+        "source_sha256": "3940b1abccc133a4c4b37aee13ca8186c315816130eed67a25d65d59e9cc5d28",
+        "steps_to99": 158,
+        "wall_to99": 24.993510099942796
+      }
+    },
+    "instrument_calls": 63,
+    "instrument_fraction": 0.315,
+    "intervention_histogram": {
+      "AMPLIFY_FORMATION": 1,
+      "NATIVE_SAFE": 3,
+      "NO_BETTER_ACTION": 2,
+      "SHRINK_FORMATION": 1,
+      "SHRINK_PRESERVATION": 56
+    },
+    "micro_probe_calls": 199,
+    "peak_allocated": 1892453888,
+    "steps_to99": null,
+    "time_comparison": "Historical, not contemporaneously rerun. V2 adds segment CUDA synchronization.",
+    "timing_totals": {
+      "commit": 0.31211030087433755,
+      "governor": 0.04271290055476129,
+      "instrument": 11.919025499257259,
+      "micro_forward": 1.3946169996634126,
+      "native_optimizer": 1.1570591003401205,
+      "proposal": 3.9225102005293593,
+      "sentinel": 0.011043600039556623,
+      "training": 6.564908498432487
+    },
+    "total_steps": 200,
+    "trigger_histogram": {
+      "FIRST_STEP": 1,
+      "FORMED_BOUNDARY_CROSSING": 46,
+      "FORMED_MARGIN_EROSION": 25
+    },
+    "wall_to99": null
+  },
+  "safe": {
+    "alpha_histogram": {
+      "0.125": 14,
+      "0.25": 6,
+      "0.5": 4,
+      "1.0": 107
+    },
+    "decision_alpha_histogram": {
+      "0.125": 14,
+      "0.25": 6,
+      "0.5": 4,
+      "1.0": 2
+    },
+    "final_accuracy": 0.9905362776025236,
+    "full_call_reduction_vs_v1": 0.10344827586206895,
+    "historical_references": {
+      "governor_v1": {
+        "instrument_calls": 29,
+        "source": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_functional_update_governor_v1\\results\\safe-RESULT.json",
+        "source_sha256": "16cc75b0bed27032df28e93927ac144c5ddf9aff64530bec10f78c127f4473a5",
+        "steps_to99": 119,
+        "wall_to99": 14.95743810001295
+      },
+      "native": {
+        "lr": 3.7688918072220455e-06,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-safe\\native-s201-lr3.7688918072220455e-06-k5-n212-u11\\RESULT.json",
+        "source_sha256": "054e4fdddbd7ab2053b7c5eb9503404dc231b005e86db9f9952af6541d795831",
+        "steps_to99": 121,
+        "wall_to99": 7.648079400067218
+      },
+      "tuned_native": {
+        "lr": 7.537783614444091e-06,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-safe-tuned\\native-s201-lr7.537783614444091e-06-k5-n212-u11\\RESULT.json",
+        "source_sha256": "5d109867a4c049c96d8b38e253bf3809d85cd457755d63e1979a6cc73f6a373c",
+        "steps_to99": 106,
+        "wall_to99": 6.777583800023422
+      },
+      "v2_dynamic": {
+        "lr": 3.7688918072220455e-06,
+        "source": "E:\\gfg-evidence\\controller-distributed-runtime-v2\\attempt-2\\scale\\70\\formal-safe\\dynamic-s201-lr3.7688918072220455e-06-k5-n212-u11\\RESULT.json",
+        "source_sha256": "6221a335ea29120a2870d8a18ffe4fe3ba69c77f183ee1b9cd5df945ac7ed99d",
+        "steps_to99": 143,
+        "wall_to99": 22.674684899975546
+      }
+    },
+    "instrument_calls": 26,
+    "instrument_fraction": 0.1984732824427481,
+    "intervention_histogram": {
+      "NATIVE_SAFE": 1,
+      "NO_BETTER_ACTION": 1,
+      "SHRINK_PRESERVATION": 24
+    },
+    "micro_probe_calls": 130,
+    "peak_allocated": 1892453888,
+    "steps_to99": 131,
+    "time_comparison": "Historical, not contemporaneously rerun. V2 adds segment CUDA synchronization.",
+    "timing_totals": {
+      "commit": 0.12797729996964335,
+      "governor": 0.016526100574992597,
+      "instrument": 4.9287060998613015,
+      "micro_forward": 0.8843634995864704,
+      "native_optimizer": 0.885067000053823,
+      "proposal": 1.6190528998849913,
+      "sentinel": 0.006924000568687916,
+      "training": 4.294918799656443
+    },
+    "total_steps": 131,
+    "trigger_histogram": {
+      "FIRST_STEP": 1,
+      "FORMED_BOUNDARY_CROSSING": 17,
+      "FORMED_MARGIN_EROSION": 12
+    },
+    "wall_to99": 15.62524800002575
+  }
+}
