@@ -1,0 +1,10 @@
+# Install into a separate environment with the existing CUDA PyTorch runtime.
+# Tested: Python 3.12.10, PyTorch 2.13.0+cu130, RTX 4060 Ti.
+transformers==4.57.6
+huggingface_hub[cli]==0.36.0
+datasets==4.4.2
+peft==0.18.0
+accelerate==1.15.0
+numpy==2.4.4
+safetensors==0.8.0
+tokenizers==0.22.2

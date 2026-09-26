@@ -1,0 +1,14 @@
+{
+  "kind": "one-update resource profile, no policy selection",
+  "forward_backward_seconds": 0.5349197000032291,
+  "proposal_seconds": 0.10884500003885478,
+  "status": "PASS",
+  "four_probe_instrument_seconds": 0.4859304999699816,
+  "peak_allocated": 4447360512,
+  "finite": true,
+  "predicted_shape": [
+    5,
+    4
+  ],
+  "parameters": 109017680
+}

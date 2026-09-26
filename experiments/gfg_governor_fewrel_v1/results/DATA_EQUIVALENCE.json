@@ -1,0 +1,342 @@
+{
+  "status": "PASS_WITH_DISCLOSED_DUPLICATE",
+  "check": "exact multiset of tokens + head/tail spans, all 80 relations",
+  "probe_test_content_overlap": [
+    {
+      "probe_index": 7429,
+      "test_indices": [
+        7561
+      ],
+      "target": 10
+    }
+  ],
+  "duplicate_policy": "original public split retained; secondary test metrics exclude matching probe content, never tune/retrain",
+  "relations": [
+    {
+      "relation": "P931",
+      "count": 700
+    },
+    {
+      "relation": "P4552",
+      "count": 700
+    },
+    {
+      "relation": "P140",
+      "count": 700
+    },
+    {
+      "relation": "P1923",
+      "count": 700
+    },
+    {
+      "relation": "P150",
+      "count": 700
+    },
+    {
+      "relation": "P6",
+      "count": 700
+    },
+    {
+      "relation": "P27",
+      "count": 700
+    },
+    {
+      "relation": "P449",
+      "count": 700
+    },
+    {
+      "relation": "P1435",
+      "count": 700
+    },
+    {
+      "relation": "P175",
+      "count": 700
+    },
+    {
+      "relation": "P1344",
+      "count": 700
+    },
+    {
+      "relation": "P39",
+      "count": 700
+    },
+    {
+      "relation": "P527",
+      "count": 700
+    },
+    {
+      "relation": "P740",
+      "count": 700
+    },
+    {
+      "relation": "P706",
+      "count": 700
+    },
+    {
+      "relation": "P84",
+      "count": 700
+    },
+    {
+      "relation": "P495",
+      "count": 700
+    },
+    {
+      "relation": "P123",
+      "count": 700
+    },
+    {
+      "relation": "P57",
+      "count": 700
+    },
+    {
+      "relation": "P22",
+      "count": 700
+    },
+    {
+      "relation": "P178",
+      "count": 700
+    },
+    {
+      "relation": "P241",
+      "count": 700
+    },
+    {
+      "relation": "P403",
+      "count": 700
+    },
+    {
+      "relation": "P1411",
+      "count": 700
+    },
+    {
+      "relation": "P135",
+      "count": 700
+    },
+    {
+      "relation": "P991",
+      "count": 700
+    },
+    {
+      "relation": "P156",
+      "count": 700
+    },
+    {
+      "relation": "P176",
+      "count": 700
+    },
+    {
+      "relation": "P31",
+      "count": 700
+    },
+    {
+      "relation": "P1877",
+      "count": 700
+    },
+    {
+      "relation": "P102",
+      "count": 700
+    },
+    {
+      "relation": "P1408",
+      "count": 700
+    },
+    {
+      "relation": "P159",
+      "count": 700
+    },
+    {
+      "relation": "P3373",
+      "count": 700
+    },
+    {
+      "relation": "P1303",
+      "count": 700
+    },
+    {
+      "relation": "P17",
+      "count": 700
+    },
+    {
+      "relation": "P106",
+      "count": 700
+    },
+    {
+      "relation": "P551",
+      "count": 700
+    },
+    {
+      "relation": "P937",
+      "count": 700
+    },
+    {
+      "relation": "P355",
+      "count": 700
+    },
+    {
+      "relation": "P710",
+      "count": 700
+    },
+    {
+      "relation": "P137",
+      "count": 700
+    },
+    {
+      "relation": "P674",
+      "count": 700
+    },
+    {
+      "relation": "P466",
+      "count": 700
+    },
+    {
+      "relation": "P136",
+      "count": 700
+    },
+    {
+      "relation": "P306",
+      "count": 700
+    },
+    {
+      "relation": "P127",
+      "count": 700
+    },
+    {
+      "relation": "P400",
+      "count": 700
+    },
+    {
+      "relation": "P974",
+      "count": 700
+    },
+    {
+      "relation": "P1346",
+      "count": 700
+    },
+    {
+      "relation": "P460",
+      "count": 700
+    },
+    {
+      "relation": "P86",
+      "count": 700
+    },
+    {
+      "relation": "P118",
+      "count": 700
+    },
+    {
+      "relation": "P264",
+      "count": 700
+    },
+    {
+      "relation": "P750",
+      "count": 700
+    },
+    {
+      "relation": "P58",
+      "count": 700
+    },
+    {
+      "relation": "P3450",
+      "count": 700
+    },
+    {
+      "relation": "P105",
+      "count": 700
+    },
+    {
+      "relation": "P276",
+      "count": 700
+    },
+    {
+      "relation": "P101",
+      "count": 700
+    },
+    {
+      "relation": "P407",
+      "count": 700
+    },
+    {
+      "relation": "P1001",
+      "count": 700
+    },
+    {
+      "relation": "P800",
+      "count": 700
+    },
+    {
+      "relation": "P131",
+      "count": 700
+    },
+    {
+      "relation": "P177",
+      "count": 700
+    },
+    {
+      "relation": "P364",
+      "count": 700
+    },
+    {
+      "relation": "P2094",
+      "count": 700
+    },
+    {
+      "relation": "P361",
+      "count": 700
+    },
+    {
+      "relation": "P641",
+      "count": 700
+    },
+    {
+      "relation": "P59",
+      "count": 700
+    },
+    {
+      "relation": "P413",
+      "count": 700
+    },
+    {
+      "relation": "P206",
+      "count": 700
+    },
+    {
+      "relation": "P412",
+      "count": 700
+    },
+    {
+      "relation": "P155",
+      "count": 700
+    },
+    {
+      "relation": "P26",
+      "count": 700
+    },
+    {
+      "relation": "P410",
+      "count": 700
+    },
+    {
+      "relation": "P25",
+      "count": 700
+    },
+    {
+      "relation": "P463",
+      "count": 700
+    },
+    {
+      "relation": "P40",
+      "count": 700
+    },
+    {
+      "relation": "P921",
+      "count": 700
+    }
+  ],
+  "sources": {
+    "CRL-datasets-data_with_marker.json": "2f781b172761ee1f2afb554e6a82c8e8fbd4ef17e8ad90c072c438a2500a062f",
+    "CRL-datasets-id2rel.json": "157dcfe66976f72b2b2954629c73367c7659279bf4fc6a56551829f3475f2c4b",
+    "FewRel-data-train_wiki.json": "8e9e58a05d559be773cbe18a8d4a16ba17e6d397663f9f05a056f894a94b92c1",
+    "FewRel-data-val_wiki.json": "76bb44c2485b6faed358a3ce040eadafcc8a8835245cd7e6afc1bef672d4a0bf"
+  }
+}
