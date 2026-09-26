@@ -1,0 +1,60 @@
+"""Post-run descriptive analysis and readonly final native evaluation. No training."""
+import gc
+import gzip
+import hashlib
+import shutil
+from experiments.gfg_update_direction_isolation_smoke_v1.core import *
+from experiments.gfg_update_direction_isolation_smoke_v1.check import restore
+from experiments.gfg_governor_fewrel_v1.model import RelationModel
+
+def main():
+    checks=json.loads((ROOT/'CHECKS.json').read_text());assert checks['status']=='PASS'
+    torch.set_num_threads(2);torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
+    d=np.load(DATA/'data.npz');x=torch.from_numpy(d['x']);probes,primary,full=scope(d,16)
+    report=dict(status='PASS',analysis='Post-run descriptive decomposition; no rule or threshold changed.',arms={})
+    for arm in ARMS:
+        root=ROOT/arm;r=json.loads((root/'RESULT.json').read_text());records=[]
+        for line in (root/'STEPS.jsonl').read_text().splitlines():
+            row=json.loads(line)
+            if not row['detection']:continue
+            s=restore(row['receiving_history']);protected=row['protected'];base=np.array(row['baseline'])
+            original=np.array(row['native_predicted'])[-1];projected=np.array(row.get('projected_predicted',row['native_predicted']))[-1]
+            base_risk=threats(base,s,protected);new_risk=[g for g in row['threatened'] if g not in base_risk]
+            details=[]
+            for g in row['threatened']:
+                vals={}
+                for key,arr in [('receiving',base),('native',original),('projected',projected),('executed',row['executed_predicted']),('actual',row['actual'])]:
+                    agg=s.mapping.values(arr);vals[key]=dict(capability=agg['capabilities'][g],q10=agg['q10'][g],worst=float(np.min(np.array(arr)[g*10:g*10+10])))
+                details.append(dict(group=g,required_q10=float(s.erosion_ratio*s.anchor[g]),values=vals))
+            records.append(dict(offset=row['offset'],protected=protected,baseline_already_unsafe=base_risk,
+                newly_threatened_by_native=new_risk,threatened=row['threatened'],details=details,
+                geometry=row.get('geometry'),cuts=row['cuts'],new_gains=row['new_correct_gains'],
+                aggregates=row['aggregates'],alpha=row['alpha'],reason=row['reason']))
+        model=RelationModel().cuda();saved=torch.load(root/'final.pt',map_location='cpu',weights_only=False)
+        assert saved['seen']==16 and saved['step']==420;model.load_state_dict(saved['model']);del saved
+        model.seen=16;model.eval();pred=[]
+        with torch.no_grad():
+            for k in range(0,len(full),16):pred.extend(model(x[full[k:k+16]].cuda())[0][:,-1].argmax(-1).cpu().tolist())
+        assert pred==r['metrics']['predictions'];assert sha(root/'final.pt')==r['checkpoint_sha256']
+        report['arms'][arm]=dict(native_final_replay='PASS',prediction_count=len(pred),mismatches=0,detection_diagnostics=records)
+        print('FINAL_REPLAY_PASS',arm,len(pred),flush=True)
+        del model;gc.collect();torch.cuda.empty_cache()
+    assert sources()==checks['source_hashes']
+    write(ROOT/'POSTCHECK.json',report);write(HERE/'results/POSTCHECK.json',report)
+    dest=HERE/'records';dest.mkdir();manifest={}
+    def copy(src,out):
+        assert not out.exists();out.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(src,out)
+        assert sha(src)==sha(out);manifest[out.relative_to(HERE).as_posix()]=dict(sha256=sha(out),bytes=out.stat().st_size)
+    for arm in ARMS:
+        for name in ('CONFIG.json','RESULT.json'):copy(ROOT/arm/name,dest/arm/name)
+        out=dest/arm/'STEPS.jsonl.gz'
+        with (ROOT/arm/'STEPS.jsonl').open('rb') as inp,out.open('xb') as stream:
+            with gzip.GzipFile(filename='',mode='wb',fileobj=stream,mtime=0) as target:shutil.copyfileobj(inp,target)
+        content=gzip.decompress(out.read_bytes());assert hashlib.sha256(content).hexdigest()==sha(ROOT/arm/'STEPS.jsonl')
+        manifest[out.relative_to(HERE).as_posix()]=dict(sha256=sha(out),bytes=out.stat().st_size,uncompressed_sha256=hashlib.sha256(content).hexdigest())
+    for name in (*ARMS,'check'):copy(ROOT/'execution'/f'{name}.log',dest/'execution'/f'{name}.log')
+    copy(Path(__file__),HERE/'POSTCHECK_CODE.txt')
+    write(HERE/'results/PUBLIC_RECORDS_MANIFEST.json',dict(status='PASS',records=manifest,
+        excluded='Model/optimizer checkpoints, original FewRel data and token arrays remain local.'))
+
+if __name__=='__main__':main()

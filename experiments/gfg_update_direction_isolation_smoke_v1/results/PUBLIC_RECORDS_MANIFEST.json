@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "records": {
+    "records/native/CONFIG.json": {
+      "sha256": "23ec9828e3a0c08add4c8cd689eef9e06c7a3ca084c0cf9c75002ecfb27c87f3",
+      "bytes": 135913
+    },
+    "records/native/RESULT.json": {
+      "sha256": "097f8419fc040dc14441514f632e897a26a826c7aa2b0df10d5b790602ea0a1e",
+      "bytes": 56936
+    },
+    "records/native/STEPS.jsonl.gz": {
+      "sha256": "40c2e09653dbe8354c477c23e32ae9bc305a7ffc84b859fa4b27dc9698dcb4a9",
+      "bytes": 19589,
+      "uncompressed_sha256": "bfbddd03690776a9ee84f857eb0ef4114bc83c296bdf4be6ddf06322ee58652d"
+    },
+    "records/scalar/CONFIG.json": {
+      "sha256": "5b149a1a3a028f7d7f4ea65c5b270b64af14024dcbc87502ce5fd1efe6c2f791",
+      "bytes": 135913
+    },
+    "records/scalar/RESULT.json": {
+      "sha256": "df27c10af9fc695ce31417e84b38637d4b0fd3e90bda821eeca56ca280421350",
+      "bytes": 56991
+    },
+    "records/scalar/STEPS.jsonl.gz": {
+      "sha256": "f00e491eda05f05bb51389580728270333e05bb33fb1e9ede80b64cb6155af94",
+      "bytes": 225077,
+      "uncompressed_sha256": "450998a8ed19f23c7216f663cb256f605295e4f908847cd71f01dad8e6be9e68"
+    },
+    "records/projection/CONFIG.json": {
+      "sha256": "aaece8e53ee3242b46a6cf54eb038975df2f69470f8b08f96b15e40cd061c21b",
+      "bytes": 135917
+    },
+    "records/projection/RESULT.json": {
+      "sha256": "b88fb5edcb79f53802c83ccd01132142d0277dc8d093235a5b7df98d6fab29af",
+      "bytes": 57019
+    },
+    "records/projection/STEPS.jsonl.gz": {
+      "sha256": "7fde75befe5e9776635548cf1440469d00f252d4a3be88b0d568db150bfb2ec4",
+      "bytes": 301246,
+      "uncompressed_sha256": "0279518b55f50f3a871a24da8d60c306584cc3303de3fd1662f322659f5cfee3"
+    },
+    "records/execution/native.log": {
+      "sha256": "4be2f19877ad353f2a27b043c3b1514c5cad5952f56084971810bd5a70abdf42",
+      "bytes": 1189
+    },
+    "records/execution/scalar.log": {
+      "sha256": "14e21f611230c7bc2e86508477bf9565513f37742ffa31cd905eb76badd480e6",
+      "bytes": 1270
+    },
+    "records/execution/projection.log": {
+      "sha256": "486ac8741108c18c7c2f2eca8db49337febf74b9cbe9ff1cea1731bda0b890e2",
+      "bytes": 1381
+    },
+    "records/execution/check.log": {
+      "sha256": "3d7c1149f4957b0654acf05bf22eab11cf64dc79bb1b3bb05381b480742ceba7",
+      "bytes": 109
+    },
+    "POSTCHECK_CODE.txt": {
+      "sha256": "6d97d9394a703dfcdf20d6a572528f80cf101330dfb51b79a8da6dd427861b80",
+      "bytes": 4458
+    }
+  },
+  "excluded": "Model/optimizer checkpoints, original FewRel data and token arrays remain local."
+}

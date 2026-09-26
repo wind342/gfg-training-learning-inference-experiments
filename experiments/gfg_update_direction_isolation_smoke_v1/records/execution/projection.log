@@ -1,0 +1,23 @@
+STEP projection 1 1.0 [] 13.06
+STEP projection 11 0.125 [2] 25.22
+STEP projection 21 0.125 [2] 25.22
+STEP projection 31 0.125 [2, 3] 25.41
+STEP projection 41 0.125 [2, 5] 25.39
+STEP projection 51 0.125 [2] 25.18
+STEP projection 61 1.0 [] 12.51
+STEP projection 71 0.125 [1, 7] 25.34
+STEP projection 81 0.125 [1, 7] 25.77
+STEP projection 91 0.125 [6] 25.37
+STEP projection 101 0.125 [6] 25.24
+STEP projection 111 0.125 [4] 25.26
+STEP projection 121 0.125 [4] 25.17
+STEP projection 131 1.0 [] 12.48
+STEP projection 141 1.0 [] 12.53
+STEP projection 151 1.0 [] 12.48
+STEP projection 161 1.0 [] 12.55
+STEP projection 171 1.0 [] 12.56
+STEP projection 181 1.0 [] 12.56
+STEP projection 191 1.0 [] 12.47
+STEP projection 201 1.0 [] 12.72
+STEP projection 210 1.0 [] 0.29
+RESULT projection COMPLETED {'old': 0.06696428571428571, 'new': 0.9240393208221627, 'all': 0.4953104064314426, 'macro_old': 0.06696428571428571, 'macro_new': 0.9241071428571428, 'macro_all': 0.4955357142857143, 'per_relation': {'0': 0.0, '1': 0.06428571428571428, '2': 0.02857142857142857, '3': 0.0, '4': 0.35714285714285715, '5': 0.05, '6': 0.0, '7': 0.03571428571428571, '8': 1.0, '9': 0.6571428571428571, '10': 1.0, '11': 0.9928571428571429, '12': 1.0, '13': 0.9714285714285714, '14': 0.8428571428571429, '15': 0.9285714285714286}, 'cohorts': {'1': 0.06696428571428571, '2': 0.9241071428571428}}

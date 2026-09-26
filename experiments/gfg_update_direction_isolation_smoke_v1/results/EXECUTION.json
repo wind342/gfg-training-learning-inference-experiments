@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "returncodes": {
+    "native": 0,
+    "scalar": 0,
+    "projection": 0,
+    "check": 0
+  }
+}
