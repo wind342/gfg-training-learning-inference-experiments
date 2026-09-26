@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETED",
+  "arm": "head_only_native",
+  "task": 7,
+  "steps": 210,
+  "training_wall": 21.222511900006793,
+  "peak_cuda_bytes": 742155776,
+  "head_start": "0dc9df6c59c881ded6e7b33dbb13f2106d0938603919ced1961125a9bd8bb243",
+  "moments_start": "42d5422871199b70429b1cafade3b1a90461a29bf0dd0a70709ac6903299c44f",
+  "head_end": "8aacbf35016cd8ebf501e603f9f2ea4973979bcbf853a27c511bda53621ae544",
+  "moments_end": "a4ed8aa416107dac3ff9d9d469cbc3b3b3ee48b9f0e9a211c8c9141ba311c549",
+  "optimizer_step": 1470,
+  "backbone_sha256": "c791af46c4761a8918cd8afb37b552b05f5d75ea42c02acae854001f28dd60e3",
+  "no_test_in_training": true,
+  "transition": null,
+  "summary": null,
+  "audit_sha256": "545fa5fb72f62c404e061172b3d8005c6daa46785c716c581ab490624f9dcdfa",
+  "log_sha256": "5e7428151e4804beb2e0345a74c89b4138dabb8c2ee24aa13c26b6845c5ed015",
+  "config_sha256": "39ae4664194d8b7a91d83958b45c06dc247000905154c06ba4115f89cf903f9b",
+  "finished_unix": 1790449751.8914194
+}

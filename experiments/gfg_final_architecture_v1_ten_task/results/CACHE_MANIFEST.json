@@ -1,0 +1,10 @@
+{
+  "sha256": "400e27d4702d7af6f6c47ba36d0bef38c65e8d2adf9f38e631f22b0608da8853",
+  "parent_sha256": "556820c3a390a01921a31cfdbcbf5c9e67ceb1282884ec735ece38618274e28d",
+  "rows": 11190,
+  "reused_rows": 1200,
+  "new_rows": 9990,
+  "seconds": 58.09189579996746,
+  "backbone_sha256": "c791af46c4761a8918cd8afb37b552b05f5d75ea42c02acae854001f28dd60e3",
+  "features_sha256": "8d5419c3742988cc7323be18e5f24b50a6e7bbce3fd9c13d20fd1bd408d94bb8"
+}
