@@ -1,0 +1,42 @@
+{
+  "base": "9e0dc71c7692fa16ebeb81dbf73197aad93add4b",
+  "files": {
+    "records/CONFIG.json": {
+      "sha256": "6a94989e650926ccee42a6f1f807f936181ceee27933c7519a343946a8fc6df9",
+      "bytes": 139301
+    },
+    "records/STEPS.jsonl.gz": {
+      "sha256": "559e4539ff94fe181fffcd68456f2e6e0ef42aa4867359e4e836a214423b13a7",
+      "bytes": 7935348
+    },
+    "records/TRAIN_RESULT.json": {
+      "sha256": "284b9f298718b748ed1018346c23ca37a637d8264241b04788c71b93f59d60d7",
+      "bytes": 6061
+    },
+    "results/CHECKS.json": {
+      "sha256": "68ea9f11ca447161df52406108616e395dfd38626c61e324c20b42d1dc7e2bca",
+      "bytes": 139123
+    },
+    "results/EVALUATION.json": {
+      "sha256": "e160597f85b0dc3c19d684f8168040ce9e1b022ad947f9d60157d3f31b4c0835",
+      "bytes": 155970
+    },
+    "results/PREFLIGHT.json": {
+      "sha256": "74684d9865ea4054fc1130a6c52babac099f7ce5a571ad5890b5c3dd1de1d24f",
+      "bytes": 305987
+    },
+    "results/RESULTS.json": {
+      "sha256": "bf00186866aa2e546c047ea8c5fe2a774de858adc1c702fbdba77ee20604d628",
+      "bytes": 6354
+    },
+    "results/TRAINING_COMPLETE.json": {
+      "sha256": "11a34305388d9c6bffadc4ca04e9a4521962f2ca9ab926782830d361639c0120",
+      "bytes": 163
+    }
+  },
+  "local_only": [
+    "140_controls_hildreth/AUDIT.pt"
+  ],
+  "reused_cache": "E:\\gfg-evidence\\head-only-coverage-cut-smoke-v1\\CACHE.pt",
+  "original_data_published": false
+}
