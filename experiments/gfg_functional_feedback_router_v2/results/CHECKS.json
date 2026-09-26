@@ -1,0 +1,293 @@
+{
+  "status": "PASS",
+  "router_v2": {
+    "metrics": [
+      {
+        "task": 2,
+        "offset": 0,
+        "old": 0.9714285714285715,
+        "new": 0.0,
+        "accuracy": 0.4857142857142857,
+        "duplicate_sensitivity_new": 0.0
+      },
+      {
+        "task": 2,
+        "offset": 20,
+        "old": 0.9732142857142858,
+        "new": 0.10892857142857143,
+        "accuracy": 0.5410714285714285,
+        "duplicate_sensitivity_new": 0.10893499486125385
+      },
+      {
+        "task": 2,
+        "offset": 40,
+        "old": 0.9660714285714286,
+        "new": 0.5133928571428571,
+        "accuracy": 0.7397321428571428,
+        "duplicate_sensitivity_new": 0.5131423432682425
+      },
+      {
+        "task": 2,
+        "offset": 60,
+        "old": 0.9607142857142856,
+        "new": 0.6964285714285714,
+        "accuracy": 0.8285714285714286,
+        "duplicate_sensitivity_new": 0.6963900308324769
+      }
+    ],
+    "wall": 118.43304949998856,
+    "peak_allocated": 6167233024,
+    "old_exposures": 282,
+    "feedback_steps": 57,
+    "feedback_fraction": 0.95,
+    "mode_counts": {
+      "RECOVERY": 44,
+      "FORMATION": 3,
+      "BALANCE": 13
+    },
+    "releases": 1,
+    "activations": 2,
+    "per_relation_exposures": {
+      "0": 92,
+      "4": 18,
+      "1": 18,
+      "2": 18,
+      "3": 84,
+      "5": 18,
+      "6": 18,
+      "7": 16
+    },
+    "full_calls": 3,
+    "gate_counts": {
+      "NATIVE_SAFE": 3,
+      "NOT_MEASURED": 57
+    },
+    "alpha_counts": {
+      "1.0": 60
+    },
+    "prediction_hits": 480,
+    "prediction_total": 480,
+    "actual_transitions": 4,
+    "predicted_transitions": 4,
+    "hashes": {
+      "CONFIG.json": "075acc8e822e7b01d13f31335528a26950b527428bc039a076cde86e893383fd",
+      "RESULT.json": "c49688dee07bb83847ae4d9460ee5459c65360942154d56e145bd748a6ba0616",
+      "STEPS.jsonl": "e11c9c1cac275d1596ab6b941ba8bbdb435047afc66210bf2715add61a64ab55"
+    },
+    "batch_size_histogram": {
+      "6": 27,
+      "4": 30,
+      "0": 3
+    },
+    "single_risk_steps_no_overfill": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "old_exposure_saving_vs_fixed": 0.70625
+  },
+  "historical": {
+    "native": {
+      "metrics": [
+        {
+          "task": 2,
+          "offset": 0,
+          "old": 0.9714285714285715,
+          "new": 0.0,
+          "accuracy": 0.4857142857142857,
+          "duplicate_sensitivity_new": 0.0
+        },
+        {
+          "task": 2,
+          "offset": 20,
+          "old": 0.9517857142857142,
+          "new": 0.3223214285714286,
+          "accuracy": 0.6370535714285714,
+          "duplicate_sensitivity_new": 0.32175616649537514
+        },
+        {
+          "task": 2,
+          "offset": 40,
+          "old": 0.8812500000000001,
+          "new": 0.7517857142857143,
+          "accuracy": 0.8165178571428572,
+          "duplicate_sensitivity_new": 0.7517792908530319
+        },
+        {
+          "task": 2,
+          "offset": 60,
+          "old": 0.7410714285714286,
+          "new": 0.8455357142857143,
+          "accuracy": 0.7933035714285714,
+          "duplicate_sensitivity_new": 0.8455228674203494
+        }
+      ],
+      "wall": 70.80316160002258,
+      "peak_allocated": 5292684288,
+      "old_exposures": 0,
+      "feedback_steps": 0,
+      "feedback_fraction": 0.0,
+      "mode_counts": {
+        "NATIVE": 60
+      },
+      "releases": 0,
+      "activations": 0,
+      "per_relation_exposures": {},
+      "full_calls": 0,
+      "gate_counts": {
+        "NOT_MEASURED": 60
+      },
+      "alpha_counts": {
+        "1.0": 60
+      },
+      "prediction_hits": 0,
+      "prediction_total": 0,
+      "actual_transitions": 0,
+      "predicted_transitions": 0,
+      "hashes": {
+        "CONFIG.json": "abacdd7b19feed49bfeaa3c11bfd66fcf245550e480d057e4c456daf382e61ef",
+        "RESULT.json": "7872ea07410772e795da15cba454ba5e1a124afc47e79ec937ce6fd6556214a0",
+        "STEPS.jsonl": "4e3f6feab6dd67a5887199065b012bef4efd099f1e0dd7af14ca5350c4b1528f"
+      }
+    },
+    "router": {
+      "metrics": [
+        {
+          "task": 2,
+          "offset": 0,
+          "old": 0.9714285714285715,
+          "new": 0.0,
+          "accuracy": 0.4857142857142857,
+          "duplicate_sensitivity_new": 0.0
+        },
+        {
+          "task": 2,
+          "offset": 20,
+          "old": 0.9696428571428571,
+          "new": 0.22053571428571428,
+          "accuracy": 0.5950892857142858,
+          "duplicate_sensitivity_new": 0.22060637204522096
+        },
+        {
+          "task": 2,
+          "offset": 40,
+          "old": 0.9446428571428571,
+          "new": 0.6383928571428572,
+          "accuracy": 0.7915178571428572,
+          "duplicate_sensitivity_new": 0.6383607399794451
+        },
+        {
+          "task": 2,
+          "offset": 60,
+          "old": 0.936607142857143,
+          "new": 0.7901785714285714,
+          "accuracy": 0.8633928571428572,
+          "duplicate_sensitivity_new": 0.7901657245632066
+        }
+      ],
+      "wall": 131.26207719999366,
+      "peak_allocated": 6629485056,
+      "old_exposures": 960,
+      "feedback_steps": 60,
+      "feedback_fraction": 1.0,
+      "mode_counts": {
+        "RECOVERY": 60
+      },
+      "releases": 0,
+      "activations": 1,
+      "per_relation_exposures": {
+        "0": 120,
+        "4": 120,
+        "1": 120,
+        "2": 120,
+        "3": 120,
+        "5": 120,
+        "6": 120,
+        "7": 120
+      },
+      "full_calls": 3,
+      "gate_counts": {
+        "NATIVE_SAFE": 3,
+        "NOT_MEASURED": 57
+      },
+      "alpha_counts": {
+        "1.0": 60
+      },
+      "prediction_hits": 480,
+      "prediction_total": 480,
+      "actual_transitions": 1,
+      "predicted_transitions": 1,
+      "hashes": {
+        "CONFIG.json": "2492296fa98028283ee924d330e0b5ee4d08bbdcc17f695cbdbcf47a1e295a57",
+        "RESULT.json": "4c43a3010b38c8b5c17a9529f86014b1860ca8bf99e202921ea3e716b11ba13a",
+        "STEPS.jsonl": "a63a7d4c599dc014fb589c4103c03452f27003613040b00fa758fa3fcbf3f788"
+      }
+    },
+    "replay_reference": {
+      "metrics": [
+        {
+          "offset": 0,
+          "old": 0.9714285714285715,
+          "new": 0.0,
+          "accuracy": 0.4857142857142857
+        },
+        {
+          "offset": 20,
+          "old": 0.9696428571428571,
+          "new": 0.21964285714285714,
+          "accuracy": 0.5946428571428571
+        },
+        {
+          "offset": 40,
+          "old": 0.9446428571428571,
+          "new": 0.6383928571428572,
+          "accuracy": 0.7915178571428572
+        },
+        {
+          "offset": 60,
+          "old": 0.9339285714285714,
+          "new": 0.7901785714285714,
+          "accuracy": 0.8620535714285714
+        }
+      ],
+      "wall": 85.87320359994192,
+      "peak_allocated": 5753887232,
+      "old_exposures": 960,
+      "feedback_steps": 60,
+      "feedback_fraction": 1.0,
+      "result_sha256": "5b7a3ded69ed51f0af357acfc8b600353010d0dd61800d9197e534de86d463a8"
+    }
+  },
+  "historical_checks_sha256": "edd5ec6c703b48cd68cb83316ca52c1bf33cedda74edb0fe83e419619177910a",
+  "ten_step_structural_gate": "PASS: all first10 recorded coalitions satisfy sparse-anchor bounds",
+  "scope": "fixed60-step fix validation only; no three-task run or post-result tuning",
+  "checker_boundary": "recomputed routing/cursors from recorded histories, gates from predictions, test metrics from recorded predictions; not an independent native rerun",
+  "inherited_duplicate": "inherited probe/test index7561; secondary sensitivity shown; no training memory duplicate"
+}
