@@ -1,0 +1,51 @@
+# Post-run packaging; not part of frozen training/evaluation implementation.
+import gzip
+import hashlib
+import json
+from pathlib import Path
+import shutil
+
+here=Path(__file__).resolve().parent
+root=Path('E:/gfg-evidence/head-only-lr-smoke-v1')
+base=Path('E:/gfg-evidence/head-only-exact-monitor-smoke-v1/head_only_exact_monitor')
+arms=('lr5e-5','lr5e-4','lr1e-3')
+def sha(p):
+    h=hashlib.sha256()
+    with p.open('rb') as f:
+        for b in iter(lambda:f.read(4*1024*1024),b''):h.update(b)
+    return h.hexdigest()
+def write(p,v):
+    with p.open('x',encoding='utf8') as f:json.dump(v,f,indent=2,allow_nan=False)
+checks=json.loads((root/'CHECKS.json').read_text());assert checks['status']=='PASS'
+ev=json.loads((root/'EVALUATION.json').read_text());manifest=[]
+(here/'results').mkdir(exist_ok=False);(here/'records').mkdir(exist_ok=False)
+def copy(src,dest):
+    shutil.copyfile(src,dest);manifest.append(dict(path=dest.relative_to(here).as_posix(),sha256=sha(dest),bytes=dest.stat().st_size))
+for name in ('PREFLIGHT.json','TRAINING_COMPLETE.json','EVALUATION.json','CHECKS.json','EXECUTION.json'):copy(root/name,here/'results'/name)
+results={}
+for arm in arms:
+    dest=here/'records'/arm;dest.mkdir()
+    for name in ('CONFIG.json','TRAIN_RESULT.json'):copy(root/arm/name,dest/name)
+    raw=(root/arm/'STEPS.jsonl').read_bytes();p=dest/'STEPS.jsonl.gz'
+    with p.open('xb') as f:f.write(gzip.compress(raw,mtime=0))
+    assert gzip.decompress(p.read_bytes())==raw
+    manifest.append(dict(path=p.relative_to(here).as_posix(),sha256=sha(p),bytes=p.stat().st_size,uncompressed_sha256=hashlib.sha256(raw).hexdigest()))
+    results[arm]=json.loads((root/arm/'TRAIN_RESULT.json').read_text())
+oldrows=[json.loads(s) for s in (base/'STEPS.jsonl').read_text().splitlines()]
+summary={}
+for arm,data in ev['arms'].items():
+    summary[arm]=dict(lr=5e-6 if arm=='lr5e-6' else results[arm]['lr'],
+        train16=data['training']['accuracy_16class'],train_new_only=data['training']['accuracy_new_only'],
+        controls=data['controls'],test=data['test']['primary'],
+        loss={str(i):oldrows[i-1]['loss'] for i in (1,50,100,150,210)} if arm=='lr5e-6' else results[arm]['losses'],
+        retrained=arm!='lr5e-6')
+report=dict(status='COMPLETED',checks='PASS',arms=summary,baseline_result_sha256=sha(base/'RESULT.json'),
+    local_audits=[dict(path=str(root/a/'AUDIT.pt'),sha256=sha(root/a/'AUDIT.pt'),bytes=(root/a/'AUDIT.pt').stat().st_size) for a in arms],
+    boundaries=['Fixed210 updates and one seed; no additional sweeps.',
+       'Train new-only accuracy is a diagnostic, not the formal16-class task.',
+       'No test-based LR choice or post-evaluation training.',
+       'A poor result cannot alone establish the representation limit.'])
+write(here/'results'/'RESULTS.json',report)
+p=here/'results'/'RESULTS.json';manifest.append(dict(path='results/RESULTS.json',sha256=sha(p),bytes=p.stat().st_size))
+write(here/'results'/'PUBLIC_RECORDS_MANIFEST.json',dict(status='PASS',files=manifest,local_only='Head snapshots, optimizer states, control features; no original texts/tokens or weights in public records.'))
+print(json.dumps(summary,indent=2))

@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "results/PREFLIGHT.json",
+      "sha256": "0e08e71d95fb95e831aa0987867da87207083dab5443a236d6d566c934e95568",
+      "bytes": 300768
+    },
+    {
+      "path": "results/TRAINING_COMPLETE.json",
+      "sha256": "de666a0f611bbf510ba3a9827f6aa541186f07817dcef77c03eef7134882aacf",
+      "bytes": 137081
+    },
+    {
+      "path": "results/EVALUATION.json",
+      "sha256": "ee2c0b0899f4a857c6b82a123264df441e9801acbf7fda09b7975580c5795fec",
+      "bytes": 1059615
+    },
+    {
+      "path": "results/CHECKS.json",
+      "sha256": "a760a0f935fb4ce01bf2380b5b81fbf3759534126d5824472021cdd1d3a836c5",
+      "bytes": 142451
+    },
+    {
+      "path": "results/EXECUTION.json",
+      "sha256": "083c1bdfd61c0d5ea52df1a53a7f5f06a0b15283b9ecc507a6c5c9bb033406ec",
+      "bytes": 803
+    },
+    {
+      "path": "records/lr5e-5/CONFIG.json",
+      "sha256": "174d8048c5cc850764bcccac85c159952d42ecdce03b7cfe9e6b6499d826a22a",
+      "bytes": 137196
+    },
+    {
+      "path": "records/lr5e-5/TRAIN_RESULT.json",
+      "sha256": "cb94634fa131cd178e85eb401f615c0ae1bed7e54873a3394d4cb22d46c12f42",
+      "bytes": 2128
+    },
+    {
+      "path": "records/lr5e-5/STEPS.jsonl.gz",
+      "sha256": "190eb12fd3869d46dabac175ad2c7b1f02e678af85ab3ac21f62f6449385943a",
+      "bytes": 413415,
+      "uncompressed_sha256": "586f1145134e20917be445b3ff91ae7409f8e62025484b5f91d4de68cda96b44"
+    },
+    {
+      "path": "records/lr5e-4/CONFIG.json",
+      "sha256": "edea4da4d7000ec0050ff26e8e2590b8130a8b29603aa8692d7290863801ae38",
+      "bytes": 137197
+    },
+    {
+      "path": "records/lr5e-4/TRAIN_RESULT.json",
+      "sha256": "341d6b84e07ecb777a7256de34e29e4a09e9c2158aedfed753851f1974acc2eb",
+      "bytes": 2133
+    },
+    {
+      "path": "records/lr5e-4/STEPS.jsonl.gz",
+      "sha256": "86b1fab14eeab751da445b40e1089d0d56393b65092c9d7af9e0327d86d500c1",
+      "bytes": 410141,
+      "uncompressed_sha256": "6c1a5d018543d531ab08327c1120949590d866d88193107356db36698f171516"
+    },
+    {
+      "path": "records/lr1e-3/CONFIG.json",
+      "sha256": "894dd9681509a229d9d33af00e6f17467b7d9866b6cabf99f6b64ed58af771ff",
+      "bytes": 137196
+    },
+    {
+      "path": "records/lr1e-3/TRAIN_RESULT.json",
+      "sha256": "a462224f38b5e69560f82ed349235dd29368f1637667752c2ab2ef95ed31f93a",
+      "bytes": 2131
+    },
+    {
+      "path": "records/lr1e-3/STEPS.jsonl.gz",
+      "sha256": "0ba2a9dc9ad1f7c3e6ce18738623a1601c50728a6ff90a6b95b2bf13c183e418",
+      "bytes": 408318,
+      "uncompressed_sha256": "304c95417910c9c58c09af1d4d0a7ac75643b930c804bbe54088066b983c166f"
+    },
+    {
+      "path": "results/RESULTS.json",
+      "sha256": "a6d55f2212e3a30ff0655ef81e885ac01b17f3cc9243f3ca148d6f071b5831ce",
+      "bytes": 11814
+    }
+  ],
+  "local_only": "Head snapshots, optimizer states, control features; no original texts/tokens or weights in public records."
+}
