@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "tests": 70,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "new_policy_and_execution": 24,
+  "old_v4": 42,
+  "old_fewrel": 4,
+  "record_reverification": "PASS",
+  "three_task_executed": false
+}
