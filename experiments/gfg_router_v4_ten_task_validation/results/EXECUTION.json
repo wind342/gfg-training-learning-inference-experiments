@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "outcomes": {
+    "router": {
+      "returncode": 0,
+      "status": "COMPLETED",
+      "log_sha256": "f9ed81e020c59f7b04f010b6f0bfbeac970ebc8d8a34f0a56daa4136d202d070"
+    },
+    "native": {
+      "returncode": 0,
+      "status": "COMPLETED",
+      "log_sha256": "cb53eac0105e9c61df557906ae5df57fdd0a579b8885decc17536b2182a68116"
+    },
+    "replay": {
+      "returncode": 0,
+      "status": "COMPLETED",
+      "log_sha256": "6b809691b6e3d42c99d13640d0cb7133e7785effa0dad3ea96271fa79630f692"
+    },
+    "random": {
+      "returncode": 0,
+      "status": "COMPLETED",
+      "log_sha256": "ce6c28c8607df6bf351bea6dd800b26ec68ae53113d2b0140e5d5f61add2eea6"
+    },
+    "check": {
+      "returncode": 0,
+      "log_sha256": "fcc3e8238bc3d047926b8b2dfa20f4168c1be66c4318e86774aa0f36dbf96703"
+    }
+  }
+}

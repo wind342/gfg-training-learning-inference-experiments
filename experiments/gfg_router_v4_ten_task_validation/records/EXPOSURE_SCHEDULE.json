@@ -1,0 +1,9454 @@
+{
+  "rows": [
+    {
+      "step": 211,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 212,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 213,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 214,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 215,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 216,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 217,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 218,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 219,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 220,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 221,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 222,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 223,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 224,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 225,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 226,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 227,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 228,
+      "task": 2,
+      "old_batch_size": 4
+    },
+    {
+      "step": 229,
+      "task": 2,
+      "old_batch_size": 0
+    },
+    {
+      "step": 230,
+      "task": 2,
+      "old_batch_size": 0
+    },
+    {
+      "step": 231,
+      "task": 2,
+      "old_batch_size": 0
+    },
+    {
+      "step": 232,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 233,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 234,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 235,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 236,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 237,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 238,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 239,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 240,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 241,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 242,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 243,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 244,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 245,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 246,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 247,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 248,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 249,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 250,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 251,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 252,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 253,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 254,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 255,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 256,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 257,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 258,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 259,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 260,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 261,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 262,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 263,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 264,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 265,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 266,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 267,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 268,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 269,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 270,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 271,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 272,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 273,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 274,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 275,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 276,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 277,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 278,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 279,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 280,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 281,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 282,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 283,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 284,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 285,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 286,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 287,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 288,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 289,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 290,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 291,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 292,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 293,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 294,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 295,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 296,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 297,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 298,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 299,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 300,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 301,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 302,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 303,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 304,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 305,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 306,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 307,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 308,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 309,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 310,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 311,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 312,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 313,
+      "task": 2,
+      "old_batch_size": 6
+    },
+    {
+      "step": 314,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 315,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 316,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 317,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 318,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 319,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 320,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 321,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 322,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 323,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 324,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 325,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 326,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 327,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 328,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 329,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 330,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 331,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 332,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 333,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 334,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 335,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 336,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 337,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 338,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 339,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 340,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 341,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 342,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 343,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 344,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 345,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 346,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 347,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 348,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 349,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 350,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 351,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 352,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 353,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 354,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 355,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 356,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 357,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 358,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 359,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 360,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 361,
+      "task": 2,
+      "old_batch_size": 10
+    },
+    {
+      "step": 362,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 363,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 364,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 365,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 366,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 367,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 368,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 369,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 370,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 371,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 372,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 373,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 374,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 375,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 376,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 377,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 378,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 379,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 380,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 381,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 382,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 383,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 384,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 385,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 386,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 387,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 388,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 389,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 390,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 391,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 392,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 393,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 394,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 395,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 396,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 397,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 398,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 399,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 400,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 401,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 402,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 403,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 404,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 405,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 406,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 407,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 408,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 409,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 410,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 411,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 412,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 413,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 414,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 415,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 416,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 417,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 418,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 419,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 420,
+      "task": 2,
+      "old_batch_size": 8
+    },
+    {
+      "step": 421,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 422,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 423,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 424,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 425,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 426,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 427,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 428,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 429,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 430,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 431,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 432,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 433,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 434,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 435,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 436,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 437,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 438,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 439,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 440,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 441,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 442,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 443,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 444,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 445,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 446,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 447,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 448,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 449,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 450,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 451,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 452,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 453,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 454,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 455,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 456,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 457,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 458,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 459,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 460,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 461,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 462,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 463,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 464,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 465,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 466,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 467,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 468,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 469,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 470,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 471,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 472,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 473,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 474,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 475,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 476,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 477,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 478,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 479,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 480,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 481,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 482,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 483,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 484,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 485,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 486,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 487,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 488,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 489,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 490,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 491,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 492,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 493,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 494,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 495,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 496,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 497,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 498,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 499,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 500,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 501,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 502,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 503,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 504,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 505,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 506,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 507,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 508,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 509,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 510,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 511,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 512,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 513,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 514,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 515,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 516,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 517,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 518,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 519,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 520,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 521,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 522,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 523,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 524,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 525,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 526,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 527,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 528,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 529,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 530,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 531,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 532,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 533,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 534,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 535,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 536,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 537,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 538,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 539,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 540,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 541,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 542,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 543,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 544,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 545,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 546,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 547,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 548,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 549,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 550,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 551,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 552,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 553,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 554,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 555,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 556,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 557,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 558,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 559,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 560,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 561,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 562,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 563,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 564,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 565,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 566,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 567,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 568,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 569,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 570,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 571,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 572,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 573,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 574,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 575,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 576,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 577,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 578,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 579,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 580,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 581,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 582,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 583,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 584,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 585,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 586,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 587,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 588,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 589,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 590,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 591,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 592,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 593,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 594,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 595,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 596,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 597,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 598,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 599,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 600,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 601,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 602,
+      "task": 3,
+      "old_batch_size": 12
+    },
+    {
+      "step": 603,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 604,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 605,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 606,
+      "task": 3,
+      "old_batch_size": 10
+    },
+    {
+      "step": 607,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 608,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 609,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 610,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 611,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 612,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 613,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 614,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 615,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 616,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 617,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 618,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 619,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 620,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 621,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 622,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 623,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 624,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 625,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 626,
+      "task": 3,
+      "old_batch_size": 14
+    },
+    {
+      "step": 627,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 628,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 629,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 630,
+      "task": 3,
+      "old_batch_size": 16
+    },
+    {
+      "step": 631,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 632,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 633,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 634,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 635,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 636,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 637,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 638,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 639,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 640,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 641,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 642,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 643,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 644,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 645,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 646,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 647,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 648,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 649,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 650,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 651,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 652,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 653,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 654,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 655,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 656,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 657,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 658,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 659,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 660,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 661,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 662,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 663,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 664,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 665,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 666,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 667,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 668,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 669,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 670,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 671,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 672,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 673,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 674,
+      "task": 4,
+      "old_batch_size": 14
+    },
+    {
+      "step": 675,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 676,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 677,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 678,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 679,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 680,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 681,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 682,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 683,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 684,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 685,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 686,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 687,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 688,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 689,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 690,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 691,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 692,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 693,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 694,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 695,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 696,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 697,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 698,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 699,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 700,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 701,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 702,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 703,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 704,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 705,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 706,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 707,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 708,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 709,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 710,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 711,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 712,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 713,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 714,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 715,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 716,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 717,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 718,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 719,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 720,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 721,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 722,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 723,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 724,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 725,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 726,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 727,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 728,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 729,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 730,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 731,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 732,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 733,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 734,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 735,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 736,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 737,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 738,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 739,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 740,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 741,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 742,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 743,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 744,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 745,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 746,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 747,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 748,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 749,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 750,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 751,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 752,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 753,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 754,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 755,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 756,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 757,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 758,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 759,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 760,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 761,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 762,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 763,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 764,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 765,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 766,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 767,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 768,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 769,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 770,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 771,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 772,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 773,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 774,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 775,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 776,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 777,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 778,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 779,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 780,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 781,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 782,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 783,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 784,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 785,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 786,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 787,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 788,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 789,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 790,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 791,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 792,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 793,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 794,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 795,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 796,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 797,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 798,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 799,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 800,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 801,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 802,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 803,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 804,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 805,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 806,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 807,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 808,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 809,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 810,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 811,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 812,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 813,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 814,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 815,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 816,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 817,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 818,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 819,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 820,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 821,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 822,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 823,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 824,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 825,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 826,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 827,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 828,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 829,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 830,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 831,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 832,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 833,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 834,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 835,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 836,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 837,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 838,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 839,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 840,
+      "task": 4,
+      "old_batch_size": 16
+    },
+    {
+      "step": 841,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 842,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 843,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 844,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 845,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 846,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 847,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 848,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 849,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 850,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 851,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 852,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 853,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 854,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 855,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 856,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 857,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 858,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 859,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 860,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 861,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 862,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 863,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 864,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 865,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 866,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 867,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 868,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 869,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 870,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 871,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 872,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 873,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 874,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 875,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 876,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 877,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 878,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 879,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 880,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 881,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 882,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 883,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 884,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 885,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 886,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 887,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 888,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 889,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 890,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 891,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 892,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 893,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 894,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 895,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 896,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 897,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 898,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 899,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 900,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 901,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 902,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 903,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 904,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 905,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 906,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 907,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 908,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 909,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 910,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 911,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 912,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 913,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 914,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 915,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 916,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 917,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 918,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 919,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 920,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 921,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 922,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 923,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 924,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 925,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 926,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 927,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 928,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 929,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 930,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 931,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 932,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 933,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 934,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 935,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 936,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 937,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 938,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 939,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 940,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 941,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 942,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 943,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 944,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 945,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 946,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 947,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 948,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 949,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 950,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 951,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 952,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 953,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 954,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 955,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 956,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 957,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 958,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 959,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 960,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 961,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 962,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 963,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 964,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 965,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 966,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 967,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 968,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 969,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 970,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 971,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 972,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 973,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 974,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 975,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 976,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 977,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 978,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 979,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 980,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 981,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 982,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 983,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 984,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 985,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 986,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 987,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 988,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 989,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 990,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 991,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 992,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 993,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 994,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 995,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 996,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 997,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 998,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 999,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1000,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1001,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1002,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1003,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1004,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1005,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1006,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1007,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1008,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1009,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1010,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1011,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1012,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1013,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1014,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1015,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1016,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1017,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1018,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1019,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1020,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1021,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1022,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1023,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1024,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1025,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1026,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1027,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1028,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1029,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1030,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1031,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1032,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1033,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1034,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1035,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1036,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1037,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1038,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1039,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1040,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1041,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1042,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1043,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1044,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1045,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1046,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1047,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1048,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1049,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1050,
+      "task": 5,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1051,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1052,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1053,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1054,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1055,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1056,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1057,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1058,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1059,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1060,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1061,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1062,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1063,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1064,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1065,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1066,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1067,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1068,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1069,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1070,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1071,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1072,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1073,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1074,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1075,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1076,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1077,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1078,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1079,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1080,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1081,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1082,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1083,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1084,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1085,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1086,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1087,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1088,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1089,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1090,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1091,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1092,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1093,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1094,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1095,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1096,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1097,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1098,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1099,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1100,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1101,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1102,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1103,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1104,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1105,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1106,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1107,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1108,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1109,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1110,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1111,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1112,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1113,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1114,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1115,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1116,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1117,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1118,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1119,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1120,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1121,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1122,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1123,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1124,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1125,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1126,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1127,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1128,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1129,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1130,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1131,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1132,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1133,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1134,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1135,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1136,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1137,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1138,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1139,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1140,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1141,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1142,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1143,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1144,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1145,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1146,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1147,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1148,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1149,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1150,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1151,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1152,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1153,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1154,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1155,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1156,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1157,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1158,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1159,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1160,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1161,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1162,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1163,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1164,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1165,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1166,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1167,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1168,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1169,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1170,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1171,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1172,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1173,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1174,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1175,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1176,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1177,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1178,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1179,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1180,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1181,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1182,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1183,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1184,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1185,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1186,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1187,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1188,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1189,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1190,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1191,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1192,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1193,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1194,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1195,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1196,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1197,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1198,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1199,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1200,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1201,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1202,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1203,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1204,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1205,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1206,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1207,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1208,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1209,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1210,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1211,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1212,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1213,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1214,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1215,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1216,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1217,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1218,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1219,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1220,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1221,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1222,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1223,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1224,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1225,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1226,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1227,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1228,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1229,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1230,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1231,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1232,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1233,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1234,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1235,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1236,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1237,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1238,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1239,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1240,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1241,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1242,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1243,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1244,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1245,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1246,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1247,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1248,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1249,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1250,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1251,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1252,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1253,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1254,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1255,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1256,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1257,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1258,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1259,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1260,
+      "task": 6,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1261,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1262,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1263,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1264,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1265,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1266,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1267,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1268,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1269,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1270,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1271,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1272,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1273,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1274,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1275,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1276,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1277,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1278,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1279,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1280,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1281,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1282,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1283,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1284,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1285,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1286,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1287,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1288,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1289,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1290,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1291,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1292,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1293,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1294,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1295,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1296,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1297,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1298,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1299,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1300,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1301,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1302,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1303,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1304,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1305,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1306,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1307,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1308,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1309,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1310,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1311,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1312,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1313,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1314,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1315,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1316,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1317,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1318,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1319,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1320,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1321,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1322,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1323,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1324,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1325,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1326,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1327,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1328,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1329,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1330,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1331,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1332,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1333,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1334,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1335,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1336,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1337,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1338,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1339,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1340,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1341,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1342,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1343,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1344,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1345,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1346,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1347,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1348,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1349,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1350,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1351,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1352,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1353,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1354,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1355,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1356,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1357,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1358,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1359,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1360,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1361,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1362,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1363,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1364,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1365,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1366,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1367,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1368,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1369,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1370,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1371,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1372,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1373,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1374,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1375,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1376,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1377,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1378,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1379,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1380,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1381,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1382,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1383,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1384,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1385,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1386,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1387,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1388,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1389,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1390,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1391,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1392,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1393,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1394,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1395,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1396,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1397,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1398,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1399,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1400,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1401,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1402,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1403,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1404,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1405,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1406,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1407,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1408,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1409,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1410,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1411,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1412,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1413,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1414,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1415,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1416,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1417,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1418,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1419,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1420,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1421,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1422,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1423,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1424,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1425,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1426,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1427,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1428,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1429,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1430,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1431,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1432,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1433,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1434,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1435,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1436,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1437,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1438,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1439,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1440,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1441,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1442,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1443,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1444,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1445,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1446,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1447,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1448,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1449,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1450,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1451,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1452,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1453,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1454,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1455,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1456,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1457,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1458,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1459,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1460,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1461,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1462,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1463,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1464,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1465,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1466,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1467,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1468,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1469,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1470,
+      "task": 7,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1471,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1472,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1473,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1474,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1475,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1476,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1477,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1478,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1479,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1480,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1481,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1482,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1483,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1484,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1485,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1486,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1487,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1488,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1489,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1490,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1491,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1492,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1493,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1494,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1495,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1496,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1497,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1498,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1499,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1500,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1501,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1502,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1503,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1504,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1505,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1506,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1507,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1508,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1509,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1510,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1511,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1512,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1513,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1514,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1515,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1516,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1517,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1518,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1519,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1520,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1521,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1522,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1523,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1524,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1525,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1526,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1527,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1528,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1529,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1530,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1531,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1532,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1533,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1534,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1535,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1536,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1537,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1538,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1539,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1540,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1541,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1542,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1543,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1544,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1545,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1546,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1547,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1548,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1549,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1550,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1551,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1552,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1553,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1554,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1555,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1556,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1557,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1558,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1559,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1560,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1561,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1562,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1563,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1564,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1565,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1566,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1567,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1568,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1569,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1570,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1571,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1572,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1573,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1574,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1575,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1576,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1577,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1578,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1579,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1580,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1581,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1582,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1583,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1584,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1585,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1586,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1587,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1588,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1589,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1590,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1591,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1592,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1593,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1594,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1595,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1596,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1597,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1598,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1599,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1600,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1601,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1602,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1603,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1604,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1605,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1606,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1607,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1608,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1609,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1610,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1611,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1612,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1613,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1614,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1615,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1616,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1617,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1618,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1619,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1620,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1621,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1622,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1623,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1624,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1625,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1626,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1627,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1628,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1629,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1630,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1631,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1632,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1633,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1634,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1635,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1636,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1637,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1638,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1639,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1640,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1641,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1642,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1643,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1644,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1645,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1646,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1647,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1648,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1649,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1650,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1651,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1652,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1653,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1654,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1655,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1656,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1657,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1658,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1659,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1660,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1661,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1662,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1663,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1664,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1665,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1666,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1667,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1668,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1669,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1670,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1671,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1672,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1673,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1674,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1675,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1676,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1677,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1678,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1679,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1680,
+      "task": 8,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1681,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1682,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1683,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1684,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1685,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1686,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1687,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1688,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1689,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1690,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1691,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1692,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1693,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1694,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1695,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1696,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1697,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1698,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1699,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1700,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1701,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1702,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1703,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1704,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1705,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1706,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1707,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1708,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1709,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1710,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1711,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1712,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1713,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1714,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1715,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1716,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1717,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1718,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1719,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1720,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1721,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1722,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1723,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1724,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1725,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1726,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1727,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1728,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1729,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1730,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1731,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1732,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1733,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1734,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1735,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1736,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1737,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1738,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1739,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1740,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1741,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1742,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1743,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1744,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1745,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1746,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1747,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1748,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1749,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1750,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1751,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1752,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1753,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1754,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1755,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1756,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1757,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1758,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1759,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1760,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1761,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1762,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1763,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1764,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1765,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1766,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1767,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1768,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1769,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1770,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1771,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1772,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1773,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1774,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1775,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1776,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1777,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1778,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1779,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1780,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1781,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1782,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1783,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1784,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1785,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1786,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1787,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1788,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1789,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1790,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1791,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1792,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1793,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1794,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1795,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1796,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1797,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1798,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1799,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1800,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1801,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1802,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1803,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1804,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1805,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1806,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1807,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1808,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1809,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1810,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1811,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1812,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1813,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1814,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1815,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1816,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1817,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1818,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1819,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1820,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1821,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1822,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1823,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1824,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1825,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1826,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1827,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1828,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1829,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1830,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1831,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1832,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1833,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1834,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1835,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1836,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1837,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1838,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1839,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1840,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1841,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1842,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1843,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1844,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1845,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1846,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1847,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1848,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1849,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1850,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1851,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1852,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1853,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1854,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1855,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1856,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1857,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1858,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1859,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1860,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1861,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1862,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1863,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1864,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1865,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1866,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1867,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1868,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1869,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1870,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1871,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1872,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1873,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1874,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1875,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1876,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1877,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1878,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1879,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1880,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1881,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1882,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1883,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1884,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1885,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1886,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1887,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1888,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1889,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1890,
+      "task": 9,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1891,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1892,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1893,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1894,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1895,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1896,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1897,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1898,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1899,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1900,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1901,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1902,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1903,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1904,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1905,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1906,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1907,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1908,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1909,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1910,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1911,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1912,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1913,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1914,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1915,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1916,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1917,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1918,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1919,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1920,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1921,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1922,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1923,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1924,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1925,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1926,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1927,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1928,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1929,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1930,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1931,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1932,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1933,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1934,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1935,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1936,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1937,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1938,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1939,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1940,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1941,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1942,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1943,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1944,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1945,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1946,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1947,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1948,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1949,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1950,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1951,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1952,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1953,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1954,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1955,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1956,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1957,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1958,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1959,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1960,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1961,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1962,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1963,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1964,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1965,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1966,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1967,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1968,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1969,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1970,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1971,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1972,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1973,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1974,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1975,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1976,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1977,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1978,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1979,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1980,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1981,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1982,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1983,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1984,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1985,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1986,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1987,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1988,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1989,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1990,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1991,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1992,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1993,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1994,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1995,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1996,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1997,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1998,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 1999,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2000,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2001,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2002,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2003,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2004,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2005,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2006,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2007,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2008,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2009,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2010,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2011,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2012,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2013,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2014,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2015,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2016,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2017,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2018,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2019,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2020,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2021,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2022,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2023,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2024,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2025,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2026,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2027,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2028,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2029,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2030,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2031,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2032,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2033,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2034,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2035,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2036,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2037,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2038,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2039,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2040,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2041,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2042,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2043,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2044,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2045,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2046,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2047,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2048,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2049,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2050,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2051,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2052,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2053,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2054,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2055,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2056,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2057,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2058,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2059,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2060,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2061,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2062,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2063,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2064,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2065,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2066,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2067,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2068,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2069,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2070,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2071,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2072,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2073,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2074,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2075,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2076,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2077,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2078,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2079,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2080,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2081,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2082,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2083,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2084,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2085,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2086,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2087,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2088,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2089,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2090,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2091,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2092,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2093,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2094,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2095,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2096,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2097,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2098,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2099,
+      "task": 10,
+      "old_batch_size": 16
+    },
+    {
+      "step": 2100,
+      "task": 10,
+      "old_batch_size": 16
+    }
+  ]
+}

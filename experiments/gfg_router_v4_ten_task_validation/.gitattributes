@@ -1,0 +1,6 @@
+# Generated evidence hashes identify exact bytes, including Windows newlines.
+# Scope only this new validation directory; leave repository-wide rules intact.
+records/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+results/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+FINAL_CHECKPOINT_REPLAY_CODE.txt -text
+.gitattributes text eol=lf

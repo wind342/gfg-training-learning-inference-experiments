@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "ratio": 0.9131613756613757,
+  "trigger": {
+    "criteria": {
+      "completed": true,
+      "final_old_close": true,
+      "final_new_close": true,
+      "mean_old_close": true,
+      "exposure_at_most_65pct": false,
+      "final_random_gap": false,
+      "mean_random_gap": false,
+      "beats_native_old": true,
+      "beats_native_all": true
+    },
+    "eligible_if_integrity_pass": false,
+    "seeds": [
+      2022,
+      2023
+    ],
+    "statistical_significance_claim": false
+  }
+}

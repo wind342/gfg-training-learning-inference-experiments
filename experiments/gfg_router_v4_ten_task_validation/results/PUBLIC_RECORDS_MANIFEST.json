@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "records": {
+    "records/router/CONFIG.json": {
+      "bytes": 135245,
+      "sha256": "8845602a8d51b32a7dfebdda9850c1772e88335a4ec6766cc9c510f6cf491eb9"
+    },
+    "records/router/RESULT.json": {
+      "bytes": 1926596,
+      "sha256": "b4cb472a1189760e4b2c152bc2c85a6d97f1a35ef8c1a487cecddb1bc692c4ff"
+    },
+    "records/router/STEPS.jsonl.gz": {
+      "bytes": 3601632,
+      "sha256": "e6ec4927cfb78de75a3f9dd11dd9d8fe0143e9fcdfa0d129778b4d711d14c09b",
+      "uncompressed_sha256": "f43ff9e793d8c2ed6e54e53c6133e8e767fa9098d5e17824617e874a792404a2",
+      "uncompressed_bytes": 30319487
+    },
+    "records/native/CONFIG.json": {
+      "bytes": 135245,
+      "sha256": "7c2d0917b89fe34fbef98b9d34be860d7b062b163f3ef69b338abaf5c6fa3f7d"
+    },
+    "records/native/RESULT.json": {
+      "bytes": 1797903,
+      "sha256": "e14e0040aa2f950c4ed6c91a778e554d08e7781afaf534ece78efd8e33ceb502"
+    },
+    "records/native/STEPS.jsonl.gz": {
+      "bytes": 247163,
+      "sha256": "af7bc91408c86cc1ba5002f8cde066fefc97e4f9e141c31db84bce28715bdd68",
+      "uncompressed_sha256": "30dd879230fc01daf1c0bff39771dd232ba007b2ab6a32dac7e4ab5c016bf5f9",
+      "uncompressed_bytes": 11751229
+    },
+    "records/replay/CONFIG.json": {
+      "bytes": 135245,
+      "sha256": "f5069e639a57408ac720fe5fb52aac6479f4baf8382424f9b3fc2b37f30cd71b"
+    },
+    "records/replay/RESULT.json": {
+      "bytes": 1797779,
+      "sha256": "66de3e01560194fa22a8fc42568db59b1ae864192df0ec0bc5ea6b2eeeba0423"
+    },
+    "records/replay/STEPS.jsonl.gz": {
+      "bytes": 366152,
+      "sha256": "bacbd22de1e17169ea818f89bbdf42babb491a2ed0f18555b2711ebd7b8c2c0a",
+      "uncompressed_sha256": "c8032ca0072129f378f87d10b7a224fe656cb9977bc2350596ed0fe99b38eb2b",
+      "uncompressed_bytes": 11976893
+    },
+    "records/random/CONFIG.json": {
+      "bytes": 135307,
+      "sha256": "57bc3c80a5f547f45885ceb434fbb084a4dded399c6bbc4c385bc1cbc79fc59a"
+    },
+    "records/random/RESULT.json": {
+      "bytes": 1798180,
+      "sha256": "a5d898e136ba2a39e1f7fa3608391c505d92c55767bbdd310e4e3eb6e7e954db"
+    },
+    "records/random/STEPS.jsonl.gz": {
+      "bytes": 358702,
+      "sha256": "10124367d296c864b3bad10c710cefb80cf5995f7faa9d52f7dd68e091473e35",
+      "uncompressed_sha256": "b4010320df085ad526c4cc7eb5f7a931348006135642d99c595396a3f3ce9e11",
+      "uncompressed_bytes": 11974360
+    },
+    "records/EXPOSURE_SCHEDULE.json": {
+      "bytes": 154228,
+      "sha256": "3e5406dd4d7304446dc349a4eba1b853a677565c21b68f04eb06431c1ea9f154"
+    },
+    "records/execution/router.log": {
+      "bytes": 15923,
+      "sha256": "f9ed81e020c59f7b04f010b6f0bfbeac970ebc8d8a34f0a56daa4136d202d070"
+    },
+    "records/execution/native.log": {
+      "bytes": 11038,
+      "sha256": "cb53eac0105e9c61df557906ae5df57fdd0a579b8885decc17536b2182a68116"
+    },
+    "records/execution/replay.log": {
+      "bytes": 15751,
+      "sha256": "6b809691b6e3d42c99d13640d0cb7133e7785effa0dad3ea96271fa79630f692"
+    },
+    "records/execution/random.log": {
+      "bytes": 15873,
+      "sha256": "ce6c28c8607df6bf351bea6dd800b26ec68ae53113d2b0140e5d5f61add2eea6"
+    },
+    "records/execution/check.log": {
+      "bytes": 536,
+      "sha256": "fcc3e8238bc3d047926b8b2dfa20f4168c1be66c4318e86774aa0f36dbf96703"
+    },
+    "FINAL_CHECKPOINT_REPLAY_CODE.txt": {
+      "bytes": 3415,
+      "sha256": "61dad65b546e72eacfa0833cae043005f069b8fd37827bec38eb1d85d7d613f7"
+    }
+  },
+  "total_bytes": 12651913,
+  "excluded": "Original FewRel examples/token arrays, model/optimizer checkpoints, pretrained model files. All remain local.",
+  "contents": "Generated prediction ledgers, update/intervention observations and sample indices; no example text or token sequences."
+}

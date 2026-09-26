@@ -1,0 +1,77 @@
+"""Read-only final checkpoint native replay; no optimizer or training calls."""
+import gc
+import json
+from pathlib import Path
+import numpy as np
+import torch
+from experiments.gfg_router_v4_ten_task_validation.common import (
+    ROOT, HERE, DATA, ARMS, sha, sources, write, EXCLUDE,
+)
+from experiments.gfg_governor_fewrel_v1.model import RelationModel
+
+
+def main():
+    pre = json.loads((ROOT / 'PREFLIGHT.json').read_text())
+    checks = json.loads((ROOT / 'CHECKS.json').read_text())
+    assert checks['status'] == 'PASS' and sources() == pre['source_hashes']
+    torch.set_num_threads(2)
+    torch.backends.cuda.matmul.allow_tf32 = False
+    torch.backends.cudnn.allow_tf32 = False
+    data = np.load(DATA / 'data.npz')
+    assert sha(DATA / 'data.npz') == pre['data_sha256']
+    ids = np.flatnonzero((data['split'] == 2) & (data['y'] < 80))
+    keep = ~np.isin(ids, EXCLUDE)
+    truth = data['y'][ids]
+    x = torch.from_numpy(data['x'])
+    outputs = {}
+    for arm in ARMS:
+        root = ROOT / 'seed-2021' / arm
+        result = json.loads((root / 'RESULT.json').read_text())
+        expected = result['metrics'][-1]
+        assert expected['task'] == 10 and expected['indices'] == ids.tolist()
+        digest = sha(root / 'final.pt')
+        assert digest == result['final_checkpoint']['sha256']
+        torch.manual_seed(2021)
+        torch.cuda.manual_seed_all(2021)
+        model = RelationModel().cuda()
+        saved = torch.load(root / 'final.pt', map_location='cpu', weights_only=False)
+        assert saved['step'] == 2100 and saved['seen'] == 80
+        model.load_state_dict(saved['model'], strict=True)
+        del saved
+        gc.collect()
+        model.seen = 80
+        model.eval()
+        predictions = []
+        with torch.no_grad():
+            for start in range(0, len(ids), 16):
+                logits = model(x[ids[start:start + 16]].cuda())[0][:, 0, :]
+                predictions.extend(logits.argmax(-1).cpu().tolist())
+        pred = np.array(predictions)
+        mismatches = int((pred != np.array(expected['predictions'])).sum())
+        full_per = {str(g): float(np.mean(pred[truth == g] == g)) for g in range(80)}
+        clean_per = {str(g): float(np.mean(pred[(truth == g) & keep] == g)) for g in range(80)}
+        assert mismatches == 0, (arm, mismatches)
+        assert full_per == expected['original']['per_relation']
+        assert clean_per == expected['primary']['per_relation']
+        assert sha(root / 'final.pt') == digest
+        outputs[arm] = dict(
+            status='PASS', full_test_count=len(ids), primary_test_count=int(keep.sum()),
+            native_prediction_mismatches=mismatches, checkpoint_sha256=digest,
+            original_per_relation=full_per, primary_per_relation=clean_per,
+        )
+        print(arm, 'PASS', len(ids), 'native predictions; zero mismatches', flush=True)
+        del model
+        gc.collect()
+        torch.cuda.empty_cache()
+    assert sources() == pre['source_hashes']
+    report = dict(
+        status='PASS', arms=outputs, data_sha256=pre['data_sha256'],
+        script_sha256=sha(Path(__file__)), checks_sha256=sha(ROOT / 'CHECKS.json'),
+        boundary='Final endpoints only; not independent rerunning of training or intermediate updates.',
+    )
+    write(ROOT / 'FINAL_CHECKPOINT_REPLAY.json', report)
+    write(HERE / 'results' / 'FINAL_CHECKPOINT_REPLAY.json', report)
+
+
+if __name__ == '__main__':
+    main()
