@@ -1,0 +1,8 @@
+{
+  "status": "FAILED",
+  "completed_steps": 0,
+  "reason": "MemoryError: workspace budget cannot fit the minimum exact tile",
+  "raw_result_sha256": "9bf9e3979a99b12733c03e7bf664bfb0a1b27b7d8b75da4ba361b70fa48280d0",
+  "wall": 22.52750319999177,
+  "treatment": "preserved unchanged; separate cache-release-only retry, same scientific settings"
+}

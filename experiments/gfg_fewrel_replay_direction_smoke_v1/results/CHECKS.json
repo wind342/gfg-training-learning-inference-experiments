@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "arms": {
+    "new_governor": {
+      "metrics": [
+        {
+          "offset": 0,
+          "old": 0.9714285714285715,
+          "new": 0.0,
+          "accuracy": 0.4857142857142857
+        },
+        {
+          "offset": 20,
+          "old": 0.9508928571428572,
+          "new": 0.36428571428571427,
+          "accuracy": 0.6575892857142858
+        },
+        {
+          "offset": 40,
+          "old": 0.8758928571428571,
+          "new": 0.7553571428571428,
+          "accuracy": 0.815625
+        },
+        {
+          "offset": 60,
+          "old": 0.7348214285714285,
+          "new": 0.8482142857142858,
+          "accuracy": 0.7915178571428572
+        }
+      ],
+      "resource_retry": null,
+      "posthoc_exclude_inherited_duplicate_7561": [
+        {
+          "offset": 0,
+          "old": 0.9714285714285715,
+          "new": 0.0
+        },
+        {
+          "offset": 20,
+          "old": 0.9508928571428572,
+          "new": 0.36382965056526206
+        },
+        {
+          "offset": 40,
+          "old": 0.8758928571428571,
+          "new": 0.7553507194244604
+        },
+        {
+          "offset": 60,
+          "old": 0.7348214285714285,
+          "new": 0.8482014388489209
+        }
+      ],
+      "wall": 121.08194599999115,
+      "peak_allocated": 6167232512,
+      "full_calls": 4,
+      "alpha_counts": {
+        "1.0": 59,
+        "2.0": 1
+      },
+      "prediction_hits": 640,
+      "prediction_total": 640,
+      "actual_transitions": 4,
+      "predicted_actual_transitions": 4,
+      "original_path_max_endpoint_error": 7.033348083496094e-06,
+      "raw_hashes": {
+        "CONFIG.json": "d2dca0d20cfac9ebf402a5fa2cc4243379e55587240611345f07772bfcc53b10",
+        "RESULT.json": "cf77d2605ebfbba7086ff0cda00f14e50ab3425b613229332ab51584720e3b8a",
+        "STEPS.jsonl": "55bbdae0aaed6a1e440a07666fb488ef4f39ec184d919d1fb575a7fa81e5d850"
+      }
+    },
+    "replay_native": {
+      "metrics": [
+        {
+          "offset": 0,
+          "old": 0.9714285714285715,
+          "new": 0.0,
+          "accuracy": 0.4857142857142857
+        },
+        {
+          "offset": 20,
+          "old": 0.9696428571428571,
+          "new": 0.21964285714285714,
+          "accuracy": 0.5946428571428571
+        },
+        {
+          "offset": 40,
+          "old": 0.9446428571428571,
+          "new": 0.6383928571428572,
+          "accuracy": 0.7915178571428572
+        },
+        {
+          "offset": 60,
+          "old": 0.9339285714285714,
+          "new": 0.7901785714285714,
+          "accuracy": 0.8620535714285714
+        }
+      ],
+      "resource_retry": null,
+      "posthoc_exclude_inherited_duplicate_7561": [
+        {
+          "offset": 0,
+          "old": 0.9714285714285715,
+          "new": 0.0
+        },
+        {
+          "offset": 20,
+          "old": 0.9696428571428571,
+          "new": 0.2197135149023638
+        },
+        {
+          "offset": 40,
+          "old": 0.9446428571428571,
+          "new": 0.6383607399794451
+        },
+        {
+          "offset": 60,
+          "old": 0.9339285714285714,
+          "new": 0.7901657245632066
+        }
+      ],
+      "wall": 85.87320359994192,
+      "peak_allocated": 5753887232,
+      "full_calls": 0,
+      "alpha_counts": {
+        "1.0": 60
+      },
+      "prediction_hits": 0,
+      "prediction_total": 0,
+      "actual_transitions": 0,
+      "predicted_actual_transitions": 0,
+      "original_path_max_endpoint_error": null,
+      "raw_hashes": {
+        "CONFIG.json": "3bd9e5e1a390fd8619baca6fdf0f00082ba6fc474754892bc0be4d974d149da1",
+        "RESULT.json": "5b7a3ded69ed51f0af357acfc8b600353010d0dd61800d9197e534de86d463a8",
+        "STEPS.jsonl": "b971131410e458cfd98717f49f1f46bd10051b203ec68178240e66f2462c2629"
+      }
+    },
+    "replay_governor": {
+      "metrics": [
+        {
+          "offset": 0,
+          "old": 0.9714285714285715,
+          "new": 0.0,
+          "accuracy": 0.4857142857142857
+        },
+        {
+          "offset": 20,
+          "old": 0.9696428571428571,
+          "new": 0.21964285714285714,
+          "accuracy": 0.5946428571428571
+        },
+        {
+          "offset": 40,
+          "old": 0.9446428571428571,
+          "new": 0.6473214285714286,
+          "accuracy": 0.7959821428571429
+        },
+        {
+          "offset": 60,
+          "old": 0.93125,
+          "new": 0.7910714285714286,
+          "accuracy": 0.8611607142857143
+        }
+      ],
+      "resource_retry": {
+        "wrapper_sha256": "735c749922c5f05b0dda9503529e4330b5a367de97c527c24b1a810f1772c04a",
+        "failed_result_sha256": "9bf9e3979a99b12733c03e7bf664bfb0a1b27b7d8b75da4ba361b70fa48280d0",
+        "change": "torch.cuda.empty_cache immediately before full measurement only"
+      },
+      "posthoc_exclude_inherited_duplicate_7561": [
+        {
+          "offset": 0,
+          "old": 0.9714285714285715,
+          "new": 0.0
+        },
+        {
+          "offset": 20,
+          "old": 0.9696428571428571,
+          "new": 0.2197135149023638
+        },
+        {
+          "offset": 40,
+          "old": 0.9446428571428571,
+          "new": 0.6472893114080165
+        },
+        {
+          "offset": 60,
+          "old": 0.93125,
+          "new": 0.7910585817060637
+        }
+      ],
+      "wall": 124.2960723999422,
+      "peak_allocated": 6629484544,
+      "full_calls": 3,
+      "alpha_counts": {
+        "1.0": 59,
+        "2.0": 1
+      },
+      "prediction_hits": 480,
+      "prediction_total": 480,
+      "actual_transitions": 1,
+      "predicted_actual_transitions": 1,
+      "original_path_max_endpoint_error": null,
+      "raw_hashes": {
+        "CONFIG.json": "93a69424475557c2aa3ca0fca4de322be78fd779e3b6704739d56560d23ec601",
+        "RESULT.json": "3c01996d4aed60461df64b52459b5f54ef7641175745f6177558c801ad58d1f9",
+        "STEPS.jsonl": "dd2523091fdd12e26f297359c14c70cd971b71e677a61c84838f95c6a8e1d1f6"
+      }
+    }
+  },
+  "limitations": [
+    "one seed,60 updates; not full continual learning or recovery",
+    "replay adds old training exposure; no equal-total-samples comparison",
+    "existing inherited probe/test duplicate disclosed in parent FewRel results remains unchanged",
+    "checker recomputes logs; no independent full rerun or final checkpoint saved"
+  ]
+}
