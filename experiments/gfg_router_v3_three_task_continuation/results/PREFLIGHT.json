@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "tests": 97,
+  "failures": 0,
+  "errors": 0,
+  "modules": [
+    "gfg_router_v3_three_task_continuation",
+    "gfg_functional_feedback_router_v3",
+    "gfg_functional_feedback_router_v2",
+    "gfg_functional_feedback_router_v1",
+    "gfg_functional_update_governor_v4",
+    "gfg_governor_fewrel_v1"
+  ],
+  "admission": {
+    "status": "PASS",
+    "three_task_gate": true,
+    "base_commit": "62a658ca07060f7be76436b6ba10072233b25456",
+    "authority": "E:\\gfg-evidence\\functional-feedback-router-v3\\CHECKS.json",
+    "authority_sha256": "3458899746ae40b9333abc645e81a95aed000c3820e277cc0abc9fc2611c6308",
+    "smoke_hashes": {
+      "CONFIG.json": "be29f32a50a335a0aeb96fad31ef38bf79e83979c3a591ae923a974b782ee878",
+      "RESULT.json": "7e019ebb9d21e587f9a2fd2b292c0b1b1ce437d3f861ec7cdc193230ef22501f",
+      "STEPS.jsonl": "d0199c8d3e7aa933f0a6647eef02e9fad9f5d1945a5685fa5caf586babe4a354"
+    },
+    "smoke_steps": 60,
+    "rule": "V3 CHECKS authority, completed 60-step records, hashes, routing, gate, dose and metrics rechecked; no policy or efficacy threshold added"
+  },
+  "data_roles": [
+    {
+      "task": 2,
+      "current_count": 3360,
+      "old_groups": 8,
+      "memory_examples": 80,
+      "control_count": 160,
+      "test_count": 2240
+    },
+    {
+      "task": 3,
+      "current_count": 3360,
+      "old_groups": 16,
+      "memory_examples": 160,
+      "control_count": 240,
+      "test_count": 3360
+    }
+  ]
+}
