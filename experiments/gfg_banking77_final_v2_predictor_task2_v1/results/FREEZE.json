@@ -1,0 +1,109 @@
+{
+  "base": "bd7d29815b78c7b048b863a337d67a246d18b5fe",
+  "protocol_sha256": "e5d8642dba391de2fad7125d8c3a91e597b772b30d402240d20ec39cec914b9f",
+  "input_hashes": {
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": "70027872b499d206588001d92c9a30586303145fe601f823ec886a5e0363055d",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": "fe59491617995af995498193b1aa7916e3a0d5fba5d3ccf1fda6087171f0611e",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": "d69fb7e4a05b53b2145ac143c2002bd4ef18d4da7e55d95c5c647ab0905a6b48",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+    "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_210\\task2\\CHECKS.json": "88e936a7997f19e8fd753b31a900da335c0475bdd98bdb48d3f28fd9482e6efb",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": "b80f493410871810dcd2981f4571fad38952cf80e5413f330b3b631c17ac9e31",
+    "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_630\\task2\\CHECKS.json": "2a787b3454ec0e96dce21e65dcc9f13b751d16c2815d7f8a9006e218c771b80f",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\FORMAL_SOURCE_FREEZE.json": "2f1f243b9c24a39f4fabb0313592c68d043e2c5a6ed33445a74f2c9d6bd818e1",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\CHECKS.json": "df29eead365970e7042aae314ac70690a4cdba737730b467a054e2018e2b8113",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\STEPS_210.jsonl.gz": "26605c7eb4795ad161adcf95da4d9706fcd2624957460cc1fae3260d69eff3fb",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\STEPS_630.jsonl.gz": "84dfb4fab57b711fb02c156c581f34f1b0cc0275d90f807d1070c168dc062df8",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\predictive_210\\SEALED.json": "d86f7d2c72d6570bba4f000305d29349d6da35f3eae76b1352ac4b8d48a28db1",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\predictive_630\\SEALED.json": "0e2b050c3a910c28ff7a20aa747a0459673aca4d50ae975bf58d9fb4937615f0",
+    "D:\\codex\\gfg-banking77-nonlinear-v1\\experiments\\gfg_banking77_nonlinear_v1\\common.py": "2b43c6f68396f7e30cc4022c01db8704630667274362e4d9f2bbb66d5ac1f3d1",
+    "D:\\codex\\gfg-banking77-nonlinear-v1\\experiments\\gfg_banking77_nonlinear_v1\\smoke.py": "9841c536fea5c415b1138dfe2edfe7164f80a98278bd74dcc3909b7840c17508",
+    "D:\\codex\\gfg-banking77-nonlinear-v1\\experiments\\gfg_banking77_nonlinear_v1\\train.py": "25ad5109d21136a4cf137cf7c41931205d44020540a8cf99ae8ba406a0959068",
+    "E:\\gfg-models\\bert-base-uncased-v4\\config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+    "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+    "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "sources": {
+    "access.py": "d1e642e6646f52fdf59789604692d2edc19fafe4ca80038bad31bb9acbc2d4a8",
+    "audit.py": "53d7220316e6d9f26ade8fae3bbb21cbee81b8e53428e5b4bebbcc4fdf5b9edf",
+    "common.py": "5d9dbcd273afb0c7df6197cdd1123871f24b7a8a82027e1c5568391c3a067d02",
+    "cutter.py": "336dffa0424ad507a4503bfc17e2ea575c887c52f2bc48f9e86cf402cf125863",
+    "numerics.py": "f4948481513db5e338bc17dae56376ede090102d8ef10fda60cb70b42a00bc87",
+    "predictor.py": "79d5f28f5cd0709fa0bfab1a232d646ce999627a96916fb11d035309f6b8ebfa",
+    "predictor_audit.py": "8efeb23a4e3032abcf1cc748137c16f6a6c13d23913d149d119cad3240803a11",
+    "predictor_smoke.py": "da01bc80b0f350a04d78f5e95012a2117df34f4110710a546fcccacc25592dfb",
+    "preflight.py": "7f6944952237eee3e8a6f6ebde1641062b494529f3cc2fa46025a3cf2183bb72",
+    "report.py": "54a62db26b7874bd9d085df87bdb5e3bdcc21921aabf1ec7895180540c84149f",
+    "run.py": "a3cda96872c9aae5f683d0f9e245c295d2cfb826e332dff5959f2fbf36249378"
+  },
+  "unchanged_v1_ast": {
+    "cutter.py": [
+      "gelu",
+      "gelu_prime",
+      "inner",
+      "Geometry",
+      "ball_hildreth",
+      "select"
+    ],
+    "common.py": [
+      "setup",
+      "model",
+      "optimizer",
+      "params",
+      "cpu",
+      "opt_hash",
+      "opt_steps",
+      "schedule",
+      "load",
+      "native_step",
+      "commit",
+      "functional",
+      "Meter",
+      "Bank",
+      "metrics"
+    ]
+  },
+  "budgets": [
+    210,
+    630
+  ],
+  "scope": "task2 only, no formal continuation",
+  "frozen_utc": "2026-09-27T16:37:39Z",
+  "runtime": {
+    "python": "3.12.10",
+    "torch": "2.13.0+cu130",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "threads": 2,
+    "openblas_threads": 2
+  },
+  "prior_results_known": true,
+  "current_run_test_files_opened": 0,
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_210\\task2\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_630\\task2\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\FORMAL_SOURCE_FREEZE.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\CHECKS.json": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\STEPS_210.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\STEPS_630.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\predictive_210\\SEALED.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\predictive_630\\SEALED.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  }
+}

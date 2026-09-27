@@ -1,0 +1,221 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "calls": 210,
+      "rows": 14700,
+      "margin_mae": 1.5378809299598747e-07,
+      "margin_max_error": 9.5367431640625e-07,
+      "sign_agreement": 1.0,
+      "argmax_agreement": 1.0,
+      "balanced_accuracy": 1.0,
+      "correctness_confusion": [
+        [
+          13495,
+          0
+        ],
+        [
+          0,
+          1205
+        ]
+      ],
+      "transition_order": [
+        "wrong_wrong",
+        "wrong_correct",
+        "correct_wrong",
+        "correct_correct"
+      ],
+      "transition_confusion": [
+        [
+          13437,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          58,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1203
+        ]
+      ],
+      "transition_counts": [
+        13437,
+        2,
+        58,
+        1203
+      ],
+      "transition_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "floor_safe_agreement": 1.0,
+      "predicted_safe_updates": 2,
+      "false_safe_updates": 0,
+      "false_unsafe_updates": 0,
+      "false_safe_per_update": 0.0,
+      "false_safe_given_predicted_safe": 0.0,
+      "accuracy_gate": {
+        "sign": true,
+        "argmax": true,
+        "margin": true,
+        "balanced": true,
+        "correct_wrong": true,
+        "wrong_correct": true,
+        "false_safe_per_update": true
+      },
+      "status": "PASS",
+      "budget": 210,
+      "K": [
+        10,
+        8,
+        9,
+        10,
+        7,
+        7,
+        5
+      ],
+      "distinct_correct_wrong": 58,
+      "predictor_wall": 0.9033372988924384,
+      "predictor_flops": 236826132480,
+      "wall_with_observers": 2.714950199937448,
+      "old_ce_backward_examples": 0,
+      "test_files_opened": 0
+    },
+    {
+      "calls": 630,
+      "rows": 44100,
+      "margin_mae": 3.188382200643319e-07,
+      "margin_max_error": 2.384185791015625e-06,
+      "sign_agreement": 1.0,
+      "argmax_agreement": 1.0,
+      "balanced_accuracy": 1.0,
+      "correctness_confusion": [
+        [
+          41056,
+          0
+        ],
+        [
+          0,
+          3044
+        ]
+      ],
+      "transition_order": [
+        "wrong_wrong",
+        "wrong_correct",
+        "correct_wrong",
+        "correct_correct"
+      ],
+      "transition_confusion": [
+        [
+          40999,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          57,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3044
+        ]
+      ],
+      "transition_counts": [
+        40999,
+        0,
+        57,
+        3044
+      ],
+      "transition_recall": [
+        1.0,
+        null,
+        1.0,
+        1.0
+      ],
+      "floor_safe_agreement": 1.0,
+      "predicted_safe_updates": 12,
+      "false_safe_updates": 0,
+      "false_unsafe_updates": 0,
+      "false_safe_per_update": 0.0,
+      "false_safe_given_predicted_safe": 0.0,
+      "accuracy_gate": {
+        "sign": true,
+        "argmax": true,
+        "margin": true,
+        "balanced": true,
+        "correct_wrong": true,
+        "wrong_correct": true,
+        "false_safe_per_update": true
+      },
+      "status": "PASS",
+      "budget": 630,
+      "K": [
+        10,
+        8,
+        9,
+        9,
+        3,
+        9,
+        9
+      ],
+      "distinct_correct_wrong": 57,
+      "predictor_wall": 2.2189321001060307,
+      "predictor_flops": 710478397440,
+      "wall_with_observers": 8.093996300012805,
+      "old_ce_backward_examples": 0,
+      "test_files_opened": 0
+    }
+  ],
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_210\\task2\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_630\\task2\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\FORMAL_SOURCE_FREEZE.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\STEPS_210.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\STEPS_630.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\predictive_210\\SEALED.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\predictive_630\\SEALED.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  },
+  "scope": "Native-only trajectories; controlled trajectories separately measured."
+}

@@ -1,0 +1,142 @@
+{
+  "source": "D:\\codex\\gfg-banking77-nonlinear-v1\\experiments\\gfg_banking77_nonlinear_v1",
+  "verified_sources": {
+    "common.py": "2b43c6f68396f7e30cc4022c01db8704630667274362e4d9f2bbb66d5ac1f3d1",
+    "smoke.py": "9841c536fea5c415b1138dfe2edfe7164f80a98278bd74dcc3909b7840c17508",
+    "train.py": "25ad5109d21136a4cf137cf7c41931205d44020540a8cf99ae8ba406a0959068"
+  },
+  "predict_source": "def predict(self,params,delta):\n        z=[];one=[];two=[]\n        for k in range(0,self.padded,256):\n            x=self.x[k:k+256]\n            fn=lambda p:functional(p,x)\n            f0,f1=torch.func.jvp(fn,(params,),(delta,))\n            _,f2=torch.func.jvp(lambda p:torch.func.jvp(fn,(p,),(delta,))[1],(params,),(delta,))\n            z.append(f0);one.append(f1);two.append(f2)\n        return tuple(torch.cat(a)[:self.n].detach() for a in (z,one,two))",
+  "historical_alpha1_metrics": {
+    "210": {
+      "n": 14700,
+      "sign_agreement": 1.0,
+      "argmax_agreement": 1.0,
+      "margin_mae": 1.5378809299598747e-07,
+      "correctness_confusion": [
+        [
+          13495,
+          0
+        ],
+        [
+          0,
+          1205
+        ]
+      ],
+      "balanced_accuracy": 1.0,
+      "transition_confusion_order": [
+        "wrong_wrong",
+        "wrong_correct",
+        "correct_wrong",
+        "correct_correct"
+      ],
+      "transition_confusion": [
+        [
+          13437,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          58,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1203
+        ]
+      ],
+      "transition_counts": [
+        13437,
+        2,
+        58,
+        1203
+      ],
+      "transition_recall": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "false_safe_controls": 0,
+      "predicted_safe_endpoints": 2,
+      "false_safe_endpoints": 0,
+      "false_safe_endpoint_rate": 0.0
+    },
+    "630": {
+      "n": 44100,
+      "sign_agreement": 1.0,
+      "argmax_agreement": 1.0,
+      "margin_mae": 3.188382200643319e-07,
+      "correctness_confusion": [
+        [
+          41056,
+          0
+        ],
+        [
+          0,
+          3044
+        ]
+      ],
+      "balanced_accuracy": 1.0,
+      "transition_confusion_order": [
+        "wrong_wrong",
+        "wrong_correct",
+        "correct_wrong",
+        "correct_correct"
+      ],
+      "transition_confusion": [
+        [
+          40999,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          57,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3044
+        ]
+      ],
+      "transition_counts": [
+        40999,
+        0,
+        57,
+        3044
+      ],
+      "transition_recall": [
+        1.0,
+        null,
+        1.0,
+        1.0
+      ],
+      "false_safe_controls": 0,
+      "predicted_safe_endpoints": 12,
+      "false_safe_endpoints": 0,
+      "false_safe_endpoint_rate": 0.0
+    }
+  },
+  "definition": "f0 + Df[delta] + .5 D2f[delta,delta]; delta = native-before; MLP only"
+}

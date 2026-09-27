@@ -1,0 +1,35 @@
+{
+  "scope": "Post-training read-only trajectory comparison. Not used for training or parameter selection.",
+  "results": [
+    {
+      "budget": 210,
+      "old_source": "E:\\gfg-evidence\\banking77-v2-cap-recheck-smoke-v1\\budget210\\STEPS.jsonl.gz",
+      "old_source_sha256": "b60461d47ef71d0901dfec3eaeef7cb87d3eb3cd5682d8b81a2b8e3082c71d85",
+      "old_input_read_only": true,
+      "identical_updates": {
+        "before_sha256": 210,
+        "native_sha256": 210,
+        "executed_sha256": 210,
+        "moments_sha256": 210,
+        "endpoint_sha256": 210,
+        "selection_sequence": 210,
+        "solver_sequence": 210
+      }
+    },
+    {
+      "budget": 630,
+      "old_source": "E:\\gfg-evidence\\banking77-v2-cap-recheck-smoke-v1\\budget630\\STEPS.jsonl.gz",
+      "old_source_sha256": "0f43b87dd34d453922047ab0947412f4ae0d357fba0290b15cdb4affbf68994a",
+      "old_input_read_only": true,
+      "identical_updates": {
+        "before_sha256": 630,
+        "native_sha256": 630,
+        "executed_sha256": 630,
+        "moments_sha256": 630,
+        "endpoint_sha256": 630,
+        "selection_sequence": 630,
+        "solver_sequence": 630
+      }
+    }
+  ]
+}

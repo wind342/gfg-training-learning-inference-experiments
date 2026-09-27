@@ -1,0 +1,85 @@
+{
+  "authority": "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1",
+  "files": {
+    "AUDIT.json": {
+      "sha256": "3677d7d674799e9fe3698205e4d6e866c1b98dd513c4a58ffe5c0682c0c966ab",
+      "bytes": 3839
+    },
+    "AUDIT_STEPS_210.jsonl.gz": {
+      "sha256": "76c450a2d2f967a9dfb42c88485a0b008086bf23260a1cacf8f4c4d3f2bce1e8",
+      "bytes": 26531
+    },
+    "AUDIT_STEPS_630.jsonl.gz": {
+      "sha256": "4efa7e8c8e55bbb76cdf96475844f1532f56d610e08b4a5e9dd1a4f0a766944c",
+      "bytes": 78199
+    },
+    "FINAL.json": {
+      "sha256": "ca065d9d50d4007286c2b7d185404176ab6d2316e469f215cc7c54110539a09a",
+      "bytes": 2006
+    },
+    "FREEZE.json": {
+      "sha256": "d08544b8afbb14fa44ffe5bd0c89fafca2e2cb9caab3e2a1f20e648e5f1c956b",
+      "bytes": 6779
+    },
+    "NUMERICS.json": {
+      "sha256": "63e77bcc878424932f6e19a298bb9b0662b35e0678ee679a39b884f106f7e876",
+      "bytes": 1815
+    },
+    "PREDICTOR_AUTHORITY.json": {
+      "sha256": "42221e2f9b333a9c482294f017151d9a0aaa7dbc0a6813c78eb1b38118b60d45",
+      "bytes": 3217
+    },
+    "PREDICTOR_GUARD_SYNTHETIC.json": {
+      "sha256": "f943f5ff81d94bbc5b4fba3f11ec5722cdcb36416ad89d75e143f1d8d9980dc1",
+      "bytes": 1894
+    },
+    "PREDICTOR_NATIVE_210.jsonl.gz": {
+      "sha256": "537bddd64b8e9dd6f4f69f6f49e1cda3aac558b3c93b746f18ebe1c321134a92",
+      "bytes": 74954
+    },
+    "PREDICTOR_NATIVE_630.jsonl.gz": {
+      "sha256": "8a80d5c17892d43b1ed1f7cfc1f3039e4055fa8ef94035d0abea3c510b512a87",
+      "bytes": 222465
+    },
+    "PREDICTOR_SMOKE.json": {
+      "sha256": "5ae80846304edb508f77ea5477bf2b9229f477979766e2e7d1ac1e1845863815",
+      "bytes": 5555
+    },
+    "PREVIOUS_CAP_COMPARISON.json": {
+      "sha256": "bea08c9134354f2ee6f400c7ae9e7cb6605e3c5e63bdac5d955991aae1655e5a",
+      "bytes": 1210
+    },
+    "RUN_START.json": {
+      "sha256": "7bec3ab5a9b2a0028c292cf0337281870c8dcb2775afb917859f9c4748ed44b2",
+      "bytes": 1034
+    },
+    "SMOKE.json": {
+      "sha256": "63334cbcef55b5e71ccfc55849ab18679946a88c6f86d1157599a3a9fea55338",
+      "bytes": 16912
+    },
+    "budget210/CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "budget210/CHECKS.json": {
+      "sha256": "a4fa911fec5e06f5b7c754c34087b9dfee7d13a57dc56820d6e8170e1d4263cc",
+      "bytes": 6558
+    },
+    "budget210/STEPS.jsonl.gz": {
+      "sha256": "9d7491d53d25c729d9a3ffd6146a9044ff7b4d8f59d6a1520d6338df18057e02",
+      "bytes": 323954
+    },
+    "budget630/CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "budget630/CHECKS.json": {
+      "sha256": "e900790d8b069f3a206427b8d85581ab3f1ccd9dddf8dbe3beec7292233cfc7c",
+      "bytes": 6451
+    },
+    "budget630/STEPS.jsonl.gz": {
+      "sha256": "82e2d8541850eb0ed2ebf0de137bb574b282a19a278cf73a682e79568926b6e1",
+      "bytes": 721928
+    }
+  }
+}

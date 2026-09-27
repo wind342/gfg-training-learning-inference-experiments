@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "false_safe_exact_recheck_routes_to_actual_cutter": true,
+  "false_unsafe_actual_safe_native_commits_unchanged": true,
+  "synthetic_only": true,
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_210\\task2\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_630\\task2\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\FORMAL_SOURCE_FREEZE.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\STEPS_210.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\smoke_predictor\\STEPS_630.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\predictive_210\\SEALED.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\predictive_630\\SEALED.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  }
+}
