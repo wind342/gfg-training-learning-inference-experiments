@@ -1,0 +1,42 @@
+{
+  "order": [
+    "full",
+    "v3",
+    "v2"
+  ],
+  "single_measurement_not_best_of": true,
+  "methods": {
+    "full": {
+      "kind": "full",
+      "steps": 210,
+      "setup_wall": 9.699957445263863e-06,
+      "common_update_wall": 0.8480941001325846,
+      "control_wall": 58.80051899922546,
+      "algorithm_wall": 59.64862279931549
+    },
+    "v3": {
+      "kind": "v3",
+      "steps": 210,
+      "setup_wall": 0.09776969999074936,
+      "common_update_wall": 0.7840854991227388,
+      "control_wall": 63.15723469981458,
+      "algorithm_wall": 64.03908989892807,
+      "exact_old_rows": 5873707,
+      "padded_rows": 6600192,
+      "gemm_calls": 25782,
+      "additional_refresh_forward_rows": 0,
+      "cache_refresh_rows": 5873707
+    },
+    "v2": {
+      "kind": "v2",
+      "steps": 210,
+      "setup_wall": 0.14333680004347116,
+      "common_update_wall": 0.49467200064100325,
+      "control_wall": 57.37853629945312,
+      "algorithm_wall": 58.01654510013759
+    }
+  },
+  "v3_speedup_vs_full": 0.9314408261182039,
+  "v3_speedup_vs_v2": 0.9059551781842032,
+  "note": "Separate deterministic replays, matched state trajectory, all hashes checked outside timing. No profiling events or full observer in v3 runtime. One measurement per path; no confidence interval."
+}

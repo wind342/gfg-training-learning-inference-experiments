@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "authority": "E:\\gfg-evidence\\final-v2-safe-screening-v3",
+  "public_files": {
+    "NUMERICAL_PREFLIGHT.json": {
+      "sha256": "a8e01fbf05ccbac138ffb9f8a1307206c71a6e53e5b57396d345db3b51e9fb56",
+      "bytes": 201
+    },
+    "PREFLIGHT.json": {
+      "sha256": "12b408fb19f63b403adb414236ab2c8db4d182e5eb2aa37065d5473ea0c3ba65",
+      "bytes": 146278
+    },
+    "CONFIG.json": {
+      "sha256": "84e86e6bf192106c2dbc0ce4f872a5dd1e8166b07f57fa306ce3ccca64b1ddae",
+      "bytes": 120732
+    },
+    "CALLS.jsonl.gz": {
+      "sha256": "8663a9604ddf06d7098b2ac4950dc71d9a8049e5174b577527d326d6c63105a5",
+      "bytes": 146213
+    },
+    "STEPS.jsonl.gz": {
+      "sha256": "37f89ed856842d505fb8cd2b5c421b26b924be577c37efbf47e32d8e99d2d977",
+      "bytes": 1689977
+    },
+    "TRAINING_COMPLETE.json": {
+      "sha256": "ddbde342bcc1e85afb4819d862f9eab24578f55587a6408cf8fe18de5f333abf",
+      "bytes": 181
+    },
+    "RESULTS.json": {
+      "sha256": "733c1fa2945b137d999ea9b19bdfef9a934f91f0a5054beb4ecea8fb9f26e103",
+      "bytes": 4373
+    },
+    "EVALUATION.json": {
+      "sha256": "da61b688118216955bade92a692e8b2d2136b281ce7ae9799b6b042d9b479cf6",
+      "bytes": 234755
+    },
+    "STANDALONE_full.json": {
+      "sha256": "618a4ae45b6d9ab8131e4133b382e9d5836ecb360f54221bdadf7d2461d19177",
+      "bytes": 57576
+    },
+    "STANDALONE_v3.json": {
+      "sha256": "0eb7f293e65b732c6bc4036fbc293bbd30c852c27cc1eefb3169212c38362cdc",
+      "bytes": 57720
+    },
+    "STANDALONE_v2.json": {
+      "sha256": "d9f8185b0c745cb98887f847f14c69592b87de810e69c6f6a501a4f831f3321e",
+      "bytes": 57583
+    },
+    "BENCHMARK.json": {
+      "sha256": "aa120227af4156e00a756f40eed91a469f2e02a9248a1d94943f939b2bc3e509",
+      "bytes": 1318
+    },
+    "PROFILE.json": {
+      "sha256": "f26199f49169121500abea8a3778836da744f979dcc0556645274a58b72b57f1",
+      "bytes": 21020
+    },
+    "CHECKS.json": {
+      "sha256": "a0ebb1174a1901417fc56d3c3387c6b6f4f7a0f0d8b6fcd17611213e2a1d54d0",
+      "bytes": 597
+    },
+    "WORK_ANALYSIS.json": {
+      "sha256": "36e9af2441957f6a608fc10ae51645375e96a483243e6580b3d078e933db0fdc",
+      "bytes": 1335
+    }
+  },
+  "external_checkpoint": {
+    "path": "E:\\gfg-evidence\\final-v2-safe-screening-v3\\CHECKPOINT.pt",
+    "sha256": "105df03870a9f53730c6364efe0fb0ce91eda26ec77c3342b0299d1aaebb1786",
+    "bytes": 1478925
+  },
+  "diagnostic_sources": {
+    "diagnostics/package.py": "b9a39d6b25397274aafa8c8b33345d44bc35504b34e51f4cb063be49c3e8f3ee",
+    "diagnostics/verify_benchmark.py": "f572f6cc42e72c90c0e065e4ec942164eae8e27eebe4b86a0e2fefdd9cfecb4b"
+  }
+}

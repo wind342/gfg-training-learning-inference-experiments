@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "candidate_observer_calls": 2152,
+  "false_safe": 0,
+  "floor_violations": 0,
+  "independently_replayed_full_reference_steps": 210,
+  "standalone_v2_steps": 210,
+  "standalone_v3_steps": 210,
+  "all_head_and_optimizer_moments_identical": true,
+  "deficits_and_control_decisions_identical": true,
+  "final_test_recomputed": true,
+  "old_v2_test_predictions_identical": true,
+  "cached_count_semantics": "safe relations lower bounds only; full counts independently observed",
+  "inputs_and_frozen_sources_unchanged": true,
+  "old_experiments_unchanged": true
+}

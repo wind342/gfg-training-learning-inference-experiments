@@ -1,0 +1,639 @@
+{
+  "profiled_steps": 30,
+  "kind": "v3",
+  "profiling_overhead_not_used_for_speed": true,
+  "top_self": [
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_hildreth_roundoff_smoke_v1\\core.py",
+      "line": 36,
+      "name": "logit_roundoff_budgets",
+      "primitive_calls": 30,
+      "total_calls": 30,
+      "self_seconds": 1.3083291000000001,
+      "cumulative_seconds": 1.3466728000000001
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v1\\core.py",
+      "line": 131,
+      "name": "screened_projection",
+      "primitive_calls": 30,
+      "total_calls": 30,
+      "self_seconds": 1.0927148,
+      "cumulative_seconds": 6.5417757000000005
+    },
+    {
+      "file": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\lib\\_shape_base_impl.py",
+      "line": 625,
+      "name": "column_stack",
+      "primitive_calls": 30,
+      "total_calls": 30,
+      "self_seconds": 0.7471423,
+      "cumulative_seconds": 0.7472524
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'astype' of 'numpy.ndarray' objects>",
+      "primitive_calls": 210,
+      "total_calls": 210,
+      "self_seconds": 0.6265113,
+      "cumulative_seconds": 0.6265113
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'cpu' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 788,
+      "total_calls": 788,
+      "self_seconds": 0.5794599,
+      "cumulative_seconds": 0.5794599
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v3\\core.py",
+      "line": 120,
+      "name": "execute",
+      "primitive_calls": 394,
+      "total_calls": 394,
+      "self_seconds": 0.5490427,
+      "cumulative_seconds": 0.8792665000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'reduce' of 'numpy.ufunc' objects>",
+      "primitive_calls": 3030,
+      "total_calls": 3030,
+      "self_seconds": 0.24682920000000003,
+      "cumulative_seconds": 0.24682920000000003
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v3\\core.py",
+      "line": 109,
+      "name": "evaluate",
+      "primitive_calls": 197,
+      "total_calls": 197,
+      "self_seconds": 0.1863137,
+      "cumulative_seconds": 1.450452
+    },
+    {
+      "file": "E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\utils\\_contextlib.py",
+      "line": 120,
+      "name": "decorate_context",
+      "primitive_calls": 60,
+      "total_calls": 925,
+      "self_seconds": 0.1625733,
+      "cumulative_seconds": 6.905062900000001
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_hildreth_roundoff_smoke_v1\\core.py",
+      "line": 43,
+      "name": "coordinate",
+      "primitive_calls": 25129,
+      "total_calls": 25129,
+      "self_seconds": 0.1551239,
+      "cumulative_seconds": 0.1619065
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method _hashlib.openssl_sha256>",
+      "primitive_calls": 244,
+      "total_calls": 244,
+      "self_seconds": 0.15360900000000002,
+      "cumulative_seconds": 0.15360900000000002
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v3\\core.py",
+      "line": 81,
+      "name": "certificate",
+      "primitive_calls": 197,
+      "total_calls": 197,
+      "self_seconds": 0.1197107,
+      "cumulative_seconds": 0.2800725
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.nonzero>",
+      "primitive_calls": 501,
+      "total_calls": 501,
+      "self_seconds": 0.0779234,
+      "cumulative_seconds": 0.0779234
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v1\\core.py",
+      "line": 150,
+      "name": "add",
+      "primitive_calls": 107,
+      "total_calls": 107,
+      "self_seconds": 0.07270710000000001,
+      "cumulative_seconds": 0.2376715
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch._C._nn.linear>",
+      "primitive_calls": 2385,
+      "total_calls": 2385,
+      "self_seconds": 0.07036160000000001,
+      "cumulative_seconds": 0.07036160000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'to' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 214,
+      "total_calls": 214,
+      "self_seconds": 0.056567400000000004,
+      "cumulative_seconds": 0.056567400000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'new_zeros' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 2779,
+      "total_calls": 2779,
+      "self_seconds": 0.041192,
+      "cumulative_seconds": 0.041192
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v2\\core.py",
+      "line": 12,
+      "name": "fixed_affine",
+      "primitive_calls": 394,
+      "total_calls": 394,
+      "self_seconds": 0.0401602,
+      "cumulative_seconds": 0.19227570000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'tobytes' of 'numpy.ndarray' objects>",
+      "primitive_calls": 244,
+      "total_calls": 244,
+      "self_seconds": 0.0385181,
+      "cumulative_seconds": 0.0385181
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'new_tensor' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 196,
+      "total_calls": 196,
+      "self_seconds": 0.037709400000000004,
+      "cumulative_seconds": 0.037709400000000004
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v1\\core.py",
+      "line": 115,
+      "name": "select",
+      "primitive_calls": 137,
+      "total_calls": 137,
+      "self_seconds": 0.0375066,
+      "cumulative_seconds": 0.13131230000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'copy_' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 2659,
+      "total_calls": 2659,
+      "self_seconds": 0.036651300000000005,
+      "cumulative_seconds": 0.036651300000000005
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v1\\core.py",
+      "line": 126,
+      "name": "<lambda>",
+      "primitive_calls": 86796,
+      "total_calls": 86796,
+      "self_seconds": 0.029907100000000002,
+      "cumulative_seconds": 0.029907100000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.sorted>",
+      "primitive_calls": 3368,
+      "total_calls": 3368,
+      "self_seconds": 0.0269724,
+      "cumulative_seconds": 0.056879500000000006
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'clone' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 1259,
+      "total_calls": 1259,
+      "self_seconds": 0.025660600000000002,
+      "cumulative_seconds": 0.025660600000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'abs' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 1576,
+      "total_calls": 1576,
+      "self_seconds": 0.0244042,
+      "cumulative_seconds": 0.0244042
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.nextafter>",
+      "primitive_calls": 1572,
+      "total_calls": 1572,
+      "self_seconds": 0.0218465,
+      "cumulative_seconds": 0.0218465
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.full_like>",
+      "primitive_calls": 1376,
+      "total_calls": 1376,
+      "self_seconds": 0.021356,
+      "cumulative_seconds": 0.021356
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.cat>",
+      "primitive_calls": 985,
+      "total_calls": 985,
+      "self_seconds": 0.0207041,
+      "cumulative_seconds": 0.0207041
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.isfinite>",
+      "primitive_calls": 394,
+      "total_calls": 394,
+      "self_seconds": 0.0205013,
+      "cumulative_seconds": 0.0205013
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'double' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 895,
+      "total_calls": 895,
+      "self_seconds": 0.0180063,
+      "cumulative_seconds": 0.0180063
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_hildreth_roundoff_smoke_v1\\core.py",
+      "line": 32,
+      "name": "augmented",
+      "primitive_calls": 90,
+      "total_calls": 90,
+      "self_seconds": 0.014457900000000001,
+      "cumulative_seconds": 0.0535206
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_exact_monitor_smoke_v1\\core.py",
+      "line": 77,
+      "name": "margins",
+      "primitive_calls": 394,
+      "total_calls": 394,
+      "self_seconds": 0.0144267,
+      "cumulative_seconds": 0.042688500000000004
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_hildreth_roundoff_smoke_v1\\core.py",
+      "line": 57,
+      "name": "failing_pairs",
+      "primitive_calls": 107,
+      "total_calls": 107,
+      "self_seconds": 0.0130527,
+      "cumulative_seconds": 0.0633055
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'scatter_add_' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 591,
+      "total_calls": 591,
+      "self_seconds": 0.0112644,
+      "cumulative_seconds": 0.0112644
+    }
+  ],
+  "top_cumulative": [
+    {
+      "file": "E:\\gfg-python\\torch-cu130\\Lib\\site-packages\\torch\\utils\\_contextlib.py",
+      "line": 120,
+      "name": "decorate_context",
+      "primitive_calls": 60,
+      "total_calls": 925,
+      "self_seconds": 0.1625733,
+      "cumulative_seconds": 6.905062900000001
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v1\\core.py",
+      "line": 131,
+      "name": "screened_projection",
+      "primitive_calls": 30,
+      "total_calls": 30,
+      "self_seconds": 1.0927148,
+      "cumulative_seconds": 6.5417757000000005
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v3\\core.py",
+      "line": 109,
+      "name": "evaluate",
+      "primitive_calls": 197,
+      "total_calls": 197,
+      "self_seconds": 0.1863137,
+      "cumulative_seconds": 1.450452
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_hildreth_roundoff_smoke_v1\\core.py",
+      "line": 36,
+      "name": "logit_roundoff_budgets",
+      "primitive_calls": 30,
+      "total_calls": 30,
+      "self_seconds": 1.3083291000000001,
+      "cumulative_seconds": 1.3466728000000001
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v3\\diagnostics\\verify_benchmark.py",
+      "line": 48,
+      "name": "<lambda>",
+      "primitive_calls": 167,
+      "total_calls": 167,
+      "self_seconds": 0.00022050000000000002,
+      "cumulative_seconds": 1.2456274
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v3\\core.py",
+      "line": 120,
+      "name": "execute",
+      "primitive_calls": 394,
+      "total_calls": 394,
+      "self_seconds": 0.5490427,
+      "cumulative_seconds": 0.8792665000000001
+    },
+    {
+      "file": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\lib\\_shape_base_impl.py",
+      "line": 625,
+      "name": "column_stack",
+      "primitive_calls": 30,
+      "total_calls": 30,
+      "self_seconds": 0.7471423,
+      "cumulative_seconds": 0.7472524
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'astype' of 'numpy.ndarray' objects>",
+      "primitive_calls": 210,
+      "total_calls": 210,
+      "self_seconds": 0.6265113,
+      "cumulative_seconds": 0.6265113
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'cpu' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 788,
+      "total_calls": 788,
+      "self_seconds": 0.5794599,
+      "cumulative_seconds": 0.5794599
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v3\\core.py",
+      "line": 81,
+      "name": "certificate",
+      "primitive_calls": 197,
+      "total_calls": 197,
+      "self_seconds": 0.1197107,
+      "cumulative_seconds": 0.2800725
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'reduce' of 'numpy.ufunc' objects>",
+      "primitive_calls": 3030,
+      "total_calls": 3030,
+      "self_seconds": 0.24682920000000003,
+      "cumulative_seconds": 0.24682920000000003
+    },
+    {
+      "file": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py",
+      "line": 2304,
+      "name": "sum",
+      "primitive_calls": 30,
+      "total_calls": 30,
+      "self_seconds": 0.0002333,
+      "cumulative_seconds": 0.24129080000000003
+    },
+    {
+      "file": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py",
+      "line": 66,
+      "name": "_wrapreduction",
+      "primitive_calls": 30,
+      "total_calls": 30,
+      "self_seconds": 0.00028030000000000004,
+      "cumulative_seconds": 0.24101240000000002
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v1\\core.py",
+      "line": 150,
+      "name": "add",
+      "primitive_calls": 107,
+      "total_calls": 107,
+      "self_seconds": 0.07270710000000001,
+      "cumulative_seconds": 0.2376715
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_hildreth_roundoff_smoke_v1\\core.py",
+      "line": 30,
+      "name": "array_hash",
+      "primitive_calls": 244,
+      "total_calls": 244,
+      "self_seconds": 0.007176200000000001,
+      "cumulative_seconds": 0.200321
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v2\\core.py",
+      "line": 12,
+      "name": "fixed_affine",
+      "primitive_calls": 394,
+      "total_calls": 394,
+      "self_seconds": 0.0401602,
+      "cumulative_seconds": 0.19227570000000002
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_hildreth_roundoff_smoke_v1\\core.py",
+      "line": 43,
+      "name": "coordinate",
+      "primitive_calls": 25129,
+      "total_calls": 25129,
+      "self_seconds": 0.1551239,
+      "cumulative_seconds": 0.1619065
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method _hashlib.openssl_sha256>",
+      "primitive_calls": 244,
+      "total_calls": 244,
+      "self_seconds": 0.15360900000000002,
+      "cumulative_seconds": 0.15360900000000002
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v1\\core.py",
+      "line": 115,
+      "name": "select",
+      "primitive_calls": 137,
+      "total_calls": 137,
+      "self_seconds": 0.0375066,
+      "cumulative_seconds": 0.13131230000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch.nonzero>",
+      "primitive_calls": 501,
+      "total_calls": 501,
+      "self_seconds": 0.0779234,
+      "cumulative_seconds": 0.0779234
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_hildreth_roundoff_smoke_v1\\core.py",
+      "line": 50,
+      "name": "materialize",
+      "primitive_calls": 107,
+      "total_calls": 107,
+      "self_seconds": 0.004608500000000001,
+      "cumulative_seconds": 0.0734555
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method torch._C._nn.linear>",
+      "primitive_calls": 2385,
+      "total_calls": 2385,
+      "self_seconds": 0.07036160000000001,
+      "cumulative_seconds": 0.07036160000000001
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_hildreth_roundoff_smoke_v1\\core.py",
+      "line": 57,
+      "name": "failing_pairs",
+      "primitive_calls": 107,
+      "total_calls": 107,
+      "self_seconds": 0.0130527,
+      "cumulative_seconds": 0.0633055
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.sorted>",
+      "primitive_calls": 3368,
+      "total_calls": 3368,
+      "self_seconds": 0.0269724,
+      "cumulative_seconds": 0.056879500000000006
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'to' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 214,
+      "total_calls": 214,
+      "self_seconds": 0.056567400000000004,
+      "cumulative_seconds": 0.056567400000000004
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_hildreth_roundoff_smoke_v1\\core.py",
+      "line": 32,
+      "name": "augmented",
+      "primitive_calls": 90,
+      "total_calls": 90,
+      "self_seconds": 0.014457900000000001,
+      "cumulative_seconds": 0.0535206
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_head_only_exact_monitor_smoke_v1\\core.py",
+      "line": 77,
+      "name": "margins",
+      "primitive_calls": 394,
+      "total_calls": 394,
+      "self_seconds": 0.0144267,
+      "cumulative_seconds": 0.042688500000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'new_zeros' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 2779,
+      "total_calls": 2779,
+      "self_seconds": 0.041192,
+      "cumulative_seconds": 0.041192
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v3\\core.py",
+      "line": 78,
+      "name": "relation_counts",
+      "primitive_calls": 591,
+      "total_calls": 591,
+      "self_seconds": 0.009278400000000001,
+      "cumulative_seconds": 0.0410036
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'tobytes' of 'numpy.ndarray' objects>",
+      "primitive_calls": 244,
+      "total_calls": 244,
+      "self_seconds": 0.0385181,
+      "cumulative_seconds": 0.0385181
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'new_tensor' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 196,
+      "total_calls": 196,
+      "self_seconds": 0.037709400000000004,
+      "cumulative_seconds": 0.037709400000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'copy_' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 2659,
+      "total_calls": 2659,
+      "self_seconds": 0.036651300000000005,
+      "cumulative_seconds": 0.036651300000000005
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v1\\core.py",
+      "line": 126,
+      "name": "<lambda>",
+      "primitive_calls": 86796,
+      "total_calls": 86796,
+      "self_seconds": 0.029907100000000002,
+      "cumulative_seconds": 0.029907100000000002
+    },
+    {
+      "file": "D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_safe_screening_v1\\core.py",
+      "line": 21,
+      "name": "upper_norm",
+      "primitive_calls": 393,
+      "total_calls": 393,
+      "self_seconds": 0.0086452,
+      "cumulative_seconds": 0.0287198
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'clone' of 'torch._C.TensorBase' objects>",
+      "primitive_calls": 1259,
+      "total_calls": 1259,
+      "self_seconds": 0.025660600000000002,
+      "cumulative_seconds": 0.025660600000000002
+    }
+  ]
+}
