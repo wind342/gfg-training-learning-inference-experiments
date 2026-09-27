@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "status": "PASS",
+      "budget": 210,
+      "all_records_identical": true,
+      "checkpoint_model_optimizer_identical": true
+    },
+    {
+      "status": "PASS",
+      "budget": 630,
+      "all_records_identical": true,
+      "checkpoint_model_optimizer_identical": true
+    }
+  ],
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\STEPS.jsonl.gz": 2,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\STEPS.jsonl.gz": 2,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\CHECKPOINT.pt": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  }
+}

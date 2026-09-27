@@ -1,0 +1,96 @@
+{
+  "base": "90ca7497789b29041dd19dc3005dd67b4ce3904e",
+  "protocol_sha256": "d4bc64b3acc47697f6776740366096b7d7b240b93aa548a89e948587e05b1dec",
+  "input_hashes": {
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": "70027872b499d206588001d92c9a30586303145fe601f823ec886a5e0363055d",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": "fe59491617995af995498193b1aa7916e3a0d5fba5d3ccf1fda6087171f0611e",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": "d69fb7e4a05b53b2145ac143c2002bd4ef18d4da7e55d95c5c647ab0905a6b48",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": "63e77bcc878424932f6e19a298bb9b0662b35e0678ee679a39b884f106f7e876",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+    "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\CHECKS.json": "841d7d24f7202e7abee93f7cbd0261896f9e73f03a001154494218a8607c632f",
+    "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\STEPS.jsonl.gz": "8b8949c8af4465b95ab57f40e2ea2c9ce7dff42ff2a45a6a2195d5b45fe9345c",
+    "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\CHECKPOINT.pt": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": "b80f493410871810dcd2981f4571fad38952cf80e5413f330b3b631c17ac9e31",
+    "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\CHECKS.json": "9b36e19907d67f37cfd5bfa4b80ee957e2c6d680b3ca61c240f1ea9d1669a940",
+    "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\STEPS.jsonl.gz": "c4e8d4254ac2680d6fd1527015c81a3ca6eed2b6768f13d49739e4ec504d29f9",
+    "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\CHECKPOINT.pt": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+    "E:\\gfg-models\\bert-base-uncased-v4\\config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+    "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+    "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "sources": {
+    "access.py": "bc3188af5c9ce2d04cf98713e80e42b4e3f6ad2f8a9d1acd855d997bb1eb0914",
+    "audit.py": "f28d2b24c1af40041b44be7dbf4e83aee944a059680def66bce1e05bbb5f4bdd",
+    "benchmark.py": "18a3ef482737dd517e959635666deaeb43f420bf216f766c5385a4a5e7d4f998",
+    "common.py": "4eb0afcd4e8c35c8c1ed51b2356a4fde3ed407ed2086f9a6783b8f686475d13e",
+    "compare.py": "56a476b21d5a42f95dec44984292550783934fc8dc46ccea32f8af47bfd1d515",
+    "cutter.py": "889d0367f8213283ef59f13a5bc2b6eb48831da27b63a143b099cd5f4fe761d6",
+    "numerics.py": "cc33d3311ca5747958f7ab2646b754a4a255f8d96aedd625b9267a061a197a0c",
+    "predictor.py": "79d5f28f5cd0709fa0bfab1a232d646ce999627a96916fb11d035309f6b8ebfa",
+    "predictor_audit.py": "8efeb23a4e3032abcf1cc748137c16f6a6c13d23913d149d119cad3240803a11",
+    "preflight.py": "9862ce1cd72886aa918b30d50cfd40831711adde051ebcf773dfa72f7bd016eb",
+    "reference.py": "188f153e147325ac5ea670ff3c440cc6a6258ff9e1395e4ba6e20a67652e6e09",
+    "report.py": "e3067e2990c2d57cbc8b85771570c8836604cad1e4261552cb76169b04a78212",
+    "run.py": "5caa0a3b8d81ac7e7d8a72427f0d82290a3067d99c7f8d82a480b2527360ef7b"
+  },
+  "identity": {
+    "baseline_source_identical": true,
+    "common_functions_identical": true,
+    "geometry_selection_reserve_identical": true,
+    "solver_math_identical_except_first_callback": true
+  },
+  "budgets": [
+    210,
+    630
+  ],
+  "benchmark_orders": [
+    [
+      "baseline",
+      "firstcheck"
+    ],
+    [
+      "firstcheck",
+      "baseline"
+    ],
+    [
+      "baseline",
+      "firstcheck"
+    ]
+  ],
+  "runtime": {
+    "python": "3.12.10",
+    "torch": "2.13.0+cu130",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "threads": 2
+  },
+  "frozen_utc": "2026-09-27T17:59:59Z",
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\CHECKPOINT.pt": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  },
+  "test_files_opened": 0
+}

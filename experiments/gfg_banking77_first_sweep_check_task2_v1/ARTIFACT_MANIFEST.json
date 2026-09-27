@@ -1,0 +1,249 @@
+{
+  "authority": "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1",
+  "files": {
+    "BASELINE_IDENTITY.json": {
+      "sha256": "8919f58f9dc71f2a480c78ee9023d2ec651ea82c66d28a47164466e40575388b",
+      "bytes": 1988
+    },
+    "FREEZE.json": {
+      "sha256": "903f306249b1bf510c3afbe4d75a28ef66d9ee113a82476a6ffb7286b8bb7dd0",
+      "bytes": 6082
+    },
+    "NUMERICS.json": {
+      "sha256": "0990effc9d52146be31ae1c817ac38adfa4b6649fe663c308a0fcff483d898f4",
+      "bytes": 5010
+    },
+    "SUMMARY.json": {
+      "sha256": "db7bbbfd975a76e6279604ee71a85b8c1c618811a81c295a917b6434d5779b5e",
+      "bytes": 66653
+    },
+    "baseline\\AUDIT.json": {
+      "sha256": "01423c247172943f333a7349df0de1df54c8ac9f6927f2685797601f4eb3e639",
+      "bytes": 3450
+    },
+    "baseline\\AUDIT_STEPS_210.jsonl.gz": {
+      "sha256": "069992647e59c9a3327625613b57848cffca0d924356525a1d065a207db13d10",
+      "bytes": 26531
+    },
+    "baseline\\AUDIT_STEPS_630.jsonl.gz": {
+      "sha256": "44634b7f7d158a7ba6c30c9c0351824b575fc668d226c8392278c46fe3724073",
+      "bytes": 78199
+    },
+    "baseline\\RUN.json": {
+      "sha256": "6345ae5afce02108e8803dd6db2de2528c5b5ea6f8ca92191615526165237352",
+      "bytes": 17894
+    },
+    "benchmark\\SUMMARY.json": {
+      "sha256": "4a8da6f1ffef06ee7ed6176df9d8f07436177e2391dc68e743683b288f18ded4",
+      "bytes": 109150
+    },
+    "firstcheck\\AUDIT.json": {
+      "sha256": "5e649ec61743cd1c871074d5fd1b98dd01311394723f73c9a0680bb2b4b46c5c",
+      "bytes": 3419
+    },
+    "firstcheck\\AUDIT_STEPS_210.jsonl.gz": {
+      "sha256": "eff884bc3a08bf83da87a42eb0d284ec5cea06863652db4574beac4f01021c81",
+      "bytes": 26506
+    },
+    "firstcheck\\AUDIT_STEPS_630.jsonl.gz": {
+      "sha256": "ad7605cefcd9754285985b0cffa43030d822d423a455f10191c5e12a68843816",
+      "bytes": 78156
+    },
+    "firstcheck\\RUN.json": {
+      "sha256": "a1b6d8876688b1f3488a54fb9db8a1528ed98ffc69a4fd9c5d563286d911f88a",
+      "bytes": 18075
+    },
+    "baseline\\budget210\\CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "baseline\\budget210\\CHECKS.json": {
+      "sha256": "f75c1f1de0e71485d22a0823861f95f410f682b9d4dde2bc5c40ec2315eb9132",
+      "bytes": 7059
+    },
+    "baseline\\budget210\\STEPS.jsonl.gz": {
+      "sha256": "cc9cbfa59755799e9361b5aaf5f33fa124b2a3cdc2f5b5ea821b892051dde693",
+      "bytes": 323954
+    },
+    "baseline\\budget630\\CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "baseline\\budget630\\CHECKS.json": {
+      "sha256": "84d66551d1c721669269955082dd4ea8f71b84a3feb79981abfc93ad225ccf98",
+      "bytes": 6951
+    },
+    "baseline\\budget630\\STEPS.jsonl.gz": {
+      "sha256": "0da455f627e03a43a15f5093093f4f9504d3d657894821f012be741881b36022",
+      "bytes": 721928
+    },
+    "benchmark\\repeat1\\baseline\\budget210\\CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat1\\baseline\\budget210\\CHECKS.json": {
+      "sha256": "636f83649c1f10d399eb00b4ffaab47cb4551f985d12e7924c81288edcf51694",
+      "bytes": 7061
+    },
+    "benchmark\\repeat1\\baseline\\budget210\\STEPS.jsonl.gz": {
+      "sha256": "f2edaaf8327473d3349e898478baaba0d528dc74f93652fd80e51e3fad174ed4",
+      "bytes": 323954
+    },
+    "benchmark\\repeat1\\baseline\\budget630\\CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat1\\baseline\\budget630\\CHECKS.json": {
+      "sha256": "29d914cf74f8c57fedcd910194ed0ae2305163138c7cf1841f7c7062299a6ee8",
+      "bytes": 6954
+    },
+    "benchmark\\repeat1\\baseline\\budget630\\STEPS.jsonl.gz": {
+      "sha256": "2b82a8987e63ec7537f5a516add0b8fc5c378f11b6dc33d98ced0d9fa4a373f5",
+      "bytes": 721928
+    },
+    "benchmark\\repeat1\\firstcheck\\budget210\\CHECKPOINT.pt": {
+      "sha256": "944d1b9fdfad0f9936e7b8d7bc42ea313cc1aeefb76ef5b7a2d1aa9216d82068",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat1\\firstcheck\\budget210\\CHECKS.json": {
+      "sha256": "c5cb238f10f9844d3877c0a01dd5f632a75f863beee07ee20acf4c07de93b1f4",
+      "bytes": 7129
+    },
+    "benchmark\\repeat1\\firstcheck\\budget210\\STEPS.jsonl.gz": {
+      "sha256": "8eb8b82bff1677647571f110c952a2f6458ed964617aee08465b781d0c01cc2e",
+      "bytes": 319431
+    },
+    "benchmark\\repeat1\\firstcheck\\budget630\\CHECKPOINT.pt": {
+      "sha256": "31b303da4b7177649be9dcb37ccb9e2d6c09cd988745f606ffba2fd531d5e083",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat1\\firstcheck\\budget630\\CHECKS.json": {
+      "sha256": "fcd2d09928bbfcf82b0e10865484767355716c506f6a610400f2e7c0e0433358",
+      "bytes": 7048
+    },
+    "benchmark\\repeat1\\firstcheck\\budget630\\STEPS.jsonl.gz": {
+      "sha256": "1910d9ab0c0d541c0f15bb0d6e6cd381f2a392ccc6ccce10c908f333df687c95",
+      "bytes": 732970
+    },
+    "benchmark\\repeat2\\baseline\\budget210\\CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat2\\baseline\\budget210\\CHECKS.json": {
+      "sha256": "f46a4af12f9ad5adcfa1494a9a97b419d37b7cd83a5495dd1065c059992fc47f",
+      "bytes": 7056
+    },
+    "benchmark\\repeat2\\baseline\\budget210\\STEPS.jsonl.gz": {
+      "sha256": "fd874cb9303a3cf3ad3ee07be7928fb05ee815a96df5da2a352b830666c705cf",
+      "bytes": 323954
+    },
+    "benchmark\\repeat2\\baseline\\budget630\\CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat2\\baseline\\budget630\\CHECKS.json": {
+      "sha256": "617c41fc906dbdeee3e7e4a0aa2fdbee0d1795f783d57a6fa8bc0be988d06ed9",
+      "bytes": 6949
+    },
+    "benchmark\\repeat2\\baseline\\budget630\\STEPS.jsonl.gz": {
+      "sha256": "77afccc39fc24eee4802753ccfba934406e77f1f90859261c9a0504bc1a0645f",
+      "bytes": 721928
+    },
+    "benchmark\\repeat2\\firstcheck\\budget210\\CHECKPOINT.pt": {
+      "sha256": "944d1b9fdfad0f9936e7b8d7bc42ea313cc1aeefb76ef5b7a2d1aa9216d82068",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat2\\firstcheck\\budget210\\CHECKS.json": {
+      "sha256": "dd682aafb2e7fea4810af786f7a94cfa2e42608dc07d6ff7f15398546ec9aa96",
+      "bytes": 7130
+    },
+    "benchmark\\repeat2\\firstcheck\\budget210\\STEPS.jsonl.gz": {
+      "sha256": "3896275fa222d10aa2f425dcd72be460d1cb443d4bab646ee8eabe7d1c3381db",
+      "bytes": 319431
+    },
+    "benchmark\\repeat2\\firstcheck\\budget630\\CHECKPOINT.pt": {
+      "sha256": "31b303da4b7177649be9dcb37ccb9e2d6c09cd988745f606ffba2fd531d5e083",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat2\\firstcheck\\budget630\\CHECKS.json": {
+      "sha256": "756da02dfc96fcf675c7d9746ca65033a8c939a2f4296399282a8baa4e91963a",
+      "bytes": 7048
+    },
+    "benchmark\\repeat2\\firstcheck\\budget630\\STEPS.jsonl.gz": {
+      "sha256": "2e246e11980aa79ada4e127bfedacc46897e15c37e5b6fe88e43178bc205d95a",
+      "bytes": 732970
+    },
+    "benchmark\\repeat3\\baseline\\budget210\\CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat3\\baseline\\budget210\\CHECKS.json": {
+      "sha256": "0ed136c8ffe1c2f9678b23f4da82ae5bf2e06b95042c063c049b59aae8a43960",
+      "bytes": 7060
+    },
+    "benchmark\\repeat3\\baseline\\budget210\\STEPS.jsonl.gz": {
+      "sha256": "bef4d9c02de02b43eac7d65317ac8775b7a288f297ef1716e756cb2831ccff4b",
+      "bytes": 323954
+    },
+    "benchmark\\repeat3\\baseline\\budget630\\CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat3\\baseline\\budget630\\CHECKS.json": {
+      "sha256": "374d709dff4d9a9fdf238d02d26a5f20a6c0cc2119dee7fd0c0b5fd1cc535f22",
+      "bytes": 6953
+    },
+    "benchmark\\repeat3\\baseline\\budget630\\STEPS.jsonl.gz": {
+      "sha256": "f1d6c3769a8a1e7ffbdfae3500dda88ec02367a2fc7b365e8da87a5c40eefdb2",
+      "bytes": 721928
+    },
+    "benchmark\\repeat3\\firstcheck\\budget210\\CHECKPOINT.pt": {
+      "sha256": "944d1b9fdfad0f9936e7b8d7bc42ea313cc1aeefb76ef5b7a2d1aa9216d82068",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat3\\firstcheck\\budget210\\CHECKS.json": {
+      "sha256": "1c90b98ef1c1ceb6daebb70d568d9ed188122c675cebee5d29d9f201be63bc98",
+      "bytes": 7129
+    },
+    "benchmark\\repeat3\\firstcheck\\budget210\\STEPS.jsonl.gz": {
+      "sha256": "6d5636e8c8fd85f4aea9322c55fbbdc9777bd472e707b077a08e6a5f57edffe4",
+      "bytes": 319431
+    },
+    "benchmark\\repeat3\\firstcheck\\budget630\\CHECKPOINT.pt": {
+      "sha256": "31b303da4b7177649be9dcb37ccb9e2d6c09cd988745f606ffba2fd531d5e083",
+      "bytes": 2605235
+    },
+    "benchmark\\repeat3\\firstcheck\\budget630\\CHECKS.json": {
+      "sha256": "4564557fc968900184f831c4c392fbf02a0039e9ce4bc5c57e6293e3ec06c4bd",
+      "bytes": 7055
+    },
+    "benchmark\\repeat3\\firstcheck\\budget630\\STEPS.jsonl.gz": {
+      "sha256": "34939596e663f6d9a751076d2bb64771ce2badb8db971d9540b3418c6ad6aa53",
+      "bytes": 732970
+    },
+    "firstcheck\\budget210\\CHECKPOINT.pt": {
+      "sha256": "944d1b9fdfad0f9936e7b8d7bc42ea313cc1aeefb76ef5b7a2d1aa9216d82068",
+      "bytes": 2605235
+    },
+    "firstcheck\\budget210\\CHECKS.json": {
+      "sha256": "9a97f8f9ecabb5be64af6e9080184ccf88a0f16030adb58a8b85abbe33fe507d",
+      "bytes": 7130
+    },
+    "firstcheck\\budget210\\STEPS.jsonl.gz": {
+      "sha256": "1f0a7e65e5ae687ad77e153e6e592415fd5c1be13620b6c18a77a4821f190cc9",
+      "bytes": 319431
+    },
+    "firstcheck\\budget630\\CHECKPOINT.pt": {
+      "sha256": "31b303da4b7177649be9dcb37ccb9e2d6c09cd988745f606ffba2fd531d5e083",
+      "bytes": 2605235
+    },
+    "firstcheck\\budget630\\CHECKS.json": {
+      "sha256": "81b15dd089757e00c9b74b7aedf69269ec26da76d36f226c644d8aa9dc5e8353",
+      "bytes": 7049
+    },
+    "firstcheck\\budget630\\STEPS.jsonl.gz": {
+      "sha256": "ed26137a566728f7dcd0064ae92f88c7df9be3d4b526ccbaac3f24e0dff90aa3",
+      "bytes": 732970
+    }
+  }
+}

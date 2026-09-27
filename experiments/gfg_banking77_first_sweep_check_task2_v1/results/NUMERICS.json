@@ -1,0 +1,233 @@
+{
+  "status": "PASS",
+  "rejected_callback_preserves_entire_solve": true,
+  "accepted_callback_is_first_completed_sweep": true,
+  "trials": [
+    {
+      "case": 0,
+      "status": "PASS",
+      "sweeps": 4
+    },
+    {
+      "case": 1,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 2,
+      "status": "PASS",
+      "sweeps": 81
+    },
+    {
+      "case": 3,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 4,
+      "status": "PASS",
+      "sweeps": 45
+    },
+    {
+      "case": 5,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 6,
+      "status": "PASS",
+      "sweeps": 24
+    },
+    {
+      "case": 7,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 8,
+      "status": "PASS",
+      "sweeps": 37
+    },
+    {
+      "case": 9,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 10,
+      "status": "PASS",
+      "sweeps": 68
+    },
+    {
+      "case": 11,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 12,
+      "status": "PASS",
+      "sweeps": 112
+    },
+    {
+      "case": 13,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 14,
+      "status": "PASS",
+      "sweeps": 16
+    },
+    {
+      "case": 15,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 16,
+      "status": "PASS",
+      "sweeps": 24
+    },
+    {
+      "case": 17,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 18,
+      "status": "PASS",
+      "sweeps": 28
+    },
+    {
+      "case": 19,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 20,
+      "status": "PASS",
+      "sweeps": 46
+    },
+    {
+      "case": 21,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 22,
+      "status": "PASS",
+      "sweeps": 36
+    },
+    {
+      "case": 23,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 24,
+      "status": "PASS",
+      "sweeps": 80
+    },
+    {
+      "case": 25,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 26,
+      "status": "PASS",
+      "sweeps": 9
+    },
+    {
+      "case": 27,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 28,
+      "status": "PASS",
+      "sweeps": 12
+    },
+    {
+      "case": 29,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 30,
+      "status": "PASS",
+      "sweeps": 52
+    },
+    {
+      "case": 31,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 32,
+      "status": "PASS",
+      "sweeps": 34
+    },
+    {
+      "case": 33,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 34,
+      "status": "PASS",
+      "sweeps": 45
+    },
+    {
+      "case": 35,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 36,
+      "status": "PASS",
+      "sweeps": 44
+    },
+    {
+      "case": 37,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    },
+    {
+      "case": 38,
+      "status": "PASS",
+      "sweeps": 78
+    },
+    {
+      "case": 39,
+      "status": "INNER_LIMIT",
+      "sweeps": 200
+    }
+  ],
+  "independent_geometry_endpoint_reconstruction": true,
+  "explicit_error": 3.3881317890172014e-21,
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\STEPS.jsonl.gz": 2,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget210\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\STEPS.jsonl.gz": 2,
+      "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1\\stage1\\budget630\\CHECKPOINT.pt": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 2
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  }
+}
