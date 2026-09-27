@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "observer_calls": 10,
+  "zero_margin_checked": true,
+  "both_signs_certified": true,
+  "selected_exact": true,
+  "return_and_rollback_checked": true,
+  "only_commits_refresh_anchor": true
+}

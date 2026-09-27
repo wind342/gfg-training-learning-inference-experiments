@@ -1,0 +1,14 @@
+{
+  "base": "8f00816a6b8c6d61ee87688b242497f95a00d306",
+  "sources": {
+    "check.py": "d3f86cd4e0537bddac18921a6b72590a408a5a8299a80aebc771ec18e529cf8d",
+    "core.py": "50a78fbca68f597e3ef2ed1fe96a4b458fe40b7fa808763fa3e28ec52c2f6d3e",
+    "probe.py": "3a949dcfd39fd2e031e2fcc81b869fbede4447985f5d72031945e679aaa156d3",
+    "PROTOCOL.md": "a796e5d9afb7911eb94288a63068b99b32271775b20f36a0190ff2f4d76d60ce",
+    "README.md": "6d0f5f37a7b3bd6df620ad693933b96652114a30c57312b52374e369946ca6eb",
+    "run.py": "0e601d83d0521ca02ea6c1429ce5fe69611994377425e4e72315168c034ba651",
+    "tests.py": "e10eab72915ec83f0daf0afa4b2112d2b3bd86fb05048551a233a92844beeccb",
+    "transition.py": "bebb0c505ccf5f7dc38cc94eb8f45b29d973beefc15c474d86dc23310cf9577c"
+  },
+  "note": "PREFLIGHT records the initial stage-1 implementation. The harness was subsequently extended for gated stage 2; final sources are recorded here."
+}

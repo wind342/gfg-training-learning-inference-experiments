@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "authority": "E:\\gfg-evidence\\final-v2-cached-hildreth-v1",
+  "public_files": {
+    "PREFLIGHT.json": {
+      "sha256": "ed9c2aa4d96e62bec03ea6561260e3da9437865595b30ca054d52b3ce4935f08",
+      "bytes": 1832
+    },
+    "TRANSITION_PREFLIGHT.json": {
+      "sha256": "92d4e93536576bd9ea9037ad626eb11a5364d0e82534a00bb7d2449a2ca4346d",
+      "bytes": 221
+    },
+    "CHECKS.json": {
+      "sha256": "33b05b785117239c60748e6008b5af59e98b48983c2f94602617995ad6326ae0",
+      "bytes": 503
+    },
+    "BENCHMARK.json": {
+      "sha256": "38d29a6cd341849912e1d81845b6f8b4fc3cfdc64b1c63da2d68d309606c5933",
+      "bytes": 5505
+    },
+    "FINAL_SOURCE_MANIFEST.json": {
+      "sha256": "2d98c3d3d1fe9ebfe5c9bb7db148737d40673c270b52ea82c5505398c6d37533",
+      "bytes": 923
+    },
+    "TIMED_full.json": {
+      "sha256": "fa528508d5bb5487ce7761f8ac921432dad11544d5050c8ae6a5c6ff72373457",
+      "bytes": 48448
+    },
+    "TIMED_cached.json": {
+      "sha256": "a89847b8c1d01c2169a809e7f67eac2c606ca29263bce3ac82219b73e9335609",
+      "bytes": 48526
+    },
+    "TIMED_transition.json": {
+      "sha256": "cf37a77f48020f0e9e33ffd37888351ffdaf8405c0340e7484f41343b3c21811",
+      "bytes": 48613
+    },
+    "PROFILE_full.json": {
+      "sha256": "321737b6012e531a7171fddd302e29b2b65dec623da7f7f2f7dbc54137f41fed",
+      "bytes": 48686
+    },
+    "PROFILE_cached.json": {
+      "sha256": "8e17df7289ecf5158bed863a732fd27a3a0ef9040cac1ccdb4f9d1af194f9d65",
+      "bytes": 48765
+    },
+    "PROFILE_transition.json": {
+      "sha256": "f3043ba6af7e70b3cebebc0d6a4750cce8b9a3842d594d116d50cf57d330c796",
+      "bytes": 49101
+    },
+    "cached_validation/STEPS.jsonl.gz": {
+      "sha256": "f45549627074abff6dda9a6f5667f546dcbc2f34ece5e05edb6d018703e6b116",
+      "bytes": 1618839
+    },
+    "cached_validation/EVALUATION.json": {
+      "sha256": "3be2cc9d29d9808039152050c5cb0004edd40681456377b56f95a8dc107b232d",
+      "bytes": 102534
+    },
+    "cached_validation/CHECKS.json": {
+      "sha256": "5dc9db138caccc3c2f86a63864708bdece18f78845c35f3fe33c17f967203de6",
+      "bytes": 375
+    },
+    "transition_validation/STEPS.jsonl.gz": {
+      "sha256": "a180c575d13a4ff28ba544f04e98ddbf7f6a8d00dc9610bec7ba391f2a7467e7",
+      "bytes": 1618839
+    },
+    "transition_validation/EVALUATION.json": {
+      "sha256": "3be2cc9d29d9808039152050c5cb0004edd40681456377b56f95a8dc107b232d",
+      "bytes": 102534
+    },
+    "transition_validation/CHECKS.json": {
+      "sha256": "493b96b87ab7fc4d0024eb8c4f8222e198f7e93f75fcd84913e45e8dcfd36a70",
+      "bytes": 587
+    },
+    "transition_validation/CALLS.jsonl.gz": {
+      "sha256": "ee34e98d8798a4c72044e9ad4630588d42d32baf688f95d91cc99cb77f7a6a40",
+      "bytes": 189355
+    },
+    "PAIR_PADDING.json": {
+      "sha256": "d44ee297a8b575b02bb19d16a902fba57214251981934b5833c90d840501cf8d",
+      "bytes": 1700
+    },
+    "REDUCTION_SHAPES.json": {
+      "sha256": "7e181aa5024a569b05a0c3f00f86dde01317a6eafbe74e019aa19c564643f4cc",
+      "bytes": 3415
+    }
+  },
+  "external_checkpoints": {
+    "E:\\gfg-evidence\\final-v2-cached-hildreth-v1\\cached_validation\\CHECKPOINT.pt": {
+      "sha256": "105df03870a9f53730c6364efe0fb0ce91eda26ec77c3342b0299d1aaebb1786",
+      "bytes": 1478925
+    },
+    "E:\\gfg-evidence\\final-v2-cached-hildreth-v1\\transition_validation\\CHECKPOINT.pt": {
+      "sha256": "105df03870a9f53730c6364efe0fb0ce91eda26ec77c3342b0299d1aaebb1786",
+      "bytes": 1478925
+    }
+  },
+  "sources": {
+    "check.py": "d3f86cd4e0537bddac18921a6b72590a408a5a8299a80aebc771ec18e529cf8d",
+    "core.py": "50a78fbca68f597e3ef2ed1fe96a4b458fe40b7fa808763fa3e28ec52c2f6d3e",
+    "probe.py": "3a949dcfd39fd2e031e2fcc81b869fbede4447985f5d72031945e679aaa156d3",
+    "PROTOCOL.md": "a796e5d9afb7911eb94288a63068b99b32271775b20f36a0190ff2f4d76d60ce",
+    "README.md": "6d0f5f37a7b3bd6df620ad693933b96652114a30c57312b52374e369946ca6eb",
+    "run.py": "0e601d83d0521ca02ea6c1429ce5fe69611994377425e4e72315168c034ba651",
+    "tests.py": "e10eab72915ec83f0daf0afa4b2112d2b3bd86fb05048551a233a92844beeccb",
+    "transition.py": "bebb0c505ccf5f7dc38cc94eb8f45b29d973beefc15c474d86dc23310cf9577c"
+  }
+}

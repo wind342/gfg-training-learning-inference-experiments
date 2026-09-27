@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "steps": 210,
+  "head_matches": 210,
+  "moments_matches": 210,
+  "deficits_selections_active_pairs_sweeps_identical": true,
+  "primal_and_dual_byte_identical": true,
+  "pair_reserves_byte_identical": true,
+  "checked_pairs": 90311,
+  "final_predictions_identical": true,
+  "floor_violations": 0,
+  "geometry_builds": 1,
+  "sweeps": 1522
+}

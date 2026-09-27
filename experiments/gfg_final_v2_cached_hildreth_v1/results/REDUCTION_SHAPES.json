@@ -1,0 +1,177 @@
+{
+  "1x2": {
+    "equal": false,
+    "different": 2,
+    "max_error": 2.168404344971009e-19
+  },
+  "1x4": {
+    "equal": false,
+    "different": 2,
+    "max_error": 2.168404344971009e-19
+  },
+  "1x8": {
+    "equal": false,
+    "different": 3,
+    "max_error": 4.336808689942018e-19
+  },
+  "1x16": {
+    "equal": false,
+    "different": 7,
+    "max_error": 6.505213034913027e-19
+  },
+  "1x80": {
+    "equal": false,
+    "different": 57,
+    "max_error": 6.505213034913027e-19
+  },
+  "2x2": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "2x4": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "2x8": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "2x16": {
+    "equal": false,
+    "different": 3,
+    "max_error": 2.168404344971009e-19
+  },
+  "2x80": {
+    "equal": false,
+    "different": 36,
+    "max_error": 2.168404344971009e-19
+  },
+  "4x2": {
+    "equal": false,
+    "different": 2,
+    "max_error": 2.168404344971009e-19
+  },
+  "4x4": {
+    "equal": false,
+    "different": 3,
+    "max_error": 2.168404344971009e-19
+  },
+  "4x8": {
+    "equal": false,
+    "different": 3,
+    "max_error": 2.168404344971009e-19
+  },
+  "4x16": {
+    "equal": false,
+    "different": 10,
+    "max_error": 2.168404344971009e-19
+  },
+  "4x80": {
+    "equal": false,
+    "different": 77,
+    "max_error": 2.168404344971009e-19
+  },
+  "8x2": {
+    "equal": false,
+    "different": 2,
+    "max_error": 2.168404344971009e-19
+  },
+  "8x4": {
+    "equal": false,
+    "different": 3,
+    "max_error": 2.168404344971009e-19
+  },
+  "8x8": {
+    "equal": false,
+    "different": 9,
+    "max_error": 2.168404344971009e-19
+  },
+  "8x16": {
+    "equal": false,
+    "different": 26,
+    "max_error": 2.168404344971009e-19
+  },
+  "8x80": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "16x2": {
+    "equal": false,
+    "different": 7,
+    "max_error": 2.168404344971009e-19
+  },
+  "16x4": {
+    "equal": false,
+    "different": 10,
+    "max_error": 2.168404344971009e-19
+  },
+  "16x8": {
+    "equal": false,
+    "different": 22,
+    "max_error": 2.168404344971009e-19
+  },
+  "16x16": {
+    "equal": false,
+    "different": 51,
+    "max_error": 4.336808689942018e-19
+  },
+  "16x80": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "32x2": {
+    "equal": false,
+    "different": 16,
+    "max_error": 2.168404344971009e-19
+  },
+  "32x4": {
+    "equal": false,
+    "different": 25,
+    "max_error": 2.168404344971009e-19
+  },
+  "32x8": {
+    "equal": false,
+    "different": 53,
+    "max_error": 2.168404344971009e-19
+  },
+  "32x16": {
+    "equal": false,
+    "different": 22,
+    "max_error": 6.505213034913027e-19
+  },
+  "32x80": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "64x2": {
+    "equal": false,
+    "different": 34,
+    "max_error": 2.168404344971009e-19
+  },
+  "64x4": {
+    "equal": false,
+    "different": 47,
+    "max_error": 2.168404344971009e-19
+  },
+  "64x8": {
+    "equal": false,
+    "different": 11,
+    "max_error": 4.336808689942018e-19
+  },
+  "64x16": {
+    "equal": false,
+    "different": 56,
+    "max_error": 6.505213034913027e-19
+  },
+  "64x80": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  }
+}

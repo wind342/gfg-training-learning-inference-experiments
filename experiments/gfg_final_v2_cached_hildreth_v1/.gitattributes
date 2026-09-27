@@ -1,0 +1,4 @@
+# Preserve exact evidence bytes and their SHA-256 identities across checkouts.
+.gitattributes text eol=lf
+results/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+ARTIFACT_MANIFEST.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

@@ -1,0 +1,102 @@
+{
+  "8x24": {
+    "equal": false,
+    "different": 48,
+    "max_error": 1.7763568394002505e-15
+  },
+  "8x32": {
+    "equal": false,
+    "different": 64,
+    "max_error": 1.7763568394002505e-15
+  },
+  "8x48": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "8x64": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "8x80": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "16x24": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "16x32": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "16x48": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "16x64": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "16x80": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "24x24": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "24x32": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "24x48": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "24x64": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "24x80": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "32x24": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "32x32": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "32x48": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "32x64": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  },
+  "32x80": {
+    "equal": true,
+    "different": 0,
+    "max_error": 0.0
+  }
+}

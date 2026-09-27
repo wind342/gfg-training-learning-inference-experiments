@@ -1,0 +1,28 @@
+{
+  "base": "8f00816a6b8c6d61ee87688b242497f95a00d306",
+  "inputs": {
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\FEATURES.pt": "6ba92c47adf79780c3cb43bb879a40485621594da7b99d7001a35131cf78af91",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\TEST_FEATURES.pt": "ca18f76d8b5f0ad75aaa7082ddec4a5101d759a233e5c43e760a2efb1fe7ec13",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\CACHE.json": "f8cb8dc601218fdec8944aa870ede83156850ebc0ba08533260d8b1bdb6caee7",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\CHECKS.json": "06e69026d165cad6ee3c6d8ac6a7ede413bbaa40b355e07a180cb9f998e005ac",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\v2_210\\task9\\CHECKPOINT.pt": "c6a69ea7f6f9e54a43384629107165ca1790374a51671103cdd1cd2ab962207a",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\v2_210\\task9\\TRAIN_RESULT.json": "ca21e4e056a4fcea75b7f5fd37bdadc0aaebdb796ba8a8c5083196b139208a98",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\v2_210\\task10\\CONFIG.json": "3cddf3854186539c4f98e1efbb5ae76e30f08becbf8b66d693051990d4f290a7",
+    "E:\\gfg-evidence\\governor-fewrel-v1\\data.npz": "29450295331dcd56040b9ec60ab2998303988c0e27500e353b7025b977734a8a"
+  },
+  "runtime": {
+    "python": "3.12.10",
+    "torch": "2.13.0+cu130",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "transformers": "4.57.6",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "threads": 2
+  },
+  "sources": {
+    "core.py": "c5c4a85656b837e7fae6cda53ab7d180cf5b5dc427008c086f06c67fd142f8be",
+    "probe.py": "3a949dcfd39fd2e031e2fcc81b869fbede4447985f5d72031945e679aaa156d3",
+    "run.py": "b3c5e11ae5b6d199a311443e817f2a4036e590ed5e013a07d03c480bba2b38d8"
+  },
+  "protocol_sha256": "a796e5d9afb7911eb94288a63068b99b32271775b20f36a0190ff2f4d76d60ce"
+}

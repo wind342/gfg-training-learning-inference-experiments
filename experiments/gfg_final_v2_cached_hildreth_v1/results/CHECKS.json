@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "steps": 210,
+  "candidate_observer_calls": 2152,
+  "false_safe": 0,
+  "false_wrong": 0,
+  "floor_violations": 0,
+  "executed_heads_byte_identical": true,
+  "adamw_moments_byte_identical": true,
+  "selections_active_pairs_deficits_identical": true,
+  "sweep_sequence_and_fp64_primal_dual_identical": true,
+  "pair_reserves_byte_identical": true,
+  "final_predictions_identical": true,
+  "previous_sources_and_inputs_unchanged": true,
+  "banking77_started": false
+}
