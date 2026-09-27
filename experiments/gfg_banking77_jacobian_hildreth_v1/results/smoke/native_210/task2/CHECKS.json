@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "kind": "native",
+  "budget": 210,
+  "task": 2,
+  "source_checkpoint": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt",
+  "source_checkpoint_sha256": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+  "K": [
+    10,
+    8,
+    9,
+    10,
+    7,
+    7,
+    5
+  ],
+  "expansion_losses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "schedule_sha256": "8283c242a51c82e68450de3f427a520f795e692f0a43cc9f69d4f2f181924ef4",
+  "current_entry": {
+    "ce": 2.686830520629883,
+    "macro": 0.003292898314871958,
+    "per_intent": {
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.005988024175167084,
+      "10": 0.0,
+      "11": 0.006535947788506746,
+      "12": 0.0,
+      "13": 0.010526316240429878
+    }
+  },
+  "train_metrics": {
+    "current": {
+      "ce": 1.5030977725982666,
+      "macro": 0.6119917184114456,
+      "per_intent": {
+        "7": 0.47899162769317627,
+        "8": 0.909604549407959,
+        "9": 0.4071856439113617,
+        "10": 0.7777777910232544,
+        "11": 0.7973856329917908,
+        "12": 0.7551020383834839,
+        "13": 0.15789474546909332
+      }
+    },
+    "old": {
+      "ce": 4.537799835205078,
+      "macro": 0.0,
+      "per_intent": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      }
+    },
+    "all": {
+      "ce": 2.9772326946258545,
+      "macro": 0.3059958592057228,
+      "per_intent": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.47899162769317627,
+        "8": 0.909604549407959,
+        "9": 0.4071856439113617,
+        "10": 0.7777777910232544,
+        "11": 0.7973856329917908,
+        "12": 0.7551020383834839,
+        "13": 0.15789474546909332
+      }
+    }
+  },
+  "smoke_gates": null,
+  "unsafe_native": 0,
+  "safe_native": null,
+  "repaired": 0,
+  "rollback": 0,
+  "repair_rate": null,
+  "norm_ratio_median_triggered": null,
+  "failure_counts": {},
+  "floor_violations": null,
+  "old_ce_backward_examples": 0,
+  "old_ce_backward_flops": 0,
+  "test_access": false,
+  "common_wall": 0.6397278000367805,
+  "control_wall": 0.0,
+  "entry_wall": 0.06791209999937564,
+  "algorithm_wall": 0.6397278000367805,
+  "observer_wall": 0.8285376006970182,
+  "regions_seconds": {
+    "endpoint": 0.056249599903821945
+  },
+  "flop_ledger": {
+    "endpoint": 110755840
+  },
+  "current_ce_dense_flops": 3039805440,
+  "flop_coverage": "Dense multiply-add lower bounds and named analytic/coordinate estimates; excludes optimizer, some elementwise/reductions/GELU costs. Not exact total hardware FLOPs.",
+  "endpoint_calls": 1,
+  "endpoint_rows": 70,
+  "padded_endpoint_rows": 256,
+  "control_bank_reads": 0,
+  "derivative_calls": {},
+  "outer_iterations": 0,
+  "inner_sweeps": 0,
+  "correct_to_wrong": 0,
+  "wrong_to_correct": 0,
+  "peak_cuda_bytes": 119034880,
+  "model_bytes": 866612,
+  "bank_gpu_bytes": 1127984,
+  "bank_cpu_bytes": 900480,
+  "optimizer_bytes": 1733240,
+  "checkpoint_sha256": "0780d5546164fd7de356e03e7c9caf6f5469298bb9a041b673f59d7307acd79b",
+  "native_reference_identity": true,
+  "replay_identity": false
+}

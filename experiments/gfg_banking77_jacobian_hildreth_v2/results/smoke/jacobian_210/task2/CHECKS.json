@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "kind": "jacobian",
+  "budget": 210,
+  "task": 2,
+  "source_checkpoint": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt",
+  "source_checkpoint_sha256": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+  "K": [
+    10,
+    8,
+    9,
+    10,
+    7,
+    7,
+    5
+  ],
+  "expansion_losses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "schedule_sha256": "8283c242a51c82e68450de3f427a520f795e692f0a43cc9f69d4f2f181924ef4",
+  "current_entry": {
+    "ce": 2.686830520629883,
+    "macro": 0.003292898314871958,
+    "per_intent": {
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.005988024175167084,
+      "10": 0.0,
+      "11": 0.006535947788506746,
+      "12": 0.0,
+      "13": 0.010526316240429878
+    }
+  },
+  "train_metrics": {
+    "current": {
+      "ce": 2.1394596099853516,
+      "macro": 0.5884417593479156,
+      "per_intent": {
+        "7": 0.5042017102241516,
+        "8": 0.29378530383110046,
+        "9": 0.5029940605163574,
+        "10": 0.752136766910553,
+        "11": 0.8888888955116272,
+        "12": 0.5034013390541077,
+        "13": 0.6736842393875122
+      }
+    },
+    "old": {
+      "ce": 2.214371919631958,
+      "macro": 0.514937732900892,
+      "per_intent": {
+        "0": 0.5092592835426331,
+        "1": 0.8076923489570618,
+        "2": 0.5999999642372131,
+        "3": 0.7325581312179565,
+        "4": 0.2857142984867096,
+        "5": 0.553398072719574,
+        "6": 0.11594203114509583
+      }
+    },
+    "all": {
+      "ce": 2.175848960876465,
+      "macro": 0.5516897461244038,
+      "per_intent": {
+        "0": 0.5092592835426331,
+        "1": 0.8076923489570618,
+        "2": 0.5999999642372131,
+        "3": 0.7325581312179565,
+        "4": 0.2857142984867096,
+        "5": 0.553398072719574,
+        "6": 0.11594203114509583,
+        "7": 0.5042017102241516,
+        "8": 0.29378530383110046,
+        "9": 0.5029940605163574,
+        "10": 0.752136766910553,
+        "11": 0.8888888955116272,
+        "12": 0.5034013390541077,
+        "13": 0.6736842393875122
+      }
+    }
+  },
+  "smoke_gates": {
+    "floor_zero": true,
+    "exposure": true,
+    "repair_rate": true,
+    "rollback_rate": true,
+    "current_macro": true,
+    "current_ce": true,
+    "movement": true
+  },
+  "unsafe_native": 208,
+  "safe_native": 2,
+  "repaired": 208,
+  "rollback": 0,
+  "repair_rate": 1.0,
+  "norm_ratio_median_triggered": 0.8840338877317797,
+  "failure_counts": {},
+  "floor_violations": 0,
+  "old_ce_backward_examples": 0,
+  "old_ce_backward_flops": 0,
+  "test_access": false,
+  "common_wall": 0.6514031992992386,
+  "control_wall": 7.2965050000930205,
+  "entry_wall": 0.0016014000866562128,
+  "algorithm_wall": 7.949509599478915,
+  "observer_wall": 1.13199169957079,
+  "regions_seconds": {
+    "endpoint": 0.330261999508366,
+    "parameter_geometry": 0.5307423997437581,
+    "selection": 0.05756360094528645,
+    "geometry_factors_subregion": 0.12996349879540503,
+    "gram_subregion": 0.026496000005863607,
+    "budget_subregion": 0.21905330091249198,
+    "jacobian_gram_guard": 0.7440619996050373,
+    "hildreth_ball": 3.355489199515432,
+    "reconstruction": 0.8161147997016087,
+    "materialization": 0.44057350023649633
+  },
+  "flop_ledger": {
+    "endpoint": 80630251520,
+    "jacobian_forward_guard": 3754774528,
+    "gram": 336820356,
+    "jacobian_directional_dense_estimate": 7107115008,
+    "hildreth_ball_estimate": 542962744,
+    "reconstruction": 4160675164
+  },
+  "current_ce_dense_flops": 3039805440,
+  "flop_coverage": "Dense multiply-add lower bounds and named analytic/coordinate estimates; excludes optimizer, some elementwise/reductions/GELU costs. Not exact total hardware FLOPs.",
+  "endpoint_calls": 728,
+  "endpoint_rows": 50960,
+  "padded_endpoint_rows": 186368,
+  "control_bank_reads": 50960,
+  "derivative_calls": {
+    "jacobian_batches": 307,
+    "jacobian_pairs": 9002,
+    "jacobian_unique_rows": 4751
+  },
+  "outer_iterations": 307,
+  "inner_sweeps": 48686,
+  "correct_to_wrong": 5,
+  "wrong_to_correct": 5,
+  "peak_cuda_bytes": 119901696,
+  "model_bytes": 866612,
+  "bank_gpu_bytes": 1127984,
+  "bank_cpu_bytes": 900480,
+  "optimizer_bytes": 1733240,
+  "checkpoint_sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+  "native_reference_identity": false,
+  "replay_identity": false
+}

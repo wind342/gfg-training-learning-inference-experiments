@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "streams": [
+    {
+      "budget": 210,
+      "totals": {
+        "scheduled": 2100,
+        "rollback": 0,
+        "native_safe": 2,
+        "outer_rounds": 4276,
+        "inner_sweeps": 711686,
+        "ball_hits": 0,
+        "projected_unsafe_rechecks": 2178,
+        "approximate_local_commits": 1164,
+        "capped_exact_checks": 2457,
+        "capped_exact_safe": 1164
+      },
+      "floor_violations": 0,
+      "checkpoint_chains_identical": true,
+      "local_cap_residual_max": 0.0014555450647337218,
+      "local_cap_residual_median": 2.1055210198267504e-07
+    },
+    {
+      "budget": 630,
+      "totals": {
+        "scheduled": 6300,
+        "rollback": 200,
+        "native_safe": 658,
+        "outer_rounds": 10779,
+        "inner_sweeps": 1746862,
+        "ball_hits": 52263,
+        "approximate_local_commits": 3191,
+        "capped_exact_checks": 7144,
+        "capped_exact_safe": 3191,
+        "projected_unsafe_rechecks": 5337
+      },
+      "floor_violations": 0,
+      "checkpoint_chains_identical": true,
+      "local_cap_residual_max": 0.02878227017725759,
+      "local_cap_residual_median": 1.0313343126525099e-06
+    }
+  ],
+  "old_and_v1_unchanged": true,
+  "test_evaluated": false,
+  "source_sha256": "a52a35e9cf09711ad53af9307dec2d5d2f49216f5ce376343b9d0d213321f5d2"
+}

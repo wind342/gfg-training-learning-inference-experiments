@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "budget": 210,
+      "steps": 210,
+      "heads_identical": true,
+      "moments_identical": true,
+      "counters_identical": true,
+      "decisions_identical": true,
+      "independent_endpoint_counts_identical": true,
+      "floor_violations": 0,
+      "capped": 66,
+      "capped_candidates_actual_safe": 51,
+      "capped_ball_hits": 0,
+      "diagnostic_candidates_never_committed": true,
+      "trajectory_sha256": "2f763b75817593da9dc607f91c024f466e3d78d0b6bcaea9e54a5b045dfba63c"
+    },
+    {
+      "budget": 630,
+      "steps": 630,
+      "heads_identical": true,
+      "moments_identical": true,
+      "counters_identical": true,
+      "decisions_identical": true,
+      "independent_endpoint_counts_identical": true,
+      "floor_violations": 0,
+      "capped": 237,
+      "capped_candidates_actual_safe": 237,
+      "capped_ball_hits": 0,
+      "diagnostic_candidates_never_committed": true,
+      "trajectory_sha256": "989daefe5d2d4da4107f56782614f84afc65906845a9783b864d84cc79e8b19f"
+    }
+  ],
+  "old_authority_files_verified": 250,
+  "test_deserialized": false,
+  "test_evaluated": false,
+  "diagnostics_after_outcomes": true
+}

@@ -1,0 +1,66 @@
+{
+  "posthoc": true,
+  "no_training_or_protocol_change": true,
+  "cases": [
+    {
+      "file": "LOCAL_QP_210_first.npz",
+      "step": 101,
+      "status": true,
+      "message": "Optimization terminated successfully",
+      "iterations": 2,
+      "halfspace_violation": 1.0408340855860843e-17,
+      "ball_violation": 0.0,
+      "norm_over_rho": 0.2488756209452358,
+      "gram_condition": 372.4828546226561,
+      "dimension": 33,
+      "pairs": 33,
+      "rank_retained": 33,
+      "satisfies_frozen_primal_tolerances": true
+    },
+    {
+      "file": "LOCAL_QP_210_worst.npz",
+      "step": 177,
+      "status": true,
+      "message": "Optimization terminated successfully",
+      "iterations": 2,
+      "halfspace_violation": 1.3877787807814457e-17,
+      "ball_violation": 0.0,
+      "norm_over_rho": 0.22828028525041125,
+      "gram_condition": 383.0773469308007,
+      "dimension": 32,
+      "pairs": 32,
+      "rank_retained": 32,
+      "satisfies_frozen_primal_tolerances": true
+    },
+    {
+      "file": "LOCAL_QP_630_first.npz",
+      "step": 79,
+      "status": true,
+      "message": "Optimization terminated successfully",
+      "iterations": 2,
+      "halfspace_violation": 1.734723475976807e-17,
+      "ball_violation": 0.0,
+      "norm_over_rho": 0.23827732021352646,
+      "gram_condition": 219.28729556860367,
+      "dimension": 18,
+      "pairs": 18,
+      "rank_retained": 18,
+      "satisfies_frozen_primal_tolerances": true
+    },
+    {
+      "file": "LOCAL_QP_630_worst.npz",
+      "step": 386,
+      "status": true,
+      "message": "Optimization terminated successfully",
+      "iterations": 2,
+      "halfspace_violation": 1.734723475976807e-17,
+      "ball_violation": 0.0,
+      "norm_over_rho": 0.19896856967946985,
+      "gram_condition": 443.84383465663245,
+      "dimension": 20,
+      "pairs": 20,
+      "rank_retained": 20,
+      "satisfies_frozen_primal_tolerances": true
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+{
+  "status": "STOP_AFTER_SMOKE",
+  "reports": [
+    {
+      "status": "PASS",
+      "kind": "native",
+      "budget": 210,
+      "task": 2,
+      "source_checkpoint": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt",
+      "source_checkpoint_sha256": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+      "K": [
+        10,
+        8,
+        9,
+        10,
+        7,
+        7,
+        5
+      ],
+      "expansion_losses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "schedule_sha256": "8283c242a51c82e68450de3f427a520f795e692f0a43cc9f69d4f2f181924ef4",
+      "current_entry": {
+        "ce": 2.686830520629883,
+        "macro": 0.003292898314871958,
+        "per_intent": {
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.005988024175167084,
+          "10": 0.0,
+          "11": 0.006535947788506746,
+          "12": 0.0,
+          "13": 0.010526316240429878
+        }
+      },
+      "train_metrics": {
+        "current": {
+          "ce": 1.5030977725982666,
+          "macro": 0.6119917184114456,
+          "per_intent": {
+            "7": 0.47899162769317627,
+            "8": 0.909604549407959,
+            "9": 0.4071856439113617,
+            "10": 0.7777777910232544,
+            "11": 0.7973856329917908,
+            "12": 0.7551020383834839,
+            "13": 0.15789474546909332
+          }
+        },
+        "old": {
+          "ce": 4.537799835205078,
+          "macro": 0.0,
+          "per_intent": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0
+          }
+        },
+        "all": {
+          "ce": 2.9772326946258545,
+          "macro": 0.3059958592057228,
+          "per_intent": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.47899162769317627,
+            "8": 0.909604549407959,
+            "9": 0.4071856439113617,
+            "10": 0.7777777910232544,
+            "11": 0.7973856329917908,
+            "12": 0.7551020383834839,
+            "13": 0.15789474546909332
+          }
+        }
+      },
+      "smoke_gates": null,
+      "unsafe_native": 0,
+      "safe_native": null,
+      "repaired": 0,
+      "rollback": 0,
+      "repair_rate": null,
+      "norm_ratio_median_triggered": null,
+      "failure_counts": {},
+      "floor_violations": null,
+      "old_ce_backward_examples": 0,
+      "old_ce_backward_flops": 0,
+      "test_access": false,
+      "common_wall": 0.6397278000367805,
+      "control_wall": 0.0,
+      "entry_wall": 0.06791209999937564,
+      "algorithm_wall": 0.6397278000367805,
+      "observer_wall": 0.8285376006970182,
+      "regions_seconds": {
+        "endpoint": 0.056249599903821945
+      },
+      "flop_ledger": {
+        "endpoint": 110755840
+      },
+      "current_ce_dense_flops": 3039805440,
+      "flop_coverage": "Dense multiply-add lower bounds and named analytic/coordinate estimates; excludes optimizer, some elementwise/reductions/GELU costs. Not exact total hardware FLOPs.",
+      "endpoint_calls": 1,
+      "endpoint_rows": 70,
+      "padded_endpoint_rows": 256,
+      "control_bank_reads": 0,
+      "derivative_calls": {},
+      "outer_iterations": 0,
+      "inner_sweeps": 0,
+      "correct_to_wrong": 0,
+      "wrong_to_correct": 0,
+      "peak_cuda_bytes": 119034880,
+      "model_bytes": 866612,
+      "bank_gpu_bytes": 1127984,
+      "bank_cpu_bytes": 900480,
+      "optimizer_bytes": 1733240,
+      "checkpoint_sha256": "0780d5546164fd7de356e03e7c9caf6f5469298bb9a041b673f59d7307acd79b",
+      "native_reference_identity": true,
+      "replay_identity": false
+    },
+    {
+      "status": "FAIL",
+      "kind": "jacobian",
+      "budget": 210,
+      "task": 2,
+      "source_checkpoint": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt",
+      "source_checkpoint_sha256": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+      "K": [
+        10,
+        8,
+        9,
+        10,
+        7,
+        7,
+        5
+      ],
+      "expansion_losses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "schedule_sha256": "8283c242a51c82e68450de3f427a520f795e692f0a43cc9f69d4f2f181924ef4",
+      "current_entry": {
+        "ce": 2.686830520629883,
+        "macro": 0.003292898314871958,
+        "per_intent": {
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.005988024175167084,
+          "10": 0.0,
+          "11": 0.006535947788506746,
+          "12": 0.0,
+          "13": 0.010526316240429878
+        }
+      },
+      "train_metrics": {
+        "current": {
+          "ce": 2.2570788860321045,
+          "macro": 0.478514592562403,
+          "per_intent": {
+            "7": 0.4117647409439087,
+            "8": 0.23163841664791107,
+            "9": 0.401197612285614,
+            "10": 0.7094017267227173,
+            "11": 0.6797385811805725,
+            "12": 0.44217684864997864,
+            "13": 0.4736842215061188
+          }
+        },
+        "old": {
+          "ce": 2.2277979850769043,
+          "macro": 0.5629633622510093,
+          "per_intent": {
+            "0": 0.5462962985038757,
+            "1": 0.826923131942749,
+            "2": 0.6074073910713196,
+            "3": 0.8255813717842102,
+            "4": 0.4409937858581543,
+            "5": 0.5631067752838135,
+            "6": 0.1304347813129425
+          }
+        },
+        "all": {
+          "ce": 2.2428553104400635,
+          "macro": 0.5207389774067062,
+          "per_intent": {
+            "0": 0.5462962985038757,
+            "1": 0.826923131942749,
+            "2": 0.6074073910713196,
+            "3": 0.8255813717842102,
+            "4": 0.4409937858581543,
+            "5": 0.5631067752838135,
+            "6": 0.1304347813129425,
+            "7": 0.4117647409439087,
+            "8": 0.23163841664791107,
+            "9": 0.401197612285614,
+            "10": 0.7094017267227173,
+            "11": 0.6797385811805725,
+            "12": 0.44217684864997864,
+            "13": 0.4736842215061188
+          }
+        }
+      },
+      "smoke_gates": {
+        "floor_zero": true,
+        "exposure": true,
+        "repair_rate": false,
+        "rollback_rate": false,
+        "current_macro": false,
+        "current_ce": true,
+        "movement": true
+      },
+      "unsafe_native": 208,
+      "safe_native": 2,
+      "repaired": 142,
+      "rollback": 66,
+      "repair_rate": 0.6826923076923077,
+      "norm_ratio_median_triggered": 0.8765452411061293,
+      "failure_counts": {
+        "INNER_LIMIT": 66
+      },
+      "floor_violations": 0,
+      "old_ce_backward_examples": 0,
+      "old_ce_backward_flops": 0,
+      "test_access": false,
+      "common_wall": 0.688976899953559,
+      "control_wall": 6.362343698507175,
+      "entry_wall": 0.0011838000500574708,
+      "algorithm_wall": 7.052504398510791,
+      "observer_wall": 1.1146310006733984,
+      "regions_seconds": {
+        "endpoint": 0.2846753002377227,
+        "parameter_geometry": 0.5338901008944958,
+        "selection": 0.05400430120062083,
+        "geometry_factors_subregion": 0.12596049846615642,
+        "gram_subregion": 0.026406600954942405,
+        "budget_subregion": 0.21083099977113307,
+        "jacobian_gram_guard": 0.7237892973935232,
+        "hildreth_ball": 3.050493298796937,
+        "reconstruction": 0.6290842992020771,
+        "materialization": 0.26748430042061955
+      },
+      "flop_ledger": {
+        "endpoint": 72766586880,
+        "jacobian_forward_guard": 3616247808,
+        "gram": 337959804,
+        "jacobian_directional_dense_estimate": 6236686848,
+        "hildreth_ball_estimate": 533439978,
+        "reconstruction": 3169402352
+      },
+      "current_ce_dense_flops": 3039805440,
+      "flop_coverage": "Dense multiply-add lower bounds and named analytic/coordinate estimates; excludes optimizer, some elementwise/reductions/GELU costs. Not exact total hardware FLOPs.",
+      "endpoint_calls": 657,
+      "endpoint_rows": 45990,
+      "padded_endpoint_rows": 168192,
+      "control_bank_reads": 45990,
+      "derivative_calls": {
+        "jacobian_batches": 302,
+        "jacobian_pairs": 8946,
+        "jacobian_unique_rows": 4575
+      },
+      "outer_iterations": 302,
+      "inner_sweeps": 46878,
+      "correct_to_wrong": 4,
+      "wrong_to_correct": 4,
+      "peak_cuda_bytes": 119901696,
+      "model_bytes": 866612,
+      "bank_gpu_bytes": 1127984,
+      "bank_cpu_bytes": 900480,
+      "optimizer_bytes": 1733240,
+      "checkpoint_sha256": "bab685e151cbb4e6f5d86b628b7516e063db29118a30c0af0b9ac3c4332d87b7",
+      "native_reference_identity": false,
+      "replay_identity": false
+    },
+    {
+      "status": "PASS",
+      "kind": "native",
+      "budget": 630,
+      "task": 2,
+      "source_checkpoint": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt",
+      "source_checkpoint_sha256": "b80f493410871810dcd2981f4571fad38952cf80e5413f330b3b631c17ac9e31",
+      "K": [
+        10,
+        8,
+        9,
+        9,
+        3,
+        9,
+        9
+      ],
+      "expansion_losses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "schedule_sha256": "30db70611b61299a7cb8c933fcb7405f63601b65a9c0235bd8c417322c5cde5a",
+      "current_entry": {
+        "ce": 3.0420682430267334,
+        "macro": 0.0008071025035211018,
+        "per_intent": {
+          "7": 0.0,
+          "8": 0.005649717524647713,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0
+        }
+      },
+      "train_metrics": {
+        "current": {
+          "ce": 0.7638919353485107,
+          "macro": 0.8571992601667132,
+          "per_intent": {
+            "7": 0.8739496469497681,
+            "8": 0.9265536665916443,
+            "9": 0.71856290102005,
+            "10": 0.8717949390411377,
+            "11": 0.8366013169288635,
+            "12": 0.8571428656578064,
+            "13": 0.9157894849777222
+          }
+        },
+        "old": {
+          "ce": 5.128008842468262,
+          "macro": 0.0,
+          "per_intent": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0
+          }
+        },
+        "all": {
+          "ce": 2.883802890777588,
+          "macro": 0.4285996300833566,
+          "per_intent": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.8739496469497681,
+            "8": 0.9265536665916443,
+            "9": 0.71856290102005,
+            "10": 0.8717949390411377,
+            "11": 0.8366013169288635,
+            "12": 0.8571428656578064,
+            "13": 0.9157894849777222
+          }
+        }
+      },
+      "smoke_gates": null,
+      "unsafe_native": 0,
+      "safe_native": null,
+      "repaired": 0,
+      "rollback": 0,
+      "repair_rate": null,
+      "norm_ratio_median_triggered": null,
+      "failure_counts": {},
+      "floor_violations": null,
+      "old_ce_backward_examples": 0,
+      "old_ce_backward_flops": 0,
+      "test_access": false,
+      "common_wall": 2.4776230024872348,
+      "control_wall": 0.0,
+      "entry_wall": 0.002371200011111796,
+      "algorithm_wall": 2.4776230024872348,
+      "observer_wall": 4.1086901006056,
+      "regions_seconds": {
+        "endpoint": 0.0004786000354215503
+      },
+      "flop_ledger": {
+        "endpoint": 110755840
+      },
+      "current_ce_dense_flops": 9119416320,
+      "flop_coverage": "Dense multiply-add lower bounds and named analytic/coordinate estimates; excludes optimizer, some elementwise/reductions/GELU costs. Not exact total hardware FLOPs.",
+      "endpoint_calls": 1,
+      "endpoint_rows": 70,
+      "padded_endpoint_rows": 256,
+      "control_bank_reads": 0,
+      "derivative_calls": {},
+      "outer_iterations": 0,
+      "inner_sweeps": 0,
+      "correct_to_wrong": 0,
+      "wrong_to_correct": 0,
+      "peak_cuda_bytes": 119034880,
+      "model_bytes": 866612,
+      "bank_gpu_bytes": 1127984,
+      "bank_cpu_bytes": 900480,
+      "optimizer_bytes": 1733240,
+      "checkpoint_sha256": "5a7c08d073abad4d596854cc3c60165ed17c6b60ba3ac45c2f1f048b0a4500d9",
+      "native_reference_identity": true,
+      "replay_identity": false
+    },
+    {
+      "status": "FAIL",
+      "kind": "jacobian",
+      "budget": 630,
+      "task": 2,
+      "source_checkpoint": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt",
+      "source_checkpoint_sha256": "b80f493410871810dcd2981f4571fad38952cf80e5413f330b3b631c17ac9e31",
+      "K": [
+        10,
+        8,
+        9,
+        9,
+        3,
+        9,
+        9
+      ],
+      "expansion_losses": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "schedule_sha256": "30db70611b61299a7cb8c933fcb7405f63601b65a9c0235bd8c417322c5cde5a",
+      "current_entry": {
+        "ce": 3.0420682430267334,
+        "macro": 0.0008071025035211018,
+        "per_intent": {
+          "7": 0.0,
+          "8": 0.005649717524647713,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0
+        }
+      },
+      "train_metrics": {
+        "current": {
+          "ce": 1.6883951425552368,
+          "macro": 0.6989171930721828,
+          "per_intent": {
+            "7": 0.49579834938049316,
+            "8": 0.5593220591545105,
+            "9": 0.6646707057952881,
+            "10": 0.8632479310035706,
+            "11": 0.8692810535430908,
+            "12": 0.6190475821495056,
+            "13": 0.8210526704788208
+          }
+        },
+        "old": {
+          "ce": 1.6244014501571655,
+          "macro": 0.7089990249701908,
+          "per_intent": {
+            "0": 0.7870370149612427,
+            "1": 0.826923131942749,
+            "2": 0.7333333492279053,
+            "3": 0.7790697813034058,
+            "4": 0.3664596378803253,
+            "5": 0.8252426981925964,
+            "6": 0.6449275612831116
+          }
+        },
+        "all": {
+          "ce": 1.6573095321655273,
+          "macro": 0.7039581090211868,
+          "per_intent": {
+            "0": 0.7870370149612427,
+            "1": 0.826923131942749,
+            "2": 0.7333333492279053,
+            "3": 0.7790697813034058,
+            "4": 0.3664596378803253,
+            "5": 0.8252426981925964,
+            "6": 0.6449275612831116,
+            "7": 0.49579834938049316,
+            "8": 0.5593220591545105,
+            "9": 0.6646707057952881,
+            "10": 0.8632479310035706,
+            "11": 0.8692810535430908,
+            "12": 0.6190475821495056,
+            "13": 0.8210526704788208
+          }
+        }
+      },
+      "smoke_gates": {
+        "floor_zero": true,
+        "exposure": true,
+        "repair_rate": false,
+        "rollback_rate": false,
+        "current_macro": true,
+        "current_ce": true,
+        "movement": true
+      },
+      "unsafe_native": 618,
+      "safe_native": 12,
+      "repaired": 381,
+      "rollback": 237,
+      "repair_rate": 0.616504854368932,
+      "norm_ratio_median_triggered": 0.8921439210080064,
+      "failure_counts": {
+        "INNER_LIMIT": 237
+      },
+      "floor_violations": 0,
+      "old_ce_backward_examples": 0,
+      "old_ce_backward_flops": 0,
+      "test_access": false,
+      "common_wall": 2.2628815019270405,
+      "control_wall": 12.88776050042361,
+      "entry_wall": 0.004928700043819845,
+      "algorithm_wall": 15.15557070239447,
+      "observer_wall": 4.536158301285468,
+      "regions_seconds": {
+        "endpoint": 1.2813392978860065,
+        "parameter_geometry": 2.0589472998399287,
+        "selection": 0.1032948000356555,
+        "geometry_factors_subregion": 0.281680298387073,
+        "gram_subregion": 0.04267820017412305,
+        "budget_subregion": 0.4310641004703939,
+        "jacobian_gram_guard": 1.4252794014755636,
+        "hildreth_ball": 4.045502100605518,
+        "reconstruction": 0.9013308994472027,
+        "materialization": 1.066108898841776
+      },
+      "flop_ledger": {
+        "endpoint": 181861089280,
+        "jacobian_forward_guard": 5276153856,
+        "gram": 260629818,
+        "jacobian_directional_dense_estimate": 7261068288,
+        "hildreth_ball_estimate": 374640110,
+        "reconstruction": 3308040292
+      },
+      "current_ce_dense_flops": 9119416320,
+      "flop_coverage": "Dense multiply-add lower bounds and named analytic/coordinate estimates; excludes optimizer, some elementwise/reductions/GELU costs. Not exact total hardware FLOPs.",
+      "endpoint_calls": 1642,
+      "endpoint_rows": 114940,
+      "padded_endpoint_rows": 420352,
+      "control_bank_reads": 114940,
+      "derivative_calls": {
+        "jacobian_batches": 618,
+        "jacobian_pairs": 11511,
+        "jacobian_unique_rows": 6679
+      },
+      "outer_iterations": 618,
+      "inner_sweeps": 83690,
+      "correct_to_wrong": 0,
+      "wrong_to_correct": 0,
+      "peak_cuda_bytes": 119034880,
+      "model_bytes": 866612,
+      "bank_gpu_bytes": 1127984,
+      "bank_cpu_bytes": 900480,
+      "optimizer_bytes": 1733240,
+      "checkpoint_sha256": "3b2bd98dbe4d9f599f6dbf24aad8ba6130e91f48b056976a601681b80a0c4f13",
+      "native_reference_identity": false,
+      "replay_identity": false
+    }
+  ],
+  "test_access": false
+}

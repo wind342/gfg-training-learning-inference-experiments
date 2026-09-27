@@ -1,0 +1,158 @@
+{
+  "status": "FAIL",
+  "kind": "jacobian",
+  "budget": 210,
+  "task": 2,
+  "source_checkpoint": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt",
+  "source_checkpoint_sha256": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+  "K": [
+    10,
+    8,
+    9,
+    10,
+    7,
+    7,
+    5
+  ],
+  "expansion_losses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "schedule_sha256": "8283c242a51c82e68450de3f427a520f795e692f0a43cc9f69d4f2f181924ef4",
+  "current_entry": {
+    "ce": 2.686830520629883,
+    "macro": 0.003292898314871958,
+    "per_intent": {
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.005988024175167084,
+      "10": 0.0,
+      "11": 0.006535947788506746,
+      "12": 0.0,
+      "13": 0.010526316240429878
+    }
+  },
+  "train_metrics": {
+    "current": {
+      "ce": 2.2570788860321045,
+      "macro": 0.478514592562403,
+      "per_intent": {
+        "7": 0.4117647409439087,
+        "8": 0.23163841664791107,
+        "9": 0.401197612285614,
+        "10": 0.7094017267227173,
+        "11": 0.6797385811805725,
+        "12": 0.44217684864997864,
+        "13": 0.4736842215061188
+      }
+    },
+    "old": {
+      "ce": 2.2277979850769043,
+      "macro": 0.5629633622510093,
+      "per_intent": {
+        "0": 0.5462962985038757,
+        "1": 0.826923131942749,
+        "2": 0.6074073910713196,
+        "3": 0.8255813717842102,
+        "4": 0.4409937858581543,
+        "5": 0.5631067752838135,
+        "6": 0.1304347813129425
+      }
+    },
+    "all": {
+      "ce": 2.2428553104400635,
+      "macro": 0.5207389774067062,
+      "per_intent": {
+        "0": 0.5462962985038757,
+        "1": 0.826923131942749,
+        "2": 0.6074073910713196,
+        "3": 0.8255813717842102,
+        "4": 0.4409937858581543,
+        "5": 0.5631067752838135,
+        "6": 0.1304347813129425,
+        "7": 0.4117647409439087,
+        "8": 0.23163841664791107,
+        "9": 0.401197612285614,
+        "10": 0.7094017267227173,
+        "11": 0.6797385811805725,
+        "12": 0.44217684864997864,
+        "13": 0.4736842215061188
+      }
+    }
+  },
+  "smoke_gates": {
+    "floor_zero": true,
+    "exposure": true,
+    "repair_rate": false,
+    "rollback_rate": false,
+    "current_macro": false,
+    "current_ce": true,
+    "movement": true
+  },
+  "unsafe_native": 208,
+  "safe_native": 2,
+  "repaired": 142,
+  "rollback": 66,
+  "repair_rate": 0.6826923076923077,
+  "norm_ratio_median_triggered": 0.8765452411061293,
+  "failure_counts": {
+    "INNER_LIMIT": 66
+  },
+  "floor_violations": 0,
+  "old_ce_backward_examples": 0,
+  "old_ce_backward_flops": 0,
+  "test_access": false,
+  "common_wall": 0.688976899953559,
+  "control_wall": 6.362343698507175,
+  "entry_wall": 0.0011838000500574708,
+  "algorithm_wall": 7.052504398510791,
+  "observer_wall": 1.1146310006733984,
+  "regions_seconds": {
+    "endpoint": 0.2846753002377227,
+    "parameter_geometry": 0.5338901008944958,
+    "selection": 0.05400430120062083,
+    "geometry_factors_subregion": 0.12596049846615642,
+    "gram_subregion": 0.026406600954942405,
+    "budget_subregion": 0.21083099977113307,
+    "jacobian_gram_guard": 0.7237892973935232,
+    "hildreth_ball": 3.050493298796937,
+    "reconstruction": 0.6290842992020771,
+    "materialization": 0.26748430042061955
+  },
+  "flop_ledger": {
+    "endpoint": 72766586880,
+    "jacobian_forward_guard": 3616247808,
+    "gram": 337959804,
+    "jacobian_directional_dense_estimate": 6236686848,
+    "hildreth_ball_estimate": 533439978,
+    "reconstruction": 3169402352
+  },
+  "current_ce_dense_flops": 3039805440,
+  "flop_coverage": "Dense multiply-add lower bounds and named analytic/coordinate estimates; excludes optimizer, some elementwise/reductions/GELU costs. Not exact total hardware FLOPs.",
+  "endpoint_calls": 657,
+  "endpoint_rows": 45990,
+  "padded_endpoint_rows": 168192,
+  "control_bank_reads": 45990,
+  "derivative_calls": {
+    "jacobian_batches": 302,
+    "jacobian_pairs": 8946,
+    "jacobian_unique_rows": 4575
+  },
+  "outer_iterations": 302,
+  "inner_sweeps": 46878,
+  "correct_to_wrong": 4,
+  "wrong_to_correct": 4,
+  "peak_cuda_bytes": 119901696,
+  "model_bytes": 866612,
+  "bank_gpu_bytes": 1127984,
+  "bank_cpu_bytes": 900480,
+  "optimizer_bytes": 1733240,
+  "checkpoint_sha256": "bab685e151cbb4e6f5d86b628b7516e063db29118a30c0af0b9ac3c4332d87b7",
+  "native_reference_identity": false,
+  "replay_identity": false
+}

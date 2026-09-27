@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "kind": "native",
+  "budget": 630,
+  "task": 2,
+  "source_checkpoint": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt",
+  "source_checkpoint_sha256": "b80f493410871810dcd2981f4571fad38952cf80e5413f330b3b631c17ac9e31",
+  "K": [
+    10,
+    8,
+    9,
+    9,
+    3,
+    9,
+    9
+  ],
+  "expansion_losses": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "schedule_sha256": "30db70611b61299a7cb8c933fcb7405f63601b65a9c0235bd8c417322c5cde5a",
+  "current_entry": {
+    "ce": 3.0420682430267334,
+    "macro": 0.0008071025035211018,
+    "per_intent": {
+      "7": 0.0,
+      "8": 0.005649717524647713,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0
+    }
+  },
+  "train_metrics": {
+    "current": {
+      "ce": 0.7638919353485107,
+      "macro": 0.8571992601667132,
+      "per_intent": {
+        "7": 0.8739496469497681,
+        "8": 0.9265536665916443,
+        "9": 0.71856290102005,
+        "10": 0.8717949390411377,
+        "11": 0.8366013169288635,
+        "12": 0.8571428656578064,
+        "13": 0.9157894849777222
+      }
+    },
+    "old": {
+      "ce": 5.128008842468262,
+      "macro": 0.0,
+      "per_intent": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      }
+    },
+    "all": {
+      "ce": 2.883802890777588,
+      "macro": 0.4285996300833566,
+      "per_intent": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.8739496469497681,
+        "8": 0.9265536665916443,
+        "9": 0.71856290102005,
+        "10": 0.8717949390411377,
+        "11": 0.8366013169288635,
+        "12": 0.8571428656578064,
+        "13": 0.9157894849777222
+      }
+    }
+  },
+  "smoke_gates": null,
+  "unsafe_native": 0,
+  "safe_native": null,
+  "repaired": 0,
+  "rollback": 0,
+  "repair_rate": null,
+  "norm_ratio_median_triggered": null,
+  "failure_counts": {},
+  "floor_violations": null,
+  "old_ce_backward_examples": 0,
+  "old_ce_backward_flops": 0,
+  "test_access": false,
+  "common_wall": 2.4776230024872348,
+  "control_wall": 0.0,
+  "entry_wall": 0.002371200011111796,
+  "algorithm_wall": 2.4776230024872348,
+  "observer_wall": 4.1086901006056,
+  "regions_seconds": {
+    "endpoint": 0.0004786000354215503
+  },
+  "flop_ledger": {
+    "endpoint": 110755840
+  },
+  "current_ce_dense_flops": 9119416320,
+  "flop_coverage": "Dense multiply-add lower bounds and named analytic/coordinate estimates; excludes optimizer, some elementwise/reductions/GELU costs. Not exact total hardware FLOPs.",
+  "endpoint_calls": 1,
+  "endpoint_rows": 70,
+  "padded_endpoint_rows": 256,
+  "control_bank_reads": 0,
+  "derivative_calls": {},
+  "outer_iterations": 0,
+  "inner_sweeps": 0,
+  "correct_to_wrong": 0,
+  "wrong_to_correct": 0,
+  "peak_cuda_bytes": 119034880,
+  "model_bytes": 866612,
+  "bank_gpu_bytes": 1127984,
+  "bank_cpu_bytes": 900480,
+  "optimizer_bytes": 1733240,
+  "checkpoint_sha256": "5a7c08d073abad4d596854cc3c60165ed17c6b60ba3ac45c2f1f048b0a4500d9",
+  "native_reference_identity": true,
+  "replay_identity": false
+}
