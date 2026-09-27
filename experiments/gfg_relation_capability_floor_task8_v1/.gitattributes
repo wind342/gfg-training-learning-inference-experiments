@@ -1,0 +1,2 @@
+# Preserve original generated-record bytes and accept their CRLF line endings.
+results/** -text whitespace=cr-at-eol

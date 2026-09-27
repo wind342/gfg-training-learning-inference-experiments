@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "native_candidates": 210,
+  "independent_sweeps": 1257,
+  "relation_step_floor_checks": 11760,
+  "floor_violations": 0,
+  "correct_to_wrong": 220,
+  "wrong_to_correct": 221,
+  "optimizer_moments_exact": true,
+  "selections_and_ties_exact": true,
+  "actual_endpoints_exact": true,
+  "fixed_entry_floor": true,
+  "metrics_recomputed": true,
+  "source_and_input_identity": true
+}
