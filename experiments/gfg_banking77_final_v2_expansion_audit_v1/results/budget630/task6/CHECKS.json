@@ -1,0 +1,187 @@
+{
+  "status": "COMPLETED",
+  "budget": 630,
+  "task": 6,
+  "updates": 630,
+  "K": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "final_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "unsafe_native": 0,
+  "rollbacks": 0,
+  "inner_sweeps": 0,
+  "outer_iterations": 0,
+  "decisions": {},
+  "floor_violations": 0,
+  "correct_to_wrong": 4,
+  "wrong_to_correct": 4,
+  "predictor": {
+    "calls": 630,
+    "rows": 220500,
+    "margin_mae": 5.505587778934816e-07,
+    "margin_max_error": 3.814697265625e-06,
+    "sign_agreement": 1.0,
+    "argmax_agreement": 1.0,
+    "balanced_accuracy": 1.0,
+    "correctness_confusion": [
+      [
+        220473,
+        0
+      ],
+      [
+        0,
+        27
+      ]
+    ],
+    "transition_order": [
+      "wrong_wrong",
+      "wrong_correct",
+      "correct_wrong",
+      "correct_correct"
+    ],
+    "transition_confusion": [
+      [
+        220469,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        23
+      ]
+    ],
+    "transition_counts": [
+      220469,
+      4,
+      4,
+      23
+    ],
+    "transition_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "floor_safe_agreement": 1.0,
+    "predicted_safe_updates": 630,
+    "false_safe_updates": 0,
+    "false_unsafe_updates": 0,
+    "false_safe_per_update": 0.0,
+    "false_safe_given_predicted_safe": 0.0,
+    "accuracy_gate": {
+      "sign": true,
+      "argmax": true,
+      "margin": true,
+      "balanced": true,
+      "correct_wrong": true,
+      "wrong_correct": true,
+      "false_safe_per_update": true
+    },
+    "status": "PASS"
+  },
+  "head_final": "23539987797891604e72d078c16e667a39ab26a3c7de001196c8e8ba5347dd4c",
+  "moments_final": "a1181010e33614d69bc674e6d4314c5055b790a510c4b1fa291270ae69152534",
+  "optimizer_steps": [
+    3780,
+    3780,
+    3780,
+    3780
+  ],
+  "common_wall": 2.1601293003186584,
+  "control_wall": 4.916644397191703,
+  "algorithm_wall": 7.076773697510362,
+  "region_seconds": {
+    "endpoint": 0.5388222008477896,
+    "predictor": 4.056809300091118
+  },
+  "peak_cuda_bytes": 112230912,
+  "old_ce_backward_examples": 0,
+  "test_files_opened": 0,
+  "checkpoint_sha256": "bb507347a6d4a3944635640cac3947227e6f4ff1e804875b189bc051ae376e5a",
+  "expansion_sha256": "421237a430ad28329d4c68c041ee5d94bbe34870a4629731cd72e33d21c0a844"
+}

@@ -1,0 +1,187 @@
+{
+  "status": "COMPLETED",
+  "budget": 210,
+  "task": 5,
+  "updates": 210,
+  "K": [
+    4,
+    3,
+    7,
+    7,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    4,
+    1,
+    1,
+    2,
+    0,
+    1,
+    5,
+    7,
+    3,
+    1,
+    8,
+    2,
+    9,
+    2,
+    4,
+    6,
+    6
+  ],
+  "final_counts": [
+    4,
+    3,
+    7,
+    7,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0,
+    4,
+    1,
+    1,
+    2,
+    0,
+    1,
+    5,
+    7,
+    3,
+    1,
+    8,
+    2,
+    9,
+    2,
+    4,
+    6,
+    6
+  ],
+  "unsafe_native": 210,
+  "rollbacks": 0,
+  "inner_sweeps": 68771,
+  "outer_iterations": 437,
+  "decisions": {
+    "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE": 74,
+    "PASS_ACTUAL_SAFE_ACCEPT": 117,
+    "PASS_ACTUAL_UNSAFE_CONTINUE": 153,
+    "INNER_LIMIT_ACTUAL_SAFE_ACCEPT": 93
+  },
+  "floor_violations": 0,
+  "correct_to_wrong": 37,
+  "wrong_to_correct": 37,
+  "predictor": {
+    "calls": 210,
+    "rows": 58800,
+    "margin_mae": 2.011808813834677e-07,
+    "margin_max_error": 1.430511474609375e-06,
+    "sign_agreement": 1.0,
+    "argmax_agreement": 1.0,
+    "balanced_accuracy": 1.0,
+    "correctness_confusion": [
+      [
+        48300,
+        0
+      ],
+      [
+        0,
+        10500
+      ]
+    ],
+    "transition_order": [
+      "wrong_wrong",
+      "wrong_correct",
+      "correct_wrong",
+      "correct_correct"
+    ],
+    "transition_confusion": [
+      [
+        40568,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        30,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        7732,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        10470
+      ]
+    ],
+    "transition_counts": [
+      40568,
+      30,
+      7732,
+      10470
+    ],
+    "transition_recall": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "floor_safe_agreement": 1.0,
+    "predicted_safe_updates": 0,
+    "false_safe_updates": 0,
+    "false_unsafe_updates": 0,
+    "false_safe_per_update": 0.0,
+    "false_safe_given_predicted_safe": null,
+    "accuracy_gate": {
+      "sign": true,
+      "argmax": true,
+      "margin": true,
+      "balanced": true,
+      "correct_wrong": true,
+      "wrong_correct": true,
+      "false_safe_per_update": true
+    },
+    "status": "PASS"
+  },
+  "head_final": "e7d3a29e757bad068878d997adc73cd82bbfd14186bc6e891471e9785e75f6f0",
+  "moments_final": "54cf870bf3c85aaf5f052b80ee4adfeb58ea7be22d41418f6012ad2a83a95d4c",
+  "optimizer_steps": [
+    1050,
+    1050,
+    1050,
+    1050
+  ],
+  "common_wall": 0.9134559000376612,
+  "control_wall": 16.783951299032196,
+  "algorithm_wall": 17.697407199069858,
+  "region_seconds": {
+    "endpoint": 0.552404000191018,
+    "predictor": 1.667472000932321,
+    "parameter_geometry": 0.6092021999647841,
+    "selection": 0.16369690059218556,
+    "geometry_factors_subregion": 0.39889429963659495,
+    "gram_subregion": 0.11383250076323748,
+    "budget_subregion": 0.4376545984996483,
+    "jacobian_gram_guard": 1.6640388005180284,
+    "hildreth_ball": 7.092857800540514,
+    "reconstruction": 1.5521326015004888,
+    "materialization": 0.8751327986828983
+  },
+  "peak_cuda_bytes": 112165888,
+  "old_ce_backward_examples": 0,
+  "test_files_opened": 0,
+  "checkpoint_sha256": "1d2594f59981b80c2465b12f97ccf0ad958facb4b8f0e79b5b906808b0d62b1d",
+  "expansion_sha256": "0ae5640d360ff3272bae7fdb61ebbe1f710388f2b42d8e5d9a150c092c9ae7f9"
+}

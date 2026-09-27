@@ -1,0 +1,472 @@
+{
+  "status": "PASS",
+  "authority": "E:\\gfg-evidence\\banking77-final-v2-expansion-audit-v1",
+  "public_files": {
+    "FREEZE.json": {
+      "sha256": "be56080d5fcc000ed94dd3438645eb5e7b77dfd9224b046e327e5801d8c1f424",
+      "bytes": 6812
+    },
+    "PREFLIGHT.json": {
+      "sha256": "69a7ceabca4266c841fa061467086a750f9af5d66cdd86c4d13221f7d75ca88f",
+      "bytes": 563
+    },
+    "TRAINING_COMPLETE.json": {
+      "sha256": "002c8748f483c0f67defcc275750e3692c1385ad92e7f535e96c8d80f4f5c388",
+      "bytes": 104921
+    },
+    "AUDIT_210.json": {
+      "sha256": "e2c464a0a879d5945e650dbc89e4ac4a7d6e90b03250c6664febbf7b766c48b5",
+      "bytes": 18461
+    },
+    "AUDIT_630.json": {
+      "sha256": "8726caf4ce554a0e540bb201e99eaeae4ee0e39a71cba5f12ecc1a65719144d0",
+      "bytes": 18464
+    },
+    "AUDIT.json": {
+      "sha256": "959a661953ab73c9a72610a649e15bc52dd62c059d4109b074294effdd4e06c2",
+      "bytes": 24544
+    },
+    "budget210/task3/EXPANSION.json": {
+      "sha256": "4a0c18cad5cc202b00ad987d03860531d9a50b76b46ae75724bb58a8a68b3430",
+      "bytes": 10285
+    },
+    "budget210/task3/EXPANSION_LOGITS.npz": {
+      "sha256": "5c99d532a3ca66a45cd58623c9c543570ab28053053dd096985075fb4cf051e4",
+      "bytes": 40960
+    },
+    "budget210/task3/CONFIG.json": {
+      "sha256": "552d1cbb86a2b4b916274e83a24eff37365e4aedd73562ae41fb108c878a1323",
+      "bytes": 2188
+    },
+    "budget210/task3/CHECKS.json": {
+      "sha256": "734bd98841a2f0f75f1c3b6653f875f572e59ee28922ce71593c7bab9a64529e",
+      "bytes": 3138
+    },
+    "budget210/task3/STEPS.jsonl.gz": {
+      "sha256": "dab4c5af26acdd4c5837462239c09989f12ec387e4c8fbdae261bb453bec93f7",
+      "bytes": 323278
+    },
+    "budget210/task4/EXPANSION.json": {
+      "sha256": "70c787f4675f3d65d332fae93dee247683fb6918edab35946a8f2e4da8400d2a",
+      "bytes": 44032
+    },
+    "budget210/task4/EXPANSION_LOGITS.npz": {
+      "sha256": "6d9679066fbde4cc44a7416c4fe68e5062b0cd84ce5456da4284771bb09999cb",
+      "bytes": 60964
+    },
+    "budget210/task4/CONFIG.json": {
+      "sha256": "e09df5f0bea3f2b211289230c10e30395b166c36819d731dffb26552988955c6",
+      "bytes": 2934
+    },
+    "budget210/task4/CHECKS.json": {
+      "sha256": "2006d463c524be156cc452a8ffdaaf1db132ffc2c0f488d6c752208c67db50a7",
+      "bytes": 3234
+    },
+    "budget210/task4/STEPS.jsonl.gz": {
+      "sha256": "9c2a539db6ba77565b43f562dc72edb1ad36f0a7d1c9ce68e9078eaeb4119e5f",
+      "bytes": 391383
+    },
+    "budget210/task5/EXPANSION.json": {
+      "sha256": "0ae5640d360ff3272bae7fdb61ebbe1f710388f2b42d8e5d9a150c092c9ae7f9",
+      "bytes": 10426
+    },
+    "budget210/task5/EXPANSION_LOGITS.npz": {
+      "sha256": "5fc39e779be53ccceb5e1cc8ac6aed218cbb6f87343da4a95ccdb79861bca3ad",
+      "bytes": 81416
+    },
+    "budget210/task5/CONFIG.json": {
+      "sha256": "177416ce16321d7819e1c986672d4e1dd3c77e7217f1806e939eece03ad1d235",
+      "bytes": 3653
+    },
+    "budget210/task5/CHECKS.json": {
+      "sha256": "86c34e95349093240b3e125a89a78e39cbf17d9e7cda4ee228fa27aa05dd242f",
+      "bytes": 3342
+    },
+    "budget210/task5/STEPS.jsonl.gz": {
+      "sha256": "06aeba4b58ee16a6a37a89d4b4875053fedd2490ee635537a81bb4e626ce122d",
+      "bytes": 473769
+    },
+    "budget210/task6/EXPANSION.json": {
+      "sha256": "4d2523347756bcdfdf21f5a126806ed1099f20f37f297c85222c6cc68a707e60",
+      "bytes": 18564
+    },
+    "budget210/task6/EXPANSION_LOGITS.npz": {
+      "sha256": "44ca5cfdf4f8b436f8ea3810b72c047b5174ce578a8882f90ccc1f567dc958fd",
+      "bytes": 101441
+    },
+    "budget210/task6/CONFIG.json": {
+      "sha256": "31228a161800be48b5ce02426e865007f5049598e49d76c2c9e61f6922d65858",
+      "bytes": 4391
+    },
+    "budget210/task6/CHECKS.json": {
+      "sha256": "576bce7c1b43ddb3f38c8034a1a7be80f410abe9ca946866a79708fbb8d7b4fe",
+      "bytes": 3443
+    },
+    "budget210/task6/STEPS.jsonl.gz": {
+      "sha256": "46decec2270a93cc6cb0f06330b590aa86a0e6c9e9da35325e32499ad13ddb15",
+      "bytes": 528919
+    },
+    "budget210/task7/EXPANSION.json": {
+      "sha256": "8c0d5a3ccab80ed1e23c0d0f8699c4e49160156fc0de4f08fc37cdd93ec40e05",
+      "bytes": 77935
+    },
+    "budget210/task7/EXPANSION_LOGITS.npz": {
+      "sha256": "348bfe471b6f3420b066880f6721059c26d3f755bf3f38def3729626c9878a9d",
+      "bytes": 121196
+    },
+    "budget210/task7/CONFIG.json": {
+      "sha256": "51b5adc12665716bab825c7bceef4f1b7e470a6c643f06d061d149c7e0f52595",
+      "bytes": 5130
+    },
+    "budget210/task7/CHECKS.json": {
+      "sha256": "a27b12e90b4e42c3a319d14d04c9968e468f832189f061a5894b4fb0046897d6",
+      "bytes": 3538
+    },
+    "budget210/task7/STEPS.jsonl.gz": {
+      "sha256": "9b210b7930dc1023094ab361c5f4889ba377d9997be219dc04e7c61cf0b58ae7",
+      "bytes": 320180
+    },
+    "budget210/task8/EXPANSION.json": {
+      "sha256": "47ecc0ded0feb6af32622328852a7f20c157dcd9eb91c1ae2f8e5bed64c9b4b5",
+      "bytes": 15320
+    },
+    "budget210/task8/EXPANSION_LOGITS.npz": {
+      "sha256": "29e84da9a5e4abf113eed87085ef3fd5f7cda0fddbbf89ccc376df1e9a7b5349",
+      "bytes": 141171
+    },
+    "budget210/task8/CONFIG.json": {
+      "sha256": "f5b0d4744d21c7c4f89f3bb3097d3fa924c3aa7f3e20210c4e49a3800df92140",
+      "bytes": 5880
+    },
+    "budget210/task8/CHECKS.json": {
+      "sha256": "f3ee51a0835ef8fbab52c50e1a2c4a36d19c065a99566159cd743090eabaecf8",
+      "bytes": 3634
+    },
+    "budget210/task8/STEPS.jsonl.gz": {
+      "sha256": "151ae49196dc533cf603e8d10f3985ec837bcaa54d9aeb511599105694892089",
+      "bytes": 407108
+    },
+    "budget210/task9/EXPANSION.json": {
+      "sha256": "51da37131474966008d2eb50dafbe61e59b451f15585746c90fc1ce2afb83ba4",
+      "bytes": 16967
+    },
+    "budget210/task9/EXPANSION_LOGITS.npz": {
+      "sha256": "90729c620a5da8182852dbac74dd4c457ecc3661606c8b97574005171ec98d2a",
+      "bytes": 161155
+    },
+    "budget210/task9/CONFIG.json": {
+      "sha256": "df54f9a903e3b0116811aafbc8b16bec21a6b8717561c0ed9641511e0c1c58c4",
+      "bytes": 6630
+    },
+    "budget210/task9/CHECKS.json": {
+      "sha256": "0b61f0edf47236484baecc6b1979cf234fc7d7451dedb49eeb6c0f36d8be7960",
+      "bytes": 3737
+    },
+    "budget210/task9/STEPS.jsonl.gz": {
+      "sha256": "ebddb9004ed75e0485df37b8ef67a88f3bb19d66cb7fd3d28f8de9e2d9b12675",
+      "bytes": 510641
+    },
+    "budget210/task10/EXPANSION.json": {
+      "sha256": "e7a4820b9891d54565593bbca12d2df18b9da8cb3a58ac12737b7a8cab1744d3",
+      "bytes": 18588
+    },
+    "budget210/task10/EXPANSION_LOGITS.npz": {
+      "sha256": "64ec7ec8976b7802a57a283bfa29e6cf8d2546ef9757979b61198352aec4fb7c",
+      "bytes": 180933
+    },
+    "budget210/task10/CONFIG.json": {
+      "sha256": "c7077e0bca635ab7e1ec498eddbdce340114888b9661329ccbc1cb55b4183868",
+      "bytes": 7370
+    },
+    "budget210/task10/CHECKS.json": {
+      "sha256": "182a995c1848c917380759d7a3520f6abddc08dd8acd16dfb5ea76f912e3d789",
+      "bytes": 3838
+    },
+    "budget210/task10/STEPS.jsonl.gz": {
+      "sha256": "e14541f41cac90f62f7e77bdf963b25b01f4974dd7f07240b07133ad3a5a0b57",
+      "bytes": 684514
+    },
+    "budget210/task11/EXPANSION.json": {
+      "sha256": "9f0c6008d09c032c53ce48b8fc1d79395a1cda309cf7c3c4140a5c4073fc258f",
+      "bytes": 20237
+    },
+    "budget210/task11/EXPANSION_LOGITS.npz": {
+      "sha256": "33dc9eb6df6a14f0960d608f736e66a2f35d36717e8f6661d935cdab264230d3",
+      "bytes": 198736
+    },
+    "budget210/task11/CONFIG.json": {
+      "sha256": "767b6a2ab534eadb032754f472d0a07737571739923a4c3c2d821f0b00c6ffab",
+      "bytes": 8120
+    },
+    "budget210/task11/CHECKS.json": {
+      "sha256": "bc8e5af3b96fbec975a018740ab768e92dcbcbea4e7f1f50357097cfe82833f1",
+      "bytes": 3937
+    },
+    "budget210/task11/STEPS.jsonl.gz": {
+      "sha256": "4e5a9ea2420bbcc2f4252c99648590402a5b43350b6361e37a5d86af7d646dbb",
+      "bytes": 728517
+    },
+    "budget630/task3/EXPANSION.json": {
+      "sha256": "22b5a8440784c4d1fab78bd5b63b5fb86dade8d1867c610d970210a1e70659cd",
+      "bytes": 7499
+    },
+    "budget630/task3/EXPANSION_LOGITS.npz": {
+      "sha256": "93e79ce3a224197a590a7fbfbc554f1d0a7777a2dc3662ae8deba6b5c5499b74",
+      "bytes": 40832
+    },
+    "budget630/task3/CONFIG.json": {
+      "sha256": "1815f26efa5b2da62417d7268b5419c00465fd52c70715d621e0c2bcd8a1ed6e",
+      "bytes": 2194
+    },
+    "budget630/task3/CHECKS.json": {
+      "sha256": "96010b40ae84626860a6409174318dff31d506a7d7dab3e94972330871460c3a",
+      "bytes": 3144
+    },
+    "budget630/task3/STEPS.jsonl.gz": {
+      "sha256": "b75bf017f0858133b76f56082d8640584e9825c79dbfd29daa91fd73398509f4",
+      "bytes": 1191605
+    },
+    "budget630/task4/EXPANSION.json": {
+      "sha256": "fd0f9c76bbd52031eb4bf4f8ecc5527ca0b76c29ed03332938b39f041226c01f",
+      "bytes": 10689
+    },
+    "budget630/task4/EXPANSION_LOGITS.npz": {
+      "sha256": "5d498a3981a5146c4163fc6e299f067b691ef44b2deb3d6a0a4d0205a21ac2c8",
+      "bytes": 60861
+    },
+    "budget630/task4/CONFIG.json": {
+      "sha256": "9ca61ada80f061834bc448bd76db1615b589368c098c396f0e1fb06416e15a2c",
+      "bytes": 2940
+    },
+    "budget630/task4/CHECKS.json": {
+      "sha256": "945efa3cc333c6a956eb3a901489257c653d135e091ab83d4ccdf7d0ba381dfc",
+      "bytes": 3249
+    },
+    "budget630/task4/STEPS.jsonl.gz": {
+      "sha256": "56ea0a470112d397e4de591e9965588a0042bdbdfdde3a419fe641c66a09914b",
+      "bytes": 1465134
+    },
+    "budget630/task5/EXPANSION.json": {
+      "sha256": "6235ad58c73b5d53e103cd4d377c8fd9c2190c99bbfd61a3c0c0903ba336ea8d",
+      "bytes": 57083
+    },
+    "budget630/task5/EXPANSION_LOGITS.npz": {
+      "sha256": "7dafb610560f9f82c39b8ef52c3b19b11558fc200bc6ef8860261edb5a6d0a4a",
+      "bytes": 81024
+    },
+    "budget630/task5/CONFIG.json": {
+      "sha256": "72f00d2a96983b2e32249d54bbc7611053d58a517ab6074e3c3f7c23036084f2",
+      "bytes": 3657
+    },
+    "budget630/task5/CHECKS.json": {
+      "sha256": "5734c445a2c22b92a2feff62baa9f2f81a9eec552fc4e300210b53e2acfaa498",
+      "bytes": 3345
+    },
+    "budget630/task5/STEPS.jsonl.gz": {
+      "sha256": "f4813210d923ba513056695bf84205e27446e47daffc7f9e27ac9c870fc09b32",
+      "bytes": 1421278
+    },
+    "budget630/task6/EXPANSION.json": {
+      "sha256": "421237a430ad28329d4c68c041ee5d94bbe34870a4629731cd72e33d21c0a844",
+      "bytes": 82822
+    },
+    "budget630/task6/EXPANSION_LOGITS.npz": {
+      "sha256": "5418d0d43ebe7b8813fe3358e5bd311119ac33c725b82bec0c37d11bf19ea208",
+      "bytes": 100386
+    },
+    "budget630/task6/CONFIG.json": {
+      "sha256": "35f7759d6a1f158a90139259a094bbc224c9c2757b86e558cf934b805cda65d9",
+      "bytes": 4391
+    },
+    "budget630/task6/CHECKS.json": {
+      "sha256": "400b1c8262caaccecc6f0e798477e9cbd1005cb5814c9b437aa87ad476803997",
+      "bytes": 2850
+    },
+    "budget630/task6/STEPS.jsonl.gz": {
+      "sha256": "7eff097c6cfb88c8a8d9bd02c8d1cea9a20ae30773b9e7589cdba4a5df0463e2",
+      "bytes": 287502
+    },
+    "budget630/task7/EXPANSION.json": {
+      "sha256": "44bacc9f5b81aeb412afebf87f7783ab4f8391cef97cffcd46905ba786a25ec6",
+      "bytes": 13686
+    },
+    "budget630/task7/EXPANSION_LOGITS.npz": {
+      "sha256": "1cdd5ef3793f44ef757014c90909ddf7449835fabcf82a39de474577f083c31a",
+      "bytes": 120101
+    },
+    "budget630/task7/CONFIG.json": {
+      "sha256": "bd8dabf78d473e456dc7e77e702f5935277d364d99391efe593f26e22e1c6ef6",
+      "bytes": 5133
+    },
+    "budget630/task7/CHECKS.json": {
+      "sha256": "7e6be71d74b3fa623eba5af87677785599b79eac1d6327345653c667c6e5032f",
+      "bytes": 3543
+    },
+    "budget630/task7/STEPS.jsonl.gz": {
+      "sha256": "41119fa92c289122db4759e80901aa7e81d2c25025bd4180a7e6509b175f8ede",
+      "bytes": 807444
+    },
+    "budget630/task8/EXPANSION.json": {
+      "sha256": "ff9a345d6e7f11bfd5f6cc4cb2ccb64d0542f1caca60f04dafb7b4d237b9bb34",
+      "bytes": 15340
+    },
+    "budget630/task8/EXPANSION_LOGITS.npz": {
+      "sha256": "f1fc9577c86a4ca84f066390f317e6306b6a34eb85ea2ffff9c26629f026127c",
+      "bytes": 142481
+    },
+    "budget630/task8/CONFIG.json": {
+      "sha256": "c121f5e05882c7391bcb374b0289ad7d70c0b70a010bc6cf3f92534431050670",
+      "bytes": 5883
+    },
+    "budget630/task8/CHECKS.json": {
+      "sha256": "1dc214836067a98e0b77a9bb1b3c0f7494270eb9db7b38677723555a18fb91c8",
+      "bytes": 3692
+    },
+    "budget630/task8/STEPS.jsonl.gz": {
+      "sha256": "444eccc8ebdcc1f93b3f74d8ad02b7b4364457622408a0f4c6c9eb2570021970",
+      "bytes": 1774576
+    },
+    "budget630/task9/EXPANSION.json": {
+      "sha256": "6e62c90e839408c0b9dc884c00c555b6479cd768be33e4b0ce2c23d940479afa",
+      "bytes": 18363
+    },
+    "budget630/task9/EXPANSION_LOGITS.npz": {
+      "sha256": "3a9293ea820e2083e26a9011ce0c87a8d3c509b923e1d0dfc88404296584ce18",
+      "bytes": 161657
+    },
+    "budget630/task9/CONFIG.json": {
+      "sha256": "558c3b235e3a77ccd46545a2d01e534ef7fb51260959f7e3381cceebe314dc78",
+      "bytes": 6632
+    },
+    "budget630/task9/CHECKS.json": {
+      "sha256": "bc6ee22ddfaebbff6e76db31a34948f8fdfa6e35c4c5463d6bec5d6fd0fe2959",
+      "bytes": 3743
+    },
+    "budget630/task9/STEPS.jsonl.gz": {
+      "sha256": "07ce464273e3a3920ed164f8e5259ffd6c077e8cf5cbffe8e4e24b8d74fbc891",
+      "bytes": 1660221
+    },
+    "budget630/task10/EXPANSION.json": {
+      "sha256": "e2df49a42942d5dc56315640fb30217a285e42c9685672bac10c70b77abb2813",
+      "bytes": 116614
+    },
+    "budget630/task10/EXPANSION_LOGITS.npz": {
+      "sha256": "160403f2f520d63125da697acdc13672d65c5fd5e63d80eb695acc49d0b22df0",
+      "bytes": 179902
+    },
+    "budget630/task10/CONFIG.json": {
+      "sha256": "1e57003f532f02d43183ab0c5db84a21bff668a17ef96a6dc98382e29765dd63",
+      "bytes": 7368
+    },
+    "budget630/task10/CHECKS.json": {
+      "sha256": "d8b33744eb1bf24c11e553a22dba807050f9b18ec52e87bd39a5b5f8e4c7bb79",
+      "bytes": 3755
+    },
+    "budget630/task10/STEPS.jsonl.gz": {
+      "sha256": "d551bca5089459af86839282fbc731f8ac69eef03c4f82398a5d4c5be2cf77a3",
+      "bytes": 655595
+    },
+    "budget630/task11/EXPANSION.json": {
+      "sha256": "5a83807ce6596d8b43e8e18e4624c45f1553c60a91a1f3c0d96a158a303b46a2",
+      "bytes": 22081
+    },
+    "budget630/task11/EXPANSION_LOGITS.npz": {
+      "sha256": "78c637bd75cd3bbb1d2373e662dda301d6dcb11db534c91c6694c7a119f06ee8",
+      "bytes": 197185
+    },
+    "budget630/task11/CONFIG.json": {
+      "sha256": "93d700094743ee06897fe194bbaf86ad799c366694f00b01713462d97f3d2ccc",
+      "bytes": 8121
+    },
+    "budget630/task11/CHECKS.json": {
+      "sha256": "603d5ee7421f95d1dc9e5daedd77e6234bd1707645f9f505809ffae2727da6db",
+      "bytes": 3988
+    },
+    "budget630/task11/STEPS.jsonl.gz": {
+      "sha256": "4ce3a95c0383d0d05ad663ec7dca55c2c24fdffd52f7b4808227fe5c22e32783",
+      "bytes": 1079436
+    },
+    "FINAL.json": {
+      "sha256": "a29c893d7f683521469c087d0f093241535eb049069af491adc7babc25d91594",
+      "bytes": 16339
+    }
+  },
+  "external_checkpoints": {
+    "budget210/task3/CHECKPOINT.pt": {
+      "sha256": "02875719751604eb9bb675dcda6d0511069b85fb1d96148dd981479ae8138858",
+      "bytes": 2605235
+    },
+    "budget210/task4/CHECKPOINT.pt": {
+      "sha256": "cfb2b29cc9486a345389a5b8e355d892eb50b6933942c46b946815d8464dd6a5",
+      "bytes": 2605235
+    },
+    "budget210/task5/CHECKPOINT.pt": {
+      "sha256": "1d2594f59981b80c2465b12f97ccf0ad958facb4b8f0e79b5b906808b0d62b1d",
+      "bytes": 2605235
+    },
+    "budget210/task6/CHECKPOINT.pt": {
+      "sha256": "cda181219d7ac8af2288fb89d2705a4e723e5d8f382cb1e84d899f034d1bbe8e",
+      "bytes": 2605235
+    },
+    "budget210/task7/CHECKPOINT.pt": {
+      "sha256": "bfc91d0478c3c69a808cec0dec539171f5e61b6fbe60cac0630bbd657435ec97",
+      "bytes": 2605235
+    },
+    "budget210/task8/CHECKPOINT.pt": {
+      "sha256": "3a0d21e365d69522fadebb612d9d3197f398b00d607dba313b26c5b37b003380",
+      "bytes": 2605235
+    },
+    "budget210/task9/CHECKPOINT.pt": {
+      "sha256": "513673bb79e6f59d634987814282e265bb923782a7b7c329e714f5e25ad89225",
+      "bytes": 2605235
+    },
+    "budget210/task10/CHECKPOINT.pt": {
+      "sha256": "f31d214158fb2fd00a3c1cdc6402ffa4ff83eba052a1f94a1d9f7f4ef2818cc8",
+      "bytes": 2605235
+    },
+    "budget210/task11/CHECKPOINT.pt": {
+      "sha256": "1d1ff7aebe0b41ed5ef027cd90d0c8470e56a73812e55ca3d1487f1ae82ddc5b",
+      "bytes": 2605235
+    },
+    "budget630/task3/CHECKPOINT.pt": {
+      "sha256": "a74d3e1007d9a34349739a7a9776c62779797be8fbbb1020aaf366d7a2904344",
+      "bytes": 2605235
+    },
+    "budget630/task4/CHECKPOINT.pt": {
+      "sha256": "d056a2a95b429cfcfac23d2962152ddf0c570b929a31c0ad96b1549727c102d0",
+      "bytes": 2605235
+    },
+    "budget630/task5/CHECKPOINT.pt": {
+      "sha256": "70f0dd1d5d7362a7faab07cdc00375b6815961e0a4c5d98121124aa545dc075c",
+      "bytes": 2605235
+    },
+    "budget630/task6/CHECKPOINT.pt": {
+      "sha256": "bb507347a6d4a3944635640cac3947227e6f4ff1e804875b189bc051ae376e5a",
+      "bytes": 2605235
+    },
+    "budget630/task7/CHECKPOINT.pt": {
+      "sha256": "f95a0fbcce6cd9c4b082812fe867cf33be57c1e1ba9c560b83b14115b81aea9c",
+      "bytes": 2605235
+    },
+    "budget630/task8/CHECKPOINT.pt": {
+      "sha256": "71c04380631577cb3f819eff4009619de222063e9cc92fa6757077a06e6fae06",
+      "bytes": 2605235
+    },
+    "budget630/task9/CHECKPOINT.pt": {
+      "sha256": "32717c7a34ac33d459fc5c47dfa1226ddf1b7019740dc567408d2f63dbe452ba",
+      "bytes": 2605235
+    },
+    "budget630/task10/CHECKPOINT.pt": {
+      "sha256": "42dfc7c5536022bee37e810474e024c9f136f5a4712960130f199dbd7596eb75",
+      "bytes": 2605235
+    },
+    "budget630/task11/CHECKPOINT.pt": {
+      "sha256": "e9e7cf9f5624b4ff55f1dbd05c8dde406f71272522b8716f713e259ee9daf5d8",
+      "bytes": 2605235
+    }
+  },
+  "diagnostic_sources": {
+    "diagnostics/report.py": "0747e1ad1f4df99a48d0e855ca82545321395c5e80cca5b23960ed9b9ea60a26",
+    "diagnostics/verify.py": "274db833b82621e36ff333dbd8fd268e10483e7f8592386d045e1fafb8a47173"
+  }
+}

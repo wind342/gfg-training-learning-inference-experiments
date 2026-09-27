@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "strict_tie_and_wrong_cases": true,
+  "wrong_to_correct_invariant": true,
+  "cases": [
+    {
+      "budget": 210,
+      "task2_checkpoint_matches": true,
+      "observer_state_unchanged": true,
+      "observer_production_logits_byte_identical": true,
+      "first_update_observer_on_off_identical": true
+    },
+    {
+      "budget": 630,
+      "task2_checkpoint_matches": true,
+      "observer_state_unchanged": true,
+      "observer_production_logits_byte_identical": true,
+      "first_update_observer_on_off_identical": true
+    }
+  ]
+}

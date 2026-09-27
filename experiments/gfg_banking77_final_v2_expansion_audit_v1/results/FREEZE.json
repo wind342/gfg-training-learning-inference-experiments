@@ -1,0 +1,90 @@
+{
+  "base": "534130d8995fbf9f6cec176afb915f1a56845702",
+  "sources": {
+    "experiments/gfg_banking77_final_v2_expansion_audit_v1/common.py": "778f90587ab79ef4131fb0ec2bad8586abeb1eb855fb3db9d1623a2e952f927f",
+    "experiments/gfg_banking77_final_v2_expansion_audit_v1/observer.py": "b55549b4b229c16bae5936c16418960e4c01e10150ac0bbf17d481cfd9745915",
+    "experiments/gfg_banking77_final_v2_expansion_audit_v1/run.py": "73055254ce51557be3d7c3df65a3a9b2fd10b9dcfe0496956f802b09bb24ffce",
+    "experiments/gfg_banking77_final_v2_expansion_audit_v1/PROTOCOL.md": "5d371f86189f02dd6b539760c16ab240d634a796be7d94faaaf120bd052c09f9",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/access.py": "d1e642e6646f52fdf59789604692d2edc19fafe4ca80038bad31bb9acbc2d4a8",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/audit.py": "53d7220316e6d9f26ade8fae3bbb21cbee81b8e53428e5b4bebbcc4fdf5b9edf",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/common.py": "5d9dbcd273afb0c7df6197cdd1123871f24b7a8a82027e1c5568391c3a067d02",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/cutter.py": "336dffa0424ad507a4503bfc17e2ea575c887c52f2bc48f9e86cf402cf125863",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/numerics.py": "f4948481513db5e338bc17dae56376ede090102d8ef10fda60cb70b42a00bc87",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/predictor.py": "79d5f28f5cd0709fa0bfab1a232d646ce999627a96916fb11d035309f6b8ebfa",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/predictor_audit.py": "8efeb23a4e3032abcf1cc748137c16f6a6c13d23913d149d119cad3240803a11",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/predictor_smoke.py": "da01bc80b0f350a04d78f5e95012a2117df34f4110710a546fcccacc25592dfb",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/preflight.py": "7f6944952237eee3e8a6f6ebde1641062b494529f3cc2fa46025a3cf2183bb72",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/report.py": "54a62db26b7874bd9d085df87bdb5e3bdcc21921aabf1ec7895180540c84149f",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/run.py": "a3cda96872c9aae5f683d0f9e245c295d2cfb826e332dff5959f2fbf36249378",
+    "experiments/gfg_banking77_final_v2_predictor_task2_v1/PROTOCOL.md": "e5d8642dba391de2fad7125d8c3a91e597b772b30d402240d20ec39cec914b9f"
+  },
+  "inputs": {
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": "70027872b499d206588001d92c9a30586303145fe601f823ec886a5e0363055d",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": "fe59491617995af995498193b1aa7916e3a0d5fba5d3ccf1fda6087171f0611e",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\FREEZE.json": "d08544b8afbb14fa44ffe5bd0c89fafca2e2cb9caab3e2a1f20e648e5f1c956b",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": "63e77bcc878424932f6e19a298bb9b0662b35e0678ee679a39b884f106f7e876",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\FINAL.json": "ca065d9d50d4007286c2b7d185404176ab6d2316e469f215cc7c54110539a09a",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\AUDIT.json": "3677d7d674799e9fe3698205e4d6e866c1b98dd513c4a58ffe5c0682c0c966ab",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKPOINT.pt": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKS.json": "a4fa911fec5e06f5b7c754c34087b9dfee7d13a57dc56820d6e8170e1d4263cc",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\STEPS.jsonl.gz": "9d7491d53d25c729d9a3ffd6146a9044ff7b4d8f59d6a1520d6338df18057e02",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKPOINT.pt": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKS.json": "e900790d8b069f3a206427b8d85581ab3f1ccd9dddf8dbe3beec7292233cfc7c",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\STEPS.jsonl.gz": "82e2d8541850eb0ed2ebf0de137bb574b282a19a278cf73a682e79568926b6e1",
+    "E:\\gfg-models\\bert-base-uncased-v4\\config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+    "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+    "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "budgets": [
+    210,
+    630
+  ],
+  "tasks": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "source_reuse": "Unmodified imported task2 production Bank/Predictor/project/native_step/schedule/model/optimizer.",
+  "runtime": {
+    "python": "3.12.10",
+    "torch": "2.13.0+cu130",
+    "numpy": "2.4.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "threads": 2
+  },
+  "created_utc": "2026-09-27T17:43:40Z",
+  "test_files_opened": 0,
+  "access": {
+    "reads": {
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\FINAL.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\AUDIT.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\FREEZE.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "writes": {},
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open hooks for evidence/model/experiment paths; native-library/OS internals excluded; no subprocess data readers."
+  }
+}
