@@ -1,0 +1,4 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_ten_task\\run.py\", line 155, in main\n    for arm in ARMS:train_task(m,states[arm],arm,task,d,h,y,ids,n,pre)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\codex\\gfg-controller-70m-160m-validation-v1\\experiments\\gfg_final_architecture_v2_ten_task\\run.py\", line 72, in train_task\n    assert entry[:n]==boundary['after']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "unix": 1790493506.6847112
+}

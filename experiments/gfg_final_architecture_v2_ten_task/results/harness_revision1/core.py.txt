@@ -1,0 +1,53 @@
+"""Long-run harness utilities only; production relation-floor policy unchanged."""
+from experiments.gfg_relation_capability_floor_task8_v1.core import *
+import shutil
+
+HERE=Path(__file__).resolve().parent
+REPO=HERE.parents[1]
+ROOT=Path('E:/gfg-evidence/final-architecture-v2-ten-task')
+BASE='03a17843a8c7ad82b21eecf4b7b0360feb542c56'
+ARMS={'v2_210':1,'v2_630':3}
+
+def sources():
+    files=[REPO/x for x in subprocess.check_output(['git','ls-files','experiments'],cwd=REPO,text=True).splitlines() if x.endswith('.py')]
+    files+=list(HERE.glob('*.py'))+[HERE/'PROTOCOL.md']
+    return {x.relative_to(REPO).as_posix():sha(x) for x in sorted(set(files))}
+
+def guard(pre,full=False):
+    assert sources()==pre['sources']
+    subprocess.run(['git','diff','--exit-code',BASE,'--','.',':(exclude)experiments/'+HERE.name],cwd=REPO,check=True,capture_output=True)
+    if full:assert all(sha(name)==h for name,h in pre['inputs'].items())
+
+def counter(arm,task,epoch=1,local=0):
+    return 210+(task-2)*ARMS[arm]*210+(epoch-1)*210+local
+
+def bank(d,cache,task):
+    ids,n=old.task_bank(d,task);pos={i:j for j,i in enumerate(cache['indices'])}
+    h=cache['features'][[pos[int(i)] for i in ids]].cuda()
+    return h,torch.from_numpy(d['y'][ids]).cuda(),ids,n
+
+def per_relation_metrics(ids,pred,d,groups):
+    yy=d['y'][ids];pp=np.asarray(pred)
+    per=[float((pp[yy==g]==g).mean()) for g in range(groups)]
+    return dict(per_relation=per,macro=float(np.mean(per)))
+
+def aggregate(rows,n,K,labels,entry,end):
+    selected=[r for r in rows if r['projection']]
+    def dist(key):return old.distribution([r[key] for r in rows])
+    def mean_geometry(key):
+        v=[r['geometry'][key] for r in selected if r['geometry'][key] is not None]
+        return float(np.mean(v)) if v else None
+    eg=np.asarray(entry[:n])>0;fg=np.asarray(end[:n])>0
+    lost=np.bincount(labels[eg&~fg],minlength=len(K));gained=np.bincount(labels[~eg&fg],minlength=len(K))
+    return dict(steps=len(rows),old_protection_bank_size=n,old_relations=len(K),K=K.tolist(),sum_K=int(K.sum()),
+        native_safe_steps=len(rows)-len(selected),projection_triggered_steps=len(selected),
+        skip_steps=sum(r['skip'] for r in rows),floor_violations=sum(r['floor_violations'] for r in rows),
+        correct_to_wrong=sum(r['correct_to_wrong'] for r in rows),wrong_to_correct=sum(r['wrong_to_correct'] for r in rows),
+        same_step_replacement_relations=sorted(set(g for r in rows for g in r['migration_relations'])),
+        same_step_replacement_relation_events=sum(len(r['migration_relations']) for r in rows),
+        entry_to_end_lost=lost.tolist(),entry_to_end_gained=gained.tolist(),
+        entry_to_end_replacement_relations=np.flatnonzero((lost>0)&(gained>0)).tolist(),
+        task_end_counts=counts(np.asarray(end[:n]),labels,len(K)).tolist(),
+        active_constraints=dist('active_constraints'),sweeps=dist('sweeps'),total_sweeps=sum(r['sweeps'] for r in rows),
+        norm_ratio=mean_geometry('norm_ratio'),cosine=mean_geometry('cosine'),
+        projection_wall=sum(r['projection_seconds'] for r in rows),update_compute_wall=sum(r['update_seconds'] for r in rows))

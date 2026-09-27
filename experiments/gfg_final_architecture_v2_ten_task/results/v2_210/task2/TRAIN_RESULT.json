@@ -1,0 +1,134 @@
+{
+  "status": "COMPLETED",
+  "arm": "v2_210",
+  "task": 2,
+  "summary": {
+    "steps": 210,
+    "old_protection_bank_size": 1120,
+    "old_relations": 8,
+    "K": [
+      119,
+      139,
+      138,
+      136,
+      137,
+      136,
+      140,
+      140
+    ],
+    "sum_K": 1085,
+    "native_safe_steps": 3,
+    "projection_triggered_steps": 207,
+    "skip_steps": 0,
+    "floor_violations": 0,
+    "correct_to_wrong": 8,
+    "wrong_to_correct": 8,
+    "same_step_replacement_relations": [
+      0,
+      3
+    ],
+    "same_step_replacement_relation_events": 7,
+    "entry_to_end_lost": [
+      6,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "entry_to_end_gained": [
+      6,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "entry_to_end_replacement_relations": [
+      0,
+      3
+    ],
+    "task_end_counts": [
+      119,
+      139,
+      138,
+      136,
+      137,
+      136,
+      140,
+      140
+    ],
+    "active_constraints": {
+      "min": 0.0,
+      "median": 35.5,
+      "max": 61.0
+    },
+    "sweeps": {
+      "min": 0.0,
+      "median": 1.0,
+      "max": 4.0
+    },
+    "total_sweeps": 228,
+    "norm_ratio": 0.8322020512196151,
+    "cosine": 0.8256207755100528,
+    "projection_wall": 4.112409199588001,
+    "update_compute_wall": 24.850796699989587,
+    "entry_control_accuracy": [
+      0.85,
+      0.9928571428571429,
+      0.9857142857142858,
+      0.9714285714285714,
+      0.9785714285714285,
+      0.9714285714285714,
+      1.0,
+      1.0
+    ],
+    "end_control_accuracy": [
+      0.85,
+      0.9928571428571429,
+      0.9857142857142858,
+      0.9714285714285714,
+      0.9785714285714285,
+      0.9714285714285714,
+      1.0,
+      1.0
+    ],
+    "training_wall": 26.194252499961294,
+    "serialization_wall": 0.3151471000164747,
+    "task_wall": 29.317584999953397,
+    "peak_cuda_bytes": 708003328
+  },
+  "epochs": [
+    {
+      "status": "COMPLETED",
+      "arm": "v2_210",
+      "task": 2,
+      "epoch": 1,
+      "steps": 210,
+      "training_wall": 26.194252499961294,
+      "update_compute_wall": 24.850796699989587,
+      "peak_cuda_bytes": 708003328,
+      "serialization_wall": 0.3151471000164747,
+      "head_start": "8d8758e7cecf7b0660020dbc2d9c0da0a97b43e7f0f29569d58fa2505d1791d0",
+      "head_end": "e3d5db01eece981df3083305577d65ede3a40cde38a5833e295f5590988da4d8",
+      "optimizer_step": 420,
+      "moments_end": "1f43f22d031d5fdbbaec05ec6a5e9c09d6c78725af74bf0b2fc1f612b918f5fc",
+      "backbone_sha256": "c791af46c4761a8918cd8afb37b552b05f5d75ea42c02acae854001f28dd60e3",
+      "audit_sha256": "f5e55ce61ae41611cd86cb61b92e6cf625efe8030baacfbcc8b3b818f3958995",
+      "log_sha256": "3ca2b41ae8f007c1132dc8298900d056923c189a483035ea0d89e5d34811836c",
+      "finished_unix": 1790493404.1166425
+    }
+  ],
+  "head_end": "e3d5db01eece981df3083305577d65ede3a40cde38a5833e295f5590988da4d8",
+  "moments_end": "1f43f22d031d5fdbbaec05ec6a5e9c09d6c78725af74bf0b2fc1f612b918f5fc",
+  "optimizer_step": 420,
+  "config_sha256": "023bfafb3d90661f8e8b6490f0648dba769fb997157e8b5f2e8ded61ebbdc189",
+  "epoch_records": {
+    "1": "875a753fd911cd0ba22f2605de0a52ce7b8ee874c4694e37359bd6afd4cb2ed7"
+  },
+  "finished_unix": 1790493404.2169938
+}

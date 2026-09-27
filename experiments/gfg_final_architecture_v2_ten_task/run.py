@@ -1,0 +1,165 @@
+"""Two fixed budgets, continuous independent heads; no policy changes."""
+from .core import *
+from .tests import tests
+import gc
+import traceback
+
+def train_epoch(m,state,arm,task,epoch,d,h,y,ids,n,K,pre):
+    folder=ROOT/arm/f'task{task}'/f'epoch{epoch}';folder.mkdir(exist_ok=False)
+    head,shadow,opt=state;m.head=head;m.seen=task*8
+    assert old.opt_counter(opt)==counter(arm,task,epoch)
+    initial=copy.deepcopy(opt.state_dict());start_head=p.snapshot(head)
+    versions=[q._version for q in m.bert.parameters()]
+    heads=[p.cpu_state(start_head)];natives=[];projected=[];grads=[];compact=[]
+    x=torch.from_numpy(d['x']);truth=torch.from_numpy(d['y']);labels=y[:n].cpu().numpy()
+    p.sync(h);torch.cuda.reset_peak_memory_stats();start=time.perf_counter()
+    with (folder/'STEPS.jsonl').open('x',encoding='utf8') as log:
+        for local,batch in enumerate(order(d,task),1):
+            global_step=counter(arm,task,epoch,local);seed=2021*100000+global_step
+            torch.manual_seed(seed);torch.cuda.manual_seed_all(seed);m.train();head.zero_grad(set_to_none=True)
+            assert all(not q.training for q in m.bert.modules())
+            p.sync(h);tick=time.perf_counter()
+            with torch.no_grad():features=m.features(x[batch].cuda())
+            loss=nn.functional.cross_entropy(head(features)[:,:task*8],truth[batch].cuda());loss.backward()
+            norm=nn.utils.clip_grad_norm_(head.parameters(),1.);assert torch.isfinite(loss) and torch.isfinite(norm)
+            grads.append({name:q.grad.detach().cpu().clone() for name,q in head.named_parameters()})
+            before=p.snapshot(head);propose(head,shadow,opt);native=p.snapshot(shadow);mh=moments_hash(opt)
+            assert old.opt_counter(opt)==global_step
+            executed,candidate,r=floor_projection(before,native,h,y,n,K,ids[:n],seen=task*8)
+            assert mh==moments_hash(opt)
+            with torch.no_grad():
+                for name,q in head.named_parameters():q.copy_(executed[name])
+                actual=margins(head(h)[:,:task*8],y).cpu().tolist()
+            assert actual==r['executed'] and np.all(counts(np.asarray(actual[:n]),labels,len(K))>=K)
+            assert versions==[q._version for q in m.bert.parameters()]
+            assert all(q.grad is None and not q.requires_grad for q in m.bert.parameters())
+            p.sync(h);update_seconds=time.perf_counter()-tick
+            row=dict(arm=arm,task=task,epoch=epoch,step=(epoch-1)*210+local,local_step=local,
+                global_step=global_step,seed=seed,current_ids=batch.tolist(),loss=float(loss.detach()),
+                gradient_norm_before_clip=float(norm),before_sha256=tensor_hash(before),native_sha256=tensor_hash(native),
+                executed_sha256=head_hash(head),optimizer_sha256=mh,optimizer_step=old.opt_counter(opt),
+                K=K.tolist(),native_counts=r['native_counts'],native_deficits=r['native_deficits'],executed_counts=r['executed_counts'],
+                projection=r['projection_triggered'],skip=r['skip'],sweeps=r['sweep_count'],active_constraints=len(r['final_active']),
+                floor_violations=r['floor_violations'],correct_to_wrong=r['correct_to_wrong'],wrong_to_correct=r['wrong_to_correct'],
+                migration_relations=r['migration_relations'],count_slack_relations=r['count_slack_relations'],
+                geometry=p.geometry(before,native,executed),projection_seconds=r['projection_seconds'],update_seconds=update_seconds)
+            log.write(json.dumps(dict(**row,report=r),separators=(',',':'),allow_nan=False)+'\n');log.flush()
+            compact.append(row);heads.append(p.cpu_state(executed));natives.append(p.cpu_state(native));projected.append(p.cpu_state(candidate))
+            if local==1 or local%70==0:
+                print('TRAIN',arm,'task',task,'step',row['step'],'skips',sum(v['skip'] for v in compact),
+                      'sweeps',r['sweep_count'],flush=True)
+    p.sync(h);wall=time.perf_counter()-start;peak=torch.cuda.max_memory_allocated()
+    assert tensor_hash(m.bert.state_dict())==pre['backbone_sha256']
+    serialize_start=time.perf_counter()
+    old.save_tensor(folder/'AUDIT.pt',dict(heads=heads,natives=natives,projected=projected,clipped_gradients=grads,
+        initial_optimizer=initial,final_optimizer=copy.deepcopy(opt.state_dict())))
+    write(folder/'COMPACT_STEPS.json',compact)
+    result=dict(status='COMPLETED',arm=arm,task=task,epoch=epoch,steps=210,training_wall=wall,
+        update_compute_wall=sum(v['update_seconds'] for v in compact),peak_cuda_bytes=peak,
+        serialization_wall=time.perf_counter()-serialize_start,head_start=tensor_hash(start_head),head_end=head_hash(head),
+        optimizer_step=old.opt_counter(opt),moments_end=moments_hash(opt),backbone_sha256=pre['backbone_sha256'],
+        audit_sha256=sha(folder/'AUDIT.pt'),log_sha256=sha(folder/'STEPS.jsonl'),finished_unix=time.time())
+    write(folder/'TRAIN_RESULT.json',result)
+    return compact,result,actual
+
+def train_task(m,state,arm,task,d,h,y,ids,n,pre):
+    folder=ROOT/arm/f'task{task}';folder.mkdir(parents=True,exist_ok=True)
+    assert not any(folder.iterdir()),'Never overwrite a started task'
+    task_start=time.perf_counter();head,shadow,opt=state;m.head=head;m.seen=task*8
+    assert old.opt_counter(opt)==counter(arm,task)
+    boundary=boundary_same_batch(head,h,y,n,task)
+    entry=p.margins(p.affine(p.snapshot(head),h,task*8),y).cpu().tolist()
+    labels=y[:n].cpu().numpy();groups=8*(task-1);K=counts(np.asarray(entry[:n]),labels,groups)
+    assert entry[:n]==boundary['after']
+    config=dict(arm=arm,task=task,epochs=ARMS[arm],updates=210*ARMS[arm],seen=task*8,old_count=n,bank_ids=ids.tolist(),
+        K=K.tolist(),sum_K=int(K.sum()),group_sizes=np.bincount(labels,minlength=groups).tolist(),transition=boundary,boundary_batch='full-monitor',
+        entry_counts_previous_readout=counts(np.asarray(boundary['before']),labels,groups).tolist(),
+        head_start=head_hash(head),moments_start=moments_hash(opt),optimizer_step_start=old.opt_counter(opt))
+    write(folder/'CONFIG.json',config);allrows=[];epochs=[]
+    for epoch in range(1,ARMS[arm]+1):
+        guard(pre);assert shutil.disk_usage(ROOT).free>6*1024**3,'Disk guard: fewer than6GiB free'
+        rows,result,actual=train_epoch(m,state,arm,task,epoch,d,h,y,ids,n,K,pre)
+        allrows+=rows;epochs.append(result)
+        if task==2 and arm=='v2_630' and epoch==1:
+            left=torch.load(ROOT/'v2_210/task2/epoch1/AUDIT.pt',map_location='cpu',weights_only=False)
+            right=torch.load(folder/'epoch1/AUDIT.pt',map_location='cpu',weights_only=False)
+            assert equal(left,right),'The common first210 updates must be identical'
+            del left,right
+        gc.collect()
+    summary=aggregate(allrows,n,K,labels,entry,actual)
+    sizes=np.asarray(config['group_sizes'])
+    summary.update(entry_control_accuracy=(K/sizes).tolist(),end_control_accuracy=(np.asarray(summary['task_end_counts'])/sizes).tolist(),
+        training_wall=sum(v['training_wall'] for v in epochs),serialization_wall=sum(v['serialization_wall'] for v in epochs),
+        task_wall=time.perf_counter()-task_start,peak_cuda_bytes=max(v['peak_cuda_bytes'] for v in epochs))
+    write(folder/'TRAIN_RESULT.json',dict(status='COMPLETED',arm=arm,task=task,summary=summary,epochs=epochs,
+        head_end=head_hash(head),moments_end=moments_hash(opt),optimizer_step=old.opt_counter(opt),
+        config_sha256=sha(folder/'CONFIG.json'),epoch_records={str(e):sha(folder/f'epoch{e}/TRAIN_RESULT.json') for e in range(1,ARMS[arm]+1)},
+        finished_unix=time.time()))
+
+@torch.no_grad()
+def evaluate(m,states,task,d):
+    folder=ROOT/f'evaluation_task{task}';folder.mkdir(exist_ok=False)
+    training={a:sha(ROOT/a/f'task{task}/TRAIN_RESULT.json') for a in ARMS} if task>1 else {'task1_checkpoint':CKSHA}
+    write(folder/'BARRIER.json',dict(training_results=training,created_unix=time.time()))
+    heads={a:head_hash(s[0]) for a,s in states.items()};moments={a:moments_hash(s[2]) for a,s in states.items()}
+    rr=rng();mode=m.training;m.eval();ids=scope(d,task*8)[1];x=torch.from_numpy(d['x'])
+    pred={a:[] for a in ARMS};expanded={a:[] for a in ARMS};start=time.perf_counter()
+    for begin in range(0,len(ids),16):
+        h=m.features(x[ids[begin:begin+16]].cuda())
+        for arm,(head,_,_) in states.items():
+            z=head(h);pred[arm]+=z[:,:task*8].argmax(1).cpu().tolist()
+            expanded[arm]+=z[:,:min(80,(task+1)*8)].argmax(1).cpu().tolist()
+    assert heads=={a:head_hash(s[0]) for a,s in states.items()} and moments=={a:moments_hash(s[2]) for a,s in states.items()}
+    assert equal(rr,rng());m.train(mode)
+    arms={}
+    for arm in ARMS:
+        metrics=summarize_predictions(ids,pred[arm],d,task)
+        metrics['previous_task_macro']=float(np.mean([metrics['per_relation'][str(g)] for g in range((task-2)*8,(task-1)*8)])) if task>1 else None
+        arms[arm]=dict(predictions=pred[arm],metrics=metrics,head_sha256=heads[arm],expanded_predictions=expanded[arm],
+            expanded_readout_seen=min(80,(task+1)*8),expanded_metrics=per_relation_metrics(ids,expanded[arm],d,task*8))
+    write(folder/'EVALUATION.json',dict(status='PASS',task=task,indices=ids.tolist(),arms=arms,readonly=True,
+        barrier_sha256=sha(folder/'BARRIER.json'),wall=time.perf_counter()-start,finished_unix=time.time()))
+    print('EVALUATE task',task,{a:{k:arms[a]['metrics']['macro_'+k] for k in ('old','new','all')} for a in ARMS},flush=True)
+
+def main():
+    assert subprocess.check_output(['git','rev-parse','HEAD'],cwd=REPO,text=True).strip()==BASE
+    ROOT.mkdir(exist_ok=False)
+    try:
+        p.setup();test_results=tests();p.setup()
+        input_paths=[DATA/'data.npz',CHECKPOINT,old.ROOT/'CONTROL_CACHE.pt',old.ROOT/'CACHE_MANIFEST.json',old.ROOT/'CHECKS.json']
+        input_paths += [old.ROOT/f'evaluation_task{t}/EVALUATION.json' for t in range(2,11)]
+        identities={str(q):sha(q) for q in input_paths}
+        assert identities[str(DATA/'data.npz')]==DATA_SHA and identities[str(CHECKPOINT)]==CKSHA
+        cm=json.loads((old.ROOT/'CACHE_MANIFEST.json').read_text());assert sha(old.ROOT/'CONTROL_CACHE.pt')==cm['sha256']
+        assert json.loads((old.ROOT/'CHECKS.json').read_text())['status']=='PASS'
+        d=np.load(DATA/'data.npz');iso=old.isolation(d)
+        saved=torch.load(CHECKPOINT,map_location='cpu',weights_only=False);m=FrozenRelationModel().cuda();m.load_state_dict(saved['model']);freeze(m)
+        cache=torch.load(old.ROOT/'CONTROL_CACHE.pt',map_location='cpu',weights_only=False)
+        assert cache['indices']==old.clean_validation(d).tolist() and tensor_hash({'H':cache['features']})==cm['features_sha256']
+        backbone=tensor_hash(m.bert.state_dict());initial=m.head;states={}
+        for arm in ARMS:
+            m.head=copy.deepcopy(initial);shadow,opt=make_candidate(m,saved['optimizer'])
+            for group in opt.param_groups:group['lr']=5e-5
+            assert old.opt_counter(opt)==210;states[arm]=(m.head,shadow,opt)
+        del saved,initial
+        pre=dict(status='PASS',base=BASE,sources=sources(),inputs=identities,tests=test_results,isolation=iso,
+            backbone_sha256=backbone,arms=ARMS,total_updates=7560,free_disk_bytes=shutil.disk_usage(ROOT).free,
+            initial_head_sha256=head_hash(states['v2_210'][0]),initial_moments_sha256=moments_hash(states['v2_210'][2]),
+            main_sha=subprocess.check_output(['git','rev-parse','main'],text=True).strip(),
+            frozen_tag_sha=subprocess.check_output(['git','rev-parse','paper-experiments-cross-system-feedback-release^{}'],text=True).strip(),
+            created_unix=time.time())
+        write(ROOT/'PREFLIGHT.json',pre);guard(pre,True)
+        write(ROOT/'EXECUTION.json',dict(status='STARTED',started_unix=time.time(),arms=ARMS))
+        print('PREFLIGHT PASS 7560 fixed updates',flush=True);evaluate(m,states,1,d)
+        for task in range(2,11):
+            h,y,ids,n=bank(d,cache,task)
+            for arm in ARMS:train_task(m,states[arm],arm,task,d,h,y,ids,n,pre)
+            evaluate(m,states,task,d)
+            del h,y;gc.collect()
+        assert old.opt_counter(states['v2_210'][2])==2100 and old.opt_counter(states['v2_630'][2])==5880
+        assert tensor_hash(m.bert.state_dict())==backbone;guard(pre,True)
+        write(ROOT/'COMPLETE.json',dict(status='COMPLETED',arms=ARMS,tasks=list(range(2,11)),updates=7560,finished_unix=time.time()))
+    except Exception:
+        write(ROOT/'FAILURE.json',dict(traceback=traceback.format_exc(),unix=time.time()));raise
+
+if __name__=='__main__':main()

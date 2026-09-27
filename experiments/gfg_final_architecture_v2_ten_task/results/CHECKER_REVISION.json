@@ -1,0 +1,8 @@
+{
+  "reason": "Independent checker must clone initial optimizer state separately for each arm; PyTorch can alias same-device state tensors.",
+  "previous_sha256": "834ed7c310c9835159ffb226eea384e743ecd59d80cee58ece3d8e49a645bc5a",
+  "current_sha256": "71d2a0ae3c24c5eba7f42ef2b5154a501bb786442b64914230f5c56eaf0466ae",
+  "training_modified": false,
+  "failed_checker_attempt_verified_steps": 210,
+  "formal_updates_repeated": 0
+}

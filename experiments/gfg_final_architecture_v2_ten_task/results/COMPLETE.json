@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETED",
+  "arms": {
+    "v2_210": 1,
+    "v2_630": 3
+  },
+  "tasks": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "updates": 7560,
+  "harness_recovery": true,
+  "formal_updates_repeated": 0,
+  "finished_unix": 1790495648.1954544
+}

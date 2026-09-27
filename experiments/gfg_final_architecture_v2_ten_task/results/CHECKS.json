@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "native_candidates": 7560,
+  "independent_sweeps": 35358,
+  "relation_step_floor_checks": 302400,
+  "floor_violations": 0,
+  "head_and_optimizer_continuity": true,
+  "first210_common_trajectory_exact": true,
+  "unchanged_production_policy": true,
+  "source_and_input_identity": true,
+  "actual_test_predictions_recomputed": true,
+  "task_expansion_audited": true,
+  "fixed_task_entry_floors": true,
+  "full_primary_metric_recompute": true
+}
