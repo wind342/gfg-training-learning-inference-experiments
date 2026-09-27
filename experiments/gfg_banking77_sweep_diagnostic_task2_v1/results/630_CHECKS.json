@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "budget": 630,
+  "steps": 630,
+  "observed_sweeps": 64285,
+  "independent_candidate_checks": 1236,
+  "independent_committed_checks": 630,
+  "native_heads_moments_predictor_solver_decisions_executed_heads_identical": true,
+  "final_checkpoint_state_identical": true,
+  "floor_violations": 0,
+  "old_ce_backward_examples": 0,
+  "test_files_opened": 0,
+  "diagnostic_wall": 217.00782820000313,
+  "observer_wall": 172.50318690226413,
+  "independent_candidate_audit_wall": 8.202015199465677,
+  "diagnostic_only": true,
+  "early_candidates_never_committed": true
+}

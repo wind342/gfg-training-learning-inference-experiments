@@ -1,0 +1,57 @@
+{
+  "authority": "E:\\gfg-evidence\\banking77-sweep-diagnostic-task2-v1",
+  "files": {
+    "CHECKS.json": {
+      "sha256": "17e972eeb93cea160af7ab7b54347aaf6989a2713ac87d684e058f2bde8d83af",
+      "bytes": 3032
+    },
+    "FREEZE.json": {
+      "sha256": "154c7bd477ec4b4ddbf5267df8445da47037ff91e9a7e828ea792c2aadf899d5",
+      "bytes": 6293
+    },
+    "NUMERICS.json": {
+      "sha256": "7d8434dd9452624bf5549d3e1b107d16952ced3aa2e4ffd8f6190710b7d194fa",
+      "bytes": 1818
+    },
+    "SUMMARY.json": {
+      "sha256": "87833e366679cc7e073ff1d0269f4ad6c765b29ced1c66bf7df854b6415c1a28",
+      "bytes": 8539
+    },
+    "SYNTHETIC_SWEEPS.jsonl.gz": {
+      "sha256": "573d4d26dba4fdfa3f85670b3d429064fd72c877ec0949a4051e8e4bd064ca59",
+      "bytes": 353
+    },
+    "budget210/CHECKS.json": {
+      "sha256": "a8ecb864b9d1df33bd321a8c9051c9c13b901aeffedfc766ef46eccdb90624d1",
+      "bytes": 581
+    },
+    "budget210/SUMMARY.json": {
+      "sha256": "d3313b37ab71ae9695103edfe6de51ba0d5bb9e22843404650a98cef61378963",
+      "bytes": 3086
+    },
+    "budget210/SWEEPS.jsonl.gz": {
+      "sha256": "3d85a4ad50ac131775937ffb640401a2f1470bffa8cffa48c6a1467b1eef2f17",
+      "bytes": 3989639
+    },
+    "budget210/UPDATES.jsonl.gz": {
+      "sha256": "247ed8b06ecf129658a459562120b6610d8f362f7a8e5035713531223774fb03",
+      "bytes": 85380
+    },
+    "budget630/CHECKS.json": {
+      "sha256": "a54649f334d50f2b95ed5ea18f5d06128f5194a50a475494227300715db9933d",
+      "bytes": 582
+    },
+    "budget630/SUMMARY.json": {
+      "sha256": "2a62ab8873f9fafc435a6dc85c8a3455c17026cc3016a0e6ab60d002df831ee6",
+      "bytes": 2676
+    },
+    "budget630/SWEEPS.jsonl.gz": {
+      "sha256": "b62a83a2012f7afe8c098b4e97f41032d97f350d07b36b57816277a7a5e1d3b7",
+      "bytes": 5278066
+    },
+    "budget630/UPDATES.jsonl.gz": {
+      "sha256": "d6b5a026ba16488fbb6acbdec799a80f540423510e230788978f6964ab89d9c0",
+      "bytes": 199285
+    }
+  }
+}

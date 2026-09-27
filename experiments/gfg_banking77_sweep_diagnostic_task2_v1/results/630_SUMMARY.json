@@ -1,0 +1,91 @@
+{
+  "budget": 630,
+  "unsafe_updates": 618,
+  "local_solves": 618,
+  "original_sweeps": 64285,
+  "first_safe_prefix_sweeps": 648,
+  "potential_sweeps_avoided": 63637,
+  "potential_sweep_reduction": 0.9899198879987555,
+  "first_safe_per_update": {
+    "n": 618,
+    "min": 1.0,
+    "median": 1.0,
+    "mean": 1.0485436893203883,
+    "p90": 1.0,
+    "max": 3.0
+  },
+  "first_safe_local": {
+    "n": 618,
+    "min": 1.0,
+    "median": 1.0,
+    "mean": 1.0485436893203883,
+    "p90": 1.0,
+    "max": 3.0
+  },
+  "first_safe_histogram": {
+    "1": 603,
+    "3": 15
+  },
+  "local_rounds_ever_safe": 618,
+  "local_rounds_never_safe": 0,
+  "local_rounds_safe_before_original_stop": 618,
+  "safe_to_unsafe_transitions": 418,
+  "ever_safe_but_final_unsafe": 0,
+  "cap_solves": 121,
+  "cap_ever_safe": 121,
+  "cap_first_safe": {
+    "n": 121,
+    "min": 1.0,
+    "median": 1.0,
+    "mean": 1.0,
+    "p90": 1.0,
+    "max": 1.0
+  },
+  "original_plain_solver_seconds": 3.024290900444612,
+  "prefix_solver_seconds_estimate": 0.0203089458545496,
+  "estimated_solver_seconds_saved": 3.003981954590062,
+  "every_sweep_prefix_check_seconds": 1.9720391994342208,
+  "original_terminal_checks_seconds": 1.578183098230511,
+  "additional_check_seconds": 0.39385610120370984,
+  "estimated_net_seconds_saved": 2.6101258533863523,
+  "updates_estimated_net_positive": 572,
+  "first_safe_candidate_differs_from_executed": 616,
+  "first_safe_vs_executed_l2": {
+    "n": 618,
+    "min": 0.0,
+    "median": 0.000959372972777223,
+    "mean": 0.0010223877710784225,
+    "p90": 0.0014400976903462242,
+    "max": 0.002665295784660486
+  },
+  "all_probe_check_seconds": 159.96058169275057,
+  "probe_check_seconds": {
+    "n": 64285,
+    "min": 0.0012963999761268497,
+    "median": 0.00230110005941242,
+    "mean": 0.002488303363035709,
+    "p90": 0.003341759950853884,
+    "max": 0.0190739999525249
+  },
+  "probe_reconstruction_seconds": 63.00861920625903,
+  "probe_materialization_seconds": 67.22092058544513,
+  "probe_endpoint_counts_seconds": 29.73104190104641,
+  "original_trajectory_checks": {
+    "status": "PASS",
+    "budget": 630,
+    "steps": 630,
+    "observed_sweeps": 64285,
+    "independent_candidate_checks": 1236,
+    "independent_committed_checks": 630,
+    "native_heads_moments_predictor_solver_decisions_executed_heads_identical": true,
+    "final_checkpoint_state_identical": true,
+    "floor_violations": 0,
+    "old_ce_backward_examples": 0,
+    "test_files_opened": 0,
+    "diagnostic_wall": 217.00782820000313,
+    "observer_wall": 172.50318690226413,
+    "independent_candidate_audit_wall": 8.202015199465677,
+    "diagnostic_only": true,
+    "early_candidates_never_committed": true
+  }
+}
