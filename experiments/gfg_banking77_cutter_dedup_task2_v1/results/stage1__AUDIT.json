@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "variant": "stage1",
+  "reports": [
+    {
+      "budget": 210,
+      "steps": 210,
+      "status": "PASS",
+      "native_proposals_identical": true,
+      "moments_and_counters_identical": true,
+      "predictor_components_byte_identical": true,
+      "predicted_trigger_and_selection_identical": true,
+      "local_solver_coef_duals_identical": true,
+      "candidate_materializations_byte_identical": true,
+      "all_endpoint_counts_identical": true,
+      "all_decisions_identical": true,
+      "executed_heads_byte_identical": true,
+      "cap_candidate_checks": 100,
+      "continuation_checks": 99,
+      "explicit_dense_jacobian_reconstruction_max_error": 1.6263032587282567e-19,
+      "floor_violations": 0,
+      "old_ce_backward_examples": 0
+    },
+    {
+      "budget": 630,
+      "steps": 630,
+      "status": "PASS",
+      "native_proposals_identical": true,
+      "moments_and_counters_identical": true,
+      "predictor_components_byte_identical": true,
+      "predicted_trigger_and_selection_identical": true,
+      "local_solver_coef_duals_identical": true,
+      "candidate_materializations_byte_identical": true,
+      "all_endpoint_counts_identical": true,
+      "all_decisions_identical": true,
+      "executed_heads_byte_identical": true,
+      "cap_candidate_checks": 121,
+      "continuation_checks": 0,
+      "explicit_dense_jacobian_reconstruction_max_error": 8.131516293641283e-20,
+      "floor_violations": 0,
+      "old_ce_backward_examples": 0
+    }
+  ],
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 4,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 4,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 3,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\STEPS.jsonl.gz": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 3,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\STEPS.jsonl.gz": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKPOINT.pt": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 2
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  },
+  "production_cutter_imported": false,
+  "test_files_opened": 0
+}

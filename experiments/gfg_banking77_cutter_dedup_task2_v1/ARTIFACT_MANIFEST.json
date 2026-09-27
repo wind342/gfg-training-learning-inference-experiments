@@ -1,0 +1,357 @@
+{
+  "authority": "E:\\gfg-evidence\\banking77-cutter-dedup-task2-v1",
+  "files": {
+    "D_CLASSIFICATION.json": {
+      "sha256": "94d2ac8dcb1e5ba1cd2e4bdef4b2112fb88c15c09a508ef64085050b1989b1cc",
+      "bytes": 2076
+    },
+    "D_DIAGNOSTIC.json": {
+      "sha256": "c1be27846951979639e78d482f2930d766b33ca21f8968ea1309fefd7278d64a",
+      "bytes": 4710
+    },
+    "FREEZE.json": {
+      "sha256": "2cc9abf3ace0e62755b55b953ed3b59e0d22b6cf581da5b08e42c55a02e6f455",
+      "bytes": 6643
+    },
+    "NUMERICS.json": {
+      "sha256": "584337946e14cf9e0e487d4146e9a0ccb5a7664c1348d8c045f96452346bcfae",
+      "bytes": 3270
+    },
+    "SUMMARY.json": {
+      "sha256": "0d99819a0a30f8b29ddb38e9bc6f565cc4701689348007d1d2dae084eb851bcc",
+      "bytes": 19828
+    },
+    "TIMING.json": {
+      "sha256": "84ca61fcf826ccab3e1b62bd13d449dabffce9cdccbf3f341120cf38fba05f92",
+      "bytes": 111190
+    },
+    "baseline/AUDIT.json": {
+      "sha256": "aabc3dd0ff10ff12b01b4c36698f4a312b81814a48bbc670f7770d213c4bbf0f",
+      "bytes": 3220
+    },
+    "baseline/AUDIT_STEPS_210.jsonl.gz": {
+      "sha256": "06fc225c4357fdc0db2044b1eaf3198d8f5e005021b6462acb118edadfaa9233",
+      "bytes": 26531
+    },
+    "baseline/AUDIT_STEPS_630.jsonl.gz": {
+      "sha256": "e0e1e2c31ffc66bec2c994d3e8a5784597594551a5432ded8cb9e9de0868f655",
+      "bytes": 78199
+    },
+    "baseline/IDENTITY.json": {
+      "sha256": "7178a8439ff50f4d7b1fcaa2c70b3d54a83d42c091efd4952cff228eafba58a7",
+      "bytes": 3132
+    },
+    "stage1/AUDIT.json": {
+      "sha256": "0f59a33c6875c5b285675b743e60983830e0f801393d548db5778a13be6ff3ad",
+      "bytes": 3218
+    },
+    "stage1/AUDIT_STEPS_210.jsonl.gz": {
+      "sha256": "ebb034a5748406a5e07b068958d0a72c0cb135a2ac43bb052fa838ef162fe2e0",
+      "bytes": 26531
+    },
+    "stage1/AUDIT_STEPS_630.jsonl.gz": {
+      "sha256": "6c7308bdefa9f586ff8966cef29324cf86d404ca4a4dc9f47a3047c77edfe041",
+      "bytes": 78199
+    },
+    "stage1/IDENTITY.json": {
+      "sha256": "7178a8439ff50f4d7b1fcaa2c70b3d54a83d42c091efd4952cff228eafba58a7",
+      "bytes": 3132
+    },
+    "stage2/AUDIT.json": {
+      "sha256": "8183e884821bf6ea2aa5554ec67dbae1030f994f3663ceb37ef90193c37957b9",
+      "bytes": 787
+    },
+    "stage2/IDENTITY.json": {
+      "sha256": "62137bfb8e583bd44672e7d8d521f997b14208ae3beb3637bc1d174e60219e7d",
+      "bytes": 4251
+    },
+    "baseline/budget210/CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "baseline/budget210/CHECKS.json": {
+      "sha256": "bd8d6e2546b002c3051ba91c1896a60ec14bf5fbfd47691c353edee8eff32e12",
+      "bytes": 6958
+    },
+    "baseline/budget210/IDENTITY.json": {
+      "sha256": "5c86507ef24662cc669f980f78a1e84df1f87ae918caef04c87cd5bece9df1d5",
+      "bytes": 638
+    },
+    "baseline/budget210/STEPS.jsonl.gz": {
+      "sha256": "a28b5000344b7f302bda470ed9e2633aeab95cee022c121b805c8c7942862b8a",
+      "bytes": 323954
+    },
+    "baseline/budget630/CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "baseline/budget630/CHECKS.json": {
+      "sha256": "f508f95baef034a5e5d7855ff03b85bdbb674ef84eda598638f8dc812b457f32",
+      "bytes": 6853
+    },
+    "baseline/budget630/IDENTITY.json": {
+      "sha256": "269f971d8371f5bfb8e5e8ad2c2a905086180363b085d42ceaa9397416f01ff8",
+      "bytes": 638
+    },
+    "baseline/budget630/STEPS.jsonl.gz": {
+      "sha256": "2acbec7606496b6ffa2c22c5a78d8aada949bfa8549c1acc225787c4b3cfc57c",
+      "bytes": 721928
+    },
+    "stage1/budget210/CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "stage1/budget210/CHECKS.json": {
+      "sha256": "841d7d24f7202e7abee93f7cbd0261896f9e73f03a001154494218a8607c632f",
+      "bytes": 6969
+    },
+    "stage1/budget210/IDENTITY.json": {
+      "sha256": "5c86507ef24662cc669f980f78a1e84df1f87ae918caef04c87cd5bece9df1d5",
+      "bytes": 638
+    },
+    "stage1/budget210/STEPS.jsonl.gz": {
+      "sha256": "8b8949c8af4465b95ab57f40e2ea2c9ce7dff42ff2a45a6a2195d5b45fe9345c",
+      "bytes": 323954
+    },
+    "stage1/budget630/CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "stage1/budget630/CHECKS.json": {
+      "sha256": "9b36e19907d67f37cfd5bfa4b80ee957e2c6d680b3ca61c240f1ea9d1669a940",
+      "bytes": 6859
+    },
+    "stage1/budget630/IDENTITY.json": {
+      "sha256": "269f971d8371f5bfb8e5e8ad2c2a905086180363b085d42ceaa9397416f01ff8",
+      "bytes": 638
+    },
+    "stage1/budget630/STEPS.jsonl.gz": {
+      "sha256": "c4e8d4254ac2680d6fd1527015c81a3ca6eed2b6768f13d49739e4ec504d29f9",
+      "bytes": 721928
+    },
+    "stage2/budget210/CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "stage2/budget210/CHECKS.json": {
+      "sha256": "56685309bd29f8152d7f8432f08b0054097add270c11a15547fe5938ffbc8bd4",
+      "bytes": 6973
+    },
+    "stage2/budget210/IDENTITY.json": {
+      "sha256": "ff4a86a5e1f0611c29ad8f1ef7a3fbcf8682bc11ea07cb2677b94df762a2c299",
+      "bytes": 1049
+    },
+    "stage2/budget210/STEPS.jsonl.gz": {
+      "sha256": "b833d40a3d5cd4c25b843cda12416e81a2d36dad63e5741549010b370dd98e47",
+      "bytes": 323939
+    },
+    "stage2/budget630/CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "stage2/budget630/CHECKS.json": {
+      "sha256": "1c6b95199403e39f22f6ef4e0e085c2cc964f35bce2bca7cdcad9017f84dcc44",
+      "bytes": 6865
+    },
+    "stage2/budget630/IDENTITY.json": {
+      "sha256": "166ff472acb4cd0531b380c04e740765e22d0e1e649e8e53c1aae63bbe005fe4",
+      "bytes": 1158
+    },
+    "stage2/budget630/STEPS.jsonl.gz": {
+      "sha256": "57d04b60697a0ca02b214cd3d5e35c3fac603eaf8db341087cf91275a88c1dcf",
+      "bytes": 721927
+    },
+    "timing/repetition1/baseline/budget210/CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "timing/repetition1/baseline/budget210/CHECKS.json": {
+      "sha256": "c2b8186f95da2483682ed85037008607cc1818fe3001c5c395867a147c2b0dae",
+      "bytes": 6957
+    },
+    "timing/repetition1/baseline/budget210/IDENTITY.json": {
+      "sha256": "5c86507ef24662cc669f980f78a1e84df1f87ae918caef04c87cd5bece9df1d5",
+      "bytes": 638
+    },
+    "timing/repetition1/baseline/budget210/STEPS.jsonl.gz": {
+      "sha256": "d473a2be45aa3ade6d3bf916abb4252091b08641fc6fc3195d20d6f4ba43a9ce",
+      "bytes": 323954
+    },
+    "timing/repetition1/baseline/budget630/CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "timing/repetition1/baseline/budget630/CHECKS.json": {
+      "sha256": "9b3df1dfdf8a6197ee07f238c6e902a1cffcd462dcb99f24d6a1fda20e6ada66",
+      "bytes": 6856
+    },
+    "timing/repetition1/baseline/budget630/IDENTITY.json": {
+      "sha256": "269f971d8371f5bfb8e5e8ad2c2a905086180363b085d42ceaa9397416f01ff8",
+      "bytes": 638
+    },
+    "timing/repetition1/baseline/budget630/STEPS.jsonl.gz": {
+      "sha256": "be39d2f3b433147b2d0f3849185b98c37a8d856668756cd3eacea5e513f41e64",
+      "bytes": 721928
+    },
+    "timing/repetition1/stage1/budget210/CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "timing/repetition1/stage1/budget210/CHECKS.json": {
+      "sha256": "f338d21fb57855be0942df1ba19a2ac1be51c0c0e928c7eb77517f698414151f",
+      "bytes": 6973
+    },
+    "timing/repetition1/stage1/budget210/IDENTITY.json": {
+      "sha256": "5c86507ef24662cc669f980f78a1e84df1f87ae918caef04c87cd5bece9df1d5",
+      "bytes": 638
+    },
+    "timing/repetition1/stage1/budget210/STEPS.jsonl.gz": {
+      "sha256": "1138ed18bf247069e3cd1a25e913f5dac611ef93a50b89b791f038a89db75ed7",
+      "bytes": 323954
+    },
+    "timing/repetition1/stage1/budget630/CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "timing/repetition1/stage1/budget630/CHECKS.json": {
+      "sha256": "568f8b8009411b6fc22c44b47cfe2b99df49c5df5a3781ceb3a4998188d5b2f7",
+      "bytes": 6859
+    },
+    "timing/repetition1/stage1/budget630/IDENTITY.json": {
+      "sha256": "269f971d8371f5bfb8e5e8ad2c2a905086180363b085d42ceaa9397416f01ff8",
+      "bytes": 638
+    },
+    "timing/repetition1/stage1/budget630/STEPS.jsonl.gz": {
+      "sha256": "a353564727e4cb9f29486ac4864ff86185a7cf11c59451380a888d0857e48cb8",
+      "bytes": 721928
+    },
+    "timing/repetition2/baseline/budget210/CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "timing/repetition2/baseline/budget210/CHECKS.json": {
+      "sha256": "10dcb9f3278f09c1f0198cadc38e44c999f62d5b9346c7710d8510f6b79e7ae5",
+      "bytes": 6959
+    },
+    "timing/repetition2/baseline/budget210/IDENTITY.json": {
+      "sha256": "5c86507ef24662cc669f980f78a1e84df1f87ae918caef04c87cd5bece9df1d5",
+      "bytes": 638
+    },
+    "timing/repetition2/baseline/budget210/STEPS.jsonl.gz": {
+      "sha256": "7379e3c010e326be613f11ad9f8d5200116bae8bbf60fcc644c134397b112d5b",
+      "bytes": 323954
+    },
+    "timing/repetition2/baseline/budget630/CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "timing/repetition2/baseline/budget630/CHECKS.json": {
+      "sha256": "f6c3559660e0ebc8356fba266360cd2bcb3e41b507c1acce57b501c2a12fc158",
+      "bytes": 6857
+    },
+    "timing/repetition2/baseline/budget630/IDENTITY.json": {
+      "sha256": "269f971d8371f5bfb8e5e8ad2c2a905086180363b085d42ceaa9397416f01ff8",
+      "bytes": 638
+    },
+    "timing/repetition2/baseline/budget630/STEPS.jsonl.gz": {
+      "sha256": "eea663719c73109baceb003d75d2e0dcf9df3a35f4b45e35553b6d79ea81a882",
+      "bytes": 721928
+    },
+    "timing/repetition2/stage1/budget210/CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "timing/repetition2/stage1/budget210/CHECKS.json": {
+      "sha256": "e50ab43042c2e175d5664f20004d7210ebf9ac46dc53d131c38523772c1b9a2c",
+      "bytes": 6971
+    },
+    "timing/repetition2/stage1/budget210/IDENTITY.json": {
+      "sha256": "5c86507ef24662cc669f980f78a1e84df1f87ae918caef04c87cd5bece9df1d5",
+      "bytes": 638
+    },
+    "timing/repetition2/stage1/budget210/STEPS.jsonl.gz": {
+      "sha256": "2ac01ce30036279c4049e0989d907c7e0f1ddfd353c101aa1d517c2a51ab837e",
+      "bytes": 323954
+    },
+    "timing/repetition2/stage1/budget630/CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "timing/repetition2/stage1/budget630/CHECKS.json": {
+      "sha256": "a4dfd50ca2a14f23baefe167f015cba5b5610c9d07d592adf2c1b0f6cc93e453",
+      "bytes": 6859
+    },
+    "timing/repetition2/stage1/budget630/IDENTITY.json": {
+      "sha256": "269f971d8371f5bfb8e5e8ad2c2a905086180363b085d42ceaa9397416f01ff8",
+      "bytes": 638
+    },
+    "timing/repetition2/stage1/budget630/STEPS.jsonl.gz": {
+      "sha256": "63bd7dcc7eabed11b1b056d1775d11854b92b9124cbf5f8113718144b977a3db",
+      "bytes": 721928
+    },
+    "timing/repetition3/baseline/budget210/CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "timing/repetition3/baseline/budget210/CHECKS.json": {
+      "sha256": "99d9d00502cf70e494dadfd71f6b1db72af41dd5352981b23787e1f36b2db883",
+      "bytes": 6958
+    },
+    "timing/repetition3/baseline/budget210/IDENTITY.json": {
+      "sha256": "5c86507ef24662cc669f980f78a1e84df1f87ae918caef04c87cd5bece9df1d5",
+      "bytes": 638
+    },
+    "timing/repetition3/baseline/budget210/STEPS.jsonl.gz": {
+      "sha256": "a4652d34691e58062eef453388878cc9a8d7e3b427ffed3efae41c3175d098a9",
+      "bytes": 323954
+    },
+    "timing/repetition3/baseline/budget630/CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "timing/repetition3/baseline/budget630/CHECKS.json": {
+      "sha256": "3ace06430c9f762c06b013650e655fdf4c3b00e444b268c53e2bae3b24d5461e",
+      "bytes": 6857
+    },
+    "timing/repetition3/baseline/budget630/IDENTITY.json": {
+      "sha256": "269f971d8371f5bfb8e5e8ad2c2a905086180363b085d42ceaa9397416f01ff8",
+      "bytes": 638
+    },
+    "timing/repetition3/baseline/budget630/STEPS.jsonl.gz": {
+      "sha256": "6aae34c64570711d4b737ca76189e5c9a9974b1f55fa744f759a795aff5a8164",
+      "bytes": 721928
+    },
+    "timing/repetition3/stage1/budget210/CHECKPOINT.pt": {
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "bytes": 2605235
+    },
+    "timing/repetition3/stage1/budget210/CHECKS.json": {
+      "sha256": "b01fcc9d20f635c783c583db9a6e5c560b8ba9e92e8f18504b479fb52b1f7ab0",
+      "bytes": 6971
+    },
+    "timing/repetition3/stage1/budget210/IDENTITY.json": {
+      "sha256": "5c86507ef24662cc669f980f78a1e84df1f87ae918caef04c87cd5bece9df1d5",
+      "bytes": 638
+    },
+    "timing/repetition3/stage1/budget210/STEPS.jsonl.gz": {
+      "sha256": "eb487700aaa9c18b1a9a561295a2edf21f7d925016d31e37602c5364b99f0da1",
+      "bytes": 323954
+    },
+    "timing/repetition3/stage1/budget630/CHECKPOINT.pt": {
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "bytes": 2605235
+    },
+    "timing/repetition3/stage1/budget630/CHECKS.json": {
+      "sha256": "9c0b9d1c68fe34a5c4c512be751304a5fc0aabb334888f29dbb198d429c39d99",
+      "bytes": 6860
+    },
+    "timing/repetition3/stage1/budget630/IDENTITY.json": {
+      "sha256": "269f971d8371f5bfb8e5e8ad2c2a905086180363b085d42ceaa9397416f01ff8",
+      "bytes": 638
+    },
+    "timing/repetition3/stage1/budget630/STEPS.jsonl.gz": {
+      "sha256": "5d93c86151a5988bd477cf8d39ac1e0ac58f69442ad5ec4d95dbf80aad4aff75",
+      "bytes": 721928
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "budget": 210,
+  "identical_updates": {
+    "before_sha256": 210,
+    "native_sha256": 210,
+    "executed_sha256": 210,
+    "moments_sha256": 210,
+    "optimizer_steps": 210,
+    "predictor": 210,
+    "endpoint_sha256": 210,
+    "counts": 210,
+    "decision": 210
+  },
+  "first_divergence": null,
+  "changed_steps": [],
+  "final_checkpoint_state_byte_identical": true,
+  "serialized_checkpoint_identical": true,
+  "reference_checkpoint_sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+  "candidate_checkpoint_sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e"
+}

@@ -1,0 +1,118 @@
+{
+  "status": "FAIL",
+  "reports": [
+    {
+      "status": "FAIL",
+      "budget": 210,
+      "identical_updates": {
+        "before_sha256": 210,
+        "native_sha256": 210,
+        "executed_sha256": 210,
+        "moments_sha256": 210,
+        "optimizer_steps": 210,
+        "predictor": 210,
+        "endpoint_sha256": 210,
+        "counts": 210,
+        "decision": 196
+      },
+      "first_divergence": {
+        "step": 11,
+        "differences": [
+          {
+            "path": ".decision.rounds[1].linearization_max_error",
+            "reference": 2.1341020101659294e-07,
+            "candidate": 2.1341020101702662e-07,
+            "absolute_difference": 4.336808689942018e-19
+          }
+        ],
+        "difference_count": 1
+      },
+      "changed_steps": [
+        11,
+        12,
+        49,
+        50,
+        54,
+        76,
+        83,
+        85,
+        87,
+        96,
+        115,
+        118,
+        129,
+        197
+      ],
+      "final_checkpoint_state_byte_identical": true,
+      "serialized_checkpoint_identical": true,
+      "reference_checkpoint_sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+      "candidate_checkpoint_sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e"
+    },
+    {
+      "status": "FAIL",
+      "budget": 630,
+      "identical_updates": {
+        "before_sha256": 630,
+        "native_sha256": 630,
+        "executed_sha256": 630,
+        "moments_sha256": 630,
+        "optimizer_steps": 630,
+        "predictor": 630,
+        "endpoint_sha256": 630,
+        "counts": 630,
+        "decision": 627
+      },
+      "first_divergence": {
+        "step": 147,
+        "differences": [
+          {
+            "path": ".decision.rounds[0].predicted_margin_repair",
+            "reference": 0.6205505318113187,
+            "candidate": 0.6205505318113188,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "path": ".decision.rounds[0].repair_ratio",
+            "reference": 0.999618728707344,
+            "candidate": 0.9996187287073439,
+            "absolute_difference": 1.1102230246251565e-16
+          }
+        ],
+        "difference_count": 2
+      },
+      "changed_steps": [
+        147,
+        439,
+        576
+      ],
+      "final_checkpoint_state_byte_identical": true,
+      "serialized_checkpoint_identical": true,
+      "reference_checkpoint_sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+      "candidate_checkpoint_sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d"
+    }
+  ],
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 4,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 4,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 4,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 5,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 4,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\STEPS.jsonl.gz": 3,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKPOINT.pt": 5,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 4,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\STEPS.jsonl.gz": 3,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKPOINT.pt": 5,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 2
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  }
+}

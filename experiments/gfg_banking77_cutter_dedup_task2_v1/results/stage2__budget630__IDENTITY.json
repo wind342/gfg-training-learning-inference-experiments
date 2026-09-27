@@ -1,0 +1,42 @@
+{
+  "status": "FAIL",
+  "budget": 630,
+  "identical_updates": {
+    "before_sha256": 630,
+    "native_sha256": 630,
+    "executed_sha256": 630,
+    "moments_sha256": 630,
+    "optimizer_steps": 630,
+    "predictor": 630,
+    "endpoint_sha256": 630,
+    "counts": 630,
+    "decision": 627
+  },
+  "first_divergence": {
+    "step": 147,
+    "differences": [
+      {
+        "path": ".decision.rounds[0].predicted_margin_repair",
+        "reference": 0.6205505318113187,
+        "candidate": 0.6205505318113188,
+        "absolute_difference": 1.1102230246251565e-16
+      },
+      {
+        "path": ".decision.rounds[0].repair_ratio",
+        "reference": 0.999618728707344,
+        "candidate": 0.9996187287073439,
+        "absolute_difference": 1.1102230246251565e-16
+      }
+    ],
+    "difference_count": 2
+  },
+  "changed_steps": [
+    147,
+    439,
+    576
+  ],
+  "final_checkpoint_state_byte_identical": true,
+  "serialized_checkpoint_identical": true,
+  "reference_checkpoint_sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+  "candidate_checkpoint_sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d"
+}

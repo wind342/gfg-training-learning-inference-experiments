@@ -1,0 +1,107 @@
+{
+  "reports": [
+    {
+      "budget": 210,
+      "first_step": 11,
+      "same_state_apply_comparisons": [
+        {
+          "pairs": 5,
+          "unique": 3,
+          "byte_identical": true,
+          "max_abs_error": 0.0,
+          "candidate_sha256": "8f633e3ad4b132c26ff3601c2ee2c647743b3e697c32c39fc199cc6521066a26",
+          "reference_sha256": "8f633e3ad4b132c26ff3601c2ee2c647743b3e697c32c39fc199cc6521066a26"
+        },
+        {
+          "pairs": 6,
+          "unique": 4,
+          "byte_identical": true,
+          "max_abs_error": 0.0,
+          "candidate_sha256": "ad4f932978e224974299130f2ac39d69b993c8c50877e93f990aaf90f48aeefe",
+          "reference_sha256": "ad4f932978e224974299130f2ac39d69b993c8c50877e93f990aaf90f48aeefe"
+        },
+        {
+          "pairs": 6,
+          "unique": 4,
+          "byte_identical": false,
+          "max_abs_error": 9.486769009248164e-20,
+          "candidate_sha256": "1dbe6bb099c183eb6fc2861fe8922618797012c4cbf643c1e0f2253d7faa0ac0",
+          "reference_sha256": "335d8e08d5b521b7cec864289054f6beb798ff52c064a0705afd3845bb47314b"
+        }
+      ],
+      "shape_change_explanation": "Same inputs and algebra; unique row GEMM changes row count, allowing BLAS reduction/kernel differences. Attribution is supported only if same-state apply differs.",
+      "first_divergence": {
+        "step": 11,
+        "differences": [
+          {
+            "path": ".decision.rounds[1].linearization_max_error",
+            "reference": 2.1341020101659294e-07,
+            "candidate": 2.1341020101702662e-07,
+            "absolute_difference": 4.336808689942018e-19
+          }
+        ],
+        "difference_count": 1
+      },
+      "final_checkpoint_state_identical": true
+    },
+    {
+      "budget": 630,
+      "first_step": 147,
+      "same_state_apply_comparisons": [
+        {
+          "pairs": 16,
+          "unique": 11,
+          "byte_identical": false,
+          "max_abs_error": 3.469446951953614e-18,
+          "candidate_sha256": "0a17748b6378735ad151ebe9088a1a376a4ec7dbd8218f86c7bbd5f6e0cdf84d",
+          "reference_sha256": "22ab034153dc0986a4778ee3794bd5e9628a875bfaf9a9bad6d047f23fbc4b97"
+        }
+      ],
+      "shape_change_explanation": "Same inputs and algebra; unique row GEMM changes row count, allowing BLAS reduction/kernel differences. Attribution is supported only if same-state apply differs.",
+      "first_divergence": {
+        "step": 147,
+        "differences": [
+          {
+            "path": ".decision.rounds[0].predicted_margin_repair",
+            "reference": 0.6205505318113187,
+            "candidate": 0.6205505318113188,
+            "absolute_difference": 1.1102230246251565e-16
+          },
+          {
+            "path": ".decision.rounds[0].repair_ratio",
+            "reference": 0.999618728707344,
+            "candidate": 0.9996187287073439,
+            "absolute_difference": 1.1102230246251565e-16
+          }
+        ],
+        "difference_count": 2
+      },
+      "final_checkpoint_state_identical": true
+    }
+  ],
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKPOINT.pt": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  },
+  "no_training_changes": true
+}

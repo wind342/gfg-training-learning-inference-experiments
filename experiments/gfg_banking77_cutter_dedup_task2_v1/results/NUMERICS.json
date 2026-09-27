@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "synthetic_solver_cases": [
+    {
+      "case": 0,
+      "sweeps": 157,
+      "ball_hits": 157
+    },
+    {
+      "case": 1,
+      "sweeps": 9,
+      "ball_hits": 9
+    },
+    {
+      "case": 2,
+      "sweeps": 162,
+      "ball_hits": 162
+    },
+    {
+      "case": 3,
+      "sweeps": 87,
+      "ball_hits": 87
+    },
+    {
+      "case": 4,
+      "sweeps": 200,
+      "ball_hits": 200
+    },
+    {
+      "case": 5,
+      "sweeps": 74,
+      "ball_hits": 74
+    },
+    {
+      "case": 6,
+      "sweeps": 119,
+      "ball_hits": 119
+    },
+    {
+      "case": 7,
+      "sweeps": 163,
+      "ball_hits": 163
+    },
+    {
+      "case": 8,
+      "sweeps": 57,
+      "ball_hits": 57
+    },
+    {
+      "case": 9,
+      "sweeps": 200,
+      "ball_hits": 200
+    },
+    {
+      "case": 10,
+      "sweeps": 88,
+      "ball_hits": 88
+    },
+    {
+      "case": 11,
+      "sweeps": 47,
+      "ball_hits": 47
+    }
+  ],
+  "endpoint_reuse_branches": {
+    "native_safe": [],
+    "projected_safe": [
+      "PASS_ACTUAL_SAFE_ACCEPT"
+    ],
+    "cap_safe": [
+      "INNER_LIMIT_ACTUAL_SAFE_ACCEPT"
+    ],
+    "cap_continue": [
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_SAFE_ACCEPT"
+    ],
+    "rollback": [
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "OUTER_LIMIT_ROLLBACK"
+    ]
+  },
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKPOINT.pt": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  },
+  "injection_synthetic_only": true
+}

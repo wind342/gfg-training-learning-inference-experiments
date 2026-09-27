@@ -1,0 +1,81 @@
+{
+  "results": [
+    {
+      "budget": 210,
+      "differing_scalar_fields": {
+        "linearization_max_error": 8,
+        "predicted_margin_repair": 11,
+        "repair_ratio": 11,
+        "displacement_norm": 5,
+        "cycle_change": 5,
+        "dual_sha256": 5,
+        "dual[1]": 2,
+        "dual[2]": 1,
+        "dual[4]": 3,
+        "dual[6]": 4,
+        "dual[11]": 3,
+        "dual[12]": 4,
+        "dual[15]": 4,
+        "dual[16]": 3,
+        "dual[17]": 1,
+        "dual[18]": 3,
+        "dual[19]": 2,
+        "dual[21]": 3,
+        "dual[22]": 2,
+        "dual[24]": 3,
+        "dual[25]": 4,
+        "dual[26]": 5,
+        "dual[29]": 3,
+        "dual[31]": 4,
+        "dual[32]": 4,
+        "local_displacement_norm": 3,
+        "halfspace_violation": 2,
+        "dual[0]": 3,
+        "dual[3]": 3,
+        "dual[13]": 2,
+        "dual[14]": 3,
+        "dual[23]": 4,
+        "dual[7]": 2,
+        "dual[20]": 3,
+        "dual[27]": 1,
+        "dual[28]": 1,
+        "dual[33]": 2,
+        "dual[34]": 2,
+        "dual[10]": 2,
+        "dual[30]": 1,
+        "dual[37]": 1
+      },
+      "maximum_reported_scalar_abs_difference": 4.551914400963142e-15,
+      "identical_updates": {
+        "selected_controls": 210,
+        "final_active": 210,
+        "solver_sequences": 205,
+        "coef_duals": 205,
+        "candidate_bytes": 210,
+        "cap_decisions": 210,
+        "sweeps": 210,
+        "repair_branch": 210
+      }
+    },
+    {
+      "budget": 630,
+      "differing_scalar_fields": {
+        "predicted_margin_repair": 2,
+        "repair_ratio": 2,
+        "linearization_max_error": 1
+      },
+      "maximum_reported_scalar_abs_difference": 2.220446049250313e-16,
+      "identical_updates": {
+        "selected_controls": 630,
+        "final_active": 630,
+        "solver_sequences": 630,
+        "coef_duals": 630,
+        "candidate_bytes": 630,
+        "cap_decisions": 630,
+        "sweeps": 630,
+        "repair_branch": 630
+      }
+    }
+  ],
+  "scope": "Read-only classification of stored discrepancies; no rerun or tolerance change."
+}

@@ -1,0 +1,659 @@
+{
+  "status": "PASS",
+  "accepted_variants": [
+    "baseline",
+    "stage1"
+  ],
+  "rows": [
+    {
+      "budget": 210,
+      "variant": "baseline",
+      "identity": "PASS",
+      "checkpoint_serialized_identical": true,
+      "solver_sweeps": 48686,
+      "operations": {
+        "exact_endpoint_calls": 728,
+        "post_ball_Gt_calls": 97372,
+        "all_gram_matvec_calls": 194744,
+        "apply_calls": 614,
+        "skipped_zero_apply": 0,
+        "eliminated_Gt": 0,
+        "geometry_active_pairs": 9002,
+        "geometry_unique_controls": 4751,
+        "apply_pair_rows": 18004,
+        "apply_unique_rows": 9502
+      },
+      "timing": {
+        "total_algorithm_wall": {
+          "values": [
+            9.36648790014442,
+            10.15270109998528,
+            9.826689701760188
+          ],
+          "median": 9.826689701760188,
+          "min": 9.36648790014442,
+          "max": 10.15270109998528
+        },
+        "control_wall": {
+          "values": [
+            8.569879298796877,
+            9.306054298998788,
+            9.019127500941977
+          ],
+          "median": 9.019127500941977,
+          "min": 8.569879298796877,
+          "max": 9.306054298998788
+        },
+        "predictor_wall": {
+          "values": [
+            0.9304271998116747,
+            0.9535675011575222,
+            0.9482874004170299
+          ],
+          "median": 0.9482874004170299,
+          "min": 0.9304271998116747,
+          "max": 0.9535675011575222
+        },
+        "peak_cuda_bytes": {
+          "values": [
+            119967744.0,
+            119967744.0,
+            119967744.0
+          ],
+          "median": 119967744.0,
+          "min": 119967744.0,
+          "max": 119967744.0
+        },
+        "endpoint": {
+          "values": [
+            0.28336070210207254,
+            0.4506400980753824,
+            0.42799579887650907
+          ],
+          "median": 0.42799579887650907,
+          "min": 0.28336070210207254,
+          "max": 0.4506400980753824
+        },
+        "hildreth_ball": {
+          "values": [
+            2.919352899538353,
+            2.7885647002840415,
+            2.745838299859315
+          ],
+          "median": 2.7885647002840415,
+          "min": 2.745838299859315,
+          "max": 2.919352899538353
+        },
+        "parameter_geometry": {
+          "values": [
+            0.5589890998089686,
+            0.7098888996988535,
+            0.6921649990836158
+          ],
+          "median": 0.6921649990836158,
+          "min": 0.5589890998089686,
+          "max": 0.7098888996988535
+        },
+        "jacobian_gram_guard": {
+          "values": [
+            0.7574307984905317,
+            0.7569900999078527,
+            0.7166805998422205
+          ],
+          "median": 0.7569900999078527,
+          "min": 0.7166805998422205,
+          "max": 0.7574307984905317
+        },
+        "reconstruction": {
+          "values": [
+            0.8408577996306121,
+            0.8245929998811334,
+            0.791676799650304
+          ],
+          "median": 0.8245929998811334,
+          "min": 0.791676799650304,
+          "max": 0.8408577996306121
+        },
+        "materialization": {
+          "values": [
+            0.45979600062128156,
+            0.8969806010136381,
+            0.8723039017058909
+          ],
+          "median": 0.8723039017058909,
+          "min": 0.45979600062128156,
+          "max": 0.8969806010136381
+        }
+      },
+      "flop_ledger": {
+        "endpoint": 80630251520,
+        "predictor_dense": 236826132480,
+        "jacobian_forward_guard": 3754774528,
+        "gram": 336820356,
+        "jacobian_directional_dense_estimate": 7107115008,
+        "hildreth_ball_estimate": 542962744,
+        "reconstruction": 4160675164,
+        "eliminated_duplicate_Gt": 0
+      },
+      "current_dense_flops": 3039805440,
+      "floor_violations": 0,
+      "old_ce_backward_examples": 0
+    },
+    {
+      "budget": 210,
+      "variant": "stage1",
+      "identity": "PASS",
+      "checkpoint_serialized_identical": true,
+      "solver_sweeps": 48686,
+      "operations": {
+        "exact_endpoint_calls": 518,
+        "post_ball_Gt_calls": 48686,
+        "all_gram_matvec_calls": 146058,
+        "apply_calls": 406,
+        "skipped_zero_apply": 208,
+        "eliminated_Gt": 48686,
+        "geometry_active_pairs": 9002,
+        "geometry_unique_controls": 4751,
+        "apply_pair_rows": 11954,
+        "apply_unique_rows": 6258
+      },
+      "timing": {
+        "total_algorithm_wall": {
+          "values": [
+            9.332726601627655,
+            9.954436100902967,
+            9.289158800733276
+          ],
+          "median": 9.332726601627655,
+          "min": 9.289158800733276,
+          "max": 9.954436100902967
+        },
+        "control_wall": {
+          "values": [
+            8.487434200709686,
+            8.990082200150937,
+            8.455163000733592
+          ],
+          "median": 8.487434200709686,
+          "min": 8.455163000733592,
+          "max": 8.990082200150937
+        },
+        "predictor_wall": {
+          "values": [
+            0.9693546999478713,
+            1.0662569002015516,
+            0.9495051996782422
+          ],
+          "median": 0.9693546999478713,
+          "min": 0.9495051996782422,
+          "max": 1.0662569002015516
+        },
+        "peak_cuda_bytes": {
+          "values": [
+            119967744.0,
+            119967744.0,
+            119967744.0
+          ],
+          "median": 119967744.0,
+          "min": 119967744.0,
+          "max": 119967744.0
+        },
+        "endpoint": {
+          "values": [
+            0.33270100178197026,
+            0.35082900046836585,
+            0.3295868991408497
+          ],
+          "median": 0.33270100178197026,
+          "min": 0.3295868991408497,
+          "max": 0.35082900046836585
+        },
+        "hildreth_ball": {
+          "values": [
+            2.6859951991355047,
+            2.8337834004778415,
+            2.6903447997756302
+          ],
+          "median": 2.6903447997756302,
+          "min": 2.6859951991355047,
+          "max": 2.8337834004778415
+        },
+        "parameter_geometry": {
+          "values": [
+            0.6951796002686024,
+            0.7187691001454368,
+            0.6960634996648878
+          ],
+          "median": 0.6960634996648878,
+          "min": 0.6951796002686024,
+          "max": 0.7187691001454368
+        },
+        "jacobian_gram_guard": {
+          "values": [
+            0.49522380088455975,
+            0.5136235995450988,
+            0.48715179960709065
+          ],
+          "median": 0.49522380088455975,
+          "min": 0.48715179960709065,
+          "max": 0.5136235995450988
+        },
+        "reconstruction": {
+          "values": [
+            0.6317171986447647,
+            0.6774415004765615,
+            0.6238715010695159
+          ],
+          "median": 0.6317171986447647,
+          "min": 0.6238715010695159,
+          "max": 0.6774415004765615
+        },
+        "materialization": {
+          "values": [
+            0.8790292990161106,
+            0.9172346014529467,
+            0.860193999717012
+          ],
+          "median": 0.8790292990161106,
+          "min": 0.860193999717012,
+          "max": 0.9172346014529467
+        }
+      },
+      "flop_ledger": {
+        "endpoint": 57371525120,
+        "predictor_dense": 236826132480,
+        "jacobian_forward_guard": 3754774528,
+        "gram": 336820356,
+        "hildreth_ball_estimate": 542962744,
+        "jacobian_directional_dense_estimate": 4718865408,
+        "reconstruction": 4160675164,
+        "eliminated_duplicate_Gt": -97650608
+      },
+      "current_dense_flops": 3039805440,
+      "floor_violations": 0,
+      "old_ce_backward_examples": 0
+    },
+    {
+      "budget": 210,
+      "variant": "stage2",
+      "identity": "FAIL",
+      "checkpoint_serialized_identical": true,
+      "solver_sweeps": 48686,
+      "operations": {
+        "exact_endpoint_calls": 518,
+        "post_ball_Gt_calls": 48686,
+        "all_gram_matvec_calls": 146058,
+        "apply_calls": 406,
+        "skipped_zero_apply": 208,
+        "eliminated_Gt": 48686,
+        "geometry_active_pairs": 9002,
+        "geometry_unique_controls": 4751,
+        "apply_pair_rows": 11954,
+        "apply_unique_rows": 6258
+      },
+      "timing": {
+        "total_algorithm_wall": null,
+        "control_wall": null,
+        "predictor_wall": null,
+        "peak_cuda_bytes": null,
+        "endpoint": null,
+        "hildreth_ball": null,
+        "parameter_geometry": null,
+        "jacobian_gram_guard": null,
+        "reconstruction": null,
+        "materialization": null
+      },
+      "flop_ledger": {
+        "endpoint": 57371525120,
+        "predictor_dense": 236826132480,
+        "jacobian_forward_guard": 3754774528,
+        "gram": 336820356,
+        "hildreth_ball_estimate": 542962744,
+        "jacobian_directional_dense_estimate": 2479107072,
+        "reconstruction": 4160675164,
+        "eliminated_duplicate_Gt": -97650608
+      },
+      "current_dense_flops": 3039805440,
+      "floor_violations": 0,
+      "old_ce_backward_examples": 0
+    },
+    {
+      "budget": 630,
+      "variant": "baseline",
+      "identity": "PASS",
+      "checkpoint_serialized_identical": true,
+      "solver_sweeps": 64285,
+      "operations": {
+        "exact_endpoint_calls": 1879,
+        "post_ball_Gt_calls": 128570,
+        "all_gram_matvec_calls": 257140,
+        "apply_calls": 1236,
+        "skipped_zero_apply": 0,
+        "eliminated_Gt": 0,
+        "geometry_active_pairs": 11698,
+        "geometry_unique_controls": 7545,
+        "apply_pair_rows": 23396,
+        "apply_unique_rows": 15090
+      },
+      "timing": {
+        "total_algorithm_wall": {
+          "values": [
+            21.438680200604722,
+            19.173323801136576,
+            20.147086002281867
+          ],
+          "median": 20.147086002281867,
+          "min": 19.173323801136576,
+          "max": 21.438680200604722
+        },
+        "control_wall": {
+          "values": [
+            18.83865320100449,
+            16.830708500929177,
+            17.646704301354475
+          ],
+          "median": 17.646704301354475,
+          "min": 16.830708500929177,
+          "max": 18.83865320100449
+        },
+        "predictor_wall": {
+          "values": [
+            3.058020100579597,
+            2.7513364981859922,
+            2.916779197868891
+          ],
+          "median": 2.916779197868891,
+          "min": 2.7513364981859922,
+          "max": 3.058020100579597
+        },
+        "peak_cuda_bytes": {
+          "values": [
+            119967744.0,
+            119967744.0,
+            119967744.0
+          ],
+          "median": 119967744.0,
+          "min": 119967744.0,
+          "max": 119967744.0
+        },
+        "endpoint": {
+          "values": [
+            1.1280159985180944,
+            0.9322168979560956,
+            1.0692764995619655
+          ],
+          "median": 1.0692764995619655,
+          "min": 0.9322168979560956,
+          "max": 1.1280159985180944
+        },
+        "hildreth_ball": {
+          "values": [
+            2.9350264007225633,
+            2.7961455994518474,
+            2.8069824990816414
+          ],
+          "median": 2.8069824990816414,
+          "min": 2.7961455994518474,
+          "max": 2.9350264007225633
+        },
+        "parameter_geometry": {
+          "values": [
+            2.2016486997017637,
+            1.9077704981900752,
+            2.071802599937655
+          ],
+          "median": 2.071802599937655,
+          "min": 1.9077704981900752,
+          "max": 2.2016486997017637
+        },
+        "jacobian_gram_guard": {
+          "values": [
+            1.576989198452793,
+            1.4746616984484717,
+            1.4526866995729506
+          ],
+          "median": 1.4746616984484717,
+          "min": 1.4526866995729506,
+          "max": 1.576989198452793
+        },
+        "reconstruction": {
+          "values": [
+            1.6428888003574684,
+            1.4713936996413395,
+            1.4592896011890844
+          ],
+          "median": 1.4713936996413395,
+          "min": 1.4592896011890844,
+          "max": 1.6428888003574684
+        },
+        "materialization": {
+          "values": [
+            1.8403928014449775,
+            1.4891527001745999,
+            1.801318799960427
+          ],
+          "median": 1.801318799960427,
+          "min": 1.4891527001745999,
+          "max": 1.8403928014449775
+        }
+      },
+      "flop_ledger": {
+        "endpoint": 208110223360,
+        "predictor_dense": 710478397440,
+        "jacobian_forward_guard": 5957586944,
+        "gram": 269900244,
+        "jacobian_directional_dense_estimate": 9235617792,
+        "hildreth_ball_estimate": 296566714,
+        "reconstruction": 5596588936,
+        "eliminated_duplicate_Gt": 0
+      },
+      "current_dense_flops": 9119416320,
+      "floor_violations": 0,
+      "old_ce_backward_examples": 0
+    },
+    {
+      "budget": 630,
+      "variant": "stage1",
+      "identity": "PASS",
+      "checkpoint_serialized_identical": true,
+      "solver_sweeps": 64285,
+      "operations": {
+        "exact_endpoint_calls": 1249,
+        "post_ball_Gt_calls": 64285,
+        "all_gram_matvec_calls": 192855,
+        "apply_calls": 618,
+        "skipped_zero_apply": 618,
+        "eliminated_Gt": 64285,
+        "geometry_active_pairs": 11698,
+        "geometry_unique_controls": 7545,
+        "apply_pair_rows": 11698,
+        "apply_unique_rows": 7545
+      },
+      "timing": {
+        "total_algorithm_wall": {
+          "values": [
+            18.44521250098478,
+            19.50984009867534,
+            18.57872240105644
+          ],
+          "median": 18.57872240105644,
+          "min": 18.44521250098478,
+          "max": 19.50984009867534
+        },
+        "control_wall": {
+          "values": [
+            15.902815698180348,
+            16.824095499236137,
+            15.969294801354408
+          ],
+          "median": 15.969294801354408,
+          "min": 15.902815698180348,
+          "max": 16.824095499236137
+        },
+        "predictor_wall": {
+          "values": [
+            2.960943599231541,
+            2.9584806979401037,
+            2.926613899646327
+          ],
+          "median": 2.9584806979401037,
+          "min": 2.926613899646327,
+          "max": 2.960943599231541
+        },
+        "peak_cuda_bytes": {
+          "values": [
+            119967744.0,
+            119967744.0,
+            119967744.0
+          ],
+          "median": 119967744.0,
+          "min": 119967744.0,
+          "max": 119967744.0
+        },
+        "endpoint": {
+          "values": [
+            0.7357341984752566,
+            0.7730326999444515,
+            0.7334788985317573
+          ],
+          "median": 0.7357341984752566,
+          "min": 0.7334788985317573,
+          "max": 0.7730326999444515
+        },
+        "hildreth_ball": {
+          "values": [
+            2.700174100114964,
+            2.847137401229702,
+            2.789737897226587
+          ],
+          "median": 2.789737897226587,
+          "min": 2.700174100114964,
+          "max": 2.847137401229702
+        },
+        "parameter_geometry": {
+          "values": [
+            2.060428900993429,
+            2.189559998572804,
+            2.0471663021016866
+          ],
+          "median": 2.060428900993429,
+          "min": 2.0471663021016866,
+          "max": 2.189559998572804
+        },
+        "jacobian_gram_guard": {
+          "values": [
+            0.7963849980151281,
+            0.8473458007210866,
+            0.8071753991534933
+          ],
+          "median": 0.8071753991534933,
+          "min": 0.7963849980151281,
+          "max": 0.8473458007210866
+        },
+        "reconstruction": {
+          "values": [
+            0.9960039008874446,
+            1.126952700316906,
+            1.013964300393127
+          ],
+          "median": 1.013964300393127,
+          "min": 0.9960039008874446,
+          "max": 1.126952700316906
+        },
+        "materialization": {
+          "values": [
+            1.739299000473693,
+            1.802874300046824,
+            1.7003588998923078
+          ],
+          "median": 1.739299000473693,
+          "min": 1.7003588998923078,
+          "max": 1.802874300046824
+        }
+      },
+      "flop_ledger": {
+        "endpoint": 138334044160,
+        "predictor_dense": 710478397440,
+        "jacobian_forward_guard": 5957586944,
+        "gram": 269900244,
+        "hildreth_ball_estimate": 296566714,
+        "jacobian_directional_dense_estimate": 4617808896,
+        "reconstruction": 5596588936,
+        "eliminated_duplicate_Gt": -50225942
+      },
+      "current_dense_flops": 9119416320,
+      "floor_violations": 0,
+      "old_ce_backward_examples": 0
+    },
+    {
+      "budget": 630,
+      "variant": "stage2",
+      "identity": "FAIL",
+      "checkpoint_serialized_identical": true,
+      "solver_sweeps": 64285,
+      "operations": {
+        "exact_endpoint_calls": 1249,
+        "post_ball_Gt_calls": 64285,
+        "all_gram_matvec_calls": 192855,
+        "apply_calls": 618,
+        "skipped_zero_apply": 618,
+        "eliminated_Gt": 64285,
+        "geometry_active_pairs": 11698,
+        "geometry_unique_controls": 7545,
+        "apply_pair_rows": 11698,
+        "apply_unique_rows": 7545
+      },
+      "timing": {
+        "total_algorithm_wall": null,
+        "control_wall": null,
+        "predictor_wall": null,
+        "peak_cuda_bytes": null,
+        "endpoint": null,
+        "hildreth_ball": null,
+        "parameter_geometry": null,
+        "jacobian_gram_guard": null,
+        "reconstruction": null,
+        "materialization": null
+      },
+      "flop_ledger": {
+        "endpoint": 138334044160,
+        "predictor_dense": 710478397440,
+        "jacobian_forward_guard": 5957586944,
+        "gram": 269900244,
+        "hildreth_ball_estimate": 296566714,
+        "jacobian_directional_dense_estimate": 2984782848,
+        "reconstruction": 5596588936,
+        "eliminated_duplicate_Gt": -50225942
+      },
+      "current_dense_flops": 9119416320,
+      "floor_violations": 0,
+      "old_ce_backward_examples": 0
+    }
+  ],
+  "task2_only": true,
+  "test_files_opened": 0,
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget210\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\budget630\\CHECKPOINT.pt": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  }
+}

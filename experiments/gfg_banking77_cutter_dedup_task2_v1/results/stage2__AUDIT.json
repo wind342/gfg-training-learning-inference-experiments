@@ -1,0 +1,20 @@
+{
+  "status": "FAIL",
+  "reason": "Strict FP64 solver/diagnostic identity prerequisite failed; D is not promoted.",
+  "full_reference_solver_replay_executed": false,
+  "endpoint_identity_proof": [
+    {
+      "budget": 210,
+      "steps": 210,
+      "executed_head_bytes_match_independently_forwarded_baseline": true,
+      "counts_match_independent_actual_forward": true
+    },
+    {
+      "budget": 630,
+      "steps": 630,
+      "executed_head_bytes_match_independently_forwarded_baseline": true,
+      "counts_match_independent_actual_forward": true
+    }
+  ],
+  "explanation": "Baseline was independently replayed and forwarded. D executed head hashes and counts match that audit at every step; this verifies committed endpoint safety but does not certify D solver-byte identity."
+}
