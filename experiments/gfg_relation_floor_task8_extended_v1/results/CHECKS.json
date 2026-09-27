@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "native_candidates": 420,
+  "independent_sweeps": 2112,
+  "relation_step_floor_checks": 23520,
+  "floor_violations": 0,
+  "continuous_head_and_moments": true,
+  "original_floor_unchanged": true,
+  "same_batch_order": true,
+  "metrics_recomputed": true,
+  "source_and_input_identity": true
+}
