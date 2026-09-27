@@ -1,0 +1,76 @@
+{
+  "base": "f24d37cd0d23c4d32c68bebefd3345f662016788",
+  "summary": {
+    "head_only_native": {
+      "timing": {
+        "seconds": 19.71742909832392,
+        "bert_seconds": 19.320270698866807,
+        "head_update_seconds": 0.39516059949528426,
+        "controller_seconds": 0.0019977999618276954,
+        "median_step_seconds": 0.0937026499886997
+      },
+      "train_accuracy": 0.832440510392189,
+      "test_accuracy": 0.8285714387893677,
+      "validation_accuracy": 0.8062499985098839,
+      "first_observed_validation_crossing": {
+        "0.9": null,
+        "0.95": null
+      }
+    },
+    "current_architecture": {
+      "timing": {
+        "seconds": 20.096166899544187,
+        "bert_seconds": 19.301078099524602,
+        "head_update_seconds": 0.4263576000230387,
+        "controller_seconds": 0.3687311999965459,
+        "median_step_seconds": 0.09566300001461059
+      },
+      "train_accuracy": 0.832440510392189,
+      "test_accuracy": 0.8285714387893677,
+      "validation_accuracy": 0.8062499985098839,
+      "first_observed_validation_crossing": {
+        "0.9": null,
+        "0.95": null
+      }
+    }
+  },
+  "curve": [
+    {
+      "step": 0,
+      "validation_accuracy": 0.09374999813735485
+    },
+    {
+      "step": 30,
+      "validation_accuracy": 0.19285714399302378
+    },
+    {
+      "step": 60,
+      "validation_accuracy": 0.4124999950872734
+    },
+    {
+      "step": 90,
+      "validation_accuracy": 0.5830357195809484
+    },
+    {
+      "step": 120,
+      "validation_accuracy": 0.6964285708963871
+    },
+    {
+      "step": 150,
+      "validation_accuracy": 0.7633928582072258
+    },
+    {
+      "step": 180,
+      "validation_accuracy": 0.7955357171595097
+    },
+    {
+      "step": 210,
+      "validation_accuracy": 0.8062499985098839
+    }
+  ],
+  "peak_cuda_bytes": 707249152,
+  "cache_seconds": 6.485250599915162,
+  "controller_over_native_wall_ratio": 1.019208275040911,
+  "exact_test_correct": 928,
+  "test_count": 1120
+}

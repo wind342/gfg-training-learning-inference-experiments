@@ -1,0 +1,41 @@
+{
+  "local_root": "E:\\gfg-evidence\\task1-conflict-free-timing-v1",
+  "artifacts": {
+    "CHECKS.json": {
+      "sha256": "0ef3179dd3726f12f8d04c067f1a702329ae40b227cf78c3813da30ca8ae897d",
+      "bytes": 327
+    },
+    "EXECUTION.json": {
+      "sha256": "5eab0940c4c50b2afd2ab6b669847faf267c244eae7d6a802a2bf73013bc6395",
+      "bytes": 121
+    },
+    "FINAL.pt": {
+      "sha256": "3e25866e066d7dac83c0c698a250ec3c6070bcda713461c24fe919fc68a8ee27",
+      "bytes": 2956231
+    },
+    "INDEPENDENT_CHECK.json": {
+      "sha256": "d391e057f87a610c317e3b4bd38677df9a079bb0497cf9f09434f9b7e43bb2ac",
+      "bytes": 344
+    },
+    "INITIAL.pt": {
+      "sha256": "e1e77846433c1d1436b99bf156432c5bbb5e8a2d8ff00f39b9d34b4ee8cf678a",
+      "bytes": 493797
+    },
+    "PREFLIGHT.json": {
+      "sha256": "0f7cd42e4bde42e05d0553233cf48592998b13e595a979c7f46c36f0f9072a49",
+      "bytes": 202044
+    },
+    "RESULTS.json": {
+      "sha256": "9ec032c269d437aa84f29e509f7eb74ffae1a78239ca33e982da3a135fab454d",
+      "bytes": 380764
+    },
+    "STEPS.jsonl": {
+      "sha256": "9ff4615a5188e87b89c6c4e8a5f030ecb98da17125f9a077a9878be06e786d75",
+      "bytes": 201121
+    },
+    "TRAINING_SEALED.json": {
+      "sha256": "f18b8ea3c22e404e1f46149cf5122387320f8328e75392a27f59b68c59334508",
+      "bytes": 148
+    }
+  }
+}

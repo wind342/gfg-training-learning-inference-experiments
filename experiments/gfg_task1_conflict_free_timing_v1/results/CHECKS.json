@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "paired_steps": 210,
+  "head_and_optimizer_identity": true,
+  "input_and_source_hashes": true,
+  "batch_order_identity": true,
+  "timings_recomputed": true,
+  "independently_recomputed_test_predictions": 1120,
+  "test_correct": 928,
+  "final_optimizer_step": 210,
+  "projection_steps": 0,
+  "skip_steps": 0
+}
