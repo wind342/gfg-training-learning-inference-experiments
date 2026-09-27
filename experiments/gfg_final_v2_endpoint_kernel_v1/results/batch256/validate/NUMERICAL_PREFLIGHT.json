@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "arm": "batch256",
+  "tile": 256,
+  "checks": [
+    {
+      "state": "receiving",
+      "repeatable": true,
+      "logits_identical": false,
+      "max_logit_difference": 1.3828277587890625e-05,
+      "max_margin_difference": 1.7642974853515625e-05,
+      "sign_differences": 0,
+      "floor_violations": 0
+    },
+    {
+      "state": "first_native",
+      "repeatable": true,
+      "logits_identical": false,
+      "max_logit_difference": 1.4781951904296875e-05,
+      "max_margin_difference": 1.7642974853515625e-05,
+      "sign_differences": 0,
+      "floor_violations": 52
+    },
+    {
+      "state": "historical_final",
+      "repeatable": true,
+      "logits_identical": false,
+      "max_logit_difference": 1.430511474609375e-05,
+      "max_margin_difference": 2.193450927734375e-05,
+      "sign_differences": 0,
+      "floor_violations": 0
+    }
+  ],
+  "fp64_error_bound_sample_rows": 65,
+  "input_padding_once": true,
+  "persistent_output": true
+}

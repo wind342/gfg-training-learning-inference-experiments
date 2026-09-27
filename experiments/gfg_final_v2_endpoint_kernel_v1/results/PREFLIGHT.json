@@ -1,0 +1,53 @@
+{
+  "base": "f357dfdb9d13759dc07a5703d6d11301a3adb946",
+  "inputs": {
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\FEATURES.pt": "6ba92c47adf79780c3cb43bb879a40485621594da7b99d7001a35131cf78af91",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\TEST_FEATURES.pt": "ca18f76d8b5f0ad75aaa7082ddec4a5101d759a233e5c43e760a2efb1fe7ec13",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\CACHE.json": "f8cb8dc601218fdec8944aa870ede83156850ebc0ba08533260d8b1bdb6caee7",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\CHECKS.json": "06e69026d165cad6ee3c6d8ac6a7ede413bbaa40b355e07a180cb9f998e005ac",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\v2_210\\task9\\CHECKPOINT.pt": "c6a69ea7f6f9e54a43384629107165ca1790374a51671103cdd1cd2ab962207a",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\v2_210\\task9\\TRAIN_RESULT.json": "ca21e4e056a4fcea75b7f5fd37bdadc0aaebdb796ba8a8c5083196b139208a98",
+    "E:\\gfg-evidence\\frozen-head-baseline-comparison-v1\\v2_210\\task10\\CONFIG.json": "3cddf3854186539c4f98e1efbb5ae76e30f08becbf8b66d693051990d4f290a7",
+    "E:\\gfg-evidence\\governor-fewrel-v1\\data.npz": "29450295331dcd56040b9ec60ab2998303988c0e27500e353b7025b977734a8a"
+  },
+  "runtime": {
+    "python": "3.12.10",
+    "torch": "2.13.0+cu130",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "transformers": "4.57.6",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "threads": 2
+  },
+  "arms": {
+    "reference256": [
+      "reference",
+      256
+    ],
+    "buffer256": [
+      "buffer",
+      256
+    ],
+    "batch256": [
+      "batch",
+      256
+    ],
+    "batch512": [
+      "batch",
+      512
+    ],
+    "batch1024": [
+      "batch",
+      1024
+    ],
+    "batch2048": [
+      "batch",
+      2048
+    ]
+  },
+  "sources": {
+    "core.py": "c0ebb52da7bcb729d0389032ee01570dc8308214f7c9e12174ebc20dc0bd0139",
+    "run.py": "7def7c0b6eecbe7dabf8cceb820defe778959b83e79b8b388a3aa76e5839728e"
+  },
+  "protocol_sha256": "137475a26102d30416104759a72caa6760fcbdfcd691e41c8db625d4e0c13b85"
+}

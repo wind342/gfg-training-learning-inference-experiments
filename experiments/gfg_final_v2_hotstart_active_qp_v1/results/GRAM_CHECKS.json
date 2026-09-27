@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "dense_signed_constraint_gram_matches": true,
+  "repeat_request_computes_no_entries": true,
+  "incremental_registry_size": 6,
+  "computed_nonzero_entries": 17
+}

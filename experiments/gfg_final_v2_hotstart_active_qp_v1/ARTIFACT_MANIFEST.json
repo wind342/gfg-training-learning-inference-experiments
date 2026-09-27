@@ -1,0 +1,82 @@
+{
+  "base": "f357dfdb9d13759dc07a5703d6d11301a3adb946",
+  "authority": "E:\\gfg-evidence\\final-v2-hotstart-active-qp-v1",
+  "public_files": {
+    "PREFLIGHT.json": {
+      "sha256": "aa2c1bfb3fdddf470b1098ad558bcf333ef008a8eb56d6fae7f5477bfef01392",
+      "bytes": 1920
+    },
+    "CONTINUITY.json": {
+      "sha256": "6949e80f9c7c4685d468e88a672ae3655165f5d30bbfd925401a800b1b65f11d",
+      "bytes": 119095
+    },
+    "SOLVER_PREFLIGHT.json": {
+      "sha256": "c5b72aa8c1aafa5b599339c46e98614e27d515382b321e6417833346fdf5e12f",
+      "bytes": 4491
+    },
+    "GRAM_CHECKS.json": {
+      "sha256": "c775942092086d9fd2961a8afb15a8542e47439ca9a76cc9f15dbcfc070d2332",
+      "bytes": 190
+    },
+    "SUMMARY.json": {
+      "sha256": "1ede8efecfcda09f12e8fb4d9746b6b943bdcd9dde57f2324f54990880903993",
+      "bytes": 29762
+    },
+    "validate/COLD_AUDIT.jsonl.gz": {
+      "sha256": "6320498430f55dcf51d064977fd921d30158768a250b7ea65db5ce2e1ecbf0a2",
+      "bytes": 52511
+    },
+    "validate/CHECKS.json": {
+      "sha256": "dc350eb9a412bed185928f49ee46e66d74b9707a632150732f16580b47fb8899",
+      "bytes": 4243
+    },
+    "validate/STEPS.jsonl.gz": {
+      "sha256": "62672f062dacfc42c4e6a390e6c2f2f1eac6f0046d550ff5ea713c95a8fe3b22",
+      "bytes": 1139327
+    },
+    "validate/EVALUATION.json": {
+      "sha256": "dfb731d30394ef07cf55d18ccf8d59b2d44cb2304d0f94328ef3496ed9527217",
+      "bytes": 102544
+    },
+    "timed/CHECKS.json": {
+      "sha256": "a6a5c6c487ba839bd8d726a54ce09c45adef29ea9b8e429405b7f4eb08ceadde",
+      "bytes": 4075
+    },
+    "timed/STEPS.jsonl.gz": {
+      "sha256": "7092c3561ade60a21a6176835a34e4c896ab2aedb4df990b17e36a4381ee7c6b",
+      "bytes": 1139327
+    },
+    "timed/EVALUATION.json": {
+      "sha256": "dfb731d30394ef07cf55d18ccf8d59b2d44cb2304d0f94328ef3496ed9527217",
+      "bytes": 102544
+    },
+    "profile/CHECKS.json": {
+      "sha256": "2a5fd5226d63fd1ec33cead64deb6a78bad4fd765a5637cb5b8e255ebdbeacdb",
+      "bytes": 4439
+    },
+    "profile/STEPS.jsonl.gz": {
+      "sha256": "fd9886968edc2cd2ac92d02682f678ac1e3845cf0f590d67ce28c1dbf7762d5d",
+      "bytes": 1139327
+    },
+    "profile/EVALUATION.json": {
+      "sha256": "dfb731d30394ef07cf55d18ccf8d59b2d44cb2304d0f94328ef3496ed9527217",
+      "bytes": 102544
+    }
+  },
+  "sources": {
+    ".gitattributes": "46cbe8e8d02761004a3e14236aaf3c27a48e9e62331247a496508c932b6d984d",
+    "analysis.py": "d3109782996717486e6043ea7b80369b38957374af6285f9405b82cf437a8378",
+    "core.py": "35e46e91b128936baa347df9e7b9a81dbe2327b9729a5f7ff9e5d9bc2d6ddab8",
+    "PROTOCOL.md": "1fdb6a39f1c5579690297487ccb946155c626f45e15a2bdf95e6584a71d79021",
+    "README.md": "169e73a5cfc4208c13bf31350914a5220f702352accd6990d91be0498ceb4675",
+    "report.py": "8d232b7bd68d02b55768fc4f916f5fc2d501721adb89c483fbb6af9187a69eda",
+    "run.py": "f238b5a5816e0ae0f4c00f2e33da8493f1c5e8c01387aa1a410b63c8bcf7f279",
+    "tests.py": "3b3b0b8f58cca335ee46ce9af90a1eeacc26ea585870e42655ea6aa71b832a27"
+  },
+  "external_checkpoints": {
+    "E:\\gfg-evidence\\final-v2-hotstart-active-qp-v1\\validate\\CHECKPOINT.pt": {
+      "sha256": "a4ebb934769573e0661e718789b24fc1c78539c2a8c443e3962e1b5fb7191643",
+      "bytes": 1478925
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "status": "PASS",
+  "independent_nnls_cases": 32,
+  "cases": [
+    {
+      "n": 1,
+      "trial": 0,
+      "iterations": 0,
+      "cold_iterations": 0,
+      "max_error": 0.0
+    },
+    {
+      "n": 1,
+      "trial": 1,
+      "iterations": 0,
+      "cold_iterations": 0,
+      "max_error": 0.0
+    },
+    {
+      "n": 1,
+      "trial": 2,
+      "iterations": 2,
+      "cold_iterations": 2,
+      "max_error": 0.0
+    },
+    {
+      "n": 1,
+      "trial": 3,
+      "iterations": 2,
+      "cold_iterations": 0,
+      "max_error": 0.0
+    },
+    {
+      "n": 1,
+      "trial": 4,
+      "iterations": 2,
+      "cold_iterations": 2,
+      "max_error": 0.0
+    },
+    {
+      "n": 1,
+      "trial": 5,
+      "iterations": 1,
+      "cold_iterations": 2,
+      "max_error": 0.0
+    },
+    {
+      "n": 1,
+      "trial": 6,
+      "iterations": 2,
+      "cold_iterations": 0,
+      "max_error": 0.0
+    },
+    {
+      "n": 1,
+      "trial": 7,
+      "iterations": 2,
+      "cold_iterations": 2,
+      "max_error": 0.0
+    },
+    {
+      "n": 4,
+      "trial": 0,
+      "iterations": 0,
+      "cold_iterations": 0,
+      "max_error": 0.0
+    },
+    {
+      "n": 4,
+      "trial": 1,
+      "iterations": 0,
+      "cold_iterations": 0,
+      "max_error": 0.0
+    },
+    {
+      "n": 4,
+      "trial": 2,
+      "iterations": 2,
+      "cold_iterations": 2,
+      "max_error": 2.7755575615628914e-17
+    },
+    {
+      "n": 4,
+      "trial": 3,
+      "iterations": 2,
+      "cold_iterations": 2,
+      "max_error": 2.7755575615628914e-17
+    },
+    {
+      "n": 4,
+      "trial": 4,
+      "iterations": 2,
+      "cold_iterations": 2,
+      "max_error": 5.551115123125783e-17
+    },
+    {
+      "n": 4,
+      "trial": 5,
+      "iterations": 2,
+      "cold_iterations": 2,
+      "max_error": 2.7755575615628914e-17
+    },
+    {
+      "n": 4,
+      "trial": 6,
+      "iterations": 2,
+      "cold_iterations": 2,
+      "max_error": 5.551115123125783e-17
+    },
+    {
+      "n": 4,
+      "trial": 7,
+      "iterations": 3,
+      "cold_iterations": 2,
+      "max_error": 8.673617379884035e-18
+    },
+    {
+      "n": 16,
+      "trial": 0,
+      "iterations": 0,
+      "cold_iterations": 0,
+      "max_error": 0.0
+    },
+    {
+      "n": 16,
+      "trial": 1,
+      "iterations": 4,
+      "cold_iterations": 4,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 16,
+      "trial": 2,
+      "iterations": 4,
+      "cold_iterations": 4,
+      "max_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 16,
+      "trial": 3,
+      "iterations": 4,
+      "cold_iterations": 3,
+      "max_error": 7.632783294297951e-17
+    },
+    {
+      "n": 16,
+      "trial": 4,
+      "iterations": 3,
+      "cold_iterations": 3,
+      "max_error": 6.938893903907228e-17
+    },
+    {
+      "n": 16,
+      "trial": 5,
+      "iterations": 4,
+      "cold_iterations": 4,
+      "max_error": 1.6653345369377348e-16
+    },
+    {
+      "n": 16,
+      "trial": 6,
+      "iterations": 4,
+      "cold_iterations": 3,
+      "max_error": 4.85722573273506e-17
+    },
+    {
+      "n": 16,
+      "trial": 7,
+      "iterations": 4,
+      "cold_iterations": 5,
+      "max_error": 6.591949208711867e-17
+    },
+    {
+      "n": 32,
+      "trial": 0,
+      "iterations": 0,
+      "cold_iterations": 0,
+      "max_error": 0.0
+    },
+    {
+      "n": 32,
+      "trial": 1,
+      "iterations": 5,
+      "cold_iterations": 5,
+      "max_error": 1.1297386637298956e-16
+    },
+    {
+      "n": 32,
+      "trial": 2,
+      "iterations": 4,
+      "cold_iterations": 4,
+      "max_error": 4.163336342344337e-17
+    },
+    {
+      "n": 32,
+      "trial": 3,
+      "iterations": 5,
+      "cold_iterations": 4,
+      "max_error": 2.220446049250313e-16
+    },
+    {
+      "n": 32,
+      "trial": 4,
+      "iterations": 4,
+      "cold_iterations": 5,
+      "max_error": 1.3877787807814457e-16
+    },
+    {
+      "n": 32,
+      "trial": 5,
+      "iterations": 4,
+      "cold_iterations": 5,
+      "max_error": 5.843849709696869e-17
+    },
+    {
+      "n": 32,
+      "trial": 6,
+      "iterations": 5,
+      "cold_iterations": 4,
+      "max_error": 5.551115123125783e-17
+    },
+    {
+      "n": 32,
+      "trial": 7,
+      "iterations": 7,
+      "cold_iterations": 6,
+      "max_error": 5.637851296924623e-17
+    }
+  ]
+}

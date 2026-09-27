@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "arm": "reference256",
+  "tile": 256,
+  "checks": [
+    {
+      "state": "receiving",
+      "repeatable": true,
+      "logits_identical": true,
+      "max_logit_difference": 0.0,
+      "max_margin_difference": 0.0,
+      "sign_differences": 0,
+      "floor_violations": 0
+    },
+    {
+      "state": "first_native",
+      "repeatable": true,
+      "logits_identical": true,
+      "max_logit_difference": 0.0,
+      "max_margin_difference": 0.0,
+      "sign_differences": 0,
+      "floor_violations": 52
+    },
+    {
+      "state": "historical_final",
+      "repeatable": true,
+      "logits_identical": true,
+      "max_logit_difference": 0.0,
+      "max_margin_difference": 0.0,
+      "sign_differences": 0,
+      "floor_violations": 0
+    }
+  ],
+  "fp64_error_bound_sample_rows": 65,
+  "input_padding_once": false,
+  "persistent_output": false
+}
