@@ -1,0 +1,367 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "status": "PASS",
+      "budget": 210,
+      "task": 2,
+      "checkpoint_source": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt",
+      "checkpoint_source_sha256": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+      "K": [
+        10,
+        8,
+        9,
+        10,
+        7,
+        7,
+        5
+      ],
+      "schedule_sha256": "8283c242a51c82e68450de3f427a520f795e692f0a43cc9f69d4f2f181924ef4",
+      "unsafe_native_steps": 208,
+      "native_safe_steps": 2,
+      "ordinary_pass_actual_safe": 125,
+      "inner_limit": 100,
+      "inner_limit_actual_safe_accept": 83,
+      "inner_limit_actual_unsafe_continue": 17,
+      "inner_limit_outer_rollback": 0,
+      "cap_safe_acceptance_rate": 0.83,
+      "final_rollback": 0,
+      "successful_repair_rate": 1.0,
+      "floor_violations": 0,
+      "decisions": {
+        "PASS_ACTUAL_SAFE_ACCEPT": 125,
+        "PASS_ACTUAL_UNSAFE_CONTINUE": 82,
+        "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE": 17,
+        "INNER_LIMIT_ACTUAL_SAFE_ACCEPT": 83
+      },
+      "outer_iterations": 307,
+      "inner_sweeps": 48686,
+      "jacobian_calls": 307,
+      "jacobian_pairs": 9002,
+      "endpoint_calls": {
+        "entry": 1,
+        "native": 210,
+        "projected": 307,
+        "commit": 210,
+        "total": 728
+      },
+      "actual_endpoint_rechecks": 517,
+      "norm_ratio_triggered": {
+        "n": 208,
+        "median": 0.8840338877317797,
+        "mean": 0.8895580884772456,
+        "min": 0.8653780420867468,
+        "max": 0.9963246577291873
+      },
+      "cosine_nonzero_triggered": {
+        "n": 208,
+        "median": 0.8829702092344174,
+        "mean": 0.8892921039078938,
+        "min": 0.8590266280218609,
+        "max": 0.996341436136689
+      },
+      "correct_to_wrong": 5,
+      "wrong_to_correct": 5,
+      "entry_current_train": {
+        "ce": 2.686830520629883,
+        "macro": 0.003292898314871958,
+        "per_intent": {
+          "7": 0.0,
+          "8": 0.0,
+          "9": 0.005988024175167084,
+          "10": 0.0,
+          "11": 0.006535947788506746,
+          "12": 0.0,
+          "13": 0.010526316240429878
+        }
+      },
+      "train_metrics": {
+        "current": {
+          "ce": 2.1394596099853516,
+          "macro": 0.5884417593479156,
+          "per_intent": {
+            "7": 0.5042017102241516,
+            "8": 0.29378530383110046,
+            "9": 0.5029940605163574,
+            "10": 0.752136766910553,
+            "11": 0.8888888955116272,
+            "12": 0.5034013390541077,
+            "13": 0.6736842393875122
+          }
+        },
+        "old": {
+          "ce": 2.214371919631958,
+          "macro": 0.514937732900892,
+          "per_intent": {
+            "0": 0.5092592835426331,
+            "1": 0.8076923489570618,
+            "2": 0.5999999642372131,
+            "3": 0.7325581312179565,
+            "4": 0.2857142984867096,
+            "5": 0.553398072719574,
+            "6": 0.11594203114509583
+          }
+        },
+        "all": {
+          "ce": 2.175848960876465,
+          "macro": 0.5516897461244038,
+          "per_intent": {
+            "0": 0.5092592835426331,
+            "1": 0.8076923489570618,
+            "2": 0.5999999642372131,
+            "3": 0.7325581312179565,
+            "4": 0.2857142984867096,
+            "5": 0.553398072719574,
+            "6": 0.11594203114509583,
+            "7": 0.5042017102241516,
+            "8": 0.29378530383110046,
+            "9": 0.5029940605163574,
+            "10": 0.752136766910553,
+            "11": 0.8888888955116272,
+            "12": 0.5034013390541077,
+            "13": 0.6736842393875122
+          }
+        }
+      },
+      "gate": {
+        "floor_zero": true,
+        "unsafe_exposure": true,
+        "rollback_rate": true,
+        "successful_repair": true,
+        "new_train_macro": true,
+        "current_ce": true,
+        "movement": true,
+        "old_ce_backward_zero": true,
+        "state_moment_continuity": true
+      },
+      "independent_audit_status": "PENDING",
+      "current_backward_examples": 3360,
+      "old_ce_backward_examples": 0,
+      "old_ce_backward_flops": 0,
+      "common_wall": 0.8139158993726596,
+      "entry_wall": 0.0867546999361366,
+      "control_wall": 8.512189500033855,
+      "total_algorithm_wall": 9.412860099342652,
+      "observer_wall": 1.5106320002814755,
+      "region_seconds": {
+        "endpoint": 0.4559381993021816,
+        "parameter_geometry": 0.6070523996604607,
+        "selection": 0.05512789939530194,
+        "geometry_factors_subregion": 0.14358980138786137,
+        "gram_subregion": 0.027673398959450424,
+        "budget_subregion": 0.26563640031963587,
+        "jacobian_gram_guard": 0.8875279003987089,
+        "hildreth_ball": 2.914127198746428,
+        "reconstruction": 1.030320301069878,
+        "materialization": 0.4875569004798308
+      },
+      "endpoint_flops": 80630251520,
+      "cutter_flops": 15902347800,
+      "current_forward_backward_dense_flops": 3039805440,
+      "flop_ledger": {
+        "endpoint": 80630251520,
+        "jacobian_forward_guard": 3754774528,
+        "gram": 336820356,
+        "jacobian_directional_dense_estimate": 7107115008,
+        "hildreth_ball_estimate": 542962744,
+        "reconstruction": 4160675164
+      },
+      "flop_coverage": "Dense multiply-add lower bounds plus frozen analytic/coordinate estimates; not full hardware FLOPs.",
+      "control_bank_reads": 50960,
+      "peak_cuda_bytes": 119901696,
+      "test_files_opened": 0,
+      "checkpoint_sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e"
+    },
+    {
+      "status": "PASS",
+      "budget": 630,
+      "task": 2,
+      "checkpoint_source": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt",
+      "checkpoint_source_sha256": "b80f493410871810dcd2981f4571fad38952cf80e5413f330b3b631c17ac9e31",
+      "K": [
+        10,
+        8,
+        9,
+        9,
+        3,
+        9,
+        9
+      ],
+      "schedule_sha256": "30db70611b61299a7cb8c933fcb7405f63601b65a9c0235bd8c417322c5cde5a",
+      "unsafe_native_steps": 618,
+      "native_safe_steps": 12,
+      "ordinary_pass_actual_safe": 497,
+      "inner_limit": 121,
+      "inner_limit_actual_safe_accept": 121,
+      "inner_limit_actual_unsafe_continue": 0,
+      "inner_limit_outer_rollback": 0,
+      "cap_safe_acceptance_rate": 1.0,
+      "final_rollback": 0,
+      "successful_repair_rate": 1.0,
+      "floor_violations": 0,
+      "decisions": {
+        "PASS_ACTUAL_SAFE_ACCEPT": 497,
+        "INNER_LIMIT_ACTUAL_SAFE_ACCEPT": 121
+      },
+      "outer_iterations": 618,
+      "inner_sweeps": 64285,
+      "jacobian_calls": 618,
+      "jacobian_pairs": 11698,
+      "endpoint_calls": {
+        "entry": 1,
+        "native": 630,
+        "projected": 618,
+        "commit": 630,
+        "total": 1879
+      },
+      "actual_endpoint_rechecks": 1248,
+      "norm_ratio_triggered": {
+        "n": 618,
+        "median": 0.9098217600151737,
+        "mean": 0.9062077914264786,
+        "min": 0.8684121026337226,
+        "max": 0.9760888827962712
+      },
+      "cosine_nonzero_triggered": {
+        "n": 618,
+        "median": 0.9098846102841464,
+        "mean": 0.9064004037137661,
+        "min": 0.8683973612601249,
+        "max": 0.9906944314871621
+      },
+      "correct_to_wrong": 0,
+      "wrong_to_correct": 0,
+      "entry_current_train": {
+        "ce": 3.0420682430267334,
+        "macro": 0.0008071025035211018,
+        "per_intent": {
+          "7": 0.0,
+          "8": 0.005649717524647713,
+          "9": 0.0,
+          "10": 0.0,
+          "11": 0.0,
+          "12": 0.0,
+          "13": 0.0
+        }
+      },
+      "train_metrics": {
+        "current": {
+          "ce": 1.483108401298523,
+          "macro": 0.7654597588947841,
+          "per_intent": {
+            "7": 0.5798319578170776,
+            "8": 0.6440678238868713,
+            "9": 0.7604790925979614,
+            "10": 0.888888955116272,
+            "11": 0.8888888955116272,
+            "12": 0.680272102355957,
+            "13": 0.9157894849777222
+          }
+        },
+        "old": {
+          "ce": 1.6435507535934448,
+          "macro": 0.6685802085059029,
+          "per_intent": {
+            "0": 0.7685185074806213,
+            "1": 0.8076923489570618,
+            "2": 0.6814814805984497,
+            "3": 0.7790697813034058,
+            "4": 0.3229813575744629,
+            "5": 0.8058252334594727,
+            "6": 0.5144927501678467
+          }
+        },
+        "all": {
+          "ce": 1.561044692993164,
+          "macro": 0.7170199837003436,
+          "per_intent": {
+            "0": 0.7685185074806213,
+            "1": 0.8076923489570618,
+            "2": 0.6814814805984497,
+            "3": 0.7790697813034058,
+            "4": 0.3229813575744629,
+            "5": 0.8058252334594727,
+            "6": 0.5144927501678467,
+            "7": 0.5798319578170776,
+            "8": 0.6440678238868713,
+            "9": 0.7604790925979614,
+            "10": 0.888888955116272,
+            "11": 0.8888888955116272,
+            "12": 0.680272102355957,
+            "13": 0.9157894849777222
+          }
+        }
+      },
+      "gate": {
+        "floor_zero": true,
+        "unsafe_exposure": true,
+        "rollback_rate": true,
+        "successful_repair": true,
+        "new_train_macro": true,
+        "current_ce": true,
+        "movement": true,
+        "old_ce_backward_zero": true,
+        "state_moment_continuity": true
+      },
+      "independent_audit_status": "PENDING",
+      "current_backward_examples": 10080,
+      "old_ce_backward_examples": 0,
+      "old_ce_backward_flops": 0,
+      "common_wall": 2.7125409009167925,
+      "entry_wall": 0.002669899957254529,
+      "control_wall": 16.470521501498297,
+      "total_algorithm_wall": 19.185732302372344,
+      "observer_wall": 6.041443298687227,
+      "region_seconds": {
+        "endpoint": 1.6739525995217264,
+        "parameter_geometry": 2.2081763995811343,
+        "selection": 0.10617190098855644,
+        "geometry_factors_subregion": 0.3193352975649759,
+        "gram_subregion": 0.04494140308815986,
+        "budget_subregion": 0.48236309876665473,
+        "jacobian_gram_guard": 1.5971961992327124,
+        "hildreth_ball": 2.8984976980136707,
+        "reconstruction": 1.6827991988975555,
+        "materialization": 1.8761266993824393
+      },
+      "endpoint_flops": 208110223360,
+      "cutter_flops": 21356260630,
+      "current_forward_backward_dense_flops": 9119416320,
+      "flop_ledger": {
+        "endpoint": 208110223360,
+        "jacobian_forward_guard": 5957586944,
+        "gram": 269900244,
+        "jacobian_directional_dense_estimate": 9235617792,
+        "hildreth_ball_estimate": 296566714,
+        "reconstruction": 5596588936
+      },
+      "flop_coverage": "Dense multiply-add lower bounds plus frozen analytic/coordinate estimates; not full hardware FLOPs.",
+      "control_bank_reads": 131530,
+      "peak_cuda_bytes": 119901696,
+      "test_files_opened": 0,
+      "checkpoint_sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d"
+    }
+  ],
+  "stop_after_smoke": true,
+  "no_formal_entrypoint": true,
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 4,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 4,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 4,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 4,
+      "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_210\\task2\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 4,
+      "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_630\\task2\\CHECKS.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 2
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  },
+  "audit_pending": true
+}

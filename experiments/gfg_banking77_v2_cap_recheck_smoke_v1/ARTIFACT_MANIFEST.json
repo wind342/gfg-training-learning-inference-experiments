@@ -1,0 +1,89 @@
+{
+  "base": "3e57e593f0d4af4098dd203c72af2191739225b2",
+  "authority": "E:\\gfg-evidence\\banking77-v2-cap-recheck-smoke-v1",
+  "artifacts": {
+    "AUDIT.json": {
+      "bytes": 2538,
+      "sha256": "fcaac1dbd20301da8d75a367f66971bb7e6fcded623609a220c605372e8d3b7c"
+    },
+    "AUDIT_STEPS_210.jsonl.gz": {
+      "bytes": 26531,
+      "sha256": "a8d3306b626c995c9f2cdaf4ac3e7478a7340708c1cec74844d90f895a82886a"
+    },
+    "AUDIT_STEPS_630.jsonl.gz": {
+      "bytes": 78199,
+      "sha256": "6755285644bfc01cbc5e4f3cd9931fd70ceeebc9fec4a7c24a4fd80b358233b7"
+    },
+    "budget210/CHECKPOINT.pt": {
+      "bytes": 2605235,
+      "sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e"
+    },
+    "budget210/CHECKS.json": {
+      "bytes": 4935,
+      "sha256": "a7b145c06cedafc0920efb96107661283ffc647780bf773556d6f9321a785664"
+    },
+    "budget210/STEPS.jsonl.gz": {
+      "bytes": 273171,
+      "sha256": "b60461d47ef71d0901dfec3eaeef7cb87d3eb3cd5682d8b81a2b8e3082c71d85"
+    },
+    "budget630/CHECKPOINT.pt": {
+      "bytes": 2605235,
+      "sha256": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d"
+    },
+    "budget630/CHECKS.json": {
+      "bytes": 4826,
+      "sha256": "c922baa18b66c0ddf977cb8ebf2a3f98a0e97e33eef50860183b223f06022b7f"
+    },
+    "budget630/STEPS.jsonl.gz": {
+      "bytes": 571967,
+      "sha256": "0f43b87dd34d453922047ab0947412f4ae0d357fba0290b15cdb4affbf68994a"
+    },
+    "FINAL.json": {
+      "bytes": 25324,
+      "sha256": "5e323d956d9df593ddef561cc69189ad14239d5dccfc2ce0cafb47feccd498c1"
+    },
+    "FREEZE.json": {
+      "bytes": 4586,
+      "sha256": "b41b19aa2770b9e571f3539a02c0e9e29a8e5b9842188f40b4810620b6a57751"
+    },
+    "NUMERICS.json": {
+      "bytes": 1527,
+      "sha256": "4efd956d59696492c0c2b8fa71fd75e9a3df8bde8d005809bcc6ff00eb456db8"
+    },
+    "RUN_START.json": {
+      "bytes": 758,
+      "sha256": "377cc99f26f7fa62212167bf1751d1757e32a54395f75cbd1f8c07bfc4c6d1d9"
+    },
+    "SMOKE.json": {
+      "bytes": 12453,
+      "sha256": "dad992583009545f38a7208aab1a1604e6448feb72fd42df5e621840de15b3b5"
+    }
+  },
+  "sources": {
+    ".gitattributes": "8a3ba9ed2448aa3042b53e3cd2e4067b61904b3c7b10d13016ebdd6dcfca517d",
+    "access.py": "a558c7d2a383f7ca96d8900cc36b41e786f06b1d35fb88952bbf1a4af139d05f",
+    "audit.py": "d6a04090a5119e7611d7d27fdb540a49daf410645ee17421dd22ab8f8e09bfe9",
+    "common.py": "b9c253bf7c227cff91a9c37244149bf97bdafba01fef9ccbeb22c302351ca8b4",
+    "cutter.py": "dada2cb77db0091dd1b12487f94f7bba6e6d623fc4082a4d1bb679af2a2e956c",
+    "numerics.py": "295eefb1e7296e8144e908c15942d112e5d489d66fd80b395e36e4ff99ba1bd8",
+    "preflight.py": "9115c8c1e89c54376639449ff4a00bec1b7969e053b3872d15dd1832e08fc7be",
+    "PROTOCOL.md": "86af0527727cafefb3dc4b315b14ce4784ba9300bdc3e40b395777e4780905aa",
+    "README.md": "9a4ae2b7d508dc6abe0243e25819013183f1804a3377f0970c716f6823cf01a0",
+    "report.py": "f2bfff1aeab650bc00a82b15232b665e412e14bd67593cce4844ecd238448641",
+    "run.py": "ab689503273e678cef55c43e1954141389cd7d22ba5a1e17a16cac164768aad4"
+  },
+  "input_hashes": {
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": "70027872b499d206588001d92c9a30586303145fe601f823ec886a5e0363055d",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": "fe59491617995af995498193b1aa7916e3a0d5fba5d3ccf1fda6087171f0611e",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": "d69fb7e4a05b53b2145ac143c2002bd4ef18d4da7e55d95c5c647ab0905a6b48",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+    "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_210\\task2\\CHECKS.json": "88e936a7997f19e8fd753b31a900da335c0475bdd98bdb48d3f28fd9482e6efb",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": "b80f493410871810dcd2981f4571fad38952cf80e5413f330b3b631c17ac9e31",
+    "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_630\\task2\\CHECKS.json": "2a787b3454ec0e96dce21e65dcc9f13b751d16c2815d7f8a9006e218c771b80f",
+    "E:\\gfg-models\\bert-base-uncased-v4\\config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+    "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+    "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  }
+}

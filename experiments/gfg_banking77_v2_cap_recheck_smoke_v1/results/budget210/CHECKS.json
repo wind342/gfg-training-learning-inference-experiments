@@ -1,0 +1,171 @@
+{
+  "status": "PASS",
+  "budget": 210,
+  "task": 2,
+  "checkpoint_source": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt",
+  "checkpoint_source_sha256": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+  "K": [
+    10,
+    8,
+    9,
+    10,
+    7,
+    7,
+    5
+  ],
+  "schedule_sha256": "8283c242a51c82e68450de3f427a520f795e692f0a43cc9f69d4f2f181924ef4",
+  "unsafe_native_steps": 208,
+  "native_safe_steps": 2,
+  "ordinary_pass_actual_safe": 125,
+  "inner_limit": 100,
+  "inner_limit_actual_safe_accept": 83,
+  "inner_limit_actual_unsafe_continue": 17,
+  "inner_limit_outer_rollback": 0,
+  "cap_safe_acceptance_rate": 0.83,
+  "final_rollback": 0,
+  "successful_repair_rate": 1.0,
+  "floor_violations": 0,
+  "decisions": {
+    "PASS_ACTUAL_SAFE_ACCEPT": 125,
+    "PASS_ACTUAL_UNSAFE_CONTINUE": 82,
+    "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE": 17,
+    "INNER_LIMIT_ACTUAL_SAFE_ACCEPT": 83
+  },
+  "outer_iterations": 307,
+  "inner_sweeps": 48686,
+  "jacobian_calls": 307,
+  "jacobian_pairs": 9002,
+  "endpoint_calls": {
+    "entry": 1,
+    "native": 210,
+    "projected": 307,
+    "commit": 210,
+    "total": 728
+  },
+  "actual_endpoint_rechecks": 517,
+  "norm_ratio_triggered": {
+    "n": 208,
+    "median": 0.8840338877317797,
+    "mean": 0.8895580884772456,
+    "min": 0.8653780420867468,
+    "max": 0.9963246577291873
+  },
+  "cosine_nonzero_triggered": {
+    "n": 208,
+    "median": 0.8829702092344174,
+    "mean": 0.8892921039078938,
+    "min": 0.8590266280218609,
+    "max": 0.996341436136689
+  },
+  "correct_to_wrong": 5,
+  "wrong_to_correct": 5,
+  "entry_current_train": {
+    "ce": 2.686830520629883,
+    "macro": 0.003292898314871958,
+    "per_intent": {
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.005988024175167084,
+      "10": 0.0,
+      "11": 0.006535947788506746,
+      "12": 0.0,
+      "13": 0.010526316240429878
+    }
+  },
+  "train_metrics": {
+    "current": {
+      "ce": 2.1394596099853516,
+      "macro": 0.5884417593479156,
+      "per_intent": {
+        "7": 0.5042017102241516,
+        "8": 0.29378530383110046,
+        "9": 0.5029940605163574,
+        "10": 0.752136766910553,
+        "11": 0.8888888955116272,
+        "12": 0.5034013390541077,
+        "13": 0.6736842393875122
+      }
+    },
+    "old": {
+      "ce": 2.214371919631958,
+      "macro": 0.514937732900892,
+      "per_intent": {
+        "0": 0.5092592835426331,
+        "1": 0.8076923489570618,
+        "2": 0.5999999642372131,
+        "3": 0.7325581312179565,
+        "4": 0.2857142984867096,
+        "5": 0.553398072719574,
+        "6": 0.11594203114509583
+      }
+    },
+    "all": {
+      "ce": 2.175848960876465,
+      "macro": 0.5516897461244038,
+      "per_intent": {
+        "0": 0.5092592835426331,
+        "1": 0.8076923489570618,
+        "2": 0.5999999642372131,
+        "3": 0.7325581312179565,
+        "4": 0.2857142984867096,
+        "5": 0.553398072719574,
+        "6": 0.11594203114509583,
+        "7": 0.5042017102241516,
+        "8": 0.29378530383110046,
+        "9": 0.5029940605163574,
+        "10": 0.752136766910553,
+        "11": 0.8888888955116272,
+        "12": 0.5034013390541077,
+        "13": 0.6736842393875122
+      }
+    }
+  },
+  "gate": {
+    "floor_zero": true,
+    "unsafe_exposure": true,
+    "rollback_rate": true,
+    "successful_repair": true,
+    "new_train_macro": true,
+    "current_ce": true,
+    "movement": true,
+    "old_ce_backward_zero": true,
+    "state_moment_continuity": true
+  },
+  "independent_audit_status": "PENDING",
+  "current_backward_examples": 3360,
+  "old_ce_backward_examples": 0,
+  "old_ce_backward_flops": 0,
+  "common_wall": 0.8139158993726596,
+  "entry_wall": 0.0867546999361366,
+  "control_wall": 8.512189500033855,
+  "total_algorithm_wall": 9.412860099342652,
+  "observer_wall": 1.5106320002814755,
+  "region_seconds": {
+    "endpoint": 0.4559381993021816,
+    "parameter_geometry": 0.6070523996604607,
+    "selection": 0.05512789939530194,
+    "geometry_factors_subregion": 0.14358980138786137,
+    "gram_subregion": 0.027673398959450424,
+    "budget_subregion": 0.26563640031963587,
+    "jacobian_gram_guard": 0.8875279003987089,
+    "hildreth_ball": 2.914127198746428,
+    "reconstruction": 1.030320301069878,
+    "materialization": 0.4875569004798308
+  },
+  "endpoint_flops": 80630251520,
+  "cutter_flops": 15902347800,
+  "current_forward_backward_dense_flops": 3039805440,
+  "flop_ledger": {
+    "endpoint": 80630251520,
+    "jacobian_forward_guard": 3754774528,
+    "gram": 336820356,
+    "jacobian_directional_dense_estimate": 7107115008,
+    "hildreth_ball_estimate": 542962744,
+    "reconstruction": 4160675164
+  },
+  "flop_coverage": "Dense multiply-add lower bounds plus frozen analytic/coordinate estimates; not full hardware FLOPs.",
+  "control_bank_reads": 50960,
+  "peak_cuda_bytes": 119901696,
+  "test_files_opened": 0,
+  "checkpoint_sha256": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e"
+}

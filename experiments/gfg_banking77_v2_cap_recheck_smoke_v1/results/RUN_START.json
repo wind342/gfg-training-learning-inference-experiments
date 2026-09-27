@@ -1,0 +1,17 @@
+{
+  "task": 2,
+  "budgets": [
+    210,
+    630
+  ],
+  "source_hashes": {
+    "access.py": "a558c7d2a383f7ca96d8900cc36b41e786f06b1d35fb88952bbf1a4af139d05f",
+    "audit.py": "d6a04090a5119e7611d7d27fdb540a49daf410645ee17421dd22ab8f8e09bfe9",
+    "common.py": "b9c253bf7c227cff91a9c37244149bf97bdafba01fef9ccbeb22c302351ca8b4",
+    "cutter.py": "dada2cb77db0091dd1b12487f94f7bba6e6d623fc4082a4d1bb679af2a2e956c",
+    "numerics.py": "295eefb1e7296e8144e908c15942d112e5d489d66fd80b395e36e4ff99ba1bd8",
+    "preflight.py": "9115c8c1e89c54376639449ff4a00bec1b7969e053b3872d15dd1832e08fc7be",
+    "report.py": "f2bfff1aeab650bc00a82b15232b665e412e14bd67593cce4844ecd238448641",
+    "run.py": "ab689503273e678cef55c43e1954141389cd7d22ba5a1e17a16cac164768aad4"
+  }
+}

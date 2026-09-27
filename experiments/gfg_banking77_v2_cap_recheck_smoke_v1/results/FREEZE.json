@@ -1,0 +1,91 @@
+{
+  "base": "3e57e593f0d4af4098dd203c72af2191739225b2",
+  "protocol_sha256": "86af0527727cafefb3dc4b315b14ce4784ba9300bdc3e40b395777e4780905aa",
+  "input_hashes": {
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": "70027872b499d206588001d92c9a30586303145fe601f823ec886a5e0363055d",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": "fe59491617995af995498193b1aa7916e3a0d5fba5d3ccf1fda6087171f0611e",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": "d69fb7e4a05b53b2145ac143c2002bd4ef18d4da7e55d95c5c647ab0905a6b48",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+    "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_210\\task2\\CHECKS.json": "88e936a7997f19e8fd753b31a900da335c0475bdd98bdb48d3f28fd9482e6efb",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": "b80f493410871810dcd2981f4571fad38952cf80e5413f330b3b631c17ac9e31",
+    "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_630\\task2\\CHECKS.json": "2a787b3454ec0e96dce21e65dcc9f13b751d16c2815d7f8a9006e218c771b80f",
+    "E:\\gfg-models\\bert-base-uncased-v4\\config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+    "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+    "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "sources": {
+    "access.py": "a558c7d2a383f7ca96d8900cc36b41e786f06b1d35fb88952bbf1a4af139d05f",
+    "audit.py": "d6a04090a5119e7611d7d27fdb540a49daf410645ee17421dd22ab8f8e09bfe9",
+    "common.py": "b9c253bf7c227cff91a9c37244149bf97bdafba01fef9ccbeb22c302351ca8b4",
+    "cutter.py": "dada2cb77db0091dd1b12487f94f7bba6e6d623fc4082a4d1bb679af2a2e956c",
+    "numerics.py": "295eefb1e7296e8144e908c15942d112e5d489d66fd80b395e36e4ff99ba1bd8",
+    "preflight.py": "9115c8c1e89c54376639449ff4a00bec1b7969e053b3872d15dd1832e08fc7be",
+    "report.py": "f2bfff1aeab650bc00a82b15232b665e412e14bd67593cce4844ecd238448641",
+    "run.py": "ab689503273e678cef55c43e1954141389cd7d22ba5a1e17a16cac164768aad4"
+  },
+  "unchanged_v1_ast": {
+    "cutter.py": [
+      "gelu",
+      "gelu_prime",
+      "inner",
+      "Geometry",
+      "ball_hildreth",
+      "select"
+    ],
+    "common.py": [
+      "setup",
+      "model",
+      "optimizer",
+      "params",
+      "cpu",
+      "opt_hash",
+      "opt_steps",
+      "schedule",
+      "load",
+      "native_step",
+      "commit",
+      "functional",
+      "Meter",
+      "Bank",
+      "metrics"
+    ]
+  },
+  "budgets": [
+    210,
+    630
+  ],
+  "scope": "task2 only, no formal continuation",
+  "frozen_utc": "2026-09-27T15:47:18Z",
+  "runtime": {
+    "python": "3.12.10",
+    "torch": "2.13.0+cu130",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "threads": 2,
+    "openblas_threads": 2
+  },
+  "prior_results_known": true,
+  "current_run_test_files_opened": 0,
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_210\\task2\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-jacobian-hildreth-v1\\smoke\\jacobian_630\\task2\\CHECKS.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  }
+}

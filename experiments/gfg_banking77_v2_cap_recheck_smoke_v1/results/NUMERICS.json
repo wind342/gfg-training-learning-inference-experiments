@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "fixed256_endpoint_byte_identical": true,
+  "independent_geometry_identical": true,
+  "synthetic_autograd_jacobian_max_error": 6.661338147750939e-16,
+  "independent_solver_cases": [
+    {
+      "case": 0,
+      "status": "PASS",
+      "sweeps": 22
+    },
+    {
+      "case": 1,
+      "status": "PASS",
+      "sweeps": 25
+    },
+    {
+      "case": 2,
+      "status": "PASS",
+      "sweeps": 44
+    },
+    {
+      "case": 3,
+      "status": "PASS",
+      "sweeps": 28
+    },
+    {
+      "case": 4,
+      "status": "PASS",
+      "sweeps": 69
+    }
+  ],
+  "branches": {
+    "A": [
+      "INNER_LIMIT_ACTUAL_SAFE_ACCEPT"
+    ],
+    "B": [
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_SAFE_ACCEPT"
+    ],
+    "C": [
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "INNER_LIMIT_ACTUAL_UNSAFE_CONTINUE",
+      "OUTER_LIMIT_ROLLBACK"
+    ]
+  },
+  "branch_injection_synthetic_only": true,
+  "native_safe_no_jacobian": true,
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  }
+}
