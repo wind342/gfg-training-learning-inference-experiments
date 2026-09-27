@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "boundary": "T6->T7",
+      "budget": 210,
+      "status": "PASS",
+      "independent_scalar_recalculation": true
+    },
+    {
+      "boundary": "T5->T6",
+      "budget": 630,
+      "status": "PASS",
+      "independent_scalar_recalculation": true
+    }
+  ],
+  "results_sha256": "64884832743c1daeb66d07a43891f81a74d62c8fe05bbfc2675086af1eff40b8",
+  "verifier_sha256": "2b916ad9fb782387a4ff58d294721f907eb38c2740c9ccd0cc8375e3761cf0d5",
+  "all_inputs_unchanged": true
+}
