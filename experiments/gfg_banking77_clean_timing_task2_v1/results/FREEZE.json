@@ -1,0 +1,114 @@
+{
+  "base": "d131c383945719a250d7ec01daa889f22167b13f",
+  "protocol_sha256": "edd4a700b44c13fd93c0a16e76a32b25a1f01aee519b2da875c844b78aff1380",
+  "input_hashes": {
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": "70027872b499d206588001d92c9a30586303145fe601f823ec886a5e0363055d",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": "fe59491617995af995498193b1aa7916e3a0d5fba5d3ccf1fda6087171f0611e",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": "d69fb7e4a05b53b2145ac143c2002bd4ef18d4da7e55d95c5c647ab0905a6b48",
+    "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": "63e77bcc878424932f6e19a298bb9b0662b35e0678ee679a39b884f106f7e876",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": "ee2c7d28ce9e74bff0c90c10db845a5ffce2631112b0887733fa94fbf8cbf0b8",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget210\\CHECKS.json": "f75c1f1de0e71485d22a0823861f95f410f682b9d4dde2bc5c40ec2315eb9132",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget210\\STEPS.jsonl.gz": "cc9cbfa59755799e9361b5aaf5f33fa124b2a3cdc2f5b5ea821b892051dde693",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget210\\CHECKPOINT.pt": "619cee38e434d15164e301513449d1026df4ad9a5d6c9d171b1e39602bf53d8e",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget210\\CHECKS.json": "9a97f8f9ecabb5be64af6e9080184ccf88a0f16030adb58a8b85abbe33fe507d",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget210\\STEPS.jsonl.gz": "1f0a7e65e5ae687ad77e153e6e592415fd5c1be13620b6c18a77a4821f190cc9",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget210\\CHECKPOINT.pt": "944d1b9fdfad0f9936e7b8d7bc42ea313cc1aeefb76ef5b7a2d1aa9216d82068",
+    "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": "b80f493410871810dcd2981f4571fad38952cf80e5413f330b3b631c17ac9e31",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget630\\CHECKS.json": "84d66551d1c721669269955082dd4ea8f71b84a3feb79981abfc93ad225ccf98",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget630\\STEPS.jsonl.gz": "0da455f627e03a43a15f5093093f4f9504d3d657894821f012be741881b36022",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget630\\CHECKPOINT.pt": "6a5507c12f0a4d69a876e7eaffe01ec75a439ec606544034e018c80802bf572d",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget630\\CHECKS.json": "81b15dd089757e00c9b74b7aedf69269ec26da76d36f226c644d8aa9dc5e8353",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget630\\STEPS.jsonl.gz": "ed26137a566728f7dcd0064ae92f88c7df9be3d4b526ccbaac3f24e0dff90aa3",
+    "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget630\\CHECKPOINT.pt": "31b303da4b7177649be9dcb37ccb9e2d6c09cd988745f606ffba2fd531d5e083",
+    "E:\\gfg-models\\bert-base-uncased-v4\\config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+    "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+    "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+    "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "sources": {
+    "access.py": "7ec4aaf0d382bc326b730e5377a5702f8d7047a076b65b7fe6dcd075635b146e",
+    "audit.py": "f28d2b24c1af40041b44be7dbf4e83aee944a059680def66bce1e05bbb5f4bdd",
+    "benchmark.py": "42e90613c5367527c4660bf44c7269cf3021d12d216bccf693a4df92530c9886",
+    "clean.py": "5dfa64ff93f740b778eec18644ce0e1ee2aa85cd8782cd9fc42c895b4545a055",
+    "common.py": "0a57d824917151b4452b143c1e410674aa6ebb9af6b294b853f7d8f06da0b8f8",
+    "compare.py": "a9a9e0ca036e1baeef6bccba201b1da9ba2e0a3c1e59e8554f7fd39134419e40",
+    "cutter.py": "889d0367f8213283ef59f13a5bc2b6eb48831da27b63a143b099cd5f4fe761d6",
+    "numerics.py": "2f453e2ecf31945aece93663c5221fe5be43c6806524d39e58a865c4063d3a40",
+    "predictor.py": "79d5f28f5cd0709fa0bfab1a232d646ce999627a96916fb11d035309f6b8ebfa",
+    "predictor_audit.py": "8efeb23a4e3032abcf1cc748137c16f6a6c13d23913d149d119cad3240803a11",
+    "preflight.py": "6a63c3fcd498db9b38126fedb4c2535752dc4e5c3c98586881a4e6cbef6b1b11",
+    "reference.py": "188f153e147325ac5ea670ff3c440cc6a6258ff9e1395e4ba6e20a67652e6e09",
+    "report.py": "5d1eb50554dc557872ecafa4fd5dab03f250f024577d937d23818fec99130687",
+    "run.py": "be9457c55b48020cee7c7e75db2dad37a7126cec5d59c52278e59d5c47278a12"
+  },
+  "identity": {
+    "original_actuators_audit_predictor_identical": true,
+    "common_math_identical_except_profiler": true,
+    "no_hash_or_serialization_in_clean_project": true
+  },
+  "budgets": [
+    210,
+    630
+  ],
+  "benchmark_orders": [
+    [
+      "recorded/baseline",
+      "clean/baseline",
+      "recorded/firstcheck",
+      "clean/firstcheck"
+    ],
+    [
+      "clean/firstcheck",
+      "recorded/firstcheck",
+      "clean/baseline",
+      "recorded/baseline"
+    ],
+    [
+      "clean/baseline",
+      "recorded/baseline",
+      "clean/firstcheck",
+      "recorded/firstcheck"
+    ]
+  ],
+  "runtime": {
+    "python": "3.12.10",
+    "torch": "2.13.0+cu130",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "threads": 2
+  },
+  "frozen_utc": "2026-09-27T18:24:46Z",
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget210\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget210\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget210\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget210\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget210\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget210\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget630\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget630\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget630\\CHECKPOINT.pt": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget630\\CHECKS.json": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget630\\STEPS.jsonl.gz": 1,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget630\\CHECKPOINT.pt": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 1,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 1
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  },
+  "test_files_opened": 0
+}

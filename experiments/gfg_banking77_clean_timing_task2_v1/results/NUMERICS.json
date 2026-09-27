@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "trials": [
+    {
+      "amount": 0.0,
+      "first": false,
+      "trigger": false,
+      "rounds": 0,
+      "sweeps": 0,
+      "rollback": false,
+      "full_record_identical": true
+    },
+    {
+      "amount": 0.0,
+      "first": true,
+      "trigger": false,
+      "rounds": 0,
+      "sweeps": 0,
+      "rollback": false,
+      "full_record_identical": true
+    },
+    {
+      "amount": 0.02,
+      "first": false,
+      "trigger": false,
+      "rounds": 0,
+      "sweeps": 0,
+      "rollback": false,
+      "full_record_identical": true
+    },
+    {
+      "amount": 0.02,
+      "first": true,
+      "trigger": false,
+      "rounds": 0,
+      "sweeps": 0,
+      "rollback": false,
+      "full_record_identical": true
+    },
+    {
+      "amount": 0.1,
+      "first": false,
+      "trigger": true,
+      "rounds": 1,
+      "sweeps": 2,
+      "rollback": false,
+      "full_record_identical": true
+    },
+    {
+      "amount": 0.1,
+      "first": true,
+      "trigger": true,
+      "rounds": 1,
+      "sweeps": 1,
+      "rollback": false,
+      "full_record_identical": true
+    }
+  ],
+  "deferred_evidence_identical": true,
+  "exclusive_ledger_closes": true,
+  "access": {
+    "allowed_external_reads": {
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\CACHE.json": 3,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\TRAIN_FEATURES.pt": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\NUMERICS.json": 2,
+      "E:\\gfg-evidence\\banking77-final-v2-predictor-task2-v1\\NUMERICS.json": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_210\\task1\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget210\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget210\\STEPS.jsonl.gz": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget210\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget210\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget210\\STEPS.jsonl.gz": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget210\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget630\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget630\\STEPS.jsonl.gz": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\baseline\\budget630\\CHECKPOINT.pt": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget630\\CHECKS.json": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget630\\STEPS.jsonl.gz": 2,
+      "E:\\gfg-evidence\\banking77-first-sweep-check-task2-v1\\firstcheck\\budget630\\CHECKPOINT.pt": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\config.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\model.safetensors": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer_config.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\tokenizer.json": 2,
+      "E:\\gfg-models\\bert-base-uncased-v4\\vocab.txt": 2
+    },
+    "denied": [],
+    "test_files_opened": 0,
+    "scope": "Python open audit hook for evidence/model/previous-experiment paths; excludes interpreter/OS/native-library internals. No subprocess experiment data readers."
+  }
+}

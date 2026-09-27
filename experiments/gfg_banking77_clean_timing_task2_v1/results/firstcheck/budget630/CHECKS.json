@@ -1,0 +1,303 @@
+{
+  "training_loop_wall": 28.224160499987192,
+  "deferred_evidence_wall": 3.211819199263118,
+  "deferred_evidence_flops": 4087656960,
+  "training_cutter_flops": 10796658198,
+  "timing_mode": "clean",
+  "exclusive_seconds": {
+    "entry_total": {
+      "entry_total": 0.002149200066924095,
+      "endpoint": 0.0003016999689862132
+    },
+    "native_total": {
+      "native_total": 2.651993697276339
+    },
+    "control_total": {
+      "control_total": 0.5619829002534971,
+      "predictor": 2.9454845004947856,
+      "endpoint": 0.7268157983198762,
+      "parameter_geometry": 2.041156499646604,
+      "selection": 0.10846080048941076,
+      "jacobian_gram_guard": 0.7773757000686601,
+      "hildreth_ball": 0.052473101299256086,
+      "first_check_bookkeeping": 0.10915829986333847,
+      "reconstruction": 0.8172354005509987,
+      "materialization": 1.781947499490343
+    }
+  },
+  "additive_timing_check": true,
+  "first_sweep_checks": 618,
+  "first_sweep_safe_accept": 617,
+  "extra_endpoint_checks": 1,
+  "variant": "firstcheck",
+  "operation_counts": {
+    "exact_endpoint_calls": 1250,
+    "post_ball_Gt_calls": 627,
+    "all_gram_matvec_calls": 1881,
+    "apply_calls": 618,
+    "skipped_zero_apply": 618,
+    "eliminated_Gt": 627,
+    "geometry_active_pairs": 10355,
+    "geometry_unique_controls": 7042,
+    "apply_pair_rows": 10355,
+    "apply_unique_rows": 7042
+  },
+  "predictor": {
+    "calls": 630,
+    "rows": 44100,
+    "margin_mae": 2.582523287559042e-07,
+    "margin_max_error": 2.1457672119140625e-06,
+    "sign_agreement": 1.0,
+    "argmax_agreement": 1.0,
+    "balanced_accuracy": 1.0,
+    "correctness_confusion": [
+      [
+        15232,
+        0
+      ],
+      [
+        0,
+        28868
+      ]
+    ],
+    "transition_order": [
+      "wrong_wrong",
+      "wrong_correct",
+      "correct_wrong",
+      "correct_correct"
+    ],
+    "transition_confusion": [
+      [
+        8190,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        7042,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        28868
+      ]
+    ],
+    "transition_counts": [
+      8190,
+      0,
+      7042,
+      28868
+    ],
+    "transition_recall": [
+      1.0,
+      null,
+      1.0,
+      1.0
+    ],
+    "floor_safe_agreement": 1.0,
+    "predicted_safe_updates": 12,
+    "false_safe_updates": 0,
+    "false_unsafe_updates": 0,
+    "false_safe_per_update": 0.0,
+    "false_safe_given_predicted_safe": 0.0,
+    "accuracy_gate": {
+      "sign": true,
+      "argmax": true,
+      "margin": true,
+      "balanced": true,
+      "correct_wrong": true,
+      "wrong_correct": true,
+      "false_safe_per_update": true
+    },
+    "status": "PASS"
+  },
+  "predicted_projection_triggers": 618,
+  "predictor_wall": 2.9454845004947856,
+  "predictor_flops": 710478397440,
+  "status": "PASS",
+  "budget": 630,
+  "task": 2,
+  "checkpoint_source": "E:\\gfg-evidence\\banking77-nonlinear-v1\\formal\\native_630\\task1\\CHECKPOINT.pt",
+  "checkpoint_source_sha256": "b80f493410871810dcd2981f4571fad38952cf80e5413f330b3b631c17ac9e31",
+  "K": [
+    10,
+    8,
+    9,
+    9,
+    3,
+    9,
+    9
+  ],
+  "schedule_sha256": "30db70611b61299a7cb8c933fcb7405f63601b65a9c0235bd8c417322c5cde5a",
+  "unsafe_native_steps": 618,
+  "native_safe_steps": 12,
+  "ordinary_pass_actual_safe": 1,
+  "inner_limit": 0,
+  "inner_limit_actual_safe_accept": 0,
+  "inner_limit_actual_unsafe_continue": 0,
+  "inner_limit_outer_rollback": 0,
+  "cap_safe_acceptance_rate": null,
+  "final_rollback": 0,
+  "successful_repair_rate": 1.0,
+  "floor_violations": 0,
+  "decisions": {
+    "FIRST_SWEEP_ACTUAL_SAFE_ACCEPT": 617,
+    "PASS_ACTUAL_SAFE_ACCEPT": 1
+  },
+  "outer_iterations": 618,
+  "inner_sweeps": 627,
+  "jacobian_calls": 618,
+  "jacobian_pairs": 10355,
+  "endpoint_calls": {
+    "entry": 1,
+    "native": 630,
+    "projected": 619,
+    "commit": 0,
+    "total": 1250
+  },
+  "actual_endpoint_rechecks": 619,
+  "norm_ratio_triggered": {
+    "n": 618,
+    "median": 0.9100601436049416,
+    "mean": 0.9063990045591268,
+    "min": 0.8684426305836609,
+    "max": 0.9760888827962712
+  },
+  "cosine_nonzero_triggered": {
+    "n": 618,
+    "median": 0.9094629355028307,
+    "mean": 0.9060822838637692,
+    "min": 0.8632161310320855,
+    "max": 0.9906944314871621
+  },
+  "correct_to_wrong": 0,
+  "wrong_to_correct": 0,
+  "entry_current_train": {
+    "ce": 3.0420682430267334,
+    "macro": 0.0008071025035211018,
+    "per_intent": {
+      "7": 0.0,
+      "8": 0.005649717524647713,
+      "9": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0
+    }
+  },
+  "train_metrics": {
+    "current": {
+      "ce": 1.4884392023086548,
+      "macro": 0.762038026537214,
+      "per_intent": {
+        "7": 0.5798319578170776,
+        "8": 0.6440678238868713,
+        "9": 0.7365269660949707,
+        "10": 0.888888955116272,
+        "11": 0.8888888955116272,
+        "12": 0.680272102355957,
+        "13": 0.9157894849777222
+      }
+    },
+    "old": {
+      "ce": 1.6415419578552246,
+      "macro": 0.6694107736860003,
+      "per_intent": {
+        "0": 0.7685185074806213,
+        "1": 0.8076923489570618,
+        "2": 0.6814814805984497,
+        "3": 0.7848837375640869,
+        "4": 0.3229813575744629,
+        "5": 0.8058252334594727,
+        "6": 0.5144927501678467
+      }
+    },
+    "all": {
+      "ce": 1.5628103017807007,
+      "macro": 0.7157244001116071,
+      "per_intent": {
+        "0": 0.7685185074806213,
+        "1": 0.8076923489570618,
+        "2": 0.6814814805984497,
+        "3": 0.7848837375640869,
+        "4": 0.3229813575744629,
+        "5": 0.8058252334594727,
+        "6": 0.5144927501678467,
+        "7": 0.5798319578170776,
+        "8": 0.6440678238868713,
+        "9": 0.7365269660949707,
+        "10": 0.888888955116272,
+        "11": 0.8888888955116272,
+        "12": 0.680272102355957,
+        "13": 0.9157894849777222
+      }
+    }
+  },
+  "gate": {
+    "floor_zero": true,
+    "unsafe_exposure": true,
+    "rollback_rate": true,
+    "successful_repair": true,
+    "new_train_macro": true,
+    "current_ce": true,
+    "movement": true,
+    "old_ce_backward_zero": true,
+    "state_moment_continuity": true
+  },
+  "independent_audit_status": "PENDING",
+  "current_backward_examples": 10080,
+  "old_ce_backward_examples": 0,
+  "old_ce_backward_flops": 0,
+  "common_wall": 2.651993697276339,
+  "entry_wall": 0.0024509000359103084,
+  "control_wall": 9.92209050047677,
+  "total_algorithm_wall": 12.57653509778902,
+  "observer_wall": 11.919766999548301,
+  "region_seconds": {
+    "endpoint": 0.7271174982888624,
+    "entry_total": 0.0024509000359103084,
+    "native_total": 2.651993697276339,
+    "predictor": 2.9454845004947856,
+    "control_total": 9.92209050047677,
+    "parameter_geometry": 2.041156499646604,
+    "selection": 0.10846080048941076,
+    "geometry_factors_subregion": 0.2957564009120688,
+    "gram_subregion": 0.04076890030410141,
+    "budget_subregion": 0.4330548990983516,
+    "jacobian_gram_guard": 0.7773757000686601,
+    "reconstruction": 0.8172354005509987,
+    "materialization": 1.781947499490343,
+    "first_check_bookkeeping": 3.1730026000877842,
+    "hildreth_ball": 3.2254757013870403
+  },
+  "endpoint_flops": 138444800000,
+  "cutter_flops": 14884315158,
+  "current_forward_backward_dense_flops": 9119416320,
+  "flop_ledger": {
+    "endpoint": 138444800000,
+    "predictor_dense": 710478397440,
+    "jacobian_forward_guard": 5559261184,
+    "gram": 211789578,
+    "reconstruction": 5023774908,
+    "hildreth_ball_estimate": 2196088,
+    "jacobian_directional_dense_estimate": 4087656960,
+    "eliminated_duplicate_Gt": -363560
+  },
+  "flop_coverage": "Dense multiply-add lower bounds plus frozen analytic/coordinate estimates; not full hardware FLOPs.",
+  "control_bank_reads": 131600,
+  "endpoint_control_bank_reads": 87500,
+  "predictor_control_bank_reads": 44100,
+  "peak_cuda_bytes": 119967744,
+  "test_files_opened": 0,
+  "checkpoint_sha256": "31b303da4b7177649be9dcb37ccb9e2d6c09cd988745f606ffba2fd531d5e083"
+}

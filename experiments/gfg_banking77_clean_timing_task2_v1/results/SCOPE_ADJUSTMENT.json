@@ -1,0 +1,7 @@
+{
+  "reason": "User requested immediate completion of verification rather than extended repeated experiment; remaining benchmark stopped without deleting partial evidence.",
+  "original_protocol_preserved": true,
+  "used": "repeat1, all four arms, both budgets",
+  "not_claimed": "No three-repeat median, no significance claim",
+  "utc": "2026-09-27T18:34:02Z"
+}
