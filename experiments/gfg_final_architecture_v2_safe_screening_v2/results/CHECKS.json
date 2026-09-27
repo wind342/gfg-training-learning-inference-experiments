@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scheduled_updates": 210,
+  "independent_full_controller_replay": 210,
+  "all_executed_heads_moments_and_projection_details_identical": true,
+  "per_candidate_full_observer_calls": 2152,
+  "observed_false_safe": 0,
+  "frontier_logit_margin_difference": 0.0,
+  "relation_floor_checks": 15120,
+  "floor_violations": 0,
+  "actual_final_head_and_test_predictions_recomputed": true,
+  "same_head_fixed_vs_original_test_prediction_differences": 0,
+  "original_historical_trajectory_identical": false,
+  "source_hashes_unchanged": true,
+  "input_hashes_unchanged": true,
+  "independent_replay_wall": 58.57427720003761,
+  "scope": "Numerical fixed-tile repair validated against full fixed-tile production controller; not a claim of original full-batch FP32 trajectory identity or formal hardware proof."
+}

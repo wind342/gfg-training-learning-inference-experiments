@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "certificate_cases": [
+    {
+      "amplitude": 0.0,
+      "certified": 17,
+      "exact_counts": true
+    },
+    {
+      "amplitude": 1e-07,
+      "certified": 17,
+      "exact_counts": true
+    },
+    {
+      "amplitude": 0.001,
+      "certified": 17,
+      "exact_counts": true
+    },
+    {
+      "amplitude": 0.1,
+      "certified": 6,
+      "exact_counts": true
+    },
+    {
+      "amplitude": 1.0,
+      "certified": 0,
+      "exact_counts": true
+    },
+    {
+      "amplitude": 10.0,
+      "certified": 0,
+      "exact_counts": true
+    }
+  ],
+  "production_differential": [
+    {
+      "amplitude": 0.001,
+      "sweeps": 0,
+      "byte_identical": true
+    },
+    {
+      "amplitude": 0.05,
+      "sweeps": 1,
+      "byte_identical": true
+    },
+    {
+      "amplitude": 0.2,
+      "sweeps": 1,
+      "byte_identical": true
+    }
+  ],
+  "zero_boundary": true,
+  "selected_rows_always_evaluated": true,
+  "tie_break": true,
+  "scope": "Numerical implementation checks, not a formal hardware proof"
+}

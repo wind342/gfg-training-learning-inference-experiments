@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "authority": "E:\\gfg-evidence\\final-v2-safe-screening-v2",
+  "public_files": {
+    "NUMERICAL_PREFLIGHT.json": {
+      "sha256": "13a696e8a53adc756a228405372b1c3cb9a3c0413fccfeb11f1bf8608c11fce8",
+      "bytes": 584
+    },
+    "PREFLIGHT.json": {
+      "sha256": "b29d710755ddb06b5a8138eaad89d2ff635171ca5417b8e5e171c0b253517b4b",
+      "bytes": 146106
+    },
+    "CONFIG.json": {
+      "sha256": "006508980a2e57377bc80596e0978074a08c1a80f308dd382908bda0d62ebeb9",
+      "bytes": 120743
+    },
+    "CALLS.jsonl.gz": {
+      "sha256": "338e25689e0b780c3637d2e2fbdca9cdab8fba8affaefbcefd0d058b7eecc6a7",
+      "bytes": 483313
+    },
+    "STEPS.jsonl.gz": {
+      "sha256": "7094a62567bcc1a1a7a332b6e51e1d03344e1d56c2865de44ffdfaf4471eb63e",
+      "bytes": 1702704
+    },
+    "REFRESHES.json": {
+      "sha256": "3d83c73e618bed877f708aea3eef6f1b1e80a8be33da50e2901fc913610db9e0",
+      "bytes": 98368
+    },
+    "TRAINING_COMPLETE.json": {
+      "sha256": "e883d9d937478ce6545532216510ba2582a207e758400eade812dfc3c258b44e",
+      "bytes": 221
+    },
+    "RESULTS.json": {
+      "sha256": "eb1f0f89e9af0bfb72b1f88413cde4de6aaea29842032c22a29d66e284fa3fd7",
+      "bytes": 4404
+    },
+    "CHECKS.json": {
+      "sha256": "6fee13d7fbd08f27702d072fa00449c3961c03cc34f5f3b9a0d33cefe5261781",
+      "bytes": 838
+    },
+    "INDEPENDENT_REPLAY.json": {
+      "sha256": "3566de27e1be684d5dcb53937a258bcfa5f1d42426574047288a2b1e573d1063",
+      "bytes": 52885
+    },
+    "EVALUATION.json": {
+      "sha256": "6e7d16ab38031a50e17ce14fadc67823aa0e46e66dc842a865643dce946be4ba",
+      "bytes": 234801
+    },
+    "HISTORICAL_COMPARISON.json": {
+      "sha256": "b8b8d04101745ba47c85dd07cce4150606f6409259983824a6f2ca16f6b342db",
+      "bytes": 6634
+    }
+  },
+  "external_checkpoint": {
+    "path": "E:\\gfg-evidence\\final-v2-safe-screening-v2\\CHECKPOINT.pt",
+    "sha256": "105df03870a9f53730c6364efe0fb0ce91eda26ec77c3342b0299d1aaebb1786",
+    "bytes": 1478925
+  },
+  "diagnostic_sources": {
+    "diagnostics/package.py": "64e5a38767c2d5307c4c346ca39e6a0e4c336aaffffbf147d55eff22cfdbfe18",
+    "diagnostics/verify.py": "8a332146064c252ccb8423ad96b44f019edf54eae3d4a1e40442d791a6ea85b0"
+  }
+}

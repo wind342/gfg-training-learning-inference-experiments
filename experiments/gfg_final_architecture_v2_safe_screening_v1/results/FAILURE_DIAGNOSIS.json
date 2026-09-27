@@ -1,0 +1,31 @@
+{
+  "status": "REPRODUCED",
+  "reference_reconstructed_committed_steps": 11,
+  "candidate_sha256": "83fec10569032628c0bff73c5b6473d3d213f308ccc1e1cb689e57f8e9af8b3e",
+  "candidate_committed": false,
+  "rows": [
+    {
+      "bank_row": 541,
+      "dataset_id": 2641,
+      "relation": 3,
+      "certified": false,
+      "full_target_logit": 3.756871223449707,
+      "full_competitor": 13,
+      "full_competitor_logit": 3.7568740844726562,
+      "frontier_target_logit": 3.7568721771240234,
+      "frontier_competitor": 13,
+      "frontier_competitor_logit": 3.756871223449707,
+      "full_margin": -2.86102294921875e-06,
+      "frontier_margin": 9.5367431640625e-07,
+      "lower_bound": -0.2443909364437584,
+      "full_batch_rows": 10152,
+      "frontier_batch_rows": 3506,
+      "fp64_diagnostic_margin": 7.035244875552848e-07
+    }
+  ],
+  "explanation": "Same actual FP32 head/features; selecting fewer batch rows changes GEMM reduction rounding. The discrepancy is in an uncertified frontier row, not a false-safe certificate.",
+  "no_test_read": true,
+  "no_policy_change": true,
+  "no_formal_restart": true,
+  "diagnostic_source_sha256": "f70dd09465bf8a68dcfd6b23d3b99a1fa4bcffdac265148e0db84fd52fdbfa74"
+}

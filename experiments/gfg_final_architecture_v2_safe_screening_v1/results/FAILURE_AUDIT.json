@@ -1,0 +1,11 @@
+{
+  "status": "PRESERVED_FAILURE_VERIFIED",
+  "formal_gate": "NOT_PASSED",
+  "source_hashes_unchanged": true,
+  "input_hashes_unchanged": true,
+  "formal_run_retried": false,
+  "test_not_evaluated": true,
+  "eleven_committed_heads_reconstructed_by_original_controller": true,
+  "all_87_certificate_masks_checked": true,
+  "scope": "Failure diagnosis and ledger/hash checks; not a successful 210-update validation."
+}

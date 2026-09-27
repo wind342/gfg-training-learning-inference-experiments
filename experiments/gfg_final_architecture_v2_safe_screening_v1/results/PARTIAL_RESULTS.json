@@ -1,0 +1,86 @@
+{
+  "status": "STOPPED_NUMERICAL_MISMATCH",
+  "phase": "A",
+  "formal_gate": "NOT_PASSED",
+  "scheduled_updates": 210,
+  "completed_updates": 11,
+  "stopped_step": 12,
+  "stopped_point": "native",
+  "full_bank_size": 10072,
+  "observer_calls": 87,
+  "false_safe": 0,
+  "candidate_count_mismatches": 1,
+  "executed_relation_floor_violations": 0,
+  "completed_relation_step_checks": 792,
+  "historical_head_identical_steps": 11,
+  "historical_moments_identical_steps": 11,
+  "reference_head_identical_steps": 11,
+  "reference_full_trace_identical_steps": 9,
+  "reference_trace_mismatches": [
+    {
+      "step": 7,
+      "keys": [
+        "selections"
+      ]
+    },
+    {
+      "step": 11,
+      "keys": [
+        "selections"
+      ]
+    }
+  ],
+  "skipped_completed_steps": 0,
+  "completed_sweeps": 52,
+  "all_call_frontier_ratio": {
+    "median": 0.32913026211278795,
+    "p90": 0.3481930103256553,
+    "max": 0.3545472597299444
+  },
+  "completed_full_candidate_rows": 856120,
+  "completed_exact_frontier_rows": 269359,
+  "completed_anchor_refresh_rows": 69532,
+  "completed_relation_refreshes": 497,
+  "completed_screened_algorithm_wall": 2.588424000539817,
+  "completed_reference_algorithm_wall": 2.1326077004196122,
+  "completed_paired_speedup": 0.823901995953853,
+  "screening_setup_wall": 0.028328999993391335,
+  "completed_checker_wall": 0.29054319963324815,
+  "final_old_new_all": null,
+  "final_predictions_identical": null,
+  "test_evaluation_performed": false,
+  "banking77_started": false,
+  "diagnosis": {
+    "status": "REPRODUCED",
+    "reference_reconstructed_committed_steps": 11,
+    "candidate_sha256": "83fec10569032628c0bff73c5b6473d3d213f308ccc1e1cb689e57f8e9af8b3e",
+    "candidate_committed": false,
+    "rows": [
+      {
+        "bank_row": 541,
+        "dataset_id": 2641,
+        "relation": 3,
+        "certified": false,
+        "full_target_logit": 3.756871223449707,
+        "full_competitor": 13,
+        "full_competitor_logit": 3.7568740844726562,
+        "frontier_target_logit": 3.7568721771240234,
+        "frontier_competitor": 13,
+        "frontier_competitor_logit": 3.756871223449707,
+        "full_margin": -2.86102294921875e-06,
+        "frontier_margin": 9.5367431640625e-07,
+        "lower_bound": -0.2443909364437584,
+        "full_batch_rows": 10152,
+        "frontier_batch_rows": 3506,
+        "fp64_diagnostic_margin": 7.035244875552848e-07
+      }
+    ],
+    "explanation": "Same actual FP32 head/features; selecting fewer batch rows changes GEMM reduction rounding. The discrepancy is in an uncertified frontier row, not a false-safe certificate.",
+    "no_test_read": true,
+    "no_policy_change": true,
+    "no_formal_restart": true,
+    "diagnostic_source_sha256": "f70dd09465bf8a68dcfd6b23d3b99a1fa4bcffdac265148e0db84fd52fdbfa74"
+  },
+  "conclusion": "Safe-set certificates had no observed false-safe, but sparse FP32 GEMM changed one frontier sign and relation count. Exact historical semantics and full-run acceleration are not established. Stop preserved, no automatic restart.",
+  "completed_exact_row_reduction": 0.6853723777040601
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "fixed_gathered_logits": [
+    {
+      "rows": 3384,
+      "max_error": 0.0,
+      "byte_identical": true
+    },
+    {
+      "rows": 2031,
+      "max_error": 0.0,
+      "byte_identical": true
+    },
+    {
+      "rows": 777,
+      "max_error": 0.0,
+      "byte_identical": true
+    },
+    {
+      "rows": 6,
+      "max_error": 0.0,
+      "byte_identical": true
+    }
+  ],
+  "task_entry_K_unchanged": true,
+  "original_projection_bytecode": true,
+  "all_one_step_projection_details_equal": true,
+  "imported_module_unmodified": true
+}

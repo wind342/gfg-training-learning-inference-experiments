@@ -1,0 +1,42 @@
+{
+  "authority": "E:\\gfg-evidence\\final-v2-safe-screening-v1",
+  "status": "PRESERVED_FAILURE",
+  "files": {
+    "CALLS.jsonl.gz": {
+      "sha256": "44ba4af58075d77c3d901d8c2b63bfd6afa2872ed917f7ea92257d66e94d7f14",
+      "bytes": 19632
+    },
+    "CONFIG.json": {
+      "sha256": "cf5e834c2b04a781ed13c48f8e6e29ad822754321c3bb5375bb1a013993ebbcc",
+      "bytes": 120743
+    },
+    "FAILURE_1790509095960798800.json": {
+      "sha256": "b4814fb15708d8a9aa81c6753f966e6066df3e4579888ae518afc7414115efb8",
+      "bytes": 1593
+    },
+    "FAILURE_AUDIT.json": {
+      "sha256": "b9ae72fa2ee5e844392291506081105e5c34f0b5a026b29be42cf21bb0e9bb5a",
+      "bytes": 426
+    },
+    "FAILURE_DIAGNOSIS.json": {
+      "sha256": "89c526011e77359a164cfa9e5a287eb65269bf6e7ff59cc5738bc68de9510f65",
+      "bytes": 1243
+    },
+    "NUMERICAL_PREFLIGHT.json": {
+      "sha256": "2cb4ccaec4f21bc2b5f359c2e0533e39b072df90d4907f9fbfcd3204b1849606",
+      "bytes": 1086
+    },
+    "PARTIAL_RESULTS.json": {
+      "sha256": "2bee02b9a554548153ad10a6e2380ba1e30064d6dd7eac27bd68bbab44a3913d",
+      "bytes": 3180
+    },
+    "PREFLIGHT.json": {
+      "sha256": "9a47f4e38e5ee177ad9a65ea5adde6db81ff84135aff8fc6a1e7bd30fa7024cc",
+      "bytes": 145543
+    },
+    "STEPS.jsonl.gz": {
+      "sha256": "fd0f36766960b3fb116951e861af2696bb7fcb19c571137e367634e574e4628a",
+      "bytes": 58371
+    }
+  }
+}
