@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "arms": {
+    "native_210": {
+      "steps": 210,
+      "all_step_heads_moments_and_counts_bit_identical": true
+    },
+    "er_210": {
+      "steps": 210,
+      "all_step_heads_moments_and_counts_bit_identical": true
+    },
+    "er_630": {
+      "steps": 630,
+      "all_step_heads_moments_and_counts_bit_identical": true
+    },
+    "agem_210": {
+      "steps": 210,
+      "all_step_heads_moments_and_counts_bit_identical": true
+    },
+    "agem_630": {
+      "steps": 630,
+      "all_step_heads_moments_and_counts_bit_identical": true
+    },
+    "gem_210": {
+      "steps": 210,
+      "all_step_heads_moments_and_counts_bit_identical": true
+    },
+    "gem_630": {
+      "steps": 630,
+      "all_step_heads_moments_and_counts_bit_identical": true
+    },
+    "v2_210": {
+      "steps": 210,
+      "all_step_heads_moments_and_counts_bit_identical": true
+    },
+    "v2_630": {
+      "steps": 630,
+      "all_step_heads_moments_and_counts_bit_identical": true
+    }
+  }
+}

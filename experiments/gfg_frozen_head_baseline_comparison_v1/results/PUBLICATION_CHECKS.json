@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "copied_authority_records": 279,
+  "all_copied_records_match_local_sha256": true,
+  "all_staged_blobs_match_raw_working_file_bytes": true,
+  "raw_git_blob_check": "git hash-object --no-filters versus staged blob identity",
+  "line_endings": "Preserved byte-for-byte; directory-local attributes disable text conversion for results and recognize existing CRLF",
+  "source_and_protocol_guard": "PASS",
+  "whitespace_check": "PASS",
+  "old_paths_changed": [],
+  "main_commit": "155b42b0a08437f49d3ba13c2d32568f30e8c664",
+  "frozen_annotated_tag_object": "5a3d12c3de6fce0d9b5f69aa07d009c61e5c189e",
+  "frozen_peeled_commit": "36dab5ce347dbbdac157ef23205f556606d18294",
+  "large_tensor_inputs_and_outputs": "Retained in local authority; their SHA256 identities are listed in ARTIFACT_MANIFEST.json. Not included in public records."
+}

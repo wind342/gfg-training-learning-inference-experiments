@@ -1,0 +1,209 @@
+{
+  "status": "PASS",
+  "logs": {
+    "steps": 32130,
+    "arms": {
+      "native_210": {
+        "steps": 1890,
+        "continuity": true,
+        "sampling_recomputed": true
+      },
+      "er_210": {
+        "steps": 1890,
+        "continuity": true,
+        "sampling_recomputed": true
+      },
+      "er_630": {
+        "steps": 5670,
+        "continuity": true,
+        "sampling_recomputed": true
+      },
+      "agem_210": {
+        "steps": 1890,
+        "continuity": true,
+        "sampling_recomputed": true
+      },
+      "agem_630": {
+        "steps": 5670,
+        "continuity": true,
+        "sampling_recomputed": true
+      },
+      "gem_210": {
+        "steps": 1890,
+        "continuity": true,
+        "sampling_recomputed": true
+      },
+      "gem_630": {
+        "steps": 5670,
+        "continuity": true,
+        "sampling_recomputed": true
+      },
+      "v2_210": {
+        "steps": 1890,
+        "continuity": true,
+        "sampling_recomputed": true
+      },
+      "v2_630": {
+        "steps": 5670,
+        "continuity": true,
+        "sampling_recomputed": true
+      }
+    },
+    "statistical_arrivals": true
+  },
+  "metrics": {
+    "classifier_prediction_checks": 99,
+    "historical_v2": {
+      "2": {
+        "v2_210": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        },
+        "v2_630": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        }
+      },
+      "3": {
+        "v2_210": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        },
+        "v2_630": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        }
+      },
+      "4": {
+        "v2_210": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        },
+        "v2_630": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        }
+      },
+      "5": {
+        "v2_210": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        },
+        "v2_630": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        }
+      },
+      "6": {
+        "v2_210": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        },
+        "v2_630": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        }
+      },
+      "7": {
+        "v2_210": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        },
+        "v2_630": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        }
+      },
+      "8": {
+        "v2_210": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        },
+        "v2_630": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        }
+      },
+      "9": {
+        "v2_210": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        },
+        "v2_630": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        }
+      },
+      "10": {
+        "v2_210": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        },
+        "v2_630": {
+          "same_predictions": true,
+          "same_head": true,
+          "all_delta": 0.0
+        }
+      }
+    }
+  },
+  "replay": {
+    "status": "PASS",
+    "arms": {
+      "native_210": {
+        "steps": 210,
+        "all_step_heads_moments_and_counts_bit_identical": true
+      },
+      "er_210": {
+        "steps": 210,
+        "all_step_heads_moments_and_counts_bit_identical": true
+      },
+      "er_630": {
+        "steps": 630,
+        "all_step_heads_moments_and_counts_bit_identical": true
+      },
+      "agem_210": {
+        "steps": 210,
+        "all_step_heads_moments_and_counts_bit_identical": true
+      },
+      "agem_630": {
+        "steps": 630,
+        "all_step_heads_moments_and_counts_bit_identical": true
+      },
+      "gem_210": {
+        "steps": 210,
+        "all_step_heads_moments_and_counts_bit_identical": true
+      },
+      "gem_630": {
+        "steps": 630,
+        "all_step_heads_moments_and_counts_bit_identical": true
+      },
+      "v2_210": {
+        "steps": 210,
+        "all_step_heads_moments_and_counts_bit_identical": true
+      },
+      "v2_630": {
+        "steps": 630,
+        "all_step_heads_moments_and_counts_bit_identical": true
+      }
+    }
+  },
+  "scope": "All records and saved classifiers checked; task2 of every gradient arm reexecuted. Later steps are NOT claimed independently replayed."
+}
