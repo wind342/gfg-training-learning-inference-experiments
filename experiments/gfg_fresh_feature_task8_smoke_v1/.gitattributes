@@ -1,0 +1,2 @@
+# Preserve byte identities of generated machine records, including CRLF.
+results/** -text

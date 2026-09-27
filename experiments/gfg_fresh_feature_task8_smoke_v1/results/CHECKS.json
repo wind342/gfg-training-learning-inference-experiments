@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "native_candidates": 420,
+  "independent_sweeps": 2588,
+  "endpoint_margin_values": 9970380,
+  "initial_logits_exact": true,
+  "optimizer_moments_exact": true,
+  "executed_protected_flips": 0,
+  "evaluation_after_both_arms": true,
+  "source_and_input_identity": true,
+  "metrics_recomputed": true
+}

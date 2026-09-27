@@ -1,0 +1,8 @@
+{
+  "started_unix": 1790486760.3265395,
+  "arms": [
+    "linear_fresh",
+    "relu_fresh"
+  ],
+  "task": 8
+}

@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETED",
+  "summary": {
+    "steps": 210,
+    "skip": 0,
+    "protected_flips": 0,
+    "projection_triggered": 210,
+    "norm_ratio": 0.6703611753070385,
+    "cosine": 0.6686202422596369,
+    "wall": 85.07482080010232,
+    "projection_wall": 52.918042800505646,
+    "peak_cuda_bytes": 667293184,
+    "initial_sha256": "836b667a98f89f65d38eea1730b40a5017333386485f9eb63dfc25c6baea512f",
+    "final_sha256": "e97d526d9e6a9b7cde0c8f39b55ebf71b8b4a05a816a13985f62b853ee007b2e",
+    "bank_size": 7833,
+    "old_control_correct": 6859,
+    "new_audit_correct": 51
+  },
+  "audit_sha256": "c42f2db28fcf4564838e9fc306c2626fcae6be22d6eaa95128d61d56e43cb092",
+  "log_sha256": "32aa986253f04389f5c54aeb71ae0ff9708d888011174c4c79abe9fc10b4392c",
+  "finished_unix": 1790486935.890641
+}
