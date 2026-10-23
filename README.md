@@ -52,6 +52,14 @@ pre-learning rollback/restoration while keeping persistent learned state frozen.
 The cumulative relation among TL-G01, TL-G02 and INF-G01 is summarized in
 [CROSS_SYSTEM_EVIDENCE_CHAIN.md](CROSS_SYSTEM_EVIDENCE_CHAIN.md).
 
+The separate **TL-G03/INF-G02** frozen experiment adds deterministic top-2
+routed expert organization. Across three Vision-MoE/CIFAR-100/AdamW seeds, it
+retests receiving-state conditioning, nonlinear response, expert-support
+reorganization, routing, prospective coordinate transport and exact frozen-
+inference expert/router rollback. Its result, independent check and bounded
+scientific assessment are retained in
+[the MoE experiment directory](experiments/gfg_moe_cifar_training_learning_inference_generalization_v1/).
+
 Two later feedback-dynamics experiments test a bounded consequence of the
 training--learning--inference loop in a shared policy. RL-E05 studies selective
 positive feedback and support concentration; RL-E06 freezes feedback dose,
