@@ -1,0 +1,61 @@
+{
+  "adjudication": "Keep every seed and failure. Instrument/calibration/representation failures do not automatically refute the TLI/TLIR core; only directly contradictory true-system behavior under actually claimed conditions does.",
+  "architecture": "Hard-spiking temporal recurrent network, four recurrent spike blocks and exact integer spike events; no attention",
+  "controls": "Actual post-pre parameter delta; exact Adagrad accumulator replay and earlier-memory exchange with same gradients; same-delta different receiver, amplitude path, all-16 coalitions, exact Shapley, complete-logit pair interactions, exact initial-component version rollback, byte-exact frozen inference",
+  "criterion": "Each gate evaluated for each seed, not posthoc tuned or aggregated away",
+  "data": "scikit-learn digits native 8x8 10-class task, stratified 75/25 train/heldout split per run, selected first 96 heldout rows with fixed ordering",
+  "formal_seeds": [
+    71001,
+    71002,
+    71003,
+    71004
+  ],
+  "independent_checker_sha256": "1374cce6da20bf1ca828bf134de21ffd6189c6831c7936cf62f87124b36d1c41",
+  "not_claimed": [
+    "A new theorem applicable to all neural models",
+    "Full native GFG Core v3 validated record",
+    "Native TLI instruments original study direct reproduction",
+    "Universal prediction from surrogate autodifferentiation"
+  ],
+  "optimizer": "torch.optim.Adagrad with lr=.05, eps=1e-10, lr_decay=0, weight_decay=0; surrogate-gradient backprop used for training, true hard threshold for forward",
+  "pilot_data_used": "TRAINABILITY_ONLY_NO_RELATION_GATES",
+  "pilot_heldout_accuracy": 0.95333331823349,
+  "pilot_seed": 42,
+  "primary_relation_gates": [
+    "formed_capability",
+    "actual_adagrad_formula_integrity",
+    "frozen_inference_integrity",
+    "same_update_different_receiver",
+    "optimizer_memory_changes_action_and_response",
+    "finite_amplitude_nonlinearity",
+    "distributed_functional_support",
+    "persistent_support_reorganization",
+    "query_conditioned_support",
+    "nonadditive_full_logit_combination",
+    "exact_learning_version_rollback",
+    "shapley_efficiency_identity"
+  ],
+  "schema": "SNN_TLIR_FORMAL_FALSIFICATION_FREEZE_V1",
+  "snapshots": [
+    50,
+    200,
+    400,
+    700
+  ],
+  "source_sha256": "718931152b06d6b7aa0d8416fe094463fed714e9cf06efb0e90dbb270a748cf1",
+  "status": "FROZEN_AFTER_DISJOINT_TRAINABILITY_PILOT_BEFORE_FORMAL",
+  "thresholds": {
+    "maximum_shapley_efficiency_error": 0.0001,
+    "maximum_update_formula_error": 2e-06,
+    "minimum_distributed_fraction": 0.5,
+    "minimum_full_logit_interaction_rms": 1e-05,
+    "minimum_heldout_accuracy": 0.88,
+    "minimum_nonlinear_fraction": 0.1,
+    "minimum_query_distance": 0.05,
+    "minimum_reallocation_fraction": 0.25,
+    "minimum_response_rms": 0.0005,
+    "minimum_rollback_effect": 1e-05,
+    "response_nrmse": 0.05
+  },
+  "updates": 800
+}

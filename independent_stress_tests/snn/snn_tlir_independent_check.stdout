@@ -1,0 +1,35 @@
+{
+  "independent_native_replay": "PASS",
+  "sha256_summary": "578bdf5f17c7398ede73697373d435d662b80310ff063a56688d766a113c8191",
+  "verified_seeds": [
+    {
+      "failed_gates": [],
+      "gate_count_passed": 12,
+      "gate_count_total": 12,
+      "heldout_accuracy": 0.9733333587646484,
+      "seed": 71001
+    },
+    {
+      "failed_gates": [],
+      "gate_count_passed": 12,
+      "gate_count_total": 12,
+      "heldout_accuracy": 0.9555555582046509,
+      "seed": 71002
+    },
+    {
+      "failed_gates": [],
+      "gate_count_passed": 12,
+      "gate_count_total": 12,
+      "heldout_accuracy": 0.9666666388511658,
+      "seed": 71003
+    },
+    {
+      "failed_gates": [],
+      "gate_count_passed": 12,
+      "gate_count_total": 12,
+      "heldout_accuracy": 0.948888897895813,
+      "seed": 71004
+    }
+  ],
+  "verifier_status": "PASS"
+}

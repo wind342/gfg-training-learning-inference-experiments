@@ -1,0 +1,76 @@
+{
+  "all_native_and_measurement_bytes_identical": true,
+  "all_seed_scientific_summaries_identical": true,
+  "comparisons": [
+    {
+      "match": true,
+      "relative_path": "seed_71001/FROZEN_GATES.json",
+      "sha256": "34735a3a9daf16b9eb319cf1cb719850c5f821929f88869f3baaa03a64ccbd78"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71001/MEASUREMENTS.json",
+      "sha256": "f755d03aec00a9ebf3fe81dc2f00ff7f0aa17c80c61a8040ae85d28c36427398"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71001/NATIVE_STATES_AND_OUTCOMES.pt",
+      "sha256": "bcec4e7dc5142844e1186e2ac262abc582a9ba9210dda8ad5e888d01f1989436"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71002/FROZEN_GATES.json",
+      "sha256": "34735a3a9daf16b9eb319cf1cb719850c5f821929f88869f3baaa03a64ccbd78"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71002/MEASUREMENTS.json",
+      "sha256": "b27965ad3afb998321ff3e923ed0df771d692669e1b4ad50c42a8aacc9d78d6e"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71002/NATIVE_STATES_AND_OUTCOMES.pt",
+      "sha256": "be331d57bed6f6d5f9d98fe20b3f98b6d3a2f73f96591c91bb3813d1655b802a"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71003/FROZEN_GATES.json",
+      "sha256": "34735a3a9daf16b9eb319cf1cb719850c5f821929f88869f3baaa03a64ccbd78"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71003/MEASUREMENTS.json",
+      "sha256": "e11370b311baf3a949a3e3abd053688ca90553c30846eb061464dfe2de12084b"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71003/NATIVE_STATES_AND_OUTCOMES.pt",
+      "sha256": "59bf75e251af210a3208626149d356be2072fe7974e46da0b4ca7fc424aeb564"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71004/FROZEN_GATES.json",
+      "sha256": "34735a3a9daf16b9eb319cf1cb719850c5f821929f88869f3baaa03a64ccbd78"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71004/MEASUREMENTS.json",
+      "sha256": "e89d3989a3a2e34b8645bcf28620d970ad7d6ccef658262645e129881c04748d"
+    },
+    {
+      "match": true,
+      "relative_path": "seed_71004/NATIVE_STATES_AND_OUTCOMES.pt",
+      "sha256": "9b3d1899fa5a34d1dfe3e8094f8231b9deb74c542df9972d6346f8ffd8345330"
+    }
+  ],
+  "interpretation": "Full independent rerun from random init, same frozen code and seeds. Runtime_seconds differs, all scientific seed outputs and raw per-seed files agree byte for byte.",
+  "matching_full_raw_files": 12,
+  "original_summary_sha256": "578bdf5f17c7398ede73697373d435d662b80310ff063a56688d766a113c8191",
+  "original_wall_seconds": 24.140069061000077,
+  "protocol_sha256": "9cc39a3ca6dc7b60697136ddccfa0caa9753860f2598f2e679bb62242a1ddace",
+  "replay_summary_sha256": "6e94460c1eef5518d5cbe18578fd4d973545c57e48e5b0a3102010439d4ac720",
+  "replay_wall_seconds": 25.199469099999988,
+  "schema": "hardspike_full_native_reexecution_equality_v1",
+  "source_sha256": "718931152b06d6b7aa0d8416fe094463fed714e9cf06efb0e90dbb270a748cf1",
+  "total_full_raw_files": 12
+}

@@ -1,0 +1,72 @@
+{
+  "authority": "FROZEN_SOURCE_PLUS_FRESH_BYTE_IDENTICAL_REEXECUTION_AND_AGGREGATE_RECOMPUTATION",
+  "errors": [],
+  "formal_results_sha256": "5579099e40bc605dec076134ab7393b936411b6bc18d286166a1d525a523de47",
+  "fresh_replay_sha256": "5579099e40bc605dec076134ab7393b936411b6bc18d286166a1d525a523de47",
+  "frozen_protocol_sha256": "e2bd6b803c20df9bc3e612edc931631df4b8ec14016b2db1fb5fc5a321932085",
+  "notice": "Not a GFG Core v3 validation; does not independently verify absent raw tensor receipts.",
+  "seed_results": [
+    {
+      "all_gates": {
+        "distributed_support": true,
+        "exact_learned_version_rollback": true,
+        "finite_amplitude_nonlinearity": false,
+        "frozen_execution_integrity": true,
+        "frozen_query_conditioning": true,
+        "nonadditive_complete_logits": true,
+        "persistent_support_reallocation": true,
+        "same_update_different_receiver": true,
+        "training_capability": true
+      },
+      "nonlinear_count": 4,
+      "nonlinear_fraction": 0.015625,
+      "nonlinear_total": 256,
+      "pass_count": 8,
+      "seed": 20261024,
+      "support_reallocation_fraction_mean": 0.6171875,
+      "trained_accuracy": 1.0
+    },
+    {
+      "all_gates": {
+        "distributed_support": true,
+        "exact_learned_version_rollback": true,
+        "finite_amplitude_nonlinearity": true,
+        "frozen_execution_integrity": true,
+        "frozen_query_conditioning": true,
+        "nonadditive_complete_logits": true,
+        "persistent_support_reallocation": true,
+        "same_update_different_receiver": true,
+        "training_capability": true
+      },
+      "nonlinear_count": 44,
+      "nonlinear_fraction": 0.171875,
+      "nonlinear_total": 256,
+      "pass_count": 9,
+      "seed": 20261025,
+      "support_reallocation_fraction_mean": 0.34375,
+      "trained_accuracy": 1.0
+    },
+    {
+      "all_gates": {
+        "distributed_support": true,
+        "exact_learned_version_rollback": true,
+        "finite_amplitude_nonlinearity": true,
+        "frozen_execution_integrity": true,
+        "frozen_query_conditioning": true,
+        "nonadditive_complete_logits": true,
+        "persistent_support_reallocation": true,
+        "same_update_different_receiver": true,
+        "training_capability": true
+      },
+      "nonlinear_count": 36,
+      "nonlinear_fraction": 0.140625,
+      "nonlinear_total": 256,
+      "pass_count": 9,
+      "seed": 20261026,
+      "support_reallocation_fraction_mean": 0.49609375,
+      "trained_accuracy": 1.0
+    }
+  ],
+  "source_sha256": "28e9b9d8d611c05fa3b6a45b89f359181c6d83ef21d4fb8681f85e4d6ab5a722",
+  "status": "PASS"
+}
