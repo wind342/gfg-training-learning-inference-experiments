@@ -1,0 +1,36 @@
+{
+  "adjudication": "Each seed evaluated on frozen gates with no deletion. A formal failure with learned capability is a system-level boundary or adverse test of operationalized transport; it is not automatically a logical falsification of all TLIR. If capability fails to form, verdict is NOT_EVALUABLE, not theory failure. Core falsification requires incompatible behavior under the actually asserted scope and all integrity controls.",
+  "analysis_after_freeze": "Do not change source, selection thresholds, number of seeds, or evaluation logic after formal output; report all pass/fail including negative values.",
+  "evidence": "Full actual native parameter update post-pre; fixed sample IDs; source/output hashes; 16 real forward coalitions, exact 4-player Shapley, reciprocal same-update different-state response, 6-point finite amplitude path, trained-component initialization rollback",
+  "formal_seeds": [
+    20261024,
+    20261025,
+    20261026
+  ],
+  "frozen_thresholds": {
+    "capability": "all held-out accuracies >=0.85",
+    "complete_logit_nonadditivity": "each checkpoint maximum pairwise full-two-logit RMS interaction >1e-6",
+    "distributed_support": "mean of 4 snapshot fractions with >=2 active Shapley components (each >=10% total absolute Shapley mass) >=0.50",
+    "execution_integrity": "frozen model unchanged by repeated inference and outputs byte exact",
+    "finite_amplitude": "across 4 checkpoints >=10% of 256 target-update path records with max_chord_deviation>0.001 and normalized_deviation>0.1",
+    "persistent_reallocation": "mean of 4 snapshot fractions with normalized_shapley_L1_reallocation>0.01 >=0.25",
+    "query_conditioning": "each checkpoint max normalized-query-Shapley-profile_L1 >0.05",
+    "receiver": "at least 2 of 3 fixed donor/receiver pairs per seed have response_NRMSE >0.05 and max response_RMS >1e-4",
+    "rollback": "each trained-component replacement by exact pretraining weights changes a full logit >1e-6 and every restore hash/logit is byte exact"
+  },
+  "model": "Four-block residual mean-message-passing GNN; hidden=40; graph readout only at marked anchor node",
+  "no_GFG_claim": "This is an independent PyTorch experiment with source/result hashes, not a replay of historical GFG or a Core-v3 validated native GFG.",
+  "pilot_seed": 99999,
+  "pilot_sha256": "69a5aec0ea6bbede744a598d744350e08ae7a4987a72d61a39ca9c8b965d3224",
+  "schema": "independent_gnn_tlir_falsification_protocol_v1",
+  "snapshots": [
+    25,
+    100,
+    200,
+    350
+  ],
+  "source_sha256": "28e9b9d8d611c05fa3b6a45b89f359181c6d83ef21d4fb8681f85e4d6ab5a722",
+  "status": "FROZEN_AFTER_DISJOINT_NONDECISION_PILOT_BEFORE_FORMAL",
+  "task": "Graph-level, 12 nodes, 3 binary node features (anchor, marker, constant); balanced graph instances sampled from ER(0.13...0.37) with random nonanchor permutations; classify whether marker reachable from anchor in <=2 undirected hops; 1024 train,256 held-out test per seed",
+  "training": "Random init, 500 updates, RMSprop alpha=0.95 eps=1e-8 lr=0.003 momentum=0, batch=64; data and RNG fixed by each formal seed"
+}

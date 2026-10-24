@@ -1,0 +1,48 @@
+{
+  "kind": "PILOT",
+  "python": "3.13.5",
+  "runs": [
+    {
+      "eval_log": [
+        {
+          "step": 1,
+          "test_accuracy": 0.5,
+          "test_loss": 1.1303701400756836
+        },
+        {
+          "step": 25,
+          "test_accuracy": 0.76171875,
+          "test_loss": 0.46348151564598083
+        },
+        {
+          "step": 100,
+          "test_accuracy": 1.0,
+          "test_loss": 0.001352405990473926
+        },
+        {
+          "step": 200,
+          "test_accuracy": 1.0,
+          "test_loss": 3.300630487501621e-05
+        },
+        {
+          "step": 350,
+          "test_accuracy": 1.0,
+          "test_loss": 3.5064292092101823e-07
+        },
+        {
+          "step": 500,
+          "test_accuracy": 1.0,
+          "test_loss": 0.0
+        }
+      ],
+      "seed": 99999,
+      "steps": 500
+    }
+  ],
+  "schema": "gnn_tlir_falsification_v1",
+  "seeds": [
+    99999
+  ],
+  "source_sha256": "8202319d3e2ce75ec03637ad961d40af0cdd46cbed40c6f5216f1bf5fee51f44",
+  "torch": "2.10.0+cpu"
+}
