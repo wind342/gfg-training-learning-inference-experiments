@@ -1,14 +1,11 @@
 \documentclass{article}
 \pdfpagewidth=8.5in
 \pdfpageheight=11in
-
-% Official IJCAI 2027 style must be provided as an unmodified ijcai27.sty.
-% Download it from the IJCAI official authors' kit: https://www.ijcai.org/authors_kit.
 \usepackage{ijcai27}
 \usepackage{times}
-\usepackage[utf8]{inputenc}
 \usepackage{url}
 \usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
 \usepackage[small]{caption}
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb}
@@ -17,13 +14,10 @@
 \usepackage[switch]{lineno}
 \linenumbers
 \urlstyle{same}
-
-% Keep PDF metadata free of author identities for double-blind submission.
 \pdfinfo{
 /TemplateVersion (IJCAI.2027.0)
 }
 \hypersetup{pdfauthor={},pdfsubject={}}
-
 \newcommand{\dd}{\Delta\theta_t}
 \newcommand{\id}{\mathrm{id}}
 \newcommand{\PASS}{\textsc{Pass}}
@@ -33,9 +27,7 @@
 \maketitle
 
 \begin{abstract}
-We examine unified Training--Learning--Inference--Reinforcement (TLIR) dynamics of neural systems. Its Training--Learning--Inference (TLI) core was first established experimentally in nanoGPT. Training is the evolution of a parameter--optimizer system with state and memory. Each realized training action enters the current receiving state and generates a finite-amplitude nonlinear functional response jointly conditioned by that state and target-specific update geometry. Learning is the persistent reorganization of distributed functional support caused by these responses. When a target's internal functional state crosses its readout boundary, capability formation, maintenance, decline, or recovery becomes observable. During inference, the current query projects, recruits, and combines support formed through training while the persistent learned state remains unchanged; inference is a frozen projection of training--learning dynamics. Environmental consequences and reinforcement feedback influence subsequent training actions, completing the TLIR loop; GRU experiments directly test this feedback relation.
-
-After establishing the TLI core in nanoGPT Transformer, we examine the same complete relation in five additional neural systems: ResNet-18, diffusion U-Net, routed Vision-MoE, a graph neural network (GNN), and a hard-spiking recurrent neural network (SNN). Realized-update and receiving-state interventions, finite-amplitude responses, component-support measurements, capability readouts, and frozen inference with exact trained-version rollback link these stages within each system. The experiments repeatedly support the TLI core across architectures, optimizers, and tasks. A theory-derived target-boundary prediction algorithm also achieves high predictive accuracy in multiple systems. Finally, TLIR is used to interpret positive results and counterexamples of existing local machine-learning theories.
+We study unified Training--Learning--Inference--Reinforcement (TLIR) dynamics across neural systems. Training evolves a parameter--optimizer state: the same realized update can produce different finite-amplitude functional responses in different receiving states. Learning persistently reorganizes distributed functional support, and a target's capability changes when its readout boundary is crossed. Inference recruits and combines learned support at a frozen persistent state; reinforcement couples environmental consequences to subsequent training actions. We establish the connected Training--Learning--Inference (TLI) relations in nanoGPT and test them in ResNet-18, diffusion U-Net, routed Vision-MoE, a graph neural network, and a hard-spiking recurrent network. The experiments include realized-update exchanges, finite-amplitude response paths, component-coalition interventions, target-boundary measurements, and exact trained-version inference rollback. A theory-derived target-boundary predictor classifies immediate outcomes of formed updates across architectures. In a seventh, shared GRU policy, RL-E05/E06 examine how correct-feedback concentration changes functional support, weakens other mastered skills, and enables recovery when feedback is redistributed. The combined results provide an experimentally traceable account of training actions, learning, inference, and reinforcement.
 \end{abstract}
 \section{Introduction}
 Training, generalization, capability formation, and inference are central problems in neural-network research. Different fields have developed influential theories to study them.
@@ -65,25 +57,25 @@ These studies use different mathematical objects---kernels, Hessians, gradients,
 
 \section{Experimental Systems and Methods}
 \subsection{Neural systems and indexed experiments}
-The TLI core was established in nanoGPT through TL-E01--E08 and INF-E01, with TL-P01 testing a predictive consequence. Five additional systems retest its connected roles. RL-E05/E06 examine how correct feedback reallocates already learned functional support and changes retained capabilities in a seventh system, a shared GRU policy. Table~\ref{tab:systems} lists the executed systems and registered component groups .
+The TLI core was established in nanoGPT through TL-E01--E08 and INF-E01, with TL-P01 testing a predictive consequence. Five additional systems retest its connected roles. RL-E05/E06 examine how correct feedback reallocates already learned functional support and changes retained capabilities in a seventh system, a shared GRU policy. Table~\ref{tab:systems} lists the executed systems and registered component groups.
 
 \begin{table}[t]
-\caption{Seven neural systems: six TLI chains and a GRU feedback study.}
-\label{tab:systems}
-\centering\scriptsize\setlength{\tabcolsep}{2.2pt}\renewcommand{\arraystretch}{1.09}
-\begin{tabular}{@{}p{.19\columnwidth}p{.26\columnwidth}p{.19\columnwidth}p{.29\columnwidth}@{}}
+\centering\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.07}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.40\columnwidth}>{\raggedright\arraybackslash}p{.54\columnwidth}@{}}
 \toprule
-Model & Task / data & Optimizer & Functional components\\
+System (optimizer) & Task / registered components\\
 \midrule
-nanoGPT & Cyclic next-token & Adam & 4 attention/MLP branches\\
-ResNet-18 & CIFAR-100 classes & SGD momentum & 4 residual stages\\
-Diffusion U-Net & CIFAR-10 denoising & AdamW & 4 U-Net paths\\
-Vision-MoE & CIFAR-100 classes & AdamW & 4 routed experts\\
-GNN & Graph reachability & RMSprop & 4 message-passing blocks\\
-Spiking SNN & Digits (8$\times$8) & Adagrad & 4 spiking blocks\\
-GRU (RL-E05/E06) & Four-skill feedback & AdamW & 4 shared hidden groups\\
+nanoGPT (Adam) & Cyclic next-token; 4 attention/MLP branches\\
+ResNet-18 (SGD momentum) & CIFAR-100 classification; 4 residual stages\\
+Diffusion U-Net\newline(AdamW) & CIFAR-10 denoising; 4 U-Net paths\\
+Vision-MoE (AdamW) & CIFAR-100 classification; 4 routed experts\\
+GNN (RMSprop) & Graph reachability; 4 message-passing blocks\\
+Spiking SNN (Adagrad) & 8$\times$8 digits; 4 spiking blocks\\
+GRU (RL-E05/E06; AdamW) & Four-skill feedback; 4 shared hidden groups\\
 \bottomrule
 \end{tabular}
+\caption{Seven neural systems: six TLI chains and a GRU feedback study.}
+\label{tab:systems}
 \end{table}
 
 \subsection{Training: realized actions and receiving states}
@@ -144,8 +136,7 @@ RL-E05 compares selective feedback for one mastered capability, balanced feedbac
 
 RL-E06 holds 60 episodes per update and the 3,200-update budget constant while varying feedback allocation (Table~\ref{tab:dose}). At exclusive-feedback update 800, two exact-state recovery forks receive 2,400 further updates: rebalanced $[15,15,15,15]$ or other-skills-only $[0,20,20,20]$. Feedback dose, support share, continuous target margins, correctness, and recovery are measured on the same learned policy. The experiment separates internal margin erosion from later binary capability loss and tests whether changing feedback allocation reverses both.
 \begin{table}[t]
-\caption{RL-E06 feedback episodes per update, by capability.}
-\label{tab:dose}\centering\scriptsize\setlength{\tabcolsep}{4.1pt}\renewcommand{\arraystretch}{1.08}
+\centering\small\setlength{\tabcolsep}{4.1pt}\renewcommand{\arraystretch}{1.08}
 \begin{tabular}{@{}lrrrr@{}}\toprule
 Feedback & $q_0$ & $q_1$ & $q_2$ & $q_3$\\\midrule
 Balanced & 15 & 15 & 15 & 15\\
@@ -153,7 +144,8 @@ Mild & 30 & 10 & 10 & 10\\
 High & 45 & 5 & 5 & 5\\
 Exclusive & 60 & 0 & 0 & 0\\\bottomrule
 \end{tabular}
-\end{table}
+\caption{RL-E06 feedback episodes per update, by capability.}
+\label{tab:dose}\end{table}
 
 \subsection{Prediction and indexed evidence}
 TL-P01 predicts the immediate target boundary after a \emph{formed} update, before the post-update response is read. For target $y$, competitor $c$, hidden output $h$, $b_c=w_y-w_c$ and $\Delta b_c=\Delta w_y-\Delta w_c$, the frozen \texttt{quadratic\_complete} algorithm uses pre-update directional derivatives $h'=Dh[\Delta\theta_t]$ and $h''=D^2h[\Delta\theta_t,\Delta\theta_t]$:
@@ -167,8 +159,7 @@ TL-P01 predicts the immediate target boundary after a \emph{formed} update, befo
 Correctness is predicted iff $\min_{c\ne y}\widehat g_{y,c}>0$; four target transitions follow from initial and predicted correctness. The prediction is sealed before post-update adjudication. Cross-system predictors adapt directional response computation to each native task.
 
 \begin{table}[t]
-\caption{Indexed experimental chain and tested relations.}
-\label{tab:index}\centering\scriptsize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.09}
+\centering\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.09}
 \begin{tabular}{@{}p{.26\columnwidth}p{.65\columnwidth}@{}}\toprule
 Index & Experiment / causal role\\\midrule
 TL-E01--E05 & Evolution, receiving-state forks, finite paths, response coordinates\\
@@ -180,7 +171,8 @@ INF-G01--G02 & ResNet, diffusion, MoE: frozen inference\\
 GNN / SNN & Additional within-system TLI tests\\
 RL-E05 / E06 & Selective feedback, interference, dose and recovery\\
 \bottomrule\end{tabular}
-\end{table}
+\caption{Indexed experimental chain and tested relations.}
+\label{tab:index}\end{table}
 Records retain concrete target, update and parameter-version identities, predeclared tests and all observed results, with independent checkers or native re-execution used to verify reported outcomes.
 
 \begin{figure*}[t]
@@ -192,7 +184,7 @@ Records retain concrete target, update and parameter-version identities, predecl
 
 \section{Results: Cross-System TLI and Reinforcement}
 \subsection{Native Transformer, ResNet, diffusion and MoE chains}
-The original nanoGPT program uses realized-update interventions, distributed-support measurements, identity-aligned target transitions, and frozen inference on exact historical trained versions. The frozen inference arm examines thirteen validated histories and 52 selected checkpoints. The post-update target-boundary predictor correctly adjudicates $4{,}652/5{,}088$ confirmation targets (91.43\% accuracy, 91.49\% four-transition macro recall), with errors retained .
+The original nanoGPT program uses realized-update interventions, distributed-support measurements, identity-aligned target transitions, and frozen inference on exact historical trained versions. The frozen inference arm examines thirteen validated histories and 52 selected checkpoints. The post-update target-boundary predictor correctly adjudicates $4{,}652/5{,}088$ confirmation targets (91.43\% accuracy, 91.49\% four-transition macro recall), with errors retained.
 
 On ResNet, all $42/42$ registered parameter receiving-state exchanges exceed the frozen response-difference threshold; 32.23\% of $1{,}536$ target-update response paths meet the nonlinear criterion, and 91.41\% of support records exceed the specified reallocation threshold. Its trained checkpoints then enter the frozen-inference protocol, passed by all three seeds, including learned-version rollback and exact restoration.
 
@@ -216,8 +208,6 @@ In RL-E06, 12 formal seeds exhibit strictly dose-ordered changes: from balanced 
 Direct endpoint prediction measures the accuracy of mathematical approximations alongside the causal intervention tests. Table~\ref{tab:prediction} compares recorded experiments. The primary nanoGPT \texttt{quadratic\_complete} method is adapted to the output and activation structure of each subsequent system.
 
 \begin{table}[t]
-\caption{Post-update target-boundary classification reports. Macro recall averages four observed transition categories; high accuracy alone is not sufficient. Predictor details and evaluation sets differ by system.}
-\label{tab:prediction}
 \centering
 \setlength{\tabcolsep}{4.2pt}
 \renewcommand{\arraystretch}{1.13}
@@ -234,6 +224,8 @@ Hard-spiking SNN$^{a}$ & 95.31 & 70.74\\
 \bottomrule
 \multicolumn{3}{@{}p{.94\columnwidth}@{}}{\footnotesize $^{a}$Independent prediction tests use registered GNN/SNN training histories.}\\
 \end{tabular}
+\caption{Post-update target-boundary classification reports. Macro recall averages four observed transition categories; high accuracy alone is not sufficient. Predictor details and evaluation sets differ by system.}
+\label{tab:prediction}
 \end{table}
 
 For the MoE's direct second-order endpoint predictor, each of the two capability-changing categories contains only nine cases; their high recalls must be interpreted with this limited denominator. On the SNN, the unchanging-boundary baseline already reaches 93.63\% accuracy, and the local formula reaches 95.31\% overall, but only 70.74\% four-way macro recall. Its hard threshold makes true local hidden-state derivatives uninformative about some finite threshold crossings. The lower macro recall isolates a prediction challenge at hard activation thresholds, even as the experimental functional chain remains observable.
@@ -279,10 +271,10 @@ Beyond historical comparisons, the TLIR relations have been used to derive condi
 \section{Conclusion}
 We investigate the unified Training--Learning--Inference--Reinforcement (TLIR) dynamics of neural systems. Six different architectures repeatedly exhibit the connected TLI relation among realized actions, receiving-state responses, persistent support reorganization, capability boundaries, and exact-version frozen inference. In a seventh, GRU-based system, RL-E05/E06 show that \emph{correct} feedback can selectively concentrate functional support, weaken other mastered capabilities, and reverse these changes when feedback is redistributed. The predictive boundary algorithm and the unified explanations of previously separate positive and negative findings follow from this experimentally grounded TLIR account.
 
-\section*{Code and Evidence}
-Executable protocols, native experiments, and verification records are retained in a structured research archive. Identifying repository details are omitted for double-blind review.
 
-\begin{thebibliography}{00}
+
+
+\begin{thebibliography}{99}
 \bibitem[\protect\citeauthoryear{Belkin et al.}{2019}]{belkin2019} M. Belkin, D. Hsu, S. Ma, and S. Mandal, ``Reconciling Modern Machine-Learning Practice and the Classical Bias--Variance Trade-Off,'' \emph{PNAS}, vol. 116, no. 32, pp. 15849--15854, 2019, doi: 10.1073/pnas.1903070116.
 \bibitem[\protect\citeauthoryear{Brown et al.}{2020}]{brown2020} T. B. Brown et al., ``Language Models Are Few-Shot Learners,'' in \emph{Advances in Neural Information Processing Systems}, 2020.
 \bibitem[\protect\citeauthoryear{Cohen et al.}{2021}]{cohen2021} J. M. Cohen et al., ``Gradient Descent on Neural Networks Typically Occurs at the Edge of Stability,'' in \emph{Proc. ICLR}, 2021.
