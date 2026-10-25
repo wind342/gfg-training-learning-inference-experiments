@@ -1,116 +1,36 @@
 {
-  "source_commit": "effbe99b0b8299bc1e457a309339dc85d722c1f8",
-  "input_pdf_sha256": "35dc9373d0faa81abc189aa08bc6e745d2159e37e1b8070e00e3b6b5cd013a07",
-  "input_pages": 8,
-  "recompiled_cvpr_extracted_text_exactly_matches_user_pdf": true,
-  "main_text_identical_ignoring_only_whitespace_and_allowed_layout_commands": true,
-  "figure_captions_table_cells_and_labels_exactly_identical": true,
-  "equation_source_exactly_identical": true,
+  "schema": "tlir-science-format-verification-v2",
+  "original_cvpr_source_commit": "effbe99b0b8299bc1e457a309339dc85d722c1f8",
+  "original_input_pdf_sha256": "35dc9373d0faa81abc189aa08bc6e745d2159e37e1b8070e00e3b6b5cd013a07",
+  "original_input_pages": 8,
+  "source_scope": "Journal presentation changes, figure callouts, reference order, confirmed funding and competing-interest declarations",
+  "abstract_unchanged": true,
+  "scientific_prose_verified_preserved_after_reversing_documented_format_edits": true,
+  "equation_source_unchanged": true,
   "equation_count": 10,
-  "bibliography_bytes_identical": true,
-  "reference_count": 26,
+  "figure_captions_other_than_figure2_unchanged": true,
+  "figure2_14_panel_legend_expanded": true,
+  "table_content_unchanged": true,
   "figure_files_sha256_identical": {
     "figure1_tlir_closed_loop.png": "cbe206f16ce950bd1015ac1e084e73decb2776f0f323498248fc3d9dbb6ed37c",
     "figure2_experimental_14panel.png": "594e695f69178bb353798139ae8db729db4b55dbf1d023c2b155dbd6057b8b96",
     "figure2_six_system_evidence.pdf": "1130d4a6a040365cb795802545c0d31ef4a2b54f56b9ae470da753696aa19d15"
   },
-  "compilation_without_overflow_missing_characters_or_undefined_references": true,
-  "science_pdf_sha256": "1fa3789ffbf6bf117928fae2d352ed27abaa157c52abd04a9fdbb5d7b301d0ec",
-  "science_pages": 19,
-  "page_details": [
-    {
-      "page": 1,
-      "characters": 1695
-    },
-    {
-      "page": 2,
-      "characters": 2623
-    },
-    {
-      "page": 3,
-      "characters": 2358
-    },
-    {
-      "page": 4,
-      "characters": 1789
-    },
-    {
-      "page": 5,
-      "characters": 1769
-    },
-    {
-      "page": 6,
-      "characters": 1749
-    },
-    {
-      "page": 7,
-      "characters": 1964
-    },
-    {
-      "page": 8,
-      "characters": 2190
-    },
-    {
-      "page": 9,
-      "characters": 2436
-    },
-    {
-      "page": 10,
-      "characters": 2346
-    },
-    {
-      "page": 11,
-      "characters": 1347
-    },
-    {
-      "page": 12,
-      "characters": 174
-    },
-    {
-      "page": 13,
-      "characters": 159
-    },
-    {
-      "page": 14,
-      "characters": 1019
-    },
-    {
-      "page": 15,
-      "characters": 549
-    },
-    {
-      "page": 16,
-      "characters": 471
-    },
-    {
-      "page": 17,
-      "characters": 156
-    },
-    {
-      "page": 18,
-      "characters": 1791
-    },
-    {
-      "page": 19,
-      "characters": 1808
-    }
-  ],
-  "format_only_exceptions_to_full_journal_style": [
-    "Original Abstract, Introduction, References heading words and section numbering retained.",
-    "All 26 reference entries and their numbering retained, including uncited Geiger entry.",
-    "Funding, contributions and competing-interest declarations not invented.",
-    "No shortening of manuscript text, tables, figures or references."
-  ],
-  "original_downloaded_files_unchanged": true,
-  "visual_review": "All 19 final rendered pages reviewed; title/author/email block, figure/table order and reference pages verified.",
-  "layout_order": "Main text and existing LLM statement -> figures -> tables -> references",
-  "authorized_content_changes": {
-    "author": "wangmian",
-    "affiliation": "Wuhan Polytechnic University, Wuhan, China",
-    "email": "wangmian945@gmail.com",
-    "authority": "User supplied name/email/university; university English name verified from official charter article 2.",
-    "source": "https://www.whpu.edu.cn/xxgk/xxzc.htm"
+  "original_reference_count": 26,
+  "current_cited_reference_count": 25,
+  "unreferenced_entry_excluded_from_current_bbl_and_preserved_in_frozen_original": "geiger2025",
+  "references_in_first_citation_order": true,
+  "author_information_preserved": true,
+  "funding_declaration": "This research received no funding.",
+  "competing_interest_declaration": "The author declares no competing interests.",
+  "original_source_files_unchanged": true,
+  "submission_pdf_status": "STALE_BUILD_PENDING",
+  "previous_pdf": {
+    "sha256": "1fa3789ffbf6bf117928fae2d352ed27abaa157c52abd04a9fdbb5d7b301d0ec",
+    "pages": 19,
+    "source": "prior Science formatted source before latest journal adjustments"
   },
-  "input_pdf_hash_rechecked_unchanged": true,
-  "email_and_repository_links_verified": true
+  "previous_pdf_visual_inspection": "All 19 final rendered pages reviewed; title/author/email block, figure/table order and reference pages verified.",
+  "current_source_pdf_compilation_verified": false,
+  "user_action_to_compile": "python build.py"
 }
