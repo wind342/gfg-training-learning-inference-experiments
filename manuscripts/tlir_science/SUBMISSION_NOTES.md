@@ -13,7 +13,7 @@
 | 补充材料 | 未提供拟投稿的补充材料文件或确定的目录，不凭空创建 Supplementary Materials 内容。 |
 | 文章类型与篇幅 | 仅按 Science LaTeX 投稿模板排版；未选择或替作者确认投稿类型，未删减文字、图表或文献以满足篇幅限制。 |
 
-模板中的以下建议与“其它一个字不许改”存在冲突，故优先保留原文：Abstract、Introduction、References 等原有标题；原章节编号；文献条目的全部文字和编号。原稿的 LLM Usage Statement 保持原文和其在正文之后的位置，不擅自改写成其他声明。作者栏是本次用户明确授权的唯一文字替换，替换了旧匿名作者文字。
+前期转换曾优先遵循“其它一个字不许改”的约束，因此保留原文：Abstract、Introduction、References 等原有标题；原章节编号；文献条目的全部文字和编号。原稿的 LLM Usage Statement 保持原文和其在正文之后的位置，不擅自改写成其他声明。作者栏是本次用户明确授权的唯一文字替换，替换了旧匿名作者文字。
 
 学校英文名依据：[武汉轻工大学官网《学校章程》第二条](https://www.whpu.edu.cn/xxgk/xxzc.htm)，明确为 Wuhan Polytechnic University；[学校国际交流与合作处英文简介](https://international.whpu.edu.cn/en/About_WHPU.htm)也使用该名称。
 
@@ -28,4 +28,11 @@
 - Figure 2 图注增加 14 个子图的简要对应解释；原图文件完全不改。
 - 参考文献按首次引用重新编号；未被引用的 Geiger 2025 条目从当前投稿文献表移出，但保留在 `original_source/main.bbl` 与 `main.bib` 中。
 - Funding 与 Competing interests 声明已按用户确认加入。
-- 旧版 `TLIR_Science_Final.pdf` 不是本轮更新后的编译结果；须运行 `python build.py` 生成新 PDF。
+- 旧版本 PDF 已在前轮从 GitHub Actions 编译更新；本次新增仪器介绍和浮动体优化后再次触发新 PDF 编译。
+
+## 新增仪器简介与页面修复
+
+- 新增 162 词 **Experimental Instruments and Evidence Control**，说明 GFG 和四套原创仪器，保留发展顺序。
+- 合并图表浮动排版，移除 5 处逐项 `\\clearpage`，只保留正文结束和文献开始的必要分页。
+- 取消 Table 1 中 Diffusion U-Net 优化器条目的显式换行；数据和其他表格文字不变。
+- 其余实验段落、原摘要、10 公式和原图保持原样；新增小节仅介绍已存在的实验方法。
