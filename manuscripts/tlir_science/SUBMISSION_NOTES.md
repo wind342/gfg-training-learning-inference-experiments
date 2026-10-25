@@ -28,11 +28,11 @@
 - Figure 2 图注增加 14 个子图的简要对应解释；原图文件完全不改。
 - 参考文献按首次引用重新编号；未被引用的 Geiger 2025 条目从当前投稿文献表移出，但保留在 `original_source/main.bbl` 与 `main.bib` 中。
 - Funding 与 Competing interests 声明已按用户确认加入。
-- 旧版本 PDF 已在前轮从 GitHub Actions 编译更新；本次新增仪器介绍和浮动体优化后再次触发新 PDF 编译。
+- 旧版本 PDF 已在前轮从 GitHub Actions 编译更新；本次新增仪器介绍和浮动体优化后已经重新编译 PDF，页面质量检查 PASS（18 页、无空白页）。
 
 ## 新增仪器简介与页面修复
 
 - 新增 162 词 **Experimental Instruments and Evidence Control**，说明 GFG 和四套原创仪器，保留发展顺序。
-- 合并图表浮动排版，移除 5 处逐项 `\\clearpage`，只保留正文结束和文献开始的必要分页。
+- 合并图表浮动排版，移除 5 处逐项 `\\clearpage`，正文结束保留一次 `\clearpage`，文献前使用 `\newpage`，避免最后小表独占一页。
 - 取消 Table 1 中 Diffusion U-Net 优化器条目的显式换行；数据和其他表格文字不变。
 - 其余实验段落、原摘要、10 公式和原图保持原样；新增小节仅介绍已存在的实验方法。
