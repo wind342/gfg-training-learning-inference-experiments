@@ -22,9 +22,8 @@ jobs:
           set -euo pipefail
           cd manuscripts/tlir_cvpr2027
           test -s main.pdf
-          pages=$(pdfinfo main.pdf | awk '/^Pages:/ {print $2}')
-          echo "Compiled pages: $pages"
-          test "$pages" -eq 8
+          grep -Eq 'Output written on main\.pdf \(8 pages,' main.log
+          echo "Verified: eight pages in LaTeX log"
           grep -q 'figure1_tlir_closed_loop.png' main.tex
           grep -q 'figure2_experimental_14panel.png' main.tex
           grep -q 'figure2_six_system_evidence.pdf' main.tex
