@@ -22,7 +22,7 @@
 - 在第二节最前面新增 **Experimental Instruments and Evidence Control**（162 英文词），简要介绍 GFG、真实更新因果分叉、有限幅度路径、CSRG-4C 和身份对齐目标边界账本。明确仪器随测量问题逐步发展，并未预先假设理论成立。
 - 清除图表之间的 5 处强制 `\\clearpage`；保留正文结束和文献表开始两处必要分页，让浮动体自行紧凑布局。
 - 撤销 Table 1 中 `Diffusion U-Net` 与 `(AdamW)` 之间的强制换行，保留原始表格数据。
-- 页面 QA 由 GitHub Actions 编译后生成 `PAGE_QA.json`，记录逐页文本量并检测空白页。
+- 页面 QA 已由 GitHub Actions 编译后生成 `PAGE_QA.json`，记录逐页文本量并检测空白页；结果 PASS，18 页。
 
 ## 文件与溯源
 
@@ -35,7 +35,7 @@
 - `SUBMISSION_NOTES.md`：投稿元数据与仍未处理的材料。
 - `formatting_changes.diff`：先前从 CVPR 到 Science 的转换差异快照（并非这次更新后的完整差异）。
 
-**当前 LaTeX 已变更；先前 `TLIR_Science_Final.pdf` 需要重新编译，新 PDF 完成后以仓库文件为准。**
+**最终 PDF 已重新编译并提交：`TLIR_Science_Final.pdf`（18 页，Git blob SHA `eb84926d1a0179df2f2af0f0d33589890a2afbdd`）。`PAGE_QA.json` 已通过逐页检查，无空白或近乎空白的页面；Table 3 不再单独占据空旷页面。**
 
 ## 复核与生成 PDF
 
