@@ -27,7 +27,14 @@ def canonical(value):
     return re.sub(r"\s+", " ", value).strip()
 
 
+INSTRUMENT_SUBSECTION = r"""\subsection{Experimental Instruments and Evidence Control}
+These experiments required instruments that were developed as the measurement questions arose, rather than assumed before the theory. Their common evidence substrate was the Generation-Fact Graph (GFG), which links recorded model and optimizer states, actual update occurrences, interventions, outputs, and their source identities. For Training, realized-update causal forks restored matched receiving states and compared full, skipped, parameter-only, optimizer-memory, and reciprocal transfers, separating an update from the state on which it acts. A finite-amplitude path instrument then applied the same recorded update at frozen amplitude values to measure nonlinear numerical responses and discrete transitions. For Learning, CSRG-4C used repeated baseline, single-component, and paired-component gates to measure necessity, backup, substitution, synergy, and failure slack in the functional support of individual targets. Finally, an identity-aligned boundary ledger joined each registered target to the exact pre-update state and realized update, then separated pre-response records from post-update adjudication of correctness. The instruments enabled the subsequent experimental tests; frozen protocols, negative controls, and independent validators constrained their interpretation.
+
+"""
+
 def strip_approved_changes(tex):
+    assert tex.count(INSTRUMENT_SUBSECTION) == 1, "Instrument section missing or altered"
+    tex = tex.replace(INSTRUMENT_SUBSECTION, "")
     tex = tex.replace("Figure~\\ref{fig:chain} illustrates the four linked dynamical roles.", "")
     tex = tex.replace(
         "Figure~\\ref{fig:systems} summarizes the six within-system TLI experiment chains.",
@@ -58,6 +65,9 @@ expected_competing = (
 )
 assert expected_funding in science and expected_competing in science
 assert "within the conference page limit" not in science
+assert science.count(r"\clearpage") == 2, "Unexpected forced pagination remains"
+assert r"Diffusion U-Net\newline(AdamW)" not in science
+assert r"Diffusion U-Net (AdamW)" in science
 assert r"\setcounter{secnumdepth}{0}" in science
 assert r"\captionsetup[figure]{name=Fig.}" in science
 assert r"\renewenvironment{abstract}{\par\noindent\textbf{Abstract}\par\bfseries}{\par\clearpage}" not in science
@@ -85,7 +95,10 @@ of = floats(original)
 sf = floats(science)
 assert of.keys() == sf.keys() and len(of) == 6
 for key in of:
-    assert of[key]["table"] == sf[key]["table"], ("Changed table cells", key)
+    if key == "tab:systems":
+        assert of[key]["table"].replace(r"\newline", " ") == sf[key]["table"], ("Unexpected systems table edit", key)
+    else:
+        assert of[key]["table"] == sf[key]["table"], ("Changed table cells", key)
     assert of[key]["image"] == sf[key]["image"], ("Changed figure source", key)
     if key == "fig:tlir-evidence":
         original_caption = of[key]["caption"]
@@ -153,4 +166,4 @@ for name, expected_sha in report["figure_files_sha256_identical"].items():
 print("PASS: original scientific prose, abstract, ten equations, tables and image bytes preserved.")
 print("PASS: approved figure callouts, fourteen-panel legend and declarations present.")
 print("PASS: 25 cited references ordered by appearance; unused Geiger entry remains in original backup.")
-print("NOTE: previous compiled TLIR_Science_Final.pdf is stale until build.py is rerun.")
+print("PASS: instrument subsection, compact float placement, and table line break verified.")
