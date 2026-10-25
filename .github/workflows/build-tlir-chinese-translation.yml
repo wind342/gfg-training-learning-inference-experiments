@@ -1,0 +1,49 @@
+name: Build Chinese TLIR translation
+on:
+  push:
+    branches: [tlir-cvpr2027-format]
+    paths:
+      - '.github/workflows/build-tlir-chinese-translation.yml'
+      - 'manuscripts/tlir_cvpr2027/translation_zh/TLIR_CVPR2027_Chinese_Translation.md'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  translation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Chinese PDF and DOCX toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq pandoc texlive-xetex texlive-lang-chinese texlive-latex-extra fonts-noto-cjk poppler-utils
+          fc-match "Noto Serif CJK SC"
+      - name: Build translated Word and PDF with original manuscript illustrations
+        working-directory: manuscripts/tlir_cvpr2027/translation_zh
+        run: |
+          set -euo pipefail
+          SOURCE="TLIR_CVPR2027_Chinese_Translation.md"
+          pandoc "$SOURCE" -f markdown -o "TLIR_CVPR2027_Chinese_Translation.docx" --standalone --resource-path=.
+          pandoc "$SOURCE" -f markdown -o "TLIR_CVPR2027_Chinese_Translation.pdf" --standalone --resource-path=. --pdf-engine=xelatex -V "CJKmainfont=Noto Serif CJK SC" -V "mainfont=DejaVu Serif" -V "monofont=DejaVu Sans Mono" -V "linkcolor=black" 
+          test -s TLIR_CVPR2027_Chinese_Translation.docx
+          test -s TLIR_CVPR2027_Chinese_Translation.pdf
+          pdfinfo TLIR_CVPR2027_Chinese_Translation.pdf | grep Pages
+          pdftotext -layout TLIR_CVPR2027_Chinese_Translation.pdf - | grep -Fq '这一反馈闭合过程'
+          pdftotext -layout TLIR_CVPR2027_Chinese_Translation.pdf - | grep -Fq '本文通过跨系统的系统性实验'
+          unzip -p TLIR_CVPR2027_Chinese_Translation.docx word/document.xml | grep -Fq '本文通过跨系统的系统性实验'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: TLIR-Chinese-Translation-Latest
+          path: |
+            manuscripts/tlir_cvpr2027/translation_zh/TLIR_CVPR2027_Chinese_Translation.pdf
+            manuscripts/tlir_cvpr2027/translation_zh/TLIR_CVPR2027_Chinese_Translation.docx
+          if-no-files-found: error
+      - name: Commit latest Chinese translation formats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manuscripts/tlir_cvpr2027/translation_zh/TLIR_CVPR2027_Chinese_Translation.pdf manuscripts/tlir_cvpr2027/translation_zh/TLIR_CVPR2027_Chinese_Translation.docx
+          if ! git diff --cached --quiet; then
+            git commit -m "Regenerate Chinese translation PDF and DOCX from revised TLIR manuscript"
+            git push
+          fi
