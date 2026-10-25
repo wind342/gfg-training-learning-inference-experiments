@@ -28,7 +28,7 @@
 - `SUBMISSION_NOTES.md`：投稿元数据与仍未处理的材料。
 - `formatting_changes.diff`：先前从 CVPR 到 Science 的转换差异快照（并非这次更新后的完整差异）。
 
-**重要：仓库此前已有的 `TLIR_Science_Final.pdf` 是本轮修改之前的编译件，现已过期。不要将旧 PDF 视为已修订稿。**
+**当前成品：`TLIR_Science_Final.pdf` 已由 GitHub Actions 从本轮修改后的 `main.tex` 重新编译并提交到此分支；Git blob SHA 为 `db8bbd73fa3dfa943d1b1c422ce0268aaa49ca4d`。**
 
 ## 复核与生成 PDF
 
