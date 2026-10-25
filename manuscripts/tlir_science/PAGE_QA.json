@@ -125,7 +125,7 @@
     },
     {
       "page": 16,
-      "non_whitespace_chars": 121,
+      "non_whitespace_chars": 1256,
       "has_table1": false,
       "has_table2": false,
       "has_table3": true,
@@ -133,19 +133,19 @@
     },
     {
       "page": 17,
-      "non_whitespace_chars": 1543,
+      "non_whitespace_chars": 1488,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "References 1. A. Jacot, F. Gabriel, and C. Hongler. Neural tangent kernel: Convergence and"
+      "text_start": "10. M. Belkin, D. Hsu, S. Ma, and S. Mandal. Reconciling modern machine-learning practice "
     },
     {
       "page": 18,
-      "non_whitespace_chars": 1395,
+      "non_whitespace_chars": 315,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "in Neural Information Processing Systems, pages 6467\u20136476, 2017. 14. M. Farajtabar, N. Azi"
+      "text_start": "23. A. M. Saxe et al. On the information bottleneck theory of deep learning.Proc. ICLR, 20"
     }
   ]
 }
