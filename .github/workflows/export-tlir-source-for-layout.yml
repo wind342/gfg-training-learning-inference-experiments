@@ -1,0 +1,26 @@
+name: Export TLIR LaTeX sources for layout test
+on:
+  push:
+    branches: [tlir-cvpr2027-format]
+    paths:
+      - '.github/workflows/export-tlir-source-for-layout.yml'
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: TLIR-CVPR27-Sources-For-Layout
+          path: |
+            manuscripts/tlir_cvpr2027/main.tex
+            manuscripts/tlir_cvpr2027/preamble.tex
+            manuscripts/tlir_cvpr2027/cvpr.sty
+            manuscripts/tlir_cvpr2027/main.bib
+            manuscripts/tlir_cvpr2027/main.bbl
+            manuscripts/tlir_cvpr2027/ieeenat_fullname.bst
+            manuscripts/tlir_cvpr2027/figures/figure1_functional_chain.pdf
+            manuscripts/tlir_cvpr2027/figures/figure2_six_system_evidence.pdf
+          if-no-files-found: error
