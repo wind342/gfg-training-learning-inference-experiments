@@ -1,0 +1,36 @@
+name: Compile updated TLIR Science PDF
+on:
+  push:
+    branches:
+      - codex/tlir-science-latex
+    paths:
+      - .github/workflows/tlir-science-pdf.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: manuscripts/tlir_science
+          latexmk_use_xelatex: false
+          args: -pdf -interaction=nonstopmode -halt-on-error
+      - name: Save updated PDF in source branch
+        run: |
+          set -euo pipefail
+          cd manuscripts/tlir_science
+          test -s main.pdf
+          cp main.pdf TLIR_Science_Final.pdf
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add TLIR_Science_Final.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Compile TLIR Science PDF from latest source [skip ci]"
+            git push origin HEAD:codex/tlir-science-latex
+          fi
