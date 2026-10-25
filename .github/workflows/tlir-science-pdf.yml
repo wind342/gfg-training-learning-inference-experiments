@@ -5,6 +5,10 @@ on:
       - codex/tlir-science-latex
     paths:
       - .github/workflows/tlir-science-pdf.yml
+      - manuscripts/tlir_science/main.tex
+      - manuscripts/tlir_science/references.bbl
+      - manuscripts/tlir_science/check_content.py
+      - manuscripts/tlir_science/figures/**
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,13 +19,57 @@ jobs:
       - uses: actions/checkout@v4
         with:
           persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check manuscript source preservation
+        run: python manuscripts/tlir_science/check_content.py
       - uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
           working_directory: manuscripts/tlir_science
           latexmk_use_xelatex: false
           args: -pdf -interaction=nonstopmode -halt-on-error
-      - name: Save updated PDF in source branch
+      - name: Inspect PDF pages and evidence text
+        run: |
+          python -m pip install --quiet pypdf
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+          from pypdf import PdfReader
+
+          root = Path('manuscripts/tlir_science')
+          reader = PdfReader(root / 'main.pdf')
+          extracts = [page.extract_text() or '' for page in reader.pages]
+          compact = [' '.join(txt.split()) for txt in extracts]
+          page_counts = [len(re.sub(r'\s+', '', txt)) for txt in extracts]
+          low_content = [idx + 1 for idx, count in enumerate(page_counts) if count < 30]
+          assert not low_content, f'Blank/near-blank pages: {low_content}'
+          full_text = ' '.join(compact)
+          assert 'Experimental Instruments and Evidence Control' in full_text, 'Instrument section not compiled'
+          assert 'This research received no funding' in full_text, 'Funding statement absent'
+          assert 'The author declares no competing interests' in full_text, 'Competing interests absent'
+          report = {
+              'status': 'PASS',
+              'pdf_pages': len(reader.pages),
+              'empty_or_near_empty_pages': low_content,
+              'pages': [
+                  {
+                      'page': idx + 1,
+                      'non_whitespace_chars': page_counts[idx],
+                      'has_table1': 'Table 1.' in compact[idx],
+                      'has_table2': 'Table 2.' in compact[idx],
+                      'has_table3': 'Table 3.' in compact[idx],
+                      'text_start': compact[idx][:90],
+                  }
+                  for idx in range(len(extracts))
+              ],
+          }
+          (root / 'PAGE_QA.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps(report, indent=2))
+          PY
+      - name: Save updated PDF and page QA in source branch
         run: |
           set -euo pipefail
           cd manuscripts/tlir_science
@@ -29,8 +77,8 @@ jobs:
           cp main.pdf TLIR_Science_Final.pdf
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add TLIR_Science_Final.pdf
+          git add TLIR_Science_Final.pdf PAGE_QA.json
           if ! git diff --cached --quiet; then
-            git commit -m "Compile TLIR Science PDF from latest source [skip ci]"
+            git commit -m "Recompile compact TLIR Science manuscript and verify pages [skip ci]"
             git push origin HEAD:codex/tlir-science-latex
           fi
