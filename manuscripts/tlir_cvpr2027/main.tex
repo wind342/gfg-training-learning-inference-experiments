@@ -51,8 +51,8 @@ These studies use different mathematical objects---kernels, Hessians, gradients,
 
 \begin{figure*}[t]
   \centering
-  \includegraphics[width=.98\textwidth]{figures/figure1_functional_chain.pdf}
-  \caption{Four peer roles of TLIR. The TLI core is tested in six neural systems; RL-E05/E06 test reinforcement through controlled feedback redistribution in a shared GRU policy.}
+  \includegraphics[width=.98\textwidth]{figures/figure1_tlir_closed_loop.png}
+  \caption{TLIR closed-loop dynamics. Training, Learning, and Inference establish the open-loop core; Reinforcement feeds behavioral consequences into subsequent training.}
   \label{fig:chain}
 \end{figure*}
 
@@ -115,8 +115,16 @@ while learned-version dependence is tested through
 \end{equation}
 Exact restoration verified that these interventions did not persistently alter the learned state. The experiments establish Inference as the query-conditioned recruitment and combination of support formed through Learning.
 
-Together, these nine experiments established the connected Training--Learning--Inference relations, forming the TLI open-loop dynamics.
+Together, these nine experiments established the connected Training--Learning--Inference relations, forming the TLI open-loop dynamics. Figure~\ref{fig:tlir-evidence} summarizes the experimental evidence across all four TLIR roles.
 
+\begin{figure*}[!p]
+  \centering
+  \includegraphics[width=1.00\textwidth,height=0.95\textheight,keepaspectratio]{figures/figure2_experimental_14panel.png}
+  \caption{Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feedback-driven capability change and recovery in the shared GRU.}
+  \label{fig:tlir-evidence}
+\end{figure*}
+
+\clearpage
 \section{Prediction and Cross-System Validation}
 \subsection{Theory-Derived Target-Boundary Prediction}
 The response-factor analysis in TL-E05 identified three primary conditioning factors: the current target-boundary state (F1), target-specific update geometry (F3), and parameter--optimizer receiving state (F5). These findings led directly to TL-P01, a predictor of immediate target-boundary outcomes following an actual formed update.
