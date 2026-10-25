@@ -1,0 +1,24 @@
+name: Export TLIR layout source
+on:
+  push:
+    branches: [tlir-cvpr2027-format]
+    paths:
+      - '.github/workflows/export-tlir-layout-sources.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pack complete CVPR LaTeX manuscript sources and original figures
+        run: |
+          mkdir -p /tmp/tlir-layout-source
+          cp -a manuscripts/tlir_cvpr2027/. /tmp/tlir-layout-source/
+          tar -czf /tmp/tlir-layout-source.tar.gz -C /tmp/tlir-layout-source .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: TLIR-CVPR-layout-source
+          path: /tmp/tlir-layout-source.tar.gz
+          if-no-files-found: error
