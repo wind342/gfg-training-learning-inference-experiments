@@ -3,7 +3,7 @@
 分支：`codex/tlir-science-latex`  
 目录：`manuscripts/tlir_science/`
 
-本工程保留原八页 CVPR 科学论文的摘要、理论、实验数值和 10 个公式。2026-10-26 根据用户明确要求，完成期刊投稿版的格式调整，并加入已确认的 Funding、Competing interests 声明。**未改写摘要、研究发现顺序、四个动力学定义或实验结论。**
+本工程保留原八页 CVPR 科学论文的摘要、原有理论论证、实验数值和 10 个公式，并在第二节开头增补 162 词的原创实验仪器简介。2026-10-26 根据用户明确要求，完成期刊投稿版的格式调整，并加入已确认的 Funding、Competing interests 声明。**未改写摘要、研究发现顺序、四个动力学定义、原有实验段落或实验结论。**
 
 ## 本轮格式修改
 
@@ -17,6 +17,13 @@
   - **Competing interests:** The author declares no competing interests.
 - 保留 LLM Usage Statement、证据仓库链接及原作者信息。
 
+## 本次仪器简介与排版修复
+
+- 在第二节最前面新增 **Experimental Instruments and Evidence Control**（162 英文词），简要介绍 GFG、真实更新因果分叉、有限幅度路径、CSRG-4C 和身份对齐目标边界账本。明确仪器随测量问题逐步发展，并未预先假设理论成立。
+- 清除图表之间的 5 处强制 `\\clearpage`；保留正文结束和文献表开始两处必要分页，让浮动体自行紧凑布局。
+- 撤销 Table 1 中 `Diffusion U-Net` 与 `(AdamW)` 之间的强制换行，保留原始表格数据。
+- 页面 QA 由 GitHub Actions 编译后生成 `PAGE_QA.json`，记录逐页文本量并检测空白页。
+
 ## 文件与溯源
 
 - `main.tex`：当前可编辑的期刊排版稿。
@@ -28,7 +35,7 @@
 - `SUBMISSION_NOTES.md`：投稿元数据与仍未处理的材料。
 - `formatting_changes.diff`：先前从 CVPR 到 Science 的转换差异快照（并非这次更新后的完整差异）。
 
-**当前成品：`TLIR_Science_Final.pdf` 已由 GitHub Actions 从本轮修改后的 `main.tex` 重新编译并提交到此分支；Git blob SHA 为 `db8bbd73fa3dfa943d1b1c422ce0268aaa49ca4d`。**
+**当前 LaTeX 已变更；先前 `TLIR_Science_Final.pdf` 需要重新编译，新 PDF 完成后以仓库文件为准。**
 
 ## 复核与生成 PDF
 
