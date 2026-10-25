@@ -19,7 +19,7 @@ def without_layout(tex):
         "",
         body,
     )
-    body = body.replace(r"\input{references.bbl}", "").replace(r"\clearpage", "")
+    body = body.replace(r"\input{references.bbl}", "").replace(r"\clearpage", "").replace(r"\newpage", "")
     return body
 
 
@@ -65,7 +65,8 @@ expected_competing = (
 )
 assert expected_funding in science and expected_competing in science
 assert "within the conference page limit" not in science
-assert science.count(r"\clearpage") == 2, "Unexpected forced pagination remains"
+assert science.count(r"\clearpage") == 1, "Unexpected inter-float forced pagination remains"
+assert science.count(r"\newpage") == 1, "Unexpected bibliography page break"
 assert r"Diffusion U-Net\newline(AdamW)" not in science
 assert r"Diffusion U-Net (AdamW)" in science
 assert r"\setcounter{secnumdepth}{0}" in science
