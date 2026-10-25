@@ -1,4 +1,4 @@
-% Science submission typography; all manuscript wording is preserved.
+% Science submission typography; scientific text retained apart from declared format edits.
 % Source: wind342/gfg-training-learning-inference-experiments
 % Commit: effbe99b0b8299bc1e457a309339dc85d722c1f8
 \documentclass[12pt,letterpaper]{article}
@@ -18,6 +18,8 @@
 \frenchspacing
 \setlength{\emergencystretch}{1em}
 \date{}
+\setcounter{secnumdepth}{0}
+\captionsetup[figure]{name=Fig.}
 \makeatletter
 \renewcommand{\maketitle}{\begin{center}\vspace*{-1em}{\Large\bfseries\@title\par}\vspace{1em}{\normalsize\@author\par}\end{center}\vspace{.5em}}
 \makeatother
@@ -25,7 +27,7 @@
 \renewcommand{\citenumfont}[1]{\textit{#1}}
 \renewcommand{\bibnumfmt}[1]{#1.}
 \setlength{\bibsep}{6pt}
-\renewenvironment{abstract}{\par\noindent\textbf{Abstract}\par\bfseries}{\par\clearpage}
+\renewenvironment{abstract}{\par\noindent\textbf{Abstract}\par\bfseries}{\par\vspace{0.6em}}
 \newcommand{\dd}{\Delta\theta_t}
 \newcommand{\id}{\mathrm{id}}
 \newcommand{\PASS}{\textsc{Pass}}
@@ -64,12 +66,14 @@ In \emph{reinforcement and feedback-driven training}, reinforcement learning fro
 
 These studies use different mathematical objects---kernels, Hessians, gradients, class features, mutual information, task scores, attention weights, and reward signals---yet six recurring categories can be identified: \emph{current state, realized update, functional response, internal organization, observable capability, and feedback}. \emph{The core TLI relations were established experimentally before this cross-field comparison; identifying these recurring variables here is a way to help readers understand the theory, not the process by which it was discovered.}
 
+Figure~\ref{fig:chain} illustrates the four linked dynamical roles.
+
 
 
 
 
 \section{Experimental Establishment of TLI Open-Loop Dynamics}
-The nine nanoGPT experiments that established TLI involved a substantially broader set of native interventions, controlled comparisons, and independent validations than can be presented within the conference page limit. This section summarizes their key experimental findings and the resulting theoretical relations. Complete protocols, execution records, negative results, and independent validators are provided in the accompanying repository.
+The nine nanoGPT experiments that established TLI involved a substantially broader set of native interventions, controlled comparisons, and independent validations than can be presented within the main text. This section summarizes their key experimental findings and the resulting theoretical relations. Complete protocols, execution records, negative results, and independent validators are provided in the accompanying repository.
 
 \subsection{Training: Realized Updates and Receiving States}
 At a registered training step, the parameter--optimizer state is $Z_t=(\theta_t,\omega_t)$, and the realized parameter update is $\Delta\theta_t=\theta_{t+1}-\theta_t$.
@@ -146,7 +150,7 @@ For target $y$, competitor $c$, and hidden representation $h$, let $b_c=w_y-w_c$
 The target is predicted correct if $\min_{c\ne y}\widehat g_{y,c}>0$. Combining predicted post-update correctness with the known pre-update state gives four capability transitions. Predictions use the already formed update and pre-response information, without reading actual post-update target outputs.
 
 \subsection{Cross-System Validation}
-We subsequently tested the established TLI relations and their predictive consequences in five additional neural systems. Table~\ref{tab:systems} summarizes the seven systems used in the study, including the separate GRU reinforcement experiment examined in Section~\ref{sec:reinforcement}.
+We subsequently tested the established TLI relations and their predictive consequences in five additional neural systems. Table~\ref{tab:systems} summarizes the seven systems used in the study, including the separate GRU reinforcement experiment examined in the reinforcement section.
 
 
 
@@ -168,7 +172,7 @@ The prediction algorithm was also evaluated across these systems, with task-spec
 
 
 
-The predictor achieved high four-way recall in five systems. In the hard-spiking SNN, discontinuous activation thresholds limited local derivative-based prediction, yielding 70.74\% macro recall despite 95.31\% accuracy. Together, the experiments demonstrate cross-system recurrence of the core TLI relations and identify architecture-dependent differences in their quantitative responses and predictive approximations.
+The predictor achieved high four-way recall in five systems. In the hard-spiking SNN, discontinuous activation thresholds limited local derivative-based prediction, yielding 70.74\% macro recall despite 95.31\% accuracy. Together, the experiments demonstrate cross-system recurrence of the core TLI relations and identify architecture-dependent differences in their quantitative responses and predictive approximations. Figure~\ref{fig:systems} summarizes the six within-system TLI experiment chains.
 
 \section{Reinforcement: From TLI Open-Loop to TLIR Closed-Loop Dynamics}
 \label{sec:reinforcement}
@@ -232,6 +236,11 @@ Through systematic experiments across neural systems, this work reveals dynamica
 \noindent\textbf{Evidence availability and machine audit.}
 The supporting evidence is organized in a structured, machine-readable format for rapid machine-assisted auditing, with section- and figure-panel-level links to frozen experimental protocols, result records, provenance and checksum manifests, and independent verification scripts: \url{https://github.com/wind342/tlir-research-evidence}.
 
+\section*{Funding and Competing Interests}
+\noindent\textbf{Funding.} This research received no funding.
+
+\noindent\textbf{Competing interests.} The author declares no competing interests.
+
 \section*{LLM Usage Statement}
 OpenAI ChatGPT was used for research ideation and discussion, assistance with experimental-protocol design and code development/review, interpretation of experimental records, and manuscript drafting, editing, and LaTeX formatting. The authors are responsible for the study design, all scientific claims, and the reported results.
 
@@ -247,7 +256,7 @@ OpenAI ChatGPT was used for research ideation and discussion, assistance with ex
 \begin{figure}[!htp]
   \centering
   \includegraphics[width=1.00\textwidth,height=0.78\textheight,keepaspectratio]{figures/figure2_experimental_14panel.png}
-  \caption{Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feedback-driven capability change and recovery in the shared GRU.}
+  \caption{Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feedback-driven capability change and recovery in the shared GRU. (a1) Paused evolution delays capability formation; (a2) identical updates elicit different receiver responses; (a3) finite-amplitude response types; (a4) boundary, update, and receiver factors. (b1) Joint component removal crosses a target boundary; (b2) a realized update reallocates support; (b3) pre- and post-update target margins. (c1) Query-conditioned component effects; (c2) non-additive pair effects; (c3) learned-version rollback and exact restoration. (d1) Feedback-dose support redistribution; (d2) margin erosion before accuracy loss; (d3) rollback trade-offs; (d4) feedback rebalancing and recovery.}
   \label{fig:tlir-evidence}
 \end{figure}
 \clearpage
