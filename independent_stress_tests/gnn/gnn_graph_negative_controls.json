@@ -1,0 +1,39 @@
+{
+  "kind": "EXPLORATORY_POSTHOC_NEGATIVE_CONTROLS_NOT_ORIGINAL_FORMAL_GATES",
+  "runs": [
+    {
+      "checkpoint_sha256": "83747f9ece4a8c1ebf5268d9870976c00864db1e553feea83b4615f5c1100140",
+      "original_accuracy": 1.0,
+      "relocated_marker_label_flips": 98,
+      "relocated_marker_recomputed_truth_accuracy": 1.0,
+      "relocated_marker_stale_truth_accuracy": 0.6171875,
+      "seed": 20261024,
+      "shuffled_adjacency_label_flips": 112,
+      "shuffled_adjacency_recomputed_truth_accuracy": 1.0,
+      "shuffled_adjacency_stale_truth_accuracy": 0.5625
+    },
+    {
+      "checkpoint_sha256": "fc4c1c236b21ca1462477b3d46690a6d056e38495b4c6f91611ad3c5bf0513b5",
+      "original_accuracy": 1.0,
+      "relocated_marker_label_flips": 98,
+      "relocated_marker_recomputed_truth_accuracy": 1.0,
+      "relocated_marker_stale_truth_accuracy": 0.6171875,
+      "seed": 20261025,
+      "shuffled_adjacency_label_flips": 125,
+      "shuffled_adjacency_recomputed_truth_accuracy": 1.0,
+      "shuffled_adjacency_stale_truth_accuracy": 0.51171875
+    },
+    {
+      "checkpoint_sha256": "01c4bb541297057a955c3aeb1950fa4d00ad2520ff868df14bf64ed65e1b3a60",
+      "original_accuracy": 1.0,
+      "relocated_marker_label_flips": 102,
+      "relocated_marker_recomputed_truth_accuracy": 1.0,
+      "relocated_marker_stale_truth_accuracy": 0.6015625,
+      "seed": 20261026,
+      "shuffled_adjacency_label_flips": 128,
+      "shuffled_adjacency_recomputed_truth_accuracy": 1.0,
+      "shuffled_adjacency_stale_truth_accuracy": 0.5
+    }
+  ],
+  "source_sha256": "28e9b9d8d611c05fa3b6a45b89f359181c6d83ef21d4fb8681f85e4d6ab5a722"
+}

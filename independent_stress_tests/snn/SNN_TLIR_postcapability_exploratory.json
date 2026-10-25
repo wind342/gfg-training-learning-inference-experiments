@@ -1,0 +1,83 @@
+{
+  "schema": "posthoc_stable_capability_support_analysis_v1",
+  "not_formal_gate": true,
+  "results": [
+    {
+      "seed": 71001,
+      "step": 400,
+      "unchanged_correct": 93,
+      "stable_correct_with_reallocation_above_0_01": 89,
+      "stable_correct_mean_shapley_change": 0.039597863179403794,
+      "stability_fraction": 0.96875,
+      "total_96": 96
+    },
+    {
+      "seed": 71001,
+      "step": 700,
+      "unchanged_correct": 93,
+      "stable_correct_with_reallocation_above_0_01": 8,
+      "stable_correct_mean_shapley_change": 0.0028236486564094574,
+      "stability_fraction": 0.96875,
+      "total_96": 96
+    },
+    {
+      "seed": 71002,
+      "step": 400,
+      "unchanged_correct": 93,
+      "stable_correct_with_reallocation_above_0_01": 15,
+      "stable_correct_mean_shapley_change": 0.012246330847361361,
+      "stability_fraction": 0.96875,
+      "total_96": 96
+    },
+    {
+      "seed": 71002,
+      "step": 700,
+      "unchanged_correct": 94,
+      "stable_correct_with_reallocation_above_0_01": 1,
+      "stable_correct_mean_shapley_change": 0.0006802822887849246,
+      "stability_fraction": 0.9791666865348816,
+      "total_96": 96
+    },
+    {
+      "seed": 71003,
+      "step": 400,
+      "unchanged_correct": 89,
+      "stable_correct_with_reallocation_above_0_01": 6,
+      "stable_correct_mean_shapley_change": 0.010489251262822555,
+      "stability_fraction": 0.9270833134651184,
+      "total_96": 96
+    },
+    {
+      "seed": 71003,
+      "step": 700,
+      "unchanged_correct": 90,
+      "stable_correct_with_reallocation_above_0_01": 11,
+      "stable_correct_mean_shapley_change": 0.01496831646793662,
+      "stability_fraction": 0.9375,
+      "total_96": 96
+    },
+    {
+      "seed": 71004,
+      "step": 400,
+      "unchanged_correct": 90,
+      "stable_correct_with_reallocation_above_0_01": 13,
+      "stable_correct_mean_shapley_change": 0.019929482323311352,
+      "stability_fraction": 0.9375,
+      "total_96": 96
+    },
+    {
+      "seed": 71004,
+      "step": 700,
+      "unchanged_correct": 91,
+      "stable_correct_with_reallocation_above_0_01": 5,
+      "stable_correct_mean_shapley_change": 0.0021765017101424817,
+      "stability_fraction": 0.9479166865348816,
+      "total_96": 96
+    }
+  ],
+  "totals": {
+    "stable_correct": 733,
+    "stable_correct_reallocated_gt_0_01": 148,
+    "samples": 768
+  }
+}

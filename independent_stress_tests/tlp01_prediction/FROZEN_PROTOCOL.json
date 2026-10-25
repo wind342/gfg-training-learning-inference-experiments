@@ -1,0 +1,72 @@
+{
+  "comparison": [
+    "unchanged",
+    "linear",
+    "joint_rotation",
+    "hidden_curvature",
+    "quadratic_complete"
+  ],
+  "date": "2026-10-24",
+  "evidence_type": "cross-system reuse of already developed algorithm; prior archival snapshots exist; seal is computational (not genuine prospective historical prediction); no GFG Core v3",
+  "future_result_gate": "Prediction transport considered supported only if full four-way classes present and accuracy >= 0.90 and four-way macro recall >= 0.90; report individual and pooled counts regardless. Gate is new evaluation criterion, NOT original paper formal verdict.",
+  "gnn_seeds": [
+    20261024,
+    20261025,
+    20261026
+  ],
+  "gnn_source_sha256": "28e9b9d8d611c05fa3b6a45b89f359181c6d83ef21d4fb8681f85e4d6ab5a722",
+  "gnn_steps": [
+    25,
+    100,
+    200,
+    350
+  ],
+  "gnn_targets": "all 256 heldout graphs per event, fixed independently of post outcomes",
+  "information_controls": {
+    "forbidden": [
+      "postupdate logits before seal",
+      "postupdate hidden states before seal",
+      "any alpha>0 network forward in prediction stage",
+      "post outcome-based filtering or model choice"
+    ],
+    "pretarget_values_allowed": [
+      "preupdate parameters",
+      "actual formed update",
+      "fixed heldout target and label",
+      "preupdate forward and true local directional derivatives"
+    ]
+  },
+  "method": {
+    "decision": "all competitor predicted gaps strictly > 0, one rule for all targets",
+    "formulas": [
+      "gap=b_c·h",
+      "first=db_c·h+b_c·h_prime",
+      "joint=db_c·h_prime",
+      "hidden_curvature=0.5*b_c·h_second",
+      "quadratic_complete=gap+first+joint+hidden_curvature"
+    ],
+    "gnn": "nested torch.func.jvp at preupdate for exact smooth hidden derivatives",
+    "head": "output-affine-head lifted to linear using constant-one hidden coordinate",
+    "snn": "exact local hard-threshold derivative zero off discontinuity (not surrogate backprop gradient)"
+  },
+  "original_git_coordinate": "wind342/gfg-training-learning-inference-experiments@36dab5ce347dbbdac157ef23205f556606d18294:experiments/gfg_nanogpt_joint_rotation_branch_v1/analysis.py",
+  "original_git_protocol": "wind342/gfg-training-learning-inference-experiments@36dab5ce347dbbdac157ef23205f556606d18294:experiments/gfg_nanogpt_actual_update_boundary_v1/PROTOCOL_FREEZE.md",
+  "original_tlp01_method": "quadratic_complete",
+  "predictor_source_sha256": "86c73158473c8be452919fdca12b59b5f483e3c9187f935c1b930dcdcea7ca78",
+  "schema": "tlp01-cross-system-frozen-protocol-v1",
+  "snn_seeds": [
+    71001,
+    71002,
+    71003,
+    71004
+  ],
+  "snn_source_sha256": "718931152b06d6b7aa0d8416fe094463fed714e9cf06efb0e90dbb270a748cf1",
+  "snn_steps": [
+    50,
+    200,
+    400,
+    700
+  ],
+  "snn_targets": "all 450 heldout digits per event, fixed independently of post outcomes",
+  "status": "FROZEN_BEFORE_PREDICTION_ENDPOINTS"
+}
