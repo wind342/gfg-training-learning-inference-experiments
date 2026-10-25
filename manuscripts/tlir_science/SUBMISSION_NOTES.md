@@ -5,11 +5,11 @@
 | 项目 | 当前处理 |
 |---|---|
 | 作者、单位、通讯邮箱 | 已按用户明确提供的信息写入 wangmian、Wuhan Polytechnic University、wangmian945@gmail.com；学校英文名已核对官网章程。未添加未提供的学院或系。 |
-| 资金来源、项目编号 | 未提供，不编造；不能自行声明“无资助”。 |
+| 资金来源、项目编号 | 用户已确认无资金资助，已在主稿中加入 Funding 声明。 |
 | 作者贡献 | 未提供各作者贡献，不代填。 |
-| 利益冲突 | 未提供真实声明，不自行声称“无利益冲突”。 |
+| 利益冲突 | 用户已确认无利益冲突，已在主稿中加入 Competing interests 声明。 |
 | 致谢 | 未提供，不新增。 |
-| 数据、代码与材料可用性 | 原稿已有证据仓库链接及说明，逐字保留。本任务没有重新审计研究数据或复现实验。 |
+| 数据、代码与材料可用性 | 原稿的证据仓库链接及说明保持不变；本轮仅调整格式与经用户确认的声明，未重新运行实验。 |
 | 补充材料 | 未提供拟投稿的补充材料文件或确定的目录，不凭空创建 Supplementary Materials 内容。 |
 | 文章类型与篇幅 | 仅按 Science LaTeX 投稿模板排版；未选择或替作者确认投稿类型，未删减文字、图表或文献以满足篇幅限制。 |
 
@@ -20,3 +20,12 @@
 本项目使用单栏、12 pt Times 字体、US Letter、1 英寸页边距及模板行距；顺序已修正为正文及原有声明、图、表、参考文献。它是完整可编译的、保持原文的投稿排版工程，不等于已经补齐全部投稿信息。
 
 依据：[Science and Science-Family Journals Template](https://www.overleaf.com/latex/templates/science-and-science-family-journals-template/ptkzkvxkznbh)，其中明确列出作者、单位、通讯作者以及资金、贡献、利益冲突和可用性声明位置。模板来源指向 [Science LaTeX 指南](https://www.science.org/content/page/preparing-manuscripts-using-latex)；该官方页面此前访问返回 403。
+
+## 本轮已处理的格式事项（2026-10-26）
+
+- 摘要及科学正文保留；删除“conference page limit”会议遗留表述。
+- 删除强制的摘要后分页；章、节标题不显示数字；添加 Figure 1 和 Figure 3 的正文引用。
+- Figure 2 图注增加 14 个子图的简要对应解释；原图文件完全不改。
+- 参考文献按首次引用重新编号；未被引用的 Geiger 2025 条目从当前投稿文献表移出，但保留在 `original_source/main.bbl` 与 `main.bib` 中。
+- Funding 与 Competing interests 声明已按用户确认加入。
+- 旧版 `TLIR_Science_Final.pdf` 不是本轮更新后的编译结果；须运行 `python build.py` 生成新 PDF。
