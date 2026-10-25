@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "pdf_pages": 18,
+  "empty_or_near_empty_pages": [],
+  "pages": [
+    {
+      "page": 1,
+      "non_whitespace_chars": 1487,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Unified Training\u2013Learning\u2013Inference\u2013Reinforcement Dynamics Across Neural Systems wangmian "
+    },
+    {
+      "page": 2,
+      "non_whitespace_chars": 2278,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Introduction Training, generalization, capability formation, and inference are central pro"
+    },
+    {
+      "page": 3,
+      "non_whitespace_chars": 2109,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Gradient Episodic Memory (GEM) constrains new-task gradients using their inner products wi"
+    },
+    {
+      "page": 4,
+      "non_whitespace_chars": 1912,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Experimental Establishment of TLI Open-Loop Dynamics The nine nanoGPT experiments that est"
+    },
+    {
+      "page": 5,
+      "non_whitespace_chars": 1585,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "parameter\u2013optimizer evolution delays capability formation, while the clipping-threshold co"
+    },
+    {
+      "page": 6,
+      "non_whitespace_chars": 1313,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Inference: Frozen Recruitment of Learned Support INF-E01 examined 13 nanoGPT training hist"
+    },
+    {
+      "page": 7,
+      "non_whitespace_chars": 1862,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "For target y, competitor c, and hidden representation h, let bc =w y \u2212w c and \u2206bc =\u2206w y \u2212\u2206"
+    },
+    {
+      "page": 8,
+      "non_whitespace_chars": 1668,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "The prediction algorithm was also evaluated across these systems, with task-specific adapt"
+    },
+    {
+      "page": 9,
+      "non_whitespace_chars": 1792,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "of 60 episodes per update over 3,200 updates (Table 3). RL-E05 observed relative support c"
+    },
+    {
+      "page": 10,
+      "non_whitespace_chars": 2375,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Kernel dynamics versus feature learning.In the corresponding infinite-width lazy regime, N"
+    },
+    {
+      "page": 11,
+      "non_whitespace_chars": 1982,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "racy in suitable data mixtures (19); recursively replacing original data with model-genera"
+    },
+    {
+      "page": 12,
+      "non_whitespace_chars": 431,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Funding and Competing Interests Funding.This research received no funding. Competing inter"
+    },
+    {
+      "page": 13,
+      "non_whitespace_chars": 624,
+      "has_table1": true,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Fig. 1.TLIR closed-loop dynamics. Training, Learning, and Inference establish the open-loo"
+    },
+    {
+      "page": 14,
+      "non_whitespace_chars": 672,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Fig. 2.Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feed"
+    },
+    {
+      "page": 15,
+      "non_whitespace_chars": 4426,
+      "has_table1": false,
+      "has_table2": true,
+      "has_table3": false,
+      "text_start": "COMPLETE TRAINING\u2013LEARNING\u2013INFERENCE TESTS BY SYSTEM Each row links actual training update"
+    },
+    {
+      "page": 16,
+      "non_whitespace_chars": 121,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": true,
+      "text_start": "Table 3.RL-E06 feedback episodes per update, by capability. Feedbackq 0 q1 q2 q3 Balanced "
+    },
+    {
+      "page": 17,
+      "non_whitespace_chars": 1543,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "References 1. A. Jacot, F. Gabriel, and C. Hongler. Neural tangent kernel: Convergence and"
+    },
+    {
+      "page": 18,
+      "non_whitespace_chars": 1395,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "in Neural Information Processing Systems, pages 6467\u20136476, 2017. 14. M. Farajtabar, N. Azi"
+    }
+  ]
+}
