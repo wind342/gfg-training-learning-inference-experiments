@@ -29,7 +29,18 @@ s = s.replace("The core TLIR relations were established experimentally before th
 s = s.replace("within the main text", "within the conference page limit")
 s = s.replace("examined in the reinforcement section",
               r"examined in Section~\ref{sec:reinforcement}")
-assert normalize(o) == normalize(s), "Unexpected change to scientific text"
+historical_start = r"\section{Unified Explanations of Positive and Negative Findings}"
+historical_end = r"\section{Conclusion}"
+def without_historical_section(text):
+    assert text.count(historical_start) == 1
+    assert text.count(historical_end) == 1
+    return text.split(historical_start, 1)[0] + historical_end + text.split(historical_end, 1)[1]
+
+# The author authorized the historical interpretation/extrapolation Section only.
+# Validate every other scientific paragraph verbatim against the frozen CVPR source.
+assert normalize(without_historical_section(o)) == normalize(without_historical_section(s)), (
+    "Unexpected modification outside the authorized unification section")
+
 
 equations = lambda x: re.findall(r"\\begin\{equation\}.*?\\end\{equation\}", x, re.S)
 assert len(equations(original)) == 10
@@ -114,7 +125,14 @@ used = list(dict.fromkeys(
                                   main_without_floats)
     for k in m.group(1).split(",")
 ))
-assert len(refs) == 25 and refs == used
+assert len(refs) == 27 and refs == used, ("Citation mismatch", refs, used)
+new_bib = (ROOT / "additional_references.bib").read_text(encoding="utf-8")
+assert "10.18653/v1/N19-1357" in new_bib
+assert "10.18653/v1/D19-1002" in new_bib
+assert "jain2019" in used and "wiegreffe2019" in used
+assert "We invite reviewers and independent researchers" in science
+assert "derivation-before-search" in science
+assert "Its stronger preregistered temporal-precedence criterion was not met." in science
 assert not re.search(r"\bet\s*al\.", bib, re.I)
 assert r"\emph{" in bib and r"\textbf{" in bib
 assert "geiger2025" not in bib
@@ -134,5 +152,5 @@ assert method_section.strip().startswith("These experiments required instruments
 assert science.count(r"\clearpage") == 1 and science.count(r"\newpage") == 1
 
 print("PASS: scientific paragraphs, all ten equations, and six original figures/tables.")
-print(f"PASS: Science abstract {len(abstract.split())} words; 25 formatted references.")
+print(f"PASS: Science abstract {len(abstract.split())} words; 27 formatted references.")
 print("PASS: funding, authorship, competing interest, data/DOI and AI disclosures.")
