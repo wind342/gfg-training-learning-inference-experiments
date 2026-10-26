@@ -2,7 +2,7 @@
 
 **Target journal:** Science (AAAS)
 **Article type for consideration:** Research Article, extended online format (3 figures + 3 tables = 6 display items; subject to editor approval).
-**Title:** Unified Training–Learning–Inference–Reinforcement Dynamics Across Neural Systems
+**Title:** Unified dynamics of training, learning, inference, and reinforcement in neural networks
 **One-Sentence Summary:** nanoGPT experiments established TLI dynamics, validated in five other systems; a seventh GRU revealed reinforcement closure.
 **Abstract length:** 125 words; one paragraph in main.tex, per Science Research Article length guidance.
 **Main text:** Original experimental narrative preserved. No new experiments have been created for submission.
