@@ -26,7 +26,7 @@
 
 ## 投稿前最后整理（2026-10-26）
 
-- 将摘要由原来的约 187 词整理为 **116 词、单段**的 Science Research Article 投稿版。全文论证、九项实验顺序、定量结果和理论定义不改；较长原摘要仍在 `original_source/main.tex`。
+- 将摘要由原来的约 187 词整理为 **121 词、单段**的 Science Research Article 投稿版。全文论证、九项实验顺序、定量结果和理论定义不改；较长原摘要仍在 `original_source/main.tex`。
 - 去掉正式稿中 Introduction 标题，符合 Science LaTeX 模板第一段不加标题的设置。
 - 按 Science 模板重新排列：**正文 → 三图三表 → References and Notes → Acknowledgments**。声明位于 Acknowledgments 下，含 Funding、Author contributions、Competing interests、Data/code/materials availability、AI 使用。
 - 25 条参考文献保留首次引用编号，扩展原来省略为 `et al.` 的作者并统一为 Science 风格；原始 `main.bib` 保持冻结。
