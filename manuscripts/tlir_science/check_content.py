@@ -38,7 +38,7 @@ assert equations(original) == equations(science)
 abstract = science.split(r"\begin{abstract}", 1)[1].split(
     r"\end{abstract}", 1)[0].strip()
 assert len(abstract.split()) <= 125 and "\n\n" not in abstract
-assert "learning persistently reorganizes distributed functional support; target-specific readout-boundary crossings determine capability transitions" in abstract
+assert "learning persistently reorganizes distributed functional support, with target-specific readout-boundary crossings determining capability transitions" in abstract
 assert "learning reorganizes distributed functional support across capability boundaries" not in abstract
 assert "The core TLIR relations were established experimentally before this cross-field comparison" in science
 assert abstract.startswith("Although training, learning, inference, and reinforcement have been extensively studied, their distinct dynamical roles and connections have lacked a unified experimental characterization.")
