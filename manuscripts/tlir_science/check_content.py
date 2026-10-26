@@ -122,6 +122,9 @@ for name, expected_sha in report["figure_files_sha256_identical"].items():
 assert "developed the atomic generation-fact model, the Generation-Fact Graph" in science
 assert "invented and implemented the four experimental instruments" in science
 assert "assistance with experimental-protocol design" not in science
+method_section = science.split(r"\subsection{Experimental Instruments and Evidence Control}",1)[1].split(r"\subsection{Training: Realized Updates and Receiving States}",1)[0]
+assert "AI" not in method_section and "Codex" not in method_section and "ChatGPT" not in method_section
+assert method_section.strip().startswith("These experiments required instruments that were developed as the measurement questions arose")
 assert science.count(r"\clearpage") == 1 and science.count(r"\newpage") == 1
 
 print("PASS: scientific paragraphs, all ten equations, and six original figures/tables.")
