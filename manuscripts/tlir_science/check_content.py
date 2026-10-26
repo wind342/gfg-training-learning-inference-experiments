@@ -24,6 +24,7 @@ s, count = re.subn(
     "", s, flags=re.S)
 assert count == 1
 s = s.replace(r"Figure~\ref{fig:chain} illustrates the four linked dynamical roles.", "")
+s = s.replace(r"Table~\ref{tab:equation_guide} summarizes the purposes and principal symbols of the numbered equations.", "")
 s = s.replace(r"Figure~\ref{fig:systems} summarizes the six within-system TLI experiment chains.", "")
 s = s.replace("The core TLIR relations were established experimentally before this cross-field comparison", "The core TLI relations were established experimentally before this cross-field comparison")
 s = s.replace("within the main text", "within the conference page limit")
@@ -149,7 +150,15 @@ assert "assistance with experimental-protocol design" not in science
 method_section = science.split(r"\subsection{Experimental Instruments and Evidence Control}",1)[1].split(r"\subsection{Training: Realized Updates and Receiving States}",1)[0]
 assert "AI" not in method_section and "Codex" not in method_section and "ChatGPT" not in method_section
 assert method_section.strip().startswith("These experiments required instruments that were developed as the measurement questions arose")
-assert science.count(r"\clearpage") == 0 and science.count(r"\newpage") == 1
+assert science.count(r"\\clearpage") == 1 and science.count(r"\\newpage") == 1
+# Initial-submission format: all four tables occur after references and declarations.
+refs_end = science.index(r"\\input{references.bbl}")
+ack_start = science.index(r"\\section*{Acknowledgments}")
+guide_pos = science.index(r"\\captionof{table}{Scientific purpose and principal notation")
+table_starts = [m.start() for m in re.finditer(r"\\begin\\{table\\}", science)]
+assert refs_end < ack_start < guide_pos
+assert len(table_starts) == 3 and all(i > guide_pos for i in table_starts)
+assert science.index(r"Table~\\ref{tab:equation_guide} summarizes") < science.index(r"Table~\\ref{tab:systems}")
 
 print("PASS: scientific paragraphs, all ten equations, and six original figures/tables.")
 print(f"PASS: Science abstract {len(abstract.split())} words; 27 formatted references.")
