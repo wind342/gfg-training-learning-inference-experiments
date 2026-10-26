@@ -46,7 +46,7 @@
 - `SUBMISSION_METADATA.md`：一句话总结、稿件类型建议及证据 DOI。
 - `formatting_changes.diff`：先前从 CVPR 到 Science 的转换差异快照（并非这次更新后的完整差异）。
 
-**说明：仓库中的 PDF 需要按本轮摘要和参考文献修改重新编译；上一个 18 页 PDF 是修改前的版本。**
+**当前最终投稿版 PDF：`TLIR_Science_Final.pdf` 已通过 GitHub Actions 编译，18 页；`PAGE_QA.json` 已通过逐页检查，无空白或近乎空白的页面，最后一次编译未报告 Overfull 或 Float too large 问题。PDF Git blob SHA：70d5ad5d82b7cecf18574080b1201394f27080c5。**
 
 ## 复核与生成 PDF
 
