@@ -11,7 +11,7 @@
   "pages": [
     {
       "page": 1,
-      "non_whitespace_chars": 822
+      "non_whitespace_chars": 814
     },
     {
       "page": 2,
@@ -35,31 +35,31 @@
     },
     {
       "page": 7,
-      "non_whitespace_chars": 985
+      "non_whitespace_chars": 1042
     },
     {
       "page": 8,
-      "non_whitespace_chars": 1203
+      "non_whitespace_chars": 1181
     },
     {
       "page": 9,
-      "non_whitespace_chars": 1137
+      "non_whitespace_chars": 1140
     },
     {
       "page": 10,
-      "non_whitespace_chars": 939
+      "non_whitespace_chars": 969
     },
     {
       "page": 11,
-      "non_whitespace_chars": 772
+      "non_whitespace_chars": 737
     },
     {
       "page": 12,
-      "non_whitespace_chars": 947
+      "non_whitespace_chars": 872
     },
     {
       "page": 13,
-      "non_whitespace_chars": 48
+      "non_whitespace_chars": 167
     },
     {
       "page": 14,
