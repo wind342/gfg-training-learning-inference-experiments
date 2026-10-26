@@ -5,7 +5,7 @@
   "pages": [
     {
       "page": 1,
-      "non_whitespace_chars": 1759,
+      "non_whitespace_chars": 1753,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -21,7 +21,7 @@
     },
     {
       "page": 3,
-      "non_whitespace_chars": 1886,
+      "non_whitespace_chars": 2149,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
