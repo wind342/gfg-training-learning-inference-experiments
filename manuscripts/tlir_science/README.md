@@ -20,7 +20,7 @@
 ## 本次仪器简介与排版修复
 
 - 在第二节最前面新增 **Experimental Instruments and Evidence Control**（163 英文词），简要介绍 GFG、真实更新因果分叉、有限幅度路径、CSRG-4C 和身份对齐目标边界账本。仪器正文只介绍实验方法及测量功能，不出现 AI 创造、实验设计或执行归属；相关事实**仅在文末贡献与 AI 使用声明中披露**。
-- 清除图表之间的 5 处强制 `\\clearpage`；正文末保留 `\\clearpage`、参考文献前使用 `\\newpage`，避免小表独占页面。
+- 清除图表之间的 5 处强制 `\\clearpage`；为避免增加理论段落后结论尾句单独占据空白页，进一步取消图组前一处多余强制分页；参考文献前保留 `\\newpage`，不改变实验内容。
 - 撤销 Table 1 中 `Diffusion U-Net` 与 `(AdamW)` 之间的强制换行，保留原始表格数据。
 - 之前版本的 `PAGE_QA.json` 检查为 PASS（18 页）；当前投稿版摘要与文献修改后会重新生成页面报告。
 
@@ -69,7 +69,7 @@
 - `SUBMISSION_METADATA.md`：一句话总结、稿件类型建议及证据 DOI。
 - `formatting_changes.diff`：先前从 CVPR 到 Science 的转换差异快照（并非这次更新后的完整差异）。
 
-**最终投稿版 PDF 已重新编译通过：`TLIR_Science_Final.pdf`，19 页；Git blob SHA：`973985b3b790a980dc4dfae54dd20888e05e79bf`。逐页检查为 PASS，无空白或近乎空白页。稿件的数据/代码声明现在仅引用按科学主张组织、支持机器快速审计的 GitHub 证据仓库。**
+**最终投稿版 PDF 已重新编译通过：`TLIR_Science_Final.pdf`，19 页；Git blob SHA：`09f96806929b00d90badd14dbf17380587e957fd`。逐页检查为 PASS，无空白或近乎空白页。稿件的数据/代码声明现在仅引用按科学主张组织、支持机器快速审计的 GitHub 证据仓库。**
 
 ## 复核与生成 PDF
 
