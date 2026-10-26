@@ -69,7 +69,7 @@ for marker in (
     "CSRG-4C", "OpenAI Codex", "ChatGPT",
     "AI", "发明并实现", "设计、实现、启动、监控和执行",
     "机器辅助审计", "论文—证据映射", "公开证据矩阵",
-    "时间先后关系判据", "未能满足", "21 组正反",
+    "时间先后关系判据", "未能满足", "正反结果的统一解释",
     "九项 nanoGPT 实验", "五种神经系统",
     "第七种系统", "目标组",
 ):
@@ -87,7 +87,7 @@ assert "学习表现为分布式功能支撑的持久重组；目标跨越其特
 assert "TLIR 的核心关系是在开展上述跨领域比较之前，通过实验建立的" in parts[0]
 assert "学习使分布式功能支撑持续重组，并涉及能力边界的跨越" not in parts[0]
 assert "欢迎审稿人和其他独立研究者" in translation
-assert "理论先行的有条件外推" in translation
+assert "理论先行外推与独立研究对照" in translation
 assert "10.18653/v1/N19-1357" in (BASE / "additional_references.bib").read_text()
 assert "10.18653/v1/D19-1002" in (BASE / "additional_references.bib").read_text()
 assert "中文对照译稿" in master
