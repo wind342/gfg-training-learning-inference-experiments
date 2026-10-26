@@ -25,6 +25,7 @@ s, count = re.subn(
 assert count == 1
 s = s.replace(r"Figure~\ref{fig:chain} illustrates the four linked dynamical roles.", "")
 s = s.replace(r"Figure~\ref{fig:systems} summarizes the six within-system TLI experiment chains.", "")
+s = s.replace("The core TLIR relations were established experimentally before this cross-field comparison", "The core TLI relations were established experimentally before this cross-field comparison")
 s = s.replace("within the main text", "within the conference page limit")
 s = s.replace("examined in the reinforcement section",
               r"examined in Section~\ref{sec:reinforcement}")
@@ -37,6 +38,9 @@ assert equations(original) == equations(science)
 abstract = science.split(r"\begin{abstract}", 1)[1].split(
     r"\end{abstract}", 1)[0].strip()
 assert len(abstract.split()) <= 125 and "\n\n" not in abstract
+assert "learning persistently reorganizes distributed functional support; target-specific readout-boundary crossings determine capability transitions" in abstract
+assert "learning reorganizes distributed functional support across capability boundaries" not in abstract
+assert "The core TLIR relations were established experimentally before this cross-field comparison" in science
 assert abstract.startswith("Although training, learning, inference, and reinforcement have been extensively studied, their distinct dynamical roles and connections have lacked a unified experimental characterization.")
 for phrase in ["Nine nanoGPT experiments", "91.43", "91.49", "5,088",
                "five additional", "seventh system", "70.31", "99.48"]:
