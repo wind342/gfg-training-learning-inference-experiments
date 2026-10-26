@@ -30,7 +30,7 @@
 - 去掉正式稿中 Introduction 标题，符合 Science LaTeX 模板第一段不加标题的设置。
 - 按 Science 模板重新排列：**正文 → 三图三表 → References and Notes → Acknowledgments**。声明位于 Acknowledgments 下，含 Funding、Author contributions、Competing interests、Data/code/materials availability、AI 使用。
 - 25 条参考文献保留首次引用编号，扩展原来省略为 `et al.` 的作者并统一为 Science 风格；原始 `main.bib` 保持冻结。
-- 在数据可用性声明中正式引用已有证据仓库与 Zenodo DOI，不创建重复的 Supplementary Materials。
+- 在数据可用性声明中仅正式引用 GitHub 证据仓库，重点说明按科学主张组织、可机器快速审计；不将不完整覆盖 MoE/GNN 等的 Zenodo DOI 作为全文证据入口，不创建重复的 Supplementary Materials。
 - `SUBMISSION_METADATA.md` 收录一句话总结和投稿类型建议。**Cover Letter 尚未撰写**；单作者贡献文字需要作者本人最终确认。
 - 当前有 3 幅图、3 张表；建议向 Science 投稿系统申请考虑 **extended online Research Article**，不能提前声称获得编辑批准。
 
@@ -63,4 +63,4 @@ python build.py
 
 ## 仍待正式投稿前确认
 
-未另外制作补充材料文件，实验材料以已公开证据仓库及 Zenodo 归档为准。单作者贡献文本为拟稿，仍需作者核定；Cover Letter 已按要求延后。
+未另外制作补充材料文件，论文的证据入口仅为公开 GitHub 证据仓库。单作者贡献文本为拟稿，仍需作者核定；Cover Letter 已按要求延后。
