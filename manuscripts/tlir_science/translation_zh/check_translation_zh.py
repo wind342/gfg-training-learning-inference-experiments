@@ -80,6 +80,9 @@ assert "10.5281/zenodo" not in master
 assert "https://github.com/wind342/tlir-research-evidence/" in translation
 assert r"\input{../references.bbl}" in translation
 assert len(re.findall(r"\\bibitem\{", (BASE / "references.bbl").read_text())) == 25
+method_zh = parts[0].split(r"\subsection{实验仪器与证据控制}",1)[1].split(r"\subsection{训练：真实更新与接收状态}",1)[0]
+assert "AI" not in method_zh and "Codex" not in method_zh and "ChatGPT" not in method_zh
+assert "发明" not in method_zh and "作者的科学指导" not in method_zh
 assert "中文对照译稿" in master
 assert r"\documentclass[UTF8,fontset=fandol" in master
 for i in (1, 2, 3):
