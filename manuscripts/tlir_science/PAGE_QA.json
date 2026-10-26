@@ -5,7 +5,7 @@
   "pages": [
     {
       "page": 1,
-      "non_whitespace_chars": 1487,
+      "non_whitespace_chars": 1785,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -13,94 +13,86 @@
     },
     {
       "page": 2,
-      "non_whitespace_chars": 2278,
+      "non_whitespace_chars": 2438,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Introduction Training, generalization, capability formation, and inference are central pro"
+      "text_start": "Inrepresentation learning and generalization, Spectral Bias examines frequency-dependent l"
     },
     {
       "page": 3,
-      "non_whitespace_chars": 2109,
+      "non_whitespace_chars": 2008,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Gradient Episodic Memory (GEM) constrains new-task gradients using their inner products wi"
+      "text_start": "putations;internal computationvaries with attention and activations; andfunctional perform"
     },
     {
       "page": 4,
-      "non_whitespace_chars": 1912,
+      "non_whitespace_chars": 1651,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Experimental Establishment of TLI Open-Loop Dynamics The nine nanoGPT experiments that est"
+      "text_start": "matched receiving states and compared full, skipped, parameter-only, optimizer-memory, and"
     },
     {
       "page": 5,
-      "non_whitespace_chars": 1585,
+      "non_whitespace_chars": 1535,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "parameter\u2013optimizer evolution delays capability formation, while the clipping-threshold co"
+      "text_start": "The experiments identified near-linear, saturating, accelerating, turnback, and sign-rever"
     },
     {
       "page": 6,
-      "non_whitespace_chars": 1313,
+      "non_whitespace_chars": 1538,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Inference: Frozen Recruitment of Learned Support INF-E01 examined 13 nanoGPT training hist"
+      "text_start": "while learned-version dependence is tested through D j,q =f(q;\u03b8 \u2217)\u2212f(q;\u03b8 (j\u2190pre) ).(7) Exa"
     },
     {
       "page": 7,
-      "non_whitespace_chars": 1862,
+      "non_whitespace_chars": 1756,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "For target y, competitor c, and hidden representation h, let bc =w y \u2212w c and \u2206bc =\u2206w y \u2212\u2206"
+      "text_start": "Each of the five additional TLI systems was examined through realized-update interventions"
     },
     {
       "page": 8,
-      "non_whitespace_chars": 1668,
+      "non_whitespace_chars": 1738,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "The prediction algorithm was also evaluated across these systems, with task-specific adapt"
+      "text_start": "Reinforcement: From TLI Open-Loop to TLIR Closed-Loop Dynamics Theory-Derived Prediction o"
     },
     {
       "page": 9,
-      "non_whitespace_chars": 1792,
+      "non_whitespace_chars": 2027,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "of 60 episodes per update over 3,200 updates (Table 3). RL-E05 observed relative support c"
+      "text_start": "Rebalanced feedback restored other-skill accuracy from 70.31% to 99.48% while preserving t"
     },
     {
       "page": 10,
-      "non_whitespace_chars": 2375,
+      "non_whitespace_chars": 2239,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Kernel dynamics versus feature learning.In the corresponding infinite-width lazy regime, N"
+      "text_start": "Compression as a useful mechanism, not a universal requirement.General compression-stage c"
     },
     {
       "page": 11,
-      "non_whitespace_chars": 1982,
+      "non_whitespace_chars": 869,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "racy in suitable data mixtures (19); recursively replacing original data with model-genera"
+      "text_start": "ture. Examples include post-capability max-margin selection under exponential-tail losses "
     },
     {
       "page": 12,
-      "non_whitespace_chars": 431,
-      "has_table1": false,
-      "has_table2": false,
-      "has_table3": false,
-      "text_start": "Funding and Competing Interests Funding.This research received no funding. Competing inter"
-    },
-    {
-      "page": 13,
       "non_whitespace_chars": 624,
       "has_table1": true,
       "has_table2": false,
@@ -108,7 +100,7 @@
       "text_start": "Fig. 1.TLIR closed-loop dynamics. Training, Learning, and Inference establish the open-loo"
     },
     {
-      "page": 14,
+      "page": 13,
       "non_whitespace_chars": 672,
       "has_table1": false,
       "has_table2": false,
@@ -116,7 +108,7 @@
       "text_start": "Fig. 2.Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feed"
     },
     {
-      "page": 15,
+      "page": 14,
       "non_whitespace_chars": 4426,
       "has_table1": false,
       "has_table2": true,
@@ -124,28 +116,36 @@
       "text_start": "COMPLETE TRAINING\u2013LEARNING\u2013INFERENCE TESTS BY SYSTEM Each row links actual training update"
     },
     {
-      "page": 16,
-      "non_whitespace_chars": 1256,
+      "page": 15,
+      "non_whitespace_chars": 1343,
       "has_table1": false,
       "has_table2": false,
       "has_table3": true,
       "text_start": "Table 3.RL-E06 feedback episodes per update, by capability. Feedbackq 0 q1 q2 q3 Balanced "
     },
     {
-      "page": 17,
-      "non_whitespace_chars": 1488,
+      "page": 16,
+      "non_whitespace_chars": 1875,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "10. M. Belkin, D. Hsu, S. Ma, and S. Mandal. Reconciling modern machine-learning practice "
+      "text_start": "10. M. Belkin, D. Hsu, S. Ma, S. Mandal, Reconciling modern machine-learning practice and "
+    },
+    {
+      "page": 17,
+      "non_whitespace_chars": 1554,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "20. I. Shumailov, Z. Shumaylov, Y . Zhao, N. Papernot, R. Anderson, Y . Gal, AI models col"
     },
     {
       "page": 18,
-      "non_whitespace_chars": 315,
+      "non_whitespace_chars": 543,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "23. A. M. Saxe et al. On the information bottleneck theory of deep learning.Proc. ICLR, 20"
+      "text_start": "through Zenodo (https://doi.org/10.5281/zenodo.22032772). The repository\u2019s public evidence"
     }
   ]
 }
