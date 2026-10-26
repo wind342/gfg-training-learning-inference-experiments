@@ -5,7 +5,7 @@
 **Title:** Unified dynamics of training, learning, inference, and reinforcement in neural networks
 **One-Sentence Summary:** nanoGPT experiments established TLI dynamics, validated in five other systems; a seventh GRU revealed reinforcement closure.
 **Abstract length:** 125 words; one paragraph in main.tex, per Science Research Article length guidance.
-**Main text:** Original experimental narrative preserved. No new experiments have been created for submission.
+**Main text:** Original experimental narrative preserved outside the explicitly authorized rewrite of Section 5 (historical paired explanations and conditional theoretical extrapolations). No new native experiments were created.
 **Single author shown in manuscript:** Mian Wang. The author-contributions disclosure follows the author's earlier manuscript, with the four AI-invented experimental instruments removed from human author credit; the AI disclosure explicitly attributes instrument invention and experiment design/execution to AI agents. Human responsibility for scientific decisions and claims is retained.
 **Funding:** No funding (author confirmed).
 **Competing interests:** None (author confirmed).
@@ -13,6 +13,9 @@
 **Supplementary Materials:** Not prepared or duplicated. The public GitHub evidence repository is the submission's evidence entry point; the journal/editor may still request specific additional materials.
 **Cover Letter:** Intentionally deferred at the author's request.
 **Original longer abstract:** Preserved unchanged in original_source/main.tex.
-**Bibliography:** 25 works, ordered by first appearance, full listed authors and Science-style references; the source BibTeX remains unchanged as a provenance copy.
+**Bibliography:** 27 works, ordered by first appearance, including two verified 2019 ACL papers on attention explanations. The original main.bib remains frozen; new sources are recorded in additional_references.bib and the expanded references.bbl.
 
 The one-sentence summary is a prepared submission-field candidate; the Science submission system may not require a separately uploaded summary file.
+
+**Section 5 evidence companions:** [21 historical paired comparisons](https://github.com/wind342/tlir-research-evidence/blob/codex/tlir-paper-evidence-navigation-v1/TLIR_HISTORICAL_STRESS_TEST_21.md); [14 conditional extrapolations and falsification conditions](https://github.com/wind342/tlir-research-evidence/blob/codex/tlir-paper-evidence-navigation-v1/TLIR_THEORY_FIRST_14_DERIVATIONS.md).
+**Open critical examination:** The author invites reviewers and independent researchers to derive and test falsifiable conditional consequences of TLIR.
