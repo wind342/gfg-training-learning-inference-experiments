@@ -37,6 +37,7 @@ assert equations(original) == equations(science)
 abstract = science.split(r"\begin{abstract}", 1)[1].split(
     r"\end{abstract}", 1)[0].strip()
 assert len(abstract.split()) <= 125 and "\n\n" not in abstract
+assert abstract.startswith("Although training, learning, inference, and reinforcement have been extensively studied, their distinct dynamical roles and connections have lacked a unified experimental characterization.")
 for phrase in ["Nine nanoGPT experiments", "91.43", "91.49", "5,088",
                "five additional", "seventh system", "70.31", "99.48"]:
     assert phrase in abstract, phrase
