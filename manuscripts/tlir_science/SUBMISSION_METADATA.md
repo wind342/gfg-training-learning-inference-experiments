@@ -2,7 +2,7 @@
 
 **Target journal:** Science (AAAS)
 **Article type for consideration:** Research Article, extended online format (3 figures + 3 tables = 6 display items; subject to editor approval).
-**Title:** Unified Training--Learning--Inference--Reinforcement Dynamics Across Neural Systems
+**Title:** Unified Training–Learning–Inference–Reinforcement Dynamics Across Neural Systems
 **One-Sentence Summary:** Experiments reveal unified, predictive dynamics for how neural networks form, use, lose, and recover capabilities.
 **Abstract length:** 116 words; one paragraph in main.tex, per Science Research Article length guidance.
 **Main text:** Original experimental narrative preserved. No new experiments have been created for submission.
