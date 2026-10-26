@@ -10,6 +10,9 @@ on:
       - manuscripts/tlir_science/check_content.py
       - manuscripts/tlir_science/figures/**
   workflow_dispatch:
+concurrency:
+  group: tlir-science-pdf-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -49,7 +52,7 @@ jobs:
           full_text = ' '.join(compact)
           assert 'Experimental Instruments and Evidence Control' in full_text, 'Instrument section not compiled'
           assert 'This research received no funding' in full_text, 'Funding statement absent'
-          assert 'The author declares no competing interests' in full_text, 'Competing interests absent'
+          assert 'There are no competing interests to declare' in full_text, 'Competing interests absent'
           report = {
               'status': 'PASS',
               'pdf_pages': len(reader.pages),
