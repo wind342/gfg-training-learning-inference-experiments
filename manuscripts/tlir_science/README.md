@@ -26,7 +26,7 @@
 
 ## 投稿前最后整理（2026-10-26）
 
-- 将摘要由原来的约 187 词整理为 **121 词、单段**的 Science Research Article 投稿版。全文论证、九项实验顺序、定量结果和理论定义不改；较长原摘要仍在 `original_source/main.tex`。
+- 将摘要由原来的约 187 词整理为 **125 词、单段**的 Science Research Article 投稿版。全文论证、九项实验顺序、定量结果和理论定义不改；较长原摘要仍在 `original_source/main.tex`。
 - 去掉正式稿中 Introduction 标题，符合 Science LaTeX 模板第一段不加标题的设置。
 - 按 Science 模板重新排列：**正文 → 三图三表 → References and Notes → Acknowledgments**。声明位于 Acknowledgments 下，含 Funding、Author contributions、Competing interests、Data/code/materials availability、AI 使用。
 - 25 条参考文献保留首次引用编号，扩展原来省略为 `et al.` 的作者并统一为 Science 风格；原始 `main.bib` 保持冻结。
@@ -42,6 +42,12 @@
 - [**中文全文审读记录**](translation_zh/FULL_TEXT_REVIEW_ZH.md)：核对九项 nanoGPT 实验、预测、五系统验证、GRU 闭环、公式、图表和真实 AI 贡献。
 - 中英文 **10 个公式、34 次正文引文、3 图、3 表及交叉引用标签**对应一致。CSRG-4C 组级支撑措辞已按照冻结协议修正。
 - 中文译稿为阅读和核对用途，不是正式英文投稿文件；原始图内英文标签不修改。
+
+## 本轮精准概念纠正
+
+- 摘要恢复训练、学习与能力转变的严格区分：学习是**分布式功能支撑持久重组**；能力状态变化发生在目标特异性读出边界跨越时。中英文同步修正。
+- 引言末尾的核心关系名称按作者要求由 **TLI 改为 TLIR**。
+- 本轮除此两处概念修正外不修改任何其他科学正文、公式、图表、实验数字与贡献声明。
 
 ## 文件与溯源
 
