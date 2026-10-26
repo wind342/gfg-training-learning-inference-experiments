@@ -59,7 +59,10 @@ for phrase in [
     "independent verification procedures",
     "https://github.com/wind342/tlir-research-evidence/",
     "public evidence matrix",
-    r"\paragraph*{Use of generative artificial intelligence:}"
+    r"\paragraph*{Use of generative artificial intelligence:}",
+    "AI systems invented and implemented the four experimental instruments",
+    "designed, implemented, initiated, monitored, and executed the reported experiments",
+    "OpenAI Codex and ChatGPT"
 ]:
     assert phrase in science, "Missing declaration: " + phrase
 
@@ -114,6 +117,9 @@ report = json.loads((ROOT / "verification.json").read_text())
 for name, expected_sha in report["figure_files_sha256_identical"].items():
     actual_sha = hashlib.sha256((ROOT / "figures" / name).read_bytes()).hexdigest()
     assert actual_sha == expected_sha, name
+assert "developed the atomic generation-fact model, the Generation-Fact Graph" in science
+assert "invented and implemented the four experimental instruments" in science
+assert "assistance with experimental-protocol design" not in science
 assert science.count(r"\clearpage") == 1 and science.count(r"\newpage") == 1
 
 print("PASS: scientific paragraphs, all ten equations, and six original figures/tables.")
