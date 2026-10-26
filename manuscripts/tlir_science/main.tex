@@ -8,7 +8,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{mathptmx}
 \usepackage[letterpaper,margin=1in]{geometry}
-\usepackage{graphicx,array,booktabs}
+\usepackage{graphicx,array,booktabs,float}
 \usepackage{microtype}
 \usepackage[numbers,sort&compress,round]{natbib}
 \usepackage[font=normalsize,labelfont=bf,labelsep=period]{caption}
@@ -415,7 +415,7 @@ General-purpose AI systems, including OpenAI Codex and ChatGPT, served as scient
 \end{minipage}
 \end{center}
 
-\begin{table}[!htbp]
+\begin{table}[H]
 \caption{Seven neural systems.}
 \label{tab:systems}
 \centering\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.07}
@@ -434,7 +434,7 @@ GRU (RL-E05/E06; AdamW) & Four-skill feedback; 4 shared hidden groups\\
 \end{tabular}
 
 \end{table}
-\begin{table}[!htbp]
+\begin{table}[H]
 \caption{Prediction and feedback experiment summaries. Macro recall averages four observed transition categories.}
 \label{tab:prediction}
 \centering
