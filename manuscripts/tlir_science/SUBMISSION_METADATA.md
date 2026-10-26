@@ -9,8 +9,8 @@
 **Single author shown in manuscript:** wangmian. The author-contributions sentence in main.tex is a draft that the author must verify before submission.
 **Funding:** No funding (author confirmed).
 **Competing interests:** None (author confirmed).
-**Data, code and materials:** Paper-to-evidence directory at https://github.com/wind342/tlir-research-evidence/tree/codex/tlir-paper-evidence-navigation-v1 and immutable archive DOI https://doi.org/10.5281/zenodo.22032772. The public evidence matrix accurately distinguishes full replay, frozen record recomputation, and unavailable original artifacts.
-**Supplementary Materials:** Not prepared or duplicated. Use the existing repository and Zenodo DOI as evidence access points; the journal/editor may still request specific additional materials.
+**Data, code and materials:** The public evidence repository is organized by the scientific claims of the paper for rapid machine-assisted auditing: https://github.com/wind342/tlir-research-evidence/tree/codex/tlir-paper-evidence-navigation-v1. The paper-to-evidence map and public evidence matrix link experiments, figures and results to their frozen evidence and clearly distinguish independently recomputable findings from missing original runtime artifacts.
+**Supplementary Materials:** Not prepared or duplicated. The public GitHub evidence repository is the submission's evidence entry point; the journal/editor may still request specific additional materials.
 **Cover Letter:** Intentionally deferred at the author's request.
 **Original longer abstract:** Preserved unchanged in original_source/main.tex.
 **Bibliography:** 25 works, ordered by first appearance, full listed authors and Science-style references; the source BibTeX remains unchanged as a provenance copy.
