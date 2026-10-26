@@ -6,7 +6,7 @@
 **One-Sentence Summary:** nanoGPT experiments established TLI dynamics, validated in five other systems; a seventh GRU revealed reinforcement closure.
 **Abstract length:** 121 words; one paragraph in main.tex, per Science Research Article length guidance.
 **Main text:** Original experimental narrative preserved. No new experiments have been created for submission.
-**Single author shown in manuscript:** wangmian. The author-contributions disclosure follows the author's earlier manuscript, with the four AI-invented experimental instruments removed from human author credit; the AI disclosure explicitly attributes instrument invention and experiment design/execution to AI agents. Human responsibility for scientific decisions and claims is retained.
+**Single author shown in manuscript:** Mian Wang. The author-contributions disclosure follows the author's earlier manuscript, with the four AI-invented experimental instruments removed from human author credit; the AI disclosure explicitly attributes instrument invention and experiment design/execution to AI agents. Human responsibility for scientific decisions and claims is retained.
 **Funding:** No funding (author confirmed).
 **Competing interests:** None (author confirmed).
 **Data, code and materials:** The public evidence repository is organized by the scientific claims of the paper for rapid machine-assisted auditing: https://github.com/wind342/tlir-research-evidence/tree/codex/tlir-paper-evidence-navigation-v1. The paper-to-evidence map and public evidence matrix link experiments, figures and results to their frozen evidence and clearly distinguish independently recomputable findings from missing original runtime artifacts.
