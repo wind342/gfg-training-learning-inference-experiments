@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "pdf_pages": 19,
+  "pdf_pages": 20,
   "empty_or_near_empty_pages": [],
   "pages": [
     {
@@ -29,7 +29,7 @@
     },
     {
       "page": 4,
-      "non_whitespace_chars": 1862,
+      "non_whitespace_chars": 1179,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -37,70 +37,86 @@
     },
     {
       "page": 5,
-      "non_whitespace_chars": 1518,
-      "has_table1": false,
+      "non_whitespace_chars": 2358,
+      "has_table1": true,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "torical optimizer states affect update formation: \u2206(a,b) =OptStep(\u03b8 t,gt,\u03c9 a,b).(2) TL-E04"
+      "text_start": "Table 1.Scientific purpose and principal notation of the ten numbered equations. Eq. Purpo"
     },
     {
       "page": 6,
-      "non_whitespace_chars": 1471,
+      "non_whitespace_chars": 1393,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "At a fixed learned stateL \u2217, inference recruits and combines learned support: Sactiveq,c ="
+      "text_start": "realized update produces different functional responses in different receiving states: Rq("
     },
     {
       "page": 7,
-      "non_whitespace_chars": 2010,
+      "non_whitespace_chars": 1313,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Cross-System Validation We subsequently tested the established TLI relations and their pre"
+      "text_start": "Inference: Frozen Recruitment of Learned Support INF-E01 examined 13 nanoGPT training hist"
     },
     {
       "page": 8,
-      "non_whitespace_chars": 1738,
+      "non_whitespace_chars": 1862,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Reinforcement: From TLI Open-Loop to TLIR Closed-Loop Dynamics Theory-Derived Prediction o"
+      "text_start": "For target y, competitor c, and hidden representation h, let bc =w y \u2212w c and \u2206bc =\u2206w y \u2212\u2206"
     },
     {
       "page": 9,
-      "non_whitespace_chars": 1948,
+      "non_whitespace_chars": 1668,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Rebalanced feedback restored other-skill accuracy from 70.31% to 99.48% while preserving t"
+      "text_start": "The prediction algorithm was also evaluated across these systems, with task-specific adapt"
     },
     {
       "page": 10,
-      "non_whitespace_chars": 2502,
+      "non_whitespace_chars": 1931,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "A robust finite-kernel closure across different receivers and actual actions would instead"
+      "text_start": "of 60 episodes per update over 3,200 updates (Table 4). RL-E05 observed relative support c"
     },
     {
       "page": 11,
-      "non_whitespace_chars": 1935,
+      "non_whitespace_chars": 2435,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "deductions, not a claim that the cited papers tested TLIR itself. Evolving stability.For p"
+      "text_start": "anchor, and a possible falsifier; merely invokingdifferent conditionsis insufficient. Thes"
     },
     {
       "page": 12,
-      "non_whitespace_chars": 514,
+      "non_whitespace_chars": 2205,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "and use to loss and recovery, TLIR establishes experimentally testable causal connections "
+      "text_start": "preregistered temporal-precedence criterion was not met; its failure is distinct from the "
     },
     {
       "page": 13,
+      "non_whitespace_chars": 1333,
+      "has_table1": false,
+      "has_table2": true,
+      "has_table3": false,
+      "text_start": "thus occupy different feedback regimes rather than contradict each other. These derivation"
+    },
+    {
+      "page": 14,
+      "non_whitespace_chars": 151,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Fig. 1.TLIR closed-loop dynamics. Training, Learning, and Inference establish the open-loo"
+    },
+    {
+      "page": 15,
       "non_whitespace_chars": 672,
       "has_table1": false,
       "has_table2": false,
@@ -108,52 +124,44 @@
       "text_start": "Fig. 2.Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feed"
     },
     {
-      "page": 14,
-      "non_whitespace_chars": 4492,
-      "has_table1": true,
+      "page": 16,
+      "non_whitespace_chars": 4426,
+      "has_table1": false,
       "has_table2": false,
-      "has_table3": false,
+      "has_table3": true,
       "text_start": "COMPLETE TRAINING\u2013LEARNING\u2013INFERENCE TESTS BY SYSTEM Each row links actual training update"
     },
     {
-      "page": 15,
-      "non_whitespace_chars": 528,
-      "has_table1": false,
-      "has_table2": true,
-      "has_table3": true,
-      "text_start": "Table 2.Post-update target-boundary classification reports. Macro recall averages four obs"
-    },
-    {
-      "page": 16,
-      "non_whitespace_chars": 1759,
-      "has_table1": false,
-      "has_table2": false,
-      "has_table3": false,
-      "text_start": "References and Notes 1. A. Jacot, F. Gabriel, C. Hongler, Neural tangent kernel: Convergen"
-    },
-    {
       "page": 17,
-      "non_whitespace_chars": 1814,
+      "non_whitespace_chars": 1343,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "13. D. Lopez-Paz, M. A. Ranzato, Gradient episodic memory for continual learning.Adv. Neur"
+      "text_start": "Table 4.RL-E06 feedback episodes per update, by capability. Feedbackq 0 q1 q2 q3 Balanced "
     },
     {
       "page": 18,
-      "non_whitespace_chars": 1617,
+      "non_whitespace_chars": 1875,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "24. L. Dinh, R. Pascanu, S. Bengio, Y . Bengio, Sharp minima can generalize for deep nets."
+      "text_start": "10. M. Belkin, D. Hsu, S. Ma, S. Mandal, Reconciling modern machine-learning practice and "
     },
     {
       "page": 19,
-      "non_whitespace_chars": 1160,
+      "non_whitespace_chars": 1586,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "source code, result records, provenance and checksum manifests, and independent verificati"
+      "text_start": "20. I. Shumailov, Z. Shumaylov, Y . Zhao, N. Papernot, R. Anderson, Y . Gal, AI models col"
+    },
+    {
+      "page": 20,
+      "non_whitespace_chars": 1665,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "prospective predictions and theoretical deductions; prepared the figures; and wrote and re"
     }
   ]
 }
