@@ -24,7 +24,7 @@
   "funding_declaration": "This research received no funding.",
   "competing_interest_declaration": "There are no competing interests to declare.",
   "original_source_files_unchanged": true,
-  "submission_pdf_status": "COMPILED_AND_PAGE_QA_PASSED",
+  "submission_pdf_status": "COMPILED_AND_VISUALLY_INSPECTED_PASS",
   "previous_pdf": {
     "sha256": "1fa3789ffbf6bf117928fae2d352ed27abaa157c52abd04a9fdbb5d7b301d0ec",
     "pages": 19,
@@ -40,11 +40,11 @@
   "original_scientific_paragraphs_unchanged": true,
   "table1_explicit_linebreak_removed": true,
   "interfloat_force_pagebreaks_removed": 5,
-  "float_clearpage_remaining": 1,
+  "float_clearpage_remaining": 0,
   "current_pdf_git_blob_sha_previous": "db8bbd73fa3dfa943d1b1c422ce0268aaa49ca4d",
   "pdf_page_qa_file": "PAGE_QA.json (generated and passed)",
   "current_pdf_page_count": 19,
-  "current_page_qa_git_blob_sha": "28158c02c57b0234c086663c08a67cc6c47ca13d",
+  "current_page_qa_git_blob_sha": "1c5db69fea311a9bac3a9b890ae3cc91350113b2",
   "current_pdf_empty_or_near_empty_pages": [],
   "current_pdf_page_16_text_nonwhitespace_chars": 1875,
   "newpage_before_references": 1,
@@ -103,8 +103,8 @@
   ],
   "english_pdf_sha_before_concept_correction": "9d0379d0e277b538e51c55deddfd713022dc2bc7",
   "chinese_pdf_rebuild_required": false,
-  "current_pdf_git_blob_sha": "973985b3b790a980dc4dfae54dd20888e05e79bf",
-  "chinese_translation_pdf_git_blob_sha": "9b36b401fb2d5babdc28fa3079e49c4151e696ea",
+  "current_pdf_git_blob_sha": "09f96806929b00d90badd14dbf17380587e957fd",
+  "chinese_translation_pdf_git_blob_sha": "9ace8f29193e802efe3f79591660ad793ee3ade6",
   "chinese_translation_page_qa_git_blob_sha": "cc965d9526754a2525e4e471d1f371141eb67952",
   "chinese_translation_pages": 14,
   "corrected_abstract_and_intro_PDFs_verified": true,
@@ -125,5 +125,7 @@
   ],
   "source_bibtex_original_unchanged": true,
   "reviewers_invited_to_independent_extrapolation_and_falsification": true,
-  "previous_bibliography_count": 25
+  "previous_bibliography_count": 25,
+  "float_page_separation_adjusted": true,
+  "visual_page_review": "19-page English contact sheet inspected; conclusion and first theory figure now share p12; figures and 3 tables retained in correct order"
 }
