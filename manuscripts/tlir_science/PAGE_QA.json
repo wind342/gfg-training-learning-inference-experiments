@@ -5,11 +5,11 @@
   "pages": [
     {
       "page": 1,
-      "non_whitespace_chars": 1666,
+      "non_whitespace_chars": 1668,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Unified Training\u2013Learning\u2013Inference\u2013Reinforcement Dynamics Across Neural Systems Mian Wang"
+      "text_start": "Unified dynamics of training, learning, inference, and reinforcement in neural networks Mi"
     },
     {
       "page": 2,
