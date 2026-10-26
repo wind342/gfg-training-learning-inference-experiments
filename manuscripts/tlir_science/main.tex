@@ -27,7 +27,7 @@
 \setlength{\floatsep}{12pt plus 2pt minus 2pt}
 \date{}
 \setcounter{secnumdepth}{0}
-\captionsetup[figure]{name=Fig.}
+\captionsetup[figure]{name=Fig.,font={small,stretch=1}}
 \makeatletter
 \renewcommand{\maketitle}{\begin{center}\vspace*{-1em}{\Large\bfseries\@title\par}\vspace{1em}{\normalsize\@author\par}\end{center}\vspace{.5em}}
 \makeatother
@@ -36,7 +36,7 @@
 \renewcommand{\bibnumfmt}[1]{#1.}
 \setlength{\bibsep}{6pt}
 \renewcommand\refname{References and Notes}
-\renewenvironment{abstract}{\begin{quotation}\bfseries}{\end{quotation}}
+\renewenvironment{abstract}{\begin{quotation}\normalfont}{\end{quotation}}
 \newcommand{\dd}{\Delta\theta_t}
 \newcommand{\id}{\mathrm{id}}
 \newcommand{\PASS}{\textsc{Pass}}
@@ -48,6 +48,9 @@
 \hypersetup{pdftitle={Unified dynamics of training, learning, inference, and reinforcement in neural networks},pdfauthor={Mian Wang}}
 \begin{document}
 \maketitle
+\begin{center}
+{\small\textbf{One Sentence Summary:} Causal experiments show how updates reorganize functional support, inference recruits it, and feedback redirects learning.}
+\end{center}
 \begin{abstract}
 Despite their remarkable success, neural networks remain largely black boxes, and the mechanisms underlying their behavior are still poorly understood. Nine nanoGPT experiments established training--learning--inference relations: realized updates elicit state-dependent finite-amplitude responses; learning persistently reorganizes distributed functional support, with target-specific readout-boundary crossings determining capability transitions; inference recruits learned support without changing the learned state. Factors identified in the fifth experiment yielded a direct predictor of post-update capability transitions, achieving 91.43\% accuracy and 91.49\% four-way macro recall across 5,088 targets. We tested these relations and prediction across five additional neural architectures. In a seventh system, concentrated correct feedback eroded previously mastered skills; rebalanced feedback restored their accuracy from 70.31\% to 99.48\%. Linking inference consequences to subsequent training closes these relations into unified training--learning--inference--reinforcement dynamics.
 \end{abstract}
@@ -193,7 +196,7 @@ This led to a prediction: sustained, narrowly concentrated correct positive feed
 \subsection{Experimental Tests and Results}
 RL-E05/E06 tested this prediction in a seventh system, a shared attention-free GRU policy. All four skills reached mastery before the experimental branches began. Every branch started from an identical parameter--AdamW state, and each complete two-decision episode received $r=1$ only when correct, and $r=0$ otherwise.
 
-RL-E05 compared selective, balanced, and frozen feedback. RL-E06 further varied the allocation of 60 episodes per update over 3,200 updates (Table~\ref{tab:dose}).
+RL-E05 compared selective, balanced, and frozen feedback. RL-E06 further varied the allocation of 60 episodes per update over 3,200 updates (Table~\ref{tab:prediction}B).
 
 
 
@@ -334,20 +337,19 @@ Through systematic experiments across neural systems, this work reveals dynamica
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=.98\textwidth]{figures/figure1_tlir_closed_loop.png}
-  \caption{TLIR closed-loop dynamics. Training, Learning, and Inference establish the open-loop core; Reinforcement feeds behavioral consequences into subsequent training.}
+  \caption{\textbf{TLIR closed-loop dynamics.} Training, Learning, and Inference establish the open-loop core; Reinforcement feeds behavioral consequences into subsequent training.}
   \label{fig:chain}
 \end{figure}
 \begin{figure}[!htbp]
   \centering
-  \captionsetup{font=small}
   \includegraphics[width=1.00\textwidth,height=0.72\textheight,keepaspectratio]{figures/figure2_experimental_14panel.png}
-  \caption{Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feedback-driven capability change and recovery in the shared GRU. (a1) Paused evolution delays capability formation; (a2) identical updates elicit different receiver responses; (a3) finite-amplitude response types; (a4) boundary, update, and receiver factors. (b1) Joint component removal crosses a target boundary; (b2) a realized update reallocates support; (b3) pre- and post-update target margins. (c1) Query-conditioned component effects; (c2) non-additive pair effects; (c3) learned-version rollback and exact restoration. (d1) Feedback-dose support redistribution; (d2) margin erosion before accuracy loss; (d3) rollback trade-offs; (d4) feedback rebalancing and recovery.}
+  \caption{\textbf{Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feedback-driven capability change and recovery in the shared GRU.} (a1) Paused evolution delays capability formation; (a2) identical updates elicit different receiver responses; (a3) finite-amplitude response types; (a4) boundary, update, and receiver factors. (b1) Joint component removal crosses a target boundary; (b2) a realized update reallocates support; (b3) pre- and post-update target margins. (c1) Query-conditioned component effects; (c2) non-additive pair effects; (c3) learned-version rollback and exact restoration. (d1) Feedback-dose support redistribution; (d2) margin erosion before accuracy loss; (d3) rollback trade-offs; (d4) feedback rebalancing and recovery.}
   \label{fig:tlir-evidence}
 \end{figure}
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=.98\textwidth]{figures/figure2_six_system_evidence.pdf}
-  \caption{Within-system training--learning--inference experiment chains. One GNN seed meets eight of nine registered gates, with nonlinear-response incidence below its specified threshold; SNN passes all twelve registered gates in four seeds.}
+  \caption{\textbf{Within-system training--learning--inference experiment chains.} One GNN seed meets eight of nine registered gates, with nonlinear-response incidence below its specified threshold; SNN passes all twelve registered gates in four seeds.}
   \label{fig:systems}
 \end{figure}
 \clearpage
@@ -433,9 +435,11 @@ GRU (RL-E05/E06; AdamW) & Four-skill feedback; 4 shared hidden groups\\
 
 \end{table}
 \begin{table}[!htbp]
-\caption{Post-update target-boundary classification reports. Macro recall averages four observed transition categories.}
+\caption{Prediction and feedback experiment summaries. Macro recall averages four observed transition categories.}
 \label{tab:prediction}
 \centering
+{\small\textbf{(A) Post-update target-boundary classification}\par}
+\smallskip
 \setlength{\tabcolsep}{4.2pt}
 \renewcommand{\arraystretch}{1.13}
 \begin{tabular}{@{}lrr@{}}
@@ -451,12 +455,12 @@ Hard-spiking SNN$^{a}$ & 95.31 & 70.74\\
 \bottomrule
 \multicolumn{3}{@{}p{.94\columnwidth}@{}}{\footnotesize $^{a}$Independent prediction tests use registered GNN/SNN training histories.}\\
 \end{tabular}
-
-\end{table}
-\begin{table}[!htbp]
-\caption{RL-E06 feedback episodes per update, by capability.}
-\label{tab:dose}
-\centering\small\setlength{\tabcolsep}{4.1pt}\renewcommand{\arraystretch}{1.08}
+\par\medskip
+{\small\textbf{(B) RL-E06 feedback episodes per update, by capability}\par}
+\smallskip
+{\small
+\setlength{\tabcolsep}{4.1pt}
+\renewcommand{\arraystretch}{1.08}
 \begin{tabular}{@{}lrrrr@{}}\toprule
 Feedback & $q_0$ & $q_1$ & $q_2$ & $q_3$\\\midrule
 Balanced & 15 & 15 & 15 & 15\\
@@ -464,6 +468,7 @@ Mild & 30 & 10 & 10 & 10\\
 High & 45 & 5 & 5 & 5\\
 Exclusive & 60 & 0 & 0 & 0\\\bottomrule
 \end{tabular}
+}
 \end{table}
 
 \end{document}

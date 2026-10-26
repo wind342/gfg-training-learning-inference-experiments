@@ -50,6 +50,8 @@ assert equations(original) == equations(science)
 abstract = science.split(r"\begin{abstract}", 1)[1].split(
     r"\end{abstract}", 1)[0].strip()
 assert len(abstract.split()) <= 125 and "\n\n" not in abstract
+assert "One Sentence Summary:" in science
+assert "Causal experiments show how updates reorganize functional support" in science
 assert "learning persistently reorganizes distributed functional support, with target-specific readout-boundary crossings determining capability transitions" in abstract
 assert "learning reorganizes distributed functional support across capability boundaries" not in abstract
 assert "The core TLIR relations were established experimentally before this cross-field comparison" in science
@@ -104,25 +106,34 @@ def floats(x):
 
 of = floats(original)
 sf = floats(science)
-assert of.keys() == sf.keys() and len(sf) == 6
+assert set(sf) == set(of) - {"tab:dose"} and len(sf) == 5
+assert science.count(r"\captionof{table}") == 1
+assert science.count(r"\begin{figure}") == 3 and science.count(r"\begin{table}") == 2
+assert science.count(r"\textbf{(A) Post-update") == 1 and science.count(r"\textbf{(B) RL-E06") == 1
 for key, (caption, table, image) in of.items():
+    if key == "tab:dose":
+        assert table in science.split(r"\caption{Prediction and feedback experiment summaries.",1)[1], "Feedback allocation values changed"
+        continue
     updated_caption, updated_table, updated_image = sf[key]
     assert image == updated_image, key
     if key == "tab:systems":
         assert table.replace(r"\newline", " ") == updated_table
+    elif key == "tab:prediction":
+        assert table == updated_table, "Prediction values changed"
     else:
         assert table == updated_table, key
+    plain_caption = re.sub(r"\\textbf\{([^{}]*)\}", r"\1", updated_caption)
     if key == "fig:tlir-evidence":
-        assert updated_caption.startswith(caption[:-1])
+        assert plain_caption.startswith(caption[:-1])
         for panel in "a1 a2 a3 a4 b1 b2 b3 c1 c2 c3 d1 d2 d3 d4".split():
-            assert "(" + panel + ")" in updated_caption
+            assert "(" + panel + ")" in plain_caption
     elif key == "tab:systems":
         assert updated_caption == "Seven neural systems."
     elif key == "tab:prediction":
-        assert updated_caption == ("Post-update target-boundary classification reports. "
+        assert updated_caption == ("Prediction and feedback experiment summaries. "
                                    "Macro recall averages four observed transition categories.")
     else:
-        assert caption == updated_caption, key
+        assert caption == plain_caption, key
 
 refs = re.findall(r"\\bibitem\{([^}]+)\}", bib)
 main_without_floats = re.sub(FLOAT, "", science, flags=re.S)
@@ -165,9 +176,11 @@ ack_start = science.index(r"\section*{Acknowledgments}")
 guide_pos = science.index(r"\captionof{table}{Scientific purpose and principal notation")
 table_starts = [m.start() for m in re.finditer(r"\\begin\{table\}", science)]
 assert refs_end < ack_start < guide_pos
-assert len(table_starts) == 3 and all(i > guide_pos for i in table_starts)
+assert len(table_starts) == 2 and all(i > guide_pos for i in table_starts)
+assert "tab:dose" not in science
+assert r"\ref{tab:prediction}B" in science
 assert science.index(r"Table~\ref{tab:equation_guide} summarizes") < science.index(r"Table~\ref{tab:systems}")
 
-print("PASS: scientific paragraphs, all ten equations, and six original figures/tables.")
+print("PASS: scientific paragraphs, ten equations, six Science display items, and original data preserved.")
 print(f"PASS: Science abstract {len(abstract.split())} words; 34 formatted references.")
 print("PASS: funding, authorship, competing interest, data/DOI and AI disclosures.")
