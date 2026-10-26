@@ -83,6 +83,9 @@ assert len(re.findall(r"\\bibitem\{", (BASE / "references.bbl").read_text())) ==
 method_zh = parts[0].split(r"\subsection{实验仪器与证据控制}",1)[1].split(r"\subsection{训练：真实更新与接收状态}",1)[0]
 assert "AI" not in method_zh and "Codex" not in method_zh and "ChatGPT" not in method_zh
 assert "发明" not in method_zh and "作者的科学指导" not in method_zh
+assert "学习表现为分布式功能支撑的持久重组；目标跨越其特异性读出边界时，才会发生可观察的能力状态转变" in parts[0]
+assert "TLIR 的核心关系是在开展上述跨领域比较之前，通过实验建立的" in parts[0]
+assert "学习使分布式功能支撑持续重组，并涉及能力边界的跨越" not in parts[0]
 assert "中文对照译稿" in master
 assert r"\documentclass[UTF8,fontset=fandol" in master
 for i in (1, 2, 3):
