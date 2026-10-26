@@ -44,7 +44,7 @@
   "current_pdf_git_blob_sha_previous": "db8bbd73fa3dfa943d1b1c422ce0268aaa49ca4d",
   "pdf_page_qa_file": "PAGE_QA.json (generated and passed)",
   "current_pdf_page_count": 18,
-  "current_page_qa_git_blob_sha": "14457eac3164085bf273adb8bfcfa0e35631c51f",
+  "current_page_qa_git_blob_sha": "79f320ef764f584271514197317aad6aabd3965f",
   "current_pdf_empty_or_near_empty_pages": [],
   "current_pdf_page_16_text_nonwhitespace_chars": 1875,
   "newpage_before_references": 1,
@@ -103,9 +103,11 @@
   ],
   "english_pdf_sha_before_concept_correction": "9d0379d0e277b538e51c55deddfd713022dc2bc7",
   "chinese_pdf_rebuild_required": false,
-  "current_pdf_git_blob_sha": "662f710a23673b65bfa62a3e9c5f1649e644cd24",
+  "current_pdf_git_blob_sha": "88b4962290d11c046a4fa79e30cbb49a763201db",
   "chinese_translation_pdf_git_blob_sha": "fe226346222a5eb7cee1b9a1defaf4e35d7bc09f",
   "chinese_translation_page_qa_git_blob_sha": "7655c46dfef4cfdc8e8992abed1811d929c877ad",
   "chinese_translation_pages": 14,
-  "corrected_abstract_and_intro_PDFs_verified": true
+  "corrected_abstract_and_intro_PDFs_verified": true,
+  "current_title": "Unified dynamics of training, learning, inference, and reinforcement in neural networks",
+  "author_selected_title_verified_in_pdf_build": true
 }
