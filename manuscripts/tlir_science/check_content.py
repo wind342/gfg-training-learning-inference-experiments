@@ -40,6 +40,7 @@ assert len(abstract.split()) <= 125 and "\n\n" not in abstract
 for phrase in ["Nine nanoGPT experiments", "91.43", "91.49", "5,088",
                "five additional", "seventh system", "70.31", "99.48"]:
     assert phrase in abstract, phrase
+assert "zenodo.org" not in science and "doi.org/10.5281/zenodo" not in science
 assert r"\section{Introduction}" not in science
 assert r"\renewcommand\refname{References and Notes}" in science
 assert science.index(r"\input{references.bbl}") < science.index(
@@ -51,7 +52,10 @@ for phrase in [
     r"\paragraph*{Competing interests:}",
     "There are no competing interests to declare.",
     r"\paragraph*{Data, code and materials availability:}",
-    "https://doi.org/10.5281/zenodo.22032772",
+    "organized by the scientific claims of this paper",
+    "rapid machine-assisted auditing",
+    "paper-to-evidence map",
+    "independent verification procedures",
     "https://github.com/wind342/tlir-research-evidence/",
     "public evidence matrix",
     r"\paragraph*{Use of generative artificial intelligence:}"
