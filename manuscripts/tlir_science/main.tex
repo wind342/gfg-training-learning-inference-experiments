@@ -196,7 +196,7 @@ This led to a prediction: sustained, narrowly concentrated correct positive feed
 \subsection{Experimental Tests and Results}
 RL-E05/E06 tested this prediction in a seventh system, a shared attention-free GRU policy. All four skills reached mastery before the experimental branches began. Every branch started from an identical parameter--AdamW state, and each complete two-decision episode received $r=1$ only when correct, and $r=0$ otherwise.
 
-RL-E05 compared selective, balanced, and frozen feedback. RL-E06 further varied the allocation of 60 episodes per update over 3,200 updates (Table~\ref{tab:prediction}B).
+RL-E05 compared selective, balanced, and frozen feedback. In RL-E06, each of 3,200 updates allocated 60 episodes among the four skills ($q_0,q_1,q_2,q_3$): balanced (15, 15, 15, 15), mildly concentrated (30, 10, 10, 10), highly concentrated (45, 5, 5, 5), and exclusive (60, 0, 0, 0).
 
 
 
@@ -435,15 +435,11 @@ GRU (RL-E05/E06; AdamW) & Four-skill feedback; 4 shared hidden groups\\
 
 \end{table}
 \begin{table}[H]
-\caption{Prediction and feedback experiment summaries. Macro recall averages four observed transition categories.}
+\caption{Post-update target-boundary classification reports. Macro recall averages four observed transition categories.}
 \label{tab:prediction}
 \centering
-\begin{minipage}[t]{.59\textwidth}
-\vspace{0pt}
-{\small\textbf{(A) Post-update target-boundary classification}\par}
-\smallskip
-\setlength{\tabcolsep}{2.7pt}
-\renewcommand{\arraystretch}{1.06}
+\setlength{\tabcolsep}{4.2pt}
+\renewcommand{\arraystretch}{1.13}
 \begin{tabular}{@{}lrr@{}}
 \toprule
 System & Accuracy (\%) & Four-way recall (\%)\\
@@ -457,22 +453,7 @@ Hard-spiking SNN$^{a}$ & 95.31 & 70.74\\
 \bottomrule
 \multicolumn{3}{@{}p{.94\columnwidth}@{}}{\footnotesize $^{a}$Independent prediction tests use registered GNN/SNN training histories.}\\
 \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}[t]{.39\textwidth}
-\vspace{0pt}
-{\small\textbf{(B) RL-E06 feedback episodes per update, by capability}\par}
-\smallskip
-\small
-\setlength{\tabcolsep}{2.7pt}
-\renewcommand{\arraystretch}{1.06}
-\begin{tabular}{@{}lrrrr@{}}\toprule
-Feedback & $q_0$ & $q_1$ & $q_2$ & $q_3$\\\midrule
-Balanced & 15 & 15 & 15 & 15\\
-Mild & 30 & 10 & 10 & 10\\
-High & 45 & 5 & 5 & 5\\
-Exclusive & 60 & 0 & 0 & 0\\\bottomrule
-\end{tabular}
-\end{minipage}
+
 \end{table}
 
 \end{document}

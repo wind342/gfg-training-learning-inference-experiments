@@ -96,16 +96,15 @@ assert "10.18653/v1/N19-1357" in (BASE / "additional_references.bib").read_text(
 assert "10.18653/v1/D19-1002" in (BASE / "additional_references.bib").read_text()
 assert "中文对照译稿" in master
 assert "因果实验揭示实际更新如何重组功能支撑、推理如何调用这些支撑，以及反馈如何改变后续学习。" in parts[0]
-assert r"\ref{tab:prediction}B" in parts[1]
+assert "均衡组为（15，15，15，15）" in parts[1] and "独占组为（60，0，0，0）" in parts[1]
 assert "tab:dose" not in translation
 assert translation.count(r"\captionof{table}") == 1
-assert r"\textbf{(A) 更新后目标边界分类}" in translation
-assert r"\textbf{(B) RL-E06 每次更新中" in translation
+assert "更新后目标边界分类结果" in translation
 assert r"\documentclass[UTF8,fontset=fandol" in master
 for i in (1, 2, 3):
     assert rf"\input{{part{i}_zh.tex}}" in master
 
 print("PASS: 10 equations unchanged and all 18 labels in the same order.")
 print("PASS: 47 bibliographic citations in the same order; 34 verified sources.")
-print("PASS: 3 figures and 3 consolidated tables; original source image files and all tabular data preserved.")
+print("PASS: 3 figures and 3 independent tables; original figure sources and predictor data preserved, feedback allocations stated in prose.")
 print("PASS: actual AI invention, experiment execution, negative verdicts and GitHub evidence disclosure.")

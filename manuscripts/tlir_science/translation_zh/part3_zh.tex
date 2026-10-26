@@ -119,11 +119,9 @@ GRU（RL-E05/E06；AdamW） & 四技能反馈；4 个共享隐藏状态组\\
 \end{table}
 
 \begin{table}[H]
-\caption{预测与反馈实验结果。四类别宏平均召回率为四种实际观察到的能力转变类别的平均召回率。}
+\caption{更新后目标边界分类结果。宏平均召回率为四种实际观察到的能力转变类别的平均召回率。}
 \label{tab:prediction}
-\centering
-{\small\textbf{(A) 更新后目标边界分类}\par}
-\smallskip
+\centering\small
 \setlength{\tabcolsep}{4.2pt}
 \renewcommand{\arraystretch}{1.15}
 \begin{tabular}{@{}lrr@{}}
@@ -139,18 +137,4 @@ Hard-spiking SNN$^{a}$ & 95.31 & 70.74\\
 \bottomrule
 \multicolumn{3}{@{}p{.94\columnwidth}@{}}{\footnotesize $^{a}$ GNN 与 SNN 的独立预测检验使用已注册的训练历史。}\\
 \end{tabular}
-\par\medskip
-{\small\textbf{(B) RL-E06 每次更新中分配给四项能力的反馈回合数}\par}
-\smallskip
-{\small
-\setlength{\tabcolsep}{4.1pt}
-\renewcommand{\arraystretch}{1.13}
-\begin{tabular}{@{}lrrrr@{}}\toprule
-反馈方式 & $q_0$ & $q_1$ & $q_2$ & $q_3$\\\midrule
-均衡（Balanced） & 15 & 15 & 15 & 15\\
-轻度集中（Mild） & 30 & 10 & 10 & 10\\
-高度集中（High） & 45 & 5 & 5 & 5\\
-独占（Exclusive） & 60 & 0 & 0 & 0\\\bottomrule
-\end{tabular}
-}
 \end{table}

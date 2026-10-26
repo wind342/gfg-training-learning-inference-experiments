@@ -25,7 +25,8 @@ s, count = re.subn(
 assert count == 1
 s = s.replace(r"Figure~\ref{fig:chain} illustrates the four linked dynamical roles.", "")
 s = s.replace(r"Table~\ref{tab:equation_guide} summarizes the purposes and principal symbols of the numbered equations.", "")
-s = s.replace(r"Table~\ref{tab:prediction}B", r"Table~\ref{tab:dose}")
+s = s.replace("RL-E05 compared selective, balanced, and frozen feedback. In RL-E06, each of 3,200 updates allocated 60 episodes among the four skills ($q_0,q_1,q_2,q_3$): balanced (15, 15, 15, 15), mildly concentrated (30, 10, 10, 10), highly concentrated (45, 5, 5, 5), and exclusive (60, 0, 0, 0).",
+              "RL-E05 compared selective, balanced, and frozen feedback. RL-E06 further varied the allocation of 60 episodes per update over 3,200 updates (Table~\\ref{tab:dose}).")
 s = s.replace(r"Figure~\ref{fig:systems} summarizes the six within-system TLI experiment chains.", "")
 s = s.replace("The core TLIR relations were established experimentally before this cross-field comparison", "The core TLI relations were established experimentally before this cross-field comparison")
 s = s.replace("within the main text", "within the conference page limit")
@@ -110,10 +111,11 @@ sf = floats(science)
 assert set(sf) == set(of) - {"tab:dose"} and len(sf) == 5
 assert science.count(r"\captionof{table}") == 1
 assert science.count(r"\begin{figure}") == 3 and science.count(r"\begin{table}") == 2
-assert science.count(r"\textbf{(A) Post-update") == 1 and science.count(r"\textbf{(B) RL-E06") == 1
+assert "balanced (15, 15, 15, 15)" in science and "mildly concentrated (30, 10, 10, 10)" in science
+assert "highly concentrated (45, 5, 5, 5)" in science and "exclusive (60, 0, 0, 0)" in science
 for key, (caption, table, image) in of.items():
     if key == "tab:dose":
-        assert table in science.split(r"\caption{Prediction and feedback experiment summaries.",1)[1], "Feedback allocation values changed"
+        assert "each of 3,200 updates allocated 60 episodes" in science
         continue
     updated_caption, updated_table, updated_image = sf[key]
     assert image == updated_image, key
@@ -131,7 +133,7 @@ for key, (caption, table, image) in of.items():
     elif key == "tab:systems":
         assert updated_caption == "Seven neural systems."
     elif key == "tab:prediction":
-        assert updated_caption == ("Prediction and feedback experiment summaries. "
+        assert updated_caption == ("Post-update target-boundary classification reports. "
                                    "Macro recall averages four observed transition categories.")
     else:
         assert caption == plain_caption, key
@@ -179,7 +181,7 @@ table_starts = [m.start() for m in re.finditer(r"\\begin\{table\}", science)]
 assert refs_end < ack_start < guide_pos
 assert len(table_starts) == 2 and all(i > guide_pos for i in table_starts)
 assert "tab:dose" not in science
-assert r"\ref{tab:prediction}B" in science
+assert r"\ref{tab:prediction}" in science
 assert science.index(r"Table~\ref{tab:equation_guide} summarizes") < science.index(r"Table~\ref{tab:systems}")
 
 print("PASS: scientific paragraphs, ten equations, six Science display items, and original data preserved.")
