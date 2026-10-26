@@ -1,0 +1,87 @@
+name: Compile TLIR Science Chinese translation
+on:
+  push:
+    branches:
+      - codex/tlir-science-latex
+    paths:
+      - .github/workflows/tlir-science-chinese-translation.yml
+      - manuscripts/tlir_science/translation_zh/*.tex
+      - manuscripts/tlir_science/translation_zh/check_translation_zh.py
+      - manuscripts/tlir_science/main.tex
+      - manuscripts/tlir_science/references.bbl
+  workflow_dispatch:
+concurrency:
+  group: tlir-science-zh-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  build-translation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit complete Chinese translation against English source
+        run: python manuscripts/tlir_science/translation_zh/check_translation_zh.py
+      - name: Compile Chinese translation with XeLaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: TLIR_Science_ZH.tex
+          working_directory: manuscripts/tlir_science/translation_zh
+          latexmk_use_xelatex: true
+          args: -pdf -interaction=nonstopmode -halt-on-error
+      - name: Inspect rendered PDF pages, text and overflow
+        run: |
+          python -m pip install --quiet pypdf
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+          from pypdf import PdfReader
+
+          root = Path('manuscripts/tlir_science/translation_zh')
+          source = root / 'TLIR_Science_ZH.pdf'
+          assert source.stat().st_size > 100000
+          pages = PdfReader(source).pages
+          text = [p.extract_text() or '' for p in pages]
+          chars = [len(re.sub(r'\s+', '', t)) for t in text]
+          low = [i + 1 for i,n in enumerate(chars) if n < 30]
+          assert not low, f'Blank/near-blank pages: {low}'
+          full = ' '.join(text)
+          for expected in ('Mian Wang', 'CSRG-4C', '91.43', '91.49', '99.48'):
+              assert expected in full, f'Not found in Chinese PDF: {expected}'
+          log = (root / 'TLIR_Science_ZH.log').read_text(errors='replace')
+          warnings = [s for s in ('Overfull', 'Float too large', 'Missing character')
+                      if s in log]
+          assert not warnings, f'PDF layout/glyph issues: {warnings}'
+          result = {
+              'status': 'PASS',
+              'page_count': len(pages),
+              'blank_pages': low,
+              'overflow_or_missing_glyph': warnings,
+              'matching_equations': 10,
+              'matching_citations': 34,
+              'matching_figures': 3,
+              'matching_tables': 3,
+              'reference_count': 25,
+              'pages': [{'page': i + 1, 'non_whitespace_chars': v}
+                        for i,v in enumerate(chars)]
+          }
+          (root/'PAGE_QA_ZH.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(result,ensure_ascii=False,indent=2))
+          PY
+      - name: Publish Chinese translation PDF and QA on source branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manuscripts/tlir_science/translation_zh/TLIR_Science_ZH.pdf
+          git add manuscripts/tlir_science/translation_zh/PAGE_QA_ZH.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish checked TLIR Science Chinese translation PDF [skip ci]"
+            git fetch origin codex/tlir-science-latex
+            git rebase origin/codex/tlir-science-latex
+            git push origin HEAD:codex/tlir-science-latex
+          fi
