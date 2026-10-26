@@ -34,7 +34,7 @@ assert len(equations(original)) == 10
 assert equations(original) == equations(translation), (
     "Some mathematics or equation labels changed during translation"
 )
-assert len(citations(original)) == 34
+assert len(citations(original)) == 38
 assert citations(original) == citations(translation), (
     "Bibliographic citations were omitted or reordered"
 )
@@ -79,19 +79,23 @@ assert "10.5281/zenodo" not in translation
 assert "10.5281/zenodo" not in master
 assert "https://github.com/wind342/tlir-research-evidence/" in translation
 assert r"\input{../references.bbl}" in translation
-assert len(re.findall(r"\\bibitem\{", (BASE / "references.bbl").read_text())) == 25
+assert len(re.findall(r"\\bibitem\{", (BASE / "references.bbl").read_text())) == 27
 method_zh = parts[0].split(r"\subsection{实验仪器与证据控制}",1)[1].split(r"\subsection{训练：真实更新与接收状态}",1)[0]
 assert "AI" not in method_zh and "Codex" not in method_zh and "ChatGPT" not in method_zh
 assert "发明" not in method_zh and "作者的科学指导" not in method_zh
 assert "学习表现为分布式功能支撑的持久重组；目标跨越其特异性读出边界时，才会发生可观察的能力状态转变" in parts[0]
 assert "TLIR 的核心关系是在开展上述跨领域比较之前，通过实验建立的" in parts[0]
 assert "学习使分布式功能支撑持续重组，并涉及能力边界的跨越" not in parts[0]
+assert "欢迎审稿人和其他独立研究者" in translation
+assert "理论先行的有条件外推" in translation
+assert "10.18653/v1/N19-1357" in (BASE / "additional_references.bib").read_text()
+assert "10.18653/v1/D19-1002" in (BASE / "additional_references.bib").read_text()
 assert "中文对照译稿" in master
 assert r"\documentclass[UTF8,fontset=fandol" in master
 for i in (1, 2, 3):
     assert rf"\input{{part{i}_zh.tex}}" in master
 
 print("PASS: 10 equations unchanged and all 18 labels in the same order.")
-print("PASS: 34 bibliographic citations in the same order; 25 original sources.")
+print("PASS: 38 bibliographic citations in the same order; 27 sources (25 retained + two ACL-verified historical comparison papers).")
 print("PASS: all 3 figures and 3 tables, preserved source images and key values.")
 print("PASS: actual AI invention, experiment execution, negative verdicts and GitHub evidence disclosure.")
