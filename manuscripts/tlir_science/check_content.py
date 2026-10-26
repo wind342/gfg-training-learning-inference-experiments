@@ -42,6 +42,8 @@ for phrase in ["Nine nanoGPT experiments", "91.43", "91.49", "5,088",
                "five additional", "seventh system", "70.31", "99.48"]:
     assert phrase in abstract, phrase
 assert "zenodo.org" not in science and "doi.org/10.5281/zenodo" not in science
+assert r"\author{Mian Wang\\" in science
+assert "pdfauthor={Mian Wang}" in science
 assert r"\section{Introduction}" not in science
 assert r"\renewcommand\refname{References and Notes}" in science
 assert science.index(r"\input{references.bbl}") < science.index(
