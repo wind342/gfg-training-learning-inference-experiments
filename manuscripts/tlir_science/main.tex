@@ -35,7 +35,8 @@
 \renewcommand{\citenumfont}[1]{\textit{#1}}
 \renewcommand{\bibnumfmt}[1]{#1.}
 \setlength{\bibsep}{6pt}
-\renewenvironment{abstract}{\par\noindent\textbf{Abstract}\par\bfseries}{\par\vspace{0.6em}}
+\renewcommand\refname{References and Notes}
+\renewenvironment{abstract}{\begin{quotation}\bfseries}{\end{quotation}}
 \newcommand{\dd}{\Delta\theta_t}
 \newcommand{\id}{\mathrm{id}}
 \newcommand{\PASS}{\textsc{Pass}}
@@ -48,16 +49,10 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Nine experiments in nanoGPT first established the open-loop dynamics of Training--Learning--Inference (TLI). Training evolves a parameter--optimizer state: the same realized update can produce different finite-amplitude functional responses in different receiving states. Learning persistently reorganizes distributed functional support, and a target's capability changes when its readout boundary is crossed. Inference recruits and combines learned support at a frozen persistent state.
-
-The response-factor analysis in TL-E05 directly led to a predictor of immediate target-boundary outcomes following realized updates, achieving 91.43\% accuracy and 91.49\% four-way macro recall on 5,088 nanoGPT confirmation targets. We subsequently tested these TLI relations and the prediction method in five additional neural systems: ResNet-18, diffusion U-Net, routed Vision-MoE, a graph neural network, and a hard-spiking recurrent network.
-
-Finally, in a seventh system, a shared GRU policy with four previously mastered skills, we investigated how concentrating correct positive feedback reorganizes functional support and weakens other mastered capabilities. Redistributing feedback restored their mean accuracy from 70.31\% to 99.48\% while preserving the reinforced skill.
-
-By linking the consequences of inference to subsequent training actions, Reinforcement closes the experimentally established TLI open-loop dynamics into a unified Training--Learning--Inference--Reinforcement (TLIR) closed-loop dynamics.
+How neural networks acquire, use, lose, and recover capabilities remains difficult to explain within one experimental framework. Nine nanoGPT experiments established training--learning--inference relations: realized updates elicit state-dependent finite-amplitude responses, learning reorganizes distributed functional support across capability boundaries, and inference recruits that support without changing the learned state. Factors identified in the fifth experiment yielded a direct predictor of post-update capability transitions, achieving 91.43\% accuracy and 91.49\% four-way macro recall across 5,088 targets. We tested these relations and prediction across five additional neural architectures. In a seventh system, concentrated correct feedback eroded previously mastered skills; rebalanced feedback restored their accuracy from 70.31\% to 99.48\%. Linking inference consequences to subsequent training closes these relations into unified training--learning--inference--reinforcement dynamics.
 \end{abstract}
 
-\section{Introduction}
+\noindent
 Training, generalization, capability formation, and inference are central problems in neural-network research. Different fields have developed influential theories to study them.
 
 In \emph{optimization theory}, the Neural Tangent Kernel (NTK) describes parameter-induced output changes through the network Jacobian and the corresponding kernel in specified training regimes \cite{jacot2018}. Edge of Stability studies training behavior in relation to the largest Hessian eigenvalue, learning rate, and loss trajectory \cite{cohen2021}. Sharpness-Aware Minimization (SAM) constructs training updates using loss changes in a parameter neighborhood to improve generalization \cite{foret2021}. Here, the \emph{current state} is represented by parameters and their local derivatives or curvature; \emph{realized updates} are produced by the optimizer; and \emph{responses} appear as changes in model outputs or loss.
@@ -244,18 +239,6 @@ Beyond historical comparisons, the TLIR relations have been used to derive condi
 \section{Conclusion}
 Through systematic experiments across neural systems, this work reveals dynamical relations spanning neural-network training, learning, inference, and reinforcement. From capability formation and use to loss and recovery, TLIR establishes experimentally testable causal connections between observable performance changes and the organization and evolution of internal functional support. Neural-network capability evolution thus moves beyond a black-box performance phenomenon and becomes a dynamical process that can be investigated through precise experimental interventions and quantitative prediction.
 
-\noindent\textbf{Evidence availability and machine audit.}
-The supporting evidence is organized in a structured, machine-readable format for rapid machine-assisted auditing, with section- and figure-panel-level links to frozen experimental protocols, result records, provenance and checksum manifests, and independent verification scripts: \url{https://github.com/wind342/tlir-research-evidence}.
-
-\section*{Funding and Competing Interests}
-\noindent\textbf{Funding.} This research received no funding.
-
-\noindent\textbf{Competing interests.} The author declares no competing interests.
-
-\section*{LLM Usage Statement}
-OpenAI ChatGPT was used for research ideation and discussion, assistance with experimental-protocol design and code development/review, interpretation of experimental records, and manuscript drafting, editing, and LaTeX formatting. The authors are responsible for the study design, all scientific claims, and the reported results.
-
-
 \clearpage
 \begin{figure}[!htbp]
   \centering
@@ -329,4 +312,21 @@ Exclusive & 60 & 0 & 0 & 0\\\bottomrule
 \end{table}
 \newpage
 \input{references.bbl}
+
+\section*{Acknowledgments}
+\paragraph*{Funding:}
+This research received no funding.
+
+\paragraph*{Author contributions:}
+The author conceived the study, formulated the theoretical framework and predictions, directed the experimental investigations, curated and interpreted the evidence, and drafted and revised the manuscript.
+
+\paragraph*{Competing interests:}
+There are no competing interests to declare.
+
+\paragraph*{Data, code and materials availability:}
+Experimental protocols, code, result records, source and checksum manifests, independent validation scripts, and paper-to-evidence links are available in the public TLIR research evidence repository (\url{https://github.com/wind342/tlir-research-evidence/tree/codex/tlir-paper-evidence-navigation-v1}). The corresponding archived evidence is available through Zenodo (\url{https://doi.org/10.5281/zenodo.22032772}). The repository's \texttt{PUBLIC\_EVIDENCE\_MATRIX.md} identifies which results can be independently recomputed and which original checkpoint or runtime records are not included in the public release.
+
+\paragraph*{Use of generative artificial intelligence:}
+OpenAI ChatGPT was used for research ideation and discussion, assistance with experimental-protocol design and code development/review, interpretation of experimental records, and manuscript drafting, editing, and LaTeX formatting. The author is responsible for the study design, all scientific claims, and the reported results.
+
 \end{document}
