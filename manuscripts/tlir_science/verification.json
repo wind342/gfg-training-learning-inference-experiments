@@ -24,14 +24,14 @@
   "funding_declaration": "This research received no funding.",
   "competing_interest_declaration": "There are no competing interests to declare.",
   "original_source_files_unchanged": true,
-  "submission_pdf_status": "REBUILD_PENDING_GITHUB_ONLY_EVIDENCE_STATEMENT",
+  "submission_pdf_status": "COMPILED_AND_PAGE_QA_PASSED",
   "previous_pdf": {
     "sha256": "1fa3789ffbf6bf117928fae2d352ed27abaa157c52abd04a9fdbb5d7b301d0ec",
     "pages": 19,
     "source": "prior Science formatted source before latest journal adjustments"
   },
   "previous_pdf_visual_inspection": "All 19 final rendered pages reviewed; title/author/email block, figure/table order and reference pages verified.",
-  "current_source_pdf_compilation_verified": false,
+  "current_source_pdf_compilation_verified": true,
   "user_action_to_compile": "Optional local reproduction via python build.py",
   "pdf_compilation_method": "GitHub Actions workflow .github/workflows/tlir-science-pdf.yml",
   "instrument_methods_added": true,
@@ -44,7 +44,7 @@
   "current_pdf_git_blob_sha_previous": "db8bbd73fa3dfa943d1b1c422ce0268aaa49ca4d",
   "pdf_page_qa_file": "PAGE_QA.json (generated and passed)",
   "current_pdf_page_count": 18,
-  "current_page_qa_git_blob_sha": "83e79027afddedecec6a60302e14fafe271b263d",
+  "current_page_qa_git_blob_sha": "d273d04d208b889445039e0ba9d340b4fadd94cd",
   "current_pdf_empty_or_near_empty_pages": [],
   "current_pdf_page_16_text_nonwhitespace_chars": 1256,
   "newpage_before_references": 1,
@@ -69,5 +69,7 @@
   "data_availability_evidence_scope": "GitHub claim-indexed repository with machine-audit navigation and explicit public verification boundaries",
   "data_availability_only_github": true,
   "zenodo_citation_in_main_manuscript": false,
-  "current_pdf_git_blob_sha_prior_to_github_only_statement": "70d5ad5d82b7cecf18574080b1201394f27080c5"
+  "current_pdf_git_blob_sha_prior_to_github_only_statement": "70d5ad5d82b7cecf18574080b1201394f27080c5",
+  "current_pdf_git_blob_sha": "901d3a8465af3f1e4c69a85ec230d91ac517ac5d",
+  "github_only_data_statement_compile_verified": true
 }
