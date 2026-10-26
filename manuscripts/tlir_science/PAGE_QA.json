@@ -133,7 +133,7 @@
     },
     {
       "page": 17,
-      "non_whitespace_chars": 1554,
+      "non_whitespace_chars": 1555,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -141,11 +141,11 @@
     },
     {
       "page": 18,
-      "non_whitespace_chars": 543,
+      "non_whitespace_chars": 573,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "through Zenodo (https://doi.org/10.5281/zenodo.22032772). The repository\u2019s public evidence"
+      "text_start": "source code, result records, provenance and checksum manifests, and independent verificati"
     }
   ]
 }
