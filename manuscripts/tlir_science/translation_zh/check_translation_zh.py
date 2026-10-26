@@ -97,7 +97,7 @@ assert "理论先行外推与独立研究对照" in translation
 assert "10.18653/v1/N19-1357" in (BASE / "additional_references.bib").read_text()
 assert "10.18653/v1/D19-1002" in (BASE / "additional_references.bib").read_text()
 assert "中文对照译稿" in master
-assert "因果实验揭示实际更新如何重组功能支撑、推理如何调用这些支撑，以及反馈如何改变后续学习。" in parts[0]
+assert "由实验建立的统一理论揭示了神经网络的内部工作机制，并统一解释了既有研究中看似矛盾的结果。" in parts[0]
 assert "均衡组为（15，15，15，15）" in parts[1] and "独占组为（60，0，0，0）" in parts[1]
 assert "tab:dose" not in translation
 assert translation.count(r"\captionof{table}") == 1
