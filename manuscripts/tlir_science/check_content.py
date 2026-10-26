@@ -116,6 +116,9 @@ for key, (caption, table, image) in of.items():
         assert updated_caption.startswith(caption[:-1])
         for panel in "a1 a2 a3 a4 b1 b2 b3 c1 c2 c3 d1 d2 d3 d4".split():
             assert "(" + panel + ")" in updated_caption
+    elif key == "tab:prediction":
+        assert updated_caption == ("Post-update target-boundary classification reports. "
+                                   "Macro recall averages four observed transition categories.")
     else:
         assert caption == updated_caption, key
 
