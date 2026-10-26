@@ -5,7 +5,7 @@
   "pages": [
     {
       "page": 1,
-      "non_whitespace_chars": 1668,
+      "non_whitespace_chars": 1713,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -13,43 +13,43 @@
     },
     {
       "page": 2,
-      "non_whitespace_chars": 2422,
+      "non_whitespace_chars": 2421,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "using loss changes in a parameter neighborhood to improve generalization (3). Here, thecur"
+      "text_start": "stateis represented by parameters and their local derivatives or curvature;realized update"
     },
     {
       "page": 3,
-      "non_whitespace_chars": 1886,
+      "non_whitespace_chars": 2007,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "in the context affect predictions while model parameters remain fixed ( 16). Chain-of-Thou"
+      "text_start": "prompting studies how intermediate reasoning steps affect performance on complex tasks (17"
     },
     {
       "page": 4,
-      "non_whitespace_chars": 1931,
+      "non_whitespace_chars": 1803,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Experimental Instruments and Evidence Control These experiments required instruments that "
+      "text_start": "Fact Graph (GFG), which links recorded model and optimizer states, actual update occurrenc"
     },
     {
       "page": 5,
-      "non_whitespace_chars": 1518,
+      "non_whitespace_chars": 1555,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "torical optimizer states affect update formation: \u2206(a,b) =OptStep(\u03b8 t,gt,\u03c9 a,b).(2) TL-E04"
+      "text_start": "TL-E04 measured the complete finite-amplitude response to an actual update: rt,q(\u03b1) =mq(\u03b8t"
     },
     {
       "page": 6,
-      "non_whitespace_chars": 1471,
+      "non_whitespace_chars": 1360,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "At a fixed learned stateL \u2217, inference recruits and combines learned support: Sactiveq,c ="
+      "text_start": "Non-additive component interactions are measured by Ii j,q =f full \u2212f \u2212i \u2212f \u2212j +f \u2212i,\u2212j ,("
     },
     {
       "page": 7,
@@ -69,7 +69,7 @@
     },
     {
       "page": 9,
-      "non_whitespace_chars": 1822,
+      "non_whitespace_chars": 1877,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -77,43 +77,43 @@
     },
     {
       "page": 10,
-      "non_whitespace_chars": 2365,
+      "non_whitespace_chars": 2378,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Experimental anchor.TL-E03: identical updates produce different responses across receivers"
+      "text_start": "training action. The action then enters a specific receiving state and causes a target-spe"
     },
     {
       "page": 11,
-      "non_whitespace_chars": 2311,
+      "non_whitespace_chars": 2309,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "same learning trajectory.Experimental anchor.TL-E07: support changes while capability is s"
+      "text_start": "actions continue changing margins, component support allocation, and feature geometry even"
     },
     {
       "page": 12,
-      "non_whitespace_chars": 1863,
+      "non_whitespace_chars": 1972,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "receives a signal, while allocation determines the distribution of actions over time. Prox"
+      "text_start": "degraded performance under the underlying criterion. (25) TLIR unification. Feedback condi"
     },
     {
       "page": 13,
-      "non_whitespace_chars": 1623,
+      "non_whitespace_chars": 1578,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Its Jacobian determines local state-map stability, with a marginal region at \u03c1(DF(S t))\u22481 "
+      "text_start": "yielding the complete state map St+1 =F(S t) =F (\ufe01 St,\u03c0(S t) )\ufe01 . Its Jacobian determines "
     },
     {
       "page": 14,
-      "non_whitespace_chars": 1655,
+      "non_whitespace_chars": 1752,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Under the corresponding exponential-tail and asymptotic-direction conditions, radial scale"
+      "text_start": "The smallest normalized margin dominates the loss, and continued organization approaches m"
     },
     {
       "page": 15,
