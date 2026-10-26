@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "page_count": 14,
+  "blank_pages": [],
+  "overflow_or_missing_glyph": [],
+  "matching_equations": 10,
+  "matching_citations": 34,
+  "matching_figures": 3,
+  "matching_tables": 3,
+  "reference_count": 25,
+  "pages": [
+    {
+      "page": 1,
+      "non_whitespace_chars": 891
+    },
+    {
+      "page": 2,
+      "non_whitespace_chars": 1404
+    },
+    {
+      "page": 3,
+      "non_whitespace_chars": 1040
+    },
+    {
+      "page": 4,
+      "non_whitespace_chars": 824
+    },
+    {
+      "page": 5,
+      "non_whitespace_chars": 1019
+    },
+    {
+      "page": 6,
+      "non_whitespace_chars": 1021
+    },
+    {
+      "page": 7,
+      "non_whitespace_chars": 1227
+    },
+    {
+      "page": 8,
+      "non_whitespace_chars": 476
+    },
+    {
+      "page": 9,
+      "non_whitespace_chars": 349
+    },
+    {
+      "page": 10,
+      "non_whitespace_chars": 296
+    },
+    {
+      "page": 11,
+      "non_whitespace_chars": 4264
+    },
+    {
+      "page": 12,
+      "non_whitespace_chars": 2064
+    },
+    {
+      "page": 13,
+      "non_whitespace_chars": 1953
+    },
+    {
+      "page": 14,
+      "non_whitespace_chars": 734
+    }
+  ]
+}
