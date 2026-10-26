@@ -36,3 +36,16 @@
 - 合并图表浮动排版，移除 5 处逐项 `\\clearpage`，正文结束保留一次 `\clearpage`，文献前使用 `\newpage`，避免最后小表独占一页。
 - 取消 Table 1 中 Diffusion U-Net 优化器条目的显式换行；数据和其他表格文字不变。
 - 其余实验段落、原摘要、10 公式和原图保持原样；新增小节仅介绍已存在的实验方法。
+
+
+## Science 投稿项目处理结论（2026-10-26）
+
+- **摘要：** 投稿版为 116 词，单段；原版可从 `original_source/main.tex` 恢复。
+- **一句话总结：** `SUBMISSION_METADATA.md` 已单独准备，作为可直接复制到投稿表单的建议文本。
+- **作者贡献：** 已在 Acknowledgments 中编写单作者的贡献说明草稿，作者本人需要审定措辞和实际角色；不把 AI 认定为作者。
+- **资金 / 利益冲突：** 按用户确认保留在规范的 Acknowledgments 小标题下。
+- **参考文献：** 当前 25 条按首次引用排列，统一 Science 风格并补齐文献作者名单；`main.bib` 是原始溯源数据，并非当前渲染参考文献的权威文件。
+- **证据：** 在 Data, code and materials availability 正式链接到 GitHub 论文—证据映射、Zenodo 10.5281/zenodo.22032772，并提示 `PUBLIC_EVIDENCE_MATRIX.md` 公开验证边界。
+- **投稿类型：** 现有三图三表共六个展示项；优先考虑 Science Research Article 扩展在线格式，具体以投稿系统与编辑判定为准。
+- **Supplementary Materials：** 不制造重复的附件。公开证据矩阵中已有的原始权威文件可用性边界应保留。
+- **Cover Letter：** 按作者要求最后处理，本轮不写。
