@@ -4,7 +4,7 @@
 
 | 项目 | 当前处理 |
 |---|---|
-| 作者、单位、通讯邮箱 | 已按用户明确提供的信息写入 wangmian、Wuhan Polytechnic University、wangmian945@gmail.com；学校英文名已核对官网章程。未添加未提供的学院或系。 |
+| 作者、单位、通讯邮箱 | 已按用户明确提供的信息写入 Mian Wang、Wuhan Polytechnic University、wangmian945@gmail.com；学校英文名已核对官网章程。未添加未提供的学院或系。 |
 | 资金来源、项目编号 | 用户已确认无资金资助，已在主稿中加入 Funding 声明。 |
 | 作者贡献 | 未提供各作者贡献，不代填。 |
 | 利益冲突 | 用户已确认无利益冲突，已在主稿中加入 Competing interests 声明。 |
