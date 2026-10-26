@@ -68,3 +68,9 @@
 ## 正文与贡献声明的严格分离（2026-10-26）
 
 作者指出，不应在 Science 正文第二节的仪器方法介绍中添加 AI 发明或设计执行的归属；该内容只应放在文末作者与 AI 贡献声明。本轮按要求撤销了擅自添加的两句及中文译稿对应翻译。英文正文方法描述恢复为原先中性表述；四套仪器的 AI 发明和实验设计/执行归属仍在文末真实披露。除上述纠正，没有重写研究内容。
+
+## 摘要与引言概念的定点更正（2026-10-26）
+
+- 摘要原文 `learning reorganizes distributed functional support across capability boundaries` 错误地把学习定义与能力边界跨越混在一起。经作者指出，修正为 `learning persistently reorganizes distributed functional support; target-specific readout-boundary crossings determine capability transitions`，中文同步恢复为“学习表现为分布式功能支撑的持久重组；目标跨越其特异性读出边界时，才会发生可观察的能力状态转变”。
+- 引言结束段 `The core TLI relations` 定点改为 `The core TLIR relations`，中文同步。
+- 两处以外的原有正文、十条公式、所有图表与参考文献、作者及 AI 贡献声明不变。
