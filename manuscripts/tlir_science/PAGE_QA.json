@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "pdf_pages": 25,
+  "pdf_pages": 24,
   "empty_or_near_empty_pages": [],
   "pages": [
     {
@@ -165,7 +165,7 @@
     },
     {
       "page": 21,
-      "non_whitespace_chars": 1973,
+      "non_whitespace_chars": 2144,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -173,14 +173,6 @@
     },
     {
       "page": 22,
-      "non_whitespace_chars": 173,
-      "has_table1": false,
-      "has_table2": false,
-      "has_table3": false,
-      "text_start": "models. The author defined the scientific questions, research boundaries, and decision cri"
-    },
-    {
-      "page": 23,
       "non_whitespace_chars": 1855,
       "has_table1": true,
       "has_table2": false,
@@ -188,7 +180,7 @@
       "text_start": "Table 1.Scientific purpose and principal notation of the ten numbered equations. Eq. Purpo"
     },
     {
-      "page": 24,
+      "page": 23,
       "non_whitespace_chars": 768,
       "has_table1": false,
       "has_table2": true,
@@ -196,7 +188,7 @@
       "text_start": "Table 2.Seven neural systems. System (optimizer) Task / registered components nanoGPT (Ada"
     },
     {
-      "page": 25,
+      "page": 24,
       "non_whitespace_chars": 121,
       "has_table1": false,
       "has_table2": false,
