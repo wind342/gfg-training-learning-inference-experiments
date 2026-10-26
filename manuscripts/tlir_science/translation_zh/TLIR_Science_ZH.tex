@@ -1,0 +1,47 @@
+% 本文是 Science 英文稿的中文逐节对照译稿；英文稿为投稿和科学引文的正式依据。
+% 使用 XeLaTeX 编译。翻译不替代英文原稿，不改动原始图像和公式。
+\documentclass[UTF8,fontset=fandol,12pt,a4paper]{ctexart}
+\usepackage{amsmath,amssymb}
+\usepackage{mathptmx}
+\usepackage[a4paper,margin=2.35cm]{geometry}
+\usepackage{graphicx,array,booktabs,float}
+\usepackage{microtype}
+\usepackage[numbers,sort&compress,round]{natbib}
+\usepackage[font=small,labelfont=bf,labelsep=period]{caption}
+\captionsetup[figure]{font={small,stretch=1}}
+\usepackage[hidelinks,unicode]{hyperref}
+\urlstyle{same}
+\linespread{1.28}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.35em}
+\setlength{\emergencystretch}{1.5em}
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{4}
+\setcounter{totalnumber}{6}
+\renewcommand{\topfraction}{.95}
+\renewcommand{\bottomfraction}{.85}
+\renewcommand{\textfraction}{.06}
+\renewcommand{\floatpagefraction}{.48}
+\setlength{\floatsep}{12pt plus 2pt minus 2pt}
+\renewcommand{\citenumfont}[1]{\textit{#1}}
+\renewcommand{\bibnumfmt}[1]{#1.}
+\setlength{\bibsep}{4pt}
+\renewcommand\refname{参考文献与注释}
+\newcommand{\dd}{\Delta\theta_t}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\PASS}{\textsc{Pass}}
+\title{\bfseries 跨神经系统的训练—学习—推理—强化统一动力学}
+\author{Mian Wang\\{\small 武汉轻工大学，中国湖北武汉}\\
+{\small 通讯作者：\href{mailto:wangmian945@gmail.com}{wangmian945@gmail.com}}}
+\date{}
+\hypersetup{pdftitle={跨神经系统的训练学习推理强化统一动力学（中文对照译稿）},pdfauthor={Mian Wang}}
+\begin{document}
+\pagestyle{plain} % 不使用章节名称作为浮动页/声明页的页眉
+\maketitle
+\begin{center}
+{\small\itshape 中文对照译稿，仅供作者审阅；科学引文、正式投稿及术语裁决以英文原稿为准。原始图中的英文标注保持不变。}
+\end{center}
+\input{part1_zh.tex}
+\input{part2_zh.tex}
+\input{part3_zh.tex}
+\end{document}

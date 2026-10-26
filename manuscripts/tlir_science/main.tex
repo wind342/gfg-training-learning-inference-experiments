@@ -1,0 +1,459 @@
+% Science submission typography; scientific text retained apart from declared format edits.
+% Source: wind342/gfg-training-learning-inference-experiments
+% Commit: effbe99b0b8299bc1e457a309339dc85d722c1f8
+\documentclass[12pt,letterpaper]{article}
+\pdfminorversion=7
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{mathptmx}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{graphicx,array,booktabs,float}
+\usepackage{microtype}
+\usepackage[numbers,sort&compress,round]{natbib}
+\usepackage[font=normalsize,labelfont=bf,labelsep=period]{caption}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
+\linespread{1.5}
+\frenchspacing
+\setlength{\emergencystretch}{1em}
+\setcounter{topnumber}{4}
+\setcounter{bottomnumber}{4}
+\setcounter{totalnumber}{6}
+\renewcommand{\topfraction}{.95}
+\renewcommand{\bottomfraction}{.90}
+\renewcommand{\textfraction}{.05}
+\renewcommand{\floatpagefraction}{.50}
+\setlength{\floatsep}{12pt plus 2pt minus 2pt}
+\date{}
+\setcounter{secnumdepth}{0}
+\captionsetup[figure]{name=Fig.,font={small,stretch=1}}
+\makeatletter
+\renewcommand{\maketitle}{\begin{center}\vspace*{-1em}{\Large\bfseries\@title\par}\vspace{1em}{\normalsize\@author\par}\end{center}\vspace{.5em}}
+\makeatother
+% Keep original heading words and reference numbering under the verbatim constraint.
+\renewcommand{\citenumfont}[1]{\textit{#1}}
+\renewcommand{\bibnumfmt}[1]{#1.}
+\setlength{\bibsep}{6pt}
+\renewcommand\refname{References and Notes}
+\renewenvironment{abstract}{\begin{quotation}\normalfont}{\end{quotation}}
+\newcommand{\dd}{\Delta\theta_t}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\PASS}{\textsc{Pass}}
+\title{\bfseries Unified dynamics of training, learning, inference, and reinforcement in neural networks}
+% Author details supplied by the user; official English affiliation verified.
+\author{Mian Wang\\
+{\small Wuhan Polytechnic University, Wuhan, China}\\
+{\small Corresponding author. Email: \href{mailto:wangmian945@gmail.com}{wangmian945@gmail.com}}}
+\hypersetup{pdftitle={Unified dynamics of training, learning, inference, and reinforcement in neural networks},pdfauthor={Mian Wang}}
+\begin{document}
+\maketitle
+\begin{center}
+{\small\textbf{One Sentence Summary:} A unified experimental theory reveals neural networks' inner workings and reconciles conflicting research findings.}
+\end{center}
+\begin{abstract}
+Despite their remarkable success, neural networks remain largely black boxes, and the mechanisms underlying their behavior are still poorly understood. Nine nanoGPT experiments established training--learning--inference relations: realized updates elicit state-dependent finite-amplitude responses; learning persistently reorganizes distributed functional support, with target-specific readout-boundary crossings determining capability transitions; inference recruits learned support without changing the learned state. Factors identified in the fifth experiment yielded a direct predictor of post-update capability transitions, achieving 91.43\% accuracy and 91.49\% four-way macro recall across 5,088 targets. We tested these relations and prediction across five additional neural architectures. In a seventh system, concentrated correct feedback eroded previously mastered skills; rebalanced feedback restored their accuracy from 70.31\% to 99.48\%. Linking inference consequences to subsequent training closes these relations into unified training--learning--inference--reinforcement dynamics.
+\end{abstract}
+
+\noindent
+Training, generalization, capability formation, and inference are central problems in neural-network research. Different fields have developed influential theories to study them.
+
+In \emph{optimization theory}, the Neural Tangent Kernel (NTK) describes parameter-induced output changes through the network Jacobian and the corresponding kernel in specified training regimes \cite{jacot2018}. Edge of Stability studies training behavior in relation to the largest Hessian eigenvalue, learning rate, and loss trajectory \cite{cohen2021}. Sharpness-Aware Minimization (SAM) constructs training updates using loss changes in a parameter neighborhood to improve generalization \cite{foret2021}. Here, the \emph{current state} is represented by parameters and their local derivatives or curvature; \emph{realized updates} are produced by the optimizer; and \emph{responses} appear as changes in model outputs or loss.
+
+In \emph{representation learning and generalization}, Spectral Bias examines frequency-dependent learning rates of functions or kernel modes \cite{rahaman2019}. Implicit Bias studies why an optimizer selects particular solutions, such as maximum-margin directions on separable data \cite{soudry2018}. Neural Collapse measures class-feature means, within-class variability, and classifier geometry, revealing continuing representational change after training accuracy saturates \cite{papyan2020}. Information Bottleneck theory studies mutual information among inputs, hidden representations, and targets, including the retention and compression of task-relevant information \cite{tishby2015}. Their \emph{internal organizations} take the form of spectral modes, optimizer-selected solutions, feature geometry, or information structure; their \emph{functional changes} appear in learning rates, evolving solutions, and predictive performance.
+
+In \emph{capability formation}, Grokking captures the long delay between fitting training examples and achieving strong test generalization \cite{power2022}. Subsequent circuit studies track the formation and reorganization of internal computations during this delay \cite{nanda2023}. Double Descent studies how test error can rise near interpolation and fall again as model size, training time, or data conditions change \cite{belkin2019,nakkiran2020}. These studies measure the \emph{current state} through training phase or interpolation regime, \emph{internal change} through circuit and solution evolution, and \emph{observable capability} through accuracy and generalization error.
+
+In \emph{continual learning}, catastrophic forgetting occurs when training on a new task reduces performance on earlier tasks. Elastic Weight Consolidation (EWC) estimates parameter importance using Fisher information from earlier tasks and penalizes changes to important parameters \cite{kirkpatrick2017}. Gradient Episodic Memory (GEM) constrains new-task gradients using their inner products with previous-task gradients \cite{lopezpaz2017}. Orthogonal Gradient Descent (OGD) projects new gradients into directions that approximately preserve earlier-task outputs \cite{farajtabar2020}. In these methods, the \emph{existing state} includes previously learned parameters and function-sensitive directions; \emph{updates} are constrained new-task actions; \emph{interactions} occur through overlapping gradient or functional subspaces; and \emph{capability changes} are measured as retention, forgetting, or transfer.
+
+In \emph{inference research}, Attention uses queries, keys, and values to compute input-dependent information weights \cite{vaswani2017}. In-context learning studies how examples and task information provided in the context affect predictions while model parameters remain fixed \cite{brown2020}. Chain-of-Thought prompting studies how intermediate reasoning steps affect performance on complex tasks \cite{wei2022}. The \emph{current state} is the trained model; \emph{input conditions} include the query, context, and intermediate computations; \emph{internal computation} varies with attention and activations; and \emph{functional performance} is observed in the resulting predictions.
+
+In \emph{reinforcement and feedback-driven training}, reinforcement learning from human feedback (RLHF) uses preference and reward signals to adjust model behavior \cite{ouyang2022}. Self-training creates further training data from a model's predictions \cite{xie2020}. Recursive model-collapse studies examine the loss of low-probability modes when successive models are trained on data generated by their predecessors \cite{shumailov2024}. Here, \emph{feedback} is supplied through rewards, preferences, or generated-data distributions; \emph{training actions} are the resulting updates; and subsequent \emph{functional change} is observed through behavior, accuracy, and generated distributions.
+
+These studies use different mathematical objects---kernels, Hessians, gradients, class features, mutual information, task scores, attention weights, and reward signals---yet six recurring categories can be identified: \emph{current state, realized update, functional response, internal organization, observable capability, and feedback}. \emph{The core TLIR relations were established experimentally before this cross-field comparison; identifying these recurring variables here is a way to help readers understand the theory, not the process by which it was discovered.}
+
+Figure~\ref{fig:chain} illustrates the four linked dynamical roles.
+
+
+
+
+
+\section{Experimental Establishment of TLI Open-Loop Dynamics}
+The nine nanoGPT experiments that established TLI involved a substantially broader set of native interventions, controlled comparisons, and independent validations than can be presented within the main text. TL-E05 alone analyzed 15,264 identity-aligned target responses from 72 finite-amplitude sections across 12 runs, comparing seven frozen conditioning-factor blocks through cross-run matching, leave-one-block-out tests, alternative factor orders, and 2,000 run-pair-clustered bootstrap resamples. This section summarizes their key experimental findings and the resulting theoretical relations. Complete protocols, execution records, negative results, and independent validators are provided in the accompanying repository.
+
+\subsection{Experimental Instruments and Evidence Control}
+These experiments required instruments that were developed as the measurement questions arose, rather than assumed before the theory. Their common evidence substrate was the Generation-Fact Graph (GFG), which links recorded model and optimizer states, actual update occurrences, interventions, outputs, and their source identities. For Training, realized-update causal forks restored matched receiving states and compared full, skipped, parameter-only, optimizer-memory, and reciprocal transfers, separating an update from the state on which it acts. A finite-amplitude path instrument then applied the same recorded update at frozen amplitude values to measure nonlinear numerical responses and discrete transitions. For Learning, CSRG-4C used repeated baseline, single-component, and paired-component gates to measure necessity, backup, substitution, synergy, and failure slack in the functional support of registered target groups. Finally, an identity-aligned boundary ledger joined each registered target to the exact pre-update state and realized update, then separated pre-response records from post-update adjudication of correctness. The instruments enabled the subsequent experimental tests; frozen protocols, negative controls, and independent validators constrained their interpretation.
+
+
+Table~\ref{tab:equation_guide} summarizes the purposes and principal symbols of the numbered equations.
+
+\subsection{Training: Realized Updates and Receiving States}
+At a registered training step, the parameter--optimizer state is $Z_t=(\theta_t,\omega_t)$, and the realized parameter update is $\Delta\theta_t=\theta_{t+1}-\theta_t$.
+
+TL-E01 revealed capability formation, decline, and recovery that could not be fully characterized by loss, accuracy, or training step alone. TL-E02 further showed that pausing effective parameter--optimizer evolution delays capability formation, while the clipping-threshold control did not reproduce this effect.
+
+TL-E03 used full/skip branches and reciprocal update transplants to establish that the same realized update produces different functional responses in different receiving states:
+\begin{equation}
+ R_q(\theta_A,\Delta\theta_B)\quad\text{vs.}\quad R_q(\theta_B,\Delta\theta_B),
+ \label{eq:receiver}
+\end{equation}
+where $R_q(\theta,\Delta)=m_q(\theta+\Delta)-m_q(\theta)$. Separate optimizer-memory exchanges examined how historical optimizer states affect update formation:
+\begin{equation}
+ \Delta^{(a,b)}=\operatorname{OptStep}(\theta_t,g_t,\omega_{a,b}).
+ \label{eq:optmem}
+\end{equation}
+TL-E04 measured the complete finite-amplitude response to an actual update:
+\begin{equation}
+ r_{t,q}(\alpha)=m_q(\theta_t+\alpha\Delta\theta_t)-m_q(\theta_t).
+ \label{eq:response}
+\end{equation}
+The experiments identified near-linear, saturating, accelerating, turnback, and sign-reversal responses. TL-E05 subsequently identified three primary response-conditioning families: target-boundary state (F1), target-specific update geometry (F3), and parameter--optimizer receiving state (F5).
+
+\subsection{Learning: Distributed Support and Capability Boundaries}
+TL-E06 used reversible component interventions to establish distributed functional support, including component necessity, backup, substitution, synergy, and failure slack.
+
+TL-E07 then examined how realized training updates persistently reorganize this support:
+\begin{equation}
+ \Delta P_{t,q}=P_q(\theta_t+\Delta\theta_t)-P_q(\theta_t).
+ \label{eq:realloc}
+\end{equation}
+Across 72 experimental sections, 1,636 valid support-allocation transitions and 228 primary-support hand-offs were recorded.
+
+TL-E08 linked these internal changes to observable capability through identity-aligned target readout boundaries. The signs of the pre- and post-update margins distinguish maintenance, loss, non-acquisition, and acquisition or recovery. Learning is thus identified with persistent functional reorganization, while capability transitions are determined by crossings of target-specific readout boundaries.
+
+\subsection{Inference: Frozen Recruitment of Learned Support}
+INF-E01 examined 13 nanoGPT training histories and 52 checkpoints. With persistent learned states frozen, the experiment measured query-conditioned component effects, non-additive support interactions, and changes produced by replacing trained components with their exact pre-formation versions.
+
+At a fixed learned state $L^*$, inference recruits and combines learned support:
+\begin{equation}
+ S_{q,c}^{\mathrm{active}}=\Pi_{q,c}(L^*),\qquad
+ y_{q,c}=H_{q,c}(S_{q,c}^{\mathrm{active}}).
+ \label{eq:inference}
+\end{equation}
+Non-additive component interactions are measured by
+\begin{equation}
+ I_{ij,q}=f_{\mathrm{full}}-f_{-i}-f_{-j}+f_{-i,-j},
+ \label{eq:interaction}
+\end{equation}
+while learned-version dependence is tested through
+\begin{equation}
+ D_{j,q}=f(q;\theta^*)-f(q;\theta^{(j\leftarrow\mathrm{pre})}).
+ \label{eq:rollback}
+\end{equation}
+Exact restoration verified that these interventions did not persistently alter the learned state. The experiments establish Inference as the query-conditioned recruitment and combination of support formed through Learning.
+
+Together, these nine experiments established the connected Training--Learning--Inference relations, forming the TLI open-loop dynamics. Figure~\ref{fig:tlir-evidence} summarizes the experimental evidence across all four TLIR roles.
+
+
+
+
+\section{Prediction and Cross-System Validation}
+\subsection{Theory-Derived Target-Boundary Prediction}
+The response-factor analysis in TL-E05 identified three primary conditioning factors: the current target-boundary state (F1), target-specific update geometry (F3), and parameter--optimizer receiving state (F5). These findings led directly to TL-P01, a predictor of immediate target-boundary outcomes following an actual formed update.
+
+For target $y$, competitor $c$, and hidden representation $h$, let $b_c=w_y-w_c$ and $\Delta b_c=\Delta w_y-\Delta w_c$. Using the first and second directional derivatives $h'=Dh[\Delta\theta_t]$ and $h''=D^2h[\Delta\theta_t,\Delta\theta_t]$, the predictor computes
+\begin{equation}
+ \begin{aligned}
+ \widehat g_{y,c}={}&b_c^\top h+\Delta b_c^\top h+b_c^\top h'\\
+ &+\Delta b_c^\top h'+\tfrac12 b_c^\top h''.
+ \end{aligned}
+ \label{eq:predict}
+\end{equation}
+The target is predicted correct if $\min_{c\ne y}\widehat g_{y,c}>0$. Combining predicted post-update correctness with the known pre-update state gives four capability transitions. Predictions use the already formed update and pre-response information, without reading actual post-update target outputs.
+
+\subsection{Cross-System Validation}
+We subsequently tested the established TLI relations and their predictive consequences in five additional neural systems. Table~\ref{tab:systems} summarizes the seven systems used in the study, including the separate GRU reinforcement experiment examined in the reinforcement section.
+
+
+
+Each of the five additional TLI systems was examined through realized-update interventions, receiving-state comparisons, finite-amplitude responses, component-coalition support measurements, target-boundary outcomes, and frozen-inference tests. Cross-system implementations evaluated all 16 coalitions of four registered components, with exact Shapley effects:
+\begin{equation}
+ \phi_{j,q}=\!\!\sum_{C\subseteq\mathcal C\setminus\{j\}}
+ \frac{|C|!(3-|C|)!}{4!}\left[v_q(C\cup\{j\})-v_q(C)\right].
+ \label{eq:shapley}
+\end{equation}
+Here $v_q(C)$ denotes the target margin under active component coalition $C$.
+
+All 42 ResNet, 18 diffusion U-Net, and 36 Vision-MoE parameter receiving-state exchanges exceeded their registered response-difference thresholds. Finite-amplitude nonlinear responses occurred in 32.23\%, 19.25\%, and 35.71\% of their respective target-update records, while support reallocation exceeded its specified threshold in 91.41\%, 97.02\%, and 80.43\%. Their frozen-inference experiments further confirmed query-conditioned support, non-additive interactions, and dependence on exact trained component versions.
+
+The GNN reproduced the main TLI relations across three seeds, although one seed failed the registered nonlinear-response frequency criterion (1.56\%). The hard-spiking SNN passed all twelve registered TLI criteria across four seeds, extending the evidence to discontinuous spiking dynamics.
+
+
+
+The prediction algorithm was also evaluated across these systems, with task-specific adaptations of the directional response computation. Table~\ref{tab:prediction} reports immediate post-update target-boundary classification.
+
+
+
+The predictor achieved high four-way recall in five systems. In the hard-spiking SNN, discontinuous activation thresholds limited local derivative-based prediction, yielding 70.74\% macro recall despite 95.31\% accuracy. Together, the experiments demonstrate cross-system recurrence of the core TLI relations and identify architecture-dependent differences in their quantitative responses and predictive approximations. Figure~\ref{fig:systems} summarizes the six within-system TLI experiment chains.
+
+\section{Reinforcement: From TLI Open-Loop to TLIR Closed-Loop Dynamics}
+\label{sec:reinforcement}
+\subsection{Theory-Derived Prediction of Feedback Dynamics}
+The established TLI relations show that training persistently reorganizes distributed functional support, while inference recruits and combines this learned support to produce behavior. When the consequences of inference are repeatedly fed back into subsequent training, the resulting updates can further reorganize the support on which future inference depends.
+
+This led to a prediction: sustained, narrowly concentrated correct positive feedback could progressively favor the reinforced capability while weakening other already mastered capabilities. The predicted effect arises from feedback-directed functional reorganization, rather than incorrect rewards.
+
+\subsection{Experimental Tests and Results}
+RL-E05/E06 tested this prediction in a seventh system, a shared attention-free GRU policy. All four skills reached mastery before the experimental branches began. Every branch started from an identical parameter--AdamW state, and each complete two-decision episode received $r=1$ only when correct, and $r=0$ otherwise.
+
+RL-E05 compared selective, balanced, and frozen feedback. In RL-E06, each of 3,200 updates allocated 60 episodes among the four skills ($q_0,q_1,q_2,q_3$): balanced (15, 15, 15, 15), mildly concentrated (30, 10, 10, 10), highly concentrated (45, 5, 5, 5), and exclusive (60, 0, 0, 0).
+
+
+
+RL-E05 observed relative support concentration, cross-skill interference, and component-version-dependent trade-offs. Its stronger preregistered temporal-precedence criterion was not met.
+
+In RL-E06, all 12 formal seeds exhibited dose-ordered changes. The reinforced skill's mean support share increased from 25.54\% under balanced feedback to 35.20\% under exclusive feedback, while the other skills' mean margins decreased from 9.474 to 3.962. Mild and high concentration already reduced these margins without reducing accuracy. Exclusive feedback decreased other-skill accuracy by 39.06 percentage points relative to balanced feedback.
+
+Two recovery branches then started from the exact exclusive-feedback state at update 800. Rebalanced feedback restored other-skill accuracy from 70.31\% to 99.48\% while preserving the reinforced skill at 100\%. Training only the other three skills restored their accuracy to 99.83\%, but reduced the previously reinforced skill to 89.06\%.
+
+These experiments establish that, in the tested shared system, the distribution of correct feedback can redirect persistent functional support, alter previously mastered capabilities, and reverse these changes through feedback redistribution.
+
+\subsection{TLIR Closed-Loop Dynamics}
+Reinforcement connects the consequences of inference to subsequent training actions. The resulting training updates reorganize learned support, which in turn changes future inference and its consequences. This feedback closure transforms the experimentally established TLI open-loop dynamics into the unified Training--Learning--Inference--Reinforcement (TLIR) closed-loop dynamics.
+
+\section{Unified Explanations of Positive and Negative Findings}
+\label{sec:unified}
+The experimentally established Training--Learning--Inference relations and their reinforcement closure connect receiving state, actual action, functional response, persistent support, capability boundary, and feedback. These relations explain previously reported positive and negative findings and yield further theory-first deductions. The eight comparisons and three deductions below are representative examples. The complete research covers 21 historical positive--negative comparisons and 14 theory-first extrapolations, with full analyses and derivations in the public evidence repository.
+
+\subsection{Unified explanations of positive and negative findings}
+
+\noindent\textbf{Sharpness and SAM: Parameter geometry and actual training effects}\par
+Positive theory or finding. Foret and colleagues showed that sharpness-aware minimization uses neighborhood loss sensitivity to form effective training directions and improve generalization. \cite{foret2021}
+Contrasting theory or finding. Dinh and colleagues demonstrated that function-preserving reparameterizations can substantially alter raw parameter-space sharpness. \cite{dinh2017}
+TLIR unification. Sharpness is a measurement of local geometry; SAM uses this measurement to form an actual training action. The action then enters a specific receiving state and causes a target-specific finite functional response. Both findings follow the same geometry--action--receiver--response chain.
+Experimental anchor. TL-E03: identical updates produce different responses across receivers. TL-E04: finite-amplitude responses are nonlinear.
+
+\noindent\textbf{NTK and feature learning: Fixed-kernel dynamics and representation evolution}\par
+Positive theory or finding. Jacot and colleagues established neural tangent kernel dynamics in the corresponding infinite-width lazy-training regime. \cite{jacot2018}
+Contrasting theory or finding. Yang and colleagues established feature-learning parameterizations under which internal representations evolve substantially during training. \cite{yang2021}
+TLIR unification. These are distinct regions of the same receiving-state--actual-update--functional-response dynamics. Kernel behavior describes regimes in which local functional responses remain nearly stationary; feature learning describes updates that reorganize functional support and hence change future receivers. The current state governs each action's response, and realized actions transform subsequent states.
+Experimental anchor. TL-E03: receiver-dependent response. TL-E04: nonlinear finite response. TL-E07: persistent support reorganization.
+
+\noindent\textbf{Grokking: Delayed capability and prior circuit formation}\par
+Positive theory or finding. Power and colleagues observed rapid test generalization long after training accuracy had saturated. \cite{power2022}
+Contrasting theory or finding. Nanda and colleagues traced sustained internal circuit formation preceding the visible test-capability transition. \cite{nanda2023}
+TLIR unification. Learning is persistent functional-support reorganization, whereas capability is a target-specific readout. Support can evolve continuously while a target margin approaches the decision boundary. Crossing that boundary turns gradual internal formation into an apparently sudden change in correct performance.
+Experimental anchor. TL-E06: distributed support. TL-E07: support reorganization. TL-E08: boundary crossings. TL-P01: immediate post-update boundary prediction.
+
+\noindent\textbf{Neural collapse: Accuracy saturation and continuing representation formation}\par
+Positive theory or finding. After training examples are correctly classified, the discrete accuracy measure reaches its plateau.
+Contrasting theory or finding. Papyan and colleagues found that representations and classifiers continue to evolve after zero training error, developing structured class means and classifier geometry. \cite{papyan2020}
+TLIR unification. Accuracy records which side of a readout boundary a target occupies; learning records persistent functional organization. Actual training actions continue changing margins, component support allocation, and feature geometry even when discrete correctness is stable. The two observations describe different aspects of the same learning trajectory.
+Experimental anchor. TL-E07: support changes while capability is stable. TL-E08: readout boundaries. RL-E06: margins change before accuracy declines.
+
+\noindent\textbf{Attention: Operational role and weight-based explanations}\par
+Positive theory or finding. Vaswani and colleagues established query-conditioned information weighting and combination; Wiegreffe and Pinter investigated controlled conditions under which attention can provide meaningful explanations. \cite{vaswani2017,wiegreffe2019}
+Contrasting theory or finding. Jain and Wallace showed that attention weights can diverge from gradient-based importance and that different weight patterns can produce similar outputs. \cite{jain2019}
+TLIR unification. Frozen inference recruits learned support according to the query and combines component effects. Attention weights encode a transient routing and weighting operation, while the functional contribution of each component and combination is measured by interventions. Both findings describe distinct objects within the same inference mechanism.
+Experimental anchor. INF-E01: query-conditioned component gates, non-additive pair effects, and exact trained-version rollback.
+
+\noindent\textbf{RLHF: Alignment gains and capability trade-offs}\par
+Positive theory or finding. Ouyang and colleagues showed that preference and instruction feedback improves target instruction-following and alignment performance. \cite{ouyang2022}
+Contrasting theory or finding. The same feedback-training line reported regressions on some other benchmarks, mitigated in part by including broader pretraining data.
+TLIR unification. Feedback changes future training actions, which redistribute support among capabilities in a shared receiving system. Concentrated feedback strengthens support for the reinforced objective while reducing other mastered skills' margins; rebalanced feedback reorganizes that support and restores their capability. Alignment gains and alignment tax are consequences of the same feedback--training--learning loop.
+Experimental anchor. RL-E06: concentrated correct feedback erodes other mastered capabilities; rebalancing restores them.
+
+\noindent\textbf{Reward overoptimization: Proxy mismatch and concentrated correct feedback}\par
+Positive theory or finding. Reward models and preference signals supply useful training directions when the intended objective is hard to express directly.
+Contrasting theory or finding. Gao and colleagues documented reward overoptimization in which improved proxy scores coincide with degraded performance under the underlying criterion. \cite{gao2023}
+TLIR unification. Feedback conditions actual training through two relations: content and credit binding determine which action receives a signal, while allocation determines the distribution of actions over time. Proxy mismatch changes the bound target; concentrated, fully correct feedback changes the long-run allocation. Both operate through feedback, actual updates, functional support, and capability.
+Experimental anchor. RL-E01/E02: causal credit and feedback binding alter training actions. RL-E06: fully correct, concentrated feedback produces support reallocation and cross-skill decline.
+
+\noindent\textbf{Self-training: Pseudo-label gains and recursive model collapse}\par
+Positive theory or finding. Xie and colleagues showed that Noisy Student can improve ImageNet classification and robustness by learning from model-generated pseudo-labels. \cite{xie2020}
+Contrasting theory or finding. Shumailov and colleagues observed rare-mode loss under recursive synthetic-data replacement; Gerstgrasser and colleagues found that preserving and accumulating real data changes the trajectory. \cite{shumailov2024,gerstgrasser2024}
+TLIR unification. Inference outputs re-enter training data and determine subsequent updates, support, and future inference. Informative pseudo-labels supply effective learning signals; repeated synthetic replacement can suppress rare modes, whereas continued real-data input supplies those modes with persistent learning opportunities. Both are regimes of the same inference--data--training--learning--inference feedback closure.
+Experimental anchor. TL-E07: actual updates reorganize support. RL-E06: feedback allocation changes support concentration, retention, and recovery.
+
+\subsection{Theory-first extrapolations and independent research comparisons}
+Starting from TLIR dynamics, we specify state and action variables, derive their mathematical consequences under stated assumptions, and then compare the results with independent studies. This derivation-before-search sequence addresses evolving stability, continuing learning after capability formation, and recursive feedback.
+
+\medskip\noindent\textbf{Evolving stability: Edge of Stability.}
+Write a training step as a realized action operating on a receiving state:
+\[
+S_{t+1}=F(S_t,A_t),\qquad A_t=\pi(S_t),
+\]
+yielding the complete state map
+\[
+S_{t+1}=\mathcal F(S_t)=F\bigl(S_t,\pi(S_t)\bigr).
+\]
+Its Jacobian determines local state-map stability, with a marginal region at $\rho(D\mathcal F(S_t))\approx1$. For parameter-only gradient descent on a locally quadratic loss with frozen Hessian,
+\[
+J_t=I-\eta H_t.
+\]
+A positive-curvature eigenmode contracts under
+\[
+|1-\eta\lambda_i|<1,\qquad \lambda_{\max}=2/\eta
+\]
+at the marginal boundary. This is a local stability threshold at the current receiver. A finite training action changes parameters, curvature, optimizer memory, and functional response, causing the subsequent state map to evolve. It follows that receiver and curvature reorganization can return the trajectory toward marginal stability after a temporary crossing of the frozen threshold; momentum and adaptive optimizers produce boundaries dependent on their joint parameter--optimizer states. Independent results include Cohen and colleagues' edge-of-stability observations, Lewkowycz and colleagues' catapult mechanism, Damian and colleagues' self-stabilization dynamics, and adaptive preconditioned stability studied by Cohen and colleagues \cite{cohen2021,lewkowycz2020,damian2023,cohen2022adaptive}.
+Experimental anchor. TL-E03: receiver-dependent response. TL-E04: nonlinear finite response. TL-E05: target boundary, update geometry, and receiving state condition the response.
+
+\medskip\noindent\textbf{Post-capability learning: Implicit bias and maximum margin.}
+TLIR identifies capability formation with a target readout-boundary crossing and learning with persistent functional reorganization. In linearly separable binary classification, define the margin
+\[
+m_i=y_i w^\top x_i.
+\]
+When every $m_i>0$, correctness has already reached 100\%, while logistic loss retains a gradient. For large positive margins,
+\[
+-\nabla L(w)\propto\sum_i y_i x_i e^{-m_i}.
+\]
+Residual training actions increasingly emphasize samples closest to the boundary. Writing $w=ru$, $\|u\|=1$, and $\gamma_i(u)=y_i u^\top x_i$ gives
+\[
+L(w)\approx\sum_i e^{-r\gamma_i(u)}.
+\]
+The smallest normalized margin dominates the loss, and continued organization approaches
+\[
+\max_{\|u\|=1}\min_i y_i u^\top x_i.
+\]
+Under the corresponding exponential-tail and asymptotic-direction conditions, radial scale follows
+\[
+r(t)\sim\frac{1}{\gamma^\star}\log t.
+\]
+Capability can thus remain fixed while actual training actions continually reorganize margin and parameter geometry. The results of Soudry, Nacson, Ji and Telgarsky, Gunasekar, and Lyu and Li describe maximum-margin convergence, loss-tail dependence, logistic dynamics, optimization geometry, and homogeneous neural-network margin behavior, respectively \cite{soudry2018,nacson2019,ji2019,gunasekar2018,lyu2020}.
+Experimental anchor. TL-E07: continuing support reorganization. TL-E08: readout boundaries determine capability. RL-E06: mastered skills exhibit continuing support and margin changes.
+
+\medskip\noindent\textbf{Recursive feedback: Information contraction and real-data anchoring.}
+In the TLIR closed loop, inference-generated data return as subsequent training input. Let $q_t$ be the mass of a rare information mode at generation $t$, and let $0<\rho<1$ denote its average retention in recursively generated data. Complete replacement yields
+\[
+q_{t+1}=\rho q_t,\qquad q_t=q_0\rho^t\longrightarrow0.
+\]
+When fraction $\alpha$ of each generation is instead drawn from real data, with mode mass $q_{\rm real}>0$, the recurrence becomes
+\begin{equation}
+ q_{t+1}=(1-\alpha)\rho q_t+\alpha q_{\rm real}.
+ \label{eq:feedback}
+\end{equation}
+For $\alpha>0$, its limiting fixed point is
+\[
+q^\star=\frac{\alpha q_{\rm real}}{1-(1-\alpha)\rho}>0.
+\]
+Complete synthetic replacement contracts rare-mode information, while continued external input supplies a stable source for that mode. The recursive tail-loss results of Shumailov and colleagues, the real-data accumulation findings of Gerstgrasser and colleagues, and Fu and colleagues' analysis of real--synthetic mixing correspond to these different feedback regimes \cite{shumailov2024,gerstgrasser2024,fu2024}.
+Experimental anchor. RL-E01: feedback binding changes actual training actions. RL-E06: feedback allocation and duration alter support and capability. TL-E07: realized updates persistently reorganize support.
+
+We invite reviewers and independent researchers to derive and test additional TLIR predictions.
+
+\section{Conclusion}
+Through systematic experiments across neural systems, this work reveals dynamical relations spanning neural-network training, learning, inference, and reinforcement. From capability formation and use to loss and recovery, TLIR establishes experimentally testable causal connections between observable performance changes and the organization and evolution of internal functional support. Neural-network capability evolution thus moves beyond a black-box performance phenomenon and becomes a dynamical process that can be investigated through precise experimental interventions and quantitative prediction.
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=.98\textwidth]{figures/figure1_tlir_closed_loop.png}
+  \caption{\textbf{TLIR closed-loop dynamics.} Training, Learning, and Inference establish the open-loop core; Reinforcement feeds behavioral consequences into subsequent training.}
+  \label{fig:chain}
+\end{figure}
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=1.00\textwidth,height=0.72\textheight,keepaspectratio]{figures/figure2_experimental_14panel.png}
+  \caption{\textbf{Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feedback-driven capability change and recovery in the shared GRU.} (a1) Paused evolution delays capability formation; (a2) identical updates elicit different receiver responses; (a3) finite-amplitude response types; (a4) boundary, update, and receiver factors. (b1) Joint component removal crosses a target boundary; (b2) a realized update reallocates support; (b3) pre- and post-update target margins. (c1) Query-conditioned component effects; (c2) non-additive pair effects; (c3) learned-version rollback and exact restoration. (d1) Feedback-dose support redistribution; (d2) margin erosion before accuracy loss; (d3) rollback trade-offs; (d4) feedback rebalancing and recovery.}
+  \label{fig:tlir-evidence}
+\end{figure}
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=.98\textwidth]{figures/figure2_six_system_evidence.pdf}
+  \caption{\textbf{Within-system training--learning--inference experiment chains.} One GNN seed meets eight of nine registered gates, with nonlinear-response incidence below its specified threshold; SNN passes all twelve registered gates in four seeds.}
+  \label{fig:systems}
+\end{figure}
+\clearpage
+\input{references.bbl}
+
+\begingroup
+\linespread{1.25}\selectfont
+\section*{Acknowledgments}
+\paragraph*{Funding:}
+This research received no funding.
+
+\paragraph*{Author contributions:}
+Mian Wang conceived the study; developed the atomic generation-fact model, the Generation-Fact Graph, the GFG-based recursive scientific process, and the unified theory of training, learning, inference, and reinforcement; defined the scientific questions, research boundaries, and decision criteria; introduced the principal theoretical hypotheses and conceptual transitions; directed the research program; analyzed and interpreted validated results; developed prospective predictions and theoretical deductions; prepared the figures; and wrote and revised the manuscript.
+
+\paragraph*{Competing interests:}
+There are no competing interests to declare.
+
+\paragraph*{Data, code and materials availability:}
+The study's public evidence repository is organized by the scientific claims of this paper to support rapid machine-assisted auditing (\url{https://github.com/wind342/tlir-research-evidence/tree/codex/tlir-paper-evidence-navigation-v1}). A paper-to-evidence map connects the main claims, experiments, figure panels, and reported results to frozen protocols, source code, result records, provenance and checksum manifests, and independent verification procedures. The public evidence matrix specifies which results can be independently recomputed and which underlying checkpoints or runtime artifacts are not included in the public release.
+
+\paragraph*{Use of generative artificial intelligence:}
+General-purpose AI systems, including OpenAI Codex and ChatGPT, served as scientific agents within the GFG-based recursive scientific process. Under the author's direction, these AI systems invented and implemented the four experimental instruments---CSRG-4C, realized-update causal forks, finite-amplitude update paths, and the identity-aligned target-boundary ledger---and designed, implemented, initiated, monitored, and executed the reported experiments. They performed analyses, causal interventions, matched replays, counterexample searches, and independent validation procedures, and contributed to manuscript drafting, editing, and LaTeX formatting. The reported numerical results were produced by the documented native programs and execution environments, not generated directly as text by AI models. The author defined the scientific questions, research boundaries, and decision criteria, reviewed the validated evidence, and accepts responsibility for the scientific claims and results.
+
+\endgroup
+\newpage
+% Equation-purpose and notation table: definitions correspond to the numbered equations.
+% Positioned after references and author declarations in Science initial-submission order.
+\begin{center}
+\begin{minipage}{\textwidth}
+\captionsetup{justification=raggedright,singlelinecheck=false,skip=7pt}
+\captionof{table}{Scientific purpose and principal notation of the ten numbered equations.}
+\label{tab:equation_guide}
+\begingroup
+\footnotesize\linespread{1.02}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.20}
+\begin{tabular}{@{}p{0.41in}>{\raggedright\arraybackslash}p{2.15in}>{\raggedright\arraybackslash}p{3.64in}@{}}
+\toprule
+\textbf{Eq.} & \textbf{Purpose} & \textbf{Principal symbols}\\
+\midrule
+(1) & Compare the functional effect of the same realized update in two receiving states. & $R_q$: target-specific response; $\theta_A,\theta_B$: receiving parameters; $\Delta\theta_B$: actual update formed at B; $m_q$: functional readout.\\
+\addlinespace[3pt]
+(2) & Identify how optimizer memory conditions update formation. & $\Delta^{(a,b)}$: resulting update; $\theta_t$: parameters; $g_t$: gradient; $\omega_{a,b}$: exchanged optimizer state; $\operatorname{OptStep}$: update operation.\\
+\addlinespace[3pt]
+(3) & Measure nonlinear functional response along the finite-amplitude path of an actual update. & $r_{t,q}(\alpha)$: target response; $\Delta\theta_t$: realized update; $\alpha$: applied-update scale ($0$ baseline, $1$ full update).\\
+\addlinespace[3pt]
+(4) & Measure persistent reorganization of distributed support after a realized update. & $P_q(\theta)$: intervention-defined target support organization; $\Delta P_{t,q}$: change in that organization; $q$: registered target or target group.\\
+\addlinespace[3pt]
+(5) & Describe recruitment and combination of learned support during frozen inference. & $L^*$: fixed learned state; $(q,c)$: query and context; $\Pi_{q,c}$: support recruitment; $H_{q,c}$: output composition; $y_{q,c}$: inference output.\\
+\addlinespace[3pt]
+(6) & Measure non-additive effects of paired component interventions. & $I_{ij,q}$: interaction; $i,j$: components; $f_{\rm full}$: ungated readout; $f_{-i},f_{-j},f_{-i,-j}$: single and joint gated readouts.\\
+\addlinespace[3pt]
+(7) & Test dependence on the learned version of a component through rollback. & $D_{j,q}$: rollback effect; $\theta^*$: trained state; $\theta^{(j\leftarrow\mathrm{pre})}$: state with component $j$ restored to its pre-formation version; $f$: functional readout.\\
+\addlinespace[3pt]
+(8) & Predict post-update target--competitor margins and capability transitions (TL-P01). & $\widehat g_{y,c}$: predicted gap; $b_c=w_y-w_c$, $\Delta b_c$: output-boundary change; $h,h',h''$: pre-update hidden state and its first/second update-direction derivatives.\\
+\addlinespace[3pt]
+(9) & Attribute functional contributions using all coalitions of four components. & $\phi_{j,q}$: Shapley effect of component $j$; $C$: active coalition; $\mathcal C$: four-component set; $v_q(C)$: target margin under coalition $C$.\\
+\addlinespace[3pt]
+(10) & Model information-mode retention in recursive feedback with real-data input. & $q_t$: mode mass at iteration $t$; $\rho$: retention factor; $\alpha$: real-data mixing share; $q_{\rm real}$: mode mass in real data.\\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{minipage}
+\end{center}
+
+\begin{table}[H]
+\caption{Seven neural systems.}
+\label{tab:systems}
+\centering\small\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.07}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.40\columnwidth}>{\raggedright\arraybackslash}p{.54\columnwidth}@{}}
+\toprule
+System (optimizer) & Task / registered components\\
+\midrule
+nanoGPT (Adam) & Cyclic next-token; 4 attention/MLP branches\\
+ResNet-18 (SGD momentum) & CIFAR-100 classification; 4 residual stages\\
+Diffusion U-Net (AdamW) & CIFAR-10 denoising; 4 U-Net paths\\
+Vision-MoE (AdamW) & CIFAR-100 classification; 4 routed experts\\
+GNN (RMSprop) & Graph reachability; 4 message-passing blocks\\
+Spiking SNN (Adagrad) & 8$\times$8 digits; 4 spiking blocks\\
+GRU (RL-E05/E06; AdamW) & Four-skill feedback; 4 shared hidden groups\\
+\bottomrule
+\end{tabular}
+
+\end{table}
+\begin{table}[H]
+\caption{Post-update target-boundary classification reports. Macro recall averages four observed transition categories.}
+\label{tab:prediction}
+\centering
+\setlength{\tabcolsep}{4.2pt}
+\renewcommand{\arraystretch}{1.13}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+System & Accuracy (\%) & Four-way recall (\%)\\
+\midrule
+nanoGPT & 91.43 & 91.49\\
+ResNet-18 & 99.28 & 97.99\\
+Diffusion U-Net & 99.60 & 97.98\\
+Vision-MoE & 99.63 & 96.95\\
+GNN$^{a}$ & 98.54 & 98.62\\
+Hard-spiking SNN$^{a}$ & 95.31 & 70.74\\
+\bottomrule
+\multicolumn{3}{@{}p{.94\columnwidth}@{}}{\footnotesize $^{a}$Independent prediction tests use registered GNN/SNN training histories.}\\
+\end{tabular}
+
+\end{table}
+
+\end{document}

@@ -1,0 +1,191 @@
+{
+  "status": "PASS",
+  "pdf_pages": 23,
+  "empty_or_near_empty_pages": [],
+  "pages": [
+    {
+      "page": 1,
+      "non_whitespace_chars": 1753,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Unified dynamics of training, learning, inference, and reinforcement in neural networks Mi"
+    },
+    {
+      "page": 2,
+      "non_whitespace_chars": 2422,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "using loss changes in a parameter neighborhood to improve generalization (3). Here, thecur"
+    },
+    {
+      "page": 3,
+      "non_whitespace_chars": 2149,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "in the context affect predictions while model parameters remain fixed ( 16). Chain-of-Thou"
+    },
+    {
+      "page": 4,
+      "non_whitespace_chars": 1931,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Experimental Instruments and Evidence Control These experiments required instruments that "
+    },
+    {
+      "page": 5,
+      "non_whitespace_chars": 1518,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "torical optimizer states affect update formation: \u2206(a,b) =OptStep(\u03b8 t,gt,\u03c9 a,b).(2) TL-E04"
+    },
+    {
+      "page": 6,
+      "non_whitespace_chars": 1471,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "At a fixed learned stateL \u2217, inference recruits and combines learned support: Sactiveq,c ="
+    },
+    {
+      "page": 7,
+      "non_whitespace_chars": 2010,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Cross-System Validation We subsequently tested the established TLI relations and their pre"
+    },
+    {
+      "page": 8,
+      "non_whitespace_chars": 1768,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Reinforcement: From TLI Open-Loop to TLIR Closed-Loop Dynamics Theory-Derived Prediction o"
+    },
+    {
+      "page": 9,
+      "non_whitespace_chars": 1879,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Two recovery branches then started from the exact exclusive-feedback state at update 800. "
+    },
+    {
+      "page": 10,
+      "non_whitespace_chars": 2367,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Sharpness is a measurement of local geometry; SAM uses this measurement to form an actual "
+    },
+    {
+      "page": 11,
+      "non_whitespace_chars": 2315,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "boundary a target occupies; learning records persistent functional organization. Actual tr"
+    },
+    {
+      "page": 12,
+      "non_whitespace_chars": 2052,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "colleagues documented reward overoptimization in which improved proxy scores coincide with"
+    },
+    {
+      "page": 13,
+      "non_whitespace_chars": 1578,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "yielding the complete state map St+1 =F(S t) =F (\ufe01 St,\u03c0(S t) )\ufe01 . Its Jacobian determines "
+    },
+    {
+      "page": 14,
+      "non_whitespace_chars": 1752,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "The smallest normalized margin dominates the loss, and continued organization approaches m"
+    },
+    {
+      "page": 15,
+      "non_whitespace_chars": 696,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Conclusion Through systematic experiments across neural systems, this work reveals dynamic"
+    },
+    {
+      "page": 16,
+      "non_whitespace_chars": 672,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Fig. 2. Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and fee"
+    },
+    {
+      "page": 17,
+      "non_whitespace_chars": 4019,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "COMPLETE TRAINING\u2013LEARNING\u2013INFERENCE TESTS BY SYSTEM Each row links actual training update"
+    },
+    {
+      "page": 18,
+      "non_whitespace_chars": 1759,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "References and Notes 1. A. Jacot, F. Gabriel, C. Hongler, Neural tangent kernel: Convergen"
+    },
+    {
+      "page": 19,
+      "non_whitespace_chars": 1810,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "13. D. Lopez-Paz, M. A. Ranzato, Gradient episodic memory for continual learning.Adv. Neur"
+    },
+    {
+      "page": 20,
+      "non_whitespace_chars": 1563,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "24. S. Jain, B. C. Wallace, Attention is not explanation.Proc. NAACL-HLT, 3543\u20133556 (2019)"
+    },
+    {
+      "page": 21,
+      "non_whitespace_chars": 2144,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Acknowledgments Funding:This research received no funding. Author contributions:Mian Wang "
+    },
+    {
+      "page": 22,
+      "non_whitespace_chars": 1855,
+      "has_table1": true,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Table 1.Scientific purpose and principal notation of the ten numbered equations. Eq. Purpo"
+    },
+    {
+      "page": 23,
+      "non_whitespace_chars": 768,
+      "has_table1": false,
+      "has_table2": true,
+      "has_table3": true,
+      "text_start": "Table 2.Seven neural systems. System (optimizer) Task / registered components nanoGPT (Ada"
+    }
+  ]
+}
