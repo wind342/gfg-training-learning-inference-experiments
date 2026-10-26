@@ -32,6 +32,46 @@
 
 这些仪器共同依托生成事实图（Generation-Fact Graph，GFG），它把记录的模型与优化器状态、真实更新事件、干预、输出及其来源身份连接起来。对于\textbf{训练}，真实更新因果分叉仪器恢复匹配的接收状态，对比完整更新、跳过更新、仅参数更新、优化器记忆变化和双向移植分支，从而区分更新本身与接收该更新的状态的作用。随后，有限幅度响应路径仪器将同一条已记录的真实更新，以预先冻结的不同幅度施加于模型，测量非线性数值响应和离散状态转变。对于\textbf{学习}，CSRG-4C 通过重复基线、单组件门控和双组件门控，测量已注册目标组功能支撑的必要性、备份、替代、协同作用及失效余量。最后，身份对齐目标边界账本把每个注册目标与精确的更新前状态和真实更新相对应，并将响应发生前的记录与更新后正确性的裁决分离。冻结协议、负面对照和独立验证程序进一步约束了对实验结果的解释。
 
+
+% 与英文正式稿的十式释义表对照；全部公式正文保持原样。
+\begin{center}
+\begin{minipage}{\textwidth}
+\captionsetup{justification=raggedright,singlelinecheck=false,skip=7pt}
+\captionof{table}{十个编号公式的科学用途与主要符号释义。}
+\label{tab:equation_guide}
+\begingroup
+\footnotesize\linespread{1.02}\selectfont
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.18}
+\begin{tabular}{@{}p{0.07\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.52\textwidth}@{}}
+\toprule
+\textbf{式号} & \textbf{用途} & \textbf{主要符号} \\
+\midrule
+(1) & 比较同一真实更新作用于不同接收状态时的功能响应。 & $R_q$：目标响应；$\theta_A,\theta_B$：接收参数状态；$\Delta\theta_B$：在B状态形成的真实更新；$m_q$：目标功能读出。\\
+\addlinespace[3pt]
+(2) & 考察优化器记忆如何影响实际更新的形成。 & $\Delta^{(a,b)}$：所得更新；$\theta_t$：参数；$g_t$：梯度；$\omega_{a,b}$：交换配置下的优化器记忆；$\operatorname{OptStep}$：更新操作。\\
+\addlinespace[3pt]
+(3) & 测量实际更新沿有限幅度路径产生的非线性响应。 & $r_{t,q}(\alpha)$：目标响应；$\Delta\theta_t$：真实更新；$\alpha$：更新幅度系数（$0$为基线，$1$为完整更新）。\\
+\addlinespace[3pt]
+(4) & 测量训练更新引起的分布式功能支撑持久重组。 & $P_q(\theta)$：由组件干预定义的目标功能支撑组织；$\Delta P_{t,q}$：支撑组织的变化；$q$：注册目标或目标组。\\
+\addlinespace[3pt]
+(5) & 描述冻结推理时对已学习支撑的调用与组合。 & $L^*$：冻结学习状态；$(q,c)$：查询与上下文；$\Pi_{q,c}$：支撑调用映射；$H_{q,c}$：输出组合映射；$y_{q,c}$：推理输出。\\
+\addlinespace[3pt]
+(6) & 测量双组件干预产生的非加性交互效应。 & $I_{ij,q}$：交互量；$i,j$：组件；$f_{\rm full}$：完整读出；$f_{-i},f_{-j},f_{-i,-j}$：单独或联合关闭组件后的读出。\\
+\addlinespace[3pt]
+(7) & 通过历史版本回滚检验推理对已学组件的依赖。 & $D_{j,q}$：回滚效应；$\theta^*$：已训练状态；$\theta^{(j\leftarrow\mathrm{pre})}$：仅将组件$j$替换成形成前版本的状态；$f$：功能读出。\\
+\addlinespace[3pt]
+(8) & 预测真实更新后的目标间隔和能力转变（TL-P01）。 & $\widehat g_{y,c}$：预测间隔；$b_c=w_y-w_c$、$\Delta b_c$：类别权重差及其更新；$h,h',h''$：隐藏表示及沿真实更新方向的一、二阶导数。\\
+\addlinespace[3pt]
+(9) & 利用四组件的全部联盟计算功能贡献。 & $\phi_{j,q}$：组件$j$的Shapley贡献；$C$：激活联盟；$\mathcal C$：四组件全集；$v_q(C)$：联盟激活时的目标间隔。\\
+\addlinespace[3pt]
+(10) & 描述递归反馈中信息模态的保留与真实数据补充。 & $q_t$：第$t$轮的信息模态占比；$\rho$：保留率；$\alpha$：真实数据混合比例；$q_{\rm real}$：真实数据中的相应占比。\\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{minipage}
+\end{center}
+
 \subsection{训练：真实更新与接收状态}
 
 在一个已注册的训练步骤中，参数—优化器状态为 $Z_t=(\theta_t,\omega_t)$，真实参数更新定义为 $\Delta\theta_t=\theta_{t+1}-\theta_t$。
