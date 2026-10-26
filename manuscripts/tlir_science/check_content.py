@@ -10,7 +10,7 @@ FLOAT = r"\\begin\{(figure\*?|table)\}.*?\\end\{\1\}"
 
 def normalize(x):
     x = re.sub(FLOAT, "", x, flags=re.S)
-    x = x.replace(r"\clearpage", "").replace(r"\newpage", "")
+    x = x.replace(r"\clearpage", " ").replace(r"\newpage", " ")
     return re.sub(r"\s+", " ", x).strip()
 
 o = original.split(r"\section{Introduction}", 1)[1].split(
