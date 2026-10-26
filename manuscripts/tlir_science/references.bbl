@@ -1,147 +1,77 @@
 \begin{thebibliography}{25}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\setlength{\itemsep}{5pt}
+\bibitem{jacot2018}
+A. Jacot, F. Gabriel, C. Hongler, Neural tangent kernel: Convergence and generalization in neural networks. \emph{Adv. Neural Inf. Process. Syst.} \textbf{31} (2018).
 
-\bibitem[Jacot et~al.(2018)Jacot, Gabriel, and Hongler]{jacot2018}
-A. Jacot, F. Gabriel, and C. Hongler.
-\newblock Neural tangent kernel: Convergence and generalization in neural
-  networks.
-\newblock \emph{Advances in Neural Information Processing Systems}, 2018.
+\bibitem{cohen2021}
+J. M. Cohen, S. Kaur, Y. Li, J. Z. Kolter, A. Talwalkar, Gradient descent on neural networks typically occurs at the edge of stability. \emph{Proc. ICLR} (2021).
 
-\bibitem[Cohen et~al.(2021)]{cohen2021}
-J.~M. Cohen et~al.
-\newblock Gradient descent on neural networks typically occurs at the edge of
-  stability.
-\newblock \emph{Proc. ICLR}, 2021.
+\bibitem{foret2021}
+P. Foret, A. Kleiner, H. Mobahi, B. Neyshabur, Sharpness-aware minimization for efficiently improving generalization. \emph{Proc. ICLR} (2021).
 
-\bibitem[Foret et~al.(2021)Foret, Kleiner, Mobahi, and Neyshabur]{foret2021}
-P. Foret, A. Kleiner, H. Mobahi, and B. Neyshabur.
-\newblock Sharpness-aware minimization for efficiently improving
-  generalization.
-\newblock \emph{Proc. ICLR}, 2021.
+\bibitem{rahaman2019}
+N. Rahaman, A. Baratin, D. Arpit, F. Draxler, M. Lin, F. A. Hamprecht, Y. Bengio, A. Courville, On the spectral bias of neural networks. \emph{Proc. Mach. Learn. Res.} \textbf{97}, 5301--5310 (2019).
 
-\bibitem[Rahaman et~al.(2019)]{rahaman2019}
-N. Rahaman et~al.
-\newblock On the spectral bias of neural networks.
-\newblock \emph{Proc. ICML}, pages 5301--5310, 2019.
+\bibitem{soudry2018}
+D. Soudry, E. Hoffer, M. S. Nacson, S. Gunasekar, N. Srebro, The implicit bias of gradient descent on separable data. \emph{J. Mach. Learn. Res.} \textbf{19}, 1--57 (2018).
 
-\bibitem[Soudry et~al.(2018)]{soudry2018}
-D. Soudry et~al.
-\newblock The implicit bias of gradient descent on separable data.
-\newblock \emph{J. Mach. Learn. Res.}, 19\penalty0 (70):\penalty0 1--57, 2018.
+\bibitem{papyan2020}
+V. Papyan, X. Y. Han, D. L. Donoho, Prevalence of neural collapse during the terminal phase of deep learning training. \emph{Proc. Natl. Acad. Sci. U.S.A.} \textbf{117}, 24652--24663 (2020).
 
-\bibitem[Papyan et~al.(2020)Papyan, Han, and Donoho]{papyan2020}
-V. Papyan, X.~Y. Han, and D.~L. Donoho.
-\newblock Prevalence of neural collapse during the terminal phase of deep
-  learning training.
-\newblock \emph{PNAS}, 117\penalty0 (40):\penalty0 24652--24663, 2020.
+\bibitem{tishby2015}
+N. Tishby, N. Zaslavsky, Deep learning and the information bottleneck principle. \emph{IEEE Information Theory Workshop}, arXiv:1503.02406 (2015).
 
-\bibitem[Tishby and Zaslavsky(2015)]{tishby2015}
-N. Tishby and N. Zaslavsky.
-\newblock Deep learning and the information bottleneck principle, 2015.
-\newblock in IEEE Information Theory Workshop, 2015, arXiv:1503.02406.
+\bibitem{power2022}
+A. Power, Y. Burda, H. Edwards, I. Babuschkin, V. Misra, Grokking: Generalization beyond overfitting on small algorithmic datasets. arXiv:2201.02177 (2022).
 
-\bibitem[Power et~al.(2022)Power, Burda, Edwards, Babuschkin, and
-  Misra]{power2022}
-A. Power, Y. Burda, H. Edwards, I. Babuschkin, and V. Misra.
-\newblock Grokking: Generalization beyond overfitting on small algorithmic
-  datasets, 2022.
-\newblock arXiv:2201.02177, 2022.
+\bibitem{nanda2023}
+N. Nanda, L. Chan, T. Lieberum, J. Smith, J. Steinhardt, Progress measures for grokking via mechanistic interpretability. \emph{Proc. ICLR} (2023).
 
-\bibitem[Nanda et~al.(2023)Nanda, Chan, Lieberum, Smith, and
-  Steinhardt]{nanda2023}
-N. Nanda, L. Chan, T. Lieberum, J. Smith, and J. Steinhardt.
-\newblock Progress measures for grokking via mechanistic interpretability.
-\newblock \emph{International Conference on Learning Representations}, 2023.
+\bibitem{belkin2019}
+M. Belkin, D. Hsu, S. Ma, S. Mandal, Reconciling modern machine-learning practice and the classical bias--variance trade-off. \emph{Proc. Natl. Acad. Sci. U.S.A.} \textbf{116}, 15849--15854 (2019).
 
-\bibitem[Belkin et~al.(2019)Belkin, Hsu, Ma, and Mandal]{belkin2019}
-M. Belkin, D. Hsu, S. Ma, and S. Mandal.
-\newblock Reconciling modern machine-learning practice and the classical
-  bias--variance trade-off.
-\newblock \emph{PNAS}, 116\penalty0 (32):\penalty0 15849--15854, 2019.
+\bibitem{nakkiran2020}
+P. Nakkiran, G. Kaplun, Y. Bansal, T. Yang, B. Barak, I. Sutskever, Deep double descent: Where bigger models and more data hurt. \emph{Proc. ICLR} (2020).
 
-\bibitem[Nakkiran et~al.(2020)]{nakkiran2020}
-P. Nakkiran et~al.
-\newblock Deep double descent: Where bigger models and more data hurt.
-\newblock \emph{Proc. ICLR}, 2020.
+\bibitem{kirkpatrick2017}
+J. Kirkpatrick, R. Pascanu, N. Rabinowitz, J. Veness, G. Desjardins, A. A. Rusu, K. Milan, J. Quan, T. Ramalho, A. Grabska-Barwinska, D. Hassabis, C. Clopath, D. Kumaran, R. Hadsell, Overcoming catastrophic forgetting in neural networks. \emph{Proc. Natl. Acad. Sci. U.S.A.} \textbf{114}, 3521--3526 (2017).
 
-\bibitem[Kirkpatrick et~al.(2017)]{kirkpatrick2017}
-J. Kirkpatrick et~al.
-\newblock Overcoming catastrophic forgetting in neural networks.
-\newblock \emph{PNAS}, 114\penalty0 (13):\penalty0 3521--3526, 2017.
+\bibitem{lopezpaz2017}
+D. Lopez-Paz, M. A. Ranzato, Gradient episodic memory for continual learning. \emph{Adv. Neural Inf. Process. Syst.} \textbf{30}, 6467--6476 (2017).
 
-\bibitem[Lopez-Paz and Ranzato(2017)]{lopezpaz2017}
-D. Lopez-Paz and M.~A. Ranzato.
-\newblock Gradient episodic memory for continual learning.
-\newblock \emph{Advances in Neural Information Processing Systems}, pages
-  6467--6476, 2017.
+\bibitem{farajtabar2020}
+M. Farajtabar, N. Azizan, A. Mott, A. Li, Orthogonal gradient descent for continual learning. \emph{Proc. Mach. Learn. Res.} \textbf{108}, 3762--3773 (2020).
 
-\bibitem[Farajtabar et~al.(2020)Farajtabar, Azizan, Mott, and
-  Li]{farajtabar2020}
-M. Farajtabar, N. Azizan, A. Mott, and A. Li.
-\newblock Orthogonal gradient descent for continual learning.
-\newblock \emph{Proc. AISTATS}, pages 3762--3773, 2020.
+\bibitem{vaswani2017}
+A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, I. Polosukhin, Attention is all you need. \emph{Adv. Neural Inf. Process. Syst.} \textbf{30}, 5998--6008 (2017).
 
-\bibitem[Vaswani et~al.(2017)]{vaswani2017}
-A. Vaswani et~al.
-\newblock Attention is all you need.
-\newblock \emph{Advances in Neural Information Processing Systems}, pages
-  5998--6008, 2017.
+\bibitem{brown2020}
+T. B. Brown, B. Mann, N. Ryder, M. Subbiah, J. D. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell, S. Agarwal, A. Herbert-Voss, G. Krueger, T. Henighan, R. Child, A. Ramesh, D. M. Ziegler, J. Wu, C. Winter, C. Hesse, M. Chen, E. Sigler, M. Litwin, S. Gray, B. Chess, J. Clark, C. Berner, S. McCandlish, A. Radford, I. Sutskever, D. Amodei, Language models are few-shot learners. \emph{Adv. Neural Inf. Process. Syst.} \textbf{33} (2020).
 
-\bibitem[Brown et~al.(2020)]{brown2020}
-T.~B. Brown et~al.
-\newblock Language models are few-shot learners.
-\newblock \emph{Advances in Neural Information Processing Systems}, 2020.
+\bibitem{wei2022}
+J. Wei, X. Wang, D. Schuurmans, M. Bosma, B. Ichter, F. Xia, E. H. Chi, Q. V. Le, D. Zhou, Chain-of-thought prompting elicits reasoning in large language models. \emph{Adv. Neural Inf. Process. Syst.} \textbf{35} (2022).
 
-\bibitem[Wei et~al.(2022)]{wei2022}
-J. Wei et~al.
-\newblock Chain-of-thought prompting elicits reasoning in large language
-  models.
-\newblock \emph{Advances in Neural Information Processing Systems}, 2022.
+\bibitem{ouyang2022}
+L. Ouyang, J. Wu, X. Jiang, D. Almeida, C. L. Wainwright, P. Mishkin, C. Zhang, S. Agarwal, K. Slama, A. Ray, J. Schulman, J. Hilton, F. Kelton, L. Miller, M. Simens, A. Askell, P. Welinder, P. Christiano, J. Leike, R. Lowe, Training language models to follow instructions with human feedback. \emph{Adv. Neural Inf. Process. Syst.} \textbf{35} (2022).
 
-\bibitem[Ouyang et~al.(2022)]{ouyang2022}
-L. Ouyang et~al.
-\newblock Training language models to follow instructions with human feedback.
-\newblock \emph{Advances in Neural Information Processing Systems}, 2022.
+\bibitem{xie2020}
+Q. Xie, M.-T. Luong, E. Hovy, Q. V. Le, Self-training with noisy student improves ImageNet classification. \emph{Proc. CVPR}, 10687--10698 (2020).
 
-\bibitem[Xie et~al.(2020)Xie, Luong, Hovy, and Le]{xie2020}
-Q. Xie, M.-T. Luong, E. Hovy, and Q.~V. Le.
-\newblock Self-training with noisy student improves imagenet classification.
-\newblock \emph{Proc. CVPR}, pages 10687--10698, 2020.
+\bibitem{shumailov2024}
+I. Shumailov, Z. Shumaylov, Y. Zhao, N. Papernot, R. Anderson, Y. Gal, AI models collapse when trained on recursively generated data. \emph{Nature} \textbf{631}, 755--759 (2024).
 
-\bibitem[Shumailov et~al.(2024)]{shumailov2024}
-I. Shumailov et~al.
-\newblock Ai models collapse when trained on recursively generated data.
-\newblock \emph{Nature}, 631:\penalty0 755--759, 2024.
+\bibitem{yang2021}
+G. Yang, E. J. Hu, Tensor programs IV: Feature learning in infinite-width neural networks. \emph{Proc. Mach. Learn. Res.} \textbf{139}, 11727--11737 (2021).
 
-\bibitem[Yang and Hu(2021)]{yang2021}
-G. Yang and E.~J. Hu.
-\newblock Tensor programs iv: Feature learning in infinite-width neural
-  networks.
-\newblock \emph{Proc. ICML}, pages 11727--11737, 2021.
+\bibitem{dinh2017}
+L. Dinh, R. Pascanu, S. Bengio, Y. Bengio, Sharp minima can generalize for deep nets. \emph{Proc. ICML}, 1019--1028 (2017).
 
-\bibitem[Dinh et~al.(2017)Dinh, Pascanu, Bengio, and Bengio]{dinh2017}
-L. Dinh, R. Pascanu, S. Bengio, and Y. Bengio.
-\newblock Sharp minima can generalize for deep nets.
-\newblock \emph{Proc. ICML}, pages 1019--1028, 2017.
+\bibitem{saxe2018}
+A. M. Saxe, Y. Bansal, J. Dapello, M. Advani, A. Kolchinsky, B. D. Tracey, D. D. Cox, On the information bottleneck theory of deep learning. \emph{Proc. ICLR} (2018).
 
-\bibitem[Saxe et~al.(2018)]{saxe2018}
-A.~M. Saxe et~al.
-\newblock On the information bottleneck theory of deep learning.
-\newblock \emph{Proc. ICLR}, 2018.
+\bibitem{kawaguchi2023}
+K. Kawaguchi, Z. Deng, X. Ji, J. Huang, How does information bottleneck help deep learning?. \emph{Proc. Mach. Learn. Res.} \textbf{202}, 16049--16096 (2023).
 
-\bibitem[Kawaguchi et~al.(2023)]{kawaguchi2023}
-K. Kawaguchi et~al.
-\newblock How does information bottleneck help deep learning?
-\newblock \emph{Proc. ICML}, 2023.
-
-\bibitem[Gerstgrasser et~al.(2024)]{gerstgrasser2024}
-M. Gerstgrasser et~al.
-\newblock Is model collapse inevitable? breaking the curse of recursion by
-  accumulating real and synthetic data.
-\newblock \emph{ICML Workshop on Foundation Models in the Wild}, 2024.
-
+\bibitem{gerstgrasser2024}
+M. Gerstgrasser, R. Schaeffer, A. Dey, R. Rafailov, H. Sleight, J. Hughes, T. Korbak, R. Agrawal, D. Pai, A. Gromov, D. A. Roberts, D. Yang, D. L. Donoho, S. Koyejo, Is model collapse inevitable? Breaking the curse of recursion by accumulating real and synthetic data. \emph{ICML Workshop on Foundation Models in the Wild} (2024).
 \end{thebibliography}
