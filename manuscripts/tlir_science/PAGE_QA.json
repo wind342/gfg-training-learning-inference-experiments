@@ -93,7 +93,7 @@
     },
     {
       "page": 12,
-      "non_whitespace_chars": 365,
+      "non_whitespace_chars": 514,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -101,14 +101,6 @@
     },
     {
       "page": 13,
-      "non_whitespace_chars": 624,
-      "has_table1": true,
-      "has_table2": false,
-      "has_table3": false,
-      "text_start": "Fig. 1.TLIR closed-loop dynamics. Training, Learning, and Inference establish the open-loo"
-    },
-    {
-      "page": 14,
       "non_whitespace_chars": 672,
       "has_table1": false,
       "has_table2": false,
@@ -116,44 +108,52 @@
       "text_start": "Fig. 2.Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feed"
     },
     {
-      "page": 15,
-      "non_whitespace_chars": 4426,
-      "has_table1": false,
-      "has_table2": true,
+      "page": 14,
+      "non_whitespace_chars": 4492,
+      "has_table1": true,
+      "has_table2": false,
       "has_table3": false,
       "text_start": "COMPLETE TRAINING\u2013LEARNING\u2013INFERENCE TESTS BY SYSTEM Each row links actual training update"
     },
     {
+      "page": 15,
+      "non_whitespace_chars": 528,
+      "has_table1": false,
+      "has_table2": true,
+      "has_table3": true,
+      "text_start": "Table 2.Post-update target-boundary classification reports. Macro recall averages four obs"
+    },
+    {
       "page": 16,
-      "non_whitespace_chars": 1343,
+      "non_whitespace_chars": 1759,
       "has_table1": false,
       "has_table2": false,
-      "has_table3": true,
-      "text_start": "Table 3.RL-E06 feedback episodes per update, by capability. Feedbackq 0 q1 q2 q3 Balanced "
+      "has_table3": false,
+      "text_start": "References and Notes 1. A. Jacot, F. Gabriel, C. Hongler, Neural tangent kernel: Convergen"
     },
     {
       "page": 17,
-      "non_whitespace_chars": 1875,
+      "non_whitespace_chars": 1814,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "10. M. Belkin, D. Hsu, S. Ma, S. Mandal, Reconciling modern machine-learning practice and "
+      "text_start": "13. D. Lopez-Paz, M. A. Ranzato, Gradient episodic memory for continual learning.Adv. Neur"
     },
     {
       "page": 18,
-      "non_whitespace_chars": 1586,
+      "non_whitespace_chars": 1617,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "20. I. Shumailov, Z. Shumaylov, Y . Zhao, N. Papernot, R. Anderson, Y . Gal, AI models col"
+      "text_start": "24. L. Dinh, R. Pascanu, S. Bengio, Y . Bengio, Sharp minima can generalize for deep nets."
     },
     {
       "page": 19,
-      "non_whitespace_chars": 1665,
+      "non_whitespace_chars": 1160,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "prospective predictions and theoretical deductions; prepared the figures; and wrote and re"
+      "text_start": "source code, result records, provenance and checksum manifests, and independent verificati"
     }
   ]
 }
