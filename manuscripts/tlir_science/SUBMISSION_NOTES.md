@@ -49,3 +49,9 @@
 - **投稿类型：** 现有三图三表共六个展示项；优先考虑 Science Research Article 扩展在线格式，具体以投稿系统与编辑判定为准。
 - **Supplementary Materials：** 不制造重复的附件。公开证据矩阵中已有的原始权威文件可用性边界应保留。
 - **Cover Letter：** 按作者要求最后处理，本轮不写。
+
+## 投稿版 PDF 最终生成结果
+
+- GitHub Actions 编译通过；当前 `TLIR_Science_Final.pdf` 为 **18 页**，文件 Git blob SHA `70d5ad5d82b7cecf18574080b1201394f27080c5`。
+- `PAGE_QA.json` 逐页文本检查为 **PASS**，空白或近乎空白页 0；本次编译未报告 Overfull 或 Float too large 问题。
+- 封面信仍按作者要求留待最后处理；作者贡献声明为待本人核定的草稿。
