@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{27}
 \setlength{\itemsep}{5pt}
 \bibitem{jacot2018}
 A. Jacot, F. Gabriel, C. Hongler, Neural tangent kernel: Convergence and generalization in neural networks. \emph{Adv. Neural Inf. Process. Syst.} \textbf{31} (2018).
@@ -62,6 +62,12 @@ I. Shumailov, Z. Shumaylov, Y. Zhao, N. Papernot, R. Anderson, Y. Gal, AI models
 
 \bibitem{yang2021}
 G. Yang, E. J. Hu, Tensor programs IV: Feature learning in infinite-width neural networks. \emph{Proc. Mach. Learn. Res.} \textbf{139}, 11727--11737 (2021).
+
+\bibitem{jain2019}
+S. Jain, B. C. Wallace, Attention is not explanation. \emph{Proc. NAACL-HLT}, 3543--3556 (2019). doi:10.18653/v1/N19-1357.
+
+\bibitem{wiegreffe2019}
+S. Wiegreffe, Y. Pinter, Attention is not not explanation. \emph{Proc. EMNLP-IJCNLP}, 11--20 (2019). doi:10.18653/v1/D19-1002.
 
 \bibitem{dinh2017}
 L. Dinh, R. Pascanu, S. Bengio, Y. Bengio, Sharp minima can generalize for deep nets. \emph{Proc. ICML}, 1019--1028 (2017).
