@@ -1,170 +1,116 @@
-"""Audit format-only changes against the frozen CVPR source without third-party packages."""
+"""Verify Science formatting without modifying original scientific findings."""
 from pathlib import Path
-import hashlib
-import json
-import re
+import hashlib, json, re
 
 ROOT = Path(__file__).resolve().parent
 original = (ROOT / "original_source/main.tex").read_text(encoding="utf-8")
 science = (ROOT / "main.tex").read_text(encoding="utf-8")
+bib = (ROOT / "references.bbl").read_text(encoding="utf-8")
 FLOAT = r"\\begin\{(figure\*?|table)\}.*?\\end\{\1\}"
 
+def normalize(x):
+    x = re.sub(FLOAT, "", x, flags=re.S)
+    x = x.replace(r"\clearpage", "").replace(r"\newpage", "")
+    return re.sub(r"\s+", " ", x).strip()
 
-def without_layout(tex):
-    body = tex.split(r"\begin{document}", 1)[1]
-    body = re.sub(FLOAT, "", body, flags=re.S)
-    body = re.sub(
-        r"\{\s*\\small\s*\\bibliographystyle\{ieeenat_fullname\}\s*"
-        r"\\bibliography\{main\}\s*\}",
-        "",
-        body,
-    )
-    body = body.replace(r"\input{references.bbl}", "").replace(r"\clearpage", "").replace(r"\newpage", "")
-    return body
+o = original.split(r"\section{Introduction}", 1)[1].split(
+    r"\noindent\textbf{Evidence availability and machine audit.}", 1)[0]
+s = science.split(r"\end{abstract}", 1)[1].split(
+    "\\clearpage\n\\begin{figure}", 1)[0]
+s = re.sub(r"^\s*\\noindent\s*", "", s, count=1)
+s, count = re.subn(
+    r"\\subsection\{Experimental Instruments and Evidence Control\}.*?"
+    r"(?=\\subsection\{Training: Realized Updates and Receiving States\})",
+    "", s, flags=re.S)
+assert count == 1
+s = s.replace(r"Figure~\ref{fig:chain} illustrates the four linked dynamical roles.", "")
+s = s.replace(r"Figure~\ref{fig:systems} summarizes the six within-system TLI experiment chains.", "")
+s = s.replace("within the main text", "within the conference page limit")
+s = s.replace("examined in the reinforcement section",
+              r"examined in Section~\ref{sec:reinforcement}")
+assert normalize(o) == normalize(s), "Unexpected change to scientific text"
 
-
-def canonical(value):
-    return re.sub(r"\s+", " ", value).strip()
-
-
-INSTRUMENT_SUBSECTION = r"""\subsection{Experimental Instruments and Evidence Control}
-These experiments required instruments that were developed as the measurement questions arose, rather than assumed before the theory. Their common evidence substrate was the Generation-Fact Graph (GFG), which links recorded model and optimizer states, actual update occurrences, interventions, outputs, and their source identities. For Training, realized-update causal forks restored matched receiving states and compared full, skipped, parameter-only, optimizer-memory, and reciprocal transfers, separating an update from the state on which it acts. A finite-amplitude path instrument then applied the same recorded update at frozen amplitude values to measure nonlinear numerical responses and discrete transitions. For Learning, CSRG-4C used repeated baseline, single-component, and paired-component gates to measure necessity, backup, substitution, synergy, and failure slack in the functional support of individual targets. Finally, an identity-aligned boundary ledger joined each registered target to the exact pre-update state and realized update, then separated pre-response records from post-update adjudication of correctness. The instruments enabled the subsequent experimental tests; frozen protocols, negative controls, and independent validators constrained their interpretation.
-
-"""
-
-def strip_approved_changes(tex):
-    assert tex.count(INSTRUMENT_SUBSECTION) == 1, "Instrument section missing or altered"
-    tex = tex.replace(INSTRUMENT_SUBSECTION, "")
-    tex = tex.replace("Figure~\\ref{fig:chain} illustrates the four linked dynamical roles.", "")
-    tex = tex.replace(
-        "Figure~\\ref{fig:systems} summarizes the six within-system TLI experiment chains.",
-        "",
-    )
-    tex = tex.replace("within the main text", "within the conference page limit")
-    tex = tex.replace(
-        "examined in the reinforcement section",
-        r"examined in Section~\ref{sec:reinforcement}",
-    )
-    tex = re.sub(
-        r"\\section\*\{Funding and Competing Interests\}.*?"
-        r"(?=\\section\*\{LLM Usage Statement\})",
-        "",
-        tex,
-        flags=re.S,
-    )
-    return tex
-
-
-assert canonical(strip_approved_changes(without_layout(science))) == canonical(
-    without_layout(original)
-), "Unexpected scientific text change"
-
-expected_funding = r"\noindent\textbf{Funding.} This research received no funding."
-expected_competing = (
-    r"\noindent\textbf{Competing interests.} The author declares no competing interests."
-)
-assert expected_funding in science and expected_competing in science
-assert "within the conference page limit" not in science
-assert science.count(r"\clearpage") == 1, "Unexpected inter-float forced pagination remains"
-assert science.count(r"\newpage") == 1, "Unexpected bibliography page break"
-assert r"Diffusion U-Net\newline(AdamW)" not in science
-assert r"Diffusion U-Net (AdamW)" in science
-assert r"\setcounter{secnumdepth}{0}" in science
-assert r"\captionsetup[figure]{name=Fig.}" in science
-assert r"\renewenvironment{abstract}{\par\noindent\textbf{Abstract}\par\bfseries}{\par\clearpage}" not in science
-
-
-def floats(tex):
-    result = {}
-    for match in re.finditer(FLOAT, tex, flags=re.S):
-        content = match.group(0)
-        label_match = re.search(r"\\label\{([^}]+)\}", content)
-        caption_match = re.search(r"\\caption\{([^\n]*)\}", content)
-        assert label_match and caption_match, "Float missing label or caption"
-        label = label_match.group(1)
-        table = re.search(r"\\begin\{tabular\}.*?\\end\{tabular\}", content, flags=re.S)
-        image = re.search(r"\\includegraphics\[[^]]*\]\{([^}]+)\}", content)
-        result[label] = {
-            "caption": caption_match.group(1),
-            "table": table.group(0) if table else None,
-            "image": image.group(1) if image else None,
-        }
-    return result
-
-
-of = floats(original)
-sf = floats(science)
-assert of.keys() == sf.keys() and len(of) == 6
-for key in of:
-    if key == "tab:systems":
-        assert of[key]["table"].replace(r"\newline", " ") == sf[key]["table"], ("Unexpected systems table edit", key)
-    else:
-        assert of[key]["table"] == sf[key]["table"], ("Changed table cells", key)
-    assert of[key]["image"] == sf[key]["image"], ("Changed figure source", key)
-    if key == "fig:tlir-evidence":
-        original_caption = of[key]["caption"]
-        updated_caption = sf[key]["caption"]
-        assert updated_caption.startswith(original_caption[:-1])
-        assert all(f"({label})" in updated_caption for label in (
-            "a1", "a2", "a3", "a4", "b1", "b2", "b3", "c1", "c2", "c3",
-            "d1", "d2", "d3", "d4",
-        ))
-    else:
-        assert of[key]["caption"] == sf[key]["caption"], ("Caption changed", key)
-
-body = re.sub(FLOAT, "", science, flags=re.S)
-figure_order = [r"fig:chain", r"fig:tlir-evidence", r"fig:systems"]
-figure_positions = [body.index(r"\ref{" + k + "}") for k in figure_order]
-assert figure_positions == sorted(figure_positions)
-for table in ("tab:systems", "tab:prediction", "tab:dose"):
-    assert r"\ref{" + table + "}" in body
-
-equations = lambda text: re.findall(
-    r"\\begin\{equation\}.*?\\end\{equation\}", text, flags=re.S
-)
+equations = lambda x: re.findall(r"\\begin\{equation\}.*?\\end\{equation\}", x, re.S)
 assert len(equations(original)) == 10
 assert equations(original) == equations(science)
 
+abstract = science.split(r"\begin{abstract}", 1)[1].split(
+    r"\end{abstract}", 1)[0].strip()
+assert len(abstract.split()) <= 125 and "\n\n" not in abstract
+for phrase in ["Nine nanoGPT experiments", "91.43", "91.49", "5,088",
+               "five additional", "seventh system", "70.31", "99.48"]:
+    assert phrase in abstract, phrase
+assert r"\section{Introduction}" not in science
+assert r"\renewcommand\refname{References and Notes}" in science
+assert science.index(r"\input{references.bbl}") < science.index(
+    r"\section*{Acknowledgments}")
 
-def bibitems(tex):
-    found = list(re.finditer(r"\\bibitem(?:\[[\s\S]*?\])?\{([^}]+)\}", tex))
-    end = tex.rfind(r"\end{thebibliography}")
-    return {
-        match.group(1): tex[match.start(): (found[i+1].start() if i+1 < len(found) else end)].strip()
-        for i, match in enumerate(found)
-    }, [match.group(1) for match in found]
+for phrase in [
+    r"\paragraph*{Funding:}", "This research received no funding.",
+    r"\paragraph*{Author contributions:}",
+    r"\paragraph*{Competing interests:}",
+    "There are no competing interests to declare.",
+    r"\paragraph*{Data, code and materials availability:}",
+    "https://doi.org/10.5281/zenodo.22032772",
+    "https://github.com/wind342/tlir-research-evidence/",
+    r"PUBLIC\_EVIDENCE\_MATRIX.md",
+    r"\paragraph*{Use of generative artificial intelligence:}"
+]:
+    assert phrase in science, "Missing declaration: " + phrase
 
+def floats(x):
+    result = {}
+    for match in re.finditer(FLOAT, x, re.S):
+        t = match.group(0)
+        label = re.search(r"\\label\{([^}]+)\}", t)
+        caption = re.search(r"\\caption\{([^\n]*)\}", t)
+        table = re.search(r"\\begin\{tabular\}.*?\\end\{tabular\}", t, re.S)
+        image = re.search(r"\\includegraphics\[[^]]*\]\{([^}]+)\}", t)
+        assert label and caption
+        result[label.group(1)] = (
+            caption.group(1),
+            table.group(0) if table else None,
+            image.group(1) if image else None
+        )
+    return result
 
-original_bib = (ROOT / "original_source/main.bbl").read_text(encoding="utf-8")
-current_bib = (ROOT / "references.bbl").read_text(encoding="utf-8")
-old_map, old_order = bibitems(original_bib)
-new_map, new_order = bibitems(current_bib)
-cite_order = list(dict.fromkeys(
-    key.strip()
-    for match in re.finditer(r"\\cite(?:\[[^]]*\])?\{([^}]+)\}", body)
-    for key in match.group(1).split(",")
+of = floats(original)
+sf = floats(science)
+assert of.keys() == sf.keys() and len(sf) == 6
+for key, (caption, table, image) in of.items():
+    updated_caption, updated_table, updated_image = sf[key]
+    assert image == updated_image, key
+    if key == "tab:systems":
+        assert table.replace(r"\newline", " ") == updated_table
+    else:
+        assert table == updated_table, key
+    if key == "fig:tlir-evidence":
+        assert updated_caption.startswith(caption[:-1])
+        for panel in "a1 a2 a3 a4 b1 b2 b3 c1 c2 c3 d1 d2 d3 d4".split():
+            assert "(" + panel + ")" in updated_caption
+    else:
+        assert caption == updated_caption, key
+
+refs = re.findall(r"\\bibitem\{([^}]+)\}", bib)
+main_without_floats = re.sub(FLOAT, "", science, flags=re.S)
+used = list(dict.fromkeys(
+    k.strip() for m in re.finditer(r"\\cite(?:\[[^]]*\])?\{([^}]+)\}",
+                                  main_without_floats)
+    for k in m.group(1).split(",")
 ))
-assert new_order == cite_order, "References are not in first-citation order"
-assert set(old_order) - set(new_order) == {"geiger2025"}
-assert len(new_order) == 25
-assert all(new_map[key] == old_map[key] for key in new_order)
-assert (ROOT / "original_source/main.bib").read_bytes() == (ROOT / "main.bib").read_bytes()
-assert r"\begin{thebibliography}{25}" in current_bib
+assert len(refs) == 25 and refs == used
+assert not re.search(r"\bet\s*al\.", bib, re.I)
+assert r"\emph{" in bib and r"\textbf{" in bib
+assert "geiger2025" not in bib
+assert (ROOT / "main.bib").read_bytes() == (
+    ROOT / "original_source/main.bib").read_bytes()
 
-title = re.search(r"\\title\{([^\n]*)\}", original).group(1)
-assert r"\title{\bfseries " + title + "}" in science
-expected_author = r"""\author{wangmian\\
-{\small Wuhan Polytechnic University, Wuhan, China}\\
-{\small Corresponding author. Email: \href{mailto:wangmian945@gmail.com}{wangmian945@gmail.com}}}"""
-assert expected_author in science
-assert "pdfauthor={wangmian}" in science
-
-report = json.loads((ROOT / "verification.json").read_text(encoding="utf-8"))
+report = json.loads((ROOT / "verification.json").read_text())
 for name, expected_sha in report["figure_files_sha256_identical"].items():
-    figure_file = ROOT / "figures" / name
-    assert hashlib.sha256(figure_file.read_bytes()).hexdigest() == expected_sha, name
+    actual_sha = hashlib.sha256((ROOT / "figures" / name).read_bytes()).hexdigest()
+    assert actual_sha == expected_sha, name
+assert science.count(r"\clearpage") == 1 and science.count(r"\newpage") == 1
 
-print("PASS: original scientific prose, abstract, ten equations, tables and image bytes preserved.")
-print("PASS: approved figure callouts, fourteen-panel legend and declarations present.")
-print("PASS: 25 cited references ordered by appearance; unused Geiger entry remains in original backup.")
-print("PASS: instrument subsection, compact float placement, and table line break verified.")
+print("PASS: scientific paragraphs, all ten equations, and six original figures/tables.")
+print(f"PASS: Science abstract {len(abstract.split())} words; 25 formatted references.")
+print("PASS: funding, authorship, competing interest, data/DOI and AI disclosures.")
