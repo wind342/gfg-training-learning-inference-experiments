@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{34}
 \setlength{\itemsep}{5pt}
 \bibitem{jacot2018}
 A. Jacot, F. Gabriel, C. Hongler, Neural tangent kernel: Convergence and generalization in neural networks. \emph{Adv. Neural Inf. Process. Syst.} \textbf{31} (2018).
@@ -60,24 +60,45 @@ Q. Xie, M.-T. Luong, E. Hovy, Q. V. Le, Self-training with noisy student improve
 \bibitem{shumailov2024}
 I. Shumailov, Z. Shumaylov, Y. Zhao, N. Papernot, R. Anderson, Y. Gal, AI models collapse when trained on recursively generated data. \emph{Nature} \textbf{631}, 755--759 (2024).
 
+\bibitem{dinh2017}
+L. Dinh, R. Pascanu, S. Bengio, Y. Bengio, Sharp minima can generalize for deep nets. \emph{Proc. ICML}, 1019--1028 (2017).
+
 \bibitem{yang2021}
 G. Yang, E. J. Hu, Tensor programs IV: Feature learning in infinite-width neural networks. \emph{Proc. Mach. Learn. Res.} \textbf{139}, 11727--11737 (2021).
-
-\bibitem{jain2019}
-S. Jain, B. C. Wallace, Attention is not explanation. \emph{Proc. NAACL-HLT}, 3543--3556 (2019). doi:10.18653/v1/N19-1357.
 
 \bibitem{wiegreffe2019}
 S. Wiegreffe, Y. Pinter, Attention is not not explanation. \emph{Proc. EMNLP-IJCNLP}, 11--20 (2019). doi:10.18653/v1/D19-1002.
 
-\bibitem{dinh2017}
-L. Dinh, R. Pascanu, S. Bengio, Y. Bengio, Sharp minima can generalize for deep nets. \emph{Proc. ICML}, 1019--1028 (2017).
+\bibitem{jain2019}
+S. Jain, B. C. Wallace, Attention is not explanation. \emph{Proc. NAACL-HLT}, 3543--3556 (2019). doi:10.18653/v1/N19-1357.
 
-\bibitem{saxe2018}
-A. M. Saxe, Y. Bansal, J. Dapello, M. Advani, A. Kolchinsky, B. D. Tracey, D. D. Cox, On the information bottleneck theory of deep learning. \emph{Proc. ICLR} (2018).
-
-\bibitem{kawaguchi2023}
-K. Kawaguchi, Z. Deng, X. Ji, J. Huang, How does information bottleneck help deep learning?. \emph{Proc. Mach. Learn. Res.} \textbf{202}, 16049--16096 (2023).
+\bibitem{gao2023}
+L. Gao, J. Schulman, J. Hilton, Scaling laws for reward model overoptimization. \emph{Proc. Mach. Learn. Res.} \textbf{202}, 10835--10866 (2023).
 
 \bibitem{gerstgrasser2024}
 M. Gerstgrasser, R. Schaeffer, A. Dey, R. Rafailov, H. Sleight, J. Hughes, T. Korbak, R. Agrawal, D. Pai, A. Gromov, D. A. Roberts, D. Yang, D. L. Donoho, S. Koyejo, Is model collapse inevitable? Breaking the curse of recursion by accumulating real and synthetic data. \emph{ICML Workshop on Foundation Models in the Wild} (2024).
+
+\bibitem{lewkowycz2020}
+A. Lewkowycz, Y. Bahri, E. Dyer, J. Sohl-Dickstein, G. Gur-Ari, The large learning rate phase of deep learning: The catapult mechanism. arXiv:2003.02218 (2020).
+
+\bibitem{damian2023}
+A. Damian, E. Nichani, J. D. Lee, Self-stabilization: The implicit bias of gradient descent at the edge of stability. \emph{Proc. ICLR} (2023).
+
+\bibitem{cohen2022adaptive}
+J. M. Cohen, B. Ghorbani, S. Krishnan, N. Agarwal, S. Medapati, M. Badura, D. Suo, D. Cardoze, Z. Nado, G. E. Dahl, J. Gilmer, Adaptive gradient methods at the edge of stability. \emph{Adv. Neural Inf. Process. Syst.} \textbf{35} (2022).
+
+\bibitem{nacson2019}
+M. S. Nacson, J. Lee, S. Gunasekar, P. H. P. Savarese, N. Srebro, D. Soudry, Convergence of gradient descent on separable data. \emph{Proc. Mach. Learn. Res.} \textbf{89}, 3420--3428 (2019).
+
+\bibitem{ji2019}
+Z. Ji, M. Telgarsky, The implicit bias of gradient descent on nonseparable data. \emph{Proc. Mach. Learn. Res.} \textbf{99}, 1772--1798 (2019).
+
+\bibitem{gunasekar2018}
+S. Gunasekar, J. Lee, D. Soudry, N. Srebro, Characterizing implicit bias in terms of optimization geometry. \emph{Proc. Mach. Learn. Res.} \textbf{80}, 1832--1841 (2018).
+
+\bibitem{lyu2020}
+K. Lyu, J. Li, Gradient descent maximizes the margin of homogeneous neural networks. \emph{Proc. ICLR} (2020).
+
+\bibitem{fu2024}
+S. Fu, S. Zhang, Y. Wang, X. Tian, D. Tao, Towards theoretical understandings of self-consuming generative models. \emph{Proc. Mach. Learn. Res.} \textbf{235}, 14228--14255 (2024).
 \end{thebibliography}

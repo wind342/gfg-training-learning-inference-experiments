@@ -116,6 +116,8 @@ for key, (caption, table, image) in of.items():
         assert updated_caption.startswith(caption[:-1])
         for panel in "a1 a2 a3 a4 b1 b2 b3 c1 c2 c3 d1 d2 d3 d4".split():
             assert "(" + panel + ")" in updated_caption
+    elif key == "tab:systems":
+        assert updated_caption == "Seven neural systems."
     elif key == "tab:prediction":
         assert updated_caption == ("Post-update target-boundary classification reports. "
                                    "Macro recall averages four observed transition categories.")
@@ -129,7 +131,7 @@ used = list(dict.fromkeys(
                                   main_without_floats)
     for k in m.group(1).split(",")
 ))
-assert len(refs) == 27 and refs == used, ("Citation mismatch", refs, used)
+assert len(refs) == 34 and refs == used, ("Citation mismatch", refs, used)
 new_bib = (ROOT / "additional_references.bib").read_text(encoding="utf-8")
 assert "10.18653/v1/N19-1357" in new_bib
 assert "10.18653/v1/D19-1002" in new_bib
@@ -164,5 +166,5 @@ assert len(table_starts) == 3 and all(i > guide_pos for i in table_starts)
 assert science.index(r"Table~\ref{tab:equation_guide} summarizes") < science.index(r"Table~\ref{tab:systems}")
 
 print("PASS: scientific paragraphs, all ten equations, and six original figures/tables.")
-print(f"PASS: Science abstract {len(abstract.split())} words; 27 formatted references.")
+print(f"PASS: Science abstract {len(abstract.split())} words; 34 formatted references.")
 print("PASS: funding, authorship, competing interest, data/DOI and AI disclosures.")

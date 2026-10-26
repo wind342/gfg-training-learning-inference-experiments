@@ -34,7 +34,7 @@ assert len(equations(original)) == 10
 assert equations(original) == equations(translation), (
     "Some mathematics or equation labels changed during translation"
 )
-assert len(citations(original)) == 38
+assert len(citations(original)) == 47
 assert citations(original) == citations(translation), (
     "Bibliographic citations were omitted or reordered"
 )
@@ -79,7 +79,7 @@ assert "10.5281/zenodo" not in translation
 assert "10.5281/zenodo" not in master
 assert "https://github.com/wind342/tlir-research-evidence/" in translation
 assert r"\input{../references.bbl}" in translation
-assert len(re.findall(r"\\bibitem\{", (BASE / "references.bbl").read_text())) == 27
+assert len(re.findall(r"\\bibitem\{", (BASE / "references.bbl").read_text())) == 34
 method_zh = parts[0].split(r"\subsection{实验仪器与证据控制}",1)[1].split(r"\subsection{训练：真实更新与接收状态}",1)[0]
 assert "AI" not in method_zh and "Codex" not in method_zh and "ChatGPT" not in method_zh
 assert "发明" not in method_zh and "作者的科学指导" not in method_zh
@@ -96,6 +96,6 @@ for i in (1, 2, 3):
     assert rf"\input{{part{i}_zh.tex}}" in master
 
 print("PASS: 10 equations unchanged and all 18 labels in the same order.")
-print("PASS: 38 bibliographic citations in the same order; 27 sources (25 retained + two ACL-verified historical comparison papers).")
+print("PASS: 47 bibliographic citations in the same order; 34 verified sources.")
 print("PASS: all 3 figures and 3 tables, preserved source images and key values.")
 print("PASS: actual AI invention, experiment execution, negative verdicts and GitHub evidence disclosure.")
