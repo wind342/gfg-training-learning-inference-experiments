@@ -45,7 +45,7 @@
 - **作者贡献：** 已在 Acknowledgments 中编写单作者的贡献说明草稿，作者本人需要审定措辞和实际角色；不把 AI 认定为作者。
 - **资金 / 利益冲突：** 按用户确认保留在规范的 Acknowledgments 小标题下。
 - **参考文献：** 当前 25 条按首次引用排列，统一 Science 风格并补齐文献作者名单；`main.bib` 是原始溯源数据，并非当前渲染参考文献的权威文件。
-- **证据：** 在 Data, code and materials availability 正式链接到 GitHub 论文—证据映射、Zenodo 10.5281/zenodo.22032772，并提示 `PUBLIC_EVIDENCE_MATRIX.md` 公开验证边界。
+- **证据：** Data, code and materials availability 仅使用 GitHub 证据仓库入口，突出证据依论文科学主张组织、支持机器快速审计，并保留 `PUBLIC_EVIDENCE_MATRIX.md` 对可核验范围及缺失原始运行文件的准确说明；不将覆盖不全的 Zenodo 归档表述为整篇论文的证据权威。
 - **投稿类型：** 现有三图三表共六个展示项；优先考虑 Science Research Article 扩展在线格式，具体以投稿系统与编辑判定为准。
 - **Supplementary Materials：** 不制造重复的附件。公开证据矩阵中已有的原始权威文件可用性边界应保留。
 - **Cover Letter：** 按作者要求最后处理，本轮不写。
