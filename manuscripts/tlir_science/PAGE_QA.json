@@ -5,7 +5,7 @@
   "pages": [
     {
       "page": 1,
-      "non_whitespace_chars": 1713,
+      "non_whitespace_chars": 1759,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -13,43 +13,43 @@
     },
     {
       "page": 2,
-      "non_whitespace_chars": 2421,
+      "non_whitespace_chars": 2422,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "stateis represented by parameters and their local derivatives or curvature;realized update"
+      "text_start": "using loss changes in a parameter neighborhood to improve generalization (3). Here, thecur"
     },
     {
       "page": 3,
-      "non_whitespace_chars": 2007,
+      "non_whitespace_chars": 1886,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "prompting studies how intermediate reasoning steps affect performance on complex tasks (17"
+      "text_start": "in the context affect predictions while model parameters remain fixed ( 16). Chain-of-Thou"
     },
     {
       "page": 4,
-      "non_whitespace_chars": 1803,
+      "non_whitespace_chars": 1931,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Fact Graph (GFG), which links recorded model and optimizer states, actual update occurrenc"
+      "text_start": "Experimental Instruments and Evidence Control These experiments required instruments that "
     },
     {
       "page": 5,
-      "non_whitespace_chars": 1555,
+      "non_whitespace_chars": 1518,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "TL-E04 measured the complete finite-amplitude response to an actual update: rt,q(\u03b1) =mq(\u03b8t"
+      "text_start": "torical optimizer states affect update formation: \u2206(a,b) =OptStep(\u03b8 t,gt,\u03c9 a,b).(2) TL-E04"
     },
     {
       "page": 6,
-      "non_whitespace_chars": 1360,
+      "non_whitespace_chars": 1471,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Non-additive component interactions are measured by Ii j,q =f full \u2212f \u2212i \u2212f \u2212j +f \u2212i,\u2212j ,("
+      "text_start": "At a fixed learned stateL \u2217, inference recruits and combines learned support: Sactiveq,c ="
     },
     {
       "page": 7,
@@ -61,7 +61,7 @@
     },
     {
       "page": 8,
-      "non_whitespace_chars": 1738,
+      "non_whitespace_chars": 1739,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -117,7 +117,7 @@
     },
     {
       "page": 15,
-      "non_whitespace_chars": 695,
+      "non_whitespace_chars": 696,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -129,7 +129,7 @@
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Fig. 2.Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feed"
+      "text_start": "Fig. 2. Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and fee"
     },
     {
       "page": 17,
@@ -181,19 +181,19 @@
     },
     {
       "page": 23,
-      "non_whitespace_chars": 768,
+      "non_whitespace_chars": 442,
       "has_table1": false,
       "has_table2": true,
-      "has_table3": true,
+      "has_table3": false,
       "text_start": "Table 2.Seven neural systems. System (optimizer) Task / registered components nanoGPT (Ada"
     },
     {
       "page": 24,
-      "non_whitespace_chars": 121,
+      "non_whitespace_chars": 478,
       "has_table1": false,
       "has_table2": false,
-      "has_table3": false,
-      "text_start": "Table 4.RL-E06 feedback episodes per update, by capability. Feedbackq 0 q1 q2 q3 Balanced "
+      "has_table3": true,
+      "text_start": "Table 3.Prediction and feedback experiment summaries. Macro recall averages four observed "
     }
   ]
 }
