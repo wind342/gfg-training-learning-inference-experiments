@@ -35,11 +35,11 @@
     },
     {
       "page": 7,
-      "non_whitespace_chars": 1211
+      "non_whitespace_chars": 1242
     },
     {
       "page": 8,
-      "non_whitespace_chars": 473
+      "non_whitespace_chars": 1217
     },
     {
       "page": 9,
@@ -59,11 +59,11 @@
     },
     {
       "page": 13,
-      "non_whitespace_chars": 1946
+      "non_whitespace_chars": 2136
     },
     {
       "page": 14,
-      "non_whitespace_chars": 727
+      "non_whitespace_chars": 749
     }
   ]
 }
