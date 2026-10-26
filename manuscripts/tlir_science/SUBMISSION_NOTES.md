@@ -82,3 +82,8 @@
 - Jain & Wallace 2019、Wiegreffe & Pinter 2019 已用 ACL Anthology DOI 核对；所有原有 25 条文献保留，新加 2 条，原 main.bib 保持不变。
 - 完整 21 组历史矩阵和 14 项外推记录已从用户 ChatGPT Library 中的研究交接说明提取**科学部分**，以明确证据等级与程序边界的形式分别公开：https://github.com/wind342/tlir-research-evidence/blob/codex/tlir-paper-evidence-navigation-v1/TLIR_HISTORICAL_STRESS_TEST_21.md 和 https://github.com/wind342/tlir-research-evidence/blob/codex/tlir-paper-evidence-navigation-v1/TLIR_THEORY_FIRST_14_DERIVATIONS.md。
 - 本次没有运行新的原生神经网络实验，也不把文献一致性冒充原生因果验证或第三方盲法预注册。
+
+## 扩展第五节后的英文 PDF 视觉检查
+
+- English PDF 当前 19 页，页面 QA PASS，原图及三张表顺序保持。新增正反及外推段落导致原先 `\\clearpage` 把少量结论尾句独立隔离在新页，现删除该单一排版分页命令，图 1 与结论在同页连续显示。
+- 已使用 GitHub Actions 渲染全部 19 页页面联系图，重点检查第 10–15 页，未更改任何科学文本、数值、公式、图表或参考文献条目。
