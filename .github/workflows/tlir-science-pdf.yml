@@ -83,5 +83,7 @@ jobs:
           git add TLIR_Science_Final.pdf PAGE_QA.json
           if ! git diff --cached --quiet; then
             git commit -m "Recompile compact TLIR Science manuscript and verify pages [skip ci]"
+            git fetch origin codex/tlir-science-latex
+            git rebase origin/codex/tlir-science-latex
             git push origin HEAD:codex/tlir-science-latex
           fi
