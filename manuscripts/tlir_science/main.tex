@@ -49,7 +49,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Although training, learning, inference, and reinforcement have been extensively studied, their distinct dynamical roles and connections have lacked a unified experimental characterization. Nine nanoGPT experiments established training--learning--inference relations: realized updates elicit state-dependent finite-amplitude responses; learning persistently reorganizes distributed functional support, with target-specific readout-boundary crossings determining capability transitions; inference recruits learned support without changing the learned state. Factors identified in the fifth experiment yielded a direct predictor of post-update capability transitions, achieving 91.43\% accuracy and 91.49\% four-way macro recall across 5,088 targets. We tested these relations and prediction across five additional neural architectures. In a seventh system, concentrated correct feedback eroded previously mastered skills; rebalanced feedback restored their accuracy from 70.31\% to 99.48\%. Linking inference consequences to subsequent training closes these relations into unified training--learning--inference--reinforcement dynamics.
+Despite their remarkable success, neural networks remain largely black boxes, and the mechanisms underlying their behavior are still poorly understood. Nine nanoGPT experiments established training--learning--inference relations: realized updates elicit state-dependent finite-amplitude responses; learning persistently reorganizes distributed functional support, with target-specific readout-boundary crossings determining capability transitions; inference recruits learned support without changing the learned state. Factors identified in the fifth experiment yielded a direct predictor of post-update capability transitions, achieving 91.43\% accuracy and 91.49\% four-way macro recall across 5,088 targets. We tested these relations and prediction across five additional neural architectures. In a seventh system, concentrated correct feedback eroded previously mastered skills; rebalanced feedback restored their accuracy from 70.31\% to 99.48\%. Linking inference consequences to subsequent training closes these relations into unified training--learning--inference--reinforcement dynamics.
 \end{abstract}
 
 \noindent
@@ -210,57 +210,57 @@ Reinforcement connects the consequences of inference to subsequent training acti
 
 \section{Unified Explanations of Positive and Negative Findings}
 \label{sec:unified}
-The experimentally established Training--Learning--Inference relations and their reinforcement closure connect receiving state, actual action, functional response, persistent support, capability boundary, and feedback. These relations explain previously reported positive and negative findings and yield further theory-first deductions.
+The experimentally established Training--Learning--Inference relations and their reinforcement closure connect receiving state, actual action, functional response, persistent support, capability boundary, and feedback. These relations explain previously reported positive and negative findings and yield further theory-first deductions. The eight comparisons and three deductions below are representative examples. The complete research covers 21 historical positive--negative comparisons and 14 theory-first extrapolations, with full analyses and derivations in the public evidence repository.
 
 \subsection{Unified explanations of positive and negative findings}
 
 \noindent\textbf{Sharpness and SAM: Parameter geometry and actual training effects}\par
-\textbf{Positive theory or finding.} Foret and colleagues showed that sharpness-aware minimization uses neighborhood loss sensitivity to form effective training directions and improve generalization. \cite{foret2021}
-\textbf{Contrasting theory or finding.} Dinh and colleagues demonstrated that function-preserving reparameterizations can substantially alter raw parameter-space sharpness. \cite{dinh2017}
-\textbf{TLIR unification.} Sharpness is a measurement of local geometry; SAM uses this measurement to form an actual training action. The action then enters a specific receiving state and causes a target-specific finite functional response. Both findings follow the same geometry--action--receiver--response chain.
-\textbf{Experimental anchor.} TL-E03: identical updates produce different responses across receivers. TL-E04: finite-amplitude responses are nonlinear.
+Positive theory or finding. Foret and colleagues showed that sharpness-aware minimization uses neighborhood loss sensitivity to form effective training directions and improve generalization. \cite{foret2021}
+Contrasting theory or finding. Dinh and colleagues demonstrated that function-preserving reparameterizations can substantially alter raw parameter-space sharpness. \cite{dinh2017}
+TLIR unification. Sharpness is a measurement of local geometry; SAM uses this measurement to form an actual training action. The action then enters a specific receiving state and causes a target-specific finite functional response. Both findings follow the same geometry--action--receiver--response chain.
+Experimental anchor. TL-E03: identical updates produce different responses across receivers. TL-E04: finite-amplitude responses are nonlinear.
 
 \noindent\textbf{NTK and feature learning: Fixed-kernel dynamics and representation evolution}\par
-\textbf{Positive theory or finding.} Jacot and colleagues established neural tangent kernel dynamics in the corresponding infinite-width lazy-training regime. \cite{jacot2018}
-\textbf{Contrasting theory or finding.} Yang and colleagues established feature-learning parameterizations under which internal representations evolve substantially during training. \cite{yang2021}
-\textbf{TLIR unification.} These are distinct regions of the same receiving-state--actual-update--functional-response dynamics. Kernel behavior describes regimes in which local functional responses remain nearly stationary; feature learning describes updates that reorganize functional support and hence change future receivers. The current state governs each action's response, and realized actions transform subsequent states.
-\textbf{Experimental anchor.} TL-E03: receiver-dependent response. TL-E04: nonlinear finite response. TL-E07: persistent support reorganization.
+Positive theory or finding. Jacot and colleagues established neural tangent kernel dynamics in the corresponding infinite-width lazy-training regime. \cite{jacot2018}
+Contrasting theory or finding. Yang and colleagues established feature-learning parameterizations under which internal representations evolve substantially during training. \cite{yang2021}
+TLIR unification. These are distinct regions of the same receiving-state--actual-update--functional-response dynamics. Kernel behavior describes regimes in which local functional responses remain nearly stationary; feature learning describes updates that reorganize functional support and hence change future receivers. The current state governs each action's response, and realized actions transform subsequent states.
+Experimental anchor. TL-E03: receiver-dependent response. TL-E04: nonlinear finite response. TL-E07: persistent support reorganization.
 
 \noindent\textbf{Grokking: Delayed capability and prior circuit formation}\par
-\textbf{Positive theory or finding.} Power and colleagues observed rapid test generalization long after training accuracy had saturated. \cite{power2022}
-\textbf{Contrasting theory or finding.} Nanda and colleagues traced sustained internal circuit formation preceding the visible test-capability transition. \cite{nanda2023}
-\textbf{TLIR unification.} Learning is persistent functional-support reorganization, whereas capability is a target-specific readout. Support can evolve continuously while a target margin approaches the decision boundary. Crossing that boundary turns gradual internal formation into an apparently sudden change in correct performance.
-\textbf{Experimental anchor.} TL-E06: distributed support. TL-E07: support reorganization. TL-E08: boundary crossings. TL-P01: immediate post-update boundary prediction.
+Positive theory or finding. Power and colleagues observed rapid test generalization long after training accuracy had saturated. \cite{power2022}
+Contrasting theory or finding. Nanda and colleagues traced sustained internal circuit formation preceding the visible test-capability transition. \cite{nanda2023}
+TLIR unification. Learning is persistent functional-support reorganization, whereas capability is a target-specific readout. Support can evolve continuously while a target margin approaches the decision boundary. Crossing that boundary turns gradual internal formation into an apparently sudden change in correct performance.
+Experimental anchor. TL-E06: distributed support. TL-E07: support reorganization. TL-E08: boundary crossings. TL-P01: immediate post-update boundary prediction.
 
 \noindent\textbf{Neural collapse: Accuracy saturation and continuing representation formation}\par
-\textbf{Positive theory or finding.} After training examples are correctly classified, the discrete accuracy measure reaches its plateau.
-\textbf{Contrasting theory or finding.} Papyan and colleagues found that representations and classifiers continue to evolve after zero training error, developing structured class means and classifier geometry. \cite{papyan2020}
-\textbf{TLIR unification.} Accuracy records which side of a readout boundary a target occupies; learning records persistent functional organization. Actual training actions continue changing margins, component support allocation, and feature geometry even when discrete correctness is stable. The two observations describe different aspects of the same learning trajectory.
-\textbf{Experimental anchor.} TL-E07: support changes while capability is stable. TL-E08: readout boundaries. RL-E06: margins change before accuracy declines.
+Positive theory or finding. After training examples are correctly classified, the discrete accuracy measure reaches its plateau.
+Contrasting theory or finding. Papyan and colleagues found that representations and classifiers continue to evolve after zero training error, developing structured class means and classifier geometry. \cite{papyan2020}
+TLIR unification. Accuracy records which side of a readout boundary a target occupies; learning records persistent functional organization. Actual training actions continue changing margins, component support allocation, and feature geometry even when discrete correctness is stable. The two observations describe different aspects of the same learning trajectory.
+Experimental anchor. TL-E07: support changes while capability is stable. TL-E08: readout boundaries. RL-E06: margins change before accuracy declines.
 
 \noindent\textbf{Attention: Operational role and weight-based explanations}\par
-\textbf{Positive theory or finding.} Vaswani and colleagues established query-conditioned information weighting and combination; Wiegreffe and Pinter investigated controlled conditions under which attention can provide meaningful explanations. \cite{vaswani2017,wiegreffe2019}
-\textbf{Contrasting theory or finding.} Jain and Wallace showed that attention weights can diverge from gradient-based importance and that different weight patterns can produce similar outputs. \cite{jain2019}
-\textbf{TLIR unification.} Frozen inference recruits learned support according to the query and combines component effects. Attention weights encode a transient routing and weighting operation, while the functional contribution of each component and combination is measured by interventions. Both findings describe distinct objects within the same inference mechanism.
-\textbf{Experimental anchor.} INF-E01: query-conditioned component gates, non-additive pair effects, and exact trained-version rollback.
+Positive theory or finding. Vaswani and colleagues established query-conditioned information weighting and combination; Wiegreffe and Pinter investigated controlled conditions under which attention can provide meaningful explanations. \cite{vaswani2017,wiegreffe2019}
+Contrasting theory or finding. Jain and Wallace showed that attention weights can diverge from gradient-based importance and that different weight patterns can produce similar outputs. \cite{jain2019}
+TLIR unification. Frozen inference recruits learned support according to the query and combines component effects. Attention weights encode a transient routing and weighting operation, while the functional contribution of each component and combination is measured by interventions. Both findings describe distinct objects within the same inference mechanism.
+Experimental anchor. INF-E01: query-conditioned component gates, non-additive pair effects, and exact trained-version rollback.
 
 \noindent\textbf{RLHF: Alignment gains and capability trade-offs}\par
-\textbf{Positive theory or finding.} Ouyang and colleagues showed that preference and instruction feedback improves target instruction-following and alignment performance. \cite{ouyang2022}
-\textbf{Contrasting theory or finding.} The same feedback-training line reported regressions on some other benchmarks, mitigated in part by including broader pretraining data.
-\textbf{TLIR unification.} Feedback changes future training actions, which redistribute support among capabilities in a shared receiving system. Concentrated feedback strengthens support for the reinforced objective while reducing other mastered skills' margins; rebalanced feedback reorganizes that support and restores their capability. Alignment gains and alignment tax are consequences of the same feedback--training--learning loop.
-\textbf{Experimental anchor.} RL-E06: concentrated correct feedback erodes other mastered capabilities; rebalancing restores them.
+Positive theory or finding. Ouyang and colleagues showed that preference and instruction feedback improves target instruction-following and alignment performance. \cite{ouyang2022}
+Contrasting theory or finding. The same feedback-training line reported regressions on some other benchmarks, mitigated in part by including broader pretraining data.
+TLIR unification. Feedback changes future training actions, which redistribute support among capabilities in a shared receiving system. Concentrated feedback strengthens support for the reinforced objective while reducing other mastered skills' margins; rebalanced feedback reorganizes that support and restores their capability. Alignment gains and alignment tax are consequences of the same feedback--training--learning loop.
+Experimental anchor. RL-E06: concentrated correct feedback erodes other mastered capabilities; rebalancing restores them.
 
 \noindent\textbf{Reward overoptimization: Proxy mismatch and concentrated correct feedback}\par
-\textbf{Positive theory or finding.} Reward models and preference signals supply useful training directions when the intended objective is hard to express directly.
-\textbf{Contrasting theory or finding.} Gao and colleagues documented reward overoptimization in which improved proxy scores coincide with degraded performance under the underlying criterion. \cite{gao2023}
-\textbf{TLIR unification.} Feedback conditions actual training through two relations: content and credit binding determine which action receives a signal, while allocation determines the distribution of actions over time. Proxy mismatch changes the bound target; concentrated, fully correct feedback changes the long-run allocation. Both operate through feedback, actual updates, functional support, and capability.
-\textbf{Experimental anchor.} RL-E01/E02: causal credit and feedback binding alter training actions. RL-E06: fully correct, concentrated feedback produces support reallocation and cross-skill decline.
+Positive theory or finding. Reward models and preference signals supply useful training directions when the intended objective is hard to express directly.
+Contrasting theory or finding. Gao and colleagues documented reward overoptimization in which improved proxy scores coincide with degraded performance under the underlying criterion. \cite{gao2023}
+TLIR unification. Feedback conditions actual training through two relations: content and credit binding determine which action receives a signal, while allocation determines the distribution of actions over time. Proxy mismatch changes the bound target; concentrated, fully correct feedback changes the long-run allocation. Both operate through feedback, actual updates, functional support, and capability.
+Experimental anchor. RL-E01/E02: causal credit and feedback binding alter training actions. RL-E06: fully correct, concentrated feedback produces support reallocation and cross-skill decline.
 
 \noindent\textbf{Self-training: Pseudo-label gains and recursive model collapse}\par
-\textbf{Positive theory or finding.} Xie and colleagues showed that Noisy Student can improve ImageNet classification and robustness by learning from model-generated pseudo-labels. \cite{xie2020}
-\textbf{Contrasting theory or finding.} Shumailov and colleagues observed rare-mode loss under recursive synthetic-data replacement; Gerstgrasser and colleagues found that preserving and accumulating real data changes the trajectory. \cite{shumailov2024,gerstgrasser2024}
-\textbf{TLIR unification.} Inference outputs re-enter training data and determine subsequent updates, support, and future inference. Informative pseudo-labels supply effective learning signals; repeated synthetic replacement can suppress rare modes, whereas continued real-data input supplies those modes with persistent learning opportunities. Both are regimes of the same inference--data--training--learning--inference feedback closure.
-\textbf{Experimental anchor.} TL-E07: actual updates reorganize support. RL-E06: feedback allocation changes support concentration, retention, and recovery.
+Positive theory or finding. Xie and colleagues showed that Noisy Student can improve ImageNet classification and robustness by learning from model-generated pseudo-labels. \cite{xie2020}
+Contrasting theory or finding. Shumailov and colleagues observed rare-mode loss under recursive synthetic-data replacement; Gerstgrasser and colleagues found that preserving and accumulating real data changes the trajectory. \cite{shumailov2024,gerstgrasser2024}
+TLIR unification. Inference outputs re-enter training data and determine subsequent updates, support, and future inference. Informative pseudo-labels supply effective learning signals; repeated synthetic replacement can suppress rare modes, whereas continued real-data input supplies those modes with persistent learning opportunities. Both are regimes of the same inference--data--training--learning--inference feedback closure.
+Experimental anchor. TL-E07: actual updates reorganize support. RL-E06: feedback allocation changes support concentration, retention, and recovery.
 
 \subsection{Theory-first extrapolations and independent research comparisons}
 Starting from TLIR dynamics, we specify state and action variables, derive their mathematical consequences under stated assumptions, and then compare the results with independent studies. This derivation-before-search sequence addresses evolving stability, continuing learning after capability formation, and recursive feedback.
@@ -283,7 +283,7 @@ A positive-curvature eigenmode contracts under
 |1-\eta\lambda_i|<1,\qquad \lambda_{\max}=2/\eta
 \]
 at the marginal boundary. This is a local stability threshold at the current receiver. A finite training action changes parameters, curvature, optimizer memory, and functional response, causing the subsequent state map to evolve. It follows that receiver and curvature reorganization can return the trajectory toward marginal stability after a temporary crossing of the frozen threshold; momentum and adaptive optimizers produce boundaries dependent on their joint parameter--optimizer states. Independent results include Cohen and colleagues' edge-of-stability observations, Lewkowycz and colleagues' catapult mechanism, Damian and colleagues' self-stabilization dynamics, and adaptive preconditioned stability studied by Cohen and colleagues \cite{cohen2021,lewkowycz2020,damian2023,cohen2022adaptive}.
-\textbf{Experimental anchor.} TL-E03: receiver-dependent response. TL-E04: nonlinear finite response. TL-E05: target boundary, update geometry, and receiving state condition the response.
+Experimental anchor. TL-E03: receiver-dependent response. TL-E04: nonlinear finite response. TL-E05: target boundary, update geometry, and receiving state condition the response.
 
 \medskip\noindent\textbf{Post-capability learning: Implicit bias and maximum margin.}
 TLIR identifies capability formation with a target readout-boundary crossing and learning with persistent functional reorganization. In linearly separable binary classification, define the margin
@@ -307,7 +307,7 @@ Under the corresponding exponential-tail and asymptotic-direction conditions, ra
 r(t)\sim\frac{1}{\gamma^\star}\log t.
 \]
 Capability can thus remain fixed while actual training actions continually reorganize margin and parameter geometry. The results of Soudry, Nacson, Ji and Telgarsky, Gunasekar, and Lyu and Li describe maximum-margin convergence, loss-tail dependence, logistic dynamics, optimization geometry, and homogeneous neural-network margin behavior, respectively \cite{soudry2018,nacson2019,ji2019,gunasekar2018,lyu2020}.
-\textbf{Experimental anchor.} TL-E07: continuing support reorganization. TL-E08: readout boundaries determine capability. RL-E06: mastered skills exhibit continuing support and margin changes.
+Experimental anchor. TL-E07: continuing support reorganization. TL-E08: readout boundaries determine capability. RL-E06: mastered skills exhibit continuing support and margin changes.
 
 \medskip\noindent\textbf{Recursive feedback: Information contraction and real-data anchoring.}
 In the TLIR closed loop, inference-generated data return as subsequent training input. Let $q_t$ be the mass of a rare information mode at generation $t$, and let $0<\rho<1$ denote its average retention in recursively generated data. Complete replacement yields
@@ -324,7 +324,7 @@ For $\alpha>0$, its limiting fixed point is
 q^\star=\frac{\alpha q_{\rm real}}{1-(1-\alpha)\rho}>0.
 \]
 Complete synthetic replacement contracts rare-mode information, while continued external input supplies a stable source for that mode. The recursive tail-loss results of Shumailov and colleagues, the real-data accumulation findings of Gerstgrasser and colleagues, and Fu and colleagues' analysis of real--synthetic mixing correspond to these different feedback regimes \cite{shumailov2024,gerstgrasser2024,fu2024}.
-\textbf{Experimental anchor.} RL-E01: feedback binding changes actual training actions. RL-E06: feedback allocation and duration alter support and capability. TL-E07: realized updates persistently reorganize support.
+Experimental anchor. RL-E01: feedback binding changes actual training actions. RL-E06: feedback allocation and duration alter support and capability. TL-E07: realized updates persistently reorganize support.
 
 We invite reviewers and independent researchers to derive and test additional TLIR predictions.
 

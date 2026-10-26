@@ -87,6 +87,10 @@ assert "学习表现为分布式功能支撑的持久重组；目标跨越其特
 assert "TLIR 的核心关系是在开展上述跨领域比较之前，通过实验建立的" in parts[0]
 assert "学习使分布式功能支撑持续重组，并涉及能力边界的跨越" not in parts[0]
 assert "欢迎审稿人和其他独立研究者" in translation
+assert "尽管神经网络取得了显著成功，但其内部运行机制仍缺乏清晰的科学解释，黑箱问题依然存在。" in parts[0]
+section5_zh = parts[1].split(r"\section{对正面与负面研究结果的统一解释}",1)[1].split(r"\section{结论}",1)[0]
+assert "21组历史正反结果" in section5_zh and "14项理论先行外推" in section5_zh
+assert section5_zh.count(r"\textbf{") == 11
 assert "理论先行外推与独立研究对照" in translation
 assert "10.18653/v1/N19-1357" in (BASE / "additional_references.bib").read_text()
 assert "10.18653/v1/D19-1002" in (BASE / "additional_references.bib").read_text()

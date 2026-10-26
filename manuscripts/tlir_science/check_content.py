@@ -53,7 +53,7 @@ assert len(abstract.split()) <= 125 and "\n\n" not in abstract
 assert "learning persistently reorganizes distributed functional support, with target-specific readout-boundary crossings determining capability transitions" in abstract
 assert "learning reorganizes distributed functional support across capability boundaries" not in abstract
 assert "The core TLIR relations were established experimentally before this cross-field comparison" in science
-assert abstract.startswith("Although training, learning, inference, and reinforcement have been extensively studied, their distinct dynamical roles and connections have lacked a unified experimental characterization.")
+assert abstract.startswith("Despite their remarkable success, neural networks remain largely black boxes, and the mechanisms underlying their behavior are still poorly understood.")
 for phrase in ["Nine nanoGPT experiments", "91.43", "91.49", "5,088",
                "five additional", "seventh system", "70.31", "99.48"]:
     assert phrase in abstract, phrase
@@ -137,6 +137,9 @@ assert "10.18653/v1/N19-1357" in new_bib
 assert "10.18653/v1/D19-1002" in new_bib
 assert "jain2019" in used and "wiegreffe2019" in used
 assert "We invite reviewers and independent researchers" in science
+section5 = science.split(r"\section{Unified Explanations of Positive and Negative Findings}",1)[1].split(r"\section{Conclusion}",1)[0]
+assert "21 historical positive--negative comparisons" in section5 and "14 theory-first extrapolations" in section5
+assert section5.count(r"\textbf{") == 11, "Section 5 bold is reserved for case headings"
 assert "derivation-before-search" in science
 assert "Its stronger preregistered temporal-precedence criterion was not met." in science
 assert not re.search(r"\bet\s*al\.", bib, re.I)
