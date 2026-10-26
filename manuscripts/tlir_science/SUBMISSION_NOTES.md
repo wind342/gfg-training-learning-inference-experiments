@@ -74,3 +74,11 @@
 - 摘要原文 `learning reorganizes distributed functional support across capability boundaries` 错误地把学习定义与能力边界跨越混在一起。经作者指出，修正为 `learning persistently reorganizes distributed functional support; target-specific readout-boundary crossings determine capability transitions`，中文同步恢复为“学习表现为分布式功能支撑的持久重组；目标跨越其特异性读出边界时，才会发生可观察的能力状态转变”。
 - 引言结束段 `The core TLI relations` 定点改为 `The core TLIR relations`，中文同步。
 - 两处以外的原有正文、十条公式、所有图表与参考文献、作者及 AI 贡献声明不变。
+
+## 历史正反解释和理论先行外推第五节修订（2026-10-26）
+
+- 经作者明确授权，**仅扩写第五节**至约 800 英文词，按 T/L/I/R 四个角色展示正反压力测试；推导三项边界（EoS、post-capability max-margin、recursive feedback），原编号公式仍为 10 个。
+- 结尾邀请审稿人与独立研究者继续提出可证伪预测并进行独立实验，避免把理论写成不可检验叙事。
+- Jain & Wallace 2019、Wiegreffe & Pinter 2019 已用 ACL Anthology DOI 核对；所有原有 25 条文献保留，新加 2 条，原 main.bib 保持不变。
+- 完整 21 组历史矩阵和 14 项外推记录已从用户 ChatGPT Library 中的研究交接说明提取**科学部分**，以明确证据等级与程序边界的形式分别公开：https://github.com/wind342/tlir-research-evidence/blob/codex/tlir-paper-evidence-navigation-v1/TLIR_HISTORICAL_STRESS_TEST_21.md 和 https://github.com/wind342/tlir-research-evidence/blob/codex/tlir-paper-evidence-navigation-v1/TLIR_THEORY_FIRST_14_DERIVATIONS.md。
+- 本次没有运行新的原生神经网络实验，也不把文献一致性冒充原生因果验证或第三方盲法预注册。
