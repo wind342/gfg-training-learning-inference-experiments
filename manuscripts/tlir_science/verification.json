@@ -24,18 +24,18 @@
   "funding_declaration": "This research received no funding.",
   "competing_interest_declaration": "There are no competing interests to declare.",
   "original_source_files_unchanged": true,
-  "submission_pdf_status": "COMPILED_AND_PAGE_QA_PASSED",
+  "submission_pdf_status": "REBUILD_PENDING_REMOVE_UNAUTHORIZED_AI_METHOD_TEXT",
   "previous_pdf": {
     "sha256": "1fa3789ffbf6bf117928fae2d352ed27abaa157c52abd04a9fdbb5d7b301d0ec",
     "pages": 19,
     "source": "prior Science formatted source before latest journal adjustments"
   },
   "previous_pdf_visual_inspection": "All 19 final rendered pages reviewed; title/author/email block, figure/table order and reference pages verified.",
-  "current_source_pdf_compilation_verified": true,
+  "current_source_pdf_compilation_verified": false,
   "user_action_to_compile": "Optional local reproduction via python build.py",
   "pdf_compilation_method": "GitHub Actions workflow .github/workflows/tlir-science-pdf.yml",
   "instrument_methods_added": true,
-  "instrument_methods_word_count": 188,
+  "instrument_methods_word_count": 162,
   "instrument_method_section": "Experimental Instruments and Evidence Control",
   "original_scientific_paragraphs_unchanged": true,
   "table1_explicit_linebreak_removed": true,
@@ -74,7 +74,7 @@
   "abstract_opening_sentence": "Although training, learning, inference, and reinforcement have been extensively studied, their distinct dynamical roles and connections have lacked a unified experimental characterization.",
   "current_pdf_git_blob_sha_prior_to_abstract_sentence_change": "901d3a8465af3f1e4c69a85ec230d91ac517ac5d",
   "final_abstract_opening_statement_verified": true,
-  "experimental_instruments_word_count": 188,
+  "experimental_instruments_word_count": 162,
   "ai_invented_instruments": [
     "CSRG-4C",
     "realized-update causal forks",
@@ -90,7 +90,9 @@
   "author_pdf_metadata_name": "Mian Wang",
   "author_display_name_consistent_with_earlier_manuscript": true,
   "current_pdf_git_blob_sha_prior_to_author_name": "4759f663534cfecb10f95e18621bd8ef6f4b3534",
-  "current_pdf_git_blob_sha": "9aee5febba821064ec9c622e5988a4a8df428d38",
   "csrg_target_group_wording_corrected": true,
-  "current_pdf_build_source_commit": "8b87b2b8eb6d0d7b26797879a569bd37a69bb6e2"
+  "current_pdf_build_source_commit": "8b87b2b8eb6d0d7b26797879a569bd37a69bb6e2",
+  "ai_attribution_only_in_declarations": true,
+  "unauthorized_ai_credit_insertions_in_methods_reverted": true,
+  "current_pdf_git_blob_sha_before_revert": "9aee5febba821064ec9c622e5988a4a8df428d38"
 }
