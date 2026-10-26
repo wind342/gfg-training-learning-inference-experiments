@@ -88,6 +88,8 @@ assert "TLIR 的核心关系是在开展上述跨领域比较之前，通过实�
 assert "学习使分布式功能支撑持续重组，并涉及能力边界的跨越" not in parts[0]
 assert "欢迎审稿人和其他独立研究者" in translation
 assert "尽管神经网络取得了显著成功，但其内部运行机制仍缺乏清晰的科学解释，黑箱问题依然存在。" in parts[0]
+assert "由实验建立的统一理论揭示了神经网络的内部工作机制，并统一解释了既有研究中看似矛盾的结果。" in parts[0]
+assert "仅以 TL-E05 为例，实验分析了12次运行中72个有限幅度响应区段产生的15,264条按目标身份对齐的响应记录，比较7组冻结的条件因子，并实施跨运行匹配、逐因子删除、替代加入顺序和2,000次按运行对聚类的Bootstrap重采样。" in parts[0]
 section5_zh = parts[1].split(r"\section{对正面与负面研究结果的统一解释}",1)[1].split(r"\section{结论}",1)[0]
 assert "21组历史正反结果" in section5_zh and "14项理论先行外推" in section5_zh
 assert section5_zh.count(r"\textbf{") == 11

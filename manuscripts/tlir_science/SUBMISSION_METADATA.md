@@ -3,7 +3,7 @@
 **Target journal:** Science (AAAS)
 **Article type for consideration:** Research Article, extended online format (3 figures + 3 tables = 6 display items; subject to editor approval).
 **Title:** Unified dynamics of training, learning, inference, and reinforcement in neural networks
-**One-Sentence Summary:** Causal experiments show how updates reorganize functional support, inference recruits it, and feedback redirects learning.
+**One-Sentence Summary:** A unified experimental theory reveals neural networks' inner workings and reconciles conflicting research findings.
 **Abstract length:** 123 words; one paragraph in main.tex, per Science Research Article length guidance.
 **Main text:** Original experimental narrative preserved outside the explicitly authorized rewrite of Section 5 (historical paired explanations and conditional theoretical extrapolations). No new native experiments were created.
 **Single author shown in manuscript:** Mian Wang. The author-contributions disclosure follows the author's earlier manuscript, with the four AI-invented experimental instruments removed from human author credit; the AI disclosure explicitly attributes instrument invention and experiment design/execution to AI agents. Human responsibility for scientific decisions and claims is retained.

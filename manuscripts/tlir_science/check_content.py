@@ -23,6 +23,8 @@ s, count = re.subn(
     r"(?=\\subsection\{Training: Realized Updates and Receiving States\})",
     "", s, flags=re.S)
 assert count == 1
+assert science.count("TL-E05 alone analyzed 15,264 identity-aligned target responses from 72 finite-amplitude sections across 12 runs, comparing seven frozen conditioning-factor blocks through cross-run matching, leave-one-block-out tests, alternative factor orders, and 2,000 run-pair-clustered bootstrap resamples.") == 1
+s = s.replace("TL-E05 alone analyzed 15,264 identity-aligned target responses from 72 finite-amplitude sections across 12 runs, comparing seven frozen conditioning-factor blocks through cross-run matching, leave-one-block-out tests, alternative factor orders, and 2,000 run-pair-clustered bootstrap resamples.", "")
 s = s.replace(r"Figure~\ref{fig:chain} illustrates the four linked dynamical roles.", "")
 s = s.replace(r"Table~\ref{tab:equation_guide} summarizes the purposes and principal symbols of the numbered equations.", "")
 s = s.replace("RL-E05 compared selective, balanced, and frozen feedback. In RL-E06, each of 3,200 updates allocated 60 episodes among the four skills ($q_0,q_1,q_2,q_3$): balanced (15, 15, 15, 15), mildly concentrated (30, 10, 10, 10), highly concentrated (45, 5, 5, 5), and exclusive (60, 0, 0, 0).",
@@ -53,7 +55,7 @@ abstract = science.split(r"\begin{abstract}", 1)[1].split(
     r"\end{abstract}", 1)[0].strip()
 assert len(abstract.split()) <= 125 and "\n\n" not in abstract
 assert "One Sentence Summary:" in science
-assert "Causal experiments show how updates reorganize functional support" in science
+assert "A unified experimental theory reveals neural networks' inner workings and reconciles conflicting research findings." in science
 assert "learning persistently reorganizes distributed functional support, with target-specific readout-boundary crossings determining capability transitions" in abstract
 assert "learning reorganizes distributed functional support across capability boundaries" not in abstract
 assert "The core TLIR relations were established experimentally before this cross-field comparison" in science
