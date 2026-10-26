@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "page_count": 17,
+  "page_count": 22,
   "blank_pages": [],
   "overflow_or_missing_glyph": [],
   "matching_equations": 10,
@@ -31,50 +31,70 @@
     },
     {
       "page": 6,
-      "non_whitespace_chars": 968
+      "non_whitespace_chars": 960
     },
     {
       "page": 7,
-      "non_whitespace_chars": 1216
+      "non_whitespace_chars": 985
     },
     {
       "page": 8,
-      "non_whitespace_chars": 1271
+      "non_whitespace_chars": 1203
     },
     {
       "page": 9,
-      "non_whitespace_chars": 166
+      "non_whitespace_chars": 1137
     },
     {
       "page": 10,
-      "non_whitespace_chars": 58
+      "non_whitespace_chars": 939
     },
     {
       "page": 11,
-      "non_whitespace_chars": 293
+      "non_whitespace_chars": 772
     },
     {
       "page": 12,
-      "non_whitespace_chars": 3903
+      "non_whitespace_chars": 947
     },
     {
       "page": 13,
-      "non_whitespace_chars": 2057
+      "non_whitespace_chars": 48
     },
     {
       "page": 14,
-      "non_whitespace_chars": 2136
+      "non_whitespace_chars": 58
     },
     {
       "page": 15,
-      "non_whitespace_chars": 749
+      "non_whitespace_chars": 293
     },
     {
       "page": 16,
-      "non_whitespace_chars": 1083
+      "non_whitespace_chars": 3903
     },
     {
       "page": 17,
+      "non_whitespace_chars": 2057
+    },
+    {
+      "page": 18,
+      "non_whitespace_chars": 2132
+    },
+    {
+      "page": 19,
+      "non_whitespace_chars": 1548
+    },
+    {
+      "page": 20,
+      "non_whitespace_chars": 134
+    },
+    {
+      "page": 21,
+      "non_whitespace_chars": 1064
+    },
+    {
+      "page": 22,
       "non_whitespace_chars": 322
     }
   ]
