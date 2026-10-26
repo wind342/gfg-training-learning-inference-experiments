@@ -5,7 +5,7 @@
   "pages": [
     {
       "page": 1,
-      "non_whitespace_chars": 1685,
+      "non_whitespace_chars": 1661,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -13,51 +13,51 @@
     },
     {
       "page": 2,
-      "non_whitespace_chars": 2421,
+      "non_whitespace_chars": 2422,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "stateis represented by parameters and their local derivatives or curvature;realized update"
+      "text_start": "using loss changes in a parameter neighborhood to improve generalization (3). Here, thecur"
     },
     {
       "page": 3,
-      "non_whitespace_chars": 2006,
+      "non_whitespace_chars": 1886,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "prompting studies how intermediate reasoning steps affect performance on complex tasks (17"
+      "text_start": "in the context affect predictions while model parameters remain fixed ( 16). Chain-of-Thou"
     },
     {
       "page": 4,
-      "non_whitespace_chars": 1830,
+      "non_whitespace_chars": 1862,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Fact Graph (GFG), which links recorded model and optimizer states, actual update occurrenc"
+      "text_start": "Experimental Instruments and Evidence Control These experiments required instruments that "
     },
     {
       "page": 5,
-      "non_whitespace_chars": 1535,
+      "non_whitespace_chars": 1518,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "The experiments identified near-linear, saturating, accelerating, turnback, and sign-rever"
+      "text_start": "torical optimizer states affect update formation: \u2206(a,b) =OptStep(\u03b8 t,gt,\u03c9 a,b).(2) TL-E04"
     },
     {
       "page": 6,
-      "non_whitespace_chars": 1538,
+      "non_whitespace_chars": 1471,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "while learned-version dependence is tested through D j,q =f(q;\u03b8 \u2217)\u2212f(q;\u03b8 (j\u2190pre) ).(7) Exa"
+      "text_start": "At a fixed learned stateL \u2217, inference recruits and combines learned support: Sactiveq,c ="
     },
     {
       "page": 7,
-      "non_whitespace_chars": 1756,
+      "non_whitespace_chars": 2010,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Each of the five additional TLI systems was examined through realized-update interventions"
+      "text_start": "Cross-System Validation We subsequently tested the established TLI relations and their pre"
     },
     {
       "page": 8,
