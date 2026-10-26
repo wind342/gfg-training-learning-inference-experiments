@@ -5,7 +5,7 @@
   "pages": [
     {
       "page": 1,
-      "non_whitespace_chars": 1785,
+      "non_whitespace_chars": 1685,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -13,27 +13,27 @@
     },
     {
       "page": 2,
-      "non_whitespace_chars": 2438,
+      "non_whitespace_chars": 2421,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Inrepresentation learning and generalization, Spectral Bias examines frequency-dependent l"
+      "text_start": "stateis represented by parameters and their local derivatives or curvature;realized update"
     },
     {
       "page": 3,
-      "non_whitespace_chars": 2008,
+      "non_whitespace_chars": 2006,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "putations;internal computationvaries with attention and activations; andfunctional perform"
+      "text_start": "prompting studies how intermediate reasoning steps affect performance on complex tasks (17"
     },
     {
       "page": 4,
-      "non_whitespace_chars": 1651,
+      "non_whitespace_chars": 1825,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "matched receiving states and compared full, skipped, parameter-only, optimizer-memory, and"
+      "text_start": "Fact Graph (GFG), which links recorded model and optimizer states, actual update occurrenc"
     },
     {
       "page": 5,
