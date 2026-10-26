@@ -24,14 +24,14 @@
   "funding_declaration": "This research received no funding.",
   "competing_interest_declaration": "There are no competing interests to declare.",
   "original_source_files_unchanged": true,
-  "submission_pdf_status": "REBUILD_PENDING_AI_CONTRIBUTIONS_DISCLOSURE",
+  "submission_pdf_status": "COMPILED_AND_PAGE_QA_PASSED",
   "previous_pdf": {
     "sha256": "1fa3789ffbf6bf117928fae2d352ed27abaa157c52abd04a9fdbb5d7b301d0ec",
     "pages": 19,
     "source": "prior Science formatted source before latest journal adjustments"
   },
   "previous_pdf_visual_inspection": "All 19 final rendered pages reviewed; title/author/email block, figure/table order and reference pages verified.",
-  "current_source_pdf_compilation_verified": false,
+  "current_source_pdf_compilation_verified": true,
   "user_action_to_compile": "Optional local reproduction via python build.py",
   "pdf_compilation_method": "GitHub Actions workflow .github/workflows/tlir-science-pdf.yml",
   "instrument_methods_added": true,
@@ -44,7 +44,7 @@
   "current_pdf_git_blob_sha_previous": "db8bbd73fa3dfa943d1b1c422ce0268aaa49ca4d",
   "pdf_page_qa_file": "PAGE_QA.json (generated and passed)",
   "current_pdf_page_count": 18,
-  "current_page_qa_git_blob_sha": "de0db57a93515f9a041c8743439f2ee5b575afe1",
+  "current_page_qa_git_blob_sha": "2c21cae0f5127ff3b41ab5ddf5c216772dd16e69",
   "current_pdf_empty_or_near_empty_pages": [],
   "current_pdf_page_16_text_nonwhitespace_chars": 1256,
   "newpage_before_references": 1,
@@ -83,5 +83,8 @@
   ],
   "ai_design_and_execution_attribution": "AI agents designed, implemented and executed the reported experiments",
   "author_contributions_authority": "Author-supplied earlier TLI manuscript AI-assisted scientific execution and Author contributions sections; corrected human instrument invention attribution",
-  "current_pdf_git_blob_sha_prior_to_ai_attribution": "e5c9a7da45fd80ffb978444cecf4ce0dcd6b72ff"
+  "current_pdf_git_blob_sha_prior_to_ai_attribution": "e5c9a7da45fd80ffb978444cecf4ce0dcd6b72ff",
+  "current_pdf_git_blob_sha": "4759f663534cfecb10f95e18621bd8ef6f4b3534",
+  "ai_attribution_verified_in_current_pdf": true,
+  "pdf_build_commit": "4781e177532d1a12d987f7acfa5bff91ec3d4e86"
 }
