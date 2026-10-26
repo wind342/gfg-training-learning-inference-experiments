@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "pdf_pages": 21,
+  "pdf_pages": 25,
   "empty_or_near_empty_pages": [],
   "pages": [
     {
@@ -69,7 +69,7 @@
     },
     {
       "page": 9,
-      "non_whitespace_chars": 1948,
+      "non_whitespace_chars": 1822,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -77,30 +77,54 @@
     },
     {
       "page": 10,
-      "non_whitespace_chars": 2502,
+      "non_whitespace_chars": 2365,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "A robust finite-kernel closure across different receivers and actual actions would instead"
+      "text_start": "Experimental anchor.TL-E03: identical updates produce different responses across receivers"
     },
     {
       "page": 11,
-      "non_whitespace_chars": 1935,
+      "non_whitespace_chars": 2311,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "deductions, not a claim that the cited papers tested TLIR itself. Evolving stability.For p"
+      "text_start": "same learning trajectory.Experimental anchor.TL-E07: support changes while capability is s"
     },
     {
       "page": 12,
-      "non_whitespace_chars": 514,
+      "non_whitespace_chars": 1863,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "and use to loss and recovery, TLIR establishes experimentally testable causal connections "
+      "text_start": "receives a signal, while allocation determines the distribution of actions over time. Prox"
     },
     {
       "page": 13,
+      "non_whitespace_chars": 1623,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Its Jacobian determines local state-map stability, with a marginal region at \u03c1(DF(S t))\u22481 "
+    },
+    {
+      "page": 14,
+      "non_whitespace_chars": 1655,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Under the corresponding exponential-tail and asymptotic-direction conditions, radial scale"
+    },
+    {
+      "page": 15,
+      "non_whitespace_chars": 695,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "Conclusion Through systematic experiments across neural systems, this work reveals dynamic"
+    },
+    {
+      "page": 16,
       "non_whitespace_chars": 672,
       "has_table1": false,
       "has_table2": false,
@@ -108,7 +132,7 @@
       "text_start": "Fig. 2.Selected evidence for Training, Learning, and frozen Inference in nanoGPT, and feed"
     },
     {
-      "page": 14,
+      "page": 17,
       "non_whitespace_chars": 4019,
       "has_table1": false,
       "has_table2": false,
@@ -116,7 +140,7 @@
       "text_start": "COMPLETE TRAINING\u2013LEARNING\u2013INFERENCE TESTS BY SYSTEM Each row links actual training update"
     },
     {
-      "page": 15,
+      "page": 18,
       "non_whitespace_chars": 1759,
       "has_table1": false,
       "has_table2": false,
@@ -124,31 +148,39 @@
       "text_start": "References and Notes 1. A. Jacot, F. Gabriel, C. Hongler, Neural tangent kernel: Convergen"
     },
     {
-      "page": 16,
-      "non_whitespace_chars": 1814,
+      "page": 19,
+      "non_whitespace_chars": 1810,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
       "text_start": "13. D. Lopez-Paz, M. A. Ranzato, Gradient episodic memory for continual learning.Adv. Neur"
     },
     {
-      "page": 17,
-      "non_whitespace_chars": 1617,
+      "page": 20,
+      "non_whitespace_chars": 1563,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "24. L. Dinh, R. Pascanu, S. Bengio, Y . Bengio, Sharp minima can generalize for deep nets."
+      "text_start": "24. S. Jain, B. C. Wallace, Attention is not explanation.Proc. NAACL-HLT, 3543\u20133556 (2019)"
     },
     {
-      "page": 18,
-      "non_whitespace_chars": 1160,
+      "page": 21,
+      "non_whitespace_chars": 1973,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "source code, result records, provenance and checksum manifests, and independent verificati"
+      "text_start": "Acknowledgments Funding:This research received no funding. Author contributions:Mian Wang "
     },
     {
-      "page": 19,
+      "page": 22,
+      "non_whitespace_chars": 173,
+      "has_table1": false,
+      "has_table2": false,
+      "has_table3": false,
+      "text_start": "models. The author defined the scientific questions, research boundaries, and decision cri"
+    },
+    {
+      "page": 23,
       "non_whitespace_chars": 1855,
       "has_table1": true,
       "has_table2": false,
@@ -156,15 +188,15 @@
       "text_start": "Table 1.Scientific purpose and principal notation of the ten numbered equations. Eq. Purpo"
     },
     {
-      "page": 20,
-      "non_whitespace_chars": 801,
+      "page": 24,
+      "non_whitespace_chars": 768,
       "has_table1": false,
       "has_table2": true,
       "has_table3": true,
-      "text_start": "Table 2.Seven neural systems: six TLI chains and a GRU feedback study. System (optimizer) "
+      "text_start": "Table 2.Seven neural systems. System (optimizer) Task / registered components nanoGPT (Ada"
     },
     {
-      "page": 21,
+      "page": 25,
       "non_whitespace_chars": 121,
       "has_table1": false,
       "has_table2": false,
