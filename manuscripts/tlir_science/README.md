@@ -34,6 +34,15 @@
 - `SUBMISSION_METADATA.md` 收录一句话总结和投稿类型建议。**Cover Letter 尚未撰写**；作者贡献声明已依据作者提供的旧稿核对，并修正四套仪器的 AI 发明归属。
 - 当前有 3 幅图、3 张表；建议向 Science 投稿系统申请考虑 **extended online Research Article**，不能提前声称获得编辑批准。
 
+## 全文审读与中文版
+
+已完成当前英文 Science 主稿的逐节检查，并建立完整中文对照译稿：
+
+- [**中文 PDF 与译稿入口**](translation_zh/README_ZH.md)（包含中文 PDF、LaTeX 源文件和逐页 QA）。
+- [**中文全文审读记录**](translation_zh/FULL_TEXT_REVIEW_ZH.md)：核对九项 nanoGPT 实验、预测、五系统验证、GRU 闭环、公式、图表和真实 AI 贡献。
+- 中英文 **10 个公式、34 次正文引文、3 图、3 表及交叉引用标签**对应一致。CSRG-4C 组级支撑措辞已按照冻结协议修正。
+- 中文译稿为阅读和核对用途，不是正式英文投稿文件；原始图内英文标签不修改。
+
 ## 文件与溯源
 
 - `main.tex`：当前可编辑的期刊排版稿。
