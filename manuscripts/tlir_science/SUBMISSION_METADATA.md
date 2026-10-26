@@ -4,7 +4,7 @@
 **Article type for consideration:** Research Article, extended online format (3 figures + 3 tables = 6 display items; subject to editor approval).
 **Title:** Unified Training–Learning–Inference–Reinforcement Dynamics Across Neural Systems
 **One-Sentence Summary:** nanoGPT experiments established TLI dynamics, validated in five other systems; a seventh GRU revealed reinforcement closure.
-**Abstract length:** 121 words; one paragraph in main.tex, per Science Research Article length guidance.
+**Abstract length:** 125 words; one paragraph in main.tex, per Science Research Article length guidance.
 **Main text:** Original experimental narrative preserved. No new experiments have been created for submission.
 **Single author shown in manuscript:** Mian Wang. The author-contributions disclosure follows the author's earlier manuscript, with the four AI-invented experimental instruments removed from human author credit; the AI disclosure explicitly attributes instrument invention and experiment design/execution to AI agents. Human responsibility for scientific decisions and claims is retained.
 **Funding:** No funding (author confirmed).
