@@ -11,7 +11,7 @@
   "pages": [
     {
       "page": 1,
-      "non_whitespace_chars": 794
+      "non_whitespace_chars": 795
     },
     {
       "page": 2,
@@ -19,11 +19,11 @@
     },
     {
       "page": 3,
-      "non_whitespace_chars": 903
+      "non_whitespace_chars": 980
     },
     {
       "page": 4,
-      "non_whitespace_chars": 821
+      "non_whitespace_chars": 860
     },
     {
       "page": 5,
