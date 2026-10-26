@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "pdf_pages": 24,
+  "pdf_pages": 23,
   "empty_or_near_empty_pages": [],
   "pages": [
     {
@@ -181,19 +181,11 @@
     },
     {
       "page": 23,
-      "non_whitespace_chars": 442,
+      "non_whitespace_chars": 919,
       "has_table1": false,
       "has_table2": true,
-      "has_table3": false,
-      "text_start": "Table 2.Seven neural systems. System (optimizer) Task / registered components nanoGPT (Ada"
-    },
-    {
-      "page": 24,
-      "non_whitespace_chars": 478,
-      "has_table1": false,
-      "has_table2": false,
       "has_table3": true,
-      "text_start": "Table 3.Prediction and feedback experiment summaries. Macro recall averages four observed "
+      "text_start": "Table 2.Seven neural systems. System (optimizer) Task / registered components nanoGPT (Ada"
     }
   ]
 }
