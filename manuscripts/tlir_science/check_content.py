@@ -16,7 +16,7 @@ def normalize(x):
 o = original.split(r"\section{Introduction}", 1)[1].split(
     r"\noindent\textbf{Evidence availability and machine audit.}", 1)[0]
 s = science.split(r"\end{abstract}", 1)[1].split(
-    "\\clearpage\n\\begin{figure}", 1)[0]
+    "\\begin{figure}[!htbp]", 1)[0]
 s = re.sub(r"^\s*\\noindent\s*", "", s, count=1)
 s, count = re.subn(
     r"\\subsection\{Experimental Instruments and Evidence Control\}.*?"
