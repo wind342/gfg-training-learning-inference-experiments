@@ -53,7 +53,7 @@ for phrase in [
     r"\paragraph*{Data, code and materials availability:}",
     "https://doi.org/10.5281/zenodo.22032772",
     "https://github.com/wind342/tlir-research-evidence/",
-    r"PUBLIC\_EVIDENCE\_MATRIX.md",
+    "public evidence matrix",
     r"\paragraph*{Use of generative artificial intelligence:}"
 ]:
     assert phrase in science, "Missing declaration: " + phrase
