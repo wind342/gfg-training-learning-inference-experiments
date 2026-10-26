@@ -438,10 +438,12 @@ GRU (RL-E05/E06; AdamW) & Four-skill feedback; 4 shared hidden groups\\
 \caption{Prediction and feedback experiment summaries. Macro recall averages four observed transition categories.}
 \label{tab:prediction}
 \centering
+\begin{minipage}[t]{.59\textwidth}
+\vspace{0pt}
 {\small\textbf{(A) Post-update target-boundary classification}\par}
 \smallskip
-\setlength{\tabcolsep}{4.2pt}
-\renewcommand{\arraystretch}{1.13}
+\setlength{\tabcolsep}{2.7pt}
+\renewcommand{\arraystretch}{1.06}
 \begin{tabular}{@{}lrr@{}}
 \toprule
 System & Accuracy (\%) & Four-way recall (\%)\\
@@ -455,12 +457,14 @@ Hard-spiking SNN$^{a}$ & 95.31 & 70.74\\
 \bottomrule
 \multicolumn{3}{@{}p{.94\columnwidth}@{}}{\footnotesize $^{a}$Independent prediction tests use registered GNN/SNN training histories.}\\
 \end{tabular}
-\par\medskip
+\end{minipage}\hfill
+\begin{minipage}[t]{.39\textwidth}
+\vspace{0pt}
 {\small\textbf{(B) RL-E06 feedback episodes per update, by capability}\par}
 \smallskip
-{\small
-\setlength{\tabcolsep}{4.1pt}
-\renewcommand{\arraystretch}{1.08}
+\small
+\setlength{\tabcolsep}{2.7pt}
+\renewcommand{\arraystretch}{1.06}
 \begin{tabular}{@{}lrrrr@{}}\toprule
 Feedback & $q_0$ & $q_1$ & $q_2$ & $q_3$\\\midrule
 Balanced & 15 & 15 & 15 & 15\\
@@ -468,7 +472,7 @@ Mild & 30 & 10 & 10 & 10\\
 High & 45 & 5 & 5 & 5\\
 Exclusive & 60 & 0 & 0 & 0\\\bottomrule
 \end{tabular}
-}
+\end{minipage}
 \end{table}
 
 \end{document}
