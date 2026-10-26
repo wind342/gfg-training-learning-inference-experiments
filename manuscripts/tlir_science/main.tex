@@ -82,45 +82,7 @@ The nine nanoGPT experiments that established TLI involved a substantially broad
 These experiments required instruments that were developed as the measurement questions arose, rather than assumed before the theory. Their common evidence substrate was the Generation-Fact Graph (GFG), which links recorded model and optimizer states, actual update occurrences, interventions, outputs, and their source identities. For Training, realized-update causal forks restored matched receiving states and compared full, skipped, parameter-only, optimizer-memory, and reciprocal transfers, separating an update from the state on which it acts. A finite-amplitude path instrument then applied the same recorded update at frozen amplitude values to measure nonlinear numerical responses and discrete transitions. For Learning, CSRG-4C used repeated baseline, single-component, and paired-component gates to measure necessity, backup, substitution, synergy, and failure slack in the functional support of registered target groups. Finally, an identity-aligned boundary ledger joined each registered target to the exact pre-update state and realized update, then separated pre-response records from post-update adjudication of correctness. The instruments enabled the subsequent experimental tests; frozen protocols, negative controls, and independent validators constrained their interpretation.
 
 
-% Equation-purpose and notation table: definitions correspond to the numbered equations.
-% Kept adjacent to the instrumentation description so symbols are available before Eq. (1).
-\begin{center}
-\begin{minipage}{\textwidth}
-\captionsetup{justification=raggedright,singlelinecheck=false,skip=7pt}
-\captionof{table}{Scientific purpose and principal notation of the ten numbered equations.}
-\label{tab:equation_guide}
-\begingroup
-\footnotesize\linespread{1.02}\selectfont
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.20}
-\begin{tabular}{@{}p{0.41in}>{\raggedright\arraybackslash}p{2.15in}>{\raggedright\arraybackslash}p{3.64in}@{}}
-\toprule
-\textbf{Eq.} & \textbf{Purpose} & \textbf{Principal symbols}\\
-\midrule
-(1) & Compare the functional effect of the same realized update in two receiving states. & $R_q$: target-specific response; $\theta_A,\theta_B$: receiving parameters; $\Delta\theta_B$: actual update formed at B; $m_q$: functional readout.\\
-\addlinespace[3pt]
-(2) & Identify how optimizer memory conditions update formation. & $\Delta^{(a,b)}$: resulting update; $\theta_t$: parameters; $g_t$: gradient; $\omega_{a,b}$: exchanged optimizer state; $\operatorname{OptStep}$: update operation.\\
-\addlinespace[3pt]
-(3) & Measure nonlinear functional response along the finite-amplitude path of an actual update. & $r_{t,q}(\alpha)$: target response; $\Delta\theta_t$: realized update; $\alpha$: applied-update scale ($0$ baseline, $1$ full update).\\
-\addlinespace[3pt]
-(4) & Measure persistent reorganization of distributed support after a realized update. & $P_q(\theta)$: intervention-defined target support organization; $\Delta P_{t,q}$: change in that organization; $q$: registered target or target group.\\
-\addlinespace[3pt]
-(5) & Describe recruitment and combination of learned support during frozen inference. & $L^*$: fixed learned state; $(q,c)$: query and context; $\Pi_{q,c}$: support recruitment; $H_{q,c}$: output composition; $y_{q,c}$: inference output.\\
-\addlinespace[3pt]
-(6) & Measure non-additive effects of paired component interventions. & $I_{ij,q}$: interaction; $i,j$: components; $f_{\rm full}$: ungated readout; $f_{-i},f_{-j},f_{-i,-j}$: single and joint gated readouts.\\
-\addlinespace[3pt]
-(7) & Test dependence on the learned version of a component through rollback. & $D_{j,q}$: rollback effect; $\theta^*$: trained state; $\theta^{(j\leftarrow\mathrm{pre})}$: state with component $j$ restored to its pre-formation version; $f$: functional readout.\\
-\addlinespace[3pt]
-(8) & Predict post-update target--competitor margins and capability transitions (TL-P01). & $\widehat g_{y,c}$: predicted gap; $b_c=w_y-w_c$, $\Delta b_c$: output-boundary change; $h,h',h''$: pre-update hidden state and its first/second update-direction derivatives.\\
-\addlinespace[3pt]
-(9) & Attribute functional contributions using all coalitions of four components. & $\phi_{j,q}$: Shapley effect of component $j$; $C$: active coalition; $\mathcal C$: four-component set; $v_q(C)$: target margin under coalition $C$.\\
-\addlinespace[3pt]
-(10) & Model information-mode retention in recursive feedback with real-data input. & $q_t$: mode mass at iteration $t$; $\rho$: retention factor; $\alpha$: real-data mixing share; $q_{\rm real}$: mode mass in real data.\\
-\bottomrule
-\end{tabular}
-\endgroup
-\end{minipage}
-\end{center}
+Table~\ref{tab:equation_guide} summarizes the purposes and principal symbols of the numbered equations.
 
 \subsection{Training: Realized Updates and Receiving States}
 At a registered training step, the parameter--optimizer state is $Z_t=(\theta_t,\omega_t)$, and the realized parameter update is $\Delta\theta_t=\theta_{t+1}-\theta_t$.
@@ -301,6 +263,66 @@ Through systematic experiments across neural systems, this work reveals dynamica
   \caption{Within-system training--learning--inference experiment chains. One GNN seed meets eight of nine registered gates, with nonlinear-response incidence below its specified threshold; SNN passes all twelve registered gates in four seeds.}
   \label{fig:systems}
 \end{figure}
+\clearpage
+\input{references.bbl}
+
+\section*{Acknowledgments}
+\paragraph*{Funding:}
+This research received no funding.
+
+\paragraph*{Author contributions:}
+Mian Wang conceived the study; developed the atomic generation-fact model, the Generation-Fact Graph, the GFG-based recursive scientific process, and the unified theory of training, learning, inference, and reinforcement; defined the scientific questions, research boundaries, and decision criteria; introduced the principal theoretical hypotheses and conceptual transitions; directed the research program; analyzed and interpreted validated results; developed prospective predictions and theoretical deductions; prepared the figures; and wrote and revised the manuscript.
+
+\paragraph*{Competing interests:}
+There are no competing interests to declare.
+
+\paragraph*{Data, code and materials availability:}
+The study's public evidence repository is organized by the scientific claims of this paper to support rapid machine-assisted auditing (\url{https://github.com/wind342/tlir-research-evidence/tree/codex/tlir-paper-evidence-navigation-v1}). A paper-to-evidence map connects the main claims, experiments, figure panels, and reported results to frozen protocols, source code, result records, provenance and checksum manifests, and independent verification procedures. The public evidence matrix specifies which results can be independently recomputed and which underlying checkpoints or runtime artifacts are not included in the public release.
+
+\paragraph*{Use of generative artificial intelligence:}
+General-purpose AI systems, including OpenAI Codex and ChatGPT, served as scientific agents within the GFG-based recursive scientific process. Under the author's direction, these AI systems invented and implemented the four experimental instruments---CSRG-4C, realized-update causal forks, finite-amplitude update paths, and the identity-aligned target-boundary ledger---and designed, implemented, initiated, monitored, and executed the reported experiments. They performed analyses, causal interventions, matched replays, counterexample searches, and independent validation procedures, and contributed to manuscript drafting, editing, and LaTeX formatting. The reported numerical results were produced by the documented native programs and execution environments, not generated directly as text by AI models. The author defined the scientific questions, research boundaries, and decision criteria, reviewed the validated evidence, and accepts responsibility for the scientific claims and results.
+
+\newpage
+% Equation-purpose and notation table: definitions correspond to the numbered equations.
+% Positioned after references and author declarations in Science initial-submission order.
+\begin{center}
+\begin{minipage}{\textwidth}
+\captionsetup{justification=raggedright,singlelinecheck=false,skip=7pt}
+\captionof{table}{Scientific purpose and principal notation of the ten numbered equations.}
+\label{tab:equation_guide}
+\begingroup
+\footnotesize\linespread{1.02}\selectfont
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.20}
+\begin{tabular}{@{}p{0.41in}>{\raggedright\arraybackslash}p{2.15in}>{\raggedright\arraybackslash}p{3.64in}@{}}
+\toprule
+\textbf{Eq.} & \textbf{Purpose} & \textbf{Principal symbols}\\
+\midrule
+(1) & Compare the functional effect of the same realized update in two receiving states. & $R_q$: target-specific response; $\theta_A,\theta_B$: receiving parameters; $\Delta\theta_B$: actual update formed at B; $m_q$: functional readout.\\
+\addlinespace[3pt]
+(2) & Identify how optimizer memory conditions update formation. & $\Delta^{(a,b)}$: resulting update; $\theta_t$: parameters; $g_t$: gradient; $\omega_{a,b}$: exchanged optimizer state; $\operatorname{OptStep}$: update operation.\\
+\addlinespace[3pt]
+(3) & Measure nonlinear functional response along the finite-amplitude path of an actual update. & $r_{t,q}(\alpha)$: target response; $\Delta\theta_t$: realized update; $\alpha$: applied-update scale ($0$ baseline, $1$ full update).\\
+\addlinespace[3pt]
+(4) & Measure persistent reorganization of distributed support after a realized update. & $P_q(\theta)$: intervention-defined target support organization; $\Delta P_{t,q}$: change in that organization; $q$: registered target or target group.\\
+\addlinespace[3pt]
+(5) & Describe recruitment and combination of learned support during frozen inference. & $L^*$: fixed learned state; $(q,c)$: query and context; $\Pi_{q,c}$: support recruitment; $H_{q,c}$: output composition; $y_{q,c}$: inference output.\\
+\addlinespace[3pt]
+(6) & Measure non-additive effects of paired component interventions. & $I_{ij,q}$: interaction; $i,j$: components; $f_{\rm full}$: ungated readout; $f_{-i},f_{-j},f_{-i,-j}$: single and joint gated readouts.\\
+\addlinespace[3pt]
+(7) & Test dependence on the learned version of a component through rollback. & $D_{j,q}$: rollback effect; $\theta^*$: trained state; $\theta^{(j\leftarrow\mathrm{pre})}$: state with component $j$ restored to its pre-formation version; $f$: functional readout.\\
+\addlinespace[3pt]
+(8) & Predict post-update target--competitor margins and capability transitions (TL-P01). & $\widehat g_{y,c}$: predicted gap; $b_c=w_y-w_c$, $\Delta b_c$: output-boundary change; $h,h',h''$: pre-update hidden state and its first/second update-direction derivatives.\\
+\addlinespace[3pt]
+(9) & Attribute functional contributions using all coalitions of four components. & $\phi_{j,q}$: Shapley effect of component $j$; $C$: active coalition; $\mathcal C$: four-component set; $v_q(C)$: target margin under coalition $C$.\\
+\addlinespace[3pt]
+(10) & Model information-mode retention in recursive feedback with real-data input. & $q_t$: mode mass at iteration $t$; $\rho$: retention factor; $\alpha$: real-data mixing share; $q_{\rm real}$: mode mass in real data.\\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{minipage}
+\end{center}
+
 \begin{table}[!htbp]
 \caption{Seven neural systems: six TLI chains and a GRU feedback study.}
 \label{tab:systems}
@@ -353,23 +375,5 @@ High & 45 & 5 & 5 & 5\\
 Exclusive & 60 & 0 & 0 & 0\\\bottomrule
 \end{tabular}
 \end{table}
-\newpage
-\input{references.bbl}
-
-\section*{Acknowledgments}
-\paragraph*{Funding:}
-This research received no funding.
-
-\paragraph*{Author contributions:}
-Mian Wang conceived the study; developed the atomic generation-fact model, the Generation-Fact Graph, the GFG-based recursive scientific process, and the unified theory of training, learning, inference, and reinforcement; defined the scientific questions, research boundaries, and decision criteria; introduced the principal theoretical hypotheses and conceptual transitions; directed the research program; analyzed and interpreted validated results; developed prospective predictions and theoretical deductions; prepared the figures; and wrote and revised the manuscript.
-
-\paragraph*{Competing interests:}
-There are no competing interests to declare.
-
-\paragraph*{Data, code and materials availability:}
-The study's public evidence repository is organized by the scientific claims of this paper to support rapid machine-assisted auditing (\url{https://github.com/wind342/tlir-research-evidence/tree/codex/tlir-paper-evidence-navigation-v1}). A paper-to-evidence map connects the main claims, experiments, figure panels, and reported results to frozen protocols, source code, result records, provenance and checksum manifests, and independent verification procedures. The public evidence matrix specifies which results can be independently recomputed and which underlying checkpoints or runtime artifacts are not included in the public release.
-
-\paragraph*{Use of generative artificial intelligence:}
-General-purpose AI systems, including OpenAI Codex and ChatGPT, served as scientific agents within the GFG-based recursive scientific process. Under the author's direction, these AI systems invented and implemented the four experimental instruments---CSRG-4C, realized-update causal forks, finite-amplitude update paths, and the identity-aligned target-boundary ledger---and designed, implemented, initiated, monitored, and executed the reported experiments. They performed analyses, causal interventions, matched replays, counterexample searches, and independent validation procedures, and contributed to manuscript drafting, editing, and LaTeX formatting. The reported numerical results were produced by the documented native programs and execution environments, not generated directly as text by AI models. The author defined the scientific questions, research boundaries, and decision criteria, reviewed the validated evidence, and accepts responsibility for the scientific claims and results.
 
 \end{document}
