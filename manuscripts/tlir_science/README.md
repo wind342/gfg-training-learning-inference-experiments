@@ -3,7 +3,7 @@
 分支：`codex/tlir-science-latex`  
 目录：`manuscripts/tlir_science/`
 
-本工程保留原八页 CVPR 科学论文的理论论证、实验数值和 10 个公式，新增 162 词实验仪器小节，并整理了 Science 期刊投稿所需的摘要与声明。**没有修改原有实验顺序、理论定义、实验段落和结果。**
+本工程保留原八页 CVPR 科学论文的理论论证、实验数值和 10 个公式，新增 188 词实验仪器小节，并整理了 Science 期刊投稿所需的摘要与声明。**没有修改原有实验顺序、理论定义、实验段落和结果。**
 
 ## 本轮格式修改
 
@@ -19,7 +19,7 @@
 
 ## 本次仪器简介与排版修复
 
-- 在第二节最前面新增 **Experimental Instruments and Evidence Control**（162 英文词），简要介绍 GFG、真实更新因果分叉、有限幅度路径、CSRG-4C 和身份对齐目标边界账本。明确仪器随测量问题逐步发展，并未预先假设理论成立。
+- 在第二节最前面新增 **Experimental Instruments and Evidence Control**（162 英文词），简要介绍 GFG、真实更新因果分叉、有限幅度路径、CSRG-4C 和身份对齐目标边界账本。明确仪器随测量问题逐步发展，并未预先假设理论成立；**四套仪器由 AI 发明和实现，全部实验的设计与实施也由 AI 科研代理完成**，人类作者负责科学问题、研究边界和决策。
 - 清除图表之间的 5 处强制 `\\clearpage`；正文末保留 `\\clearpage`、参考文献前使用 `\\newpage`，避免小表独占页面。
 - 撤销 Table 1 中 `Diffusion U-Net` 与 `(AdamW)` 之间的强制换行，保留原始表格数据。
 - 之前版本的 `PAGE_QA.json` 检查为 PASS（18 页）；当前投稿版摘要与文献修改后会重新生成页面报告。
@@ -31,7 +31,7 @@
 - 按 Science 模板重新排列：**正文 → 三图三表 → References and Notes → Acknowledgments**。声明位于 Acknowledgments 下，含 Funding、Author contributions、Competing interests、Data/code/materials availability、AI 使用。
 - 25 条参考文献保留首次引用编号，扩展原来省略为 `et al.` 的作者并统一为 Science 风格；原始 `main.bib` 保持冻结。
 - 在数据可用性声明中仅正式引用 GitHub 证据仓库，重点说明按科学主张组织、可机器快速审计；不将不完整覆盖 MoE/GNN 等的 Zenodo DOI 作为全文证据入口，不创建重复的 Supplementary Materials。
-- `SUBMISSION_METADATA.md` 收录一句话总结和投稿类型建议。**Cover Letter 尚未撰写**；单作者贡献文字需要作者本人最终确认。
+- `SUBMISSION_METADATA.md` 收录一句话总结和投稿类型建议。**Cover Letter 尚未撰写**；作者贡献声明已依据作者提供的旧稿核对，并修正四套仪器的 AI 发明归属。
 - 当前有 3 幅图、3 张表；建议向 Science 投稿系统申请考虑 **extended online Research Article**，不能提前声称获得编辑批准。
 
 ## 文件与溯源
@@ -63,4 +63,4 @@ python build.py
 
 ## 仍待正式投稿前确认
 
-未另外制作补充材料文件，论文的证据入口仅为公开 GitHub 证据仓库。单作者贡献文本为拟稿，仍需作者核定；Cover Letter 已按要求延后。
+未另外制作补充材料文件，论文的证据入口仅为公开 GitHub 证据仓库。作者贡献及 AI 使用声明依据作者提供的真实分工调整；Cover Letter 已按要求延后。
