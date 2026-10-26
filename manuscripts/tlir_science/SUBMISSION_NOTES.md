@@ -55,3 +55,12 @@
 - GitHub Actions 编译通过；当前 `TLIR_Science_Final.pdf` 为 **18 页**，文件 Git blob SHA `70d5ad5d82b7cecf18574080b1201394f27080c5`。
 - `PAGE_QA.json` 逐页文本检查为 **PASS**，空白或近乎空白页 0；本次编译未报告 Overfull 或 Float too large 问题。
 - 封面信仍按作者要求留待最后处理；作者贡献声明为待本人核定的草稿。
+
+## 作者贡献与 AI 科研代理的真实归属（2026-10-26）
+
+- 以作者上传的旧稿《Training, learning and inference: unified dynamics of neural systems》末尾 `AI-assisted scientific execution` 和 `Author contributions` 为事实来源。
+- **明确纠正一项原旧稿的错误：四套实验仪器（CSRG-4C、真实更新因果分叉、有限幅度更新路径、身份对齐目标边界账本）由 AI 科研代理发明、设计和实现，而非人类作者发明。**
+- 作者明确确认全部报告实验的设计、实现和执行均由 AI 完成；AI 声明不再使用弱化实际作用的 “assistance with experimental-protocol design”。
+- 保留旧稿确定的人类责任：研究构想、生成事实及 GFG 理论基础、科研问题与研究边界、主要理论假设和概念转换、科学决策、证据审查与结论责任。
+- 数值结果由真实程序和执行环境产生，不是语言模型编写出来的数字。
+- 只修正具体贡献归属；不改变论文核心实验结果、公式、摘要、图表和证据仓库链接。Cover Letter 仍延后。
