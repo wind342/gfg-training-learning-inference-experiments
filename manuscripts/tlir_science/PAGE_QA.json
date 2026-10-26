@@ -21,7 +21,7 @@
     },
     {
       "page": 3,
-      "non_whitespace_chars": 2001,
+      "non_whitespace_chars": 2006,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -29,35 +29,35 @@
     },
     {
       "page": 4,
-      "non_whitespace_chars": 1901,
+      "non_whitespace_chars": 1830,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "assumed before the theory. Under the author\u2019s scientific direction, the AI systems also de"
+      "text_start": "Fact Graph (GFG), which links recorded model and optimizer states, actual update occurrenc"
     },
     {
       "page": 5,
-      "non_whitespace_chars": 1555,
+      "non_whitespace_chars": 1535,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "TL-E04 measured the complete finite-amplitude response to an actual update: rt,q(\u03b1) =mq(\u03b8t"
+      "text_start": "The experiments identified near-linear, saturating, accelerating, turnback, and sign-rever"
     },
     {
       "page": 6,
-      "non_whitespace_chars": 1360,
+      "non_whitespace_chars": 1538,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Non-additive component interactions are measured by Ii j,q =f full \u2212f \u2212i \u2212f \u2212j +f \u2212i,\u2212j ,("
+      "text_start": "while learned-version dependence is tested through D j,q =f(q;\u03b8 \u2217)\u2212f(q;\u03b8 (j\u2190pre) ).(7) Exa"
     },
     {
       "page": 7,
-      "non_whitespace_chars": 2010,
+      "non_whitespace_chars": 1756,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Cross-System Validation We subsequently tested the established TLI relations and their pre"
+      "text_start": "Each of the five additional TLI systems was examined through realized-update interventions"
     },
     {
       "page": 8,
