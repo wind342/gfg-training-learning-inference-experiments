@@ -25,6 +25,7 @@ s, count = re.subn(
 assert count == 1
 s = s.replace(r"Figure~\ref{fig:chain} illustrates the four linked dynamical roles.", "")
 s = s.replace(r"Table~\ref{tab:equation_guide} summarizes the purposes and principal symbols of the numbered equations.", "")
+s = s.replace(r"Table~\ref{tab:prediction}B", r"Table~\ref{tab:dose}")
 s = s.replace(r"Figure~\ref{fig:systems} summarizes the six within-system TLI experiment chains.", "")
 s = s.replace("The core TLIR relations were established experimentally before this cross-field comparison", "The core TLI relations were established experimentally before this cross-field comparison")
 s = s.replace("within the main text", "within the conference page limit")
