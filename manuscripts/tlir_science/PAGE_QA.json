@@ -61,7 +61,7 @@
     },
     {
       "page": 8,
-      "non_whitespace_chars": 1739,
+      "non_whitespace_chars": 1768,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
@@ -69,35 +69,35 @@
     },
     {
       "page": 9,
-      "non_whitespace_chars": 1877,
+      "non_whitespace_chars": 1879,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "Rebalanced feedback restored other-skill accuracy from 70.31% to 99.48% while preserving t"
+      "text_start": "Two recovery branches then started from the exact exclusive-feedback state at update 800. "
     },
     {
       "page": 10,
-      "non_whitespace_chars": 2378,
+      "non_whitespace_chars": 2367,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "training action. The action then enters a specific receiving state and causes a target-spe"
+      "text_start": "Sharpness is a measurement of local geometry; SAM uses this measurement to form an actual "
     },
     {
       "page": 11,
-      "non_whitespace_chars": 2309,
+      "non_whitespace_chars": 2315,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "actions continue changing margins, component support allocation, and feature geometry even"
+      "text_start": "boundary a target occupies; learning records persistent functional organization. Actual tr"
     },
     {
       "page": 12,
-      "non_whitespace_chars": 1972,
+      "non_whitespace_chars": 2052,
       "has_table1": false,
       "has_table2": false,
       "has_table3": false,
-      "text_start": "degraded performance under the underlying criterion. (25) TLIR unification. Feedback condi"
+      "text_start": "colleagues documented reward overoptimization in which improved proxy scores coincide with"
     },
     {
       "page": 13,
@@ -181,7 +181,7 @@
     },
     {
       "page": 23,
-      "non_whitespace_chars": 919,
+      "non_whitespace_chars": 768,
       "has_table1": false,
       "has_table2": true,
       "has_table3": true,
