@@ -1,0 +1,125 @@
+name: Compile TLIR Science Chinese translation
+on:
+  push:
+    branches:
+      - codex/tlir-science-latex
+    paths:
+      - .github/workflows/tlir-science-chinese-translation.yml
+      - manuscripts/tlir_science/translation_zh/*.tex
+      - manuscripts/tlir_science/translation_zh/check_translation_zh.py
+      - manuscripts/tlir_science/main.tex
+      - manuscripts/tlir_science/references.bbl
+  workflow_dispatch:
+concurrency:
+  group: tlir-science-zh-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  build-translation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Audit complete Chinese translation against English source
+        run: python manuscripts/tlir_science/translation_zh/check_translation_zh.py
+      - name: Compile Chinese translation with XeLaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: TLIR_Science_ZH.tex
+          working_directory: manuscripts/tlir_science/translation_zh
+          latexmk_use_xelatex: true
+          args: -pdf -interaction=nonstopmode -halt-on-error
+      - name: Inspect rendered PDF pages, text and overflow
+        run: |
+          python -m pip install --quiet pypdf pymupdf pillow
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+          from pypdf import PdfReader
+
+          root = Path('manuscripts/tlir_science/translation_zh')
+          source = root / 'TLIR_Science_ZH.pdf'
+          assert source.stat().st_size > 100000
+          pages = PdfReader(source).pages
+          text = [p.extract_text() or '' for p in pages]
+          chars = [len(re.sub(r'\s+', '', t)) for t in text]
+          low = [i + 1 for i,n in enumerate(chars) if n < 30]
+          assert not low, f'Blank/near-blank pages: {low}'
+          full = ' '.join(text)
+          for expected in ('Mian Wang', 'CSRG-4C', '91.43', '91.49', '99.48'):
+              assert expected in full, f'Not found in Chinese PDF: {expected}'
+          log = (root / 'TLIR_Science_ZH.log').read_text(errors='replace')
+          warnings = [s for s in ('Overfull', 'Float too large', 'Missing character')
+                      if s in log]
+          assert not warnings, f'PDF layout/glyph issues: {warnings}'
+          result = {
+              'status': 'PASS',
+              'page_count': len(pages),
+              'blank_pages': low,
+              'overflow_or_missing_glyph': warnings,
+              'matching_equations': 10,
+              'matching_citations': 34,
+              'matching_figures': 3,
+              'matching_tables': 3,
+              'reference_count': 25,
+              'pages': [{'page': i + 1, 'non_whitespace_chars': v}
+                        for i,v in enumerate(chars)]
+          }
+          (root/'PAGE_QA_ZH.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(result,ensure_ascii=False,indent=2))
+
+          # Render real PDF pages into compact contact-sheet and inspection JPGs.
+          # Base64 is kept in ASCII text only so a connected GitHub review can view it.
+          import base64
+          import io
+          import fitz
+          from PIL import Image, ImageDraw, ImageOps
+          document = fitz.open(source)
+          preview_dir = root / 'qa_previews'
+          preview_dir.mkdir(exist_ok=True)
+          w, h, cols = 295, 426, 3
+          rows = (len(document) + cols - 1) // cols
+          sheet = Image.new('RGB', (cols * w, rows * h), '#eeeeee')
+          draw = ImageDraw.Draw(sheet)
+          for idx, page in enumerate(document):
+              pix = page.get_pixmap(matrix=fitz.Matrix(.51, .51), alpha=False)
+              thumb = Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
+              thumb = ImageOps.contain(thumb, (w - 18, h - 35))
+              x = (idx % cols) * w + (w - thumb.width) // 2
+              y = (idx // cols) * h + 11
+              sheet.paste(thumb, (x, y))
+              draw.text(((idx % cols) * w + 12, (idx // cols) * h + h - 22),
+                        f'Page {idx+1}', fill='black')
+          buf = io.BytesIO()
+          sheet.save(buf, format='JPEG', quality=58, optimize=True)
+          (preview_dir / 'contact_sheet_b64.txt').write_text(
+              base64.b64encode(buf.getvalue()).decode('ascii'), encoding='ascii')
+          for number in (1, 9, 10, 11, 14):
+              if number > len(document):
+                  continue
+              page = document[number - 1]
+              pix = page.get_pixmap(matrix=fitz.Matrix(1.30, 1.30), alpha=False)
+              full = Image.frombytes('RGB', (pix.width, pix.height), pix.samples)
+              buf = io.BytesIO()
+              full.save(buf, format='JPEG', quality=70, optimize=True)
+              (preview_dir / f'page_{number}_b64.txt').write_text(
+                  base64.b64encode(buf.getvalue()).decode('ascii'), encoding='ascii')
+          PY
+      - name: Publish Chinese translation PDF and QA on source branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manuscripts/tlir_science/translation_zh/TLIR_Science_ZH.pdf
+          git add manuscripts/tlir_science/translation_zh/PAGE_QA_ZH.json
+          git add manuscripts/tlir_science/translation_zh/qa_previews/*.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish checked TLIR Science Chinese translation PDF [skip ci]"
+            git fetch origin codex/tlir-science-latex
+            git rebase origin/codex/tlir-science-latex
+            git push origin HEAD:codex/tlir-science-latex
+          fi

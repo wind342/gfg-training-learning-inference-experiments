@@ -1,0 +1,84 @@
+{
+  "repository": "wind342/gfg-training-learning-inference-experiments",
+  "commit": "effbe99b0b8299bc1e457a309339dc85d722c1f8",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 2058,
+      "sha256": "d40d3014768319025d9e8169bffa15577337baf482fb89130cbb83b15eded620"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6868,
+      "sha256": "d829bcd6088eaed93f5530744d3f052e456536db50c2d048adc7fa83ab66cc6a"
+    },
+    {
+      "path": "EVIDENCE_FIRST_AI_REVIEW_STANDARD.zh-CN.md",
+      "bytes": 10074,
+      "sha256": "a988edbf3df35eb95f3a2d000c34028dfcd90af78a00d73a047c52e2f312c82b"
+    },
+    {
+      "path": "manuscripts/AGENTS.md",
+      "absent": true
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/AGENTS.md",
+      "absent": true
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/README.md",
+      "bytes": 1376,
+      "sha256": "0b73340473068299e8472df2cc78b6a134ee518c736fd28f1de3e166b98893c9"
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/main.tex",
+      "bytes": 28419,
+      "sha256": "c44ccca73849caf34f12459e045893eb78b8855800677c5e61ff07de475add5a"
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/main.bib",
+      "bytes": 5971,
+      "sha256": "6c28656524125226b4bcb447e9279b2e8bee1acf129ae5e0868d33117ec1d708"
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/main.bbl",
+      "bytes": 6041,
+      "sha256": "05991bf0e262a58566c8399c7d038430e7a84d5cb99d8e35b135daa5bcddeab9"
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/preamble.tex",
+      "bytes": 1380,
+      "sha256": "f666a85903f49929395951e7afb620e96d4e208334623f23135298b4d7f06228"
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/cvpr.sty",
+      "bytes": 17887,
+      "sha256": "1cd7f434b13d41c475df4a1901a5d82d9ca8b80b8cf6205dc4602a5c164286b4"
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/ieeenat_fullname.bst",
+      "bytes": 26900,
+      "sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc"
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/TLIR_CVPR2027_Submission_Ready.pdf",
+      "bytes": 1210835,
+      "sha256": "06a1d53a5ef52b3b27f7a3c1313345d3d58ba7648a199b39d2698d78f2da4253"
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/figures/figure1_tlir_closed_loop.png",
+      "bytes": 184838,
+      "sha256": "cbe206f16ce950bd1015ac1e084e73decb2776f0f323498248fc3d9dbb6ed37c"
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/figures/figure2_experimental_14panel.png",
+      "bytes": 687765,
+      "sha256": "594e695f69178bb353798139ae8db729db4b55dbf1d023c2b155dbd6057b8b96"
+    },
+    {
+      "path": "manuscripts/tlir_cvpr2027/figures/figure2_six_system_evidence.pdf",
+      "bytes": 127549,
+      "sha256": "1130d4a6a040365cb795802545c0d31ef4a2b54f56b9ae470da753696aa19d15"
+    }
+  ]
+}

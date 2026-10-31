@@ -1,0 +1,123 @@
+name: Compile updated TLIR Science PDF
+on:
+  push:
+    branches:
+      - codex/tlir-science-latex
+    paths:
+      - .github/workflows/tlir-science-pdf.yml
+      - manuscripts/tlir_science/main.tex
+      - manuscripts/tlir_science/references.bbl
+      - manuscripts/tlir_science/check_content.py
+      - manuscripts/tlir_science/figures/**
+  workflow_dispatch:
+concurrency:
+  group: tlir-science-pdf-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check manuscript source preservation
+        run: python manuscripts/tlir_science/check_content.py
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          working_directory: manuscripts/tlir_science
+          latexmk_use_xelatex: false
+          args: -pdf -interaction=nonstopmode -halt-on-error
+      - name: Inspect PDF pages and evidence text
+        run: |
+          python -m pip install --quiet pypdf pymupdf pillow
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+          from pypdf import PdfReader
+
+          root = Path('manuscripts/tlir_science')
+          reader = PdfReader(root / 'main.pdf')
+          extracts = [page.extract_text() or '' for page in reader.pages]
+          compact = [' '.join(txt.split()) for txt in extracts]
+          page_counts = [len(re.sub(r'\s+', '', txt)) for txt in extracts]
+          low_content = [idx + 1 for idx, count in enumerate(page_counts) if count < 30]
+          assert not low_content, f'Blank/near-blank pages: {low_content}'
+          full_text = ' '.join(compact)
+          assert 'Experimental Instruments and Evidence Control' in full_text, 'Instrument section not compiled'
+          assert 'This research received no funding' in full_text, 'Funding statement absent'
+          assert 'There are no competing interests to declare' in full_text, 'Competing interests absent'
+          report = {
+              'status': 'PASS',
+              'pdf_pages': len(reader.pages),
+              'empty_or_near_empty_pages': low_content,
+              'pages': [
+                  {
+                      'page': idx + 1,
+                      'non_whitespace_chars': page_counts[idx],
+                      'has_table1': 'Table 1.' in compact[idx],
+                      'has_table2': 'Table 2.' in compact[idx],
+                      'has_table3': 'Table 3.' in compact[idx],
+                      'text_start': compact[idx][:90],
+                  }
+                  for idx in range(len(extracts))
+              ],
+          }
+          (root / 'PAGE_QA.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps(report, indent=2))
+
+          # Capture a contact sheet and high-resolution selected pages for
+          # visual review of the expanded Section 5 and floating figures.
+          import base64
+          import io
+          import fitz
+          from PIL import Image, ImageDraw, ImageOps
+          src = fitz.open(root / "main.pdf")
+          folder = root / "qa_previews"
+          folder.mkdir(exist_ok=True)
+          colw, rowh, cols = 286, 418, 3
+          rows = (len(src) + cols - 1) // cols
+          contact = Image.new("RGB", (cols * colw, rows * rowh), "#eeeeee")
+          draw = ImageDraw.Draw(contact)
+          for k, page in enumerate(src):
+              pix = page.get_pixmap(matrix=fitz.Matrix(.46, .46), alpha=False)
+              thumb = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+              thumb = ImageOps.contain(thumb, (colw - 16, rowh - 36))
+              left = (k % cols) * colw + (colw - thumb.width) // 2
+              top = (k // cols) * rowh + 12
+              contact.paste(thumb, (left, top))
+              draw.text(((k % cols) * colw + 10, (k // cols) * rowh + rowh - 22), f"Page {k+1}", fill="black")
+          buf = io.BytesIO()
+          contact.save(buf, format="JPEG", quality=56, optimize=True)
+          (folder / "contact_sheet_b64.txt").write_text(base64.b64encode(buf.getvalue()).decode("ascii"))
+          for n in (1, 11, 12, 13, 14, 15, 19):
+              if n > len(src):
+                  continue
+              pix = src[n-1].get_pixmap(matrix=fitz.Matrix(1.35, 1.35), alpha=False)
+              expanded = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+              buf = io.BytesIO()
+              expanded.save(buf, format="JPEG", quality=72, optimize=True)
+              (folder / f"page_{n}_b64.txt").write_text(base64.b64encode(buf.getvalue()).decode("ascii"))
+          PY
+      - name: Save updated PDF and page QA in source branch
+        run: |
+          set -euo pipefail
+          cd manuscripts/tlir_science
+          test -s main.pdf
+          cp main.pdf TLIR_Science_Final.pdf
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add TLIR_Science_Final.pdf PAGE_QA.json
+          git add qa_previews/*.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "Recompile compact TLIR Science manuscript and verify pages [skip ci]"
+            git fetch origin codex/tlir-science-latex
+            git rebase origin/codex/tlir-science-latex
+            git push origin HEAD:codex/tlir-science-latex
+          fi

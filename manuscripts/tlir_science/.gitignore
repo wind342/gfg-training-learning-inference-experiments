@@ -1,0 +1,9 @@
+*.aux
+*.log
+*.out
+*.brf
+*.synctex.gz
+build_pass_*.txt
+main.pdf
+build/
+TLIR_Science_Final.pdf

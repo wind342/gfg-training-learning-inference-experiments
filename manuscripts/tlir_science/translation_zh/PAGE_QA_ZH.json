@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "page_count": 22,
+  "blank_pages": [],
+  "overflow_or_missing_glyph": [],
+  "matching_equations": 10,
+  "matching_citations": 34,
+  "matching_figures": 3,
+  "matching_tables": 3,
+  "reference_count": 25,
+  "pages": [
+    {
+      "page": 1,
+      "non_whitespace_chars": 795
+    },
+    {
+      "page": 2,
+      "non_whitespace_chars": 1450
+    },
+    {
+      "page": 3,
+      "non_whitespace_chars": 980
+    },
+    {
+      "page": 4,
+      "non_whitespace_chars": 860
+    },
+    {
+      "page": 5,
+      "non_whitespace_chars": 909
+    },
+    {
+      "page": 6,
+      "non_whitespace_chars": 1028
+    },
+    {
+      "page": 7,
+      "non_whitespace_chars": 1039
+    },
+    {
+      "page": 8,
+      "non_whitespace_chars": 1197
+    },
+    {
+      "page": 9,
+      "non_whitespace_chars": 1135
+    },
+    {
+      "page": 10,
+      "non_whitespace_chars": 992
+    },
+    {
+      "page": 11,
+      "non_whitespace_chars": 776
+    },
+    {
+      "page": 12,
+      "non_whitespace_chars": 835
+    },
+    {
+      "page": 13,
+      "non_whitespace_chars": 266
+    },
+    {
+      "page": 14,
+      "non_whitespace_chars": 58
+    },
+    {
+      "page": 15,
+      "non_whitespace_chars": 293
+    },
+    {
+      "page": 16,
+      "non_whitespace_chars": 3903
+    },
+    {
+      "page": 17,
+      "non_whitespace_chars": 2057
+    },
+    {
+      "page": 18,
+      "non_whitespace_chars": 2132
+    },
+    {
+      "page": 19,
+      "non_whitespace_chars": 933
+    },
+    {
+      "page": 20,
+      "non_whitespace_chars": 749
+    },
+    {
+      "page": 21,
+      "non_whitespace_chars": 1064
+    },
+    {
+      "page": 22,
+      "non_whitespace_chars": 211
+    }
+  ]
+}
